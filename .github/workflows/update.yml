@@ -10,6 +10,10 @@ on:
         description: "Scan all sessions of the term (backfill)"
         type: boolean
         default: false
+      speech_minutes:
+        description: "Time budget for debate transcripts (minutes)"
+        required: false
+        default: "25"
       max:
         description: "Max votes in this run"
         required: false
@@ -32,7 +36,7 @@ jobs:
         run: |
           pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
-          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} || echo "scraper stopped early, committing progress"
+          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} --speech-minutes ${{ inputs.speech_minutes || 25 }} || echo "scraper stopped early, committing progress"
       - name: Commit data
         id: commit
         run: |

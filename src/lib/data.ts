@@ -100,6 +100,39 @@ export const stats = new Map<string, MpStats>();
 })();
 export const mpStats = (id: string) => stats.get(id) ?? { total: 0, present: 0, attendance: null, loyalty: null, rebels: [], monthly: [], rankAttendance: 0 };
 
+/* ---------- debate (speeches) ---------- */
+export interface Speech { id: string; start: string; end: string; dur: number; session: number | null; day: number | null;
+  tlac: string | null; speaker: string; role: string; kind: string; video: string | null; text: string; mpId?: string }
+const speechFiles = import.meta.glob<{ default: Speech[] }>("../../data/speeches/*.json", { eager: true });
+const keyName = (s: string) => s.replace(",", "").normalize("NFC").replace(/\s+/g, " ").trim().toLowerCase();
+const mpByKey = new Map(mpList.map((m) => [keyName(m.sortName), m.id]));
+export const CHAIR = "Vstup predsedajúceho";
+export const speeches: Speech[] = Object.values(speechFiles).flatMap((m) => m.default)
+  .map((x) => ({ ...x, mpId: mpByKey.get(keyName(x.speaker)) }))
+  .sort((a, b) => a.start.localeCompare(b.start));
+export const speechesBySession = new Map<number, Speech[]>();
+for (const x of speeches) if (x.session != null) speechesBySession.set(x.session, [...(speechesBySession.get(x.session) ?? []), x]);
+export interface Talk { seconds: number; count: number; factual: number; words: number; rank: number; recent: Speech[] }
+export const talk = new Map<string, Talk>();
+for (const x of speeches) {
+  if (!x.mpId || x.kind === CHAIR) continue;
+  const t = talk.get(x.mpId) ?? { seconds: 0, count: 0, factual: 0, words: 0, rank: 0, recent: [] };
+  t.seconds += x.dur; t.count++; if (/faktick/i.test(x.kind)) t.factual++;
+  t.words += x.text ? x.text.split(/\s+/).length : 0;
+  t.recent.push(x); if (t.recent.length > 8) t.recent.shift();
+  talk.set(x.mpId, t);
+}
+[...talk.entries()].sort((a, b) => b[1].seconds - a[1].seconds).forEach(([, t], i) => (t.rank = i + 1));
+export const mpTalk = (id: string): Talk => talk.get(id) ?? { seconds: 0, count: 0, factual: 0, words: 0, rank: 0, recent: [] };
+export const fmtDur = (sec: number) => {
+  if (!sec) return "0 min";
+  const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
+  return h ? `${h} h ${String(m).padStart(2, "0")} min` : `${m} min`;
+};
+export const fmtClock = (sec: number) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
+export const excerpt = (t: string, n = 220) => (t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t);
+export const speakerLabel = (x: Speech) => { const [last, first] = x.speaker.split(",").map((p) => p.trim()); return first ? `${first} ${last}` : x.speaker; };
+
 /* ---------- sessions ---------- */
 export interface Session { n: number; votes: Vote[]; days: string[]; from: string; to: string; passed: number; failed: number; attendance: number }
 export const sessions: Session[] = (() => {

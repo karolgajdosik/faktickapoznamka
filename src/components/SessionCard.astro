@@ -1,8 +1,9 @@
 ---
-import { fmtShort, pct, cls, plural, type Session } from "../lib/data";
+import { fmtShort, pct, cls, plural, speechesBySession, CHAIR, type Session } from "../lib/data";
 interface Props { s: Session }
 const { s } = Astro.props;
 const step = Math.max(1, Math.ceil(s.votes.length / 60));
+const nsp = (speechesBySession.get(s.n) ?? []).filter((x) => x.kind !== CHAIR).length;
 const spark = s.votes.filter((_, i) => i % step === 0);
 ---
 <a class="panel scard" href={`/schodze/${s.n}/`}>
@@ -12,6 +13,7 @@ const spark = s.votes.filter((_, i) => i % step === 0);
     <span><b>{s.votes.length}</b>{plural(s.votes.length, "hlasovanie", "hlasovania", "hlasovaní")}</span>
     <span><b>{s.passed}</b>{plural(s.passed, "schválené", "schválené", "schválených")}</span>
     <span><b>{pct(s.attendance)}</b>účasť</span>
+    {nsp > 0 && <span><b>{nsp}</b>{plural(nsp, "vystúpenie", "vystúpenia", "vystúpení")}</span>}
   </div>
   <div class="spark" aria-hidden="true">
     {spark.map((v) => <span class={`v-${cls(v.passed ? "Z" : v.passed === false ? "P" : "N")}`} style={`--h:${Math.max(12, ((150 - v.counts["0"]) / 150) * 100)}%`} />)}

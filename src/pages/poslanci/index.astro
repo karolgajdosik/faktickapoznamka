@@ -1,12 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
-import { photo, mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
+import { mpTalk, fmtDur, excerpt, photo, mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
 const data = mps.map((m) => {
   const s = mpStats(m.id);
   return {
     id: m.id, name: m.name, sort: m.sortName, club: m.club, color: clubColor(m.club), ini: initials(m), photo: photo(m.id),
     title: m.title ?? null, born: m.born ?? null, age: age(m.born), city: m.city ?? null, region: m.region ?? null, party: m.party ?? null,
+    talk: mpTalk(m.id).seconds, nsp: mpTalk(m.id).count, trank: mpTalk(m.id).rank,
+    sp: mpTalk(m.id).recent.slice(-3).reverse().map((x) => ({ d: fmtShort(x.start), k: x.kind, t: excerpt(x.text || "Prepis zatiaľ nie je zverejnený.", 180), v: x.video })),
     att: s.attendance, loy: s.loyalty, nreb: s.rebels.length, rank: s.rankAttendance,
     rebels: s.rebels.slice(-6).reverse().map((id) => { const v = voteById.get(id)!; return { id, d: fmtShort(v.datetime), t: shortTitle(v.title, 130), c: LABEL[v.votes[m.id]] }; }),
   };
@@ -25,6 +27,7 @@ const data = mps.map((m) => {
         <label class="sr-only" for="sort">Zoradiť</label>
         <select class="select" id="sort">
           <option value="name">Abecedne</option>
+          <option value="talk-desc">Najviac rečnili</option>
           <option value="att-asc">Najnižšia účasť</option>
           <option value="att-desc">Najvyššia účasť</option>
           <option value="reb-desc">Najčastejšie proti klubu</option>
@@ -41,6 +44,7 @@ const data = mps.map((m) => {
           <button type="button" aria-pressed="true" data-mode="club">Kluby</button>
           <button type="button" aria-pressed="false" data-mode="att">Účasť</button>
           <button type="button" aria-pressed="false" data-mode="loy">Súlad s klubom</button>
+          <button type="button" aria-pressed="false" data-mode="talk">Rečnenie</button>
         </div>
         <div class="heatscale" id="scale" hidden><span>nízka</span><i></i><span>vysoká</span></div>
       </div>
@@ -56,7 +60,7 @@ const data = mps.map((m) => {
 
   <script type="application/json" id="mp-data" set:html={JSON.stringify(data)} />
   <script>
-    type M = { photo: string | null; id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
+    type M = { talk: number; nsp: number; trank: number; sp: { d: string; k: string; t: string; v: string | null }[]; photo: string | null; id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
       city: string | null; region: string | null; party: string | null; att: number | null; loy: number | null; nreb: number; rank: number;
       rebels: { id: string; d: string; t: string; c: string }[] };
     const all: M[] = JSON.parse(document.getElementById("mp-data")!.textContent!);
@@ -66,6 +70,8 @@ const data = mps.map((m) => {
     const list = document.getElementById("list")!, q = document.getElementById("q") as HTMLInputElement, sort = document.getElementById("sort") as HTMLSelectElement;
     const chips = [...document.querySelectorAll<HTMLButtonElement>(".chip")];
     const pct = (x: number | null) => { if (x === null) return "–"; const v = x * 100; return (v > 99 && v < 100) || (v > 0 && v < 1) ? `${v.toFixed(1).replace(".", ",")} %` : `${Math.round(v)} %`; };
+    const dur = (sec: number) => { if (!sec) return "0 min"; const h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60); return h ? `${h} h ${String(m).padStart(2, "0")}` : `${m} min`; };
+    const maxTalk = Math.max(1, ...all.map((m) => m.talk));
     const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
     const ava = (m: M, xl = false) => {
       const a = el("span", { className: `ava${xl ? " xl" : ""}${m.photo ? " img" : ""}`, ariaHidden: "true" });
@@ -87,9 +93,9 @@ const data = mps.map((m) => {
       const s = sort.value, v = (x: number | null, d: number) => x ?? d;
       rows.sort((a, b) =>
         s === "att-asc" ? v(a.att, 2) - v(b.att, 2) : s === "att-desc" ? v(b.att, -1) - v(a.att, -1) :
-        s === "reb-desc" ? b.nreb - a.nreb : s === "age-asc" ? v(a.age, 999) - v(b.age, 999) :
+        s === "reb-desc" ? b.nreb - a.nreb : s === "talk-desc" ? b.talk - a.talk : s === "age-asc" ? v(a.age, 999) - v(b.age, 999) :
         s === "age-desc" ? v(b.age, -1) - v(a.age, -1) : a.sort.localeCompare(b.sort, "sk"));
-      const metric = (m: M) => s.startsWith("reb") ? [String(m.nreb), "proti klubu"] : s.startsWith("age") ? [m.age ? `${m.age}` : "–", "rokov"] : [pct(m.att), "účasť"];
+      const metric = (m: M) => s.startsWith("talk") ? [dur(m.talk), `${m.nsp} vystúpení`] : s.startsWith("reb") ? [String(m.nreb), "proti klubu"] : s.startsWith("age") ? [m.age ? `${m.age}` : "–", "rokov"] : [pct(m.att), "účasť"];
       list.replaceChildren(...rows.map((m) => {
         const [val, lab] = metric(m);
         const sub = [m.age ? `${m.age} r.` : null, m.city, m.region ? `${m.region} kraj` : null].filter(Boolean).join(", ");
@@ -120,9 +126,9 @@ const data = mps.map((m) => {
       document.getElementById("scale")!.hidden = mode === "club";
       for (const [id, g] of seats) {
         const m = byId.get(id); if (!m) continue;
-        const x = mode === "att" ? m.att : mode === "loy" ? m.loy : null;
-        g.style.setProperty("--heat", heat(x, mode === "att" ? .5 : .7));
-        g.dataset.extra = mode === "att" ? `účasť ${pct(m.att)}` : mode === "loy" ? `súlad s klubom ${pct(m.loy)}` : "";
+        const x = mode === "att" ? m.att : mode === "loy" ? m.loy : mode === "talk" ? Math.log1p(m.talk) / Math.log1p(maxTalk) : null;
+        g.style.setProperty("--heat", heat(x, mode === "att" ? .5 : mode === "loy" ? .7 : 0));
+        g.dataset.extra = mode === "att" ? `účasť ${pct(m.att)}` : mode === "loy" ? `súlad s klubom ${pct(m.loy)}` : mode === "talk" ? `rečnil(a) ${dur(m.talk)}` : "";
       }
     }
 
@@ -144,7 +150,11 @@ const data = mps.map((m) => {
         el("div", { className: "card-body" },
           el("dl", { className: "tiles" },
             tile("Účasť na hlasovaniach", pct(m.att), undefined, true), tile("Poradie podľa účasti", String(m.rank || "–"), `z ${all.length}`),
-            tile("Súlad s klubom", pct(m.loy)), tile("Hlasovaní proti klubu", String(m.nreb))),
+            tile("Súlad s klubom", pct(m.loy)), tile("Hlasovaní proti klubu", String(m.nreb)),
+            tile("Čas pri rečníckom pulte", dur(m.talk), undefined, true), tile("Vystúpení", String(m.nsp)), tile("Poradie podľa času", String(m.trank || "–"))),
+          m.sp.length ? el("section", {}, el("h3", { textContent: "Posledné vystúpenia" }),
+            el("ul", { className: "rebels" }, ...m.sp.map((x) => el("li", {}, el("a", { href: x.v ?? `/poslanci/${m.id}/`, target: x.v ? "_blank" : "", rel: "noopener" },
+              el("time", { textContent: x.d }), el("span", { textContent: x.t }), el("span", { className: "vs", textContent: x.v ? "▶ video" : x.k })))))) : null,
           el("section", {}, el("h3", { textContent: "Naposledy hlasoval(a) inak ako väčšina klubu" }),
             m.rebels.length ? el("ul", { className: "rebels" }, ...m.rebels.map((r) => el("li", {}, el("a", { href: `/hlasovania/${r.id}/` },
               el("time", { textContent: r.d }), el("span", { textContent: r.t }), el("span", { className: "vs", textContent: r.c })))))

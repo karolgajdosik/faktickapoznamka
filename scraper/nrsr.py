@@ -87,12 +87,10 @@ def session_numbers(term: int = 9) -> list[int]:
     r = get({"sid": "schodze/hlasovanie/schodze"})
     return sorted({int(x) for x in re.findall(r"CisObdobia=%d&(?:amp;)?CisSchodze=(\d+)" % term, r.text)})
 
-def session_vote_ids(session: int, term: int = 9, max_pages: int = 200) -> list[str]:
-    """All vote IDs of one session from the paginated search grid (ASP.NET postback pager)."""
-    import re
+def paginate(url: str, extract, max_pages: int = 400, deadline: float | None = None) -> list:
+    """Open a grid page in the browser and follow its ASP.NET postback pager ('Page$N')."""
     _start()
-    url = BASE + f"?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia={term}&CisSchodze={session}&ShowCisloSchodze=False"
-    ids: list[str] = []
+    items: list = []
     page = _ctx.new_page()
     try:
         _wait(); page.goto(url, wait_until="domcontentloaded", timeout=60_000)
@@ -100,9 +98,8 @@ def session_vote_ids(session: int, term: int = 9, max_pages: int = 200) -> list[
             if "nrsr-challenge" not in page.url: break
             page.wait_for_timeout(1000)
         for k in range(1, max_pages + 1):
-            html = page.content()
-            for i in re.findall(r"hlasovanie/hlasklub&(?:amp;)?ID=(\d+)", html):
-                if i not in ids: ids.append(i)
+            items.extend(extract(page.content()))
+            if deadline and time.time() > deadline: break
             nxt = page.locator(f"a[href*=\"'Page${k + 1}'\"]")
             if nxt.count() == 0: break
             _wait()
@@ -110,4 +107,15 @@ def session_vote_ids(session: int, term: int = 9, max_pages: int = 200) -> list[
                 nxt.first.click()
     finally:
         page.close()
-    return ids
+    return items
+
+def session_vote_ids(session: int, term: int = 9) -> list[str]:
+    import re
+    url = BASE + f"?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia={term}&CisSchodze={session}&ShowCisloSchodze=False"
+    ids = paginate(url, lambda html: re.findall(r"hlasovanie/hlasklub&(?:amp;)?ID=(\d+)", html))
+    return list(dict.fromkeys(ids))
+
+def session_speeches(session: int, term: int = 9, deadline: float | None = None) -> list[dict]:
+    import parse
+    url = BASE + f"?sid=schodze/rozprava/vyhladavanie&CisObdobia={term}&CisSchodze={session}"
+    return paginate(url, parse.parse_speeches, deadline=deadline)

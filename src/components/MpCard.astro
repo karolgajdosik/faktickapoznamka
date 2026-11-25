@@ -1,13 +1,15 @@
 ---
 // Server-rendered MP card (profile page). The Sála modal renders the same structure client-side.
 import Ava from "./Ava.astro";
-import { mpStats, clubColor, initials, age, pct, voteById, fmtShort, shortTitle, mps, LABEL, cls, type Mp } from "../lib/data";
+import SpeechList from "./SpeechList.astro";
+import { mpTalk, fmtDur, talk, mpStats, clubColor, initials, age, pct, voteById, fmtShort, shortTitle, mps, LABEL, cls, type Mp } from "../lib/data";
 interface Props { m: Mp }
 const { m } = Astro.props;
 const s = mpStats(m.id);
 const a = age(m.born);
 const rebels = s.rebels.slice(-12).reverse().map((id) => voteById.get(id)!).filter(Boolean);
 const months = s.monthly.slice(-24);
+const t = mpTalk(m.id);
 ---
 <article class="panel" style={`--club:${clubColor(m.club)};overflow:hidden`}>
   <header class="card-head">
@@ -31,7 +33,17 @@ const months = s.monthly.slice(-24);
       <div class="tile"><dt>Poradie podľa účasti</dt><dd>{s.rankAttendance || "–"}<small>z {mps.length}</small></dd></div>
       <div class="tile"><dt>Súlad s klubom</dt><dd>{pct(s.loyalty)}</dd></div>
       <div class="tile"><dt>Hlasovaní proti klubu</dt><dd>{s.rebels.length}</dd></div>
+      <div class="tile accent"><dt>Čas pri rečníckom pulte</dt><dd>{fmtDur(t.seconds)}</dd></div>
+      <div class="tile"><dt>Vystúpení</dt><dd>{t.count}<small>{t.factual} faktických</small></dd></div>
+      <div class="tile"><dt>Slov v prepisoch</dt><dd>{t.words.toLocaleString("sk-SK")}</dd></div>
+      <div class="tile"><dt>Poradie podľa času</dt><dd>{t.rank || "–"}<small>z {talk.size}</small></dd></div>
     </dl>
+    {t.recent.length > 0 && (
+      <section>
+        <h3>Posledné vystúpenia</h3>
+        <SpeechList items={t.recent.slice().reverse()} showDate showSpeaker={false} />
+      </section>
+    )}
     {months.length > 1 && (
       <section>
         <h3>Účasť podľa mesiacov</h3>

@@ -4,7 +4,7 @@ import Hall from "../components/Hall.astro";
 import Ava from "../components/Ava.astro";
 import VoteBar from "../components/VoteBar.astro";
 import SessionCard from "../components/SessionCard.astro";
-import { votes, sessions, mps, mpStats, clubColor, initials, pct, fmtDate, fmtTime, fmtDay, dayKey, resultText, resultCls, shortTitle, CODES, LABEL, cls } from "../lib/data";
+import { mpTalk, fmtDur, votes, sessions, mps, mpStats, clubColor, initials, pct, fmtDate, fmtTime, fmtDay, dayKey, resultText, resultCls, shortTitle, CODES, LABEL, cls } from "../lib/data";
 const latest = votes[0];
 const s0 = sessions[0];
 const lastDay = latest ? votes.filter((v) => dayKey(v.datetime) === dayKey(latest.datetime)).reverse() : [];
@@ -13,6 +13,7 @@ const avgAtt = votes.length ? votes.reduce((s, v) => s + (150 - v.counts["0"]) /
 const ranked = (f: (id: string) => number) => mps.slice().sort((a, b) => f(b.id) - f(a.id)).slice(0, 5);
 const lowAtt = ranked((id) => 1 - (mpStats(id).attendance ?? 1));
 const rebels = ranked((id) => mpStats(id).rebels.length);
+const talkers = ranked((id) => mpTalk(id).seconds).filter((m) => mpTalk(m.id).seconds > 0);
 ---
 <Base>
   {latest ? (
@@ -69,6 +70,17 @@ const rebels = ranked((id) => mpStats(id).rebels.length);
               <Ava m={m} /><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{mpStats(m.id).rebels.length}<small>hlasovaní</small></span></a></li>))}</ul>
         </section>
       </div>
+
+      {talkers.length > 0 && (
+        <div class="sessions" style="margin-top:.9rem">
+          <section class="panel pad">
+            <h3 style="font-size:var(--step-0)">Najviac času pri rečníckom pulte</h3>
+            <ul class="mplist">{talkers.map((m) => (
+              <li><a href={`/poslanci/#${m.id}`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.45rem 0;text-decoration:none`}>
+                <Ava m={m} /><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{fmtDur(mpTalk(m.id).seconds)}<small>{mpTalk(m.id).count} vystúpení</small></span></a></li>))}</ul>
+          </section>
+        </div>
+      )}
 
       <div class="section-head"><h2>Schôdze</h2><a href="/schodze/">Všetky schôdze</a></div>
       <div class="sessions">{sessions.slice(0, 6).map((s) => <SessionCard s={s} />)}</div>

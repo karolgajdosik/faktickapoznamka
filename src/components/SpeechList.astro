@@ -1,0 +1,46 @@
+---
+import Ava from "./Ava.astro";
+import { mpById, fmtTime, fmtShort, fmtClock, excerpt, speakerLabel, type Speech } from "../lib/data";
+interface Props { items: Speech[]; showDate?: boolean; showSpeaker?: boolean }
+const { items, showDate = false, showSpeaker = true } = Astro.props;
+---
+<ol class="speeches">
+  {items.map((x) => { const m = x.mpId ? mpById.get(x.mpId) : undefined; return (
+    <li data-id={x.id} data-session={x.session}>
+      <div class="sp-time"><time datetime={x.start}>{showDate ? fmtShort(x.start) : fmtTime(x.start)}</time><span>{fmtClock(x.dur)}</span></div>
+      <div class="sp-main">
+        {showSpeaker && (
+          <div class="sp-who">
+            {m ? <Ava m={m} /> : <span class="ava" aria-hidden="true">{speakerLabel(x).split(" ").map((p) => p[0]).slice(0, 2).join("")}</span>}
+            <span>{m ? <a href={`/poslanci/${m.id}/`}>{speakerLabel(x)}</a> : <b>{speakerLabel(x)}</b>}<small>{x.role}</small></span>
+          </div>
+        )}
+        <div class="sp-tags">
+          {x.kind && <span class="pill">{x.kind}</span>}
+          {x.tlac && <span class="pill">tlač {x.tlac}</span>}
+        </div>
+        {x.text ? <p class="sp-text">{excerpt(x.text, 260)}</p> : <p class="sp-text empty">Prepis zatiaľ nie je zverejnený (NR SR ho zverejňuje s oneskorením).</p>}
+        <div class="sp-actions">
+          {x.text && x.text.length > 260 && <button type="button" class="sp-more">Celý prepis</button>}
+          {x.video && <a href={x.video} target="_blank" rel="noopener">▶ Video na tv.nrsr.sk</a>}
+        </div>
+      </div>
+    </li>
+  ); })}
+</ol>
+<script>
+  const cache = new Map<string, Promise<Record<string, string>>>();
+  document.addEventListener("click", async (e) => {
+    const btn = (e.target as Element).closest<HTMLButtonElement>(".sp-more"); if (!btn) return;
+    const li = btn.closest<HTMLLIElement>("li")!, p = li.querySelector<HTMLElement>(".sp-text")!;
+    if (btn.dataset.open) { p.textContent = p.dataset.short!; btn.textContent = "Celý prepis"; delete btn.dataset.open; return; }
+    const s = li.dataset.session!;
+    if (!cache.has(s)) cache.set(s, fetch(`/rozprava/${s}.json`).then((r) => r.json()));
+    btn.textContent = "Načítavam…";
+    try {
+      const all = await cache.get(s)!; const t = all[li.dataset.id!] ?? "";
+      p.dataset.short = p.textContent!; p.replaceChildren(...t.split("\n").map((line) => { const el = document.createElement("span"); el.className = "para"; el.textContent = line; return el; }));
+      btn.textContent = "Skryť prepis"; btn.dataset.open = "1";
+    } catch { btn.textContent = "Prepis sa nepodarilo načítať"; }
+  });
+</script>

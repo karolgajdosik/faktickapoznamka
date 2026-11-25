@@ -290,3 +290,34 @@ td.n, th.n { text-align: right; }
 .ava.img { overflow: hidden; padding: 0; }
 .ava.img img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 2px solid var(--club); }
 .hall .seat image { clip-path: circle(50%); }
+
+/* ---------- speeches ---------- */
+.speeches { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.speeches > li { display: grid; grid-template-columns: 5.6rem minmax(0, 1fr); gap: 1rem; padding: .9rem 1rem; background: var(--panel); border-radius: var(--r-sm); box-shadow: 0 0 0 1px var(--line); border-left: 3px solid var(--accent); }
+.sp-time { display: flex; flex-direction: column; font-size: var(--step--1); font-weight: 700; }
+.sp-time span { color: var(--muted); font-weight: 600; font-size: var(--step--2); }
+.sp-who { display: flex; align-items: center; gap: .6rem; margin-bottom: .35rem; }
+.sp-who .ava { --s: 2rem; }
+.sp-who a, .sp-who b { font-weight: 700; text-decoration: none; display: block; font-size: var(--step--1); }
+.sp-who small { display: block; color: var(--muted); font-size: var(--step--2); }
+.sp-tags { display: flex; gap: .35rem; flex-wrap: wrap; margin-bottom: .35rem; }
+.sp-text { margin: .2rem 0 .4rem; font-size: var(--step--1); line-height: 1.6; max-width: 80ch; }
+.sp-text .para { display: block; margin-bottom: .55em; }
+.sp-text.empty { color: var(--faint); font-style: italic; }
+.sp-actions { display: flex; gap: 1rem; align-items: center; font-size: var(--step--2); font-weight: 700; }
+.sp-actions a { color: var(--accent); text-decoration: none; }
+.sp-more { all: unset; cursor: pointer; color: var(--accent); }
+.sp-more:focus-visible { outline: 2px solid var(--accent); }
+details.day { margin-top: 1rem; }
+details.day > summary { cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: .75rem; padding: .6rem 0; }
+details.day > summary::-webkit-details-marker { display: none; }
+details.day > summary h3 { margin: 0; font-size: var(--step-1); }
+details.day > summary span { color: var(--muted); font-size: var(--step--1); }
+details.day > summary::before { content: "▸"; color: var(--muted); transition: transform .15s; }
+details.day[open] > summary::before { transform: rotate(90deg); }
+.talkbars { display: grid; gap: .45rem; }
+.talkbars a { display: grid; grid-template-columns: 11rem 1fr 4.5rem; gap: .75rem; align-items: center; text-decoration: none; font-size: var(--step--1); }
+.talkbars a b { font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.talkbars a i { display: block; height: .7rem; border-radius: 999px; background: var(--club); }
+.talkbars a span { text-align: right; color: var(--muted); font-size: var(--step--2); }
+@media (max-width: 40rem) { .talkbars a { grid-template-columns: 8rem 1fr 4rem; } .speeches > li { grid-template-columns: 1fr; gap: .4rem; } .sp-time { flex-direction: row; gap: .6rem; } }

@@ -5,11 +5,11 @@ grid on nrsr.sk and download only the ones we don't have yet.
 Usage: python scraper/run.py            # newest sessions only (hourly)
        python scraper/run.py --all      # every session of the term (backfill)
 """
-import argparse, json, pathlib, sys, datetime
+import argparse, json, pathlib, sys, datetime, time
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import nrsr, parse
 
-DATA = pathlib.Path("data"); VOTES = DATA / "votes"
+DATA = pathlib.Path("data"); VOTES = DATA / "votes"; SPEECHES = DATA / "speeches"
 TERM = 9
 
 def save(mps: dict, meta: dict):
@@ -20,6 +20,7 @@ def save(mps: dict, meta: dict):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--all", action="store_true"); ap.add_argument("--max", type=int, default=400)
+    ap.add_argument("--speech-minutes", type=float, default=25, help="time budget for the debate scrape")
     a = ap.parse_args()
     VOTES.mkdir(parents=True, exist_ok=True)
     meta = json.loads((DATA / "meta.json").read_text())
@@ -84,6 +85,9 @@ def main():
             v.pop("_mps"); f.write_text(json.dumps(v, ensure_ascii=False, indent=1))
     save(mps, meta)
 
+    scrape_speeches(sessions, meta, a.speech_minutes)
+    save(mps, meta)
+
     # Profiles (birth date, residence, region, party on the ballot): refresh weekly.
     week_ago = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).isoformat()
     stale = [m for m in mps.values() if m.get("profileAt", "") < week_ago][:60]
@@ -95,6 +99,31 @@ def main():
             m["profileAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     if stale:
         save(mps, meta); print(f"profiles refreshed: {len(stale)}")
+
+def scrape_speeches(sessions: list[int], meta: dict, minutes: float):
+    """Debate transcripts per session. Texts appear days after the speech (authorisation),
+    so the newest sessions are re-read on every run; older ones once."""
+    SPEECHES.mkdir(parents=True, exist_ok=True)
+    deadline = time.time() + minutes * 60
+    done = set(meta.get("speechSessionsDone", []))
+    regular = [s for s in sessions if s < 1000]
+    latest = regular[-2:]
+    todo = latest[::-1] + [s for s in reversed(regular) if s not in done and s not in latest]
+    for sess in todo:
+        if time.time() > deadline: break
+        f = SPEECHES / f"{sess}.json"
+        old = {x["id"]: x for x in json.loads(f.read_text())} if f.exists() else {}
+        items = nrsr.session_speeches(sess, TERM, deadline=deadline)
+        complete = time.time() <= deadline
+        for x in items:
+            prev = old.get(x["id"])
+            if prev and prev.get("text") and not x["text"]: x["text"] = prev["text"]  # never lose text
+            old[x["id"]] = x
+        data = sorted(old.values(), key=lambda x: (x["start"], x["id"]))
+        f.write_text(json.dumps(data, ensure_ascii=False, indent=0))
+        print(f"speeches {sess}: {len(items)} read, {len(data)} stored{'' if complete else ' (partial)'}", flush=True)
+        if complete and sess not in latest: done.add(sess)
+        meta["speechSessionsDone"] = sorted(done)
 
 if __name__ == "__main__":
     main()

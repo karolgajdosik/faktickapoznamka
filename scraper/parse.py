@@ -113,3 +113,47 @@ def parse_mp(html: str, mp_id: str) -> dict | None:
     out["born"] = f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else None
     if out.get("title"): out["title"] = re.sub(r"\s*,\s*", ", ", out["title"]).strip(" ,")
     return out if out.get("last") else None
+
+SPEECH_TIME_RE = re.compile(r"(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2}):(\d{2})")
+
+def _iso(y, mo, d, h, mi, s):
+    off = "+02:00" if 4 <= mo <= 9 or (mo == 3 and d >= 25) or (mo == 10 and d < 25) else "+01:00"
+    return f"{y:04d}-{mo:02d}-{d:02d}T{h:02d}:{mi:02d}:{s:02d}{off}"
+
+def parse_speeches(html: str) -> list[dict]:
+    """Items of the debate search ('Vyhľadávanie v prepise rozpravy')."""
+    out = []
+    for it in _soup(html).find_all("div", class_="daily_info_item"):
+        heads = it.find_all("div", class_="daily_info_speech_header")
+        if len(heads) < 2: continue
+        spans = heads[0].find_all("span", recursive=False)
+        m = SPEECH_TIME_RE.search(spans[0].get_text(" ", strip=True)) if spans else None
+        if not m: continue
+        d, mo, y, h1, m1, s1, h2, m2, s2 = map(int, m.groups())
+        start, end = _iso(y, mo, d, h1, m1, s1), _iso(y, mo, d, h2, m2, s2)
+        dur = (h2 * 3600 + m2 * 60 + s2) - (h1 * 3600 + m1 * 60 + s1)
+        place = spans[1].get_text(" ", strip=True) if len(spans) > 1 else ""
+        pm = re.search(r"(\d+)\.\s*schôdza.*?(\d+)\.\s*deň", place)
+        tl = re.search(r"Tlač\s*(\d+)", heads[0].get_text(" ", strip=True))
+        video = heads[0].find("a", href=re.compile(r"tv\.nrsr\.sk/archiv/schodza/\d+/\d+\?id=\d+"))
+        vid = re.search(r"\?id=(\d+)", video["href"]).group(1) if video else None
+        s2_ = heads[1].find_all("span", recursive=False)
+        name = " ".join(s2_[0].get_text(" ", strip=True).split()) if s2_ else ""
+        role = s2_[2].get_text(" ", strip=True).lstrip("- ").strip() if len(s2_) > 2 else ""
+        em = heads[1].find("em")
+        kind = em.get_text(" ", strip=True) if em else ""
+        body = it.find("div", class_="grid_12")
+        text = ""
+        if body:
+            parts = [p.strip() for p in body.get_text("\n").split("\n")]
+            parts = [p for p in parts if p]
+            if parts and re.fullmatch(r"\d+\.", parts[0]): parts = parts[1:]  # running number
+            text = "\n".join(parts)
+        out.append({
+            "id": vid or f"{start}-{name}", "start": start, "end": end, "dur": max(dur, 0),
+            "session": int(pm.group(1)) if pm else None, "day": int(pm.group(2)) if pm else None,
+            "tlac": tl.group(1) if tl else None, "speaker": name, "role": role,
+            "kind": "" if kind == "-" else kind, "video": video["href"].replace("http://", "https://") if video else None,
+            "text": text,
+        })
+    return out
