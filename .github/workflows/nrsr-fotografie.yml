@@ -1,0 +1,102 @@
+name: Import fotografii poslancov NR SR
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install requests pillow
+
+      - name: Download photos
+        run: |
+          python <<'PY'
+          import requests, re, io, pathlib, hashlib
+          from PIL import Image
+          from concurrent.futures import ThreadPoolExecutor
+
+          base = "https://www.nrsr.sk"
+          headers = {"User-Agent": "Mozilla/5.0"}
+
+          r = requests.get(
+              base + "/web/default.aspx?sid=poslanci/zoznam_abc",
+              headers=headers, timeout=60)
+          r.raise_for_status()
+
+          ids = sorted(set(re.findall(
+              r"PoslanecID=(\d+)", r.text, re.I)))
+
+          print("Najdene ID:", len(ids))
+
+          if len(ids) != 150:
+              raise RuntimeError("Expected 150 members")
+
+          out = pathlib.Path("public/foto")
+          out.mkdir(parents=True, exist_ok=True)
+
+          def download(i):
+              for path in [
+                  "/web/dynamic/PoslanecPhoto.aspx",
+                  "/dynamic/PoslanecPhoto.aspx"
+              ]:
+                  try:
+                      r = requests.get(
+                          base + path,
+                          params={"PoslanecID": i},
+                          headers=headers, timeout=30)
+                      r.raise_for_status()
+                      im = Image.open(io.BytesIO(r.content))
+                      if im.format != "JPEG":
+                          continue
+                      im.verify()
+                      return i, r.content
+                  except Exception as e:
+                      print(i, str(e))
+              return i, None
+
+          with ThreadPoolExecutor(max_workers=4) as pool:
+              results = list(pool.map(download, ids))
+
+          if any(b is None for i,b in results):
+              raise RuntimeError("Missing photos")
+
+          hashes = {
+              hashlib.sha256(b).hexdigest()
+              for i,b in results
+          }
+
+          if len(hashes) != 150:
+              raise RuntimeError("Duplicate photos")
+
+          for i,b in results:
+              p = out / (i + ".jpg")
+              if p.exists() and p.read_bytes() != b:
+                  raise RuntimeError("Existing file: " + str(p))
+              p.write_bytes(b)
+
+          print("150 photos downloaded")
+          PY
+
+      - name: Upload photos to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- public/foto/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Import NR SR portraits"
+          git push origin HEAD:main
+
+      - name: Create ZIP archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: poslanci-NRSR
+          path: public/foto/*.jpg
+          retention-days: 7
