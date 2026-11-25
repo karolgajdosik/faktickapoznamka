@@ -20,7 +20,7 @@ for name, (params, url) in pages.items():
         (out / f"{name}.html").write_text(r.text, encoding="utf-8")
         found_ids |= set(re.findall(r"hlasovanie/hlas(?:klub|ovanie)?&(?:amp;)?ID=(\d+)", r.text))
         mp_ids |= set(re.findall(r"PoslanecID=(\d+)", r.text))
-        report.append(f"- {name}: HTTP {r.status_code}, {len(r.text)} B, url {r.url}")
+        report.append(f"- {name}: HTTP {r.status_code}, ok={r.ok}, {len(r.text)} B, url {r.url}")
     except Exception as e:
         report.append(f"- {name}: ERROR {e!r}")
 

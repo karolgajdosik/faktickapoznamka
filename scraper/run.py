@@ -23,6 +23,7 @@ def main():
     while misses < MISS_LIMIT and saved < a.max:
         r = nrsr.get({"sid": "schodze/hlasovanie/hlasklub", "ID": vid})
         v = parse.parse_vote(r.text, str(vid)) if r.ok else None
+        if not r.ok and nrsr.is_challenge(r.url, r.text): sys.exit("Blocked by nrsr.sk bot check, stopping")
         if v and v["datetime"]:
             for pid, m in v.pop("_mps").items():
                 display, sn = parse.sort_name(m["rawName"])

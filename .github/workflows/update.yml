@@ -26,7 +26,7 @@ jobs:
       - name: Scrape
         if: github.event_name != 'push'
         run: |
-          pip install -r scraper/requirements.txt
+          pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
           python scraper/run.py ${{ inputs.start && format('--start {0}', inputs.start) || '' }}
       - name: Commit data
