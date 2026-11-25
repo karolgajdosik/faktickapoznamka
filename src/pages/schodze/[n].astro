@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import VoteBar from "../../components/VoteBar.astro";
+import Timeline from "../../components/Timeline.astro";
 import SpeechList from "../../components/SpeechList.astro";
 import { speechesBySession, mpById, clubColor, CHAIR, fmtDur, speakerLabel, sessions, dayKey, fmtDay, fmtShort, fmtTime, pct, resultText, resultCls, shortTitle, type Session } from "../../lib/data";
 export function getStaticPaths() {
@@ -18,7 +19,7 @@ const maxSec = top[0]?.sec || 1;
 const spDays = [...new Set(sp.map((x) => dayKey(x.start)))];
 const byDay = s.days.map((d) => ({ d, items: s.votes.filter((v) => dayKey(v.datetime) === d) }));
 ---
-<Base title={`${s.n}. schôdza`} description={`${s.n}. schôdza NR SR: ${s.votes.length} hlasovaní, ${real.length} vystúpení v rozprave.`}>
+<Base index title={`${s.n}. schôdza`} description={`${s.n}. schôdza NR SR: ${s.votes.length} hlasovaní, ${real.length} vystúpení v rozprave.`}>
   <p class="meta-line"><a href="/schodze/">Schôdze</a></p>
   <h1>{s.n}. schôdza</h1>
   {s.from && <p class="meta-line">{fmtShort(s.from)}{s.days.length > 1 && <> – {fmtShort(s.to)}</>}</p>}
@@ -46,16 +47,7 @@ const byDay = s.days.map((d) => ({ d, items: s.votes.filter((v) => dayKey(v.date
   {byDay.map(({ d, items }) => (
     <section>
       <div class="day-head"><h3>{fmtDay(items[0].datetime)}</h3><span>{items.length} hlasovaní</span></div>
-      <ol class="timeline">
-        {items.map((v) => (
-          <li class={resultCls(v)}>
-            <time datetime={v.datetime}>{fmtTime(v.datetime)}</time>
-            <a href={`/hlasovania/${v.id}/`} title={v.title}>{shortTitle(v.title, 170)}</a>
-            <VoteBar counts={v.counts} />
-            <span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
-          </li>
-        ))}
-      </ol>
+      <Timeline items={items} />
     </section>
   ))}
   {sp.length > 0 && (
@@ -64,7 +56,8 @@ const byDay = s.days.map((d) => ({ d, items: s.votes.filter((v) => dayKey(v.date
       {spDays.map((d, i) => { const items = sp.filter((x) => dayKey(x.start) === d); return (
         <details class="day" open={i === spDays.length - 1}>
           <summary><h3>{fmtDay(items[0].start)}</h3><span>{items.length} vystúpení, {fmtDur(items.reduce((a, x) => a + x.dur, 0))}</span></summary>
-          <SpeechList items={items} />
+          {items.some((x) => x.text) && <p><a class="more" style="margin-top:0" href={`/rozprava/${n}/${d}/`}>Celý prepis dňa na jednej stránke</a></p>}
+          <div data-pagefind-ignore><SpeechList items={items} /></div>
         </details>
       ); })}
     </>

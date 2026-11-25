@@ -16,7 +16,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
-      - run: npm ci && npm run build
+      - name: Cache share images
+        uses: actions/cache@v4
+        with:
+          path: .og-cache
+          key: og-${{ github.run_id }}
+          restore-keys: og-
+      - name: Build
+        run: npm ci && npm run build
       - name: Deploy to Cloudflare
         if: env.HAS_CF_TOKEN == 'true'
         env:

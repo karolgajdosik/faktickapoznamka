@@ -1,0 +1,21 @@
+---
+interface Props { id: string; name: string }
+const { id, name } = Astro.props;
+---
+<span class="follow-wrap">
+  <button type="button" class="follow" data-follow={id} aria-pressed="false" aria-label={`Sledovať: ${name}`}>Sledovať</button>
+  <a class="rss" href={`/poslanci/${id}/rss.xml`} title="RSS kanál vystúpení a hlasovaní proti klubu">RSS</a>
+</span>
+<script>
+  // Followed MPs live only in this browser (localStorage); nothing is sent anywhere.
+  const KEY = "fp-follow";
+  const read = (): string[] => { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch { return []; } };
+  const write = (ids: string[]) => { try { localStorage.setItem(KEY, JSON.stringify(ids)); } catch {} };
+  function sync() { const f = read(); document.querySelectorAll<HTMLButtonElement>("[data-follow]").forEach((b) => { const on = f.includes(b.dataset.follow!); b.setAttribute("aria-pressed", String(on)); b.textContent = on ? "Sledujem" : "Sledovať"; }); }
+  document.addEventListener("click", (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>("[data-follow]"); if (!b) return;
+    const f = read(), id = b.dataset.follow!;
+    write(f.includes(id) ? f.filter((x) => x !== id) : [...f, id]); sync();
+  });
+  sync(); document.addEventListener("fp:sync-follow", sync);
+</script>

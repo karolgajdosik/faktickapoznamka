@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="Hľadať" description="Vyhľadávanie v prepisoch rozpravy, zákonoch a poslancoch NR SR.">
+  <h1>Hľadať</h1>
+  <p class="meta-line">V prepisoch rozpravy, zákonoch, schôdzach a profiloch poslancov. Skúste napríklad „lieky“, „tlač 1448“ alebo meno poslanca.</p>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <div id="search" style="margin-top:1.25rem"></div>
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener("DOMContentLoaded", () => {
+      if (!window.PagefindUI) { document.getElementById("search").textContent = "Vyhľadávanie je dostupné po nasadení stránky."; return; }
+      const ui = new PagefindUI({
+        element: "#search", showSubResults: true, showImages: false, resetStyles: false, excerptLength: 30,
+        translations: {
+          placeholder: "Hľadať v prepisoch, zákonoch, poslancoch…", clear_search: "Vymazať", load_more: "Načítať ďalšie výsledky",
+          search_label: "Hľadať na stránke", filters_label: "Filtre", zero_results: "Pre „[SEARCH_TERM]“ sme nič nenašli",
+          many_results: "[COUNT] výsledkov pre „[SEARCH_TERM]“", one_result: "[COUNT] výsledok pre „[SEARCH_TERM]“",
+          alt_search: "Pre „[SEARCH_TERM]“ sme nič nenašli. Výsledky pre „[DIFFERENT_TERM]“", search_suggestion: "Pre „[SEARCH_TERM]“ sme nič nenašli. Skúste:",
+          searching: "Hľadám „[SEARCH_TERM]“…",
+        },
+      });
+      const q = new URLSearchParams(location.search).get("q");
+      if (q) ui.triggerSearch(q);
+    });
+  </script>
+</Base>

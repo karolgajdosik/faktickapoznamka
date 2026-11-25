@@ -20,6 +20,7 @@ def save(mps: dict, meta: dict):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--all", action="store_true"); ap.add_argument("--max", type=int, default=400)
+    ap.add_argument("--refetch", type=int, default=300, help="old vote pages to re-read per run")
     ap.add_argument("--speech-minutes", type=float, default=25, help="time budget for the debate scrape")
     a = ap.parse_args()
     VOTES.mkdir(parents=True, exist_ok=True)
@@ -72,12 +73,12 @@ def main():
     save(mps, meta)
     print(f"saved {saved} votes")
 
-    # Older files saved before we stored per-vote club membership: refetch gradually.
-    budget = min(300, a.max - saved)
+    # Older files saved before we stored per-vote clubs and the vote detail line: refetch gradually.
+    budget = min(a.refetch, a.max - saved) if a.max else a.refetch
     for f in sorted(VOTES.glob("*.json")):
         if budget <= 0: break
         old_v = json.loads(f.read_text())
-        if "clubs" in old_v: continue
+        if "clubs" in old_v and "detail" in old_v: continue
         r = nrsr.get({"sid": "schodze/hlasovanie/hlasklub", "ID": f.stem})
         v = parse.parse_vote(r.text, f.stem) if r.ok else None
         budget -= 1

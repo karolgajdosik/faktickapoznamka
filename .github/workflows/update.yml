@@ -14,11 +14,15 @@ on:
         description: "Time budget for debate transcripts (minutes)"
         required: false
         default: "25"
+      refetch:
+        description: "Old vote pages to re-read (clubs, detail)"
+        required: false
+        default: "300"
       max:
         description: "Max votes in this run"
         required: false
         default: "400"
-permissions: { contents: write }
+permissions: { contents: write, models: read }
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   update:
@@ -36,7 +40,11 @@ jobs:
         run: |
           pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
-          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} --speech-minutes ${{ inputs.speech_minutes || 25 }} || echo "scraper stopped early, committing progress"
+          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} --speech-minutes ${{ inputs.speech_minutes || 25 }} --refetch ${{ inputs.refetch || 300 }} || echo "scraper stopped early, committing progress"
+      - name: AI summaries (GitHub Models)
+        continue-on-error: true
+        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: timeout 20m python scraper/summarize.py
       - name: Commit data
         id: commit
         run: |
@@ -45,9 +53,17 @@ jobs:
           git add data
           if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT
           else git commit -m "data: $(date -u +%F\ %H:%M)" && git pull --rebase -X theirs -q origin main && git push && echo "changed=true" >> $GITHUB_OUTPUT; fi
+      - name: Cache share images
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .og-cache
+          key: og-${{ github.run_id }}
+          restore-keys: og-
       - name: Build
         if: steps.commit.outputs.changed == 'true'
         run: npm ci && npm run build
+        timeout-minutes: 40
       - name: Deploy to Cloudflare
         if: steps.commit.outputs.changed == 'true' && env.HAS_CF_TOKEN == 'true'
         env:

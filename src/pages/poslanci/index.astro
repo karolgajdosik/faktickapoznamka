@@ -1,7 +1,8 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
-import { mpTalk, fmtDur, excerpt, photo, mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
+import FollowButton from "../../components/FollowButton.astro";
+import { voteHeadline, voteContext, mpTalk, fmtDur, excerpt, photo, mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
 const data = mps.map((m) => {
   const s = mpStats(m.id);
   return {
@@ -10,7 +11,7 @@ const data = mps.map((m) => {
     talk: mpTalk(m.id).seconds, nsp: mpTalk(m.id).count, trank: mpTalk(m.id).rank,
     sp: mpTalk(m.id).recent.slice(-3).reverse().map((x) => ({ d: fmtShort(x.start), k: x.kind, t: excerpt(x.text || "Prepis zatiaľ nie je zverejnený.", 180), v: x.video })),
     att: s.attendance, loy: s.loyalty, nreb: s.rebels.length, rank: s.rankAttendance,
-    rebels: s.rebels.slice(-6).reverse().map((id) => { const v = voteById.get(id)!; return { id, d: fmtShort(v.datetime), t: shortTitle(v.title, 130), c: LABEL[v.votes[m.id]] }; }),
+    rebels: s.rebels.slice(-6).reverse().map((id) => { const v = voteById.get(id)!; return { id, d: fmtShort(v.datetime), t: shortTitle(voteHeadline(v), 110) + (voteContext(v) ? ` · ${shortTitle(voteContext(v)!, 80)}` : ""), c: LABEL[v.votes[m.id]] }; }),
   };
 });
 ---
@@ -58,6 +59,7 @@ const data = mps.map((m) => {
     <div id="card-body"></div>
   </dialog>
 
+  <div hidden><FollowButton id="" name="" /></div>
   <script type="application/json" id="mp-data" set:html={JSON.stringify(data)} />
   <script>
     type M = { talk: number; nsp: number; trank: number; sp: { d: string; k: string; t: string; v: string | null }[]; photo: string | null; id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
@@ -144,6 +146,9 @@ const data = mps.map((m) => {
             el("div", { className: "ttl", textContent: "Poslanec NR SR, IX. volebné obdobie" }),
             el("h2", { id: "card-name", textContent: m.name }),
             el("span", { className: "club" }, el("i"), m.club),
+            el("div", {}, el("span", { className: "follow-wrap" },
+              el("button", { type: "button", className: "follow", textContent: "Sledovať", ariaLabel: `Sledovať: ${m.name}` }, ),
+              el("a", { className: "rss", href: `/poslanci/${m.id}/rss.xml`, textContent: "RSS" }))),
             el("dl", { className: "facts" },
               fact("Tituly", m.title), fact("Narodený(á)", m.born ? `${m.born.slice(0, 4)}${m.age ? `, ${m.age} rokov` : ""}` : null),
               fact("Bydlisko", m.city), fact("Kraj", m.region), fact("Kandidoval(a) za", m.party)))),
@@ -161,8 +166,10 @@ const data = mps.map((m) => {
               : el("p", { className: "empty", textContent: m.club === "Nezaradení" ? "Nezaradený poslanec, súlad s klubom sa nepočíta." : "Zatiaľ vždy hlasoval(a) s väčšinou svojho klubu." })),
           el("p", {}, el("a", { className: "more", href: `/poslanci/${m.id}/`, textContent: "Celý profil a účasť podľa mesiacov" }))));
       body.style.setProperty("--club", m.color);
+      body.querySelector<HTMLButtonElement>(".follow")!.dataset.follow = m.id;
       document.getElementById("card-body")!.replaceChildren(body);
       dlg.showModal();
+      document.dispatchEvent(new Event("fp:sync-follow"));
       history.replaceState(null, "", `#${m.id}`);
     }
     dlg.addEventListener("close", () => history.replaceState(null, "", location.pathname));

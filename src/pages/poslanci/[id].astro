@@ -8,7 +8,7 @@ const { m } = Astro.props as { m: Mp };
 const s = mpStats(m.id);
 const history = votes.filter((v) => v.votes[m.id]).slice(0, 30);
 ---
-<Base title={m.name} description={`${m.name} (${m.club}): účasť na hlasovaniach ${pct(s.attendance)}, súlad s klubom ${pct(s.loyalty)}.`}>
+<Base index ogImage={`/og/poslanec/${m.id}.png`} title={m.name} description={`${m.name} (${m.club}): účasť na hlasovaniach ${pct(s.attendance)}, súlad s klubom ${pct(s.loyalty)}.`}>
   <MpCard m={m} />
   <div class="section-head"><h2>Posledné hlasovania</h2></div>
   <VoteList items={history} />

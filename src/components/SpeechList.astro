@@ -19,6 +19,7 @@ const { items, showDate = false, showSpeaker = true } = Astro.props;
           {x.kind && <span class="pill">{x.kind}</span>}
           {x.tlac && <span class="pill">tlač {x.tlac}</span>}
         </div>
+        {x.summary && <p class="sp-sum"><span class="ai" title="Zhrnutie vytvorila umelá inteligencia z prepisu NR SR. Môže obsahovať nepresnosti; rozhoduje prepis.">AI zhrnutie</span> {x.summary}</p>}
         {x.text ? <p class="sp-text">{excerpt(x.text, 260)}</p> : <p class="sp-text empty">Prepis zatiaľ nie je zverejnený (NR SR ho zverejňuje s oneskorením).</p>}
         <div class="sp-actions">
           {x.text && x.text.length > 260 && <button type="button" class="sp-more">Celý prepis</button>}

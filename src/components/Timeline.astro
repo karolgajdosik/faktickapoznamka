@@ -1,0 +1,19 @@
+---
+import VoteBar from "./VoteBar.astro";
+import { fmtTime, resultText, resultCls, shortTitle, voteHeadline, voteContext, type Vote } from "../lib/data";
+interface Props { items: Vote[] }
+const { items } = Astro.props;
+---
+<ol class="timeline">
+  {items.map((v) => { const ctx = voteContext(v); return (
+    <li class={resultCls(v)}>
+      <time datetime={v.datetime}>{fmtTime(v.datetime)}</time>
+      <span class="t">
+        <a href={`/hlasovania/${v.id}/`} title={v.title}>{shortTitle(voteHeadline(v), 160)}</a>
+        {ctx && <small class="ctx">{v.tlac ? <a href={`/zakony/${v.tlac}/`}>{shortTitle(ctx, 110)}</a> : shortTitle(ctx, 110)}</small>}
+      </span>
+      <VoteBar counts={v.counts} />
+      <span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
+    </li>
+  ); })}
+</ol>

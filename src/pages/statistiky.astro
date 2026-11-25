@@ -1,0 +1,95 @@
+---
+import Base from "../layouts/Base.astro";
+import VoteList from "../components/VoteList.astro";
+import Ava from "../components/Ava.astro";
+import { cohesion, agreement, agreementClubs, monthly, topTalkers, topFactual, speechTotals, closeVotes, failed } from "../lib/stats";
+import { votes, sessions, clubColor, pct, fmtDur, laws } from "../lib/data";
+const monthName = (m: string) => new Date(`${m}-15`).toLocaleDateString("sk-SK", { month: "short", year: "2-digit" });
+const maxN = Math.max(1, ...monthly.map((m) => m.n));
+const maxTalk = topTalkers[0]?.t.seconds || 1;
+const passedLaws = laws.filter((l) => l.status === "schválený").length;
+---
+<Base title="Štatistiky" description="Štatistiky NR SR v IX. volebnom období: súdržnosť klubov, zhoda klubov, účasť a rozprava.">
+  <h1>Štatistiky</h1>
+  <p class="meta-line">IX. volebné obdobie, od 25. 10. 2023. Metodika je na stránke <a href="/o-projekte/#metodika">O projekte</a>.</p>
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class="tile"><dt>Hlasovaní</dt><dd>{votes.length.toLocaleString("sk-SK")}</dd></div>
+    <div class="tile"><dt>Neschválených hlasovaní</dt><dd>{failed.toLocaleString("sk-SK")}</dd></div>
+    <div class="tile"><dt>Schválených zákonov a návrhov</dt><dd>{passedLaws}</dd></div>
+    <div class="tile"><dt>Schôdzí</dt><dd>{sessions.length}</dd></div>
+    <div class="tile"><dt>Vystúpení v rozprave</dt><dd>{speechTotals.count.toLocaleString("sk-SK")}</dd></div>
+    <div class="tile accent"><dt>Čas rozpravy</dt><dd>{fmtDur(speechTotals.seconds)}</dd></div>
+  </dl>
+
+  <div class="section-head"><h2>Hlasovania a účasť po mesiacoch</h2></div>
+  <section class="panel pad">
+    <p class="muted" style="margin-top:0;font-size:var(--step--1)">Výška stĺpca je počet hlasovaní v mesiaci. Ukážte na stĺpec pre priemernú účasť a podiel schválených.</p>
+    <div class="mchart" role="img" aria-label="Počet hlasovaní po mesiacoch">
+      {monthly.map((m) => (
+        <div class="mcol" tabindex="0" data-tip={`${monthName(m.month)}: ${m.n} hlasovaní, účasť ${pct(m.attendance)}, schválené ${pct(m.passed)}`}>
+          <span style={`height:${(m.n / maxN) * 100}%`}></span>
+        </div>
+      ))}
+    </div>
+    <div class="months-axis"><span>{monthName(monthly[0]?.month ?? "2023-10")}</span><span>{monthName(monthly[monthly.length - 1]?.month ?? "2023-10")}</span></div>
+    <details style="margin-top:1rem"><summary class="muted" style="cursor:pointer;font-size:var(--step--1)">Zobraziť ako tabuľku</summary>
+      <table style="margin-top:.5rem"><thead><tr><th>Mesiac</th><th class="n">Hlasovaní</th><th class="n">Priemerná účasť</th><th class="n">Schválené</th></tr></thead>
+      <tbody>{monthly.map((m) => <tr><td>{monthName(m.month)}</td><td class="n">{m.n}</td><td class="n">{pct(m.attendance)}</td><td class="n">{pct(m.passed)}</td></tr>)}</tbody></table>
+    </details>
+  </section>
+
+  <div class="grid-stats">
+    <section>
+      <div class="section-head"><h2>Súdržnosť klubov</h2></div>
+      <div class="panel pad">
+        <p class="muted" style="margin-top:0;font-size:var(--step--1)">Ako jednotne hlasujú poslanci klubu (index zhody: 100 % = všetci rovnako).</p>
+        <div class="clubbars">
+          {cohesion.map((c) => (
+            <div class="r" style={`--club:${clubColor(c.club)}`}>
+              <b><i aria-hidden="true"></i>{c.club}</b>
+              <span class="bar"><span style={`flex-grow:${c.value ?? 0};background:var(--club)`}></span><span style={`flex-grow:${1 - (c.value ?? 0)};background:transparent`}></span></span>
+              <span>{pct(c.value)}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section-head"><h2>Zhoda medzi klubmi</h2></div>
+      <div class="panel pad" style="overflow-x:auto">
+        <p class="muted" style="margin-top:0;font-size:var(--step--1)">Podiel hlasovaní, v ktorých väčšiny dvoch klubov hlasovali rovnako.</p>
+        <table class="matrix">
+          <thead><tr><th></th>{agreementClubs.map((c) => <th style={`--club:${clubColor(c)}`}><span>{c}</span></th>)}</tr></thead>
+          <tbody>{agreementClubs.map((a, i) => (
+            <tr><th style={`--club:${clubColor(a)}`}>{a}</th>{agreement[i].map((x, j) => (
+              <td style={i === j ? "" : `--a:${x ?? 0}`} class={i === j ? "self" : ""} title={i === j ? "" : `${a} a ${agreementClubs[j]}: ${pct(x)}`}>{i === j ? "" : pct(x)}</td>
+            ))}</tr>
+          ))}</tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  {topTalkers.length > 0 && (
+    <div class="grid-stats">
+      <section>
+        <div class="section-head"><h2>Najviac času pri rečníckom pulte</h2></div>
+        <div class="panel pad talkbars">
+          {topTalkers.map(({ m, t }) => <a href={`/poslanci/${m.id}/`} style={`--club:${clubColor(m.club)}`}><b>{m.name}</b><i style={`width:${Math.max(2, (t.seconds / maxTalk) * 100)}%`}></i><span>{fmtDur(t.seconds)}</span></a>)}
+        </div>
+      </section>
+      <section>
+        <div class="section-head"><h2>Najviac faktických poznámok</h2></div>
+        <div class="panel pad">
+          <ul class="mplist">{topFactual.map(({ m, t }) => (
+            <li><a href={`/poslanci/${m.id}/`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.4rem 0;text-decoration:none`}>
+              <Ava m={m} /><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{t.factual}<small>faktických</small></span></a></li>))}</ul>
+        </div>
+      </section>
+    </div>
+  )}
+
+  <div class="section-head"><h2>Najtesnejšie hlasovania</h2></div>
+  <p class="muted" style="margin-top:-.5rem;font-size:var(--step--1)">Rozhodlo najviac pár hlasov.</p>
+  <VoteList items={closeVotes} />
+</Base>

@@ -1,0 +1,36 @@
+---
+import Base from "../../layouts/Base.astro";
+import { laws, fmtShort, shortTitle, plural } from "../../lib/data";
+const kinds = [...new Set(laws.map((l) => l.kind))];
+---
+<Base title="Zákony a návrhy" description="Zákony a ďalšie návrhy v NR SR: priebeh čítaní, hlasovania a rozprava k jednotlivým tlačiam.">
+  <h1>Zákony a návrhy</h1>
+  <p class="meta-line">{laws.length} parlamentných tlačí s hlasovaním v IX. volebnom období. Pri každej je priebeh čítaní, všetky hlasovania a rozprava.</p>
+  <div class="filter-row">
+    <label class="sr-only" for="lq">Hľadať</label>
+    <input class="input" id="lq" type="search" placeholder="Názov alebo číslo tlače, napr. „rozpočet“ alebo „1448“" />
+    <label class="sr-only" for="lk">Typ</label>
+    <select class="select" id="lk"><option value="">Všetky typy</option>{kinds.map((k) => <option>{k}</option>)}</select>
+    <label class="sr-only" for="ls">Stav</label>
+    <select class="select" id="ls"><option value="">Každý stav</option><option value="schválený">Schválené</option><option value="neschválený">Neschválené</option><option value="v procese">V procese</option></select>
+  </div>
+  <ul class="laws" id="laws">
+    {laws.map((l) => (
+      <li data-k={l.kind} data-s={l.status} data-q={`${l.tlac} ${l.title}`.toLowerCase()}>
+        <a href={`/zakony/${l.tlac}/`}>
+          <span class="tl">tlač {l.tlac}</span>
+          <span class="tt">{shortTitle(l.title, 200)}</span>
+          <span class="tm">{l.kind}, {fmtShort(l.last)}, {l.votes.length} {plural(l.votes.length, "hlasovanie", "hlasovania", "hlasovaní")}{l.speeches.length > 0 && <>, {l.speeches.length} {plural(l.speeches.length, "vystúpenie", "vystúpenia", "vystúpení")}</>}</span>
+          <span class={`pill ${l.status === "schválený" ? "yes" : l.status === "neschválený" ? "no" : ""}`}>{l.status}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <script>
+    const q = document.getElementById("lq") as HTMLInputElement, k = document.getElementById("lk") as HTMLSelectElement, st = document.getElementById("ls") as HTMLSelectElement;
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    const rows = [...document.querySelectorAll<HTMLLIElement>("#laws li")].map((li) => ({ li, q: norm(li.dataset.q!) }));
+    function apply() { const t = norm(q.value.trim()); for (const r of rows) r.li.hidden = !((!t || r.q.includes(t)) && (!k.value || r.li.dataset.k === k.value) && (!st.value || r.li.dataset.s === st.value)); }
+    q.addEventListener("input", apply); k.addEventListener("change", apply); st.addEventListener("change", apply);
+  </script>
+</Base>

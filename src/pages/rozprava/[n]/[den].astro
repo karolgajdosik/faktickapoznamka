@@ -1,0 +1,39 @@
+---
+// Full transcript of one session day: the page Pagefind indexes for full-text search.
+import Base from "../../../layouts/Base.astro";
+import Ava from "../../../components/Ava.astro";
+import { speechesBySession, dayKey, fmtDay, fmtTime, fmtClock, fmtDur, mpById, speakerLabel, type Speech } from "../../../lib/data";
+export function getStaticPaths() {
+  const out = [];
+  for (const [n, list] of speechesBySession) {
+    const days = new Map<string, Speech[]>();
+    for (const x of list) { const d = dayKey(x.start); days.set(d, [...(days.get(d) ?? []), x]); }
+    for (const [den, items] of days) if (items.some((x) => x.text)) out.push({ params: { n: String(n), den }, props: { n, items } });
+  }
+  return out;
+}
+const { n, items } = Astro.props as { n: number; items: Speech[] };
+const total = items.reduce((a, x) => a + x.dur, 0);
+---
+<Base title={`Rozprava ${fmtDay(items[0].start)}, ${n}. schôdza`} description={`Prepis rozpravy NR SR, ${n}. schôdza, ${fmtDay(items[0].start)}: ${items.length} vystúpení.`} index>
+  <p class="meta-line"><a href={`/schodze/${n}/`}>{n}. schôdza</a></p>
+  <h1 data-pagefind-meta="title">Rozprava, {fmtDay(items[0].start)}</h1>
+  <p class="meta-line" data-pagefind-ignore>{items.length} vystúpení, {fmtDur(total)}. Prepisy zverejňuje NR SR; neautorizované časti môžu obsahovať chyby.</p>
+  <span data-pagefind-filter="typ" hidden>Prepis rozpravy</span>
+  <span data-pagefind-meta={`date:${items[0].start.slice(0, 10)}`} hidden></span>
+  <div class="transcript">
+    {items.map((x) => { const m = x.mpId ? mpById.get(x.mpId) : undefined; return (
+      <article id={x.id} class="tr">
+        <header>
+          {m ? <Ava m={m} /> : <span class="ava" aria-hidden="true">{speakerLabel(x).split(" ").map((p) => p[0]).slice(0, 2).join("")}</span>}
+          <div>
+            <h2>{m ? <a href={`/poslanci/${m.id}/`}>{speakerLabel(x)}</a> : speakerLabel(x)}</h2>
+            <small data-pagefind-ignore>{fmtTime(x.start)}, {fmtClock(x.dur)}{x.role && <>, {x.role}</>}{x.kind && <>, {x.kind}</>}{x.tlac && <>, <a href={`/zakony/${x.tlac}/`}>tlač {x.tlac}</a></>}{x.video && <>, <a href={x.video} target="_blank" rel="noopener">video</a></>}</small>
+          </div>
+        </header>
+        {x.summary && <p class="sp-sum" data-pagefind-ignore><span class="ai" title="Zhrnutie vytvorila umelá inteligencia z prepisu NR SR. Môže obsahovať nepresnosti; rozhoduje prepis.">AI zhrnutie</span> {x.summary}</p>}
+        {x.text ? x.text.split("\n").map((p) => <p>{p}</p>) : <p class="empty" data-pagefind-ignore>Prepis zatiaľ nie je zverejnený.</p>}
+      </article>
+    ); })}
+  </div>
+</Base>

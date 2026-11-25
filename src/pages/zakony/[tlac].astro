@@ -1,0 +1,49 @@
+---
+import Base from "../../layouts/Base.astro";
+import Timeline from "../../components/Timeline.astro";
+import SpeechList from "../../components/SpeechList.astro";
+import { laws, stageOf, fmtShort, fmtDate, fmtDur, mpById, clubColor, speakerLabel, CHAIR, resultText, type Law } from "../../lib/data";
+export function getStaticPaths() { return laws.map((l) => ({ params: { tlac: l.tlac }, props: { l } })); }
+const { l } = Astro.props as { l: Law };
+const stages = [
+  { key: "prvé", label: "Prvé čítanie" }, { key: "druhé", label: "Druhé čítanie" }, { key: "tretie", label: "Tretie čítanie" }, { key: null, label: "Ostatné hlasovania" },
+].map((s) => ({ ...s, votes: l.votes.filter((v) => stageOf(v) === s.key) })).filter((s) => s.votes.length);
+const real = l.speeches.filter((x) => x.kind !== CHAIR);
+const bySpeaker = new Map<string, { label: string; mpId?: string; sec: number }>();
+for (const x of real) { const e = bySpeaker.get(x.speaker) ?? { label: speakerLabel(x), mpId: x.mpId, sec: 0 }; e.sec += x.dur; bySpeaker.set(x.speaker, e); }
+const top = [...bySpeaker.values()].sort((a, b) => b.sec - a.sec).slice(0, 10);
+const maxSec = top[0]?.sec || 1;
+const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/cpt&ZakZborID=13&CisObdobia=9&ID=${l.tlac}`;
+---
+<Base title={`${l.title.slice(0, 110)} (tlač ${l.tlac})`} description={`Tlač ${l.tlac}: ${l.title.slice(0, 160)}. Stav: ${l.status}. ${l.votes.length} hlasovaní, ${real.length} vystúpení v rozprave.`} ogImage={`/og/zakon/${l.tlac}.png`} index>
+  <p class="meta-line"><a href="/zakony/">Zákony a návrhy</a>, tlač {l.tlac}, {l.kind}</p>
+  <h1 style="font-size:var(--step-2);max-width:62ch">{l.title}</h1>
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class={`tile ${l.status === "schválený" ? "accent" : ""}`}><dt>Stav v NR SR</dt><dd style={l.status === "schválený" ? "color:var(--za)" : l.status === "neschválený" ? "color:var(--proti)" : ""}>{l.status}</dd></div>
+    <div class="tile"><dt>Hlasovaní</dt><dd>{l.votes.length}</dd></div>
+    <div class="tile"><dt>Vystúpení v rozprave</dt><dd>{real.length}</dd></div>
+    <div class="tile"><dt>Čas rozpravy</dt><dd>{fmtDur(real.reduce((a, x) => a + x.dur, 0))}</dd></div>
+    <div class="tile"><dt>Prerokúvané</dt><dd style="font-size:var(--step-0)">{fmtShort(l.first)}{l.first.slice(0, 10) !== l.last.slice(0, 10) && <> – {fmtShort(l.last)}</>}</dd></div>
+  </dl>
+  {l.finalVote && <p class="meta-line" style="margin-top:1rem">Záverečné hlasovanie {fmtDate(l.finalVote.datetime)}: <a href={`/hlasovania/${l.finalVote.id}/`}>{resultText(l.finalVote).toLowerCase()}, za {l.finalVote.counts.Z}, proti {l.finalVote.counts.P}, zdržalo sa {l.finalVote.counts["?"]}</a>.</p>}
+
+  {stages.map((s) => (
+    <section>
+      <div class="section-head"><h2>{s.label}</h2><span class="muted" style="font-size:var(--step--1)">{s.votes.length} hlasovaní</span></div>
+      <Timeline items={s.votes} />
+    </section>
+  ))}
+
+  {top.length > 0 && (
+    <>
+      <div class="section-head"><h2>Najviac rečnili</h2></div>
+      <div class="panel pad talkbars">
+        {top.map((t) => { const m = t.mpId ? mpById.get(t.mpId) : undefined; return (
+          <a href={m ? `/poslanci/${m.id}/` : "#rozprava"} style={`--club:${m ? clubColor(m.club) : "var(--line-2)"}`}><b>{t.label}</b><i style={`width:${Math.max(2, (t.sec / maxSec) * 100)}%`}></i><span>{fmtDur(t.sec)}</span></a>); })}
+      </div>
+      <div class="section-head" id="rozprava"><h2>Rozprava</h2></div>
+      <SpeechList items={real} showDate />
+    </>
+  )}
+  <p><a class="more" href={nrsr} rel="noopener">Tlač {l.tlac} na nrsr.sk</a></p>
+</Base>

@@ -51,6 +51,12 @@ def parse_vote(html: str, vote_id: str) -> dict | None:
     counts = {c: 0 for c in ["Z", "P", "?", "N", "0"]}
     for c in votes.values(): counts[c] += 1
     title = _label(text, r"Názov hlasovania") or _label(text, r"Názov") or f"Hlasovanie {vote_id}"
+    # Lines between the title and "Výsledok hlasovania" say what exactly was voted on
+    # (e.g. "Hlasovanie o pozmeňujúcom návrhu zo spoločnej správy výborov - 1 bod").
+    detail = None
+    dm = re.search(r"Názov hlasovania\s*\n\s*[^\n]+\n(.*?)\n\s*Výsledok hlasovania", text, re.S)
+    if dm:
+        detail = " ".join(l.strip() for l in dm.group(1).split("\n") if l.strip()) or None
     res = (_label(text, r"Výsledok hlasovania") or "").lower()
     dt = _label(text, r"Dátum a čas") or _label(text, r"Dátum")
     tlac = re.search(r"tla[čc]\s*(\d+)", title, re.I)
@@ -60,6 +66,7 @@ def parse_vote(html: str, vote_id: str) -> dict | None:
         "number": _int(_label(text, r"Číslo hlasovania")),
         "datetime": parse_dt(dt),
         "title": title,
+        "detail": detail,
         "tlac": tlac.group(1) if tlac else None,
         "passed": True if "návrh prešiel" in res or "schválen" in res and "neschválen" not in res
                   else False if res else None,

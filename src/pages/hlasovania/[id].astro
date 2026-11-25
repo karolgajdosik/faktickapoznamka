@@ -2,7 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
 import Counts from "../../components/Counts.astro";
-import { votes, clubs, mpById, clubColor, CODES, LABEL, cls, fmtDate, fmtTime, resultText, resultCls, type Vote, type Code } from "../../lib/data";
+import { voteWhat, lawTitle, lawByTlac, votes, clubs, mpById, clubColor, CODES, LABEL, cls, fmtDate, fmtTime, resultText, resultCls, type Vote, type Code } from "../../lib/data";
 export function getStaticPaths() { return votes.map((v) => ({ params: { id: v.id }, props: { v } })); }
 const { v } = Astro.props as { v: Vote };
 const clubOf = (id: string) => v.clubs?.[id] ?? mpById.get(id)?.club ?? "";
@@ -13,9 +13,10 @@ const byClub = clubs.map((c) => {
 }).filter((c) => c.n > 0);
 const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=${v.id}`;
 ---
-<Base title={v.title} description={`${resultText(v)}: za ${v.counts.Z}, proti ${v.counts.P}, zdržalo sa ${v.counts["?"]}.`}>
+<Base title={`${voteWhat(v)} – ${lawTitle(v.title).slice(0, 90)}`} description={`${lawTitle(v.title)}. ${voteWhat(v)}: ${resultText(v).toLowerCase()} (za ${v.counts.Z}, proti ${v.counts.P}, zdržalo sa ${v.counts["?"]}).`} ogImage={`/og/hlasovanie/${v.id}.png`}>
   <p class="meta-line">{fmtDate(v.datetime)}, {fmtTime(v.datetime)}{v.session && <>, <a href={`/schodze/${v.session}/`}>{v.session}. schôdza</a></>}{v.number && <>, hlasovanie č. {v.number}</>}</p>
-  <h1 style="font-size:var(--step-2);max-width:60ch">{v.title}</h1>
+  <h1 style="font-size:var(--step-2);max-width:60ch">{voteWhat(v)}</h1>
+  <p class="lawline">{v.tlac && lawByTlac.has(v.tlac) ? <a href={`/zakony/${v.tlac}/`}>{v.title}</a> : v.title}</p>
   <div class="hero" style="margin-top:1.5rem">
     <div class="panel pad intro">
       <div>

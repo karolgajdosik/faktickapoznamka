@@ -5,7 +5,7 @@ export interface Mp {
 }
 export interface Vote {
   id: string; session: number | null; number: number | null; datetime: string;
-  title: string; tlac: string | null; passed: boolean | null;
+  title: string; detail?: string | null; tlac: string | null; passed: boolean | null;
   counts: Record<Code, number>; votes: Record<string, Code>; clubs?: Record<string, string>;
 }
 export interface Meta { demo: boolean; term: number; updatedAt: string }
@@ -47,13 +47,13 @@ export const clubs = (() => {
   return [...n.entries()].sort((a, b) => (a[0] === NEZ ? 1 : b[0] === NEZ ? -1 : b[1] - a[1]))
     .map(([name, size]) => ({ name, size }));
 })();
-// Neutral categorical palette assigned by club size (not party branding).
-const PALETTE = ["#6ea8fe", "#f4a261", "#5fd3b0", "#c3a6ff", "#f6d06f", "#ef8fb3", "#7fd4f5", "#b9c98a", "#e48f8f"];
-export const clubColor = (name: string) => {
-  if (name === NEZ) return "#9aa4b6";
-  const i = clubs.findIndex((c) => c.name === name);
-  return PALETTE[(i < 0 ? clubs.length : i) % PALETTE.length];
-};
+// Categorical palette assigned by club size (not party branding). Validated for colour-vision
+// deficiency and contrast in both modes (dataviz validator); CSS variables switch with the theme.
+export const CLUB_DARK = ["#338ced", "#e76624", "#00a888", "#d28e05", "#e24d8b", "#9887ef", "#0aac23"];
+export const CLUB_LIGHT = ["#257de0", "#f47230", "#00b894", "#f2a600", "#ee7fac", "#6a4ce2", "#008a17"];
+const clubIndex = (name: string) => { const i = clubs.findIndex((c) => c.name === name); return i < 0 ? clubs.length : i; };
+export const clubColor = (name: string) => (name === NEZ ? "var(--club-nez)" : `var(--club-${clubIndex(name) % CLUB_DARK.length})`);
+export const clubHex = (name: string) => (name === NEZ ? "#9aa4b6" : CLUB_DARK[clubIndex(name) % CLUB_DARK.length]);
 
 const clubOf = (v: Vote, id: string) => v.clubs?.[id] ?? mpById.get(id)?.club ?? "";
 
@@ -100,15 +100,36 @@ export const stats = new Map<string, MpStats>();
 })();
 export const mpStats = (id: string) => stats.get(id) ?? { total: 0, present: 0, attendance: null, loyalty: null, rebels: [], monthly: [], rankAttendance: 0 };
 
+/* ---------- vote labels ---------- */
+// "… (tlač 29) - tretie čítanie." / "… - druhé a tretie čítanie. Stanovisko NKÚ …"
+const STAGE_RE = /\s*[-–]\s*((?:prvé|druhé|tretie)(?:\s+a\s+(?:druhé|tretie))?)\s+čítanie\b.*$/is;
+/** reading stage from the title (the last one named): "prvé" | "druhé" | "tretie" | null */
+export const stageOf = (v: Vote) => { const m = v.title.match(STAGE_RE); return (m ? m[1].toLowerCase().split(/\s+a\s+/).pop() : null) as "prvé" | "druhé" | "tretie" | null; };
+/** Law/agenda title without "(tlač N)" and the reading stage. */
+export const lawTitle = (t: string) => t.replace(STAGE_RE, "").replace(/\s*\(tl\.?\s*\d+\)|\s*\(tlač\s*\d+\)/gi, "").replace(/\.\s*$/, "").trim();
+/** What exactly was voted on — the detail line if known, else a reading-based label. */
+export function voteWhat(v: Vote) {
+  if (v.detail) return v.detail.replace(/\s+-\s+/g, " – ");
+  const st = stageOf(v);
+  return st ? `Hlasovanie v ${st === "prvé" ? "prvom" : st === "druhé" ? "druhom" : "treťom"} čítaní` : lawTitle(v.title);
+}
+/** One-line label for lists: detail first, law name second. */
+export const voteHeadline = (v: Vote) => (v.detail || stageOf(v) ? voteWhat(v) : lawTitle(v.title));
+export const voteContext = (v: Vote) => (v.detail || stageOf(v) ? lawTitle(v.title) : null);
+export const isFinal = (v: Vote) => /celk|celok/i.test(v.detail ?? "") || (!v.detail && stageOf(v) === "tretie");
+
 /* ---------- debate (speeches) ---------- */
 export interface Speech { id: string; start: string; end: string; dur: number; session: number | null; day: number | null;
-  tlac: string | null; speaker: string; role: string; kind: string; video: string | null; text: string; mpId?: string }
+  tlac: string | null; speaker: string; role: string; kind: string; video: string | null; text: string; mpId?: string; summary?: string | null }
+import summariesJson from "../../data/summaries.json";
+const summaries = summariesJson as Record<string, { s: string | null; at: string }>;
+export const summaryModel = (summariesJson as any)._meta?.model ?? null;
 const speechFiles = import.meta.glob<{ default: Speech[] }>("../../data/speeches/*.json", { eager: true });
 const keyName = (s: string) => s.replace(",", "").normalize("NFC").replace(/\s+/g, " ").trim().toLowerCase();
 const mpByKey = new Map(mpList.map((m) => [keyName(m.sortName), m.id]));
 export const CHAIR = "Vstup predsedajúceho";
 export const speeches: Speech[] = Object.values(speechFiles).flatMap((m) => m.default)
-  .map((x) => ({ ...x, mpId: mpByKey.get(keyName(x.speaker)) }))
+  .map((x) => ({ ...x, mpId: mpByKey.get(keyName(x.speaker)), summary: summaries[x.id]?.s ?? null }))
   .sort((a, b) => a.start.localeCompare(b.start));
 export const speechesBySession = new Map<number, Speech[]>();
 for (const x of speeches) if (x.session != null) speechesBySession.set(x.session, [...(speechesBySession.get(x.session) ?? []), x]);
@@ -132,6 +153,27 @@ export const fmtDur = (sec: number) => {
 export const fmtClock = (sec: number) => `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`;
 export const excerpt = (t: string, n = 220) => (t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "") + "…" : t);
 export const speakerLabel = (x: Speech) => { const [last, first] = x.speaker.split(",").map((p) => p.trim()); return first ? `${first} ${last}` : x.speaker; };
+
+/* ---------- laws (parliamentary prints, "tlače") ---------- */
+export interface Law { tlac: string; title: string; kind: string; votes: Vote[]; speeches: Speech[]; first: string; last: string;
+  status: "schválený" | "neschválený" | "v procese"; finalVote: Vote | null }
+const kindOf = (t: string) => /^vládny/i.test(t) ? "Vládny návrh" : /^návrh posl/i.test(t) ? "Poslanecký návrh" : /výbor/i.test(t) ? "Návrh výboru" : /^návrh na voľbu|voľb/i.test(t) ? "Voľba" : /správa|informácia/i.test(t) ? "Správa" : "Iný návrh";
+export const laws: Law[] = (() => {
+  const by = new Map<string, { votes: Vote[]; speeches: Speech[] }>();
+  for (const v of votes) if (v.tlac) { const e = by.get(v.tlac) ?? { votes: [], speeches: [] }; e.votes.push(v); by.set(v.tlac, e); }
+  for (const x of speeches) if (x.tlac && by.has(x.tlac)) by.get(x.tlac)!.speeches.push(x);
+  return [...by.entries()].map(([tlac, e]) => {
+    const vs = e.votes.slice().sort((a, b) => a.datetime.localeCompare(b.datetime));
+    const titles = new Map<string, number>(); for (const v of vs) { const t = lawTitle(v.title); titles.set(t, (titles.get(t) ?? 0) + 1); }
+    const title = [...titles.entries()].sort((a, b) => b[1] - a[1])[0][0];
+    const finals = vs.filter(isFinal);
+    const finalVote = finals[finals.length - 1] ?? null;
+    const status = finalVote ? (finalVote.passed ? "schválený" : "neschválený") : vs.some((v) => v.passed === false && stageOf(v) === "prvé") && !vs.some((v) => stageOf(v) === "druhé") ? "neschválený" : "v procese";
+    const all = [...vs.map((v) => v.datetime), ...e.speeches.map((x) => x.start)].sort();
+    return { tlac, title, kind: kindOf(title), votes: vs, speeches: e.speeches, first: all[0], last: all[all.length - 1], status, finalVote } as Law;
+  }).sort((a, b) => b.last.localeCompare(a.last));
+})();
+export const lawByTlac = new Map(laws.map((l) => [l.tlac, l]));
 
 /* ---------- sessions ---------- */
 export interface Session { n: number; votes: Vote[]; days: string[]; from: string; to: string; passed: number; failed: number; attendance: number }

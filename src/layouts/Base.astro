@@ -3,11 +3,11 @@ import "@fontsource-variable/public-sans";
 import "../styles/global.css";
 import { meta, live } from "../lib/data";
 import { versionInfo } from "../lib/build";
-interface Props { title?: string; description?: string; wide?: boolean }
-const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false } = Astro.props;
+interface Props { title?: string; description?: string; wide?: boolean; ogImage?: string; index?: boolean }
+const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false, ogImage = "/og/default.png", index = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
-const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/", "Hlasovania"], ["/o-projekte/", "O projekte"]];
+const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/hlasovania/", "Hlasovania"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
 <html lang="sk">
@@ -19,6 +19,14 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
   <meta property="og:title" content={full} />
   <meta property="og:description" content={description} />
   <meta property="og:locale" content="sk_SK" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="faktická poznámka" />
+  <meta property="og:url" content={new URL(path, "https://faktickapoznamka.sk")} />
+  <meta property="og:image" content={new URL(ogImage, "https://faktickapoznamka.sk")} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="alternate" type="application/rss+xml" title="faktická poznámka – hlasovania" href="/rss.xml" />
   <meta name="theme-color" content="#0c111d" />
   <link rel="canonical" href={new URL(path, "https://faktickapoznamka.sk")} />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -48,7 +56,7 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
     <div class:list={["wrap", { "wide-wrap": wide }]}><strong>Na programe NR SR:</strong> {live.item} <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
   </div>
   {meta.demo && <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené.</div></div>}
-  <main id="obsah" class:list={["wrap", { "wide-wrap": wide }]}><slot /></main>
+  <main id="obsah" class:list={["wrap", { "wide-wrap": wide }]} data-pagefind-body={index ? "" : undefined}><slot /></main>
   <div class="upd-bar" id="update" role="status" aria-live="polite" hidden>
     <span>Je k dispozícii nová verzia stránky.</span>
     <button type="button" class="btn" id="update-reload">Obnoviť</button>
