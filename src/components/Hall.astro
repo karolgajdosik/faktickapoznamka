@@ -1,7 +1,7 @@
 ---
 // The plenary hall: one seat per MP, ring = club colour, fill = vote (vote mode).
 // Clubs fill the hemicycle left→right by size (neutral, not political left/right).
-import { clubs, mps as current, mpById, clubColor, initials, LABEL, cls, type Code, type Mp } from "../lib/data";
+import { clubs, mps as current, mpById, clubColor, initials, photo, LABEL, cls, type Code, type Mp } from "../lib/data";
 interface Props { votes?: Record<string, Code>; clubsAt?: Record<string, string>; id?: string; intro?: boolean; label?: string }
 const { votes, clubsAt, id = "hall", intro = false, label = "Sála Národnej rady SR" } = Astro.props;
 
@@ -54,7 +54,9 @@ const R = Math.min(17, (RO * (1 - RI) / (rows - 1)) * 0.43);
            data-id={m.id} data-name={m.name} data-club={club} data-vote={c ? LABEL[c] : ""} tabindex="0" role="link"
            aria-label={`${m.name}, ${club}${c ? `: ${LABEL[c].toLowerCase()}` : ""}`}>
           <circle r={R.toFixed(1)} />
-          <text>{initials(m)}</text>
+          {photo(m.id) && !votes
+            ? <image href={photo(m.id)!} x={(-R + 2.2).toFixed(1)} y={(-R + 2.2).toFixed(1)} width={(2 * R - 4.4).toFixed(1)} height={(2 * R - 4.4).toFixed(1)} preserveAspectRatio="xMidYMid slice" />
+            : <text>{initials(m)}</text>}
         </g>
       );
     })}

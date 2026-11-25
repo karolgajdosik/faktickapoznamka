@@ -1,11 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
-import { mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
+import { photo, mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
 const data = mps.map((m) => {
   const s = mpStats(m.id);
   return {
-    id: m.id, name: m.name, sort: m.sortName, club: m.club, color: clubColor(m.club), ini: initials(m),
+    id: m.id, name: m.name, sort: m.sortName, club: m.club, color: clubColor(m.club), ini: initials(m), photo: photo(m.id),
     title: m.title ?? null, born: m.born ?? null, age: age(m.born), city: m.city ?? null, region: m.region ?? null, party: m.party ?? null,
     att: s.attendance, loy: s.loyalty, nreb: s.rebels.length, rank: s.rankAttendance,
     rebels: s.rebels.slice(-6).reverse().map((id) => { const v = voteById.get(id)!; return { id, d: fmtShort(v.datetime), t: shortTitle(v.title, 130), c: LABEL[v.votes[m.id]] }; }),
@@ -56,7 +56,7 @@ const data = mps.map((m) => {
 
   <script type="application/json" id="mp-data" set:html={JSON.stringify(data)} />
   <script>
-    type M = { id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
+    type M = { photo: string | null; id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
       city: string | null; region: string | null; party: string | null; att: number | null; loy: number | null; nreb: number; rank: number;
       rebels: { id: string; d: string; t: string; c: string }[] };
     const all: M[] = JSON.parse(document.getElementById("mp-data")!.textContent!);
@@ -67,6 +67,11 @@ const data = mps.map((m) => {
     const chips = [...document.querySelectorAll<HTMLButtonElement>(".chip")];
     const pct = (x: number | null) => { if (x === null) return "–"; const v = x * 100; return (v > 99 && v < 100) || (v > 0 && v < 1) ? `${v.toFixed(1).replace(".", ",")} %` : `${Math.round(v)} %`; };
     const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    const ava = (m: M, xl = false) => {
+      const a = el("span", { className: `ava${xl ? " xl" : ""}${m.photo ? " img" : ""}`, ariaHidden: "true" });
+      if (m.photo) a.append(el("img", { src: m.photo, alt: "", loading: "lazy" })); else a.textContent = m.ini;
+      return a;
+    };
     const el = (tag: string, props: Record<string, any> = {}, ...kids: (Node | string | null)[]) => {
       const e = document.createElement(tag); Object.assign(e, props);
       for (const k of kids) if (k != null) e.append(k);
@@ -89,7 +94,7 @@ const data = mps.map((m) => {
         const [val, lab] = metric(m);
         const sub = [m.age ? `${m.age} r.` : null, m.city, m.region ? `${m.region} kraj` : null].filter(Boolean).join(", ");
         const btn = el("button", { type: "button" },
-          el("span", { className: "ava", textContent: m.ini, ariaHidden: "true" }),
+          ava(m),
           el("span", {}, el("span", { className: "nm", textContent: m.name }), el("span", { className: "cl", textContent: m.club }), sub ? el("span", { className: "sub", textContent: sub }) : null),
           el("span", { className: "val" }, val, el("small", { textContent: lab })));
         btn.style.setProperty("--club", m.color);
@@ -128,7 +133,7 @@ const data = mps.map((m) => {
       const tile = (k: string, v: string, extra?: string, accent = false) => el("div", { className: accent ? "tile accent" : "tile" }, el("dt", { textContent: k }), el("dd", {}, v, extra ? el("small", { textContent: extra }) : null));
       const body = el("article", {},
         el("header", { className: "card-head" },
-          el("div", { className: "ava xl", textContent: m.ini, ariaHidden: "true" }),
+          ava(m, true),
           el("div", {},
             el("div", { className: "ttl", textContent: "Poslanec NR SR, IX. volebné obdobie" }),
             el("h2", { id: "card-name", textContent: m.name }),

@@ -1,0 +1,9 @@
+---
+import { photo, initials, clubColor, type Mp } from "../lib/data";
+interface Props { m: Mp; size?: "md" | "xl"; club?: string }
+const { m, size = "md", club } = Astro.props;
+const src = photo(m.id);
+---
+<span class:list={["ava", { xl: size === "xl", img: !!src }]} style={`--club:${clubColor(club ?? m.club)}`} aria-hidden="true">
+  {src ? <img src={src} alt="" loading="lazy" width="120" height="120" /> : initials(m)}
+</span>

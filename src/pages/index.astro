@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Hall from "../components/Hall.astro";
+import Ava from "../components/Ava.astro";
 import VoteBar from "../components/VoteBar.astro";
 import SessionCard from "../components/SessionCard.astro";
 import { votes, sessions, mps, mpStats, clubColor, initials, pct, fmtDate, fmtTime, fmtDay, dayKey, resultText, resultCls, shortTitle, CODES, LABEL, cls } from "../lib/data";
@@ -59,13 +60,13 @@ const rebels = ranked((id) => mpStats(id).rebels.length);
           <h3 style="font-size:var(--step-0)">Najnižšia účasť na hlasovaniach</h3>
           <ul class="mplist">{lowAtt.map((m) => (
             <li><a href={`/poslanci/#${m.id}`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.45rem 0;text-decoration:none`}>
-              <span class="ava" aria-hidden="true">{initials(m)}</span><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{pct(mpStats(m.id).attendance)}</span></a></li>))}</ul>
+              <Ava m={m} /><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{pct(mpStats(m.id).attendance)}</span></a></li>))}</ul>
         </section>
         <section class="panel pad">
           <h3 style="font-size:var(--step-0)">Najčastejšie hlasujú inak ako ich klub</h3>
           <ul class="mplist">{rebels.map((m) => (
             <li><a href={`/poslanci/#${m.id}`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.45rem 0;text-decoration:none`}>
-              <span class="ava" aria-hidden="true">{initials(m)}</span><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{mpStats(m.id).rebels.length}<small>hlasovaní</small></span></a></li>))}</ul>
+              <Ava m={m} /><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{mpStats(m.id).rebels.length}<small>hlasovaní</small></span></a></li>))}</ul>
         </section>
       </div>
 

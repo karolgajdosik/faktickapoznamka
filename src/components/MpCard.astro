@@ -1,5 +1,6 @@
 ---
 // Server-rendered MP card (profile page). The Sála modal renders the same structure client-side.
+import Ava from "./Ava.astro";
 import { mpStats, clubColor, initials, age, pct, voteById, fmtShort, shortTitle, mps, LABEL, cls, type Mp } from "../lib/data";
 interface Props { m: Mp }
 const { m } = Astro.props;
@@ -10,7 +11,7 @@ const months = s.monthly.slice(-24);
 ---
 <article class="panel" style={`--club:${clubColor(m.club)};overflow:hidden`}>
   <header class="card-head">
-    <div class="ava xl" aria-hidden="true">{initials(m)}</div>
+    <Ava m={m} size="xl" />
     <div>
       <div class="ttl">Poslanec NR SR, IX. volebné obdobie</div>
       <h1 style="margin:.1rem 0 .35rem">{m.name}</h1>

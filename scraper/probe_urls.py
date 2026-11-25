@@ -8,7 +8,7 @@ import nrsr
 out = pathlib.Path("probe"); out.mkdir(exist_ok=True)
 follow = os.environ.get("FOLLOW")
 report = []
-for arg in sys.argv[1:]:
+for arg in (sys.argv[1:] or os.environ.get("URLS", "").split()):
     name, url = arg.split("=", 1)
     r = nrsr.get(url=url)
     (out / f"{name}.html").write_text(r.text, encoding="utf-8")

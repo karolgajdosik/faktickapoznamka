@@ -16,6 +16,10 @@ import liveJson from "../../data/live.json";
 const voteFiles = import.meta.glob<{ default: Vote }>("../../data/votes/*.json", { eager: true });
 
 export const meta = metaJson as Meta;
+// Photos are supplied by the site owner into public/foto/<id>.jpg (see public/foto/README.md).
+const photoFiles = import.meta.glob("../../public/foto/*.jpg", { eager: false });
+const photoIds = new Set(Object.keys(photoFiles).map((p) => p.split("/").pop()!.replace(/\.jpg$/, "")));
+export const photo = (id: string) => (photoIds.has(id) ? `/foto/${id}.jpg` : null);
 export const live = liveJson as { item: string | null; since: string | null };
 export const CODES: Code[] = ["Z", "P", "?", "N", "0"];
 export const LABEL: Record<Code, string> = { Z: "Za", P: "Proti", "?": "Zdržal sa", N: "Nehlasoval", "0": "Neprítomný" };
