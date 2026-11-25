@@ -12,7 +12,7 @@ const kinds = [...new Set(laws.map((l) => l.kind))];
     <label class="sr-only" for="lk">Typ</label>
     <select class="select" id="lk"><option value="">Všetky typy</option>{kinds.map((k) => <option>{k}</option>)}</select>
     <label class="sr-only" for="ls">Stav</label>
-    <select class="select" id="ls"><option value="">Každý stav</option><option value="schválený">Schválené</option><option value="neschválený">Neschválené</option><option value="v procese">V procese</option></select>
+    <select class="select" id="ls"><option value="">Každý stav</option><option value="schválený">Schválené</option><option value="neschválený">Neschválené</option><option value="v procese">V procese</option><option value="bez záverečného hlasovania">Bez záverečného hlasovania</option></select>
   </div>
   <ul class="laws" id="laws">
     {laws.map((l) => (

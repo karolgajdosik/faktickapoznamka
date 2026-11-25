@@ -156,7 +156,8 @@ export const speakerLabel = (x: Speech) => { const [last, first] = x.speaker.spl
 
 /* ---------- laws (parliamentary prints, "tlače") ---------- */
 export interface Law { tlac: string; title: string; kind: string; votes: Vote[]; speeches: Speech[]; first: string; last: string;
-  status: "schválený" | "neschválený" | "v procese"; finalVote: Vote | null }
+  status: LawStatus; finalVote: Vote | null }
+export type LawStatus = "schválený" | "neschválený" | "v procese" | "bez záverečného hlasovania";
 const kindOf = (t: string) => /^vládny/i.test(t) ? "Vládny návrh" : /^návrh posl/i.test(t) ? "Poslanecký návrh" : /výbor/i.test(t) ? "Návrh výboru" : /^návrh na voľbu|voľb/i.test(t) ? "Voľba" : /správa|informácia/i.test(t) ? "Správa" : "Iný návrh";
 export const laws: Law[] = (() => {
   const by = new Map<string, { votes: Vote[]; speeches: Speech[] }>();
@@ -168,7 +169,16 @@ export const laws: Law[] = (() => {
     const title = [...titles.entries()].sort((a, b) => b[1] - a[1])[0][0];
     const finals = vs.filter(isFinal);
     const finalVote = finals[finals.length - 1] ?? null;
-    const status = finalVote ? (finalVote.passed ? "schválený" : "neschválený") : vs.some((v) => v.passed === false && stageOf(v) === "prvé") && !vs.some((v) => stageOf(v) === "druhé") ? "neschválený" : "v procese";
+    const lastVote = vs[vs.length - 1];
+    const lastAct = [...vs.map((v) => v.datetime), ...e.speeches.map((x) => x.start)].sort().pop()!;
+    const age = Date.now() - Date.parse(lastAct);
+    const staged = vs.some((v) => stageOf(v));
+    let status: LawStatus;
+    if (finalVote) status = finalVote.passed ? "schválený" : "neschválený";
+    else if (!staged) status = lastVote.passed ? "schválený" : lastVote.passed === false ? "neschválený" : "bez záverečného hlasovania"; // resolutions, elections, reports
+    else if (age > 14 * 864e5 && stageOf(lastVote) === "prvé" && lastVote.passed === false && !vs.some((v) => stageOf(v) !== "prvé" && stageOf(v))) status = "neschválený"; // stopped in 1st reading
+    else if (age < 90 * 864e5) status = "v procese";
+    else status = "bez záverečného hlasovania";
     const all = [...vs.map((v) => v.datetime), ...e.speeches.map((x) => x.start)].sort();
     return { tlac, title, kind: kindOf(title), votes: vs, speeches: e.speeches, first: all[0], last: all[all.length - 1], status, finalVote } as Law;
   }).sort((a, b) => b.last.localeCompare(a.last));
