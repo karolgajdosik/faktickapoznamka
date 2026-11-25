@@ -17,6 +17,7 @@ def save(mps: dict, meta: dict):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--start", type=int); ap.add_argument("--max", type=int, default=400)
+    ap.add_argument("--misses", type=int, default=MISS_LIMIT)
     a = ap.parse_args()
     meta = json.loads((DATA / "meta.json").read_text())
     if meta.get("demo"):
@@ -34,7 +35,7 @@ def main():
     if item != old.get("item"):  # write only on change to keep commits (and deploys) rare
         (DATA / "live.json").write_text(json.dumps({"item": item, "since": now}, ensure_ascii=False, indent=1))
     vid, misses, saved = start, 0, 0
-    while misses < MISS_LIMIT and saved < a.max:
+    while misses < a.misses and saved < a.max:
         r = nrsr.get({"sid": "schodze/hlasovanie/hlasklub", "ID": vid})
         v = parse.parse_vote(r.text, str(vid)) if r.ok else None
         if not r.ok and nrsr.is_challenge(r.url, r.text): sys.exit("Blocked by nrsr.sk bot check, stopping")
