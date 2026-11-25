@@ -49,6 +49,8 @@ def main():
             if saved % 50 == 0: save(mps, meta)  # checkpoint in case the job is cut off
         else:
             misses += 1
+            why = "bot-check" if nrsr.is_challenge(r.url, r.text) else f"HTTP {r.status_code}, ok={r.ok}, {len(r.text)} B, PoslanecID links={r.text.count('PoslanecID=')}"
+            print(f"{vid}: skip ({why})", flush=True)
         vid += 1
     save(mps, meta)
     print(f"saved {saved} votes, last {meta.get('lastVoteId')}")
