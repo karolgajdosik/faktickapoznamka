@@ -321,3 +321,11 @@ details.day[open] > summary::before { transform: rotate(90deg); }
 .talkbars a i { display: block; height: .7rem; border-radius: 999px; background: var(--club); }
 .talkbars a span { text-align: right; color: var(--muted); font-size: var(--step--2); }
 @media (max-width: 40rem) { .talkbars a { grid-template-columns: 8rem 1fr 4rem; } .speeches > li { grid-template-columns: 1fr; gap: .4rem; } .sp-time { flex-direction: row; gap: .6rem; } }
+
+/* hall sizing: never taller than the viewport, centred on wide screens */
+.wide-wrap { max-width: 112rem !important; }
+.stage { display: flex; flex-direction: column; }
+.stage .hall { width: 100%; max-width: calc((100vh - 15rem) * 1000 / 560); min-width: 0; margin: 0 auto; }
+.stage .legend { justify-content: center; }
+.latest .hall { max-width: calc((100vh - 18rem) * 1000 / 560); margin: 0 auto; }
+@media (min-width: 100rem) { .sala { grid-template-columns: 26rem minmax(0, 1fr); } }

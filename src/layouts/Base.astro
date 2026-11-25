@@ -26,7 +26,7 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
 <body>
   <a class="skip" href="#obsah">Preskočiť na obsah</a>
   <header class="site">
-    <div class="wrap head" style={wide ? "max-width:none" : undefined}>
+    <div class:list={["wrap head", { "wide-wrap": wide }]}>
       <a href="/" class="brand" aria-label="faktická poznámka, úvod">
         <span class="timer" aria-hidden="true">2:00</span>
         <span class="word">faktická poznámka</span>
@@ -39,10 +39,10 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
     </div>
   </header>
   <div id="live" class="live" hidden data-since={live.item ? live.since : ""}>
-    <div class="wrap" style={wide ? "max-width:none" : undefined}><strong>Na programe NR SR:</strong> {live.item} <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
+    <div class:list={["wrap", { "wide-wrap": wide }]}><strong>Na programe NR SR:</strong> {live.item} <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
   </div>
   {meta.demo && <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené.</div></div>}
-  <main id="obsah" class="wrap" style={wide ? "max-width:none" : undefined}><slot /></main>
+  <main id="obsah" class:list={["wrap", { "wide-wrap": wide }]}><slot /></main>
   <footer class="site">
     <div class="wrap">
       <p>Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Zdroj dát: <a href="https://www.nrsr.sk/">nrsr.sk</a>. Kód a dáta: <a href="https://github.com/karolgajdosik/faktickapoznamka">GitHub</a>.</p>
