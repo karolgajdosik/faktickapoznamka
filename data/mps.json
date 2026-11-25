@@ -1443,361 +1443,721 @@
   "id": "962",
   "name": "Simona Petrík",
   "sortName": "Petrík Simona",
-  "club": "PS"
+  "club": "PS",
+  "title": "Mgr.",
+  "party": "Progresívne Slovensko",
+  "born": "1982-11-10",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:27.703005+00:00"
  },
  {
   "id": "1116",
   "name": "Lucia Plaváková",
   "sortName": "Plaváková Lucia",
-  "club": "PS"
+  "club": "PS",
+  "title": "JUDr., PhD.",
+  "party": "Progresívne Slovensko",
+  "born": "1984-03-09",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:29.772470+00:00"
  },
  {
   "id": "1194",
   "name": "Zuzana Plevíková",
   "sortName": "Plevíková Zuzana",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Mgr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1990-11-18",
+  "city": "Hôrka nad Váhom",
+  "region": "Trenčiansky",
+  "profileAt": "2026-11-25T17:25:31.732374+00:00"
  },
  {
   "id": "685",
   "name": "Ján Podmanický",
   "sortName": "Podmanický Ján",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "JUDr. PhDr., PhD.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1977-05-17",
+  "city": "Stará Bystrica",
+  "region": "Žilinský",
+  "profileAt": "2026-11-25T17:25:33.763524+00:00"
  },
  {
   "id": "1088",
   "name": "Peter Pollák",
   "sortName": "Pollák Peter",
-  "club": "SLOVENSKO - ZA ĽUDÍ"
+  "club": "SLOVENSKO - ZA ĽUDÍ",
+  "title": "Mgr.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1991-06-25",
+  "city": "Levoča",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T17:25:35.730532+00:00"
  },
  {
   "id": "1131",
   "name": "Ondrej Prostredník",
   "sortName": "Prostredník Ondrej",
-  "club": "PS"
+  "club": "PS",
+  "title": "doc. Mgr., PhD.",
+  "party": "Progresívne Slovensko",
+  "born": "1963-05-11",
+  "city": "Pezinok",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:37.737806+00:00"
  },
  {
   "id": "1054",
   "name": "Jozef Pročko",
   "sortName": "Pročko Jozef",
-  "club": "SLOVENSKO - ZA ĽUDÍ"
+  "club": "SLOVENSKO - ZA ĽUDÍ",
+  "title": "Mgr.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1965-03-13",
+  "city": "Halič",
+  "region": "Banskobystrický",
+  "profileAt": "2026-11-25T17:25:39.738876+00:00"
  },
  {
   "id": "879",
   "name": "Róbert Puci",
   "sortName": "Puci Róbert",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "Ing.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1973-06-13",
+  "city": "Trebišov",
+  "region": "Košický kraj",
+  "profileAt": "2026-11-25T17:25:41.750316+00:00"
  },
  {
   "id": "1208",
   "name": "Paula Puškárová",
   "sortName": "Puškárová Paula",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "doc. Ing. Dis. art., PhD.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1985-03-06",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:43.734853+00:00"
  },
  {
   "id": "1220",
   "name": "Miroslav Radačovský",
   "sortName": "Radačovský Miroslav",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": null,
+  "party": "Slovenská národná strana",
+  "born": "1953-09-24",
+  "city": "Hnilec",
+  "region": "Košický",
+  "profileAt": "2026-11-25T17:25:45.721898+00:00"
  },
  {
   "id": "761",
   "name": "Richard Raši",
   "sortName": "Raši Richard",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "MUDr., PhD., MPH",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1971-04-02",
+  "city": "Košice",
+  "region": "Košický",
+  "profileAt": "2026-11-25T17:25:47.743162+00:00"
  },
  {
   "id": "905",
   "name": "Veronika Remišová",
   "sortName": "Remišová Veronika",
-  "club": "SLOVENSKO - ZA ĽUDÍ"
+  "club": "SLOVENSKO - ZA ĽUDÍ",
+  "title": "Mgr. art., M.A., ArtD.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1976-05-31",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:49.738274+00:00"
  },
  {
   "id": "689",
   "name": "Ján Richter",
   "sortName": "Richter Ján",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "JUDr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1956-10-05",
+  "city": "Nitra",
+  "region": "Nitriansky",
+  "profileAt": "2026-11-25T17:25:51.736677+00:00"
  },
  {
   "id": "1120",
   "name": "Michal Sabo",
   "sortName": "Sabo Michal",
-  "club": "PS"
+  "club": "PS",
+  "title": "Mgr.",
+  "party": "Progresívne Slovensko",
+  "born": "1982-09-10",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:53.693939+00:00"
  },
  {
   "id": "941",
   "name": "Denisa Saková",
   "sortName": "Saková Denisa",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing., PhD.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1976-04-17",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:55.712645+00:00"
  },
  {
   "id": "762",
   "name": "Marián Saloň",
   "sortName": "Saloň Marián",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Ing., PhD.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1977-06-09",
+  "city": "Stará Ľubovňa",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T17:25:57.737454+00:00"
  },
  {
   "id": "1163",
   "name": "Justín Sedlák",
   "sortName": "Sedlák Justín",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "JUDr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1955-01-14",
+  "city": "Pezinok",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:25:59.718839+00:00"
  },
  {
   "id": "1191",
   "name": "Andrej Sitkár",
   "sortName": "Sitkár Andrej",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Ing.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1970-06-17",
+  "city": "Košice",
+  "region": "Košický",
+  "profileAt": "2026-11-25T17:26:01.714741+00:00"
  },
  {
   "id": "1197",
   "name": "Peter Slyško",
   "sortName": "Slyško Peter",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": null,
+  "party": "HLAS – sociálna demokracia",
+  "born": "1983-10-01",
+  "city": "Rajecké Teplice",
+  "region": "Žilinský",
+  "profileAt": "2026-11-25T17:26:03.734413+00:00"
  },
  {
   "id": "1162",
   "name": "Jozef Smatana",
   "sortName": "Smatana Jozef",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1962-12-26",
+  "city": "Považská Bystrica",
+  "region": "Trenčiansky",
+  "profileAt": "2026-11-25T17:26:05.717780+00:00"
  },
  {
   "id": "1206",
   "name": "Peter Sokol",
   "sortName": "Sokol Peter",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Ing.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1959-04-27",
+  "city": "Stará Ľubovňa",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T17:26:07.704031+00:00"
  },
  {
   "id": "1117",
   "name": "Jaroslav Spišiak",
   "sortName": "Spišiak Jaroslav",
-  "club": "PS"
+  "club": "PS",
+  "title": "JUDr.",
+  "party": "Progresívne Slovensko",
+  "born": "1964-10-04",
+  "city": "Veľké Dvorníky",
+  "region": "Trnavský",
+  "profileAt": "2026-11-25T17:26:09.723101+00:00"
  },
  {
   "id": "1182",
   "name": "Peter Stachura",
   "sortName": "Stachura Peter",
-  "club": "KDH"
+  "club": "KDH",
+  "title": "MUDr., Dr. med., MBA",
+  "party": "Kresťanskodemokratické hnutie",
+  "born": "1979-01-06",
+  "city": "Miloslavov",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:11.723407+00:00"
  },
  {
   "id": "1118",
   "name": "Tamara Stohlová",
   "sortName": "Stohlová Tamara",
-  "club": "PS"
+  "club": "PS",
+  "title": "MSc",
+  "party": "Progresívne Slovensko",
+  "born": "1989-06-10",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:13.714799+00:00"
  },
  {
   "id": "1058",
   "name": "Anton Stredák",
   "sortName": "Stredák Anton",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "PaedDr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1963-07-24",
+  "city": "Nitra",
+  "region": "Nitriansky",
+  "profileAt": "2026-11-25T17:26:15.762672+00:00"
  },
  {
   "id": "1161",
   "name": "Michal Stuška",
   "sortName": "Stuška Michal",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Mgr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1976-06-10",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:17.759307+00:00"
  },
  {
   "id": "767",
   "name": "Richard Sulík",
   "sortName": "Sulík Richard",
-  "club": "SaS"
+  "club": "SaS",
+  "title": "Ing.",
+  "party": "Sloboda a Solidarita",
+  "born": "1968-01-12",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:19.751822+00:00"
  },
  {
   "id": "877",
   "name": "Boris Susko",
   "sortName": "Susko Boris",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "JUDr., PhD.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1970-05-26",
+  "city": "Ivanka pri Dunaji",
+  "region": "Bratislavský kraj",
+  "profileAt": "2026-11-25T17:26:21.718678+00:00"
  },
  {
   "id": "1087",
   "name": "Zdenko Svoboda",
   "sortName": "Svoboda Zdenko",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "Mgr., MBA",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1982-06-23",
+  "city": "Nitra",
+  "region": "Nitriansky",
+  "profileAt": "2026-11-25T17:26:23.687239+00:00"
  },
  {
   "id": "1217",
   "name": "Andrea Szabóová",
   "sortName": "Szabóová Andrea",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "PhDr.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1982-12-04",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:25.713991+00:00"
  },
  {
   "id": "1147",
   "name": "Tomáš Szalay",
   "sortName": "Szalay Tomáš",
-  "club": "SaS"
+  "club": "SaS",
+  "title": "MUDr., PhD.",
+  "party": "Sloboda a Solidarita",
+  "born": "1971-12-08",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:27.751997+00:00"
  },
  {
   "id": "1071",
   "name": "Richard Takáč",
   "sortName": "Takáč Richard",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1982-05-10",
+  "city": "Prievidza",
+  "region": "Trenčiansky",
+  "profileAt": "2026-11-25T17:26:29.689520+00:00"
  },
  {
   "id": "1145",
   "name": "Viliam Tankó",
   "sortName": "Tankó Viliam",
-  "club": "PS"
+  "club": "PS",
+  "title": null,
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1995-05-17",
+  "city": "Váhovce",
+  "region": "Trnavský",
+  "profileAt": "2026-11-25T17:26:31.762250+00:00"
  },
  {
   "id": "1072",
   "name": "Tomáš Taraba",
   "sortName": "Taraba Tomáš",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing. Mgr.",
+  "party": "Slovenská národná strana",
+  "born": "1980-02-13",
+  "city": "Pezinok",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:33.707866+00:00"
  },
  {
   "id": "930",
   "name": "Dušan Tittel",
   "sortName": "Tittel Dušan",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "Ing.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1966-12-27",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:35.732661+00:00"
  },
  {
   "id": "940",
   "name": "Erik Tomáš",
   "sortName": "Tomáš Erik",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Mgr.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1975-06-15",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:37.823532+00:00"
  },
  {
   "id": "1115",
   "name": "Michal Truban",
   "sortName": "Truban Michal",
-  "club": "PS"
+  "club": "PS",
+  "title": "Ing.",
+  "party": "Progresívne Slovensko",
+  "born": "1983-10-22",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:39.709562+00:00"
  },
  {
   "id": "1186",
   "name": "Andrea Turčanová",
   "sortName": "Turčanová Andrea",
-  "club": "KDH"
+  "club": "KDH",
+  "title": "Ing.",
+  "party": "Kresťanskodemokratické hnutie",
+  "born": "1966-12-26",
+  "city": "Prešov",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T17:26:41.712171+00:00"
  },
  {
   "id": "705",
   "name": "Jozef Valocký",
   "sortName": "Valocký Jozef",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "MUDr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1956-11-26",
+  "city": "Galanta",
+  "region": "Trnavský",
+  "profileAt": "2026-11-25T17:26:43.759703+00:00"
  },
  {
   "id": "1075",
   "name": "Tomáš Valášek",
   "sortName": "Valášek Tomáš",
-  "club": "PS"
+  "club": "PS",
+  "title": "M. A.",
+  "party": "Progresívne Slovensko",
+  "born": "1972-06-21",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:45.731674+00:00"
  },
  {
   "id": "1135",
   "name": "Branislav Vančo",
   "sortName": "Vančo Branislav",
-  "club": "PS"
+  "club": "PS",
+  "title": "JUDr.",
+  "party": "Progresívne Slovensko",
+  "born": "1983-02-01",
+  "city": "Ružomberok",
+  "region": "Žilinský",
+  "profileAt": "2026-11-25T17:26:47.711010+00:00"
  },
  {
   "id": "732",
   "name": "Jana Vaľová",
   "sortName": "Vaľová Jana",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "PhDr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1965-07-08",
+  "city": "Humenné",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T17:26:49.778886+00:00"
  },
  {
   "id": "861",
   "name": "Richard Vašečka",
   "sortName": "Vašečka Richard",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Mgr.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1973-11-03",
+  "city": "Svederník",
+  "region": "Žilinský",
+  "profileAt": "2026-11-25T17:26:51.744600+00:00"
  },
  {
   "id": "1141",
   "name": "Veronika Veslárová",
   "sortName": "Veslárová Veronika",
-  "club": "PS"
+  "club": "PS",
+  "title": "Mgr.",
+  "party": "Progresívne Slovensko",
+  "born": "1988-04-23",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:26:53.723354+00:00"
  },
  {
   "id": "991",
   "name": "Marián Viskupič",
   "sortName": "Viskupič Marián",
-  "club": "SaS"
+  "club": "SaS",
+  "title": "RNDr. Ing.",
+  "party": "Sloboda a Solidarita",
+  "born": "1977-10-18",
+  "city": "Šúrovce",
+  "region": "Trnavský",
+  "profileAt": "2026-11-25T17:26:55.746078+00:00"
  },
  {
   "id": "1176",
   "name": "Erik Vlček",
   "sortName": "Vlček Erik",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": null,
+  "party": "HLAS – sociálna demokracia",
+  "born": "1981-12-29",
+  "city": "Komárno",
+  "region": "Nitriansky",
+  "profileAt": "2026-11-25T17:26:57.715002+00:00"
  },
  {
   "id": "1193",
   "name": "Igor Válek",
   "sortName": "Válek Igor",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Ing.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1978-04-05",
+  "city": "Trnava",
+  "region": "Trnavský",
+  "profileAt": "2026-11-25T17:26:59.708179+00:00"
  },
  {
   "id": "293",
   "name": "Ľubomír Vážny",
   "sortName": "Vážny Ľubomír",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Ing.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1957-07-15",
+  "city": "Banská Bystrica",
+  "region": "Banskobystrický",
+  "profileAt": "2026-11-25T17:27:01.777401+00:00"
  },
  {
   "id": "1019",
   "name": "Viliam Zahorčák",
   "sortName": "Zahorčák Viliam",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": null,
+  "party": "SMER – sociálna demokracia",
+  "born": "1959-07-21",
+  "city": "Michalovce",
+  "region": "Košický",
+  "profileAt": "2026-11-25T17:27:03.984519+00:00"
  },
  {
   "id": "147",
   "name": "Anna Záborská",
   "sortName": "Záborská Anna",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO",
+  "title": "MUDr.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1948-06-07",
+  "city": "Bojnice",
+  "region": "Trenčiansky",
+  "profileAt": "2026-11-25T17:27:05.756609+00:00"
  },
  {
   "id": "1179",
   "name": "Marián Čaučík",
   "sortName": "Čaučík Marián",
-  "club": "KDH"
+  "club": "KDH",
+  "title": "Ing.",
+  "party": "Kresťanskodemokratické hnutie",
+  "born": "1965-09-22",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:27:07.726594+00:00"
  },
  {
   "id": "1160",
   "name": "Marcela Čavojová",
   "sortName": "Čavojová Marcela",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "Mgr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1973-03-11",
+  "city": "Nitra",
+  "region": "Nitriansky",
+  "profileAt": "2026-11-25T17:27:09.719824+00:00"
  },
  {
   "id": "1203",
   "name": "Miroslav Čellár",
   "sortName": "Čellár Miroslav",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "Mgr. et Mgr., PhD.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1983-04-20",
+  "city": "Banská Bystrica",
+  "region": "Banskobystrický",
+  "profileAt": "2026-11-25T17:27:11.730279+00:00"
  },
  {
   "id": "1152",
   "name": "Pavel Ľupták",
   "sortName": "Ľupták Pavel",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing.",
+  "party": "Slovenská národná strana",
+  "born": "1959-06-07",
+  "city": "Turčianske Teplice",
+  "region": "Žilinský",
+  "profileAt": "2026-11-25T17:27:13.737450+00:00"
  },
  {
   "id": "1175",
   "name": "Radomír Šalitroš",
   "sortName": "Šalitroš Radomír",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing., MIM",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1981-08-07",
+  "city": "Košice",
+  "region": "Košický",
+  "profileAt": "2026-11-25T17:27:15.702256+00:00"
  },
  {
   "id": "1171",
   "name": "Kamil Šaško",
   "sortName": "Šaško Kamil",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "MSc.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1985-11-05",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:27:17.693628+00:00"
  },
  {
   "id": "1150",
   "name": "Ivan Ševčík",
   "sortName": "Ševčík Ivan",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Ing.",
+  "party": "Slovenská národná strana",
+  "born": "1963-10-03",
+  "city": "Poluvsie",
+  "region": "Trenčiansky",
+  "profileAt": "2026-11-25T17:27:19.749168+00:00"
  },
  {
   "id": "1114",
   "name": "Michal Šimečka",
   "sortName": "Šimečka Michal",
-  "club": "PS"
+  "club": "PS",
+  "title": "D.Phil.",
+  "party": "Progresívne Slovensko",
+  "born": "1984-05-10",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:27:21.838564+00:00"
  },
  {
   "id": "1177",
   "name": "Igor Šimko",
   "sortName": "Šimko Igor",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "Ing., PhD. MBA",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1988-07-08",
+  "city": "Košice",
+  "region": "Košický",
+  "profileAt": "2026-11-25T17:27:23.735391+00:00"
  },
  {
   "id": "918",
   "name": "Martina Šimkovičová",
   "sortName": "Šimkovičová Martina",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Mgr. PaedDr.",
+  "party": "Slovenská národná strana",
+  "born": "1971-08-29",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T17:27:25.736349+00:00"
  },
  {
   "id": "1065",
