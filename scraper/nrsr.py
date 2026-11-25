@@ -87,8 +87,11 @@ def session_numbers(term: int = 9) -> list[int]:
     r = get({"sid": "schodze/hlasovanie/schodze"})
     return sorted({int(x) for x in re.findall(r"CisObdobia=%d&(?:amp;)?CisSchodze=(\d+)" % term, r.text)})
 
-def paginate(url: str, extract, max_pages: int = 400, deadline: float | None = None) -> list:
-    """Open a grid page in the browser and follow its ASP.NET postback pager ('Page$N')."""
+def paginate(url: str, extract, max_pages: int = 1000, deadline: float | None = None) -> list:
+    """Read every page of an ASP.NET GridView. Pages are requested directly with
+    __doPostBack(grid, 'Page$N') (works even when the pager shows only "1 2 … 10 …"),
+    and we wait until the content really changes before reading it."""
+    import re
     _start()
     items: list = []
     page = _ctx.new_page()
@@ -97,14 +100,29 @@ def paginate(url: str, extract, max_pages: int = 400, deadline: float | None = N
         for _ in range(60):
             if "nrsr-challenge" not in page.url: break
             page.wait_for_timeout(1000)
-        for k in range(1, max_pages + 1):
-            items.extend(extract(page.content()))
+        html = page.content()
+        items.extend(extract(html))
+        m = re.search(r"__doPostBack\('([^']+)','Page\$\d+'\)", html)
+        if not m: return items
+        grid = m.group(1)
+        sig = lambda h: hash(re.sub(r"\s+", " ", h[h.find("<body"):])[:200000])
+        prev = sig(html)
+        for k in range(2, max_pages + 1):
             if deadline and time.time() > deadline: break
-            nxt = page.locator(f"a[href*=\"'Page${k + 1}'\"]")
-            if nxt.count() == 0: break
             _wait()
-            with page.expect_navigation(wait_until="domcontentloaded", timeout=60_000):
-                nxt.first.click()
+            try:
+                with page.expect_navigation(wait_until="domcontentloaded", timeout=60_000):
+                    page.evaluate("([t, a]) => __doPostBack(t, a)", [grid, f"Page${k}"])
+            except Exception:
+                page.wait_for_timeout(1500)  # partial postback (no navigation)
+            html = page.content()
+            cur = sig(html)
+            if cur == prev: break           # past the last page: grid stays the same
+            got = extract(html)
+            if not got: break
+            items.extend(got); prev = cur
+            if f"'Page${k + 1}'" not in html and "Page$Last" not in html and "Page$Next" not in html and k % 10 != 0:
+                break                        # no further pages linked
     finally:
         page.close()
     return items
