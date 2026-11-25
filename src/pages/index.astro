@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Hall from "../components/Hall.astro";
 import Ava from "../components/Ava.astro";
+import FollowedList from "../components/FollowedList.astro";
 import VoteBar from "../components/VoteBar.astro";
 import Timeline from "../components/Timeline.astro";
 import SessionCard from "../components/SessionCard.astro";
@@ -44,28 +45,7 @@ const talkers = ranked((id) => mpTalk(id).seconds).filter((m) => mpTalk(m.id).se
         </article>
       </section>
 
-      <section id="follows" hidden>
-        <div class="section-head"><h2>Poslanci, ktorých sledujete</h2><a href="/poslanci/">Pridať ďalších</a></div>
-        <div class="follows" id="follows-list"></div>
-      </section>
-      <script>
-        (async () => {
-          let ids: string[] = []; try { ids = JSON.parse(localStorage.getItem("fp-follow") || "[]"); } catch {}
-          if (!ids.length) return;
-          const box = document.getElementById("follows")!, list = document.getElementById("follows-list")!;
-          const el = (t: string, p: Record<string, any> = {}, ...k: (Node | string | null)[]) => { const e = document.createElement(t); Object.assign(e, p); for (const c of k) if (c != null) e.append(c); return e; };
-          const data = (await Promise.all(ids.map((id) => fetch(`/poslanci/${id}/aktivita.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null)))).filter(Boolean);
-          for (const m of data) {
-            const ava = el("span", { className: `ava${m.photo ? " img" : ""}`, ariaHidden: "true" }); if (m.photo) ava.append(el("img", { src: m.photo, alt: "" })); else ava.textContent = m.ini;
-            const card = el("article", { className: "panel fcard" },
-              el("header", {}, ava, el("div", {}, el("a", { href: `/poslanci/${m.id}/`, textContent: m.name }), el("small", { textContent: m.club }))),
-              m.items.length ? el("ul", {}, ...m.items.map((i: any) => el("li", {}, el("a", { href: i.u }, el("b", { textContent: i.t }), el("span", { textContent: `${i.d.split("-").reverse().map(Number).join(". ")}: ${i.x}` })))))
-                : el("p", { className: "empty", textContent: "Zatiaľ žiadna nová aktivita." }));
-            card.style.setProperty("--club", m.color); list.append(card);
-          }
-          box.hidden = !data.length;
-        })();
-      </script>
+      <FollowedList />
 
       <div class="section-head"><h2>{fmtDay(latest.datetime)}</h2><a href={`/schodze/${latest.session}/`}>Celá {latest.session}. schôdza</a></div>
       <Timeline items={lastDay.slice(0, 12)} />

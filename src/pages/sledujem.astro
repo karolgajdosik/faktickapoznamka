@@ -1,0 +1,9 @@
+---
+import Base from "../layouts/Base.astro";
+import FollowedList from "../components/FollowedList.astro";
+---
+<Base title="Sledujem" description="Poslanci, ktorých sledujete: ich posledné vystúpenia a hlasovania proti klubu.">
+  <h1>Sledujem</h1>
+  <p class="meta-line">Zoznam je uložený iba v tomto prehliadači.</p>
+  <div style="margin-top:1.25rem"><FollowedList always /></div>
+</Base>
