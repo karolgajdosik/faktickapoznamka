@@ -1,0 +1,10 @@
+---
+import { CODES, LABEL, type Code } from "../lib/data";
+interface Props { counts: Record<Code, number> }
+const { counts } = Astro.props;
+---
+<dl class="counts">
+  {CODES.map((c) => (
+    <div><dt><span class={`key v-${c === "?" ? "Q" : c}`} aria-hidden="true" />{LABEL[c]}</dt><dd>{counts[c]}</dd></div>
+  ))}
+</dl>

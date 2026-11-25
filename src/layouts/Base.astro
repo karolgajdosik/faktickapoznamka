@@ -1,0 +1,70 @@
+---
+import "@fontsource-variable/public-sans";
+import "../styles/global.css";
+import { meta } from "../lib/data";
+interface Props { title?: string; description?: string }
+const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami." } = Astro.props;
+const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
+const path = Astro.url.pathname;
+const nav = [["/hlasovania/", "Hlasovania"], ["/poslanci/", "Poslanci"], ["/o-projekte/", "O projekte"]];
+---
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{full}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={full} />
+  <meta property="og:description" content={description} />
+  <meta property="og:locale" content="sk_SK" />
+  <meta name="theme-color" content="#16222e" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip" href="#obsah">Preskočiť na obsah</a>
+  <header class="site">
+    <div class="wrap head">
+      <a href="/" class="brand" aria-label="faktická poznámka, úvod">
+        <span class="timer" aria-hidden="true">2:00</span>
+        <span class="word">faktická poznámka</span>
+      </a>
+      <nav aria-label="Hlavná navigácia">
+        {nav.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
+      </nav>
+    </div>
+  </header>
+  <div id="live" class="live" hidden>
+    <div class="wrap"><span class="pulse" aria-hidden="true"></span><strong>Práve rokuje NR SR:</strong> <span id="live-text"></span> <a id="live-link" href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
+  </div>
+  {meta.demo && (
+    <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené. Skutočné dáta z nrsr.sk pribudnú po prvom stiahnutí.</div></div>
+  )}
+  <main id="obsah" class="wrap"><slot /></main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Zdroj dát: <a href="https://www.nrsr.sk/">nrsr.sk</a>.</p>
+      <p>Dáta aktualizované {new Date(meta.updatedAt).toLocaleString("sk-SK", { timeZone: "Europe/Bratislava" })}. <a href="/o-projekte/">Metodika a kontakt</a></p>
+    </div>
+  </footer>
+  <script>
+    // Live status from our Worker (/api/live). Polls only while the tab is visible.
+    const box = document.getElementById("live")!;
+    async function poll() {
+      if (document.hidden) return;
+      try {
+        const r = await fetch("/api/live", { headers: { accept: "application/json" } });
+        if (!r.ok) return;
+        const d = await r.json();
+        if (d.live && d.item) {
+          document.getElementById("live-text")!.textContent = d.item;
+          if (d.url) (document.getElementById("live-link") as HTMLAnchorElement).href = d.url;
+          box.hidden = false;
+        } else box.hidden = true;
+      } catch { /* offline or local dev */ }
+    }
+    poll(); setInterval(poll, 90_000);
+    document.addEventListener("visibilitychange", poll);
+  </script>
+</body>
+</html>

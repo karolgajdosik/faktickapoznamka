@@ -1,0 +1,41 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hemicycle from "../../components/Hemicycle.astro";
+import Counts from "../../components/Counts.astro";
+import { votes, clubs, mps, CODES, LABEL, fmtDate, fmtTime, resultText, type Vote } from "../../lib/data";
+export function getStaticPaths() { return votes.map((v) => ({ params: { id: v.id }, props: { v } })); }
+const { v } = Astro.props as { v: Vote };
+const byClub = clubs.map((c) => {
+  const t = { Z: 0, P: 0, "?": 0, N: 0, "0": 0 };
+  for (const m of mps) if (m.club === c.name && v.votes[m.id]) t[v.votes[m.id]]++;
+  return { ...c, t };
+});
+const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=${v.id}`;
+---
+<Base title={v.title} description={`${resultText(v)}: za ${v.counts.Z}, proti ${v.counts.P}, zdržalo sa ${v.counts["?"]}.`}>
+  <p class="meta-line">{fmtDate(v.datetime)}, {fmtTime(v.datetime)}{v.session && <>, {v.session}. schôdza</>}{v.number && <>, hlasovanie č. {v.number}</>}</p>
+  <h1>{v.title}</h1>
+  <p class={`verdict ${v.passed ? "yes" : v.passed === false ? "no" : ""}`}>{resultText(v)}</p>
+  <Counts counts={v.counts} />
+  <div style="margin-top:2rem"><Hemicycle votes={v.votes} /></div>
+  <p class="meta-line" style="margin-top:.75rem">Kluby sú v polkruhu zoradené zľava podľa veľkosti. Ukážte na kruh pre meno poslanca.</p>
+
+  <h2 style="margin-top:2.5rem">Podľa klubov</h2>
+  <table>
+    <thead><tr><th>Klub</th>{CODES.map((c) => <th class="n">{LABEL[c]}</th>)}</tr></thead>
+    <tbody>{byClub.map((c) => <tr><td>{c.name}</td>{CODES.map((k) => <td class="n">{c.t[k]}</td>)}</tr>)}</tbody>
+  </table>
+
+  <div class="grid-2 names">
+    {CODES.map((c) => {
+      const list = mps.filter((m) => v.votes[m.id] === c);
+      return list.length > 0 && (
+        <section>
+          <h3><span class={`key v-${c === "?" ? "Q" : c}`} aria-hidden="true" />{LABEL[c]} ({list.length})</h3>
+          <ul>{list.map((m) => <li><a href={`/poslanci/${m.id}/`}>{m.name}</a> <span class="club">{m.club}</span></li>)}</ul>
+        </section>
+      );
+    })}
+  </div>
+  <p><a href={nrsr} rel="noopener">Hlasovanie na nrsr.sk</a></p>
+</Base>

@@ -1,0 +1,36 @@
+---
+import Base from "../../layouts/Base.astro";
+import { mps, clubs, mpStats, pct } from "../../lib/data";
+const rows = mps.map((m) => ({ ...m, s: mpStats(m.id) }));
+---
+<Base title="Poslanci" description="Poslanci Národnej rady SR: klub, účasť na hlasovaniach a súlad s vlastným klubom.">
+  <h1>Poslanci</h1>
+  <form class="filter" role="search" onsubmit="return false">
+    <label class="sr-only" for="q">Hľadať poslanca</label>
+    <input id="q" type="search" placeholder="Hľadať podľa mena" autocomplete="off" />
+    <label class="sr-only" for="club">Klub</label>
+    <select id="club"><option value="">Všetky kluby</option>{clubs.map((c) => <option>{c.name}</option>)}</select>
+  </form>
+  <table id="mps">
+    <thead><tr><th>Meno</th><th>Klub</th><th class="n">Účasť na hlasovaniach</th><th class="n">Súlad s klubom</th></tr></thead>
+    <tbody>
+      {rows.map((m) => (
+        <tr data-name={m.name.toLowerCase()} data-club={m.club}>
+          <td><a href={`/poslanci/${m.id}/`}>{m.sortName}</a></td><td>{m.club}</td>
+          <td class="n">{pct(m.s.attendance)}</td><td class="n">{pct(m.s.loyalty)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p class="meta-line"><a href="/o-projekte/#metodika">Ako počítame účasť a súlad s klubom</a></p>
+  <script>
+    const q = document.getElementById("q") as HTMLInputElement, club = document.getElementById("club") as HTMLSelectElement;
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    const rows = [...document.querySelectorAll<HTMLTableRowElement>("#mps tbody tr")];
+    function apply() {
+      const t = norm(q.value.trim());
+      for (const r of rows) r.hidden = !(norm(r.dataset.name!).includes(t) && (!club.value || r.dataset.club === club.value));
+    }
+    q.addEventListener("input", apply); club.addEventListener("change", apply);
+  </script>
+</Base>

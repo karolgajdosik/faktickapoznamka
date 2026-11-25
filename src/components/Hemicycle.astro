@@ -1,0 +1,46 @@
+---
+import { clubs, mps, LABEL, type Code } from "../lib/data";
+interface Props { votes: Record<string, Code>; size?: "lg" | "md" }
+const { votes, size = "lg" } = Astro.props;
+
+// Seat geometry: concentric rows, seats per row proportional to radius.
+const people = mps.filter((m) => votes[m.id]);
+const total = people.length;
+const rows = Math.max(3, Math.round(Math.sqrt(total / 4.2)));
+const r0 = 0.4;
+const radii = Array.from({ length: rows }, (_, i) => r0 + ((1 - r0) * i) / (rows - 1));
+const sumR = radii.reduce((a, b) => a + b, 0);
+const perRow = radii.map((r) => Math.floor((total * r) / sumR));
+let rest = total - perRow.reduce((a, b) => a + b, 0);
+for (let i = rows - 1; rest > 0; i = (i - 1 + rows) % rows, rest--) perRow[i]++;
+const seats: { x: number; y: number; a: number }[] = [];
+radii.forEach((r, i) => {
+  const n = perRow[i];
+  for (let k = 0; k < n; k++) {
+    const a = n === 1 ? Math.PI / 2 : Math.PI - (Math.PI * k) / (n - 1);
+    seats.push({ x: 100 + 96 * r * Math.cos(a), y: 100 - 96 * r * Math.sin(a), a });
+  }
+});
+seats.sort((p, q) => q.a - p.a || Math.hypot(p.x - 100, p.y - 100) - Math.hypot(q.x - 100, q.y - 100));
+
+const order: Code[] = ["Z", "?", "N", "P", "0"];
+const clubIdx = new Map(clubs.map((c, i) => [c.name, i]));
+const sorted = people.slice().sort((a, b) =>
+  (clubIdx.get(a.club)! - clubIdx.get(b.club)!) || order.indexOf(votes[a.id]) - order.indexOf(votes[b.id]));
+const dot = 96 * (1 - r0) / (rows - 1) * 0.36;
+---
+<figure class={`hemi hemi-${size}`}>
+  <svg viewBox="0 0 200 104" role="img" aria-label="Rozloženie hlasov v sále">
+    {sorted.map((m, i) => {
+      const s = seats[i]; const c = votes[m.id];
+      return (
+        <a href={`/poslanci/${m.id}/`}>
+          <circle cx={s.x.toFixed(2)} cy={s.y.toFixed(2)} r={dot.toFixed(2)} class={`seat v-${c === "?" ? "Q" : c}`}>
+            <title>{m.name} ({m.club}): {LABEL[c].toLowerCase()}</title>
+          </circle>
+        </a>
+      );
+    })}
+  </svg>
+  <figcaption class="sr-only">Kluby sú v polkruhu zoradené zľava podľa veľkosti, nie podľa politickej orientácie.</figcaption>
+</figure>

@@ -1,0 +1,19 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="O projekte" description="Čo je faktická poznámka, odkiaľ berie dáta a ako počíta štatistiky.">
+  <div class="prose">
+    <h1>O projekte</h1>
+    <p>Faktická poznámka je nezávislá a neoficiálna stránka, ktorá prehľadne ukazuje, ako hlasujú poslanci Národnej rady Slovenskej republiky. Nie je stránkou Národnej rady SR ani žiadnej politickej strany.</p>
+    <h2>Odkiaľ sú dáta</h2>
+    <p>Všetky údaje pochádzajú z verejných stránok <a href="https://www.nrsr.sk/">nrsr.sk</a>. Automaticky ich sťahujeme niekoľkokrát denne. Pri každom hlasovaní a poslancovi je odkaz na pôvodný zdroj. Ak nájdete chybu, rozhoduje údaj na nrsr.sk.</p>
+    <h2 id="metodika">Ako počítame štatistiky</h2>
+    <p><strong>Účasť na hlasovaniach</strong> je podiel hlasovaní, pri ktorých poslanec nebol vedený ako neprítomný. Ospravedlnenú neprítomnosť nerozlišujeme.</p>
+    <p><strong>Súlad s klubom</strong> je podiel hlasovaní, v ktorých poslanec hlasoval rovnako ako väčšina jeho klubu (počítajú sa iba hlasy za, proti a zdržal sa). Pri nezaradených poslancoch sa nepočíta. Klub berieme podľa aktuálneho stavu.</p>
+    <p>Kluby sú v grafe sály zoradené podľa veľkosti, nie podľa politickej orientácie.</p>
+    <h2>Otvorený kód a dáta</h2>
+    <p>Kód aj dáta sú verejné na GitHube a môžete ich voľne použiť.</p>
+    <h2>Kontakt</h2>
+    <p>Chyby a návrhy posielajte na <a href="mailto:kontakt@faktickapoznamka.sk">kontakt@faktickapoznamka.sk</a>.</p>
+  </div>
+</Base>

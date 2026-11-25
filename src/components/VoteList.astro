@@ -1,0 +1,16 @@
+---
+import VoteBar from "./VoteBar.astro";
+import { fmtShort, fmtTime, resultText, type Vote } from "../lib/data";
+interface Props { items: Vote[]; showDate?: boolean }
+const { items, showDate = true } = Astro.props;
+---
+<ul class="votes">
+  {items.map((v) => (
+    <li>
+      <time datetime={v.datetime}>{showDate ? fmtShort(v.datetime) : fmtTime(v.datetime)}</time>
+      <span class="t"><a href={`/hlasovania/${v.id}/`}>{v.title}</a></span>
+      <VoteBar counts={v.counts} />
+      <span class={`res ${v.passed ? "yes" : v.passed === false ? "no" : ""}`}>{resultText(v)}</span>
+    </li>
+  ))}
+</ul>

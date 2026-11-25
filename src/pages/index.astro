@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+import Hemicycle from "../components/Hemicycle.astro";
+import Counts from "../components/Counts.astro";
+import VoteList from "../components/VoteList.astro";
+import { votes, fmtDate, fmtTime, resultText } from "../lib/data";
+const [latest, ...rest] = votes;
+---
+<Base>
+  {latest ? (
+    <section class="hero" aria-labelledby="posledne">
+      <div>
+        <p class="when">Posledné hlasovanie, {fmtDate(latest.datetime)} o {fmtTime(latest.datetime)}</p>
+        <h1 id="posledne"><a href={`/hlasovania/${latest.id}/`}>{latest.title}</a></h1>
+        <Hemicycle votes={latest.votes} />
+      </div>
+      <div>
+        <p class={`verdict ${latest.passed ? "yes" : latest.passed === false ? "no" : ""}`}>{resultText(latest)}</p>
+        <Counts counts={latest.counts} />
+        <a class="more" href={`/hlasovania/${latest.id}/`}>Kto ako hlasoval</a>
+      </div>
+    </section>
+  ) : <p>Zatiaľ tu nie sú žiadne hlasovania.</p>}
+  <h2>Predchádzajúce hlasovania</h2>
+  <VoteList items={rest.slice(0, 12)} />
+  <a class="more" href="/hlasovania/">Všetky hlasovania</a>
+</Base>

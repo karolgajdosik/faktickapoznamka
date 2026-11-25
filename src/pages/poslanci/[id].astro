@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+import { mps, votes, mpStats, pct, LABEL, fmtDate, type Mp } from "../../lib/data";
+export function getStaticPaths() { return mps.map((m) => ({ params: { id: m.id }, props: { m } })); }
+const { m } = Astro.props as { m: Mp };
+const s = mpStats(m.id);
+const history = votes.filter((v) => v.votes[m.id]).slice(0, 50);
+---
+<Base title={m.name} description={`${m.name} (${m.club}): účasť ${pct(s.attendance)}, súlad s klubom ${pct(s.loyalty)}.`}>
+  <h1>{m.name}</h1>
+  <p class="meta-line">{m.club}</p>
+  <dl class="stats">
+    <div><dt>Účasť na hlasovaniach</dt><dd>{pct(s.attendance)}</dd></div>
+    <div><dt>Súlad s klubom</dt><dd>{pct(s.loyalty)}</dd></div>
+    <div><dt>Hlasovaní v dátach</dt><dd>{s.total}</dd></div>
+  </dl>
+  <h2>Posledné hlasovania</h2>
+  <table>
+    <thead><tr><th>Dátum</th><th>Hlasovanie</th><th>Hlas</th></tr></thead>
+    <tbody>
+      {history.map((v) => { const c = v.votes[m.id]; return (
+        <tr><td>{fmtDate(v.datetime)}</td><td><a href={`/hlasovania/${v.id}/`}>{v.title}</a></td>
+        <td class={`code ${c === "?" ? "Q" : c === "0" ? "O" : c}`}>{LABEL[c]}</td></tr>
+      ); })}
+    </tbody>
+  </table>
+  <p><a href={`https://www.nrsr.sk/web/Default.aspx?sid=poslanci/poslanec&PoslanecID=${m.id}`} rel="noopener">Profil na nrsr.sk</a></p>
+</Base>
