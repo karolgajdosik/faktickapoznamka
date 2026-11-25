@@ -2163,60 +2163,120 @@
   "id": "1065",
   "name": "Michal Šipoš",
   "sortName": "Šipoš Michal",
-  "club": "SLOVENSKO - ZA ĽUDÍ"
+  "club": "SLOVENSKO - ZA ĽUDÍ",
+  "title": "Mgr.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1982-01-10",
+  "city": "Stará Ľubovňa",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T19:39:14.481651+00:00"
  },
  {
   "id": "1146",
   "name": "Anežka Škopová",
   "sortName": "Škopová Anežka",
-  "club": "SLOVENSKO - ZA ĽUDÍ"
+  "club": "SLOVENSKO - ZA ĽUDÍ",
+  "title": "Mgr.",
+  "party": "OĽANO A PRIATELIA: OBYČAJNÍ ĽUDIA (OĽANO), NEZÁVISLÍ KANDIDÁTI (NEKA), NOVA, SLOBODNÍ A ZODPOVEDNÍ, PAČIVALE ROMA, MAGYAR SZÍVEK a Kresťanská únia a ZA ĽUDÍ",
+  "born": "1979-01-14",
+  "city": "Levoča",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T19:39:16.499891+00:00"
  },
  {
   "id": "862",
   "name": "Branislav Škripek",
   "sortName": "Škripek Branislav",
-  "club": "KDH"
+  "club": "KDH",
+  "title": "Mgr.",
+  "party": "Kresťanskodemokratické hnutie",
+  "born": "1970-08-30",
+  "city": "Štúrovo",
+  "region": "Nitriansky",
+  "profileAt": "2026-11-25T19:39:18.536993+00:00"
  },
  {
   "id": "1185",
   "name": "Martin Šmilňák",
   "sortName": "Šmilňák Martin",
-  "club": "KDH"
+  "club": "KDH",
+  "title": "Mgr.",
+  "party": "Kresťanskodemokratické hnutie",
+  "born": "1973-10-13",
+  "city": "Bardejov",
+  "region": "Prešovský",
+  "profileAt": "2026-11-25T19:39:20.477972+00:00"
  },
  {
   "id": "1143",
   "name": "Veronika Šrobová",
   "sortName": "Šrobová Veronika",
-  "club": "PS"
+  "club": "PS",
+  "title": "Ing.",
+  "party": "Progresívne Slovensko",
+  "born": "1989-09-28",
+  "city": "Zuberec",
+  "region": "Žilinský",
+  "profileAt": "2026-11-25T19:39:22.469415+00:00"
  },
  {
   "id": "1127",
   "name": "Ivan Štefunko",
   "sortName": "Štefunko Ivan",
-  "club": "PS"
+  "club": "PS",
+  "title": "Mgr.",
+  "party": "Progresívne Slovensko",
+  "born": "1977-03-04",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T19:39:24.463714+00:00"
  },
  {
   "id": "1132",
   "name": "Zuzana Števulová",
   "sortName": "Števulová Zuzana",
-  "club": "PS"
+  "club": "PS",
+  "title": "JUDr.",
+  "party": "Progresívne Slovensko",
+  "born": "1983-07-24",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T19:39:26.469432+00:00"
  },
  {
   "id": "769",
   "name": "Peter Šuca",
   "sortName": "Šuca Peter",
-  "club": "SMER - SD"
+  "club": "SMER - SD",
+  "title": "PaedDr.",
+  "party": "SMER – sociálna demokracia",
+  "born": "1968-09-08",
+  "city": null,
+  "region": null,
+  "profileAt": "2026-11-25T19:39:28.521685+00:00"
  },
  {
   "id": "1069",
   "name": "Matúš Šutaj Eštok",
   "sortName": "Šutaj Eštok Matúš",
-  "club": "Nezaradení"
+  "club": "Nezaradení",
+  "title": "Mgr.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1987-02-04",
+  "city": "Bratislava",
+  "region": "Bratislavský",
+  "profileAt": "2026-11-25T19:39:30.501205+00:00"
  },
  {
   "id": "691",
   "name": "Peter Žiga",
   "sortName": "Žiga Peter",
-  "club": "HLAS - SD"
+  "club": "HLAS - SD",
+  "title": "Ing., PhD.",
+  "party": "HLAS – sociálna demokracia",
+  "born": "1972-07-27",
+  "city": "Košice",
+  "region": "Košický",
+  "profileAt": "2026-11-25T19:39:32.502276+00:00"
  }
 ]
