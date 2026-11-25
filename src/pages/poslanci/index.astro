@@ -36,7 +36,7 @@ const data = mps.map((m) => {
           <option value="age-desc">Najstarší</option>
         </select>
       </div>
-      <ul class="mplist" id="list"></ul>
+      <div class="listwrap"><ul class="mplist" id="list"></ul></div>
     </aside>
 
     <section class="panel stage" aria-label="Sála">
@@ -112,6 +112,7 @@ const data = mps.map((m) => {
         return el("li", {}, btn);
       }));
       document.getElementById("count")!.textContent = String(rows.length);
+      list.scrollTop = 0; requestAnimationFrame(() => list.dispatchEvent(new Event("scroll")));
       const ids = new Set(rows.map((m) => m.id));
       hall.classList.toggle("filtered", rows.length !== all.length);
       for (const [id, g] of seats) g.classList.toggle("match", ids.has(id));
@@ -182,7 +183,11 @@ const data = mps.map((m) => {
       document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
       mode = b.dataset.mode!; paint();
     }));
-    render(); paint();
+    // hide the "more below" fade once the list is scrolled to the end
+    const wrap = list.parentElement!;
+    const edge = () => wrap.classList.toggle("end", list.scrollTop + list.clientHeight >= list.scrollHeight - 4);
+    list.addEventListener("scroll", edge, { passive: true }); new ResizeObserver(edge).observe(list);
+    render(); paint(); edge();
     if (location.hash.length > 1 && byId.has(location.hash.slice(1))) open(location.hash.slice(1));
   </script>
 </Base>
