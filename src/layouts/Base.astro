@@ -7,7 +7,7 @@ interface Props { title?: string; description?: string; wide?: boolean; ogImage?
 const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false, ogImage = "/og/default.png", index = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
-const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/hlasovania/", "Hlasovania"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
+const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
 <html lang="sk">
@@ -83,6 +83,9 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     <div class="sheet-grip" aria-hidden="true"></div>
     <a href="/">Úvod</a>
     <a href="/schodze/">Schôdze</a>
+    <a href="/vybory/">Výbory</a>
+    <a href="/kraje/">Poslanci podľa krajov</a>
+    <a href="/poslanci/zmeny/">Zmeny v zložení parlamentu</a>
     <a href="/statistiky/">Štatistiky</a>
     <a href="/hladat/">Hľadať v prepisoch</a>
     <a href="/o-projekte/">O projekte</a>

@@ -3,10 +3,18 @@ import Base from "../layouts/Base.astro";
 import VoteList from "../components/VoteList.astro";
 import Ava from "../components/Ava.astro";
 import { cohesion, agreement, agreementClubs, monthly, topTalkers, topFactual, speechTotals, closeVotes, failed } from "../lib/stats";
+import { topBills, topAmendments, topInterpellations, topTrips, topUnexcused, hasExtra } from "../lib/extra";
 import { votes, sessions, clubColor, pct, fmtDur, laws } from "../lib/data";
 const monthName = (m: string) => new Date(`${m}-15`).toLocaleDateString("sk-SK", { month: "short", year: "2-digit" });
 const maxN = Math.max(1, ...monthly.map((m) => m.n));
 const maxTalk = topTalkers[0]?.t.seconds || 1;
+const boards = hasExtra ? [
+  { t: "Najviac predložených návrhov zákonov", r: topBills(), u: "návrhov" },
+  { t: "Najviac pozmeňujúcich návrhov", r: topAmendments(), u: "návrhov" },
+  { t: "Najviac interpelácií", r: topInterpellations(), u: "interpelácií" },
+  { t: "Najviac neospravedlnených neprítomností", r: topUnexcused(), u: "hlasovaní" },
+  { t: "Najviac zahraničných pracovných ciest", r: topTrips(), u: "ciest" },
+].filter((b) => b.r.length) : [];
 const passedLaws = laws.filter((l) => l.status === "schválený").length;
 ---
 <Base title="Štatistiky" description="Štatistiky NR SR v IX. volebnom období: súdržnosť klubov, zhoda klubov, účasť a rozprava.">
@@ -89,7 +97,23 @@ const passedLaws = laws.filter((l) => l.status === "schválený").length;
     </div>
   )}
 
+  {boards.length > 0 && (
+    <div class="boards">
+      {boards.map((b) => (
+        <section>
+          <div class="section-head"><h2>{b.t}</h2></div>
+          <div class="panel pad">
+            <ul class="mplist">{b.r.map(({ m, x }) => (
+              <li><a href={`/poslanci/${m.id}/`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.4rem 0;text-decoration:none`}>
+                <Ava m={m} /><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{x}<small>{b.u}</small></span></a></li>))}</ul>
+          </div>
+        </section>
+      ))}
+    </div>
+  )}
+
   <div class="section-head"><h2>Najtesnejšie hlasovania</h2></div>
   <p class="muted" style="margin-top:-.5rem;font-size:var(--step--1)">Rozhodlo najviac pár hlasov.</p>
   <VoteList items={closeVotes} />
 </Base>
+<style>.boards { display: grid; gap: 0 1.25rem; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }</style>

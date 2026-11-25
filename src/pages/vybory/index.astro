@@ -1,0 +1,27 @@
+---
+import Base from "../../layouts/Base.astro";
+import { committees } from "../../lib/extra";
+import { mpById, clubColor } from "../../lib/data";
+const chair = (c: (typeof committees)[number]) => { const x = c.members.find((m) => m.role === "predseda"); return x ? mpById.get(x.mpId) : undefined; };
+---
+<Base title="Výbory" description="Výbory Národnej rady SR: zloženie, predsedovia a členovia podľa poslaneckých klubov.">
+  <h1>Výbory</h1>
+  <p class="meta-line">Výbory pripravujú návrhy zákonov pred hlasovaním v pléne. Zloženie podľa nrsr.sk.</p>
+  {committees.length === 0 ? <p class="empty">Údaje o výboroch sa práve načítavajú.</p> : (
+  <ul class="cgrid">
+    {committees.map((c) => { const ch = chair(c); return (
+      <li><a href={`/vybory/${c.id}/`} class="panel">
+        <b>{c.short}</b>
+        <span class="muted">{c.members.length} členov{ch && <>, predseda {ch.name}</>}</span>
+        <span class="bar" aria-hidden="true">{c.members.map((x) => { const m = mpById.get(x.mpId); return <i style={`background:${m ? clubColor(m.club) : "var(--line-2)"}`} />; })}</span>
+      </a></li>); })}
+  </ul>)}
+</Base>
+<style>
+  .cgrid { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); }
+  .cgrid a { display: flex; flex-direction: column; gap: .4rem; padding: 1rem 1.1rem; text-decoration: none; color: inherit; height: 100%; }
+  .cgrid a:hover b { text-decoration: underline; }
+  .cgrid .muted { font-size: var(--step--1); }
+  .bar { display: flex; gap: 2px; margin-top: auto; padding-top: .4rem; }
+  .bar i { flex: 1; height: 8px; border-radius: 2px; }
+</style>

@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Timeline from "../../components/Timeline.astro";
 import SpeechList from "../../components/SpeechList.astro";
+import { lawProcess, committees } from "../../lib/extra";
 import { laws, stageOf, fmtShort, fmtDate, fmtDur, mpById, clubColor, speakerLabel, CHAIR, resultText, type Law } from "../../lib/data";
 export function getStaticPaths() { return laws.map((l) => ({ params: { tlac: l.tlac }, props: { l } })); }
 const { l } = Astro.props as { l: Law };
@@ -13,6 +14,9 @@ const bySpeaker = new Map<string, { label: string; mpId?: string; sec: number }>
 for (const x of real) { const e = bySpeaker.get(x.speaker) ?? { label: speakerLabel(x), mpId: x.mpId, sec: 0 }; e.sec += x.dur; bySpeaker.set(x.speaker, e); }
 const top = [...bySpeaker.values()].sort((a, b) => b.sec - a.sec).slice(0, 10);
 const maxSec = top[0]?.sec || 1;
+const P = lawProcess.get(l.tlac);
+const gestorId = P?.gestor ? committees.find((c) => c.name === P.gestor)?.id : undefined;
+const nrsrZakon = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/zakon&ZakZborID=13&CisObdobia=9&CPT=${l.tlac}`;
 const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/cpt&ZakZborID=13&CisObdobia=9&ID=${l.tlac}`;
 ---
 <Base title={`${l.title.slice(0, 110)} (tlač ${l.tlac})`} description={`Tlač ${l.tlac}: ${l.title.slice(0, 160)}. Stav: ${l.status}. ${l.votes.length} hlasovaní, ${real.length} vystúpení v rozprave.`} ogImage={`/og/zakon/${l.tlac}.png`} index>
@@ -26,6 +30,24 @@ const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/cpt&ZakZborID=13&C
     <div class="tile"><dt>Prerokúvané</dt><dd style="font-size:var(--step-0)">{fmtShort(l.first)}{l.first.slice(0, 10) !== l.last.slice(0, 10) && <> – {fmtShort(l.last)}</>}</dd></div>
   </dl>
   {l.finalVote && <p class="meta-line" style="margin-top:1rem">Záverečné hlasovanie {fmtDate(l.finalVote.datetime)}: <a href={`/hlasovania/${l.finalVote.id}/`}>{resultText(l.finalVote).toLowerCase()}, za {l.finalVote.counts.Z}, proti {l.finalVote.counts.P}, zdržalo sa {l.finalVote.counts["?"]}</a>.</p>}
+
+  {P && (
+    <section class="panel pad proc">
+      <h2>Legislatívny proces podľa nrsr.sk</h2>
+      <dl class="facts">
+        <div><dt>Stav</dt><dd>{P.state}{P.stateNote && <span class="muted"> ({P.stateNote})</span>}</dd></div>
+        {P.submitter && <div><dt>Navrhovateľ</dt><dd>{P.submitter}</dd></div>}
+        {P.delivered && <div><dt>Doručený</dt><dd>{fmtShort(P.delivered)}</dd></div>}
+        {P.gestor && <div><dt>Gestorský výbor</dt><dd>{gestorId ? <a href={`/vybory/${gestorId}/`}>{P.gestor}</a> : P.gestor}</dd></div>}
+        {P.zbierka && <div><dt>Zbierka zákonov</dt><dd><a href={`https://www.slov-lex.sk/pravne-predpisy/SK/ZZ/${P.zbierka.split("/")[1]}/${P.zbierka.split("/")[0]}/`} rel="noopener">{P.zbierka} Z. z.</a></dd></div>}
+        {P.returnedByPresident && <div><dt>Prezident</dt><dd>zákon vrátil na opätovné prerokovanie</dd></div>}
+      </dl>
+      {P.stages.length > 0 && (
+        <ol class="steps">{P.stages.map((st) => <li><b>{st.stage}</b>{st.result && <span>{st.result}</span>}<p class="muted">{st.text}</p></li>)}</ol>
+      )}
+      <p style="margin:.5rem 0 0"><a class="more" href={nrsrZakon} rel="noopener">Priebeh na nrsr.sk</a></p>
+    </section>
+  )}
 
   {stages.map((s) => (
     <section>
@@ -47,3 +69,12 @@ const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/cpt&ZakZborID=13&C
   )}
   <p><a class="more" href={nrsr} rel="noopener">Tlač {l.tlac} na nrsr.sk</a></p>
 </Base>
+<style>
+  .proc { margin-top: 1.5rem; }
+  .proc h2 { font-size: var(--step-1); margin: 0 0 .75rem; }
+  .steps { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .75rem; border-left: 2px solid var(--line-2); }
+  .steps li { padding-left: 1rem; position: relative; }
+  .steps li::before { content: ""; position: absolute; left: -6px; top: .35rem; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .steps span { margin-left: .5rem; font-size: var(--step--1); }
+  .steps p { margin: .2rem 0 0; font-size: var(--step--1); max-width: 75ch; }
+</style>

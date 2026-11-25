@@ -18,6 +18,10 @@ on:
         description: "Old vote pages to re-read (clubs, detail)"
         required: false
         default: "300"
+      extra_minutes:
+        description: "Time budget for MP activity, committees, laws, declarations (minutes)"
+        required: false
+        default: "12"
       max:
         description: "Max votes in this run"
         required: false
@@ -41,6 +45,10 @@ jobs:
           pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
           timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} --speech-minutes ${{ inputs.speech_minutes || 25 }} --refetch ${{ inputs.refetch || 300 }} || echo "scraper stopped early, committing progress"
+      - name: Extra data (activity, committees, laws, declarations)
+        run: |
+          python scraper/test_parse_extra.py > /dev/null
+          timeout 300m python scraper/extra.py --minutes ${{ inputs.extra_minutes || 12 }} || echo "extra scraper stopped early, committing progress"
       - name: AI summaries (GitHub Models)
         continue-on-error: true
         env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }

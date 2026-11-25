@@ -1,0 +1,191 @@
+---
+// Profile sections from the extra scraper: absences, committees, bills, amendments,
+// interpellations, trips, offices, voting similarity, debate keywords, asset declaration.
+import Ava from "./Ava.astro";
+import { absence, committeesOf, legis, similar, topics, isApproved, amendmentPassed, eur, mpExtra } from "../lib/extra";
+import { fmtShort, pct, shortTitle, clubColor, lawByTlac, type Mp } from "../lib/data";
+interface Props { m: Mp }
+const { m } = Astro.props;
+const ab = absence.get(m.id);
+const com = committeesOf(m.id);
+const L = legis(m.id);
+const sim = similar(m.id);
+const kw = topics[m.id] ?? [];
+const d = L.declaration;
+const has = mpExtra.has(m.id);
+const nrsr = (sid: string, extra = "") => `https://www.nrsr.sk/web/Default.aspx?sid=${sid}&PoslanecID=${m.id}&CisObdobia=9${extra}`;
+const kinds = d ? Object.entries(d.realEstateKinds).sort((a, b) => b[1] - a[1]) : [];
+const grouped = (xs: string[]) => { const c = new Map<string, number>(); for (const x of xs) c.set(x, (c.get(x) ?? 0) + 1); return [...c.entries()].map(([k, n]) => (n > 1 ? `${k} (${n})` : k)).join(", "); };
+const roleLabel = (r: string) => (r === "predseda" ? "predseda" : r === "podpredseda" ? "podpredseda" : r === "overovateľ" ? "overovateľ" : "člen");
+---
+{(has || sim.closest.length > 0) && (
+<article class="panel extra" style={`--club:${clubColor(m.club)}`}>
+  {ab && (
+    <section>
+      <h2>Neprítomnosť pri hlasovaní</h2>
+      <dl class="tiles">
+        <div class="tile"><dt>Neprítomný(á) pri hlasovaní</dt><dd>{ab.absent}</dd></div>
+        <div class="tile"><dt>Z toho ospravedlnene</dt><dd>{ab.excused}<small>{ab.excusedDays} ospravedlnených dní</small></dd></div>
+        <div class={`tile ${ab.unexcused > 0 ? "accent" : ""}`}><dt>Bez ospravedlnenia</dt><dd>{ab.unexcused}</dd></div>
+      </dl>
+      <p class="note">Ospravedlnenie sa páruje s dňom hlasovania podľa <a href={nrsr("poslanci/ospravedlnenia")} rel="noopener">zoznamu ospravedlnení na nrsr.sk</a>. Neospravedlnená môže byť aj krátka neprítomnosť počas rokovacieho dňa.</p>
+    </section>
+  )}
+
+  {com.length > 0 && (
+    <section>
+      <h2>Výbory</h2>
+      <ul class="chips">{com.map((c) => <li><a href={`/vybory/${c.id}/`}>{c.short}</a> <small>{roleLabel(c.role)}</small></li>)}</ul>
+    </section>
+  )}
+
+  {sim.closest.length > 0 && (
+    <section>
+      <h2>Hlasuje najčastejšie ako</h2>
+      <ul class="sim">
+        {sim.closest.map((x) => (
+          <li style={`--club:${clubColor(x.m.club)}`}><a href={`/poslanci/${x.m.id}/`}><Ava m={x.m} size="md" /><span>{x.m.name}<small>{x.m.club}</small></span><b>{pct(x.r)}</b></a></li>
+        ))}
+      </ul>
+      {sim.otherClubs.length > 0 && (<>
+        <h3>Najbližšie mimo vlastného klubu</h3>
+        <ul class="sim">
+          {sim.otherClubs.map((x) => (
+            <li style={`--club:${clubColor(x.m.club)}`}><a href={`/poslanci/${x.m.id}/`}><Ava m={x.m} size="md" /><span>{x.m.name}<small>{x.m.club}</small></span><b>{pct(x.r)}</b></a></li>
+          ))}
+        </ul>
+      </>)}
+      <p class="note">Podiel hlasovaní, v ktorých obaja hlasovali rovnako (za, proti alebo zdržal sa). Počítajú sa len hlasovania, na ktorých hlasovali obaja.</p>
+    </section>
+  )}
+
+  {kw.length > 0 && (
+    <section>
+      <h2>Charakteristické slová z vystúpení</h2>
+      <ul class="chips plain">{kw.map((w) => <li>{w}</li>)}</ul>
+      <p class="note">Slová, ktoré tento poslanec v rozprave používa výrazne častejšie ako ostatní (výpočet TF-IDF zo stenografických prepisov, bez vlastných mien a rokovacích fráz).</p>
+    </section>
+  )}
+
+  {has && (
+    <section>
+      <h2>Legislatívna iniciatíva</h2>
+      <dl class="tiles">
+        <div class="tile accent"><dt>Predložené návrhy zákonov</dt><dd>{L.bills.length}<small>{L.approved} schválených</small></dd></div>
+        <div class="tile"><dt>Úspešnosť návrhov</dt><dd>{L.bills.length ? pct(L.approved / L.bills.length) : "–"}</dd></div>
+        <div class="tile"><dt>Pozmeňujúce návrhy</dt><dd>{L.amendments.length}{L.amendmentsVoted > 0 && <small>{L.amendmentsPassed} z {L.amendmentsVoted} schválených</small>}</dd></div>
+        <div class="tile"><dt>Interpelácie</dt><dd>{L.interpellations.length}</dd></div>
+      </dl>
+      {L.bills.length > 0 && (
+        <details>
+          <summary>Návrhy zákonov ({L.bills.length})</summary>
+          <ul class="rows">
+            {L.bills.map((b) => (
+              <li>
+                <time>{b.delivered ? fmtShort(b.delivered) : ""}</time>
+                <span>{b.tlac && lawByTlac.has(b.tlac) ? <a href={`/zakony/${b.tlac}/`}>{shortTitle(b.title, 200)}</a> : shortTitle(b.title, 200)}
+                  <small>{b.category}{b.sponsors && `, spolupredkladatelia: ${b.sponsors}`}</small></span>
+                <span class:list={["st", { yes: isApproved(b) }]}>{isApproved(b) ? "schválený" : b.state.toLowerCase()}</span>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+      {L.amendments.length > 0 && (
+        <details>
+          <summary>Pozmeňujúce a doplňujúce návrhy ({L.amendments.length})</summary>
+          <ul class="rows">
+            {L.amendments.map((a) => { const p = amendmentPassed(a); return (
+              <li>
+                <time>{fmtShort(a.date)}</time>
+                <span>{a.tlac && lawByTlac.has(a.tlac) ? <a href={`/zakony/${a.tlac}/`}>{shortTitle(a.title, 180)}</a> : shortTitle(a.title, 180)}<small>tlač {a.tlac ?? "–"}{a.session && `, ${a.session}. schôdza`}</small></span>
+                <span class:list={["st", { yes: p === true, no: p === false }]}>{p === null ? "" : a.voteId ? <a href={`/hlasovania/${a.voteId}/`}>{p ? "schválený" : "neschválený"}</a> : ""}</span>
+              </li>); })}
+          </ul>
+        </details>
+      )}
+      {L.interpellations.length > 0 && (
+        <details>
+          <summary>Interpelácie ({L.interpellations.length})</summary>
+          <ul class="rows">
+            {L.interpellations.map((i) => (
+              <li>
+                <time>{i.date ? fmtShort(i.date) : ""}</time>
+                <span><a href={`https://www.nrsr.sk/web/Default.aspx?sid=schodze/interpelacia&ID=${i.id}`} rel="noopener">{shortTitle(i.title, 180)}</a><small>adresát: {i.to}</small></span>
+                <span class="st">{i.state.replace(/^Uzavretá /, "").toLowerCase()}</span>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
+    </section>
+  )}
+
+  {has && (L.trips.length > 0 || L.offices.length > 0) && (
+    <section>
+      <h2>Pracovné cesty a kancelária</h2>
+      {L.offices.length > 0 && <p><b>Poslanecká kancelária:</b> {L.offices.join("; ")}</p>}
+      {L.trips.length > 0 && (
+        <details>
+          <summary>Zahraničné pracovné cesty ({L.trips.length})</summary>
+          <ul class="rows">{L.trips.map((t) => <li><time>{fmtShort(t.from)}{t.to !== t.from && <> – {fmtShort(t.to)}</>}</time><span>{t.desc}</span><span></span></li>)}</ul>
+        </details>
+      )}
+    </section>
+  )}
+
+  {d && (
+    <section>
+      <h2>Majetkové priznanie</h2>
+      <p class="note">Oznámenie verejného funkcionára{d.year && ` za rok ${d.year}`}{d.filed && `, podané ${d.filed}`}. Zverejnená časť podľa ústavného zákona o ochrane verejného záujmu.</p>
+      <dl class="tiles">
+        <div class="tile accent"><dt>Príjmy z verejnej funkcie</dt><dd>{eur(d.incomePublic)}</dd></div>
+        <div class="tile"><dt>Iné príjmy</dt><dd>{eur(d.incomeOther)}</dd></div>
+        <div class="tile"><dt>Nehnuteľnosti</dt><dd>{d.realEstateCount}</dd></div>
+        <div class="tile"><dt>Hnuteľné veci</dt><dd>{d.movablesCount}</dd></div>
+      </dl>
+      <dl class="facts decl">
+        {d.employment && <div><dt>Zamestnanie</dt><dd>{d.employment}</dd></div>}
+        {d.business && <div><dt>Podnikanie</dt><dd>{d.business}</dd></div>}
+        {kinds.length > 0 && <div><dt>Druhy nehnuteľností</dt><dd>{kinds.map(([k, n]) => `${k}${n > 1 ? ` (${n})` : ""}`).join(", ")}</dd></div>}
+        {d.movables.length > 0 && <div><dt>Hnuteľné veci</dt><dd>{grouped(d.movables)}</dd></div>}
+        {d.rights.length > 0 && <div><dt>Majetkové práva</dt><dd>{grouped(d.rights)}</dd></div>}
+        {d.obligations.length > 0 && <div><dt>Záväzky</dt><dd>{grouped(d.obligations)}</dd></div>}
+      </dl>
+      {d.roles.length > 0 && (
+        <details><summary>Funkcie a členstvá ({d.roles.length})</summary><ul class="plain-list">{d.roles.map((r) => <li>{r}</li>)}</ul></details>
+      )}
+      <p class="note">Presné polohy nehnuteľností (katastrálne územia, listy vlastníctva) tu zámerne neuvádzame. <a href={`https://www.nrsr.sk/web/Default.aspx?sid=vnf/oznamenie&UserId=${d.userId}`} rel="noopener">Celé oznámenie na nrsr.sk</a></p>
+    </section>
+  )}
+</article>
+)}
+
+<style>
+  .extra { padding: clamp(1rem, 3vw, 1.75rem); margin-top: 1.25rem; display: grid; gap: 2rem; }
+  .extra h2 { font-size: var(--step-1); margin: 0 0 .75rem; }
+  .extra h3 { font-size: var(--step-0); margin: 1rem 0 .5rem; color: var(--muted); font-weight: 600; }
+  .note { color: var(--muted); font-size: var(--step--1); margin: .6rem 0 0; max-width: 70ch; }
+  .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+  .chips li { border: 1px solid var(--line); border-radius: 999px; padding: .3rem .75rem; font-size: var(--step--1); }
+  .chips li small { color: var(--muted); margin-left: .25rem; }
+  .chips.plain li { background: var(--bg-2, transparent); }
+  .sim { list-style: none; padding: 0; margin: 0; display: grid; gap: .35rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+  .sim a { display: flex; align-items: center; gap: .6rem; padding: .45rem .6rem; border-radius: .6rem; border: 1px solid var(--line); text-decoration: none; color: inherit; border-left: 3px solid var(--club); }
+  .sim a:hover { background: var(--bg-2, rgba(127,127,127,.08)); }
+  .sim span { flex: 1; display: flex; flex-direction: column; line-height: 1.2; }
+  .sim small { color: var(--muted); font-size: var(--step--1); }
+  .sim b { font-variant-numeric: tabular-nums; }
+  details { margin-top: .75rem; border-top: 1px solid var(--line); padding-top: .6rem; }
+  summary { cursor: pointer; font-weight: 600; }
+  .rows { list-style: none; padding: 0; margin: .5rem 0 0; display: grid; }
+  .rows li { display: grid; grid-template-columns: 6.5rem 1fr auto; gap: .75rem; padding: .55rem 0; border-bottom: 1px solid var(--line); font-size: var(--step--1); align-items: baseline; }
+  .rows time { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .rows small { display: block; color: var(--muted); margin-top: .15rem; }
+  .rows .st { white-space: nowrap; color: var(--muted); }
+  .rows .st.yes, .rows .st.yes a { color: var(--za); }
+  .rows .st.no, .rows .st.no a { color: var(--proti); }
+  @media (max-width: 560px) { .rows li { grid-template-columns: 1fr; gap: .2rem; } }
+  .decl { margin-top: 1rem; }
+  .plain-list { margin: .5rem 0 0; padding-left: 1.1rem; font-size: var(--step--1); }
+</style>

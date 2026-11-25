@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import { changes } from "../../lib/extra";
+import { mpById, fmtShort } from "../../lib/data";
+---
+<Base title="Zmeny v zložení parlamentu" description="Náhradníci, zánik a uplatnenie mandátov poslancov NR SR v IX. volebnom období.">
+  <p class="meta-line"><a href="/poslanci/">Sála</a></p>
+  <h1>Zmeny v zložení parlamentu</h1>
+  <p class="meta-line">Kto nastúpil ako náhradník, komu mandát zanikol alebo sa neuplatňuje (napríklad pri vstupe do vlády). Zdroj: nrsr.sk.</p>
+  {changes.length === 0 ? <p class="empty">Údaje sa práve načítavajú.</p> : (
+  <ol class="chg">
+    {changes.map((c) => { const m = c.mpId ? mpById.get(c.mpId) : undefined; const name = c.mp.replace(/\s*\(.*\)$/, "").split(", ").reverse().join(" "); return (
+      <li>
+        <time datetime={c.date}>{fmtShort(c.date)}</time>
+        <div><b>{m ? <a href={`/poslanci/${m.id}/`}>{name}</a> : name}</b>{c.status && <span class="muted">, {c.status.toLowerCase()}</span>}<p>{c.reason}</p></div>
+      </li>); })}
+  </ol>)}
+</Base>
+<style>
+  .chg { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; }
+  .chg li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+  .chg time { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .chg p { margin: .25rem 0 0; color: var(--muted); font-size: var(--step--1); max-width: 75ch; }
+  @media (max-width: 560px) { .chg li { grid-template-columns: 1fr; gap: .2rem; } }
+</style>

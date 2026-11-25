@@ -1,0 +1,38 @@
+---
+import Base from "../../layouts/Base.astro";
+import Ava from "../../components/Ava.astro";
+import { committees } from "../../lib/extra";
+import { mpById, clubColor, laws, type Mp } from "../../lib/data";
+import { lawProcess } from "../../lib/extra";
+export function getStaticPaths() { return committees.map((c) => ({ params: { id: String(c.id) }, props: { c } })); }
+const { c } = Astro.props as { c: (typeof committees)[number] };
+const order: Record<string, number> = { predseda: 0, podpredseda: 1 };
+const members = c.members.map((x) => ({ ...x, m: mpById.get(x.mpId) })).filter((x): x is typeof x & { m: Mp } => !!x.m)
+  .sort((a, b) => (order[a.role] ?? 2) - (order[b.role] ?? 2) || a.m.sortName.localeCompare(b.m.sortName, "sk"));
+const byClub = new Map<string, number>(); for (const x of members) byClub.set(x.m.club, (byClub.get(x.m.club) ?? 0) + 1);
+const gestor = laws.filter((l) => lawProcess.get(l.tlac)?.gestor === c.name).sort((a, b) => b.last.localeCompare(a.last)).slice(0, 40);
+---
+<Base title={c.name} description={`${c.name}: ${members.length} členov, zloženie podľa klubov a návrhy zákonov, pri ktorých je gestorským výborom.`} index>
+  <p class="meta-line"><a href="/vybory/">Výbory</a></p>
+  <h1 style="font-size:var(--step-2)">{c.name}</h1>
+  <p class="clubs">{[...byClub.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => <span class="club" style={`--club:${clubColor(k)}`}><i aria-hidden="true"></i>{k} {n}</span>)}</p>
+  <ul class="mem">
+    {members.map((x) => (
+      <li><a href={`/poslanci/${x.m.id}/`} style={`--club:${clubColor(x.m.club)}`}><Ava m={x.m} /><span>{x.m.name}<small>{x.m.club}</small></span>{x.role !== "člen" && <em>{x.role}</em>}</a></li>
+    ))}
+  </ul>
+  {gestor.length > 0 && (<>
+    <div class="section-head"><h2>Gestorský výbor pre</h2></div>
+    <ul class="laws">{gestor.map((l) => <li><a href={`/zakony/${l.tlac}/`}>{l.title}</a> <small class="muted">tlač {l.tlac}, {l.status}</small></li>)}</ul>
+  </>)}
+  <p><a class="more" href={`https://www.nrsr.sk/web/Default.aspx?sid=vybory/vybor&ID=${c.id}`} rel="noopener">Výbor na nrsr.sk</a></p>
+</Base>
+<style>
+  .clubs { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+  .mem { list-style: none; padding: 0; margin: 1.25rem 0; display: grid; gap: .4rem; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+  .mem a { display: flex; align-items: center; gap: .6rem; padding: .5rem .7rem; border: 1px solid var(--line); border-left: 3px solid var(--club); border-radius: .6rem; text-decoration: none; color: inherit; }
+  .mem span { flex: 1; display: flex; flex-direction: column; line-height: 1.25; }
+  .mem small { color: var(--muted); font-size: var(--step--1); }
+  .mem em { font-style: normal; font-size: var(--step--1); color: var(--muted); }
+  .laws { padding-left: 1.1rem; display: grid; gap: .45rem; }
+</style>

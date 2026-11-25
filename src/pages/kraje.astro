@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+import Ava from "../components/Ava.astro";
+import { REGIONS, regionMps, outsideSk } from "../lib/extra";
+import { mps, clubColor, mpStats, pct } from "../lib/data";
+// Tile map: approximate geography of the eight regions (column, row).
+const pos: Record<string, [number, number, number]> = { Bratislavský: [1, 3, 1], Trnavský: [2, 2, 2], Trenčiansky: [3, 1, 1], Nitriansky: [3, 3, 2], Žilinský: [4, 1, 2], Banskobystrický: [5, 2, 2], Prešovský: [6, 1, 2], Košický: [7, 2, 2] };
+const data = REGIONS.map((r) => { const list = regionMps(r); const clubs = new Map<string, number>(); for (const m of list) clubs.set(m.club, (clubs.get(m.club) ?? 0) + 1);
+  const att = list.length ? list.reduce((a, m) => a + (mpStats(m.id).attendance ?? 0), 0) / list.length : null;
+  return { r, list, clubs: [...clubs.entries()].sort((a, b) => b[1] - a[1]), att }; });
+const max = Math.max(...data.map((d) => d.list.length), 1);
+---
+<Base title="Poslanci podľa krajov" description="Odkiaľ pochádzajú poslanci NR SR: počet poslancov s bydliskom v každom kraji a ich kluby.">
+  <h1>Poslanci podľa krajov</h1>
+  <p class="meta-line">Podľa bydliska uvedeného na nrsr.sk. Slovensko je jeden volebný obvod, takže poslanci nezastupujú kraje formálne.</p>
+  <div class="tmap" role="list">
+    {data.map((d) => { const [c, r, h] = pos[d.r]; return (
+      <a role="listitem" href={`#${d.r}`} style={`grid-column:${c};grid-row:${r}/span ${h};--a:${0.15 + 0.85 * d.list.length / max}`}>
+        <b>{d.r}</b><span class="n">{d.list.length}</span>
+        <span class="bar">{d.clubs.map(([k, n]) => <i style={`flex:${n};background:${clubColor(k)}`} title={`${k}: ${n}`} />)}</span>
+      </a>); })}
+  </div>
+  {data.map((d) => (
+    <section id={d.r}>
+      <div class="section-head"><h2>{d.r} kraj</h2><span class="muted" style="font-size:var(--step--1)">{d.list.length} poslancov, priemerná účasť {pct(d.att)}</span></div>
+      <ul class="mem">{d.list.map((m) => <li><a href={`/poslanci/${m.id}/`} style={`--club:${clubColor(m.club)}`}><Ava m={m} /><span>{m.name}<small>{m.club}, {m.city}</small></span></a></li>)}</ul>
+    </section>
+  ))}
+  {outsideSk.length > 0 && <p class="muted">Bez uvedeného kraja: {outsideSk.map((m) => m.name).join(", ")}.</p>}
+</Base>
+<style>
+  .tmap { display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(4, minmax(4.2rem, auto)); gap: .4rem; margin: 1.5rem 0 2rem; max-width: 56rem; }
+  .tmap a { display: flex; flex-direction: column; justify-content: space-between; padding: .5rem .6rem; border-radius: .6rem; text-decoration: none; color: var(--text);
+    background: color-mix(in oklab, var(--accent, #338ced) calc(var(--a) * 55%), var(--bg-2, transparent)); border: 1px solid var(--line); min-width: 0; }
+  .tmap b { font-size: var(--step--1); overflow: hidden; text-overflow: ellipsis; }
+  .tmap .n { font-size: var(--step-2); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .tmap .bar { display: flex; gap: 1px; height: 6px; border-radius: 3px; overflow: hidden; }
+  @media (max-width: 640px) { .tmap { grid-template-columns: repeat(2, 1fr); grid-template-rows: none; } .tmap a { grid-column: auto !important; grid-row: auto !important; } }
+  .mem { list-style: none; padding: 0; margin: .5rem 0 1.5rem; display: grid; gap: .4rem; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+  .mem a { display: flex; align-items: center; gap: .6rem; padding: .5rem .7rem; border: 1px solid var(--line); border-left: 3px solid var(--club); border-radius: .6rem; text-decoration: none; color: inherit; }
+  .mem span { display: flex; flex-direction: column; line-height: 1.25; }
+  .mem small { color: var(--muted); font-size: var(--step--1); }
+</style>
