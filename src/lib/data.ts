@@ -80,7 +80,7 @@ export const stats = new Map<string, MpStats>();
     }
     const month = v.datetime.slice(0, 7);
     for (const [id, c] of Object.entries(v.votes)) {
-      const a = acc.get(id) ?? { total: 0, present: 0, comp: 0, withClub: 0, rebels: [], months: new Map() };
+      const a = acc.get(id) ?? { total: 0, present: 0, comp: 0, withClub: 0, rebels: [] as string[], months: new Map<string, [number, number]>() };
       a.total++; if (c !== "0") a.present++;
       const mo = a.months.get(month) ?? [0, 0]; mo[0]++; if (c !== "0") mo[1]++; a.months.set(month, mo);
       const mj = major.get(clubOf(v, id));

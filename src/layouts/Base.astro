@@ -65,31 +65,36 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
     if (since && !["Sat", "Sun"].includes(wd) && h >= 8 && h < 20 && Date.now() - Date.parse(since) < 12 * 3600e3) {
       box.hidden = false; document.getElementById("nav-live")!.hidden = false;
     }
-    // New deploy check: compare this page's build id with /version.json every 3 minutes while visible.
+    // New-content notice. The page keeps a WebSocket to /api/updates; each deploy closes it,
+    // the page reconnects and receives the new version info. No periodic checks.
     {
       const b = document.body, toast = document.getElementById("update")!;
-      let dismissed = "";
+      let dismissed = "", delay = 2000, ws: WebSocket | null = null;
       const plural = (n: number, a: string, c: string, d: string) => (n === 1 ? a : n >= 2 && n <= 4 ? c : d);
-      async function check() {
-        if (document.hidden) return;
-        try {
-          const r = await fetch(`/version.json?t=${Date.now()}`, { cache: "no-store" });
-          if (!r.ok) return;
-          const v = await r.json();
-          if (!v.v || v.v === b.dataset.version || v.v === dismissed) return;
-          const dv = v.votes - Number(b.dataset.votes), ds = v.speeches - Number(b.dataset.speeches);
-          const parts = [
-            dv > 0 ? `${dv} ${plural(dv, "nové hlasovanie", "nové hlasovania", "nových hlasovaní")}` : "",
-            ds > 0 ? `${ds} ${plural(ds, "nové vystúpenie", "nové vystúpenia", "nových vystúpení")}` : "",
-          ].filter(Boolean);
-          document.getElementById("update-text")!.textContent = parts.length ? `Pribudlo: ${parts.join(" a ")}.` : "Stránka bola aktualizovaná.";
-          toast.dataset.v = v.v; toast.hidden = false;
-        } catch { /* offline */ }
+      function show(v: { v?: string; votes?: number; speeches?: number }) {
+        if (!v.v || v.v === b.dataset.version || v.v === dismissed) return;
+        const dv = (v.votes ?? 0) - Number(b.dataset.votes), ds = (v.speeches ?? 0) - Number(b.dataset.speeches);
+        const parts = [
+          dv > 0 ? `${dv} ${plural(dv, "nové hlasovanie", "nové hlasovania", "nových hlasovaní")}` : "",
+          ds > 0 ? `${ds} ${plural(ds, "nové vystúpenie", "nové vystúpenia", "nových vystúpení")}` : "",
+        ].filter(Boolean);
+        document.getElementById("update-text")!.textContent = parts.length ? `Pribudlo: ${parts.join(" a ")}.` : "Stránka bola aktualizovaná.";
+        toast.dataset.v = v.v; toast.hidden = false;
       }
+      function connect() {
+        if (ws && ws.readyState <= 1) return;
+        try { ws = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/api/updates`); } catch { return; }
+        ws.onmessage = (e) => { delay = 2000; try { show(JSON.parse(e.data)); } catch {} };
+        ws.onclose = () => {
+          // spread reconnects after a deploy so thousands of tabs don't arrive at once
+          setTimeout(connect, delay + Math.random() * 8000);
+          delay = Math.min(delay * 2, 300_000);
+        };
+      }
+      connect();
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) connect(); });
       document.getElementById("update-reload")!.addEventListener("click", () => location.reload());
       document.getElementById("update-close")!.addEventListener("click", () => { dismissed = toast.dataset.v ?? ""; toast.hidden = true; });
-      setInterval(check, 180_000); document.addEventListener("visibilitychange", check);
-      setTimeout(check, 20_000);
     }
     document.getElementById("theme")!.addEventListener("click", () => {
       const root = document.documentElement;
