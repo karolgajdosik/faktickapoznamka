@@ -17,8 +17,9 @@ const data = mps.map((m) => {
 ---
 <Base title="Sála" wide description="Všetkých 150 poslancov NR SR v sále: kluby, účasť na hlasovaniach a súlad s klubom.">
   <div class="sala">
-    <aside class="panel side" aria-label="Zoznam poslancov">
+    <aside class="panel side" aria-label="Zoznam poslancov" id="sheet" data-snap="peek">
       <div class="ctrl">
+        <button type="button" class="sheet-handle" id="sheet-handle" aria-label="Rozbaliť alebo zbaliť zoznam poslancov"><span></span></button>
         <h1>Poslanci <small id="count">{mps.length}</small></h1>
         <label class="sr-only" for="q">Hľadať</label>
         <input class="input" id="q" type="search" placeholder="Meno, mesto, kraj, strana…" autocomplete="off" />
@@ -188,6 +189,54 @@ const data = mps.map((m) => {
     const edge = () => wrap.classList.toggle("end", list.scrollTop + list.clientHeight >= list.scrollHeight - 4);
     list.addEventListener("scroll", edge, { passive: true }); new ResizeObserver(edge).observe(list);
     render(); paint(); edge();
+
+    // Mobile: the list lives in a bottom sheet over the hall (peek / half / full), dragged by its handle.
+    const mq = matchMedia("(max-width: 44rem)");
+    const sheet = document.getElementById("sheet")!, handle = document.getElementById("sheet-handle")!, ctrl = sheet.querySelector<HTMLElement>(".ctrl")!;
+    const snaps = () => { const full = sheet.offsetHeight; return { full: 0, half: full * 0.45, peek: full - ctrl.offsetHeight - 6 }; };
+    let snap: "peek" | "half" | "full" = "peek";
+    function setSnap(s: typeof snap, animate = true) {
+      snap = s; sheet.dataset.snap = s; sheet.style.transition = animate ? "" : "none";
+      sheet.style.transform = mq.matches ? `translateY(${snaps()[s]}px)` : "";
+      document.body.classList.toggle("sheet-full", mq.matches && s === "full");
+      handle.setAttribute("aria-expanded", String(s !== "peek"));
+    }
+    let startY = 0, startT = 0, t0 = 0, dragging = false, moved = false;
+    const cur = () => snaps()[snap];
+    function down(e: PointerEvent) {
+      if (!mq.matches) return;
+      if ((e.target as Element).closest("input, select, .chip")) return;
+      dragging = true; moved = false; startY = e.clientY; startT = cur(); t0 = performance.now();
+      sheet.style.transition = "none"; (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    }
+    function move(e: PointerEvent) {
+      if (!dragging) return;
+      const dy = e.clientY - startY; if (Math.abs(dy) > 4) moved = true;
+      const y = Math.max(0, Math.min(snaps().peek, startT + dy));
+      sheet.style.transform = `translateY(${y}px)`;
+    }
+    function up(e: PointerEvent) {
+      if (!dragging) return; dragging = false;
+      if (!moved) { setSnap(snap === "peek" ? "half" : snap === "half" ? "full" : "peek"); return; }
+      const dy = e.clientY - startY, v = dy / Math.max(1, performance.now() - t0); // px per ms
+      const y = startT + dy, s = snaps();
+      let next: typeof snap = (["full", "half", "peek"] as const).reduce((a, b) => (Math.abs(s[b] - y) < Math.abs(s[a] - y) ? b : a));
+      if (v > 0.6) next = snap === "full" ? "half" : "peek";      // quick flick down
+      if (v < -0.6) next = snap === "peek" ? "half" : "full";     // quick flick up
+      setSnap(next);
+    }
+    ctrl.addEventListener("pointerdown", down); ctrl.addEventListener("pointermove", move);
+    ctrl.addEventListener("pointerup", up); ctrl.addEventListener("pointercancel", up);
+    q.addEventListener("focus", () => { if (mq.matches) setSnap("full"); });
+    chips.forEach((c) => c.addEventListener("click", () => { if (mq.matches && snap === "full") setSnap("half"); }));
+    sort.addEventListener("change", () => { if (mq.matches && snap === "peek") setSnap("half"); });
+    // swiping down at the top of the list collapses the sheet
+    let ly = 0;
+    list.addEventListener("touchstart", (e) => { ly = e.touches[0].clientY; }, { passive: true });
+    list.addEventListener("touchmove", (e) => { if (mq.matches && list.scrollTop <= 0 && e.touches[0].clientY - ly > 60 && snap !== "peek") { setSnap(snap === "full" ? "half" : "peek"); ly = e.touches[0].clientY; } }, { passive: true });
+    mq.addEventListener("change", () => setSnap("peek", false));
+    addEventListener("resize", () => setSnap(snap, false));
+    setSnap("peek", false);
     if (location.hash.length > 1 && byId.has(location.hash.slice(1))) open(location.hash.slice(1));
   </script>
 </Base>

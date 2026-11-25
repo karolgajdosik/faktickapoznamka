@@ -471,3 +471,26 @@ details.day[open] > summary::before { transform: rotate(90deg); }
 .sala .side .mplist::-webkit-scrollbar { width: 10px; }
 .sala .side .mplist::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--muted) 70%, transparent); }
 .sala .side .mplist::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* ---------- Sála on mobile: bottom sheet over the hall ---------- */
+.sheet-handle { display: none; }
+@media (max-width: 44rem) {
+  .sala { display: block; }
+  .sala .stage { padding: .75rem .5rem 1rem; margin-bottom: 8rem; }
+  .sala .side {
+    position: fixed; z-index: 25; left: 0; right: 0; top: 3.7rem; order: 0;
+    bottom: calc(4.4rem + env(safe-area-inset-bottom));
+    max-height: none; border-radius: 18px 18px 0 0; overflow: hidden;
+    box-shadow: 0 -12px 40px -12px rgba(0,0,0,.7), 0 0 0 1px var(--line-2);
+    transition: transform .3s cubic-bezier(.2,.8,.2,1); will-change: transform;
+  }
+  .sala .side .ctrl { padding: .2rem 1rem .7rem; touch-action: none; gap: .5rem; cursor: grab; }
+  .sheet-handle { display: block; all: unset; display: grid; place-items: center; height: 1.4rem; margin: 0 -1rem; cursor: grab; }
+  .sheet-handle span { width: 2.6rem; height: .32rem; border-radius: 999px; background: var(--line-2); }
+  .sheet-handle:focus-visible span { background: var(--accent); }
+  .sala .side .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -1rem; padding: 0 1rem; touch-action: pan-x; }
+  .sala .side .chips::-webkit-scrollbar { display: none; }
+  .sala .side .chip { flex: none; }
+  .sala .side .mplist { overflow-y: auto; overscroll-behavior: contain; padding-bottom: 1rem; }
+  .sala .side .listwrap::after { display: none; }
+}
