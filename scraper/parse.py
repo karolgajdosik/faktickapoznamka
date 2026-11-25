@@ -26,6 +26,8 @@ def parse_vote(html: str, vote_id: str) -> dict | None:
     """Parse a 'hlasklub' page: header metadata + per-MP votes grouped by club."""
     soup = _soup(html)
     text = soup.get_text("\n")
+    k = text.find("hlasovanie poslancov")  # skip site menu; metadata follows this heading
+    if k >= 0: text = text[k:]
     anchors = [a for a in soup.find_all("a", href=True) if "PoslanecID=" in a["href"]]
     if len(anchors) < 20:  # not a vote page (or empty / non-existent ID)
         return None
@@ -54,7 +56,7 @@ def parse_vote(html: str, vote_id: str) -> dict | None:
     tlac = re.search(r"tla[čc]\s*(\d+)", title, re.I)
     return {
         "id": str(vote_id),
-        "session": _int(_label(text, r"Schôdza")),
+        "session": _int(_label(text, r"Schôdza\s*\n")),
         "number": _int(_label(text, r"Číslo hlasovania")),
         "datetime": parse_dt(dt),
         "title": title,
@@ -83,3 +85,13 @@ def sort_name(name: str) -> tuple[str, str]:
         return f"{first} {last}", f"{last} {first}"
     parts = name.split(" ")
     return name, " ".join(parts[1:] + parts[:1])
+
+def parse_live(html: str) -> str | None:
+    """Current agenda item from the homepage box 'Priebeh rokovania NR SR'."""
+    soup = _soup(html)
+    for h3 in soup.find_all("h3"):
+        if "Priebeh rokovania" in h3.get_text():
+            div = h3.find_next_sibling("div")
+            txt = " ".join(div.get_text(" ", strip=True).split()) if div else ""
+            return txt or None
+    return None

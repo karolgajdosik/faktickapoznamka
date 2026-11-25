@@ -9,12 +9,16 @@ export interface Meta { demo: boolean; term: number; updatedAt: string; lastVote
 
 import mpsJson from "../../data/mps.json";
 import metaJson from "../../data/meta.json";
+import liveJson from "../../data/live.json";
+export const live = liveJson as { item: string | null; since: string | null };
 const voteFiles = import.meta.glob<{ default: Vote }>("../../data/votes/*.json", { eager: true });
 
 export const meta = metaJson as Meta;
 export const mps = (mpsJson as Mp[]).slice().sort((a, b) => a.sortName.localeCompare(b.sortName, "sk"));
 export const mpById = new Map(mps.map((m) => [m.id, m]));
-export const votes = Object.values(voteFiles).map((m) => m.default)
+/** "Prezentácia" = attendance check, not a decision on anything: excluded from lists and stats. */
+export const isPresence = (v: Vote) => /^prezentácia\.?$/i.test(v.title.trim());
+export const votes = Object.values(voteFiles).map((m) => m.default).filter((v) => !isPresence(v))
   .sort((a, b) => b.datetime.localeCompare(a.datetime) || Number(b.id) - Number(a.id));
 
 export const CODES: Code[] = ["Z", "P", "?", "N", "0"];

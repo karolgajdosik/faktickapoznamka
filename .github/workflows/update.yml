@@ -9,6 +9,10 @@ on:
       start:
         description: "Start vote ID (first run only)"
         required: false
+      max:
+        description: "Max votes in this run"
+        required: false
+        default: "400"
   push:
     branches: [main]
     paths-ignore: ["data/**", "probe/**", "**.md"]
@@ -17,6 +21,7 @@ concurrency: { group: update, cancel-in-progress: false }
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 345
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,7 +33,7 @@ jobs:
         run: |
           pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
-          python scraper/run.py ${{ inputs.start && format('--start {0}', inputs.start) || '' }}
+          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.start && format('--start {0}', inputs.start) || '' }} || echo "scraper stopped early, committing progress"
       - name: Commit data
         id: commit
         if: github.event_name != 'push'
