@@ -467,3 +467,7 @@ details.day[open] > summary::before { transform: rotate(90deg); }
   .sala .side .listwrap::after { display: none; }
 }
 @media (max-width: 44rem) { footer.site { display: none; } }
+.sala .side .mplist { scrollbar-color: color-mix(in srgb, var(--muted) 70%, transparent) transparent; }
+.sala .side .mplist::-webkit-scrollbar { width: 10px; }
+.sala .side .mplist::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--muted) 70%, transparent); }
+.sala .side .mplist::-webkit-scrollbar-thumb:hover { background: var(--muted); }
