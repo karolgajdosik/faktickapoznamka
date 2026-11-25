@@ -6,14 +6,13 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*"]
+    "not_found_handling": "404-page"
   },
   "routes": [
     { "pattern": "faktickapoznamka.sk", "custom_domain": true },
     { "pattern": "www.faktickapoznamka.sk", "custom_domain": true }
   ],
-  "durable_objects": { "bindings": [{ "name": "UPDATES", "class_name": "Updates" }] },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Updates"] }],
+  // v1 created the former WebSocket notifier, v2 removes it (replaced by the client-side version check).
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Updates"] }, { "tag": "v2", "deleted_classes": ["Updates"] }],
   "observability": { "enabled": true }
 }

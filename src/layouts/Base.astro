@@ -13,7 +13,7 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
 <html lang="sk">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>{full}</title>
   <meta name="description" content={description} />
   <meta property="og:title" content={full} />
@@ -22,9 +22,15 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
   <meta name="theme-color" content="#0c111d" />
   <link rel="canonical" href={new URL(path, "https://faktickapoznamka.sk")} />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="faktická poznámka" />
+  <meta name="app-version" content={versionInfo.v} />
   <script is:inline>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
 </head>
-<body data-version={versionInfo.v} data-votes={versionInfo.votes} data-speeches={versionInfo.speeches}>
+<body>
   <a class="skip" href="#obsah">Preskočiť na obsah</a>
   <header class="site">
     <div class:list={["wrap head", { "wide-wrap": wide }]}>
@@ -43,10 +49,13 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
   </div>
   {meta.demo && <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené.</div></div>}
   <main id="obsah" class:list={["wrap", { "wide-wrap": wide }]}><slot /></main>
-  <div class="toast" id="update" role="status" aria-live="polite" hidden>
-    <span id="update-text">Na stránke sú nové údaje.</span>
-    <button type="button" id="update-reload">Obnoviť</button>
-    <button type="button" id="update-close" class="x" aria-label="Zavrieť">×</button>
+  <div class="upd-bar" id="update" role="status" aria-live="polite" hidden>
+    <span>Je k dispozícii nová verzia stránky.</span>
+    <button type="button" class="btn" id="update-reload">Obnoviť</button>
+  </div>
+  <div class="upd-bar stale" id="stale" role="status" aria-live="polite" hidden>
+    <span>Ste offline, zobrazujeme naposledy uložené údaje.</span>
+    <button type="button" class="btn ghost" id="stale-close">Rozumiem</button>
   </div>
   <footer class="site">
     <div class="wrap">
@@ -64,36 +73,34 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
     if (since && !["Sat", "Sun"].includes(wd) && h >= 8 && h < 20 && Date.now() - Date.parse(since) < 12 * 3600e3) {
       box.hidden = false; document.getElementById("nav-live")!.hidden = false;
     }
-    // New-content notice. The page keeps a WebSocket to /api/updates; each deploy closes it,
-    // the page reconnects and receives the new version info. No periodic checks.
+    // "Nová verzia" check: compare this page's <meta name="app-version"> with the one in a fresh "/".
+    // Runs 20 s after load, every 5 minutes and on returning to the tab; never while hidden.
     {
-      const b = document.body, toast = document.getElementById("update")!;
-      let dismissed = "", delay = 2000, ws: WebSocket | null = null;
-      const plural = (n: number, a: string, c: string, d: string) => (n === 1 ? a : n >= 2 && n <= 4 ? c : d);
-      function show(v: { v?: string; votes?: number; speeches?: number }) {
-        if (!v.v || v.v === b.dataset.version || v.v === dismissed) return;
-        const dv = (v.votes ?? 0) - Number(b.dataset.votes), ds = (v.speeches ?? 0) - Number(b.dataset.speeches);
-        const parts = [
-          dv > 0 ? `${dv} ${plural(dv, "nové hlasovanie", "nové hlasovania", "nových hlasovaní")}` : "",
-          ds > 0 ? `${ds} ${plural(ds, "nové vystúpenie", "nové vystúpenia", "nových vystúpení")}` : "",
-        ].filter(Boolean);
-        document.getElementById("update-text")!.textContent = parts.length ? `Pribudlo: ${parts.join(" a ")}.` : "Stránka bola aktualizovaná.";
-        toast.dataset.v = v.v; toast.hidden = false;
+      const mine = document.querySelector<HTMLMetaElement>('meta[name="app-version"]')?.content;
+      const bar = document.getElementById("update")!;
+      let shown = false;
+      async function check() {
+        if (!mine || shown || document.hidden) return;
+        try {
+          const r = await fetch("/", { cache: "no-store" });
+          if (!r.ok || r.redirected) return;
+          const v = ((await r.text()).match(/<meta name="app-version" content="([^"]+)"/) || [])[1];
+          if (!v || v === mine) return;
+          shown = true; bar.hidden = false;
+        } catch { /* offline */ }
       }
-      function connect() {
-        if (ws && ws.readyState <= 1) return;
-        try { ws = new WebSocket(`${location.protocol === "https:" ? "wss" : "ws"}://${location.host}/api/updates`); } catch { return; }
-        ws.onmessage = (e) => { delay = 2000; try { show(JSON.parse(e.data)); } catch {} };
-        ws.onclose = () => {
-          // spread reconnects after a deploy so thousands of tabs don't arrive at once
-          setTimeout(connect, delay + Math.random() * 8000);
-          delay = Math.min(delay * 2, 300_000);
-        };
-      }
-      connect();
-      document.addEventListener("visibilitychange", () => { if (!document.hidden) connect(); });
+      setInterval(check, 5 * 60e3);
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) check(); });
+      setTimeout(check, 20e3);
       document.getElementById("update-reload")!.addEventListener("click", () => location.reload());
-      document.getElementById("update-close")!.addEventListener("click", () => { dismissed = toast.dataset.v ?? ""; toast.hidden = true; });
+
+      // Service worker: fast loads, offline fallback; tells us when it served a stored copy.
+      if ("serviceWorker" in navigator) {
+        const stale = document.getElementById("stale")!;
+        navigator.serviceWorker.addEventListener("message", (e) => { if (e.data?.type === "stale") stale.hidden = false; });
+        document.getElementById("stale-close")!.addEventListener("click", () => { stale.hidden = true; });
+        addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+      }
     }
     document.getElementById("theme")!.addEventListener("click", () => {
       const root = document.documentElement;
