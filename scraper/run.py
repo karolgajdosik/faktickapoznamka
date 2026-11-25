@@ -22,6 +22,7 @@ def main():
     if meta.get("demo"):
         print("Removing demo data"); [p.unlink() for p in VOTES.glob("*.json")]
         meta = {"demo": False, "term": 9, "lastVoteId": None}; (DATA / "mps.json").write_text("[]")
+    VOTES.mkdir(parents=True, exist_ok=True)
     mps = {m["id"]: m for m in json.loads((DATA / "mps.json").read_text())}
     start = a.start or (int(meta["lastVoteId"]) + 1 if meta.get("lastVoteId") else None)
     if not start: sys.exit("No start ID: run with --start <vote id> (see probe/REPORT.md)")
@@ -51,6 +52,9 @@ def main():
             misses += 1
             why = "bot-check" if nrsr.is_challenge(r.url, r.text) else f"HTTP {r.status_code}, ok={r.ok}, {len(r.text)} B, PoslanecID links={r.text.count('PoslanecID=')}"
             print(f"{vid}: skip ({why})", flush=True)
+            if misses == 1 and len(r.text) < 5000:
+                import re as _re
+                print("   sample:", " ".join(_re.sub(r"<[^>]+>", " ", r.text).split())[:300], flush=True)
         vid += 1
     save(mps, meta)
     print(f"saved {saved} votes, last {meta.get('lastVoteId')}")
