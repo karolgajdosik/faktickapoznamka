@@ -78,3 +78,36 @@ def close():
         if _pw: _pw.stop()
     finally:
         _pw = _browser = _ctx = None
+
+
+SESSIONS_URL = BASE + "?sid=schodze/hlasovanie/schodze"
+
+def session_numbers(term: int = 9) -> list[int]:
+    import re
+    r = get({"sid": "schodze/hlasovanie/schodze"})
+    return sorted({int(x) for x in re.findall(r"CisObdobia=%d&(?:amp;)?CisSchodze=(\d+)" % term, r.text)})
+
+def session_vote_ids(session: int, term: int = 9, max_pages: int = 200) -> list[str]:
+    """All vote IDs of one session from the paginated search grid (ASP.NET postback pager)."""
+    import re
+    _start()
+    url = BASE + f"?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia={term}&CisSchodze={session}&ShowCisloSchodze=False"
+    ids: list[str] = []
+    page = _ctx.new_page()
+    try:
+        _wait(); page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+        for _ in range(60):
+            if "nrsr-challenge" not in page.url: break
+            page.wait_for_timeout(1000)
+        for k in range(1, max_pages + 1):
+            html = page.content()
+            for i in re.findall(r"hlasovanie/hlasklub&(?:amp;)?ID=(\d+)", html):
+                if i not in ids: ids.append(i)
+            nxt = page.locator(f"a[href*=\"'Page${k + 1}'\"]")
+            if nxt.count() == 0: break
+            _wait()
+            with page.expect_navigation(wait_until="domcontentloaded", timeout=60_000):
+                nxt.first.click()
+    finally:
+        page.close()
+    return ids

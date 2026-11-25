@@ -6,22 +6,22 @@ on:
     - cron: "23 5 * * *"
   workflow_dispatch:
     inputs:
-      start:
-        description: "Start vote ID (first run only)"
-        required: false
+      all:
+        description: "Scan all sessions of the term (backfill)"
+        type: boolean
+        default: false
       max:
         description: "Max votes in this run"
         required: false
         default: "400"
-  push:
-    branches: [main]
-    paths-ignore: ["data/**", "probe/**", "**.md"]
 permissions: { contents: write }
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 345
+    env:
+      HAS_CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,25 +29,23 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - name: Scrape
-        if: github.event_name != 'push'
         run: |
           pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
-          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.start && format('--start {0}', inputs.start) || '' }} || echo "scraper stopped early, committing progress"
+          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} || echo "scraper stopped early, committing progress"
       - name: Commit data
         id: commit
-        if: github.event_name != 'push'
         run: |
           git config user.name "faktickapoznamka-bot"
           git config user.email "bot@faktickapoznamka.sk"
           git add data
           if git diff --cached --quiet; then echo "changed=false" >> $GITHUB_OUTPUT
-          else git commit -m "data: $(date -u +%F\ %H:%M)" && git push && echo "changed=true" >> $GITHUB_OUTPUT; fi
+          else git commit -m "data: $(date -u +%F\ %H:%M)" && git pull --rebase -q origin main && git push && echo "changed=true" >> $GITHUB_OUTPUT; fi
       - name: Build
-        if: github.event_name == 'push' || steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true'
         run: npm ci && npm run build
       - name: Deploy to Cloudflare
-        if: (github.event_name == 'push' || steps.commit.outputs.changed == 'true') && env.CLOUDFLARE_API_TOKEN != ''
+        if: steps.commit.outputs.changed == 'true' && env.HAS_CF_TOKEN == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
