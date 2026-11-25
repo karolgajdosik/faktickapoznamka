@@ -2,6 +2,7 @@
 import "@fontsource-variable/public-sans";
 import "../styles/global.css";
 import { meta, live } from "../lib/data";
+import { versionInfo } from "../lib/build";
 interface Props { title?: string; description?: string; wide?: boolean }
 const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
@@ -23,12 +24,12 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <script is:inline>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
 </head>
-<body>
+<body data-version={versionInfo.v} data-votes={versionInfo.votes} data-speeches={versionInfo.speeches}>
   <a class="skip" href="#obsah">Preskočiť na obsah</a>
   <header class="site">
     <div class:list={["wrap head", { "wide-wrap": wide }]}>
       <a href="/" class="brand" aria-label="faktická poznámka, úvod">
-        <span class="timer" aria-hidden="true">2:00</span>
+        <span class="timer" title="Faktická poznámka v parlamente môže trvať najviac 2 minúty" aria-hidden="true">2:00</span>
         <span class="word">faktická poznámka</span>
       </a>
       <nav class="main" aria-label="Hlavná navigácia">
@@ -43,6 +44,11 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
   </div>
   {meta.demo && <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené.</div></div>}
   <main id="obsah" class:list={["wrap", { "wide-wrap": wide }]}><slot /></main>
+  <div class="toast" id="update" role="status" aria-live="polite" hidden>
+    <span id="update-text">Na stránke sú nové údaje.</span>
+    <button type="button" id="update-reload">Obnoviť</button>
+    <button type="button" id="update-close" class="x" aria-label="Zavrieť">×</button>
+  </div>
   <footer class="site">
     <div class="wrap">
       <p>Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Zdroj dát: <a href="https://www.nrsr.sk/">nrsr.sk</a>. Kód a dáta: <a href="https://github.com/karolgajdosik/faktickapoznamka">GitHub</a>.</p>
@@ -58,6 +64,32 @@ const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/"
     const wd = now.toLocaleString("en-GB", { timeZone: "Europe/Bratislava", weekday: "short" });
     if (since && !["Sat", "Sun"].includes(wd) && h >= 8 && h < 20 && Date.now() - Date.parse(since) < 12 * 3600e3) {
       box.hidden = false; document.getElementById("nav-live")!.hidden = false;
+    }
+    // New deploy check: compare this page's build id with /version.json every 3 minutes while visible.
+    {
+      const b = document.body, toast = document.getElementById("update")!;
+      let dismissed = "";
+      const plural = (n: number, a: string, c: string, d: string) => (n === 1 ? a : n >= 2 && n <= 4 ? c : d);
+      async function check() {
+        if (document.hidden) return;
+        try {
+          const r = await fetch(`/version.json?t=${Date.now()}`, { cache: "no-store" });
+          if (!r.ok) return;
+          const v = await r.json();
+          if (!v.v || v.v === b.dataset.version || v.v === dismissed) return;
+          const dv = v.votes - Number(b.dataset.votes), ds = v.speeches - Number(b.dataset.speeches);
+          const parts = [
+            dv > 0 ? `${dv} ${plural(dv, "nové hlasovanie", "nové hlasovania", "nových hlasovaní")}` : "",
+            ds > 0 ? `${ds} ${plural(ds, "nové vystúpenie", "nové vystúpenia", "nových vystúpení")}` : "",
+          ].filter(Boolean);
+          document.getElementById("update-text")!.textContent = parts.length ? `Pribudlo: ${parts.join(" a ")}.` : "Stránka bola aktualizovaná.";
+          toast.dataset.v = v.v; toast.hidden = false;
+        } catch { /* offline */ }
+      }
+      document.getElementById("update-reload")!.addEventListener("click", () => location.reload());
+      document.getElementById("update-close")!.addEventListener("click", () => { dismissed = toast.dataset.v ?? ""; toast.hidden = true; });
+      setInterval(check, 180_000); document.addEventListener("visibilitychange", check);
+      setTimeout(check, 20_000);
     }
     document.getElementById("theme")!.addEventListener("click", () => {
       const root = document.documentElement;
