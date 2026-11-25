@@ -1,1 +1,908 @@
-[]
+[
+ {
+  "id": "1180",
+  "name": "Martina Bajo Holečková",
+  "sortName": "Bajo Holečková Martina",
+  "club": "KDH"
+ },
+ {
+  "id": "871",
+  "name": "Vladimír Baláž",
+  "sortName": "Baláž Vladimír",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1207",
+  "name": "Michal Bartek",
+  "sortName": "Bartek Michal",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "233",
+  "name": "Jaroslav Baška",
+  "sortName": "Baška Jaroslav",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1187",
+  "name": "Branislav Becík",
+  "sortName": "Becík Branislav",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1119",
+  "name": "Irena Bihariová",
+  "sortName": "Bihariová Irena",
+  "club": "PS"
+ },
+ {
+  "id": "976",
+  "name": "Jana Bittó Cigániková",
+  "sortName": "Bittó Cigániková Jana",
+  "club": "SaS"
+ },
+ {
+  "id": "885",
+  "name": "Ľuboš Blaha",
+  "sortName": "Blaha Ľuboš",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "997",
+  "name": "Ján Blcháč",
+  "sortName": "Blcháč Ján",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1144",
+  "name": "Lukáš Bužo",
+  "sortName": "Bužo Lukáš",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1195",
+  "name": "Jozef Cech",
+  "sortName": "Cech Jozef",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "929",
+  "name": "Andrej Danko",
+  "sortName": "Danko Andrej",
+  "club": "SNS"
+ },
+ {
+  "id": "1140",
+  "name": "Dávid Dej",
+  "sortName": "Dej Dávid",
+  "club": "PS"
+ },
+ {
+  "id": "779",
+  "name": "Ondrej Dostál",
+  "sortName": "Dostál Ondrej",
+  "club": "SaS"
+ },
+ {
+  "id": "1133",
+  "name": "Martin Dubéci",
+  "sortName": "Dubéci Martin",
+  "club": "PS"
+ },
+ {
+  "id": "1123",
+  "name": "Oskar Dvořák",
+  "sortName": "Dvořák Oskar",
+  "club": "PS"
+ },
+ {
+  "id": "1172",
+  "name": "Richard Eliáš",
+  "sortName": "Eliáš Richard",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "36",
+  "name": "Vladimír Faič",
+  "sortName": "Faič Vladimír",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "931",
+  "name": "Karol Farkašovský",
+  "sortName": "Farkašovský Karol",
+  "club": "SNS"
+ },
+ {
+  "id": "1008",
+  "name": "Ján Ferenčák",
+  "sortName": "Ferenčák Ján",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "656",
+  "name": "Dušan Galis",
+  "sortName": "Galis Dušan",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "785",
+  "name": "Ľubomír Galko",
+  "sortName": "Galko Ľubomír",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1198",
+  "name": "Milan Garaj",
+  "sortName": "Garaj Milan",
+  "club": "SNS"
+ },
+ {
+  "id": "1154",
+  "name": "Tibor Gašpar",
+  "sortName": "Gašpar Tibor",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "892",
+  "name": "Štefan Gašparovič",
+  "sortName": "Gašparovič Štefan",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1126",
+  "name": "Tina Gažovičová",
+  "sortName": "Gažovičová Tina",
+  "club": "PS"
+ },
+ {
+  "id": "738",
+  "name": "Pavol Goga",
+  "sortName": "Goga Pavol",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "910",
+  "name": "Gábor Grendel",
+  "sortName": "Grendel Gábor",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "971",
+  "name": "Branislav Gröhling",
+  "sortName": "Gröhling Branislav",
+  "club": "SaS"
+ },
+ {
+  "id": "1009",
+  "name": "Jozef Habánik",
+  "sortName": "Habánik Jozef",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1181",
+  "name": "Jozef Hajko",
+  "sortName": "Hajko Jozef",
+  "club": "KDH"
+ },
+ {
+  "id": "874",
+  "name": "Augustín Hambálek",
+  "sortName": "Hambálek Augustín",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1129",
+  "name": "Jana Hanuliaková",
+  "sortName": "Hanuliaková Jana",
+  "club": "PS"
+ },
+ {
+  "id": "1142",
+  "name": "Ján Hargaš",
+  "sortName": "Hargaš Ján",
+  "club": "PS"
+ },
+ {
+  "id": "1192",
+  "name": "Ivan Hazucha",
+  "sortName": "Hazucha Ivan",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1136",
+  "name": "Tomáš Hellebrandt",
+  "sortName": "Hellebrandt Tomáš",
+  "club": "PS"
+ },
+ {
+  "id": "859",
+  "name": "Alojz Hlina",
+  "sortName": "Hlina Alojz",
+  "club": "SaS"
+ },
+ {
+  "id": "1183",
+  "name": "Ján Horecký",
+  "sortName": "Horecký Ján",
+  "club": "KDH"
+ },
+ {
+  "id": "1148",
+  "name": "Rudolf Huliak",
+  "sortName": "Huliak Rudolf",
+  "club": "SNS"
+ },
+ {
+  "id": "1188",
+  "name": "Július Jakab",
+  "sortName": "Jakab Július",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1169",
+  "name": "Karol Janas",
+  "sortName": "Janas Karol",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "961",
+  "name": "Igor Janckulík",
+  "sortName": "Janckulík Igor",
+  "club": "KDH"
+ },
+ {
+  "id": "61",
+  "name": "Dušan Jarjabek",
+  "sortName": "Jarjabek Dušan",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1121",
+  "name": "Zora Jaurová",
+  "sortName": "Jaurová Zora",
+  "club": "PS"
+ },
+ {
+  "id": "891",
+  "name": "Jozef Ježík",
+  "sortName": "Ježík Jozef",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1128",
+  "name": "Beáta Jurík",
+  "sortName": "Jurík Beáta",
+  "club": "PS"
+ },
+ {
+  "id": "1170",
+  "name": "Peter Kalivoda",
+  "sortName": "Kalivoda Peter",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1153",
+  "name": "Erik Kaliňák",
+  "sortName": "Kaliňák Erik",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1137",
+  "name": "Viera Kalmárová",
+  "sortName": "Kalmárová Viera",
+  "club": "PS"
+ },
+ {
+  "id": "1205",
+  "name": "Michal Kapuš",
+  "sortName": "Kapuš Michal",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1158",
+  "name": "Daniel Karas",
+  "sortName": "Karas Daniel",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1125",
+  "name": "Štefan Kišš",
+  "sortName": "Kišš Štefan",
+  "club": "PS"
+ },
+ {
+  "id": "1139",
+  "name": "Dana Kleinert",
+  "sortName": "Kleinert Dana",
+  "club": "PS"
+ },
+ {
+  "id": "1025",
+  "name": "Mária Kolíková",
+  "sortName": "Kolíková Mária",
+  "club": "SaS"
+ },
+ {
+  "id": "1124",
+  "name": "Ingrid Kosová",
+  "sortName": "Kosová Ingrid",
+  "club": "PS"
+ },
+ {
+  "id": "1151",
+  "name": "Peter Kotlár",
+  "sortName": "Kotlár Peter",
+  "club": "SNS"
+ },
+ {
+  "id": "907",
+  "name": "Marek Krajčí",
+  "sortName": "Krajčí Marek",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1210",
+  "name": "Dagmar Kramplová",
+  "sortName": "Kramplová Dagmar",
+  "club": "SNS"
+ },
+ {
+  "id": "1190",
+  "name": "Rastislav Krátky",
+  "sortName": "Krátky Rastislav",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1032",
+  "name": "Juraj Krúpa",
+  "sortName": "Krúpa Juraj",
+  "club": "SaS"
+ },
+ {
+  "id": "668",
+  "name": "Stanislav Kubánek",
+  "sortName": "Kubánek Stanislav",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "671",
+  "name": "Ján Kvorka",
+  "sortName": "Kvorka Ján",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "873",
+  "name": "Marián Kéry",
+  "sortName": "Kéry Marián",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1189",
+  "name": "Marek Lackovič",
+  "sortName": "Lackovič Marek",
+  "club": "PS"
+ },
+ {
+  "id": "1081",
+  "name": "Ľubica Laššáková",
+  "sortName": "Laššáková Ľubica",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1037",
+  "name": "Vladimír Ledecký",
+  "sortName": "Ledecký Vladimír",
+  "club": "SaS"
+ },
+ {
+  "id": "1200",
+  "name": "Boleslav Lešo",
+  "sortName": "Lešo Boleslav",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "733",
+  "name": "Michal Lukša",
+  "sortName": "Lukša Michal",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1199",
+  "name": "Adam Lučanský",
+  "sortName": "Lučanský Adam",
+  "club": "SNS"
+ },
+ {
+  "id": "1134",
+  "name": "Darina Luščíková",
+  "sortName": "Luščíková Darina",
+  "club": "PS"
+ },
+ {
+  "id": "1184",
+  "name": "František Majerský",
+  "sortName": "Majerský František",
+  "club": "KDH"
+ },
+ {
+  "id": "1178",
+  "name": "Milan Majerský",
+  "sortName": "Majerský Milan",
+  "club": "KDH"
+ },
+ {
+  "id": "1173",
+  "name": "Roman Malatinec",
+  "sortName": "Malatinec Roman",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1042",
+  "name": "Vladimíra Marcinková",
+  "sortName": "Marcinková Vladimíra",
+  "club": "SaS"
+ },
+ {
+  "id": "1159",
+  "name": "Zuzana Matejičková",
+  "sortName": "Matejičková Zuzana",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "808",
+  "name": "Igor Matovič",
+  "sortName": "Matovič Igor",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1211",
+  "name": "Zdenka Mačicová",
+  "sortName": "Mačicová Zdenka",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1156",
+  "name": "Ján Mažgút",
+  "sortName": "Mažgút Ján",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1204",
+  "name": "Jaroslav Mego",
+  "sortName": "Mego Jaroslav",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1130",
+  "name": "Zuzana Mesterová",
+  "sortName": "Mesterová Zuzana",
+  "club": "PS"
+ },
+ {
+  "id": "1149",
+  "name": "Roman Michelko",
+  "sortName": "Michelko Roman",
+  "club": "SNS"
+ },
+ {
+  "id": "1201",
+  "name": "Samuel Migaľ",
+  "sortName": "Migaľ Samuel",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "92",
+  "name": "František Mikloško",
+  "sortName": "Mikloško František",
+  "club": "KDH"
+ },
+ {
+  "id": "1046",
+  "name": "Roman Mikulec",
+  "sortName": "Mikulec Roman",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1174",
+  "name": "Michal Moško",
+  "sortName": "Moško Michal",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "322",
+  "name": "Dušan Muňko",
+  "sortName": "Muňko Dušan",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1212",
+  "name": "Natália Nash",
+  "sortName": "Nash Natália",
+  "club": "PS"
+ },
+ {
+  "id": "974",
+  "name": "Martin Nemky",
+  "sortName": "Nemky Martin",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1196",
+  "name": "Alena Nováková",
+  "sortName": "Nováková Alena",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "899",
+  "name": "Peter Náhlik",
+  "sortName": "Náhlik Peter",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1138",
+  "name": "Martin Pekár",
+  "sortName": "Pekár Martin",
+  "club": "PS"
+ },
+ {
+  "id": "682",
+  "name": "Peter Pellegrini",
+  "sortName": "Pellegrini Peter",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "900",
+  "name": "František Petro",
+  "sortName": "Petro František",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "962",
+  "name": "Simona Petrík",
+  "sortName": "Petrík Simona",
+  "club": "PS"
+ },
+ {
+  "id": "1116",
+  "name": "Lucia Plaváková",
+  "sortName": "Plaváková Lucia",
+  "club": "PS"
+ },
+ {
+  "id": "1194",
+  "name": "Zuzana Plevíková",
+  "sortName": "Plevíková Zuzana",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "685",
+  "name": "Ján Podmanický",
+  "sortName": "Podmanický Ján",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1088",
+  "name": "Peter Pollák",
+  "sortName": "Pollák Peter",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1131",
+  "name": "Ondrej Prostredník",
+  "sortName": "Prostredník Ondrej",
+  "club": "PS"
+ },
+ {
+  "id": "1054",
+  "name": "Jozef Pročko",
+  "sortName": "Pročko Jozef",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "879",
+  "name": "Róbert Puci",
+  "sortName": "Puci Róbert",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1208",
+  "name": "Paula Puškárová",
+  "sortName": "Puškárová Paula",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "905",
+  "name": "Veronika Remišová",
+  "sortName": "Remišová Veronika",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "689",
+  "name": "Ján Richter",
+  "sortName": "Richter Ján",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1120",
+  "name": "Michal Sabo",
+  "sortName": "Sabo Michal",
+  "club": "PS"
+ },
+ {
+  "id": "762",
+  "name": "Marián Saloň",
+  "sortName": "Saloň Marián",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1163",
+  "name": "Justín Sedlák",
+  "sortName": "Sedlák Justín",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1191",
+  "name": "Andrej Sitkár",
+  "sortName": "Sitkár Andrej",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1197",
+  "name": "Peter Slyško",
+  "sortName": "Slyško Peter",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1206",
+  "name": "Peter Sokol",
+  "sortName": "Sokol Peter",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1117",
+  "name": "Jaroslav Spišiak",
+  "sortName": "Spišiak Jaroslav",
+  "club": "PS"
+ },
+ {
+  "id": "1182",
+  "name": "Peter Stachura",
+  "sortName": "Stachura Peter",
+  "club": "KDH"
+ },
+ {
+  "id": "1118",
+  "name": "Tamara Stohlová",
+  "sortName": "Stohlová Tamara",
+  "club": "PS"
+ },
+ {
+  "id": "1058",
+  "name": "Anton Stredák",
+  "sortName": "Stredák Anton",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1161",
+  "name": "Michal Stuška",
+  "sortName": "Stuška Michal",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "767",
+  "name": "Richard Sulík",
+  "sortName": "Sulík Richard",
+  "club": "SaS"
+ },
+ {
+  "id": "1087",
+  "name": "Zdenko Svoboda",
+  "sortName": "Svoboda Zdenko",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1147",
+  "name": "Tomáš Szalay",
+  "sortName": "Szalay Tomáš",
+  "club": "SaS"
+ },
+ {
+  "id": "1145",
+  "name": "Viliam Tankó",
+  "sortName": "Tankó Viliam",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "930",
+  "name": "Dušan Tittel",
+  "sortName": "Tittel Dušan",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1115",
+  "name": "Michal Truban",
+  "sortName": "Truban Michal",
+  "club": "PS"
+ },
+ {
+  "id": "1186",
+  "name": "Andrea Turčanová",
+  "sortName": "Turčanová Andrea",
+  "club": "KDH"
+ },
+ {
+  "id": "705",
+  "name": "Jozef Valocký",
+  "sortName": "Valocký Jozef",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1075",
+  "name": "Tomáš Valášek",
+  "sortName": "Valášek Tomáš",
+  "club": "PS"
+ },
+ {
+  "id": "1135",
+  "name": "Branislav Vančo",
+  "sortName": "Vančo Branislav",
+  "club": "PS"
+ },
+ {
+  "id": "732",
+  "name": "Jana Vaľová",
+  "sortName": "Vaľová Jana",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "861",
+  "name": "Richard Vašečka",
+  "sortName": "Vašečka Richard",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1141",
+  "name": "Veronika Veslárová",
+  "sortName": "Veslárová Veronika",
+  "club": "PS"
+ },
+ {
+  "id": "991",
+  "name": "Marián Viskupič",
+  "sortName": "Viskupič Marián",
+  "club": "SaS"
+ },
+ {
+  "id": "1176",
+  "name": "Erik Vlček",
+  "sortName": "Vlček Erik",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1193",
+  "name": "Igor Válek",
+  "sortName": "Válek Igor",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "293",
+  "name": "Ľubomír Vážny",
+  "sortName": "Vážny Ľubomír",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1019",
+  "name": "Viliam Zahorčák",
+  "sortName": "Zahorčák Viliam",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "147",
+  "name": "Anna Záborská",
+  "sortName": "Záborská Anna",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1179",
+  "name": "Marián Čaučík",
+  "sortName": "Čaučík Marián",
+  "club": "KDH"
+ },
+ {
+  "id": "1160",
+  "name": "Marcela Čavojová",
+  "sortName": "Čavojová Marcela",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1203",
+  "name": "Miroslav Čellár",
+  "sortName": "Čellár Miroslav",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1152",
+  "name": "Pavel Ľupták",
+  "sortName": "Ľupták Pavel",
+  "club": "SNS"
+ },
+ {
+  "id": "1175",
+  "name": "Radomír Šalitroš",
+  "sortName": "Šalitroš Radomír",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1150",
+  "name": "Ivan Ševčík",
+  "sortName": "Ševčík Ivan",
+  "club": "SNS"
+ },
+ {
+  "id": "1114",
+  "name": "Michal Šimečka",
+  "sortName": "Šimečka Michal",
+  "club": "PS"
+ },
+ {
+  "id": "1177",
+  "name": "Igor Šimko",
+  "sortName": "Šimko Igor",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1065",
+  "name": "Michal Šipoš",
+  "sortName": "Šipoš Michal",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "1146",
+  "name": "Anežka Škopová",
+  "sortName": "Škopová Anežka",
+  "club": "SLOVENSKO"
+ },
+ {
+  "id": "862",
+  "name": "Branislav Škripek",
+  "sortName": "Škripek Branislav",
+  "club": "KDH"
+ },
+ {
+  "id": "1185",
+  "name": "Martin Šmilňák",
+  "sortName": "Šmilňák Martin",
+  "club": "KDH"
+ },
+ {
+  "id": "1143",
+  "name": "Veronika Šrobová",
+  "sortName": "Šrobová Veronika",
+  "club": "PS"
+ },
+ {
+  "id": "1127",
+  "name": "Ivan Štefunko",
+  "sortName": "Štefunko Ivan",
+  "club": "PS"
+ },
+ {
+  "id": "1132",
+  "name": "Zuzana Števulová",
+  "sortName": "Števulová Zuzana",
+  "club": "PS"
+ },
+ {
+  "id": "769",
+  "name": "Peter Šuca",
+  "sortName": "Šuca Peter",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "691",
+  "name": "Peter Žiga",
+  "sortName": "Žiga Peter",
+  "club": "HLAS - SD"
+ }
+]
