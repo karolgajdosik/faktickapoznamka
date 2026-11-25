@@ -17,13 +17,18 @@ const sumR = radii.reduce((a, b) => a + b, 0);
 const perRow = radii.map((r) => Math.floor((total * r) / sumR));
 let rest = total - perRow.reduce((a, b) => a + b, 0);
 for (let i = rows - 1; rest > 0; i = (i - 1 + rows) % rows, rest--) perRow[i]++;
-const seats: { x: number; y: number; a: number }[] = [];
+const seats: { x: number; y: number; a: number; row: number }[] = [];
 radii.forEach((r, i) => {
   const n = perRow[i];
   for (let k = 0; k < n; k++) {
     const a = n === 1 ? Math.PI / 2 : Math.PI - (Math.PI * k) / (n - 1);
-    seats.push({ x: CX + RO * r * Math.cos(a), y: CY - RO * r * Math.sin(a), a });
+    seats.push({ x: CX + RO * r * Math.cos(a), y: CY - RO * r * Math.sin(a), a, row: i });
   }
+});
+// 3D view: the floor is tilted (vertical distances shrink), far rows are smaller and higher.
+const TILT = 0.74, Y0 = 478;
+const to3 = (s: { x: number; y: number; row: number }) => ({
+  x: s.x, y: Y0 - (CY - s.y) * TILT - s.row * 3, k: 1 - 0.24 * (s.row / (rows - 1)),
 });
 seats.sort((p, q) => q.a - p.a || Math.hypot(p.x - CX, p.y - CY) - Math.hypot(q.x - CX, q.y - CY));
 const order: Code[] = ["Z", "?", "N", "P", "0"];
@@ -33,26 +38,49 @@ const sorted = people.slice().sort((a, b) =>
   (votes ? order.indexOf(votes[a.id]) - order.indexOf(votes[b.id]) : 0) ||
   a.sortName.localeCompare(b.sortName, "sk"));
 const R = Math.min(17, (RO * (1 - RI) / (rows - 1)) * 0.43);
+// draw far rows first so nearer seats overlap them in 3D
+const drawOrder = sorted.map((m, i) => ({ m, i, s: seats[i] })).sort((p, q) => q.s.row - p.s.row || p.s.x - q.s.x);
+const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R * 1.3) * TILT, cy: Y0 - i * 4 + R * 1.6 })).reverse();
 ---
-<div class:list={["hall", { intro }]} id={id} data-mode={votes ? "vote" : "club"}>
-  <svg viewBox={`0 -12 ${W} 560`} role="img" aria-label={label}>
+<div class:list={["hall", "d3", { intro }]} id={id} data-mode={votes ? "vote" : "club"} data-vb2={`0 -12 ${W} 560`} data-vb3={`0 100 ${W} 470`}>
+  <svg viewBox={`0 100 ${W} 470`} role="img" aria-label={label}>
     <defs>
       <radialGradient id={`${id}-glow`} cx="50%" cy="100%" r="60%">
         <stop offset="0%" stop-color="var(--accent)" stop-opacity=".16" />
         <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
       </radialGradient>
+      <linearGradient id={`${id}-chair`} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fff" stop-opacity=".35" />
+        <stop offset=".45" stop-color="#fff" stop-opacity="0" />
+        <stop offset="1" stop-color="#000" stop-opacity=".45" />
+      </linearGradient>
     </defs>
-    <ellipse cx={CX} cy={CY} rx={RO + 20} ry={RO * .62} fill={`url(#${id}-glow)`} />
-    <path d={`M ${CX - RO - 22} ${CY + 22} A ${RO + 22} ${RO + 22} 0 0 1 ${CX + RO + 22} ${CY + 22}`} fill="none" stroke="var(--line)" stroke-width="1" />
-    <rect class="podium" x={CX - 70} y={CY - 28} width="140" height="34" rx="8" />
-    <text class="podium-label" x={CX} y={CY + 30}>PREDSEDNÍCTVO</text>
-    {sorted.map((m, i) => {
-      const s = seats[i]; const c = votes?.[m.id]; const club = clubOf(m);
+    <g class="flat-only">
+      <ellipse cx={CX} cy={CY} rx={RO + 20} ry={RO * .62} fill={`url(#${id}-glow)`} />
+      <path d={`M ${CX - RO - 22} ${CY + 22} A ${RO + 22} ${RO + 22} 0 0 1 ${CX + RO + 22} ${CY + 22}`} fill="none" stroke="var(--line)" stroke-width="1" />
+      <rect class="podium" x={CX - 70} y={CY - 28} width="140" height="34" rx="8" />
+      <text class="podium-label" x={CX} y={CY + 30}>PREDSEDNÍCTVO</text>
+    </g>
+    <g class="d3-only floor" aria-hidden="true">
+      <ellipse cx={CX} cy={Y0 + 30} rx={RO + 60} ry={(RO + 60) * TILT} fill={`url(#${id}-glow)`} />
+      {floorRows.map((f) => <path d={`M ${CX - f.rx} ${f.cy} A ${f.rx} ${f.ry} 0 0 1 ${CX + f.rx} ${f.cy}`} class="step" />)}
+      <path class="desk" d={`M ${CX - 92} ${Y0 + 22} L ${CX + 92} ${Y0 + 22} L ${CX + 78} ${Y0 - 2} L ${CX - 78} ${Y0 - 2} Z`} />
+      <path class="desk-front" d={`M ${CX - 92} ${Y0 + 22} L ${CX + 92} ${Y0 + 22} L ${CX + 92} ${Y0 + 40} L ${CX - 92} ${Y0 + 40} Z`} />
+      {[-3, -2, -1, 0, 1, 2, 3].map((k) => <rect class="desk-seat" x={CX + k * 22 - 7} y={Y0 + 4} width="14" height="9" rx="2" />)}
+      <text class="podium-label" x={CX} y={Y0 + 64}>PREDSEDNÍCTVO</text>
+    </g>
+    {drawOrder.map(({ m, i, s }) => {
+      const c = votes?.[m.id]; const club = clubOf(m); const d = to3(s);
       return (
-        <g class:list={["seat", c && `v-${cls(c)}`]} style={`--club:${clubColor(club)};--i:${i}`}
-           transform={`translate(${s.x.toFixed(1)} ${s.y.toFixed(1)})`}
+        <g class:list={["seat", c && `v-${cls(c)}`]}
+           style={`--club:${clubColor(club)};--i:${i};--x2:${s.x.toFixed(1)}px;--y2:${s.y.toFixed(1)}px;--x3:${d.x.toFixed(1)}px;--y3:${d.y.toFixed(1)}px;--k3:${d.k.toFixed(3)}`}
            data-id={m.id} data-name={m.name} data-club={club} data-vote={c ? LABEL[c] : ""} tabindex="0" role="link"
            aria-label={`${m.name}, ${club}${c ? `: ${LABEL[c].toLowerCase()}` : ""}`}>
+          <g class="chair" aria-hidden="true">
+            <ellipse class="shadow" cx="0" cy={(R * 1.95).toFixed(1)} rx={(R * 1.05).toFixed(1)} ry={(R * .38).toFixed(1)} />
+            <path class="back" d={`M ${(-R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Q 0 ${(R * 2.15).toFixed(1)} ${(-R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Z`} />
+            <path class="sheen" fill={`url(#${id}-chair)`} d={`M ${(-R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Q 0 ${(R * 2.15).toFixed(1)} ${(-R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Z`} />
+          </g>
           <circle r={R.toFixed(1)} />
           {photo(m.id) && !votes
             ? <image href={photo(m.id)!} x={(-R + 2.2).toFixed(1)} y={(-R + 2.2).toFixed(1)} width={(2 * R - 4.4).toFixed(1)} height={(2 * R - 4.4).toFixed(1)} preserveAspectRatio="xMidYMid slice" />
@@ -89,5 +117,10 @@ const R = Math.min(17, (RO * (1 - RI) / (rows - 1)) * 0.43);
     hall.addEventListener("click", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) select(g); });
     hall.addEventListener("keydown", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); select(g); } });
     setTimeout(() => hall.classList.remove("intro"), 1500);
+    let pref = "3d"; try { pref = localStorage.getItem("fp-hall") || "3d"; } catch {}
+    const svg = hall.querySelector("svg")!;
+    const apply = (m: string) => { hall.classList.toggle("d3", m === "3d"); svg.setAttribute("viewBox", m === "3d" ? hall.dataset.vb3! : hall.dataset.vb2!); };
+    apply(pref);
+    document.addEventListener("fp:hall-view", (e) => apply((e as CustomEvent).detail));
   }
 </script>

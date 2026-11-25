@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
+import ViewToggle from "../../components/ViewToggle.astro";
 import FollowButton from "../../components/FollowButton.astro";
 import { voteHeadline, voteContext, mpTalk, fmtDur, excerpt, photo, mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
 const data = mps.map((m) => {
@@ -49,6 +50,7 @@ const data = mps.map((m) => {
           <button type="button" aria-pressed="false" data-mode="talk">Rečnenie</button>
         </div>
         <div class="heatscale" id="scale" hidden><span>nízka</span><i></i><span>vysoká</span></div>
+        <ViewToggle />
       </div>
       <Hall id="sala" intro />
       <div class="legend">{clubs.map((c) => <span style={`--club:${clubColor(c.name)}`}><i class="dot" style="background:var(--club)"></i>{c.name} {c.size}</span>)}</div>

@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
+import ViewToggle from "../../components/ViewToggle.astro";
 import Counts from "../../components/Counts.astro";
 import { voteWhat, lawTitle, lawByTlac, votes, clubs, mpById, clubColor, CODES, LABEL, cls, fmtDate, fmtTime, resultText, resultCls, type Vote, type Code } from "../../lib/data";
 export function getStaticPaths() { return votes.map((v) => ({ params: { id: v.id }, props: { v } })); }
@@ -39,8 +40,9 @@ const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=schodze/hlasovanie/hlaskl
       </div>
     </div>
     <div class="panel latest">
+      <div style="display:flex;justify-content:flex-end;margin-bottom:.4rem"><ViewToggle /></div>
       <Hall votes={v.votes} clubsAt={v.clubs} id="vote-hall" intro label="Rozloženie hlasov v sále" />
-      <div class="legend">{CODES.map((c) => <span><i class={`dot v-${cls(c)}`}></i>{LABEL[c]}</span>)}<span>Okraj kruhu = farba klubu</span></div>
+      <div class="legend">{CODES.map((c) => <span><i class={`dot v-${cls(c)}`}></i>{LABEL[c]}</span>)}<span>Kreslo a okraj = farba klubu</span></div>
     </div>
   </div>
 
