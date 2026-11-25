@@ -84,6 +84,12 @@
   "club": "SaS"
  },
  {
+  "id": "1213",
+  "name": "Richard Dubovický",
+  "sortName": "Dubovický Richard",
+  "club": "PS"
+ },
+ {
   "id": "1133",
   "name": "Martin Dubéci",
   "sortName": "Dubéci Martin",
@@ -154,6 +160,12 @@
   "name": "Tina Gažovičová",
   "sortName": "Gažovičová Tina",
   "club": "PS"
+ },
+ {
+  "id": "1214",
+  "name": "Richard Glück",
+  "sortName": "Glück Richard",
+  "club": "SMER - SD"
  },
  {
   "id": "738",
