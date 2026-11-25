@@ -1,0 +1,35 @@
+---
+import Base from "../../layouts/Base.astro";
+import VoteBar from "../../components/VoteBar.astro";
+import { sessions, dayKey, fmtDay, fmtShort, fmtTime, pct, resultText, resultCls, shortTitle, type Session } from "../../lib/data";
+export function getStaticPaths() { return sessions.map((s) => ({ params: { n: String(s.n) }, props: { s } })); }
+const { s } = Astro.props as { s: Session };
+const byDay = s.days.map((d) => ({ d, items: s.votes.filter((v) => dayKey(v.datetime) === d) }));
+---
+<Base title={`${s.n}. schôdza`} description={`${s.n}. schôdza NR SR: ${s.votes.length} hlasovaní, ${s.passed} schválených.`}>
+  <p class="meta-line"><a href="/schodze/">Schôdze</a></p>
+  <h1>{s.n}. schôdza</h1>
+  <p class="meta-line">{fmtShort(s.from)}{s.days.length > 1 && <> – {fmtShort(s.to)}</>}</p>
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class="tile"><dt>Rokovacie dni s hlasovaním</dt><dd>{s.days.length}</dd></div>
+    <div class="tile"><dt>Hlasovaní</dt><dd>{s.votes.length}</dd></div>
+    <div class="tile"><dt>Schválené</dt><dd style="color:var(--za)">{s.passed}</dd></div>
+    <div class="tile"><dt>Neschválené</dt><dd style="color:var(--proti)">{s.failed}</dd></div>
+    <div class="tile accent"><dt>Priemerná účasť</dt><dd>{pct(s.attendance)}</dd></div>
+  </dl>
+  {byDay.map(({ d, items }) => (
+    <section>
+      <div class="day-head"><h3>{fmtDay(items[0].datetime)}</h3><span>{items.length} hlasovaní</span></div>
+      <ol class="timeline">
+        {items.map((v) => (
+          <li class={resultCls(v)}>
+            <time datetime={v.datetime}>{fmtTime(v.datetime)}</time>
+            <a href={`/hlasovania/${v.id}/`} title={v.title}>{shortTitle(v.title, 170)}</a>
+            <VoteBar counts={v.counts} />
+            <span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+</Base>

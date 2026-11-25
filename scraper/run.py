@@ -60,7 +60,7 @@ def main():
                 print(f"{vid}: no per-MP data (secret or non-electronic vote?)", flush=True); continue
             for pid, m in v.pop("_mps").items():
                 display, sn = parse.sort_name(m["rawName"])
-                mps[pid] = {"id": pid, "name": display, "sortName": sn, "club": m["club"]}
+                mps[pid] = {**mps.get(pid, {}), "id": pid, "name": display, "sortName": sn, "club": m["club"]}
             (VOTES / f"{vid}.json").write_text(json.dumps(v, ensure_ascii=False, indent=1))
             known.add(vid); saved += 1
             print(f"{vid}: {v['title'][:70]}", flush=True)
@@ -70,6 +70,31 @@ def main():
         meta["sessionsDone"] = sorted(done)
     save(mps, meta)
     print(f"saved {saved} votes")
+
+    # Older files saved before we stored per-vote club membership: refetch gradually.
+    budget = min(300, a.max - saved)
+    for f in sorted(VOTES.glob("*.json")):
+        if budget <= 0: break
+        old_v = json.loads(f.read_text())
+        if "clubs" in old_v: continue
+        r = nrsr.get({"sid": "schodze/hlasovanie/hlasklub", "ID": f.stem})
+        v = parse.parse_vote(r.text, f.stem) if r.ok else None
+        budget -= 1
+        if v and v["datetime"]:
+            v.pop("_mps"); f.write_text(json.dumps(v, ensure_ascii=False, indent=1))
+    save(mps, meta)
+
+    # Profiles (birth date, residence, region, party on the ballot): refresh weekly.
+    week_ago = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=7)).isoformat()
+    stale = [m for m in mps.values() if m.get("profileAt", "") < week_ago][:60]
+    for m in stale:
+        r = nrsr.get({"sid": "poslanci/poslanec", "PoslanecID": m["id"], "CisObdobia": TERM})
+        prof = parse.parse_mp(r.text, m["id"]) if r.ok else None
+        if prof:
+            m.update({k: prof.get(k) for k in ("title", "party", "born", "city", "region")})
+            m["profileAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    if stale:
+        save(mps, meta); print(f"profiles refreshed: {len(stale)}")
 
 if __name__ == "__main__":
     main()

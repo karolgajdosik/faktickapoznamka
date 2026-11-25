@@ -1,0 +1,91 @@
+---
+// The plenary hall: one seat per MP, ring = club colour, fill = vote (vote mode).
+// Clubs fill the hemicycle left→right by size (neutral, not political left/right).
+import { clubs, mps as current, mpById, clubColor, initials, LABEL, cls, type Code, type Mp } from "../lib/data";
+interface Props { votes?: Record<string, Code>; clubsAt?: Record<string, string>; id?: string; intro?: boolean; label?: string }
+const { votes, clubsAt, id = "hall", intro = false, label = "Sála Národnej rady SR" } = Astro.props;
+
+const people: Mp[] = votes
+  ? Object.keys(votes).map((k) => mpById.get(k)).filter((m): m is Mp => !!m)
+  : current;
+const clubOf = (m: Mp) => clubsAt?.[m.id] ?? m.club;
+const total = people.length;
+const W = 1000, CX = 500, CY = 500, RO = 478, RI = 0.36;
+const rows = 7;
+const radii = Array.from({ length: rows }, (_, i) => RI + ((1 - RI) * i) / (rows - 1));
+const sumR = radii.reduce((a, b) => a + b, 0);
+const perRow = radii.map((r) => Math.floor((total * r) / sumR));
+let rest = total - perRow.reduce((a, b) => a + b, 0);
+for (let i = rows - 1; rest > 0; i = (i - 1 + rows) % rows, rest--) perRow[i]++;
+const seats: { x: number; y: number; a: number }[] = [];
+radii.forEach((r, i) => {
+  const n = perRow[i];
+  for (let k = 0; k < n; k++) {
+    const a = n === 1 ? Math.PI / 2 : Math.PI - (Math.PI * k) / (n - 1);
+    seats.push({ x: CX + RO * r * Math.cos(a), y: CY - RO * r * Math.sin(a), a });
+  }
+});
+seats.sort((p, q) => q.a - p.a || Math.hypot(p.x - CX, p.y - CY) - Math.hypot(q.x - CX, q.y - CY));
+const order: Code[] = ["Z", "?", "N", "P", "0"];
+const clubIdx = new Map(clubs.map((c, i) => [c.name, i]));
+const sorted = people.slice().sort((a, b) =>
+  ((clubIdx.get(clubOf(a)) ?? 99) - (clubIdx.get(clubOf(b)) ?? 99)) ||
+  (votes ? order.indexOf(votes[a.id]) - order.indexOf(votes[b.id]) : 0) ||
+  a.sortName.localeCompare(b.sortName, "sk"));
+const R = Math.min(17, (RO * (1 - RI) / (rows - 1)) * 0.43);
+---
+<div class:list={["hall", { intro }]} id={id} data-mode={votes ? "vote" : "club"}>
+  <svg viewBox={`0 -12 ${W} 560`} role="img" aria-label={label}>
+    <defs>
+      <radialGradient id={`${id}-glow`} cx="50%" cy="100%" r="60%">
+        <stop offset="0%" stop-color="var(--accent)" stop-opacity=".16" />
+        <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+      </radialGradient>
+    </defs>
+    <ellipse cx={CX} cy={CY} rx={RO + 20} ry={RO * .62} fill={`url(#${id}-glow)`} />
+    <path d={`M ${CX - RO - 22} ${CY + 22} A ${RO + 22} ${RO + 22} 0 0 1 ${CX + RO + 22} ${CY + 22}`} fill="none" stroke="var(--line)" stroke-width="1" />
+    <rect class="podium" x={CX - 70} y={CY - 28} width="140" height="34" rx="8" />
+    <text class="podium-label" x={CX} y={CY + 30}>PREDSEDNÍCTVO</text>
+    {sorted.map((m, i) => {
+      const s = seats[i]; const c = votes?.[m.id]; const club = clubOf(m);
+      return (
+        <g class:list={["seat", c && `v-${cls(c)}`]} style={`--club:${clubColor(club)};--i:${i}`}
+           transform={`translate(${s.x.toFixed(1)} ${s.y.toFixed(1)})`}
+           data-id={m.id} data-name={m.name} data-club={club} data-vote={c ? LABEL[c] : ""} tabindex="0" role="link"
+           aria-label={`${m.name}, ${club}${c ? `: ${LABEL[c].toLowerCase()}` : ""}`}>
+          <circle r={R.toFixed(1)} />
+          <text>{initials(m)}</text>
+        </g>
+      );
+    })}
+  </svg>
+  <div class="tip" hidden></div>
+</div>
+<script>
+  // Tooltip + default click (go to MP page). Pages can override by listening to "seat:select".
+  for (const hall of document.querySelectorAll<HTMLElement>(".hall")) {
+    const tip = hall.querySelector<HTMLElement>(".tip")!;
+    const show = (g: SVGGElement) => {
+      const r = g.getBoundingClientRect(), h = hall.getBoundingClientRect();
+      const extra = g.dataset.extra ? ` · ${g.dataset.extra}` : g.dataset.vote ? ` · ${g.dataset.vote}` : "";
+      tip.innerHTML = "";
+      const b = document.createElement("b"); b.textContent = g.dataset.name!;
+      const s = document.createElement("span"); s.textContent = g.dataset.club + extra;
+      tip.append(b, s);
+      tip.style.left = `${r.left - h.left + r.width / 2}px`; tip.style.top = `${r.top - h.top}px`;
+      tip.hidden = false;
+    };
+    const hide = () => { tip.hidden = true; };
+    const select = (g: SVGGElement) => {
+      const ev = new CustomEvent("seat:select", { detail: g.dataset.id, cancelable: true, bubbles: true });
+      if (hall.dispatchEvent(ev)) location.href = `/poslanci/${g.dataset.id}/`;
+    };
+    hall.addEventListener("pointerover", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) show(g); });
+    hall.addEventListener("pointerout", (e) => { if ((e.target as Element).closest(".seat")) hide(); });
+    hall.addEventListener("focusin", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) show(g); });
+    hall.addEventListener("focusout", hide);
+    hall.addEventListener("click", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) select(g); });
+    hall.addEventListener("keydown", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); select(g); } });
+    setTimeout(() => hall.classList.remove("intro"), 1500);
+  }
+</script>

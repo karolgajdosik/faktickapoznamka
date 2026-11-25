@@ -1,27 +1,76 @@
 ---
 import Base from "../layouts/Base.astro";
-import Hemicycle from "../components/Hemicycle.astro";
-import Counts from "../components/Counts.astro";
-import VoteList from "../components/VoteList.astro";
-import { votes, fmtDate, fmtTime, resultText } from "../lib/data";
-const [latest, ...rest] = votes;
+import Hall from "../components/Hall.astro";
+import VoteBar from "../components/VoteBar.astro";
+import SessionCard from "../components/SessionCard.astro";
+import { votes, sessions, mps, mpStats, clubColor, initials, pct, fmtDate, fmtTime, fmtDay, dayKey, resultText, resultCls, shortTitle, CODES, LABEL, cls } from "../lib/data";
+const latest = votes[0];
+const s0 = sessions[0];
+const lastDay = latest ? votes.filter((v) => dayKey(v.datetime) === dayKey(latest.datetime)).reverse() : [];
+const passedShare = votes.length ? votes.filter((v) => v.passed).length / votes.length : null;
+const avgAtt = votes.length ? votes.reduce((s, v) => s + (150 - v.counts["0"]) / 150, 0) / votes.length : null;
+const ranked = (f: (id: string) => number) => mps.slice().sort((a, b) => f(b.id) - f(a.id)).slice(0, 5);
+const lowAtt = ranked((id) => 1 - (mpStats(id).attendance ?? 1));
+const rebels = ranked((id) => mpStats(id).rebels.length);
 ---
 <Base>
   {latest ? (
-    <section class="hero" aria-labelledby="posledne">
-      <div>
-        <p class="when">Posledné hlasovanie, {fmtDate(latest.datetime)} o {fmtTime(latest.datetime)}</p>
-        <h1 id="posledne"><a href={`/hlasovania/${latest.id}/`}>{latest.title}</a></h1>
-        <Hemicycle votes={latest.votes} />
+    <>
+      <section class="hero">
+        <div class="intro">
+          <div>
+            <p class="kicker">Národná rada SR, IX. volebné obdobie</p>
+            <h1>Kto ako hlasuje v parlamente</h1>
+            <p class="lede">Každé hlasovanie, každý poslanec, každá schôdza. Prehľadne a s odkazom na zdroj.</p>
+          </div>
+          <dl class="tiles">
+            <div class="tile"><dt>Hlasovaní</dt><dd>{votes.length.toLocaleString("sk-SK")}</dd></div>
+            <div class="tile"><dt>Schôdzí</dt><dd>{sessions.length}</dd></div>
+            <div class="tile"><dt>Schválených</dt><dd>{pct(passedShare)}</dd></div>
+            <div class="tile accent"><dt>Priemerná účasť</dt><dd>{pct(avgAtt)}</dd></div>
+          </dl>
+        </div>
+        <article class="panel latest">
+          <p class="when">Posledné hlasovanie, {fmtDate(latest.datetime)} o {fmtTime(latest.datetime)}</p>
+          <h2><a href={`/hlasovania/${latest.id}/`}>{shortTitle(latest.title, 160)}</a></h2>
+          <Hall votes={latest.votes} clubsAt={latest.clubs} id="home-hall" intro />
+          <div class="latest-foot">
+            <span class={`pill ${resultCls(latest)}`} style="font-size:var(--step--1)">{resultText(latest)}</span>
+            <span class="legend" style="margin:0">{CODES.map((c) => <span><i class={`dot v-${cls(c)}`}></i>{LABEL[c]} {latest.counts[c]}</span>)}</span>
+          </div>
+        </article>
+      </section>
+
+      <div class="section-head"><h2>{fmtDay(latest.datetime)}</h2><a href={`/schodze/${latest.session}/`}>Celá {latest.session}. schôdza</a></div>
+      <ol class="timeline">
+        {lastDay.slice(0, 12).map((v) => (
+          <li class={resultCls(v)}>
+            <time datetime={v.datetime}>{fmtTime(v.datetime)}</time>
+            <a href={`/hlasovania/${v.id}/`} title={v.title}>{shortTitle(v.title, 170)}</a>
+            <VoteBar counts={v.counts} />
+            <span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
+          </li>
+        ))}
+      </ol>
+
+      <div class="section-head"><h2>Poslanci v číslach</h2><a href="/poslanci/">Celá sála</a></div>
+      <div class="sessions">
+        <section class="panel pad">
+          <h3 style="font-size:var(--step-0)">Najnižšia účasť na hlasovaniach</h3>
+          <ul class="mplist">{lowAtt.map((m) => (
+            <li><a href={`/poslanci/#${m.id}`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.45rem 0;text-decoration:none`}>
+              <span class="ava" aria-hidden="true">{initials(m)}</span><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{pct(mpStats(m.id).attendance)}</span></a></li>))}</ul>
+        </section>
+        <section class="panel pad">
+          <h3 style="font-size:var(--step-0)">Najčastejšie hlasujú inak ako ich klub</h3>
+          <ul class="mplist">{rebels.map((m) => (
+            <li><a href={`/poslanci/#${m.id}`} style={`--club:${clubColor(m.club)};display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:center;padding:.45rem 0;text-decoration:none`}>
+              <span class="ava" aria-hidden="true">{initials(m)}</span><span><span class="nm">{m.name}</span><span class="cl">{m.club}</span></span><span class="val">{mpStats(m.id).rebels.length}<small>hlasovaní</small></span></a></li>))}</ul>
+        </section>
       </div>
-      <div>
-        <p class={`verdict ${latest.passed ? "yes" : latest.passed === false ? "no" : ""}`}>{resultText(latest)}</p>
-        <Counts counts={latest.counts} />
-        <a class="more" href={`/hlasovania/${latest.id}/`}>Kto ako hlasoval</a>
-      </div>
-    </section>
+
+      <div class="section-head"><h2>Schôdze</h2><a href="/schodze/">Všetky schôdze</a></div>
+      <div class="sessions">{sessions.slice(0, 6).map((s) => <SessionCard s={s} />)}</div>
+    </>
   ) : <p>Zatiaľ tu nie sú žiadne hlasovania.</p>}
-  <h2>Predchádzajúce hlasovania</h2>
-  <VoteList items={rest.slice(0, 12)} />
-  <a class="more" href="/hlasovania/">Všetky hlasovania</a>
 </Base>

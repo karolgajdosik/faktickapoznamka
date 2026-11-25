@@ -1,36 +1,166 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { mps, clubs, mpStats, pct } from "../../lib/data";
-const rows = mps.map((m) => ({ ...m, s: mpStats(m.id) }));
+import Hall from "../../components/Hall.astro";
+import { mps, clubs, clubColor, initials, mpStats, voteById, fmtShort, shortTitle, LABEL, age, pct } from "../../lib/data";
+const data = mps.map((m) => {
+  const s = mpStats(m.id);
+  return {
+    id: m.id, name: m.name, sort: m.sortName, club: m.club, color: clubColor(m.club), ini: initials(m),
+    title: m.title ?? null, born: m.born ?? null, age: age(m.born), city: m.city ?? null, region: m.region ?? null, party: m.party ?? null,
+    att: s.attendance, loy: s.loyalty, nreb: s.rebels.length, rank: s.rankAttendance,
+    rebels: s.rebels.slice(-6).reverse().map((id) => { const v = voteById.get(id)!; return { id, d: fmtShort(v.datetime), t: shortTitle(v.title, 130), c: LABEL[v.votes[m.id]] }; }),
+  };
+});
 ---
-<Base title="Poslanci" description="Poslanci Národnej rady SR: klub, účasť na hlasovaniach a súlad s vlastným klubom.">
-  <h1>Poslanci</h1>
-  <form class="filter" role="search" onsubmit="return false">
-    <label class="sr-only" for="q">Hľadať poslanca</label>
-    <input id="q" type="search" placeholder="Hľadať podľa mena" autocomplete="off" />
-    <label class="sr-only" for="club">Klub</label>
-    <select id="club"><option value="">Všetky kluby</option>{clubs.map((c) => <option>{c.name}</option>)}</select>
-  </form>
-  <table id="mps">
-    <thead><tr><th>Meno</th><th>Klub</th><th class="n">Účasť na hlasovaniach</th><th class="n">Súlad s klubom</th></tr></thead>
-    <tbody>
-      {rows.map((m) => (
-        <tr data-name={m.name.toLowerCase()} data-club={m.club}>
-          <td><a href={`/poslanci/${m.id}/`}>{m.sortName}</a></td><td>{m.club}</td>
-          <td class="n">{pct(m.s.attendance)}</td><td class="n">{pct(m.s.loyalty)}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-  <p class="meta-line"><a href="/o-projekte/#metodika">Ako počítame účasť a súlad s klubom</a></p>
+<Base title="Sála" wide description="Všetkých 150 poslancov NR SR v sále: kluby, účasť na hlasovaniach a súlad s klubom.">
+  <div class="sala">
+    <aside class="panel side" aria-label="Zoznam poslancov">
+      <div class="ctrl">
+        <h1>Poslanci <small id="count">{mps.length}</small></h1>
+        <label class="sr-only" for="q">Hľadať</label>
+        <input class="input" id="q" type="search" placeholder="Meno, mesto, kraj, strana…" autocomplete="off" />
+        <div class="chips" role="group" aria-label="Filtrovať podľa klubu">
+          {clubs.map((c) => <button class="chip" type="button" aria-pressed="false" data-club={c.name} style={`--club:${clubColor(c.name)}`}><i></i>{c.name} <b>{c.size}</b></button>)}
+        </div>
+        <label class="sr-only" for="sort">Zoradiť</label>
+        <select class="select" id="sort">
+          <option value="name">Abecedne</option>
+          <option value="att-asc">Najnižšia účasť</option>
+          <option value="att-desc">Najvyššia účasť</option>
+          <option value="reb-desc">Najčastejšie proti klubu</option>
+          <option value="age-asc">Najmladší</option>
+          <option value="age-desc">Najstarší</option>
+        </select>
+      </div>
+      <ul class="mplist" id="list"></ul>
+    </aside>
+
+    <section class="panel stage" aria-label="Sála">
+      <div class="stage-head">
+        <div class="seg" role="group" aria-label="Zafarbiť sálu">
+          <button type="button" aria-pressed="true" data-mode="club">Kluby</button>
+          <button type="button" aria-pressed="false" data-mode="att">Účasť</button>
+          <button type="button" aria-pressed="false" data-mode="loy">Súlad s klubom</button>
+        </div>
+        <div class="heatscale" id="scale" hidden><span>nízka</span><i></i><span>vysoká</span></div>
+      </div>
+      <Hall id="sala" intro />
+      <div class="legend">{clubs.map((c) => <span style={`--club:${clubColor(c.name)}`}><i class="dot" style="background:var(--club)"></i>{c.name} {c.size}</span>)}</div>
+    </section>
+  </div>
+
+  <dialog class="mp" id="card" aria-labelledby="card-name">
+    <button class="close" type="button" aria-label="Zavrieť" data-close>×</button>
+    <div id="card-body"></div>
+  </dialog>
+
+  <script type="application/json" id="mp-data" set:html={JSON.stringify(data)} />
   <script>
-    const q = document.getElementById("q") as HTMLInputElement, club = document.getElementById("club") as HTMLSelectElement;
+    type M = { id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
+      city: string | null; region: string | null; party: string | null; att: number | null; loy: number | null; nreb: number; rank: number;
+      rebels: { id: string; d: string; t: string; c: string }[] };
+    const all: M[] = JSON.parse(document.getElementById("mp-data")!.textContent!);
+    const byId = new Map(all.map((m) => [m.id, m]));
+    const hall = document.getElementById("sala")!;
+    const seats = new Map([...hall.querySelectorAll<SVGGElement>(".seat")].map((g) => [g.dataset.id!, g]));
+    const list = document.getElementById("list")!, q = document.getElementById("q") as HTMLInputElement, sort = document.getElementById("sort") as HTMLSelectElement;
+    const chips = [...document.querySelectorAll<HTMLButtonElement>(".chip")];
+    const pct = (x: number | null) => { if (x === null) return "–"; const v = x * 100; return (v > 99 && v < 100) || (v > 0 && v < 1) ? `${v.toFixed(1).replace(".", ",")} %` : `${Math.round(v)} %`; };
     const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
-    const rows = [...document.querySelectorAll<HTMLTableRowElement>("#mps tbody tr")];
-    function apply() {
+    const el = (tag: string, props: Record<string, any> = {}, ...kids: (Node | string | null)[]) => {
+      const e = document.createElement(tag); Object.assign(e, props);
+      for (const k of kids) if (k != null) e.append(k);
+      return e;
+    };
+    let mode = "club";
+
+    function render() {
       const t = norm(q.value.trim());
-      for (const r of rows) r.hidden = !(norm(r.dataset.name!).includes(t) && (!club.value || r.dataset.club === club.value));
+      const active = chips.filter((c) => c.getAttribute("aria-pressed") === "true").map((c) => c.dataset.club!);
+      const rows = all.filter((m) => (!active.length || active.includes(m.club)) &&
+        (!t || norm([m.name, m.club, m.city, m.region, m.party].join(" ")).includes(t)));
+      const s = sort.value, v = (x: number | null, d: number) => x ?? d;
+      rows.sort((a, b) =>
+        s === "att-asc" ? v(a.att, 2) - v(b.att, 2) : s === "att-desc" ? v(b.att, -1) - v(a.att, -1) :
+        s === "reb-desc" ? b.nreb - a.nreb : s === "age-asc" ? v(a.age, 999) - v(b.age, 999) :
+        s === "age-desc" ? v(b.age, -1) - v(a.age, -1) : a.sort.localeCompare(b.sort, "sk"));
+      const metric = (m: M) => s.startsWith("reb") ? [String(m.nreb), "proti klubu"] : s.startsWith("age") ? [m.age ? `${m.age}` : "–", "rokov"] : [pct(m.att), "účasť"];
+      list.replaceChildren(...rows.map((m) => {
+        const [val, lab] = metric(m);
+        const sub = [m.age ? `${m.age} r.` : null, m.city, m.region ? `${m.region} kraj` : null].filter(Boolean).join(", ");
+        const btn = el("button", { type: "button" },
+          el("span", { className: "ava", textContent: m.ini, ariaHidden: "true" }),
+          el("span", {}, el("span", { className: "nm", textContent: m.name }), el("span", { className: "cl", textContent: m.club }), sub ? el("span", { className: "sub", textContent: sub }) : null),
+          el("span", { className: "val" }, val, el("small", { textContent: lab })));
+        btn.style.setProperty("--club", m.color);
+        btn.addEventListener("click", () => open(m.id));
+        btn.addEventListener("mouseenter", () => seats.get(m.id)?.classList.add("hi"));
+        btn.addEventListener("mouseleave", () => seats.get(m.id)?.classList.remove("hi"));
+        return el("li", {}, btn);
+      }));
+      document.getElementById("count")!.textContent = String(rows.length);
+      const ids = new Set(rows.map((m) => m.id));
+      hall.classList.toggle("filtered", rows.length !== all.length);
+      for (const [id, g] of seats) g.classList.toggle("match", ids.has(id));
     }
-    q.addEventListener("input", apply); club.addEventListener("change", apply);
+
+    function heat(x: number | null, lo: number) {
+      if (x === null) return "var(--panel-2)";
+      const r = Math.max(0, Math.min(1, (x - lo) / (1 - lo)));
+      const hue = 355 + r * 125; // red → amber → green
+      return `hsl(${hue % 360} 70% ${48 + r * 4}%)`;
+    }
+    function paint() {
+      hall.dataset.mode = mode === "club" ? "club" : "heat";
+      document.getElementById("scale")!.hidden = mode === "club";
+      for (const [id, g] of seats) {
+        const m = byId.get(id); if (!m) continue;
+        const x = mode === "att" ? m.att : mode === "loy" ? m.loy : null;
+        g.style.setProperty("--heat", heat(x, mode === "att" ? .5 : .7));
+        g.dataset.extra = mode === "att" ? `účasť ${pct(m.att)}` : mode === "loy" ? `súlad s klubom ${pct(m.loy)}` : "";
+      }
+    }
+
+    const dlg = document.getElementById("card") as HTMLDialogElement;
+    function open(id: string) {
+      const m = byId.get(id); if (!m) return;
+      const fact = (k: string, v: string | null) => v ? el("div", {}, el("dt", { textContent: k }), el("dd", { textContent: v })) : null;
+      const tile = (k: string, v: string, extra?: string, accent = false) => el("div", { className: accent ? "tile accent" : "tile" }, el("dt", { textContent: k }), el("dd", {}, v, extra ? el("small", { textContent: extra }) : null));
+      const body = el("article", {},
+        el("header", { className: "card-head" },
+          el("div", { className: "ava xl", textContent: m.ini, ariaHidden: "true" }),
+          el("div", {},
+            el("div", { className: "ttl", textContent: "Poslanec NR SR, IX. volebné obdobie" }),
+            el("h2", { id: "card-name", textContent: m.name }),
+            el("span", { className: "club" }, el("i"), m.club),
+            el("dl", { className: "facts" },
+              fact("Tituly", m.title), fact("Narodený(á)", m.born ? `${m.born.slice(0, 4)}${m.age ? `, ${m.age} rokov` : ""}` : null),
+              fact("Bydlisko", m.city), fact("Kraj", m.region), fact("Kandidoval(a) za", m.party)))),
+        el("div", { className: "card-body" },
+          el("dl", { className: "tiles" },
+            tile("Účasť na hlasovaniach", pct(m.att), undefined, true), tile("Poradie podľa účasti", String(m.rank || "–"), `z ${all.length}`),
+            tile("Súlad s klubom", pct(m.loy)), tile("Hlasovaní proti klubu", String(m.nreb))),
+          el("section", {}, el("h3", { textContent: "Naposledy hlasoval(a) inak ako väčšina klubu" }),
+            m.rebels.length ? el("ul", { className: "rebels" }, ...m.rebels.map((r) => el("li", {}, el("a", { href: `/hlasovania/${r.id}/` },
+              el("time", { textContent: r.d }), el("span", { textContent: r.t }), el("span", { className: "vs", textContent: r.c })))))
+              : el("p", { className: "empty", textContent: m.club === "Nezaradení" ? "Nezaradený poslanec, súlad s klubom sa nepočíta." : "Zatiaľ vždy hlasoval(a) s väčšinou svojho klubu." })),
+          el("p", {}, el("a", { className: "more", href: `/poslanci/${m.id}/`, textContent: "Celý profil a účasť podľa mesiacov" }))));
+      body.style.setProperty("--club", m.color);
+      document.getElementById("card-body")!.replaceChildren(body);
+      dlg.showModal();
+      history.replaceState(null, "", `#${m.id}`);
+    }
+    dlg.addEventListener("close", () => history.replaceState(null, "", location.pathname));
+    dlg.addEventListener("click", (e) => { if (e.target === dlg || (e.target as Element).closest("[data-close]")) dlg.close(); });
+    hall.addEventListener("seat:select", (e) => { e.preventDefault(); open((e as CustomEvent).detail); });
+
+    q.addEventListener("input", render); sort.addEventListener("change", render);
+    chips.forEach((c) => c.addEventListener("click", () => { c.setAttribute("aria-pressed", String(c.getAttribute("aria-pressed") !== "true")); render(); }));
+    document.querySelectorAll<HTMLButtonElement>(".seg button").forEach((b) => b.addEventListener("click", () => {
+      document.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      mode = b.dataset.mode!; paint();
+    }));
+    render(); paint();
+    if (location.hash.length > 1 && byId.has(location.hash.slice(1))) open(location.hash.slice(1));
   </script>
 </Base>

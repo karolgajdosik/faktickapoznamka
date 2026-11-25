@@ -1,41 +1,60 @@
 ---
 import Base from "../../layouts/Base.astro";
-import Hemicycle from "../../components/Hemicycle.astro";
+import Hall from "../../components/Hall.astro";
 import Counts from "../../components/Counts.astro";
-import { votes, clubs, mps, CODES, LABEL, fmtDate, fmtTime, resultText, type Vote } from "../../lib/data";
+import { votes, clubs, mpById, clubColor, CODES, LABEL, cls, fmtDate, fmtTime, resultText, resultCls, type Vote, type Code } from "../../lib/data";
 export function getStaticPaths() { return votes.map((v) => ({ params: { id: v.id }, props: { v } })); }
 const { v } = Astro.props as { v: Vote };
+const clubOf = (id: string) => v.clubs?.[id] ?? mpById.get(id)?.club ?? "";
 const byClub = clubs.map((c) => {
-  const t = { Z: 0, P: 0, "?": 0, N: 0, "0": 0 };
-  for (const m of mps) if (m.club === c.name && v.votes[m.id]) t[v.votes[m.id]]++;
-  return { ...c, t };
-});
+  const t: Record<Code, number> = { Z: 0, P: 0, "?": 0, N: 0, "0": 0 };
+  for (const [id, code] of Object.entries(v.votes)) if (clubOf(id) === c.name) t[code]++;
+  return { ...c, t, n: CODES.reduce((s, k) => s + t[k], 0) };
+}).filter((c) => c.n > 0);
 const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=${v.id}`;
 ---
 <Base title={v.title} description={`${resultText(v)}: za ${v.counts.Z}, proti ${v.counts.P}, zdržalo sa ${v.counts["?"]}.`}>
-  <p class="meta-line">{fmtDate(v.datetime)}, {fmtTime(v.datetime)}{v.session && <>, {v.session}. schôdza</>}{v.number && <>, hlasovanie č. {v.number}</>}</p>
-  <h1>{v.title}</h1>
-  <p class={`verdict ${v.passed ? "yes" : v.passed === false ? "no" : ""}`}>{resultText(v)}</p>
-  <Counts counts={v.counts} />
-  <div style="margin-top:2rem"><Hemicycle votes={v.votes} /></div>
-  <p class="meta-line" style="margin-top:.75rem">Kluby sú v polkruhu zoradené zľava podľa veľkosti. Ukážte na kruh pre meno poslanca.</p>
+  <p class="meta-line">{fmtDate(v.datetime)}, {fmtTime(v.datetime)}{v.session && <>, <a href={`/schodze/${v.session}/`}>{v.session}. schôdza</a></>}{v.number && <>, hlasovanie č. {v.number}</>}</p>
+  <h1 style="font-size:var(--step-2);max-width:60ch">{v.title}</h1>
+  <div class="hero" style="margin-top:1.5rem">
+    <div class="panel pad intro">
+      <div>
+        <p class={`verdict ${resultCls(v)}`}>{resultText(v)}</p>
+        <Counts counts={v.counts} />
+      </div>
+      <div>
+        <h2 style="font-size:var(--step-0);margin:0 0 .8rem">Ako hlasovali kluby</h2>
+        <div class="clubbars">
+          {byClub.map((c) => (
+            <div class="r" style={`--club:${clubColor(c.name)}`}>
+              <b><i aria-hidden="true"></i>{c.name}</b>
+              <span class="bar" role="img" aria-label={CODES.map((k) => `${LABEL[k]} ${c.t[k]}`).join(", ")}>
+                {CODES.map((k) => c.t[k] > 0 && <span class={`v-${cls(k)}`} style={`flex-grow:${c.t[k]}`} />)}
+              </span>
+              <span>{c.t.Z} za, {c.t.P} proti, {c.t["?"]} zdržal</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    <div class="panel latest">
+      <Hall votes={v.votes} clubsAt={v.clubs} id="vote-hall" intro label="Rozloženie hlasov v sále" />
+      <div class="legend">{CODES.map((c) => <span><i class={`dot v-${cls(c)}`}></i>{LABEL[c]}</span>)}<span>Okraj kruhu = farba klubu</span></div>
+    </div>
+  </div>
 
-  <h2 style="margin-top:2.5rem">Podľa klubov</h2>
-  <table>
-    <thead><tr><th>Klub</th>{CODES.map((c) => <th class="n">{LABEL[c]}</th>)}</tr></thead>
-    <tbody>{byClub.map((c) => <tr><td>{c.name}</td>{CODES.map((k) => <td class="n">{c.t[k]}</td>)}</tr>)}</tbody>
-  </table>
-
-  <div class="grid-2 names">
+  <div class="section-head"><h2>Kto ako hlasoval</h2></div>
+  <div class="names">
     {CODES.map((c) => {
-      const list = mps.filter((m) => v.votes[m.id] === c);
+      const list = Object.entries(v.votes).filter(([, k]) => k === c).map(([id]) => mpById.get(id)).filter(Boolean)
+        .sort((a, b) => a!.sortName.localeCompare(b!.sortName, "sk"));
       return list.length > 0 && (
         <section>
-          <h3><span class={`key v-${c === "?" ? "Q" : c}`} aria-hidden="true" />{LABEL[c]} ({list.length})</h3>
-          <ul>{list.map((m) => <li><a href={`/poslanci/${m.id}/`}>{m.name}</a> <span class="club">{m.club}</span></li>)}</ul>
+          <h3><span class={`dot v-${cls(c)}`} aria-hidden="true" />{LABEL[c]} ({list.length})</h3>
+          <ul>{list.map((m) => <li><a href={`/poslanci/${m!.id}/`} style={`--club:${clubColor(clubOf(m!.id))}`} title={clubOf(m!.id)}>{m!.name}</a></li>)}</ul>
         </section>
       );
     })}
   </div>
-  <p><a href={nrsr} rel="noopener">Hlasovanie na nrsr.sk</a></p>
+  <p><a class="more" href={nrsr} rel="noopener">Hlasovanie na nrsr.sk</a></p>
 </Base>

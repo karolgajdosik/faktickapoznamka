@@ -1,17 +1,19 @@
 ---
 import Base from "../../layouts/Base.astro";
 import VoteList from "../../components/VoteList.astro";
-import { votes, fmtDate } from "../../lib/data";
-const byDay = new Map<string, typeof votes>();
-for (const v of votes) { const d = fmtDate(v.datetime); byDay.set(d, [...(byDay.get(d) ?? []), v]); }
+import { votes, sessions } from "../../lib/data";
+const recent = votes.slice(0, 200);
 ---
-<Base title="Hlasovania" description="Všetky hlasovania Národnej rady SR s výsledkom a rozdelením hlasov.">
+<Base title="Hlasovania" description="Hlasovania Národnej rady SR s výsledkom a rozdelením hlasov.">
   <h1>Hlasovania</h1>
-  <p class="meta-line">{votes.length} hlasovaní, od najnovších.</p>
-  {[...byDay.entries()].map(([day, items]) => (
-    <section>
-      <h2 class="day">{day}</h2>
-      <VoteList items={items} showDate={false} />
-    </section>
-  ))}
+  <p class="meta-line">Najnovších {recent.length} z {votes.length} hlasovaní. Staršie nájdete pri jednotlivých <a href="/schodze/">schôdzach</a>.</p>
+  <label class="sr-only" for="vq">Hľadať v názvoch hlasovaní</label>
+  <input class="input" id="vq" type="search" placeholder="Hľadať v názvoch, napr. „rozpočet“ alebo „tlač 1448“" style="max-width:32rem;margin:1rem 0" />
+  <VoteList items={recent} />
+  <script>
+    const q = document.getElementById("vq") as HTMLInputElement;
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    const rows = [...document.querySelectorAll<HTMLLIElement>(".votes li")];
+    q.addEventListener("input", () => { const t = norm(q.value.trim()); for (const r of rows) r.hidden = !!t && !norm(r.textContent!).includes(t); });
+  </script>
 </Base>

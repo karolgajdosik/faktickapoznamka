@@ -1,9 +1,9 @@
 ---
-import { CODES, LABEL, type Code } from "../lib/data";
+import { CODES, LABEL, cls, type Code } from "../lib/data";
 interface Props { counts: Record<Code, number> }
 const { counts } = Astro.props;
 const total = CODES.reduce((s, c) => s + counts[c], 0) || 1;
 ---
 <span class="bar" role="img" aria-label={CODES.map((c) => `${LABEL[c]} ${counts[c]}`).join(", ")}>
-  {CODES.map((c) => counts[c] > 0 && <span class={`v-${c === "?" ? "Q" : c}`} style={`flex-grow:${counts[c] / total}`} />)}
+  {CODES.map((c) => counts[c] > 0 && <span class={`v-${cls(c)}`} style={`flex-grow:${counts[c] / total}`} />)}
 </span>

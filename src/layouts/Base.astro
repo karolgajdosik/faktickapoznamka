@@ -2,11 +2,11 @@
 import "@fontsource-variable/public-sans";
 import "../styles/global.css";
 import { meta, live } from "../lib/data";
-interface Props { title?: string; description?: string }
-const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami." } = Astro.props;
+interface Props { title?: string; description?: string; wide?: boolean }
+const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
-const nav = [["/hlasovania/", "Hlasovania"], ["/poslanci/", "Poslanci"], ["/o-projekte/", "O projekte"]];
+const nav = [["/poslanci/", "Sála"], ["/schodze/", "Schôdze"], ["/hlasovania/", "Hlasovania"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
 <html lang="sk">
@@ -18,44 +18,53 @@ const nav = [["/hlasovania/", "Hlasovania"], ["/poslanci/", "Poslanci"], ["/o-pr
   <meta property="og:title" content={full} />
   <meta property="og:description" content={description} />
   <meta property="og:locale" content="sk_SK" />
-  <meta name="theme-color" content="#16222e" />
-  <link rel="canonical" href={new URL(Astro.url.pathname, "https://faktickapoznamka.sk")} />
+  <meta name="theme-color" content="#0c111d" />
+  <link rel="canonical" href={new URL(path, "https://faktickapoznamka.sk")} />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <script is:inline>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
 </head>
 <body>
   <a class="skip" href="#obsah">Preskočiť na obsah</a>
   <header class="site">
-    <div class="wrap head">
+    <div class="wrap head" style={wide ? "max-width:none" : undefined}>
       <a href="/" class="brand" aria-label="faktická poznámka, úvod">
         <span class="timer" aria-hidden="true">2:00</span>
         <span class="word">faktická poznámka</span>
       </a>
-      <nav aria-label="Hlavná navigácia">
+      <nav class="main" aria-label="Hlavná navigácia">
         {nav.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
+        <a href="https://tv.nrsr.sk/" rel="noopener" id="nav-live" hidden><span class="live-dot" aria-hidden="true"></span>Naživo</a>
       </nav>
+      <button class="theme-btn" id="theme" type="button" aria-label="Prepnúť svetlý a tmavý režim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
     </div>
   </header>
   <div id="live" class="live" hidden data-since={live.item ? live.since : ""}>
-    <div class="wrap"><span class="pulse" aria-hidden="true"></span><strong>Na programe NR SR:</strong> {live.item} <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
+    <div class="wrap" style={wide ? "max-width:none" : undefined}><strong>Na programe NR SR:</strong> {live.item} <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
   </div>
-  {meta.demo && (
-    <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené. Skutočné dáta z nrsr.sk pribudnú po prvom stiahnutí.</div></div>
-  )}
-  <main id="obsah" class="wrap"><slot /></main>
+  {meta.demo && <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené.</div></div>}
+  <main id="obsah" class="wrap" style={wide ? "max-width:none" : undefined}><slot /></main>
   <footer class="site">
     <div class="wrap">
-      <p>Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Zdroj dát: <a href="https://www.nrsr.sk/">nrsr.sk</a>.</p>
+      <p>Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Zdroj dát: <a href="https://www.nrsr.sk/">nrsr.sk</a>. Kód a dáta: <a href="https://github.com/karolgajdosik/faktickapoznamka">GitHub</a>.</p>
       <p>Dáta aktualizované {new Date(meta.updatedAt).toLocaleString("sk-SK", { timeZone: "Europe/Bratislava" })}. <a href="/o-projekte/">Metodika a kontakt</a></p>
     </div>
   </footer>
   <script>
-    // Show the agenda item only on session days: weekday, 8–20 h, item seen in the last 12 hours.
+    // Agenda strip only on session days: weekday, 8–20 h, item seen in the last 12 hours.
     const box = document.getElementById("live")!;
     const since = box.dataset.since;
     const now = new Date();
     const h = Number(now.toLocaleString("en-GB", { timeZone: "Europe/Bratislava", hour: "numeric", hour12: false }));
     const wd = now.toLocaleString("en-GB", { timeZone: "Europe/Bratislava", weekday: "short" });
-    if (since && !["Sat", "Sun"].includes(wd) && h >= 8 && h < 20 && Date.now() - Date.parse(since) < 12 * 3600e3) box.hidden = false;
+    if (since && !["Sat", "Sun"].includes(wd) && h >= 8 && h < 20 && Date.now() - Date.parse(since) < 12 * 3600e3) {
+      box.hidden = false; document.getElementById("nav-live")!.hidden = false;
+    }
+    document.getElementById("theme")!.addEventListener("click", () => {
+      const root = document.documentElement;
+      const dark = root.dataset.theme ? root.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
+      root.dataset.theme = dark ? "light" : "dark";
+      try { localStorage.setItem("theme", root.dataset.theme); } catch {}
+    });
   </script>
 </body>
 </html>

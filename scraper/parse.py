@@ -65,6 +65,7 @@ def parse_vote(html: str, vote_id: str) -> dict | None:
                   else False if res else None,
         "counts": counts,
         "votes": votes,
+        "clubs": {pid: m["club"] for pid, m in mps.items()},
         "_mps": mps,
     }
 
@@ -95,3 +96,20 @@ def parse_live(html: str) -> str | None:
             txt = " ".join(div.get_text(" ", strip=True).split()) if div else ""
             return txt or None
     return None
+
+def parse_mp(html: str, mp_id: str) -> dict | None:
+    """Profile fields from 'Detaily poslanca'. Labels and values alternate as lines."""
+    text = _soup(html).get_text("\n")
+    k = text.find("Detaily poslanca")
+    if k < 0: return None
+    lines = [l.strip() for l in text[k:].split("\n") if l.strip()]
+    labels = {"Meno": "first", "Titul": "title", "Priezvisko": "last", "Kandidoval(a) za": "party",
+              "Narodený(á)": "born", "Národnosť": None, "Bydlisko": "city", "Kraj": "region", "E-mail": None}
+    out: dict = {"id": mp_id}
+    for i, l in enumerate(lines[:-1]):
+        if l in labels and labels[l] and lines[i + 1] not in labels:
+            out[labels[l]] = lines[i + 1]
+    m = re.search(r"(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})", out.get("born", ""))
+    out["born"] = f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else None
+    if out.get("title"): out["title"] = re.sub(r"\s*,\s*", ", ", out["title"]).strip(" ,")
+    return out if out.get("last") else None

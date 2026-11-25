@@ -1,0 +1,10 @@
+---
+import Base from "../../layouts/Base.astro";
+import SessionCard from "../../components/SessionCard.astro";
+import { sessions, votes } from "../../lib/data";
+---
+<Base title="Schôdze" description="Schôdze Národnej rady SR v IX. volebnom období: rokovacie dni, hlasovania a účasť.">
+  <h1>Schôdze</h1>
+  <p class="meta-line">IX. volebné obdobie: {sessions.length} schôdzí, {votes.length} hlasovaní. Stĺpčeky ukazujú jednotlivé hlasovania: výška je účasť, farba výsledok.</p>
+  <div class="sessions" style="margin-top:1.5rem">{sessions.map((s) => <SessionCard s={s} />)}</div>
+</Base>

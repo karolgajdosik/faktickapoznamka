@@ -1,0 +1,58 @@
+---
+// Server-rendered MP card (profile page). The Sála modal renders the same structure client-side.
+import { mpStats, clubColor, initials, age, pct, voteById, fmtShort, shortTitle, mps, LABEL, cls, type Mp } from "../lib/data";
+interface Props { m: Mp }
+const { m } = Astro.props;
+const s = mpStats(m.id);
+const a = age(m.born);
+const rebels = s.rebels.slice(-12).reverse().map((id) => voteById.get(id)!).filter(Boolean);
+const months = s.monthly.slice(-24);
+---
+<article class="panel" style={`--club:${clubColor(m.club)};overflow:hidden`}>
+  <header class="card-head">
+    <div class="ava xl" aria-hidden="true">{initials(m)}</div>
+    <div>
+      <div class="ttl">Poslanec NR SR, IX. volebné obdobie</div>
+      <h1 style="margin:.1rem 0 .35rem">{m.name}</h1>
+      <span class="club"><i aria-hidden="true"></i>{m.club}</span>
+      <dl class="facts">
+        {m.title && <div><dt>Tituly</dt><dd>{m.title}</dd></div>}
+        {m.born && <div><dt>Narodený(á)</dt><dd>{m.born.slice(0, 4)}{a !== null && `, ${a} rokov`}</dd></div>}
+        {m.city && <div><dt>Bydlisko</dt><dd>{m.city}</dd></div>}
+        {m.region && <div><dt>Kraj</dt><dd>{m.region}</dd></div>}
+        {m.party && <div><dt>Kandidoval(a) za</dt><dd>{m.party}</dd></div>}
+      </dl>
+    </div>
+  </header>
+  <div class="card-body">
+    <dl class="tiles">
+      <div class="tile accent"><dt>Účasť na hlasovaniach</dt><dd>{pct(s.attendance)}</dd></div>
+      <div class="tile"><dt>Poradie podľa účasti</dt><dd>{s.rankAttendance || "–"}<small>z {mps.length}</small></dd></div>
+      <div class="tile"><dt>Súlad s klubom</dt><dd>{pct(s.loyalty)}</dd></div>
+      <div class="tile"><dt>Hlasovaní proti klubu</dt><dd>{s.rebels.length}</dd></div>
+    </dl>
+    {months.length > 1 && (
+      <section>
+        <h3>Účasť podľa mesiacov</h3>
+        <div class="months" role="img" aria-label="Účasť na hlasovaniach podľa mesiacov">
+          {months.map((mo) => { const r = mo.total ? mo.present / mo.total : 0; return <span class:list={{ low: r < .6 }} style={`height:${Math.max(3, r * 100)}%`} title={`${mo.month}: ${Math.round(r * 100)} % (${mo.present}/${mo.total})`} />; })}
+        </div>
+        <div class="months-axis"><span>{months[0].month}</span><span>{months[months.length - 1].month}</span></div>
+      </section>
+    )}
+    <section>
+      <h3>Hlasoval(a) inak ako väčšina klubu</h3>
+      {rebels.length ? (
+        <ul class="rebels">
+          {rebels.map((v) => (
+            <li><a href={`/hlasovania/${v.id}/`}>
+              <time datetime={v.datetime}>{fmtShort(v.datetime)}</time>
+              <span>{shortTitle(v.title, 150)}</span>
+              <span class="vs"><span class={`code v-${cls(v.votes[m.id])}`}>{LABEL[v.votes[m.id]]}</span></span>
+            </a></li>
+          ))}
+        </ul>
+      ) : <p class="empty">{m.club === "Nezaradení" ? "Nezaradený poslanec, súlad s klubom sa nepočíta." : "Zatiaľ vždy hlasoval(a) s väčšinou svojho klubu."}</p>}
+    </section>
+  </div>
+</article>
