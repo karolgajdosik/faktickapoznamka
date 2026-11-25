@@ -130,15 +130,20 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
       async function check() {
         if (!mine || shown || document.hidden) return;
         try {
-          const r = await fetch("/", { cache: "no-store" });
+          // tiny file with the current build id (no-store: always straight from the server)
+          const r = await fetch(`/version.json?t=${Date.now()}`, { cache: "no-store" });
           if (!r.ok || r.redirected) return;
-          const v = ((await r.text()).match(/<meta name="app-version" content="([^"]+)"/) || [])[1];
+          const v = (await r.json()).v;
           if (!v || v === mine) return;
           shown = true; bar.hidden = false;
         } catch { /* offline */ }
       }
       setInterval(check, 5 * 60e3);
       document.addEventListener("visibilitychange", () => { if (!document.hidden) check(); });
+      // iPhone: "Back" restores the old page from memory without reloading — check then too
+      addEventListener("pageshow", (e) => { if ((e as PageTransitionEvent).persisted) check(); });
+      addEventListener("focus", check);
+      addEventListener("online", check);
       setTimeout(check, 20e3);
       document.getElementById("update-reload")!.addEventListener("click", () => location.reload());
 
