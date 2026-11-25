@@ -1,1 +1,968 @@
-<!doctype html><html lang="en"><meta charset="UTF-8"><meta content="nofollow,noarchive,noindex" name="robots"><title>Bot Detection</title><meta content="width=device-width,initial-scale=1" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible"><meta content="Bot Detection" name="title"><meta content="30" http-equiv="refresh"><meta content="Please wait while we check if you are a Human" name="description"><meta content="Bot Detection" property="og:title"><meta content="Please wait while we check if you are a Human" property="og:description"><meta content="Bot Detection" property="twitter:title"><meta content="Please wait while we check if you are a Human" property="twitter:description"><link href="data:image/svg+xml, %3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='96.000000pt' height='96.000000pt' viewBox='0 0 96.000000 96.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,96.000000) scale(0.100000,-0.100000)'%0Afill='%23085577' stroke='none'%3E%3Cpath d='M535 863 c-22 -2 -139 -17 -260 -34 -228 -31 -267 -43 -272 -85 -2%0A-10 23 -181 55 -379 l57 -360 400 0 400 0 20 40 c16 31 20 59 19 125 -1 100%0A-24 165 -73 199 -41 29 -46 57 -22 111 30 67 29 188 -3 256 -13 28 -37 60 -53%0A72 -55 39 -169 62 -268 55z m-15 -348 c30 -16 60 -61 60 -90 0 -10 -8 -33 -17%0A-52 -16 -34 -16 -41 0 -116 9 -44 15 -82 12 -85 -6 -7 -92 -21 -131 -21 l-31%0A-1 -6 85 c-4 75 -8 89 -31 112 -20 20 -26 36 -26 70 0 38 5 50 34 79 39 39 86%0A45 136 19z'/%3E%3C/g%3E%3C/svg%3E" rel="icon" type="image/svg+xml"><style nonce="ugbrSrNz1xLqkY0e0QqPwyxxOk6lx3to">:root{color-scheme:light dark;--bw-ground:#edf2f5;--bw-card:#ffffff;--bw-border:rgba(11, 53, 74, 0.16);--bw-ink:#0f2a38;--bw-ink-soft:#4d6776;--bw-accent:#1c7a47;--bw-primary:#0b354a;--bw-primary-ink:#ffffff;--bw-danger:#c0341d;--bw-status-bg:#f2f6f8;--bw-widget-bg:#fafafa;--bw-widget-border:#e0e0e0;--bw-shadow:0 1px 2px rgba(11, 53, 74, 0.06),0 12px 32px rgba(11, 53, 74, 0.1);--bw-grid-dot:rgba(11, 53, 74, 0.1);--bw-grid-line:transparent;--bw-mark:#0b5577}@media (prefers-color-scheme:dark){:root{--bw-ground:#062433;--bw-card:#0a3346;--bw-border:rgba(46, 172, 104, 0.3);--bw-ink:#e6f0f5;--bw-ink-soft:#93b4c4;--bw-accent:#3ecb80;--bw-primary:#2eac68;--bw-primary-ink:#062433;--bw-danger:#ff7a66;--bw-status-bg:#062a3b;--bw-widget-bg:#232323;--bw-widget-border:#3a3a3a;--bw-shadow:0 0 0 1px rgba(46, 172, 104, 0.06),0 22px 48px rgba(0, 0, 0, 0.45);--bw-grid-dot:rgba(143, 199, 230, 0.08);--bw-grid-line:rgba(255, 255, 255, 0.022);--bw-mark:#ffffff}}*{box-sizing:border-box}body,html{margin:0;padding:0;min-height:100%}body{min-height:100vh;display:flex;flex-direction:column;background-color:var(--bw-ground);background-image:repeating-linear-gradient(0deg,transparent 0 3px,var(--bw-grid-line) 3px 4px),radial-gradient(var(--bw-grid-dot) 1px,transparent 1px);background-size:auto,20px 20px;color:var(--bw-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1rem;-webkit-font-smoothing:antialiased}.bw-main{flex:1 0 auto;width:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:center;padding:24px 16px 16px}.bw-card{width:100%;max-width:420px;box-sizing:border-box;background:var(--bw-card);border:1px solid var(--bw-border);border-radius:6px;box-shadow:var(--bw-shadow);overflow:visible}.bw-topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;padding:11px 16px;border-bottom:1px solid var(--bw-border);font:600 0.65625rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;color:var(--bw-ink-soft)}.bw-topbar-left{display:flex;align-items:center;gap:8px;min-width:0;overflow-wrap:anywhere}.bw-dot{width:7px;height:7px;border-radius:50%;background:#2eac68;display:inline-block;animation:bw-live 1.6s ease-in-out infinite}.bw-dot.bw-dot-error{background:var(--bw-danger);animation:bw-caret .9s steps(1) infinite}.bw-topbar-type{overflow-wrap:anywhere;color:var(--bw-accent)}.bw-body{padding:26px 32px 26px;text-align:center}.bw-hero{display:block;width:88px;height:95px;margin:0 auto}.bw-hero-canvas{display:block;width:88px;height:95px}.bw-title{margin:18px 0 8px;font:700 1rem/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.06em;color:var(--bw-ink)}.bw-subtitle{margin:0 auto;max-width:330px;font:400 0.8125rem/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--bw-ink-soft)}.bw-status{min-height:42px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;margin-top:16px;padding:9px 12px;background:var(--bw-status-bg);border:1px solid var(--bw-border);border-radius:4px;font:500 0.75rem/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;text-align:left}#challenge-error{margin:0;color:var(--bw-danger)}#challenge-error:empty{display:none}.bw-status-decor{color:var(--bw-accent)}.bw-caret{animation:bw-caret 1s steps(1) infinite}.bw-retry{min-height:2.5rem;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;margin-top:10px;font:400 0.75rem/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--bw-ink-soft);visibility:hidden}.bw-retry.bw-visible{visibility:visible}.bw-retry-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0 2px}.bw-retry-help{font-size:.6875rem;font-weight:400}.bw-retry-btn{display:inline-flex;align-items:center;gap:4px;min-height:24px;padding:2px 4px;border:0;border-radius:4px;background:0 0;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:2px;cursor:pointer}.bw-retry-btn svg{width:11px;height:11px;flex-shrink:0}.bw-retry-btn:hover{color:var(--bw-primary)}.bw-retry-btn:focus-visible{outline:2px solid var(--bw-primary);outline-offset:2px}.bw-widget{width:300px;height:65px;box-sizing:border-box;margin:4px auto 0;display:flex;align-items:center;justify-content:center}.bw-widget.bw-widget-compact{width:150px;height:140px}.bw-widget-hcaptcha{width:303px;height:78px}.bw-widget-recaptcha{width:304px;height:78px}.bw-widget-hcaptcha.bw-widget-compact,.bw-widget-recaptcha.bw-widget-compact{width:164px;height:144px}.bw-form{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:18px}.bw-captcha-img{width:250px;max-width:100%;height:auto;aspect-ratio:250/80;box-sizing:border-box;background:var(--bw-status-bg);border:1px solid var(--bw-border);border-radius:4px;display:flex;align-items:center;justify-content:center;overflow:hidden}.bw-captcha-img img{max-width:100%;max-height:100%;display:block}.bw-field-label{display:block;margin:16px 0 6px;font:600 0.65625rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;color:var(--bw-ink-soft)}.bw-field-row{display:flex;justify-content:center;gap:8px;width:250px;max-width:100%;margin:8px auto 0}.bw-field-row input{flex:1;min-width:0;height:44px;box-sizing:border-box;padding:0 12px;border:1px solid var(--bw-border);border-radius:4px;background:var(--bw-status-bg);color:var(--bw-ink);font:600 1rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.2em;text-align:center}.bw-field-row button,.bw-submit{height:44px;padding:0 16px;border:0;border-radius:4px;background:var(--bw-primary);color:var(--bw-primary-ink);font:700 0.75rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;cursor:pointer}.bw-help-link{margin-top:10px;font:400 0.6875rem/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--bw-ink-soft)}.bw-help-link a{color:var(--bw-ink-soft)}.bw-footer{flex-shrink:0;width:100%;box-sizing:border-box;padding:12px 16px 18px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}.bw-footer-logo{display:block;line-height:0}.bw-footer-logo svg{width:132px;height:37px}.bw-footer p{margin:0;font:400 0.71875rem/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;color:var(--bw-ink-soft)}.bw-footer a{color:var(--bw-ink);font-weight:700;text-decoration:underline}.bw-footer a:hover{color:var(--bw-accent)}.bw-footer a:focus-visible{color:var(--bw-accent);outline:2px solid var(--bw-accent);outline-offset:2px}.bunker-cls-2{fill:var(--bw-mark)}.bunker-cls-3{fill:#fff}.bunker-cls-4{fill:#2eac68}.bw-noscript-msg{display:block;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;padding:1rem;margin:1rem 0;border-radius:4px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}.bw-recaptcha-v2 .grecaptcha-badge{display:none!important}.bw-hidden{display:none}@keyframes bw-live{0%,100%{opacity:1}50%{opacity:.35}}@keyframes bw-caret{0%,49%{opacity:1}100%,50%{opacity:0}}@media (prefers-reduced-motion:reduce){.bw-dot{animation:none}.bw-caret{animation:none}}@media (prefers-contrast:more){:root{--bw-ink-soft:var(--bw-ink);--bw-border:var(--bw-ink);--bw-grid-dot:transparent;--bw-grid-line:transparent}}@media (prefers-reduced-transparency:reduce){:root{--bw-grid-dot:transparent;--bw-grid-line:transparent;--bw-border:var(--bw-ink)}.bw-card{box-shadow:none;border-width:2px}}@media (forced-colors:active){body{background-image:none}.bw-captcha-img,.bw-card,.bw-field-row input,.bw-status,.bw-topbar,.bw-widget{border-color:CanvasText}.bw-dot{forced-color-adjust:none;background:Highlight}.bw-field-row button,.bw-retry-btn,.bw-submit{border:1px solid ButtonText}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid Highlight;outline-offset:2px}}@media (max-width:379px){.bw-main{padding-left:8px;padding-right:8px}.bw-body{padding-left:10px;padding-right:10px}.bw-widget{width:auto;margin-left:-10px;margin-right:-10px}.bw-sfx{display:none}.bw-hero,.bw-hero-canvas{width:76px;height:82px}}@media (max-width:199px){.bw-main{padding-left:4px;padding-right:4px}.bw-body{padding-left:4px;padding-right:4px}.bw-field-row{width:100%}.bw-field-row button,.bw-submit{padding:0 8px}}</style><main class="bw-main"><article class="bw-card"><div class="bw-topbar"><span class="bw-topbar-left"><span class="bw-dot" id="bw-dot"></span>BUNKERWEB<span class="bw-sfx">&nbsp;&middot; SECURITY CHECK</span></span> <span class="bw-topbar-type">PROOF-OF-WORK</span></div><div class="bw-body"><div class="bw-hero"><canvas class="bw-hero-canvas" id="bw-orb" role="img" aria-label="Computing proof of work"></canvas><noscript><style nonce="ugbrSrNz1xLqkY0e0QqPwyxxOk6lx3to">#bw-orb{display:none}</style> <svg class="bw-hero-canvas bw-hero-svg" viewBox="0 0 88 95" role="img" aria-label="Computing proof of work" xmlns="http://www.w3.org/2000/svg"><circle cx="71.7" cy="53.5" r="2.25" fill="currentColor"/><circle cx="69.8" cy="45.9" r="2.25" fill="currentColor"/><circle cx="64.7" cy="40.0" r="2.25" fill="currentColor"/><circle cx="67.1" cy="32.5" r="2.25" fill="currentColor"/><circle cx="67.0" cy="24.5" r="2.25" fill="currentColor"/><circle cx="63.6" cy="17.4" r="2.25" fill="currentColor"/><circle cx="56.7" cy="13.6" r="2.25" fill="currentColor"/><circle cx="48.7" cy="12.8" r="2.25" fill="currentColor"/><circle cx="40.8" cy="13.5" r="2.25" fill="currentColor"/><circle cx="32.9" cy="14.5" r="2.25" fill="currentColor"/><circle cx="24.9" cy="15.7" r="2.25" fill="currentColor"/><circle cx="17.0" cy="16.9" r="2.25" fill="currentColor"/><circle cx="13.9" cy="23.0" r="2.25" fill="currentColor"/><circle cx="15.1" cy="30.9" r="2.25" fill="currentColor"/><circle cx="16.4" cy="38.8" r="2.25" fill="currentColor"/><circle cx="17.6" cy="46.7" r="2.25" fill="currentColor"/><circle cx="18.9" cy="54.6" r="2.25" fill="currentColor"/><circle cx="20.1" cy="62.4" r="2.25" fill="currentColor"/><circle cx="25.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="33.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="41.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="49.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="57.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="65.5" cy="65.4" r="2.25" fill="currentColor"/><circle cx="71.1" cy="61.4" r="2.25" fill="currentColor"/><circle cx="38.5" cy="56.6" r="2.25" fill="currentColor"/><circle cx="38.1" cy="48.3" r="2.25" fill="currentColor"/><circle cx="34.6" cy="41.3" r="2.25" fill="currentColor"/><circle cx="37.8" cy="34.2" r="2.25" fill="currentColor"/><circle cx="45.6" cy="34.3" r="2.25" fill="currentColor"/><circle cx="48.3" cy="41.6" r="2.25" fill="currentColor"/><circle cx="47.6" cy="49.2" r="2.25" fill="currentColor"/><circle cx="46.8" cy="55.5" r="2.25" fill="currentColor"/><circle cx="17.8" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="30.2" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="42.6" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="55.0" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="67.4" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="22.0" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="34.4" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="46.7" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="59.1" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="71.5" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="26.1" cy="79.9" r="2.25" fill="#2eac68"/><circle cx="38.5" cy="79.9" r="2.25" fill="#2eac68"/><circle cx="50.9" cy="79.9" r="2.25" fill="#2eac68"/><circle cx="63.3" cy="79.9" r="2.25" fill="#2eac68"/></svg></noscript></div><h3 role="status" aria-live="polite" class="bw-title">COMPUTING PROOF OF WORK</h3><p class="bw-subtitle">Your browser is solving a small puzzle. No action needed, you will be redirected.<div class="bw-status"><p id="challenge-error" role="alert"></p><span class="bw-status-decor" id="bw-status-decor" aria-hidden="true"><span id="bw-status-text">&gt; searching nonce &middot; <span id="bw-pow-count">0</span> tried<span class="bw-caret">_</span></span></span></div><noscript><p class="bw-noscript-msg">JavaScript needs to be enabled to complete this challenge.</p></noscript><form method="post" class="bw-hidden" action="/nrsr-challenge-53765342" id="form" data-random="57rk3YXXx5musWQUCKJ3"><input type="hidden" name="challenge" id="challenge"> <input type="hidden" name="next" value="&#47;web&#47;"></form></div></article></main><footer class="bw-footer"><a href="https://www.bunkerweb.io/?utm_campaign=self&amp;utm_source=bwantibot" target="_blank" rel="noopener noreferrer" class="bw-footer-logo"><svg viewBox="0 0 213.09 59.68" xmlns="http://www.w3.org/2000/svg"><path class="bunker-cls-4" d="M76.46 40.57h73.22v19.11H76.46z"/><path class="bunker-cls-2" d="M198.03 6.01c-5.85-.78-8.78-1.14-14.65-1.79-1.05-.12-1.96.57-2.07 1.56l-3.48 32.05h13.12l.4-3.08c.13-.99 1.01-1.66 2.03-1.53.79.1 1.44.75 1.5 1.6.11 1.18.2 2.12.28 3.01h12.52c-.19-1.4-.38-2.82-.64-4.69-.08-.63.19-1.26.7-1.58 2.66-1.9 4.26-5.28 5.07-9.77 1.83-10.2-5.66-14.74-14.78-15.78m2.34 14.86c-.25 1.65-1.84 2.78-3.56 2.53-.99-.15-1.8-.73-2.28-1.52-2-.11-3-.16-5.01-.25.25-1.81.37-2.72.61-4.53 1.97.44 2.95.67 4.92 1.12.68-.62 1.63-.95 2.63-.81 1.73.25 2.93 1.8 2.68 3.45ZM178.59 5.27c.09-.83-.6-1.63-1.48-1.71-8.72-.83-17.42-1.55-26.15-2.16-.94-.06-1.75.61-1.8 1.44l-2.07 33.96c-.02.39.1.75.31 1.04h27.8c.21-2.04.36-3.43.6-5.79.09-.83-.57-1.62-1.42-1.71-4.81-.49-7.21-.71-12.02-1.12-.9-.08-1.58-.85-1.51-1.74 0-.07 0-.1.01-.17.07-.83.86-1.49 1.77-1.41 3.47.29 5.21.45 8.68.78.85.08 1.66-.56 1.75-1.45.28-2.78.41-4.18.69-6.96.08-.83-.6-1.62-1.46-1.7-3.52-.34-5.29-.5-8.81-.79-.92-.08-1.61-.86-1.54-1.74.07-.83.88-1.49 1.8-1.41 4.93.41 7.4.64 12.32 1.14.87.09 1.69-.55 1.79-1.43.29-2.83.44-4.24.74-7.07M145.48 1.06c-4.26-.24-6.39-.34-10.66-.51-.59-.02-1.13.34-1.33.84-1.7 4.49-2.54 6.74-4.19 11.24-.19.49-.72.87-1.3.85-.75-.02-1.31-.59-1.29-1.32l.3-10.6c.02-.72-.55-1.29-1.32-1.31-4.38-.12-6.57-.16-10.96-.21-.77 0-1.36.54-1.37 1.26-.1 11.54-.2 23.09-.31 34.63 0 .72.55 1.28 1.27 1.29 4.15.05 6.22.08 10.37.19.72.02 1.3-.52 1.32-1.24.11-3.93.17-5.89.28-9.82.02-.72.6-1.26 1.34-1.24h.11c.57.02 1.01.37 1.22.87 1.42 4.33 2.12 6.5 3.5 10.84.2.51.64.86 1.19.88.96.04 1.81.07 2.6.11h8.69c.31-.32.47-.78.34-1.26-1.95-6.96-2.95-10.44-5.02-17.39-.05-.22-.03-.56.04-.78 2.49-6.26 3.77-9.38 6.36-15.61.34-.81-.26-1.68-1.2-1.74ZM107.38 0c-3.49 0-5.23.01-8.72.05-1.36.02-2.46 1.09-2.44 2.37.05 3.2.08 4.79.13 7.99.01.67-.56 1.12-1.2 1.13-.35 0-.76-.15-.99-.48-2.81-3.88-4.24-5.81-7.13-9.65C86.6.76 85.76.34 84.88.37c-3.82.12-5.72.2-9.54.38-1.35.06-2.42 1.17-2.36 2.45.54 10.83 1.08 21.66 1.63 32.49.05 1.07.85 1.94 1.86 2.16h1.88c2.5-.11 4.12-.18 6.96-.27 1.28-.04 2.31-1.13 2.27-2.4-.11-3.51-.16-5.26-.26-8.77-.02-.72.53-1.18 1.16-1.2.4-.01.74.15.98.53 2.77 4.12 4.13 6.19 6.81 10.34.4.77 1.19 1.2 2.08 1.19 3.61-.05 5.42-.06 9.03-.06 1.28 0 2.35-1.05 2.35-2.33l.12-32.53c0-1.28-1.11-2.34-2.47-2.34ZM69.71 3.64c-.08-1.44-1.38-2.54-2.91-2.45-3.25.19-4.87.3-8.12.53-1.53.11-2.68 1.36-2.57 2.8.65 8.68.97 13.02 1.62 21.7.18 2.38-1.08 3.03-3.28 3.2-2.2.18-3.6-.26-3.81-2.64-.74-8.67-1.11-13.01-1.86-21.68-.12-1.44-1.46-2.49-2.98-2.36-3.22.29-4.83.44-8.05.77-1.58.16-2.69 1.45-2.54 2.89.89 8.46 1.34 12.68 2.23 21.14.48 5.05 2.65 8.34 5.83 10.28h20.48c4.69-2.31 7.67-6.5 7.1-13.19l-1.15-21ZM32.33 23.7c-1.05-.59-1.44-2.01-.74-2.99 1.49-2.24 1.43-4.85 1.15-7.39-.68-6.12-5.83-8.68-15.37-7.42-6.09.8-9.13 1.24-15.2 2.18C.76 8.29-.18 9.51.03 10.83c1.43 9 2.85 18 4.28 27h29.48c1.54-1.9 2.15-4.32 1.83-7.29-.28-2.59-.8-5.44-3.28-6.84ZM15.3 32.39c-.12-2.65-.19-3.97-.3-6.62-1.11-.62-1.93-1.69-2.11-3-.32-2.27 1.34-4.39 3.72-4.71s4.54 1.28 4.84 3.55c.17 1.32-.33 2.57-1.24 3.46.59 2.59.88 3.88 1.47 6.46-2.55.33-3.82.51-6.37.86Z"/><path class="bunker-cls-2" d="M78.34 37.83h-1.88c.19.04.39.07.6.06.46-.02.88-.04 1.28-.06"/><path class="bunker-cls-3" d="M104.18 45.34h-3.3c-.3.01-.51.07-.63.19-.12.11-.19.26-.19.43 0 .18.07.33.19.44.13.11.34.17.63.17h1.52l-2.02 9.56-2.67-7.62h-1.44l-2.54 7.65-2.17-9.55h1.54c.29 0 .49-.06.62-.18.12-.11.19-.26.19-.43 0-.18-.06-.33-.19-.44-.12-.11-.33-.17-.62-.17h-3.31c-.29.01-.49.07-.62.19-.12.11-.19.26-.19.43 0 .18.06.33.19.44s.33.17.62.17h.59l2.54 11.2h1.49l2.61-7.75 2.68 7.74 1.49-.02 2.41-11.22h.57q.45 0 .63-.18c.12-.11.19-.26.19-.43 0-.18-.06-.33-.19-.44-.12-.11-.34-.17-.63-.17ZM120.64 55.13c-.13 0-.29.07-.47.22-.62.49-1.42.89-2.41 1.19-.98.3-1.93.45-2.83.46-1.62 0-2.97-.46-4.07-1.41s-1.76-2.2-1.97-3.76l12.28-.05c.01-2.05-.62-3.71-1.9-4.99s-2.9-1.92-4.87-1.91c-1.91 0-3.52.64-4.81 1.9s-1.93 2.76-1.93 4.51c0 1.92.7 3.56 2.09 4.91s3.11 2.02 5.18 2.01c1.23 0 2.44-.22 3.61-.64s1.98-.87 2.44-1.35c.15-.15.23-.31.23-.47s-.06-.3-.17-.42a.55.55 0 0 0-.4-.18Zm-9.86-7.8c1.01-.83 2.22-1.24 3.63-1.25 1.41 0 2.62.41 3.64 1.23 1.02.83 1.66 1.91 1.9 3.24l-11.05.04c.24-1.35.87-2.44 1.88-3.26M137.52 46.7c-1.26-1.27-2.77-1.91-4.53-1.9-2.06 0-3.81.96-5.26 2.86l-.03-7.99h-2.83c-.29.01-.49.07-.62.19-.12.12-.19.26-.18.43 0 .18.06.33.19.44s.33.17.62.17h1.62l.06 15.58h-1.62c-.29 0-.49.06-.62.17a.58.58 0 0 0-.19.44c0 .17.06.32.19.43.12.11.33.17.62.17h2.83v-2.38q2.115 2.835 5.28 2.82c1.73 0 3.23-.66 4.49-1.97s1.89-2.9 1.88-4.77c0-1.86-.64-3.42-1.9-4.69m-.86 8.63c-1.04 1.06-2.26 1.59-3.65 1.6-1.4 0-2.62-.52-3.67-1.57s-1.57-2.34-1.58-3.86c0-1.52.51-2.81 1.55-3.87s2.26-1.59 3.65-1.6c1.4 0 2.62.52 3.67 1.57s1.57 2.34 1.58 3.86c0 1.52-.51 2.81-1.55 3.87"/></svg></a><p>This website is protected with&nbsp;<a href="https://www.bunkerweb.io/?utm_campaign=self&amp;utm_source=bwantibot" target="_blank" rel="noopener noreferrer">BunkerWeb</a></footer><script nonce="ravnX9Ln9ERpJd4XwkwvT1VqEQ17N4Mf">var bwColorSchemeMQ=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)"),bwReducedMotionMQ=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)"),bwTheme=bwColorSchemeMQ&&bwColorSchemeMQ.matches?"dark":"light";function bwOrb(e,t,n,r){var o={outer:[[.7333,.16],[.7171,.0556],[.681,-.0433],[.6119,-.122],[.5463,-.1997],[.5788,-.2971],[.6107,-.3974],[.6162,-.5027],[.6066,-.6079],[.5769,-.7089],[.5179,-.796],[.4333,-.8586],[.3348,-.8962],[.2308,-.9142],[.1253,-.9186],[.0198,-.9131],[-.0852,-.901],[-.1899,-.887],[-.2946,-.8727],[-.3993,-.858],[-.5039,-.8429],[-.6084,-.8273],[-.7128,-.8114],[-.7952,-.7516],[-.7962,-.648],[-.7797,-.5437],[-.7631,-.4393],[-.7466,-.3349],[-.7301,-.2305],[-.7135,-.1262],[-.697,-.0218],[-.6805,.0826],[-.6639,.187],[-.6474,.2913],[-.6309,.3957],[-.5929,.475],[-.4873,.475],[-.3816,.475],[-.2759,.475],[-.1702,.475],[-.0646,.475],[.0411,.475],[.1468,.475],[.2525,.475],[.3582,.475],[.4638,.475],[.5695,.475],[.668,.4603],[.7168,.3671],[.7377,.2638]],key:[[-.145,.24],[-.15,.1303],[-.1553,.0205],[-.193,-.0713],[-.2477,-.1645],[-.2362,-.2718],[-.1646,-.353],[-.0601,-.3816],[.0435,-.3498],[.1107,-.2653],[.1143,-.1573],[.07,-.0618],[.0942,.0453],[.1186,.1525],[.0728,.2111],[-.0361,.2254]],plinth:[[-.6917,.6083],[-.5825,.6083],[-.4733,.6083],[-.3642,.6083],[-.255,.6083],[-.1458,.6083],[-.0367,.6083],[.0725,.6083],[.1817,.6083],[.2908,.6083],[.4,.6083],[.5092,.6083],[.6183,.6083],[.7275,.6083],[-.6917,.7333],[-.5825,.7333],[-.4733,.7333],[-.3642,.7333],[-.255,.7333],[-.1458,.7333],[-.0367,.7333],[.0725,.7333],[.1817,.7333],[.2908,.7333],[.4,.7333],[.5092,.7333],[.6183,.7333],[.7275,.7333],[-.6917,.8583],[-.5825,.8583],[-.4733,.8583],[-.3642,.8583],[-.255,.8583],[-.1458,.8583],[-.0367,.8583],[.0725,.8583],[.1817,.8583],[.2908,.8583],[.4,.8583],[.5092,.8583],[.6183,.8583],[.7275,.8583]]},a="dark"===n,i=a?[207,230,241]:[11,85,119],c=[46,172,104],d=a?[255,122,102]:[192,52,29],u=e.getContext("2d"),h=e.clientWidth||88,l=e.clientHeight||95,s=Math.min(2,window.devicePixelRatio||1);e.width=Math.round(h*s),e.height=Math.round(l*s);var w=.43*h,f=h/2,m=l/2,b=.13,v=h/107*2.1,g=o.outer.length;function M(e,t){var n=43758.5453*Math.sin(12.9898*e+78.233*t);return n-Math.floor(n)}function y(e,t,n){return[e[0]+(t[0]-e[0])*n,e[1]+(t[1]-e[1])*n,e[2]+(t[2]-e[2])*n]}function p(e){return(e=Math.max(0,Math.min(1,e)))*e*(3-2*e)}var C=[];function S(e,t,n,r){for(var o=0;o<e.length;o++)for(var a=0;a<r.length;a++)C.push({x:e[o][0],y:e[o][1],z:r[a],g:t,i:o,c:n})}S(o.outer,"o",i,[b,-.13]),S(o.key,"k",i,[b,-.13]),S(o.plinth,"p",c,[b,-.13]);for(var L=0;L<g;L+=3)C.push({x:o.outer[L][0],y:o.outer[L][1],z:0,g:"o",i:L,c:i,rim:1});for(var R=[],E=Math.PI*(3-Math.sqrt(5)),I=0;I<C.length;I++){var x=1-2*(I+.5)/C.length,O=Math.sqrt(1-x*x),A=I*E;R.push([O*Math.cos(A)*.78,.78*x,O*Math.sin(A)*.78,.3*M(I,4.4)])}for(var k=function(e,t,n){return e.map(function(e,t){return t}).sort(function(r,o){return Math.atan2(n(e[r]),t(e[r]))-Math.atan2(n(e[o]),t(e[o]))})},B=k(C,function(e){return e.x},function(e){return e.y}),Q=k(R,function(e){return e[0]},function(e){return e[1]}),T=[],U=0;U<B.length;U++)T[B[U]]=R[Q[U]];function z(e){var n,r,o=1,a=[],b=null,S=0;"connecting"===t?(n=.55*Math.sin(.9*e),r=.1*Math.sin(.6*e),S=1.05*Math.sin(1.5*e)):"solving"===t?(b=function(e){var t=e%4.8;return t<2.5?{m:t<1.6?0:(t-1.6)/.9,yaw:2*Math.PI*p(t/2.5)}:t<3.9?{m:1,yaw:.15*Math.sin(Math.PI*(t-2.5)/1.4)}:{m:1-(t-3.9)/.9,yaw:0}}(e),n=b.yaw,r=.14):"broken"===t?(n=.3+.05*Math.sin(.7*e),r=.12+.02*Math.sin(.5*e)):(n=.2*Math.sin(.45*e),r=.06*Math.sin(.3*e),o=1+.02*Math.sin(1.7*e));for(var L=Math.sin(n),R=Math.cos(n),E=Math.sin(r),I=Math.cos(r),x=0;x<C.length;x++){var O=C[x],A=O.x,k=O.y,B=O.z,Q=1,U=O.c,z=0;if("connecting"===t&&"p"!==O.g){var P=Math.exp(-(A-S)*(A-S)/.012);U=y(U,c,.85*P),z=.9*P}else if("connecting"===t)Q=.55+.45*(.5+.5*Math.sin(3*e-5*A));else if(b){var F=T[x],D=p(1.3*b.m-F[3]);A=F[0]+(A-F[0])*D,k=F[1]+(k-F[1])*D,B=F[2]+(B-F[2])*D,"p"===O.g&&(U=y(i,c,D))}else if("broken"===t){var q=O.i/g;if("o"===O.g&&q>=.02&&q<=.2){var j=3.4,K=((e-(q-.02)/.18*.5)%j+j)%j/j;if(K<.6){var N=K/.6;k+=.95*N*N,A+=.2*N*(M(O.i,3.1)-.3),B+=.3*N*(M(O.i,9.2)-.5),Q=1-p(N),U=d}else K<.75?Q=0:(Q=p((K-.75)/.25),U=y(d,i,Q))}else"k"===O.g?Q=.3+.25*(.5+.5*Math.sin(2.3*e+O.i)):"p"===O.g&&(Q=.35)}else"p"===O.g&&(Q=.55+.45*(.5+.5*Math.sin(1.6*e-4*A)));if(!(Q<.02)){var W=(A*=o)*R+(B*=o)*L,_=-A*L+B*R,H=(k*=o)*I-_*E,V=k*E+_*I,G=Math.max(0,Math.min(1,(V+.9)/1.8));a.push({x:f+W*w,y:m+H*w,z:V,r:v*(.7+.55*G+z)*(O.rim?.8:1),a:Q*(.3+.7*G),c:U})}}a.sort(function(e,t){return e.z-t.z}),u.setTransform(s,0,0,s,0,0),u.clearRect(0,0,h,l);for(var J=0;J<a.length;J++){var X=a[J];u.fillStyle="rgba("+Math.round(X.c[0])+","+Math.round(X.c[1])+","+Math.round(X.c[2])+","+X.a.toFixed(3)+")",u.beginPath(),u.arc(X.x,X.y,X.r,0,6.283),u.fill()}}if("number"==typeof r)return z(r),function(){};if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return z(1.2),function(){};var P=0,F=performance.now();return P=requestAnimationFrame(function e(t){z((t-F)/1e3),P=requestAnimationFrame(e)}),function(){cancelAnimationFrame(P)}}var stopOrb=null,orbKind="solving";function bwStartOrb(){var e=document.getElementById("bw-orb");e&&(stopOrb&&stopOrb(),stopOrb="hidden"!==document.visibilityState?bwOrb(e,orbKind,bwTheme):function(){})}if(bwStartOrb(),bwReducedMotionMQ&&(bwReducedMotionMQ.addEventListener?bwReducedMotionMQ.addEventListener("change",bwStartOrb):bwReducedMotionMQ.addListener&&bwReducedMotionMQ.addListener(bwStartOrb)),bwColorSchemeMQ){var bwOnColorSchemeChange=function(){bwTheme=bwColorSchemeMQ.matches?"dark":"light",bwStartOrb()};bwColorSchemeMQ.addEventListener?bwColorSchemeMQ.addEventListener("change",bwOnColorSchemeChange):bwColorSchemeMQ.addListener&&bwColorSchemeMQ.addListener(bwOnColorSchemeChange)}function showRetry(){var e=document.getElementById("bw-retry");e&&e.classList.add("bw-visible")}function challenge_error(){var e=document.getElementById("bw-dot");e&&e.classList.add("bw-dot-error");var t=document.getElementById("bw-status-decor");t&&(t.style.display="none");var n=document.getElementById("challenge-error");if(n){var r=document.createElement("span");r.setAttribute("aria-hidden","true"),r.textContent="ERR ",n.textContent="",n.appendChild(r),n.appendChild(document.createTextNode("The challenge could not load. Check your connection, then reload."))}var o=document.getElementById("bw-title");o&&(o.textContent="VERIFICATION FAILED"),showRetry(),orbKind="broken",bwStartOrb()}document.addEventListener("visibilitychange",bwStartOrb),window.setTimeout(showRetry,5e3);var retryBtn=document.getElementById("challenge-retry");function powCore(e){var t=new Int32Array([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),n=new Int32Array(64),r=new Int32Array(8),o=new Uint8Array(0);function a(e,a){var i,c,d,u=String(a),h=e.length+u.length,l=h+72>>6<<6;for(o.length<l&&(o=new Uint8Array(l)),o.set(e,0),i=0;i<u.length;i++)o[e.length+i]=u.charCodeAt(i);for(o[h]=128,i=h+1;i<l-4;i++)o[i]=0;var s=8*h;for(o[l-4]=s>>>24,o[l-3]=s>>>16&255,o[l-2]=s>>>8&255,o[l-1]=255&s,r[0]=1779033703,r[1]=3144134277,r[2]=1013904242,r[3]=2773480762,r[4]=1359893119,r[5]=2600822924,r[6]=528734635,r[7]=1541459225,d=0;d<l;d+=64){for(i=0;i<16;i++)c=d+4*i,n[i]=o[c]<<24|o[c+1]<<16|o[c+2]<<8|o[c+3];for(i=16;i<64;i++){var w=n[i-15],f=n[i-2],m=(w>>>7|w<<25)^(w>>>18|w<<14)^w>>>3,b=(f>>>17|f<<15)^(f>>>19|f<<13)^f>>>10;n[i]=n[i-16]+m+n[i-7]+b|0}var v=r[0],g=r[1],M=r[2],y=r[3],p=r[4],C=r[5],S=r[6],L=r[7];for(i=0;i<64;i++){var R=L+((p>>>6|p<<26)^(p>>>11|p<<21)^(p>>>25|p<<7))+(p&C^~p&S)+t[i]+n[i]|0,E=((v>>>2|v<<30)^(v>>>13|v<<19)^(v>>>22|v<<10))+(v&g^v&M^g&M)|0;L=S,S=C,C=p,p=y+R|0,y=M,M=g,g=v,v=R+E|0}r[0]=r[0]+v|0,r[1]=r[1]+g|0,r[2]=r[2]+M|0,r[3]=r[3]+y|0,r[4]=r[4]+p|0,r[5]=r[5]+C|0,r[6]=r[6]+S|0,r[7]=r[7]+L|0}return 0===r[0]?32+Math.clz32(r[1]):Math.clz32(r[0])}return e&&(e.onmessage=function(t){for(var n=t.data,r=new Uint8Array(n.prefix),o=n.start,i=0,c=Date.now();;){if(i++,a(r,o)>=n.difficulty)return void e.postMessage({nonce:o,tried:i});o+=n.step,!(4095&i)&&Date.now()-c>250&&(e.postMessage({tried:i}),i=0,c=Date.now())}}),a}retryBtn&&retryBtn.addEventListener("click",function(){window.location.reload()}),document.addEventListener("error",function(e){"SCRIPT"===e.target.tagName&&e.target.hasAttribute("data-challenge-script")&&challenge_error()},!0),function(){var e=document.getElementById("form").getAttribute("data-random"),t=parseInt("16",10);t>=16&&t<=28||(t=16);for(var n=new Uint8Array(e.length),r=0;r<e.length;r++)n[r]=255&e.charCodeAt(r);var o=document.getElementById("bw-pow-count"),a=[],i=0,c=null,d=0,u=!1,h=!1;function l(){o&&(o.textContent=d.toLocaleString())}function s(){for(var e=0;e<a.length;e++)a[e].terminate();a=[],i=0,c&&(URL.revokeObjectURL(c),c=null)}function w(e){if(!u){u=!0,s(),l();var t=document.getElementById("challenge"),n=document.getElementById("form");t&&n&&(t.value=String(e),n.submit())}}function f(){if(!u&&!h){h=!0,s();var e=powCore(null),r=0;!function o(){for(var a=performance.now()+12;performance.now()<a;){for(var i=0;i<256;i++,r++)if(e(n,r)>=t)return d+=i+1,void w(r);d+=256}l(),requestAnimationFrame(o)}()}}try{if(!(window.Worker&&window.Blob&&window.URL&&URL.createObjectURL))throw new Error("no workers");!function(){var e=Math.min(navigator.hardwareConcurrency||2,8),r=URL.createObjectURL(new Blob(["("+powCore.toString()+")(self);"],{type:"text/javascript"}));c=r;var o=r;window.trustedTypes&&window.trustedTypes.createPolicy&&(o=window.trustedTypes.createPolicy("bw-pow",{createScriptURL:function(e){if(0!==e.indexOf("blob:"))throw new TypeError("bw-pow accepts blob: URLs only");return e}}).createScriptURL(r));var u=!1;function h(e){u=!0,d+=e.data.tried,void 0!==e.data.nonce?w(e.data.nonce):l()}function s(e){e&&e.preventDefault&&e.preventDefault(),this.terminate(),i--,(!u||i<=0)&&f()}for(var m=0;m<e;m++){var b=new Worker(o);b.onmessage=h,b.onerror=s,b.postMessage({prefix:n,start:m,step:e,difficulty:t}),a.push(b),i++}setTimeout(function(){u||f()},3e3)}()}catch(e){f()}}()</script>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="_html" xmlns="http://www.w3.org/1999/xhtml" lang="sk-SK">
+<head><title>
+	Schôdze : Hlasovanie : Podľa schôdzí - Národná rada Slovenskej republiky
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link id="_resetStylesheet" href="CSS/css_reset.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_gridStylesheet" href="CSS/grid.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_formalizeStylesheet" href="CSS/formalize.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_formsStylesheet" href="CSS/forms.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_mainPageStyleSheet" href="CSS/nrsr.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_jqueryUIStylesheet" href="CSS/smoothness/jquery-ui-1.8.5.custom.css" type="text/css" rel="Stylesheet" media="projection, screen, tv" /><link id="_printStylesheet" href="CSS/print.css" type="text/css" rel="stylesheet" media="print" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta property="og:image" content="favicon.ico" /><link href="favicon.ico" rel="shortcut icon" />
+
+    <script type="text/javascript">
+      //<![CDATA[
+      window.name = 'nrsr_main';
+      if (top != self) { top.location.replace(self.location.href); }
+      //]]>
+    </script>
+    <!--[if IE 6]>
+    <style type="text/css">
+      html    { overflow-x: hidden}
+      body    { padding-right: 1em }
+    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <style>
+      li { zoom: 1;} /* haslayout=true */
+    </style>
+    <![endif]-->
+<meta name="Description" content="Stránka Národnej rady Slovenskej republiky. Národná rada Slovenskej republiky (ďalej len &quot;národná rada&quot;) je jediným ústavodarným a zákonodarným orgánom Slovenskej republiky. Je orgánom štátnej moci a od jej primárneho postavenia v republike je odvodené postavenie ostatných štátnych orgánov. Ako volený orgán reprezentuje suverenitu štátu a ľudu. Plní závažnú úlohu pri budovaní Slovenskej republiky ako moderného a demokratického štátu a pri zavádzaní sociálnej a ekologicky orientovanej trhovej ekonomiky. Poslanci  národnej rady sú volení vo všeobecných, rovných a priamych voľbách tajným hlasovaním. Počet poslancov je 150 a ich funkčné obdobie trvá štyri roky." /></head>
+<body id="_body" class="section-107 p-section-106 p-section-96">
+  <form name="_f" method="post" action="Default.aspx?sid=schodze%2fhlasovanie%2fschodze" id="_f">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['_f'];
+if (!theForm) {
+    theForm = document._f;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/web/WebResource.axd?d=pSSkbbt2tAdtntWEuWgeENiJBrV0aGiWXGjGDRSV8c7cfmNZTxjHVSfWiC2Ht0SUz3OrKRMyK0Y8hdIfwpt7DJHVXFE1&amp;t=637811807941659717" type="text/javascript"></script>
+
+
+<script src="/web/ScriptResource.axd?d=anyy9mmquGM-qa-uOZWQysE699IUN0V2tmsXohOMl6c4uqIlVQ-iz8bvNOXQdYVJ1ypJ5l8dfQwisoAt9yOM8jwgtdJBrDdDE3DQJV23HGTxicE1A93jhBZbnG8qMmiVWerap_tJdZQbRPvUMJyC1KkjO7o1&amp;t=ffffffff934f7aa9" type="text/javascript"></script>
+<script src="/web/ScriptResource.axd?d=8QnyJP9gqXQhXVi5a4icaSoHIVkCiHh6c4fZcCQ7Bkl2-89_97YDDytX0JBxz7Z7WyFM62FodHDxrdSvh5yTbocdcMXkRNXDfkSmmbuw9ns0c8LAs8Q9Xl6iK2ftcfkx6ju86Yah543DyctOOnJrdFz1Wd1SvGsqrNftBFjWHtD0FF_N0&amp;t=ffffffff934f7aa9" type="text/javascript"></script>
+<script src="JS/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="JS/jquery.formalize.js" type="text/javascript"></script>
+<script src="JS/jquery.colorbox.min.js" type="text/javascript"></script>
+<script src="JS/jquery-ui.min.js" type="text/javascript"></script>
+<script src="JS/jquery.ui.datepicker-sk.js" type="text/javascript"></script>
+<script src="JS/jquery.utils.js" type="text/javascript"></script>
+<script src="JS/jquery.sortpage.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Type.registerNamespace('exeIT.NRSR.Web');
+exeIT.NRSR.Web.CalendarService=function() {
+exeIT.NRSR.Web.CalendarService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+exeIT.NRSR.Web.CalendarService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return exeIT.NRSR.Web.CalendarService._staticInstance.get_path();},
+RenderCalendar:function(month,year,app,lang,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'RenderCalendar',true,{month:month,year:year,app:app,lang:lang},succeededCallback,failedCallback,userContext); }}
+exeIT.NRSR.Web.CalendarService.registerClass('exeIT.NRSR.Web.CalendarService',Sys.Net.WebServiceProxy);
+exeIT.NRSR.Web.CalendarService._staticInstance = new exeIT.NRSR.Web.CalendarService();
+exeIT.NRSR.Web.CalendarService.set_path = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_path(value); }
+exeIT.NRSR.Web.CalendarService.get_path = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_path(); }
+exeIT.NRSR.Web.CalendarService.set_timeout = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_timeout(value); }
+exeIT.NRSR.Web.CalendarService.get_timeout = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_timeout(); }
+exeIT.NRSR.Web.CalendarService.set_defaultUserContext = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_defaultUserContext(value); }
+exeIT.NRSR.Web.CalendarService.get_defaultUserContext = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_defaultUserContext(); }
+exeIT.NRSR.Web.CalendarService.set_defaultSucceededCallback = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_defaultSucceededCallback(value); }
+exeIT.NRSR.Web.CalendarService.get_defaultSucceededCallback = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_defaultSucceededCallback(); }
+exeIT.NRSR.Web.CalendarService.set_defaultFailedCallback = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_defaultFailedCallback(value); }
+exeIT.NRSR.Web.CalendarService.get_defaultFailedCallback = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_defaultFailedCallback(); }
+exeIT.NRSR.Web.CalendarService.set_path("/web/Services/CalendarService.asmx");
+exeIT.NRSR.Web.CalendarService.RenderCalendar= function(month,year,app,lang,onSuccess,onFailed,userContext) {exeIT.NRSR.Web.CalendarService._staticInstance.RenderCalendar(month,year,app,lang,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DB1B4C9A" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="nNaz1L16GQPpmxdfbzOpN6l4A+tbyWAxYlvfweUsvSfBtdeN4syfGklrim70cyAUM3mH/VA5+Y43fXTKyKpRkurZ1voFCkLcQ1xRE2LvcAl+eS737+k8rBT96iAMZr7g9QE+qW0wNZ63UvYlVZHH1GBlYeuEUIO/VeLZsgj0ORPo19ZDFyINxD9TgMftjys1WLR9wNIIadp3y2X5RArm69NwfsyUElfP0klzmY6NHsHTj2I3zQKrOQaZy5VJbu851KBOFIXj3xfUWSh4lEaJVrYz43m5nyHeVU9SQqnYPge7k6HrTaJmUY3VX552XxUkKXeYfx76T7iDUkxJzCSYVpCCaiChXgekg2Gc5tbA30EtCMdEZz5hmnk45Kt/WbqwQJQA2l2ro5ceqh68sINDfjTWtW9vZ6s6bSUvBqGrRszYzlKo" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('_globalScriptManager', document.getElementById('_f'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var lcCode = 'sk';
+      //]]>
+    </script>
+    <div class="page_header">
+      <div class="container_16">
+        <div class="grid_6 prefix_1 page_title">
+          <a href="./?" id="_pageTitle" class="lang_sk" title="Národná rada Slovenskej republiky"><span>Národná rada Slovenskej republiky</span></a>
+        </div>
+
+        
+        <div class="prefix_3 grid_6 page_top_menu">
+          <span class="float_right">
+            
+            
+            <a id="_switchToLangEN" title="English version of website" class="lang" href="LanguageSwitch.aspx?lang=en"><img src="img/layout/FlagEN.gif" alt="English version of website" /></a>
+            
+          </span>
+          <span class="float_right">
+            <a id="_contactHyperlink" class="contact" href="./?sid=contact">Kontakt</a> |
+            <a id="_sitemapHyperlink" href="./?sid=sitemap">Mapa stránok</a>
+          </span>
+        </div>
+
+        <div id="_searchPanel" class="prefix_3 grid_6 page_top_search">
+          <span class="float_right">
+            <input name="_searchText" type="text" id="_searchText" class="search_placeholder_text" />
+            
+            <input type="image" name="_doSearch" id="_doSearch" src="Img/layout/search_icon.png" alt="Vyhľadať" style="border-width:0px;" />
+          </span>
+        </div>
+
+        <div class="clear"></div>
+
+        
+        <div class="grid_16 menu">
+          <ul><li class=""><a href="?sid=home" class="home"><span>Úvod</span></a></li><li class="menu_level_0"><a href="?sid=nrsr">Národná rada</a><ul><li class="menu_level_1"><a href="?sid=nrsr/poslanie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=nrsr/nrsreu">Národná rada a Európska únia</a><ul><li class="menu_level_2"><a href="?sid=nrsr/nrsreu/posobnost">Pôsobnosť NR SR v&nbsp;záležitostiach EÚ</a></li><li class="menu_level_2"><a href="?sid=eu/medziparlamentna_spolupraca/ssez">Systém sledovania európskych záležitostí</a></li><li class="menu_level_2"><a href="?sid=eu/medziparlamentna_spolupraca/ipex">Medziparlamentná výmena informácií o EÚ (IPEX)</a></li><li class="menu_level_2"><a href="?sid=skpres">Slovenské predsedníctvo v Rade EU a jeho parlamentná dimenzia</a></li></ul></li><li class="menu_level_1"><a href="?sid=eu">Zahraničné vzťahy</a><ul><li class="menu_level_2"><a href="?sid=eu/medziparlamentna_spolupraca">Medziparlamentná spolupráca</a><ul><li class="menu_level_3"><a href="?sid=eu/medziparlamentna_spolupraca/eurovoc">Eurovoc</a></li><li class="menu_level_3"><a href="?sid=eu/medziparlamentna_spolupraca/ecprd">ECPRD</a></li></ul></li><li class="menu_level_2"><a href="?sid=eu/delegacie">Parlamentné delegácie</a><ul><li class="menu_level_3"><a href="?sid=eu/delegacie/postavenie">Postavenie a právomoci</a></li><li class="menu_level_3"><a href="?sid=eu/delegacie/zoznam">Zoznam</a></li></ul></li><li class="menu_level_2"><a href="?sid=eu/sp">Skupiny priateľstva</a><ul><li class="menu_level_3"><a href="?sid=eu/sp/postavenie">Postavenie a právomoci</a></li><li class="menu_level_3"><a href="?sid=eu/sp/zoznam">Zoznam</a></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/historia">História NR SR</a></li></ul></li><li class="menu_level_0"><a href="?sid=predseda">Predseda</a><ul><li class="menu_level_1"><a href="?sid=predseda/zivotopis">Predseda Národnej rady Slovenskej republiky</a></li><li class="menu_level_1"><a href="?sid=predseda/kompetencie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=predseda/rozhodnutia/redirect">Rozhodnutia predsedu NR SR</a><ul><li class="menu_level_2"><a href="?sid=predseda/rozhodnutia/zakladne">Rozhodnutia predsedu NR SR</a></li><li class="menu_level_2"><a href="?sid=predseda/rozhodnutia/neucast">Rozhodnutia o ospravedlnení neúčasti poslancov</a></li></ul></li><li class="menu_level_1"><a href="?sid=predseda/infoservis">Informačný servis</a><ul><li class="menu_level_2"><a href="?sid=predseda/informacie/podujatia">Kalendár podujatí</a></li><li class="menu_level_2"><a href="?sid=predseda/informacie/tlac">Tlačové správy</a></li><li class="menu_level_2"><a href="?sid=predseda/informacie/konf">Tlačové konferencie</a></li></ul></li><li class="menu_level_1"><a href="?sid=predseda/video">Videogaléria</a></li><li class="menu_level_1"><a href="?sid=predseda/napistePredsedovi">Napíšte predsedovi NR SR</a></li><li class="menu_level_1"><a href="?sid=predseda/fotogaleria/redirect">Fotogaléria</a></li><li class="menu_level_1"><a href="?sid=predseda/kontakty/predseda">Kancelária predsedu NR SR</a></li><li class="menu_level_1"><a href="?sid=predseda/history">Predchádzajúci predsedovia NR SR</a></li></ul></li><li class="menu_level_0"><a href="?sid=podpredsedovia">Podpredsedovia</a></li><li class="menu_level_0"><a href="?sid=poslanci">Poslanci</a><ul><li class="menu_level_1"><a href="?sid=poslanci/poslanie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=poslanci/zasadaci_poriadok">Zasadací poriadok</a></li><li class="menu_level_1"><a href="?sid=poslanci/volby2020">Zvolení poslanci Národnej rady Slovenskej republiky</a></li><li class="menu_level_1"><a href="?sid=poslanci/zoznam_abc">Zoznam poslancov</a></li><li class="menu_level_1"><a href="?sid=poslanci/kluby">Kluby</a><ul><li class="menu_level_2"><a href="?sid=poslanci/kluby/postavenie">Postavenie a právomoci</a></li><li class="menu_level_2"><a href="?sid=poslanci/kluby/zoznam">Zoznam</a></li></ul></li><li class="menu_level_1"><a href="?sid=poslanci/ucast">Účasť na schôdzi</a></li><li class="menu_level_1"><a href="?sid=poslanci/zmeny">Zmeny v poslaneckom zbore</a></li><li class="menu_level_1"><a href="?sid=poslanci/asistenti">Asistenti a poslanecké kancelárie</a></li><li class="menu_level_1"><a href="?sid=poslanci/publikacia">Publikácia</a></li></ul></li><li class="menu_level_0"><a href="?sid=vybory">Výbory</a><ul><li class="menu_level_1"><a href="?sid=vybory/kompetencie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=vybory/zoznam">Zoznam</a></li><li class="menu_level_1"><a href="?sid=vybory/schodze/redirect">Schôdze</a><ul><li class="menu_level_2"><a href="?sid=vybory/schodze">Prehľady</a></li></ul></li><li class="menu_level_1"><a href="?sid=vybory/documents">Dokumenty výborov</a></li><li class="menu_level_1"><a href="?sid=vybory/informacie">Informácie</a></li></ul></li><li class="menu_level_0 selected"><a href="?sid=schodze" class="selected"><span>Schôdze</span></a><ul><li class="menu_level_1"><a href="?sid=schodze/harmonogram">Harmonogram schôdzí</a></li><li class="menu_level_1"><a href="?sid=schodze/zoznam">Program schôdzí</a></li><li class="menu_level_1"><a href="?sid=schodze/informacia_denne_rokovanie_vysledok">Informácia o výsledku denného rokovania</a></li><li class="menu_level_1"><a href="?sid=schodze/rozprava/redirect">Rozprava</a><ul><li class="menu_level_2"><a href="?sid=schodze/live">Živé vysielanie a videoarchív</a></li><li class="menu_level_2"><a href="?sid=schodze/rozprava">Textový prepis rozpravy</a></li></ul></li><li class="menu_level_1"><a href="?sid=schodze/cpt/redirect">Parlamentné tlače</a></li><li class="menu_level_1"><a href="?sid=schodze/nrepdn/redirect">Pozmeňujúce a doplňujúce návrhy</a></li><li class="menu_level_1"><a href="?sid=schodze/uznesenia/redirect">Uznesenia</a></li><li class="menu_level_1"><a href="?sid=schodze/hlasovanie">Hlasovanie</a><ul><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/schodze">Podľa schôdzí</a></li><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/vyhladavanie_vysledok">Vyhľadávanie v hlasovaniach</a></li><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/poslanci_vysledok">Štatistika hlasovaní poslancov</a></li><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/kluby_vysledok">Štatistika hlasovaní klubov</a></li></ul></li><li class="menu_level_1"><a href="?sid=schodze/dochadzka">Účasť na schôdzach</a><ul><li class="menu_level_2"><a href="?sid=poslanci/ospravedlnenia_result">Zoznam žiadostí o ospravedlnenie</a></li><li class="menu_level_2"><a href="?sid=schodze/absenceSpeakerDecisions">Rozhodnutia predsedu NR SR o ospravedlnení neúčasti poslancov</a></li></ul></li><li class="menu_level_1"><a href="?sid=schodze/hodina_otazok">Hodina otázok</a><ul></ul></li><li class="menu_level_1"><a href="?sid=schodze/interpelacie">Interpelácie</a></li></ul></li><li class="menu_level_0"><a href="?sid=zakony">Zákony</a><ul><li class="menu_level_1"><a href="?sid=zakony/prehlad">Prehľady zákonov</a><ul><li class="menu_level_2"><a href="?sid=zakony/prehlad/posledneSchvalene">Posledné schválené zákony</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/neschvalene">Neschválené návrhy zákonov</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/poslanecke">Poslanecké návrhy zákonov</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/poslednaSchodza">Návrhy zákonov na programe poslednej schôdze</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/predlozene">Návrhy zákonov predložené NR SR</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/vratene">Zákony vrátené prezidentom SR</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/slk">Zákony schválené v skrátenom legislatívnom konaní</a></li></ul></li><li class="menu_level_1"><a href="?sid=zakony/sslp">Vyhľadávanie v návrhoch zákonov</a><ul><li class="menu_level_2"><a href="?sid=zakony/eurovoc_search">Vyhľadávanie termínmi tezaura Eurovoc</a></li></ul></li></ul></li><li class="menu_level_0"><a href="?sid=documents">Dokumenty</a><ul><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/zakladne">Základné dokumenty</a></li><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/vyhlasenia">Vyhlásenia a deklarácie</a></li><li class="menu_level_1"><a href="?sid=schodze/cpt">Parlamentné tlače</a><ul><li class="menu_level_2"><a href="?sid=nrsr/materialy">Materiály doručené NR SR</a></li></ul></li><li class="menu_level_1"><a href="?sid=predseda/rozhodnutia_result">Rozhodnutia predsedu NR SR</a></li><li class="menu_level_1"><a href="?sid=schodze/uznesenia">Uznesenia schôdze NR SR</a></li><li class="menu_level_1"><a href="?sid=schodze/nrepdn">Pozmeňujúce a doplňujúce návrhy</a></li><li class="menu_level_1"><a href="?sid=vybory/stat_result">Dokumenty výborov</a></li><li class="menu_level_1"><a href="?sid=documents/dk">Digitálna knižnica (archív)</a></li><li class="menu_level_1"><a href="?sid=oznamenia_funkcionarov">Oznámenia verejných funkcionárov</a></li><li class="menu_level_1"><a href="?sid=financne_spravy_stran">Výročné správy politických strán</a><ul><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2014">Výročné správy politických strán za rok 2014</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2013">Výročné správy politických strán za rok 2013</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2012">Výročné správy politických strán za rok 2012</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2011">Výročné správy politických strán za rok 2011</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2010">Výročné správy politických strán za rok 2010</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2009">Výročné správy politických strán za rok 2009</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2008">Výročné správy politických strán za rok 2008</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2007">Výročné správy politických strán za rok 2007</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2006">Výročné správy politických strán za rok 2006</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2005">Výročné správy politických strán za rok 2005</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2004">Výročné správy politických strán za rok 2004</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2003">Výročné správy politických strán za rok 2003</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/publikacie">Publikácie</a></li><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/statistiky_a_prehlady">Štatistiky a prehľady</a></li><li class="menu_level_1"><a href="?sid=nrsr/formulare">Formuláre</a></li><li class="menu_level_1"><a href="?sid=nrsr/mpforms">Informácie a tlačivá pre poslancov</a></li></ul></li><li class="menu_level_0"><a href="?sid=nrsr/kancelaria">Kancelária NR SR</a><ul><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/popis">Postavenie a pôsobnosť </a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/veduci">Vedúci Kancelárie NR SR</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/orgstruc">Organizačná štruktúra</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/organizacnyporiadok">Organizačný poriadok</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/rozpocet">Rozpočet a záverečný účet Kancelárie NR SR  </a></li><li class="menu_level_1"><a href="https://www.nrsr.sk/web/Default.aspx?sid=nrsr/kancelaria/zoznamutajovanychskutocnosti">Zoznam utajovaných skutočností</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/zakladnezasadymanipulacie">Základné zásady manipulácie s limitovanými informáciami v pôsobnosti Kancelárie NR SR</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/opk">Osobitné ponukové konanie</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/praca">Voľné pracovné miesta</a></li><li class="menu_level_1"><a href="?sid=obligatoryInfo">Povinne zverejňované informácie</a><ul><li class="menu_level_2"><a href="?sid=invoices">Faktúry</a><ul><li class="menu_level_3"><a href="?sid=invoices/2011">2011</a></li><li class="menu_level_3"><a href="?sid=invoices/2012">2012</a></li><li class="menu_level_3"><a href="?sid=invoices/2013">2013</a></li><li class="menu_level_3"><a href="?sid=invoices/2014">2014</a></li><li class="menu_level_3"><a href="?sid=invoices/2015">2015</a></li><li class="menu_level_3"><a href="?sid=invoices/2016">2016</a></li><li class="menu_level_3"><a href="?sid=invoices/2017">2017</a></li><li class="menu_level_3"><a href="?sid=invoices/2018">2018</a></li><li class="menu_level_3"><a href="?sid=invoices/2019">2019</a></li><li class="menu_level_3"><a href="?sid=invoices/2020">2020</a></li><li class="menu_level_3"><a href="?sid=invoices/2021">2021</a></li><li class="menu_level_3"><a href="?sid=invoices/2022">2022</a></li><li class="menu_level_3"><a href="?sid=invoices/2023">2023</a></li><li class="menu_level_3"><a href="?sid=invoices/2024">2024</a></li><li class="menu_level_3"><a href="?sid=invoices/2025">2025</a></li><li class="menu_level_3"><a href="?sid=invoices/2026">2026</a></li></ul></li><li class="menu_level_2"><a href="?sid=orders">Objednávky</a><ul><li class="menu_level_3"><a href="?sid=orders/2011">2011</a></li><li class="menu_level_3"><a href="?sid=orders/2012">2012</a></li><li class="menu_level_3"><a href="?sid=orders/2013">2013</a></li><li class="menu_level_3"><a href="?sid=orders/2014">2014</a></li><li class="menu_level_3"><a href="?sid=orders/2015">2015</a></li><li class="menu_level_3"><a href="?sid=orders/2016">2016</a></li><li class="menu_level_3"><a href="?sid=orders/2017">2017</a></li><li class="menu_level_3"><a href="?sid=orders/2018">2018</a></li><li class="menu_level_3"><a href="?sid=orders/2019">2019</a></li><li class="menu_level_3"><a href="?sid=orders/2020">2020</a></li><li class="menu_level_3"><a href="?sid=orders/2021">2021</a></li><li class="menu_level_3"><a href="?sid=orders/2022">2022</a></li><li class="menu_level_3"><a href="?sid=orders/2023">2023</a></li><li class="menu_level_3"><a href="?sid=orders/2024">2024</a></li><li class="menu_level_3"><a href="?sid=orders/2025">2025</a></li><li class="menu_level_3"><a href="?sid=orders/2026">2026</a></li></ul></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/predpisy">Služobné predpisy</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/Oznamprotičin">Oznamovanie protispoločenskej činnosti</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/pi/pi">Parlamentný inštitút</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/oa">Parlamentný výskum a vzdelávanie</a><ul><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/knihy">Knihy</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/vyrsprava">Výročná správa NR SR a K NR SR</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/publikacie">Parlamentné publikácie</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/materialy">Materiály</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/stazeVS">Stáž študentov vysokých škôl v K NR SR</a></li></ul></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/archiv">Oddelenie Parlamentný archív</a><ul></ul></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/kniznica">Oddelenie Parlamentná knižnica</a></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/staze">Stáže v Kancelárii NR SR</a><ul><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/staze/stazeVS">Stáže študentov vysokých škôl</a></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/staz">Stáž v Kancelárii NR SR</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/staz/aktualna_ponuka">Aktuálna ponuka</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/ou">GDPR - Ochrana osobných údajov, Privacy Policy</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/ou/13">podľa článku 13 Nariadenia</a></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/ou/14">podľa článku 14 Nariadenia</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/vo">Verejné obstarávanie</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/verejne_obstaravanie_trhkonz">Prípravné trhové konzultácie</a><ul><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/verejne_obstaravanie_trhkonz/SSLP">SSLP</a></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/VPP">Verejné pripomienkovanie projektov</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/VPP/Vybud-ISVS-SSLP">Vybudovanie ISVS SSLP</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/PREB">Ponuka prebytočného hnuteľného majetku</a></li></ul></li><li class="menu_level_0"><a href="?sid=publicAndMedia">Verejnosť a médiá</a><ul><li class="menu_level_1"><a href="?sid=publicAndMedia/contact">Kontakt</a></li><li class="menu_level_1"><a href="?sid=navstevyaprehliadky">Návštevy a prehliadky</a><ul><li class="menu_level_2"><a href="?sid=prehliadkaziadost">Žiadosť o prehliadku (on-line formulár)</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/info">Sprístupňovanie informácií</a><ul><li class="menu_level_2"><a href="?sid=publicAndMedia/info/general">Všeobecné informácie</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/how">Ako a kde podať žiadosť</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/repair">Opravné prostriedky</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/procedure">Postup pri vybavovaní žiadosti</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/payments">Sadzobník úhrad materiálnych nákladov</a></li><li class="menu_level_2"><a href="?sid=infoziadost">Žiadosť o sprístupnenie informácie (on-line formulár)</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/complaints">Sťažnosti</a><ul><li class="menu_level_2"><a href="?sid=publicAndMedia/complaints/procedure">Postup pri vybavovaní sťažností</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/petitions">Petície</a><ul><li class="menu_level_2"><a href="?sid=publicAndMedia/petitions/procedure">Postup pri vybavovaní petícií</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/petitions/peticnyHarok">Návrh na kandidáta na prezidenta Slovenskej republiky</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/instructions">Prehľad predpisov, pokynov, inštrukcií</a></li><li class="menu_level_1"><a href="?sid=photo">Fotogaléria NR SR</a><ul><li class="menu_level_2"><a href="?sid=photoUdalosti">Fotogaléria udalostí</a></li><li class="menu_level_2"><a href="?sid=predseda/fotogaleria">Fotogaléria predsedu NR SR</a></li><li class="menu_level_2"><a href="?sid=photoPriestory">Fotogaléria priestorov NR SR</a><ul><li class="menu_level_3"><a href="?sid=photoPriestoryHlavnaBudova">Hlavná budova NR SR</a></li><li class="menu_level_3"><a href="?sid=photoPriestoryZupNamestie">Budova NR SR na Župnom námestí</a></li><li class="menu_level_3"><a href="?sid=photoPriestoryBAHrad">Bratislavský hrad</a><ul></ul></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=videos">Videogaléria NR SR</a></li><li class="menu_level_1"><a href="?sid=slovnik">Slovník parlamentných pojmov</a></li><li class="menu_level_1"><a href="?sid=faq">Často kladené otázky</a></li><li class="menu_level_1"><a href="?sid=adresar">Adresár inštitúcií</a></li><li class="menu_level_1"><a href="?sid=media">Pre médiá</a><ul><li class="menu_level_2"><a href="?sid=vseobecneinformacie">Všeobecné informácie</a></li><li class="menu_level_2"><a href="?sid=tvziadost">Žiadosť o preberanie TV signálu kamerového systému (on-line formulár)</a></li><li class="menu_level_2"><a href="?sid=akreditaciaziadost">Žiadosť o vydanie akreditačného preukazu (on-line formulár)</a></li></ul></li><li class="menu_level_1"><a href="?sid=udalosti">Udalosti</a></li><li class="menu_level_1"><a href="?sid=pressEventsMenu">Tlačové konferencie</a><ul><li class="menu_level_2"><a href="?sid=pressEvents">Pripravované tlačové konferencie</a></li><li class="menu_level_2"><a href="?sid=pressEventsSearch">Vyhľadávanie v tlačových konferenciách</a></li></ul></li></ul></li></ul>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div class="page_content">
+      
+      
+
+
+
+<div class="layout_section">
+  <div class="container_16 ">
+    <div class="grid_16 omega layout_section_content">
+      <div class="article">
+        <div class="breadcrumb">
+          <span class="breadcrumb-part"><a href="?sid=schodze">Schôdze</a></span><span class="breadcrumb-part"><a href="?sid=schodze/hlasovanie">Hlasovanie</a></span><span class="breadcrumb-part"><a href="?sid=schodze/hlasovanie/schodze">Podľa schôdzí</a></span>
+        </div>
+        <h1>
+
+          Podľa schôdzí
+          <span class="print"><a href="#" onclick="window.print(); return false;" title="Vytlačiť stránku / Print page">
+            <img src="img/layout/print_icon.gif" id="_sectionLayoutContainer_Img1" alt="Vytlačiť stránku / Print page" /></a></span>
+        </h1>
+        <div class="clear"></div>
+        <div id="_sectionLayoutContainer__panelContent">
+	
+        
+
+<div class="clear"></div>
+<div class="float_right">Zvoľte volebné obdobie: <select name="_sectionLayoutContainer$ctl01$_termsCombo" onchange="javascript:setTimeout('__doPostBack(\'_sectionLayoutContainer$ctl01$_termsCombo\',\'\')', 0)" id="_sectionLayoutContainer_ctl01__termsCombo">
+		<option selected="selected" value="9">9. volebn&#233; obdobie</option>
+		<option value="8">8. volebn&#233; obdobie</option>
+		<option value="7">7. volebn&#233; obdobie</option>
+		<option value="6">6. volebn&#233; obdobie</option>
+		<option value="5">5. volebn&#233; obdobie</option>
+		<option value="4">4. volebn&#233; obdobie</option>
+		<option value="3">3. volebn&#233; obdobie</option>
+		<option value="2">2. volebn&#233; obdobie</option>
+
+	</select></div>
+<div class="clear"></div>
+
+<ul>
+
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=66&ShowCisloSchodze=False">
+        66. schôdza 
+      </a>
+      (24. 11. 2026 - )
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=65&ShowCisloSchodze=False">
+        65. schôdza 
+      </a>
+      (24. 11. 2026 - )
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=64&ShowCisloSchodze=False">
+        64. schôdza 
+      </a>
+      (16. 11. 2026 - )
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=63&ShowCisloSchodze=False">
+        63. schôdza 
+      </a>
+      (16. - 17. 9. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=62&ShowCisloSchodze=False">
+        62. schôdza 
+      </a>
+      (16. - 17. 9. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=61&ShowCisloSchodze=False">
+        61. schôdza 
+      </a>
+      (15. 9. 2026 - )
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=60&ShowCisloSchodze=False">
+        60. schôdza 
+      </a>
+      (18. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=58&ShowCisloSchodze=False">
+        58. schôdza 
+      </a>
+      (15. - 16. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=59&ShowCisloSchodze=False">
+        59. schôdza 
+      </a>
+      (15. 6. 2026 - Po prerušení, resp. ukončení 58. schôdze Národnej rady Slovenskej republiky - 16. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=57&ShowCisloSchodze=False">
+        57. schôdza 
+      </a>
+      (10. - 11. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=56&ShowCisloSchodze=False">
+        56. schôdza 
+      </a>
+      (9. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=55&ShowCisloSchodze=False">
+        55. schôdza 
+      </a>
+      (9. - 10. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=54&ShowCisloSchodze=False">
+        54. schôdza 
+      </a>
+      (3. - 4. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=53&ShowCisloSchodze=False">
+        53. schôdza 
+      </a>
+      (1. - 2. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=52&ShowCisloSchodze=False">
+        52. schôdza 
+      </a>
+      (26. 5. - 17. 6. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=51&ShowCisloSchodze=False">
+        51. schôdza 
+      </a>
+      (5. 5. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=50&ShowCisloSchodze=False">
+        50. schôdza 
+      </a>
+      (23. - 24. 4. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=49&ShowCisloSchodze=False">
+        49. schôdza 
+      </a>
+      (14. 4. - 7. 5. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=48&ShowCisloSchodze=False">
+        48. schôdza 
+      </a>
+      (17. 3. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=47&ShowCisloSchodze=False">
+        47. schôdza 
+      </a>
+      (11. 2. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=46&ShowCisloSchodze=False">
+        46. schôdza 
+      </a>
+      (27. 1. - 20. 3. 2026)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=45&ShowCisloSchodze=False">
+        45. schôdza 
+      </a>
+      (12. 12. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=44&ShowCisloSchodze=False">
+        44. schôdza 
+      </a>
+      (1. - 2. 12. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=43&ShowCisloSchodze=False">
+        43. schôdza 
+      </a>
+      (25. 11. - 12. 12. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=42&ShowCisloSchodze=False">
+        42. schôdza 
+      </a>
+      (23. 10. 2025  - Schôdza bola skončená s tým, že tlač 1002 naďalej zostáva v programe 40. schôdze NR SR. - 23. 10. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=41&ShowCisloSchodze=False">
+        41. schôdza 
+      </a>
+      (23. - 24. 10. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=40&ShowCisloSchodze=False">
+        40. schôdza 
+      </a>
+      (14. - 28. 10. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=39&ShowCisloSchodze=False">
+        39. schôdza 
+      </a>
+      (9. 9. - 1. 10. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=38&ShowCisloSchodze=False">
+        38. schôdza 
+      </a>
+      (13. - 14. 8. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=37&ShowCisloSchodze=False">
+        37. schôdza 
+      </a>
+      (10. 6. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=36&ShowCisloSchodze=False">
+        36. schôdza 
+      </a>
+      (5. 6. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=35&ShowCisloSchodze=False">
+        35. schôdza 
+      </a>
+      (27. 5. - 18. 6. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=34&ShowCisloSchodze=False">
+        34. schôdza 
+      </a>
+      (1. - 2. 4. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=33&ShowCisloSchodze=False">
+        33. schôdza 
+      </a>
+      (25. 3. - 16. 4. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=32&ShowCisloSchodze=False">
+        32. schôdza 
+      </a>
+      (18. 2. 2025 , resp. po skončení 31. schôdze - 19. 2. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=31&ShowCisloSchodze=False">
+        31. schôdza 
+      </a>
+      (18. - 19. 2. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=30&ShowCisloSchodze=False">
+        30. schôdza 
+      </a>
+      (4. - 5. 2. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=29&ShowCisloSchodze=False">
+        29. schôdza 
+      </a>
+      (28. - 29. 1. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=28&ShowCisloSchodze=False">
+        28. schôdza 
+      </a>
+      (21. 1. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=27&ShowCisloSchodze=False">
+        27. schôdza 
+      </a>
+      (14. - 15. 1. 2025)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=26&ShowCisloSchodze=False">
+        26. schôdza 
+      </a>
+      (9. - 10. 12. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=25&ShowCisloSchodze=False">
+        25. schôdza 
+      </a>
+      (2. - 3. 12. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=24&ShowCisloSchodze=False">
+        24. schôdza 
+      </a>
+      (26. 11. - 2. 12. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=23&ShowCisloSchodze=False">
+        23. schôdza 
+      </a>
+      (26. 11. - 11. 12. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=22&ShowCisloSchodze=False">
+        22. schôdza 
+      </a>
+      (22. 10. - 7. 11. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=21&ShowCisloSchodze=False">
+        21. schôdza 
+      </a>
+      (17. 9. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=20&ShowCisloSchodze=False">
+        20. schôdza 
+      </a>
+      (12. 9. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=19&ShowCisloSchodze=False">
+        19. schôdza 
+      </a>
+      (10. 9. - 3. 10. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=18&ShowCisloSchodze=False">
+        18. schôdza 
+      </a>
+      (20. - 21. 8. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=17&ShowCisloSchodze=False">
+        17. schôdza 
+      </a>
+      (20. - 21. 8. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=16&ShowCisloSchodze=False">
+        16. schôdza 
+      </a>
+      (15. - 16. 7. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=1001&ShowCisloSchodze=False">
+        Mimoriadna schôdza 
+      </a>
+      (15. 6. - 3. 10. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=15&ShowCisloSchodze=False">
+        15. schôdza 
+      </a>
+      (11. - 28. 6. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=14&ShowCisloSchodze=False">
+        14. schôdza 
+      </a>
+      (15. - 22. 5. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=13&ShowCisloSchodze=False">
+        13. schôdza 
+      </a>
+      (9. 5. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=12&ShowCisloSchodze=False">
+        12. schôdza 
+      </a>
+      (16. 4. - 22. 5. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=11&ShowCisloSchodze=False">
+        11. schôdza 
+      </a>
+      (9. 4. 2024  -  ZRUŠENÁ - )
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=10&ShowCisloSchodze=False">
+        10. schôdza 
+      </a>
+      (12. 2. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=9&ShowCisloSchodze=False">
+        9. schôdza 
+      </a>
+      (31. 1. - 28. 2. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=8&ShowCisloSchodze=False">
+        8. schôdza 
+      </a>
+      (18. 1. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=7&ShowCisloSchodze=False">
+        7. schôdza 
+      </a>
+      (16. 1. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=6&ShowCisloSchodze=False">
+        6. schôdza 
+      </a>
+      (6. 12. 2023 - 26. 1. 2024)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=5&ShowCisloSchodze=False">
+        5. schôdza 
+      </a>
+      (5. 12. 2023)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=4&ShowCisloSchodze=False">
+        4. schôdza 
+      </a>
+      (23. - 29. 11. 2023)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=3&ShowCisloSchodze=False">
+        3. schôdza 
+      </a>
+      (14. - 22. 11. 2023)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=2&ShowCisloSchodze=False">
+        2. schôdza 
+      </a>
+      (14. 11. 2023)
+    </li>
+  
+    <li>
+      <a href="Default.aspx?sid=schodze/hlasovanie/vyhladavanie_vysledok&ZakZborID=13&CisObdobia=9&CisSchodze=1&ShowCisloSchodze=False">
+        1. schôdza 
+      </a>
+      (25. 10. 2023)
+    </li>
+  
+</ul>
+    
+
+
+</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="panels no_print">
+    <div class="container_16">
+      <div class="grid_4">
+        <div id="_sectionLayoutContainer__panelCalendar" class="layout_section_calendar">
+	
+        <div id="_sectionLayoutContainer_ctl00__calendarBox" class="day_in_parliament_box box">
+  <h2>Deň v parlamente</h2>
+<noscript>
+  Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript.<br />
+  We are sorry, but for proper usage of calendar you have to have JavaScript enabled.</noscript>
+
+<script type="text/javascript">
+ //<![CDATA[
+  var calendarLangControlId = '#_sectionLayoutContainer_ctl00__calendarLang';
+  var calendarAppControlId = '#_sectionLayoutContainer_ctl00__calendarApp';
+  var calendarMonthControlId = '#_sectionLayoutContainer_ctl00__calendarMonth';
+  var calendarYearControlId = '#_sectionLayoutContainer_ctl00__calendarYear';
+  var calendarMinYear = 2016
+  var calendarMaxYear = 2027
+
+  function GetMonthPersistentValue() {
+    return parseInt($(calendarMonthControlId).val());
+  }
+
+  function SetMonthPersistentValue(value) {
+    $(calendarMonthControlId).val(value);
+  }
+
+  function GetYearPersistentValue() {
+    return parseInt($(calendarYearControlId).val());
+  }
+
+  function SetYearPersistentValue(value) {
+    $(calendarYearControlId).val(value);
+  }
+
+  function GetAppPersistentValue() {
+    return $(calendarAppControlId).val();
+  }
+
+  function GetLangPersistentValue() {
+    return $(calendarLangControlId).val();
+  }
+
+  $(document).ready(function () {
+    SetMonth( GetMonthPersistentValue );
+    SetYear( GetYearPersistentValue );
+
+    BeginOnCalendarUpdate();
+  });
+
+  function SetMonth(n)
+  {
+    SetMonthPersistentValue(n);
+    $('.cal_month_selector').val(n);
+  }
+
+  function SetYear(n)
+  {
+    SetYearPersistentValue(n);
+    $('.cal_year_selector').val(n);
+  }
+
+  function OnShowNextMonthClicked()
+  {
+    UnhookCalendarChangeHandlers();
+
+    if ( GetMonthPersistentValue() == 12) {
+      if (GetYearPersistentValue() + 1 > calendarMaxYear) {
+        HookCalendarChangeHandlers();
+        return false;
+      };
+      SetMonth( 1 );
+      SetYear( GetYearPersistentValue() + 1);
+    }
+    else
+      SetMonth( GetMonthPersistentValue() + 1);
+
+    BeginOnCalendarUpdate();
+
+    return false;
+  }
+
+  function OnShowPreviousMonthClicked()
+  {
+    UnhookCalendarChangeHandlers();
+
+    if ( GetMonthPersistentValue() == 1)
+    {
+    if (GetYearPersistentValue() - 1 < calendarMinYear) {
+        HookCalendarChangeHandlers();
+        return false;
+      };
+      SetMonth( 12 );
+      SetYear( GetYearPersistentValue() - 1)
+    }
+    else
+      SetMonth( GetMonthPersistentValue() - 1 );
+
+    BeginOnCalendarUpdate();
+
+    return false;
+  }
+
+  function OnMonthOrYearChanged() {
+    UnhookCalendarChangeHandlers();
+
+    SetMonthPersistentValue(parseInt($('.cal_month_selector').val()));
+    SetYearPersistentValue(parseInt($('.cal_year_selector').val()));
+
+    BeginOnCalendarUpdate();
+  }
+
+  function BeginOnCalendarUpdate()
+  {
+    
+    $('.cal_panel').addClass('loading');
+    $('#_sectionLayoutContainer_ctl00__calendarContent').html('');
+    DisableCalendarControls();
+
+    month = GetMonthPersistentValue();
+    year = GetYearPersistentValue();
+    lang = GetLangPersistentValue();
+    app = GetAppPersistentValue();
+
+    // Zavolame ziskanie dat kalendara zo sluzby.
+    exeIT.NRSR.Web.CalendarService.RenderCalendar(
+      month, year, app, lang,
+      OnCallCalendarUpdateCompleted, OnCallCalendarUpdateError);
+  }
+
+  function HookCalendarChangeHandlers()
+  {
+    $('.cal_month_selector').change(OnMonthOrYearChanged);
+    $('.cal_year_selector').change(OnMonthOrYearChanged);
+    $('.cal_previous_month_button').click(OnShowPreviousMonthClicked);
+    $('.cal_next_month_button').click(OnShowNextMonthClicked);
+  }
+
+  function UnhookCalendarChangeHandlers()
+  {
+    $('.cal_month_selector').unbind("change");
+    $('.cal_year_selector').unbind("change");
+    $('.cal_previous_month_button').unbind("click");
+    $('.cal_next_month_button').unbind("click");
+  }
+
+  function OnCallCalendarUpdateError(error, userContext, methodName)
+  {
+    $('.cal_panel').removeClass('loading');
+    EnableCalendarControls();
+    HookCalendarChangeHandlers();
+  }
+  
+  function OnCallCalendarUpdateCompleted(result, userContext, methodName) {
+    $('.cal_panel').removeClass('loading');
+    $('#_sectionLayoutContainer_ctl00__calendarContent').html(result);
+    EnableCalendarControls();
+    HookCalendarChangeHandlers();
+  }
+
+  function DisableCalendarControls()
+  {
+    $(".cal_previous_month_button").attr("disabled", "disabled");
+    $(".cal_next_month_button").attr("disabled", "disabled");
+    $(".cal_month_selector").attr("disabled", "disabled");
+    $(".cal_year_selector").attr("disabled", "disabled");
+  }
+
+  function EnableCalendarControls()
+  {
+    $(".cal_previous_month_button").removeAttr("disabled");
+    $(".cal_next_month_button").removeAttr("disabled");
+    $(".cal_month_selector").removeAttr("disabled");
+    $(".cal_year_selector").removeAttr("disabled");
+  }
+
+ //]]>
+</script>
+
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarYear" id="_sectionLayoutContainer_ctl00__calendarYear" value="2026" />
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarMonth" id="_sectionLayoutContainer_ctl00__calendarMonth" value="11" />
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarApp" id="_sectionLayoutContainer_ctl00__calendarApp" value="nrhpo" />
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarLang" id="_sectionLayoutContainer_ctl00__calendarLang" />
+<div class="cal_header_panel">
+<table class="cal_header">
+  <tr>
+    <td class="prev">
+      <a href="#" class="cal_previous_month_button">
+        <img src="img/layout/button_left.png" alt="&lt;-" /></a>
+    </td>
+    <td class="month_year">
+      <select name="_sectionLayoutContainer$ctl00$_monthSelector" id="_sectionLayoutContainer_ctl00__monthSelector" class="cal_month_selector">
+		<option value="1">janu&#225;r</option>
+		<option value="2">febru&#225;r</option>
+		<option value="3">marec</option>
+		<option value="4">apr&#237;l</option>
+		<option value="5">m&#225;j</option>
+		<option value="6">j&#250;n</option>
+		<option value="7">j&#250;l</option>
+		<option value="8">august</option>
+		<option value="9">september</option>
+		<option value="10">okt&#243;ber</option>
+		<option value="11">november</option>
+		<option value="12">december</option>
+
+	</select>
+      <select name="_sectionLayoutContainer$ctl00$_yearSelector" id="_sectionLayoutContainer_ctl00__yearSelector" class="cal_year_selector">
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option value="2024">2024</option>
+		<option value="2025">2025</option>
+		<option value="2026">2026</option>
+		<option value="2027">2027</option>
+
+	</select>
+    </td>
+    <td class="next">
+      <a href="#" class="cal_next_month_button">
+        <img src="img/layout/button_right.png" alt="->" /></a>
+    </td>
+  </tr>
+</table>
+</div>
+<div id="_sectionLayoutContainer_ctl00__calendarContent" class="cal_panel loading"></div>
+<div id="_sectionLayoutContainer_ctl00__calendarDescriptionDiv" class="cal_description">Kalendár ukáže hlasovania pre daný deň.</div>
+<div class="clear"></div>
+</div>
+</div>
+      </div>
+      <div class="grid_6">
+        <div id="_sectionLayoutContainer__panelShortcuts" class="layout_section_shortcuts">
+	
+        <div class="shortcuts_box box"><h2>Rýchly prístup</h2><ul><li><a href="/web/?SectionId=591">Informácie a tlačivá pre poslancov</a></li><li><a title="Zoznam poslancov" href="/web/?SectionId=60">Zoznam poslancov</a></li><li><a title="Oznámenia verejných funkcionárov" href="/web/?SectionId=136">Oznámenia verejných funkcionárov</a></li><li><a title="Návštevy a prehliadky" href="/web/?SectionId=155">Návštevy a prehliadky</a></li><li><a title="Vyhľadávanie v návrhoch zákonov" href="/web/?SectionId=91">Vyhľadávanie v návrhoch zákonov</a></li><li><a title="Týždeň v parlamente" href="/web/?SectionId=174">Týždeň v parlamente</a></li><li><a title="Fotogaléria NR SR" href="/web/?SectionId=159">Fotogaléria NR SR</a></li><li><a title="Parlamentná knižnica" href="http://kniznica.nrsr.sk/">Parlamentná knižnica</a></li><li><a title="Online vysielanie pre mobilné zariadenia" href="http://m.nrsr.sk/">Online vysielanie pre mobilné zariadenia</a></li><li><a href="http://www.rtvs.sk/televizia/live-nr-sr?p=h5&amp;q=1">Online vysielanie na stránkach STVR</a></li><li><a title="Stáž v Kancelárii NR SR" href="/web/?SectionId=457">Stáž v Kancelárii NR SR</a></li><li><a title="SSEZ" href="http://www.nrsr.sk/ssez/">Systém sledovania európskych záležitostí</a></li><li><a href="/web/?SectionId=621">GDPR - Ochrana osobných údajov, Privacy Policy</a></li></ul></div>
+</div>
+      </div>
+      <div class="grid_6">
+        <div id="_sectionLayoutContainer__panelLeft" class="layout_section_left">
+	
+        
+</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+      <div class="clear"></div>
+    </div>
+
+    
+
+    <div class="page_footer">
+      <div class="container_16">
+        <div class="grid_6">
+          <span class="float_left">&copy; 2004 - 2026 K NR SR. Všetky práva vyhradené.</span>
+        </div>
+
+        <div class="grid_10">
+          <div class="box float_right"><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'sk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+          <span id="_law211LinkBox" class="box float_right"><a href="./?sid=publicAndMedia/info/general">Zákon o slobodnom prístupe k informáciám.</a></span>
+          
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>
+<!-- Rendering this page took 0,3281211 seconds. -->

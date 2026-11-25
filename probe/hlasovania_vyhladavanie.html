@@ -1,1 +1,1470 @@
-<!doctype html><html lang="en"><meta charset="UTF-8"><meta content="nofollow,noarchive,noindex" name="robots"><title>Bot Detection</title><meta content="width=device-width,initial-scale=1" name="viewport"><meta content="IE=edge" http-equiv="X-UA-Compatible"><meta content="Bot Detection" name="title"><meta content="30" http-equiv="refresh"><meta content="Please wait while we check if you are a Human" name="description"><meta content="Bot Detection" property="og:title"><meta content="Please wait while we check if you are a Human" property="og:description"><meta content="Bot Detection" property="twitter:title"><meta content="Please wait while we check if you are a Human" property="twitter:description"><link href="data:image/svg+xml, %3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='96.000000pt' height='96.000000pt' viewBox='0 0 96.000000 96.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,96.000000) scale(0.100000,-0.100000)'%0Afill='%23085577' stroke='none'%3E%3Cpath d='M535 863 c-22 -2 -139 -17 -260 -34 -228 -31 -267 -43 -272 -85 -2%0A-10 23 -181 55 -379 l57 -360 400 0 400 0 20 40 c16 31 20 59 19 125 -1 100%0A-24 165 -73 199 -41 29 -46 57 -22 111 30 67 29 188 -3 256 -13 28 -37 60 -53%0A72 -55 39 -169 62 -268 55z m-15 -348 c30 -16 60 -61 60 -90 0 -10 -8 -33 -17%0A-52 -16 -34 -16 -41 0 -116 9 -44 15 -82 12 -85 -6 -7 -92 -21 -131 -21 l-31%0A-1 -6 85 c-4 75 -8 89 -31 112 -20 20 -26 36 -26 70 0 38 5 50 34 79 39 39 86%0A45 136 19z'/%3E%3C/g%3E%3C/svg%3E" rel="icon" type="image/svg+xml"><style nonce="qbS91Ikbi48L7SwNNOAl7C6uD18Cgdbd">:root{color-scheme:light dark;--bw-ground:#edf2f5;--bw-card:#ffffff;--bw-border:rgba(11, 53, 74, 0.16);--bw-ink:#0f2a38;--bw-ink-soft:#4d6776;--bw-accent:#1c7a47;--bw-primary:#0b354a;--bw-primary-ink:#ffffff;--bw-danger:#c0341d;--bw-status-bg:#f2f6f8;--bw-widget-bg:#fafafa;--bw-widget-border:#e0e0e0;--bw-shadow:0 1px 2px rgba(11, 53, 74, 0.06),0 12px 32px rgba(11, 53, 74, 0.1);--bw-grid-dot:rgba(11, 53, 74, 0.1);--bw-grid-line:transparent;--bw-mark:#0b5577}@media (prefers-color-scheme:dark){:root{--bw-ground:#062433;--bw-card:#0a3346;--bw-border:rgba(46, 172, 104, 0.3);--bw-ink:#e6f0f5;--bw-ink-soft:#93b4c4;--bw-accent:#3ecb80;--bw-primary:#2eac68;--bw-primary-ink:#062433;--bw-danger:#ff7a66;--bw-status-bg:#062a3b;--bw-widget-bg:#232323;--bw-widget-border:#3a3a3a;--bw-shadow:0 0 0 1px rgba(46, 172, 104, 0.06),0 22px 48px rgba(0, 0, 0, 0.45);--bw-grid-dot:rgba(143, 199, 230, 0.08);--bw-grid-line:rgba(255, 255, 255, 0.022);--bw-mark:#ffffff}}*{box-sizing:border-box}body,html{margin:0;padding:0;min-height:100%}body{min-height:100vh;display:flex;flex-direction:column;background-color:var(--bw-ground);background-image:repeating-linear-gradient(0deg,transparent 0 3px,var(--bw-grid-line) 3px 4px),radial-gradient(var(--bw-grid-dot) 1px,transparent 1px);background-size:auto,20px 20px;color:var(--bw-ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1rem;-webkit-font-smoothing:antialiased}.bw-main{flex:1 0 auto;width:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:center;padding:24px 16px 16px}.bw-card{width:100%;max-width:420px;box-sizing:border-box;background:var(--bw-card);border:1px solid var(--bw-border);border-radius:6px;box-shadow:var(--bw-shadow);overflow:visible}.bw-topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;padding:11px 16px;border-bottom:1px solid var(--bw-border);font:600 0.65625rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;color:var(--bw-ink-soft)}.bw-topbar-left{display:flex;align-items:center;gap:8px;min-width:0;overflow-wrap:anywhere}.bw-dot{width:7px;height:7px;border-radius:50%;background:#2eac68;display:inline-block;animation:bw-live 1.6s ease-in-out infinite}.bw-dot.bw-dot-error{background:var(--bw-danger);animation:bw-caret .9s steps(1) infinite}.bw-topbar-type{overflow-wrap:anywhere;color:var(--bw-accent)}.bw-body{padding:26px 32px 26px;text-align:center}.bw-hero{display:block;width:88px;height:95px;margin:0 auto}.bw-hero-canvas{display:block;width:88px;height:95px}.bw-title{margin:18px 0 8px;font:700 1rem/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.06em;color:var(--bw-ink)}.bw-subtitle{margin:0 auto;max-width:330px;font:400 0.8125rem/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--bw-ink-soft)}.bw-status{min-height:42px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;margin-top:16px;padding:9px 12px;background:var(--bw-status-bg);border:1px solid var(--bw-border);border-radius:4px;font:500 0.75rem/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;text-align:left}#challenge-error{margin:0;color:var(--bw-danger)}#challenge-error:empty{display:none}.bw-status-decor{color:var(--bw-accent)}.bw-caret{animation:bw-caret 1s steps(1) infinite}.bw-retry{min-height:2.5rem;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;margin-top:10px;font:400 0.75rem/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--bw-ink-soft);visibility:hidden}.bw-retry.bw-visible{visibility:visible}.bw-retry-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0 2px}.bw-retry-help{font-size:.6875rem;font-weight:400}.bw-retry-btn{display:inline-flex;align-items:center;gap:4px;min-height:24px;padding:2px 4px;border:0;border-radius:4px;background:0 0;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:2px;cursor:pointer}.bw-retry-btn svg{width:11px;height:11px;flex-shrink:0}.bw-retry-btn:hover{color:var(--bw-primary)}.bw-retry-btn:focus-visible{outline:2px solid var(--bw-primary);outline-offset:2px}.bw-widget{width:300px;height:65px;box-sizing:border-box;margin:4px auto 0;display:flex;align-items:center;justify-content:center}.bw-widget.bw-widget-compact{width:150px;height:140px}.bw-widget-hcaptcha{width:303px;height:78px}.bw-widget-recaptcha{width:304px;height:78px}.bw-widget-hcaptcha.bw-widget-compact,.bw-widget-recaptcha.bw-widget-compact{width:164px;height:144px}.bw-form{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:18px}.bw-captcha-img{width:250px;max-width:100%;height:auto;aspect-ratio:250/80;box-sizing:border-box;background:var(--bw-status-bg);border:1px solid var(--bw-border);border-radius:4px;display:flex;align-items:center;justify-content:center;overflow:hidden}.bw-captcha-img img{max-width:100%;max-height:100%;display:block}.bw-field-label{display:block;margin:16px 0 6px;font:600 0.65625rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;color:var(--bw-ink-soft)}.bw-field-row{display:flex;justify-content:center;gap:8px;width:250px;max-width:100%;margin:8px auto 0}.bw-field-row input{flex:1;min-width:0;height:44px;box-sizing:border-box;padding:0 12px;border:1px solid var(--bw-border);border-radius:4px;background:var(--bw-status-bg);color:var(--bw-ink);font:600 1rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.2em;text-align:center}.bw-field-row button,.bw-submit{height:44px;padding:0 16px;border:0;border-radius:4px;background:var(--bw-primary);color:var(--bw-primary-ink);font:700 0.75rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;letter-spacing:.08em;cursor:pointer}.bw-help-link{margin-top:10px;font:400 0.6875rem/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--bw-ink-soft)}.bw-help-link a{color:var(--bw-ink-soft)}.bw-footer{flex-shrink:0;width:100%;box-sizing:border-box;padding:12px 16px 18px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}.bw-footer-logo{display:block;line-height:0}.bw-footer-logo svg{width:132px;height:37px}.bw-footer p{margin:0;font:400 0.71875rem/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;color:var(--bw-ink-soft)}.bw-footer a{color:var(--bw-ink);font-weight:700;text-decoration:underline}.bw-footer a:hover{color:var(--bw-accent)}.bw-footer a:focus-visible{color:var(--bw-accent);outline:2px solid var(--bw-accent);outline-offset:2px}.bunker-cls-2{fill:var(--bw-mark)}.bunker-cls-3{fill:#fff}.bunker-cls-4{fill:#2eac68}.bw-noscript-msg{display:block;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;padding:1rem;margin:1rem 0;border-radius:4px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}.bw-recaptcha-v2 .grecaptcha-badge{display:none!important}.bw-hidden{display:none}@keyframes bw-live{0%,100%{opacity:1}50%{opacity:.35}}@keyframes bw-caret{0%,49%{opacity:1}100%,50%{opacity:0}}@media (prefers-reduced-motion:reduce){.bw-dot{animation:none}.bw-caret{animation:none}}@media (prefers-contrast:more){:root{--bw-ink-soft:var(--bw-ink);--bw-border:var(--bw-ink);--bw-grid-dot:transparent;--bw-grid-line:transparent}}@media (prefers-reduced-transparency:reduce){:root{--bw-grid-dot:transparent;--bw-grid-line:transparent;--bw-border:var(--bw-ink)}.bw-card{box-shadow:none;border-width:2px}}@media (forced-colors:active){body{background-image:none}.bw-captcha-img,.bw-card,.bw-field-row input,.bw-status,.bw-topbar,.bw-widget{border-color:CanvasText}.bw-dot{forced-color-adjust:none;background:Highlight}.bw-field-row button,.bw-retry-btn,.bw-submit{border:1px solid ButtonText}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid Highlight;outline-offset:2px}}@media (max-width:379px){.bw-main{padding-left:8px;padding-right:8px}.bw-body{padding-left:10px;padding-right:10px}.bw-widget{width:auto;margin-left:-10px;margin-right:-10px}.bw-sfx{display:none}.bw-hero,.bw-hero-canvas{width:76px;height:82px}}@media (max-width:199px){.bw-main{padding-left:4px;padding-right:4px}.bw-body{padding-left:4px;padding-right:4px}.bw-field-row{width:100%}.bw-field-row button,.bw-submit{padding:0 8px}}</style><main class="bw-main"><article class="bw-card"><div class="bw-topbar"><span class="bw-topbar-left"><span class="bw-dot" id="bw-dot"></span>BUNKERWEB<span class="bw-sfx">&nbsp;&middot; SECURITY CHECK</span></span> <span class="bw-topbar-type">PROOF-OF-WORK</span></div><div class="bw-body"><div class="bw-hero"><canvas class="bw-hero-canvas" id="bw-orb" role="img" aria-label="Computing proof of work"></canvas><noscript><style nonce="qbS91Ikbi48L7SwNNOAl7C6uD18Cgdbd">#bw-orb{display:none}</style> <svg class="bw-hero-canvas bw-hero-svg" viewBox="0 0 88 95" role="img" aria-label="Computing proof of work" xmlns="http://www.w3.org/2000/svg"><circle cx="71.7" cy="53.5" r="2.25" fill="currentColor"/><circle cx="69.8" cy="45.9" r="2.25" fill="currentColor"/><circle cx="64.7" cy="40.0" r="2.25" fill="currentColor"/><circle cx="67.1" cy="32.5" r="2.25" fill="currentColor"/><circle cx="67.0" cy="24.5" r="2.25" fill="currentColor"/><circle cx="63.6" cy="17.4" r="2.25" fill="currentColor"/><circle cx="56.7" cy="13.6" r="2.25" fill="currentColor"/><circle cx="48.7" cy="12.8" r="2.25" fill="currentColor"/><circle cx="40.8" cy="13.5" r="2.25" fill="currentColor"/><circle cx="32.9" cy="14.5" r="2.25" fill="currentColor"/><circle cx="24.9" cy="15.7" r="2.25" fill="currentColor"/><circle cx="17.0" cy="16.9" r="2.25" fill="currentColor"/><circle cx="13.9" cy="23.0" r="2.25" fill="currentColor"/><circle cx="15.1" cy="30.9" r="2.25" fill="currentColor"/><circle cx="16.4" cy="38.8" r="2.25" fill="currentColor"/><circle cx="17.6" cy="46.7" r="2.25" fill="currentColor"/><circle cx="18.9" cy="54.6" r="2.25" fill="currentColor"/><circle cx="20.1" cy="62.4" r="2.25" fill="currentColor"/><circle cx="25.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="33.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="41.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="49.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="57.6" cy="65.4" r="2.25" fill="currentColor"/><circle cx="65.5" cy="65.4" r="2.25" fill="currentColor"/><circle cx="71.1" cy="61.4" r="2.25" fill="currentColor"/><circle cx="38.5" cy="56.6" r="2.25" fill="currentColor"/><circle cx="38.1" cy="48.3" r="2.25" fill="currentColor"/><circle cx="34.6" cy="41.3" r="2.25" fill="currentColor"/><circle cx="37.8" cy="34.2" r="2.25" fill="currentColor"/><circle cx="45.6" cy="34.3" r="2.25" fill="currentColor"/><circle cx="48.3" cy="41.6" r="2.25" fill="currentColor"/><circle cx="47.6" cy="49.2" r="2.25" fill="currentColor"/><circle cx="46.8" cy="55.5" r="2.25" fill="currentColor"/><circle cx="17.8" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="30.2" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="42.6" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="55.0" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="67.4" cy="70.5" r="2.25" fill="#2eac68"/><circle cx="22.0" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="34.4" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="46.7" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="59.1" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="71.5" cy="75.2" r="2.25" fill="#2eac68"/><circle cx="26.1" cy="79.9" r="2.25" fill="#2eac68"/><circle cx="38.5" cy="79.9" r="2.25" fill="#2eac68"/><circle cx="50.9" cy="79.9" r="2.25" fill="#2eac68"/><circle cx="63.3" cy="79.9" r="2.25" fill="#2eac68"/></svg></noscript></div><h3 role="status" aria-live="polite" class="bw-title">COMPUTING PROOF OF WORK</h3><p class="bw-subtitle">Your browser is solving a small puzzle. No action needed, you will be redirected.<div class="bw-status"><p id="challenge-error" role="alert"></p><span class="bw-status-decor" id="bw-status-decor" aria-hidden="true"><span id="bw-status-text">&gt; searching nonce &middot; <span id="bw-pow-count">0</span> tried<span class="bw-caret">_</span></span></span></div><noscript><p class="bw-noscript-msg">JavaScript needs to be enabled to complete this challenge.</p></noscript><form method="post" class="bw-hidden" action="/nrsr-challenge-53765342" id="form" data-random="57rk3YXXx5musWQUCKJ3"><input type="hidden" name="challenge" id="challenge"> <input type="hidden" name="next" value="&#47;web&#47;"></form></div></article></main><footer class="bw-footer"><a href="https://www.bunkerweb.io/?utm_campaign=self&amp;utm_source=bwantibot" target="_blank" rel="noopener noreferrer" class="bw-footer-logo"><svg viewBox="0 0 213.09 59.68" xmlns="http://www.w3.org/2000/svg"><path class="bunker-cls-4" d="M76.46 40.57h73.22v19.11H76.46z"/><path class="bunker-cls-2" d="M198.03 6.01c-5.85-.78-8.78-1.14-14.65-1.79-1.05-.12-1.96.57-2.07 1.56l-3.48 32.05h13.12l.4-3.08c.13-.99 1.01-1.66 2.03-1.53.79.1 1.44.75 1.5 1.6.11 1.18.2 2.12.28 3.01h12.52c-.19-1.4-.38-2.82-.64-4.69-.08-.63.19-1.26.7-1.58 2.66-1.9 4.26-5.28 5.07-9.77 1.83-10.2-5.66-14.74-14.78-15.78m2.34 14.86c-.25 1.65-1.84 2.78-3.56 2.53-.99-.15-1.8-.73-2.28-1.52-2-.11-3-.16-5.01-.25.25-1.81.37-2.72.61-4.53 1.97.44 2.95.67 4.92 1.12.68-.62 1.63-.95 2.63-.81 1.73.25 2.93 1.8 2.68 3.45ZM178.59 5.27c.09-.83-.6-1.63-1.48-1.71-8.72-.83-17.42-1.55-26.15-2.16-.94-.06-1.75.61-1.8 1.44l-2.07 33.96c-.02.39.1.75.31 1.04h27.8c.21-2.04.36-3.43.6-5.79.09-.83-.57-1.62-1.42-1.71-4.81-.49-7.21-.71-12.02-1.12-.9-.08-1.58-.85-1.51-1.74 0-.07 0-.1.01-.17.07-.83.86-1.49 1.77-1.41 3.47.29 5.21.45 8.68.78.85.08 1.66-.56 1.75-1.45.28-2.78.41-4.18.69-6.96.08-.83-.6-1.62-1.46-1.7-3.52-.34-5.29-.5-8.81-.79-.92-.08-1.61-.86-1.54-1.74.07-.83.88-1.49 1.8-1.41 4.93.41 7.4.64 12.32 1.14.87.09 1.69-.55 1.79-1.43.29-2.83.44-4.24.74-7.07M145.48 1.06c-4.26-.24-6.39-.34-10.66-.51-.59-.02-1.13.34-1.33.84-1.7 4.49-2.54 6.74-4.19 11.24-.19.49-.72.87-1.3.85-.75-.02-1.31-.59-1.29-1.32l.3-10.6c.02-.72-.55-1.29-1.32-1.31-4.38-.12-6.57-.16-10.96-.21-.77 0-1.36.54-1.37 1.26-.1 11.54-.2 23.09-.31 34.63 0 .72.55 1.28 1.27 1.29 4.15.05 6.22.08 10.37.19.72.02 1.3-.52 1.32-1.24.11-3.93.17-5.89.28-9.82.02-.72.6-1.26 1.34-1.24h.11c.57.02 1.01.37 1.22.87 1.42 4.33 2.12 6.5 3.5 10.84.2.51.64.86 1.19.88.96.04 1.81.07 2.6.11h8.69c.31-.32.47-.78.34-1.26-1.95-6.96-2.95-10.44-5.02-17.39-.05-.22-.03-.56.04-.78 2.49-6.26 3.77-9.38 6.36-15.61.34-.81-.26-1.68-1.2-1.74ZM107.38 0c-3.49 0-5.23.01-8.72.05-1.36.02-2.46 1.09-2.44 2.37.05 3.2.08 4.79.13 7.99.01.67-.56 1.12-1.2 1.13-.35 0-.76-.15-.99-.48-2.81-3.88-4.24-5.81-7.13-9.65C86.6.76 85.76.34 84.88.37c-3.82.12-5.72.2-9.54.38-1.35.06-2.42 1.17-2.36 2.45.54 10.83 1.08 21.66 1.63 32.49.05 1.07.85 1.94 1.86 2.16h1.88c2.5-.11 4.12-.18 6.96-.27 1.28-.04 2.31-1.13 2.27-2.4-.11-3.51-.16-5.26-.26-8.77-.02-.72.53-1.18 1.16-1.2.4-.01.74.15.98.53 2.77 4.12 4.13 6.19 6.81 10.34.4.77 1.19 1.2 2.08 1.19 3.61-.05 5.42-.06 9.03-.06 1.28 0 2.35-1.05 2.35-2.33l.12-32.53c0-1.28-1.11-2.34-2.47-2.34ZM69.71 3.64c-.08-1.44-1.38-2.54-2.91-2.45-3.25.19-4.87.3-8.12.53-1.53.11-2.68 1.36-2.57 2.8.65 8.68.97 13.02 1.62 21.7.18 2.38-1.08 3.03-3.28 3.2-2.2.18-3.6-.26-3.81-2.64-.74-8.67-1.11-13.01-1.86-21.68-.12-1.44-1.46-2.49-2.98-2.36-3.22.29-4.83.44-8.05.77-1.58.16-2.69 1.45-2.54 2.89.89 8.46 1.34 12.68 2.23 21.14.48 5.05 2.65 8.34 5.83 10.28h20.48c4.69-2.31 7.67-6.5 7.1-13.19l-1.15-21ZM32.33 23.7c-1.05-.59-1.44-2.01-.74-2.99 1.49-2.24 1.43-4.85 1.15-7.39-.68-6.12-5.83-8.68-15.37-7.42-6.09.8-9.13 1.24-15.2 2.18C.76 8.29-.18 9.51.03 10.83c1.43 9 2.85 18 4.28 27h29.48c1.54-1.9 2.15-4.32 1.83-7.29-.28-2.59-.8-5.44-3.28-6.84ZM15.3 32.39c-.12-2.65-.19-3.97-.3-6.62-1.11-.62-1.93-1.69-2.11-3-.32-2.27 1.34-4.39 3.72-4.71s4.54 1.28 4.84 3.55c.17 1.32-.33 2.57-1.24 3.46.59 2.59.88 3.88 1.47 6.46-2.55.33-3.82.51-6.37.86Z"/><path class="bunker-cls-2" d="M78.34 37.83h-1.88c.19.04.39.07.6.06.46-.02.88-.04 1.28-.06"/><path class="bunker-cls-3" d="M104.18 45.34h-3.3c-.3.01-.51.07-.63.19-.12.11-.19.26-.19.43 0 .18.07.33.19.44.13.11.34.17.63.17h1.52l-2.02 9.56-2.67-7.62h-1.44l-2.54 7.65-2.17-9.55h1.54c.29 0 .49-.06.62-.18.12-.11.19-.26.19-.43 0-.18-.06-.33-.19-.44-.12-.11-.33-.17-.62-.17h-3.31c-.29.01-.49.07-.62.19-.12.11-.19.26-.19.43 0 .18.06.33.19.44s.33.17.62.17h.59l2.54 11.2h1.49l2.61-7.75 2.68 7.74 1.49-.02 2.41-11.22h.57q.45 0 .63-.18c.12-.11.19-.26.19-.43 0-.18-.06-.33-.19-.44-.12-.11-.34-.17-.63-.17ZM120.64 55.13c-.13 0-.29.07-.47.22-.62.49-1.42.89-2.41 1.19-.98.3-1.93.45-2.83.46-1.62 0-2.97-.46-4.07-1.41s-1.76-2.2-1.97-3.76l12.28-.05c.01-2.05-.62-3.71-1.9-4.99s-2.9-1.92-4.87-1.91c-1.91 0-3.52.64-4.81 1.9s-1.93 2.76-1.93 4.51c0 1.92.7 3.56 2.09 4.91s3.11 2.02 5.18 2.01c1.23 0 2.44-.22 3.61-.64s1.98-.87 2.44-1.35c.15-.15.23-.31.23-.47s-.06-.3-.17-.42a.55.55 0 0 0-.4-.18Zm-9.86-7.8c1.01-.83 2.22-1.24 3.63-1.25 1.41 0 2.62.41 3.64 1.23 1.02.83 1.66 1.91 1.9 3.24l-11.05.04c.24-1.35.87-2.44 1.88-3.26M137.52 46.7c-1.26-1.27-2.77-1.91-4.53-1.9-2.06 0-3.81.96-5.26 2.86l-.03-7.99h-2.83c-.29.01-.49.07-.62.19-.12.12-.19.26-.18.43 0 .18.06.33.19.44s.33.17.62.17h1.62l.06 15.58h-1.62c-.29 0-.49.06-.62.17a.58.58 0 0 0-.19.44c0 .17.06.32.19.43.12.11.33.17.62.17h2.83v-2.38q2.115 2.835 5.28 2.82c1.73 0 3.23-.66 4.49-1.97s1.89-2.9 1.88-4.77c0-1.86-.64-3.42-1.9-4.69m-.86 8.63c-1.04 1.06-2.26 1.59-3.65 1.6-1.4 0-2.62-.52-3.67-1.57s-1.57-2.34-1.58-3.86c0-1.52.51-2.81 1.55-3.87s2.26-1.59 3.65-1.6c1.4 0 2.62.52 3.67 1.57s1.57 2.34 1.58 3.86c0 1.52-.51 2.81-1.55 3.87"/></svg></a><p>This website is protected with&nbsp;<a href="https://www.bunkerweb.io/?utm_campaign=self&amp;utm_source=bwantibot" target="_blank" rel="noopener noreferrer">BunkerWeb</a></footer><script nonce="cD4NvdJbcLDJAJqIFSfu5icqC12pNixw">var bwColorSchemeMQ=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)"),bwReducedMotionMQ=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)"),bwTheme=bwColorSchemeMQ&&bwColorSchemeMQ.matches?"dark":"light";function bwOrb(e,t,n,r){var o={outer:[[.7333,.16],[.7171,.0556],[.681,-.0433],[.6119,-.122],[.5463,-.1997],[.5788,-.2971],[.6107,-.3974],[.6162,-.5027],[.6066,-.6079],[.5769,-.7089],[.5179,-.796],[.4333,-.8586],[.3348,-.8962],[.2308,-.9142],[.1253,-.9186],[.0198,-.9131],[-.0852,-.901],[-.1899,-.887],[-.2946,-.8727],[-.3993,-.858],[-.5039,-.8429],[-.6084,-.8273],[-.7128,-.8114],[-.7952,-.7516],[-.7962,-.648],[-.7797,-.5437],[-.7631,-.4393],[-.7466,-.3349],[-.7301,-.2305],[-.7135,-.1262],[-.697,-.0218],[-.6805,.0826],[-.6639,.187],[-.6474,.2913],[-.6309,.3957],[-.5929,.475],[-.4873,.475],[-.3816,.475],[-.2759,.475],[-.1702,.475],[-.0646,.475],[.0411,.475],[.1468,.475],[.2525,.475],[.3582,.475],[.4638,.475],[.5695,.475],[.668,.4603],[.7168,.3671],[.7377,.2638]],key:[[-.145,.24],[-.15,.1303],[-.1553,.0205],[-.193,-.0713],[-.2477,-.1645],[-.2362,-.2718],[-.1646,-.353],[-.0601,-.3816],[.0435,-.3498],[.1107,-.2653],[.1143,-.1573],[.07,-.0618],[.0942,.0453],[.1186,.1525],[.0728,.2111],[-.0361,.2254]],plinth:[[-.6917,.6083],[-.5825,.6083],[-.4733,.6083],[-.3642,.6083],[-.255,.6083],[-.1458,.6083],[-.0367,.6083],[.0725,.6083],[.1817,.6083],[.2908,.6083],[.4,.6083],[.5092,.6083],[.6183,.6083],[.7275,.6083],[-.6917,.7333],[-.5825,.7333],[-.4733,.7333],[-.3642,.7333],[-.255,.7333],[-.1458,.7333],[-.0367,.7333],[.0725,.7333],[.1817,.7333],[.2908,.7333],[.4,.7333],[.5092,.7333],[.6183,.7333],[.7275,.7333],[-.6917,.8583],[-.5825,.8583],[-.4733,.8583],[-.3642,.8583],[-.255,.8583],[-.1458,.8583],[-.0367,.8583],[.0725,.8583],[.1817,.8583],[.2908,.8583],[.4,.8583],[.5092,.8583],[.6183,.8583],[.7275,.8583]]},a="dark"===n,i=a?[207,230,241]:[11,85,119],c=[46,172,104],d=a?[255,122,102]:[192,52,29],u=e.getContext("2d"),h=e.clientWidth||88,l=e.clientHeight||95,s=Math.min(2,window.devicePixelRatio||1);e.width=Math.round(h*s),e.height=Math.round(l*s);var w=.43*h,f=h/2,m=l/2,b=.13,v=h/107*2.1,g=o.outer.length;function M(e,t){var n=43758.5453*Math.sin(12.9898*e+78.233*t);return n-Math.floor(n)}function y(e,t,n){return[e[0]+(t[0]-e[0])*n,e[1]+(t[1]-e[1])*n,e[2]+(t[2]-e[2])*n]}function p(e){return(e=Math.max(0,Math.min(1,e)))*e*(3-2*e)}var C=[];function S(e,t,n,r){for(var o=0;o<e.length;o++)for(var a=0;a<r.length;a++)C.push({x:e[o][0],y:e[o][1],z:r[a],g:t,i:o,c:n})}S(o.outer,"o",i,[b,-.13]),S(o.key,"k",i,[b,-.13]),S(o.plinth,"p",c,[b,-.13]);for(var L=0;L<g;L+=3)C.push({x:o.outer[L][0],y:o.outer[L][1],z:0,g:"o",i:L,c:i,rim:1});for(var R=[],E=Math.PI*(3-Math.sqrt(5)),I=0;I<C.length;I++){var x=1-2*(I+.5)/C.length,O=Math.sqrt(1-x*x),A=I*E;R.push([O*Math.cos(A)*.78,.78*x,O*Math.sin(A)*.78,.3*M(I,4.4)])}for(var k=function(e,t,n){return e.map(function(e,t){return t}).sort(function(r,o){return Math.atan2(n(e[r]),t(e[r]))-Math.atan2(n(e[o]),t(e[o]))})},B=k(C,function(e){return e.x},function(e){return e.y}),Q=k(R,function(e){return e[0]},function(e){return e[1]}),T=[],U=0;U<B.length;U++)T[B[U]]=R[Q[U]];function z(e){var n,r,o=1,a=[],b=null,S=0;"connecting"===t?(n=.55*Math.sin(.9*e),r=.1*Math.sin(.6*e),S=1.05*Math.sin(1.5*e)):"solving"===t?(b=function(e){var t=e%4.8;return t<2.5?{m:t<1.6?0:(t-1.6)/.9,yaw:2*Math.PI*p(t/2.5)}:t<3.9?{m:1,yaw:.15*Math.sin(Math.PI*(t-2.5)/1.4)}:{m:1-(t-3.9)/.9,yaw:0}}(e),n=b.yaw,r=.14):"broken"===t?(n=.3+.05*Math.sin(.7*e),r=.12+.02*Math.sin(.5*e)):(n=.2*Math.sin(.45*e),r=.06*Math.sin(.3*e),o=1+.02*Math.sin(1.7*e));for(var L=Math.sin(n),R=Math.cos(n),E=Math.sin(r),I=Math.cos(r),x=0;x<C.length;x++){var O=C[x],A=O.x,k=O.y,B=O.z,Q=1,U=O.c,z=0;if("connecting"===t&&"p"!==O.g){var P=Math.exp(-(A-S)*(A-S)/.012);U=y(U,c,.85*P),z=.9*P}else if("connecting"===t)Q=.55+.45*(.5+.5*Math.sin(3*e-5*A));else if(b){var F=T[x],D=p(1.3*b.m-F[3]);A=F[0]+(A-F[0])*D,k=F[1]+(k-F[1])*D,B=F[2]+(B-F[2])*D,"p"===O.g&&(U=y(i,c,D))}else if("broken"===t){var q=O.i/g;if("o"===O.g&&q>=.02&&q<=.2){var j=3.4,K=((e-(q-.02)/.18*.5)%j+j)%j/j;if(K<.6){var N=K/.6;k+=.95*N*N,A+=.2*N*(M(O.i,3.1)-.3),B+=.3*N*(M(O.i,9.2)-.5),Q=1-p(N),U=d}else K<.75?Q=0:(Q=p((K-.75)/.25),U=y(d,i,Q))}else"k"===O.g?Q=.3+.25*(.5+.5*Math.sin(2.3*e+O.i)):"p"===O.g&&(Q=.35)}else"p"===O.g&&(Q=.55+.45*(.5+.5*Math.sin(1.6*e-4*A)));if(!(Q<.02)){var W=(A*=o)*R+(B*=o)*L,_=-A*L+B*R,H=(k*=o)*I-_*E,V=k*E+_*I,G=Math.max(0,Math.min(1,(V+.9)/1.8));a.push({x:f+W*w,y:m+H*w,z:V,r:v*(.7+.55*G+z)*(O.rim?.8:1),a:Q*(.3+.7*G),c:U})}}a.sort(function(e,t){return e.z-t.z}),u.setTransform(s,0,0,s,0,0),u.clearRect(0,0,h,l);for(var J=0;J<a.length;J++){var X=a[J];u.fillStyle="rgba("+Math.round(X.c[0])+","+Math.round(X.c[1])+","+Math.round(X.c[2])+","+X.a.toFixed(3)+")",u.beginPath(),u.arc(X.x,X.y,X.r,0,6.283),u.fill()}}if("number"==typeof r)return z(r),function(){};if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return z(1.2),function(){};var P=0,F=performance.now();return P=requestAnimationFrame(function e(t){z((t-F)/1e3),P=requestAnimationFrame(e)}),function(){cancelAnimationFrame(P)}}var stopOrb=null,orbKind="solving";function bwStartOrb(){var e=document.getElementById("bw-orb");e&&(stopOrb&&stopOrb(),stopOrb="hidden"!==document.visibilityState?bwOrb(e,orbKind,bwTheme):function(){})}if(bwStartOrb(),bwReducedMotionMQ&&(bwReducedMotionMQ.addEventListener?bwReducedMotionMQ.addEventListener("change",bwStartOrb):bwReducedMotionMQ.addListener&&bwReducedMotionMQ.addListener(bwStartOrb)),bwColorSchemeMQ){var bwOnColorSchemeChange=function(){bwTheme=bwColorSchemeMQ.matches?"dark":"light",bwStartOrb()};bwColorSchemeMQ.addEventListener?bwColorSchemeMQ.addEventListener("change",bwOnColorSchemeChange):bwColorSchemeMQ.addListener&&bwColorSchemeMQ.addListener(bwOnColorSchemeChange)}function showRetry(){var e=document.getElementById("bw-retry");e&&e.classList.add("bw-visible")}function challenge_error(){var e=document.getElementById("bw-dot");e&&e.classList.add("bw-dot-error");var t=document.getElementById("bw-status-decor");t&&(t.style.display="none");var n=document.getElementById("challenge-error");if(n){var r=document.createElement("span");r.setAttribute("aria-hidden","true"),r.textContent="ERR ",n.textContent="",n.appendChild(r),n.appendChild(document.createTextNode("The challenge could not load. Check your connection, then reload."))}var o=document.getElementById("bw-title");o&&(o.textContent="VERIFICATION FAILED"),showRetry(),orbKind="broken",bwStartOrb()}document.addEventListener("visibilitychange",bwStartOrb),window.setTimeout(showRetry,5e3);var retryBtn=document.getElementById("challenge-retry");function powCore(e){var t=new Int32Array([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298]),n=new Int32Array(64),r=new Int32Array(8),o=new Uint8Array(0);function a(e,a){var i,c,d,u=String(a),h=e.length+u.length,l=h+72>>6<<6;for(o.length<l&&(o=new Uint8Array(l)),o.set(e,0),i=0;i<u.length;i++)o[e.length+i]=u.charCodeAt(i);for(o[h]=128,i=h+1;i<l-4;i++)o[i]=0;var s=8*h;for(o[l-4]=s>>>24,o[l-3]=s>>>16&255,o[l-2]=s>>>8&255,o[l-1]=255&s,r[0]=1779033703,r[1]=3144134277,r[2]=1013904242,r[3]=2773480762,r[4]=1359893119,r[5]=2600822924,r[6]=528734635,r[7]=1541459225,d=0;d<l;d+=64){for(i=0;i<16;i++)c=d+4*i,n[i]=o[c]<<24|o[c+1]<<16|o[c+2]<<8|o[c+3];for(i=16;i<64;i++){var w=n[i-15],f=n[i-2],m=(w>>>7|w<<25)^(w>>>18|w<<14)^w>>>3,b=(f>>>17|f<<15)^(f>>>19|f<<13)^f>>>10;n[i]=n[i-16]+m+n[i-7]+b|0}var v=r[0],g=r[1],M=r[2],y=r[3],p=r[4],C=r[5],S=r[6],L=r[7];for(i=0;i<64;i++){var R=L+((p>>>6|p<<26)^(p>>>11|p<<21)^(p>>>25|p<<7))+(p&C^~p&S)+t[i]+n[i]|0,E=((v>>>2|v<<30)^(v>>>13|v<<19)^(v>>>22|v<<10))+(v&g^v&M^g&M)|0;L=S,S=C,C=p,p=y+R|0,y=M,M=g,g=v,v=R+E|0}r[0]=r[0]+v|0,r[1]=r[1]+g|0,r[2]=r[2]+M|0,r[3]=r[3]+y|0,r[4]=r[4]+p|0,r[5]=r[5]+C|0,r[6]=r[6]+S|0,r[7]=r[7]+L|0}return 0===r[0]?32+Math.clz32(r[1]):Math.clz32(r[0])}return e&&(e.onmessage=function(t){for(var n=t.data,r=new Uint8Array(n.prefix),o=n.start,i=0,c=Date.now();;){if(i++,a(r,o)>=n.difficulty)return void e.postMessage({nonce:o,tried:i});o+=n.step,!(4095&i)&&Date.now()-c>250&&(e.postMessage({tried:i}),i=0,c=Date.now())}}),a}retryBtn&&retryBtn.addEventListener("click",function(){window.location.reload()}),document.addEventListener("error",function(e){"SCRIPT"===e.target.tagName&&e.target.hasAttribute("data-challenge-script")&&challenge_error()},!0),function(){var e=document.getElementById("form").getAttribute("data-random"),t=parseInt("16",10);t>=16&&t<=28||(t=16);for(var n=new Uint8Array(e.length),r=0;r<e.length;r++)n[r]=255&e.charCodeAt(r);var o=document.getElementById("bw-pow-count"),a=[],i=0,c=null,d=0,u=!1,h=!1;function l(){o&&(o.textContent=d.toLocaleString())}function s(){for(var e=0;e<a.length;e++)a[e].terminate();a=[],i=0,c&&(URL.revokeObjectURL(c),c=null)}function w(e){if(!u){u=!0,s(),l();var t=document.getElementById("challenge"),n=document.getElementById("form");t&&n&&(t.value=String(e),n.submit())}}function f(){if(!u&&!h){h=!0,s();var e=powCore(null),r=0;!function o(){for(var a=performance.now()+12;performance.now()<a;){for(var i=0;i<256;i++,r++)if(e(n,r)>=t)return d+=i+1,void w(r);d+=256}l(),requestAnimationFrame(o)}()}}try{if(!(window.Worker&&window.Blob&&window.URL&&URL.createObjectURL))throw new Error("no workers");!function(){var e=Math.min(navigator.hardwareConcurrency||2,8),r=URL.createObjectURL(new Blob(["("+powCore.toString()+")(self);"],{type:"text/javascript"}));c=r;var o=r;window.trustedTypes&&window.trustedTypes.createPolicy&&(o=window.trustedTypes.createPolicy("bw-pow",{createScriptURL:function(e){if(0!==e.indexOf("blob:"))throw new TypeError("bw-pow accepts blob: URLs only");return e}}).createScriptURL(r));var u=!1;function h(e){u=!0,d+=e.data.tried,void 0!==e.data.nonce?w(e.data.nonce):l()}function s(e){e&&e.preventDefault&&e.preventDefault(),this.terminate(),i--,(!u||i<=0)&&f()}for(var m=0;m<e;m++){var b=new Worker(o);b.onmessage=h,b.onerror=s,b.postMessage({prefix:n,start:m,step:e,difficulty:t}),a.push(b),i++}setTimeout(function(){u||f()},3e3)}()}catch(e){f()}}()</script>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="_html" xmlns="http://www.w3.org/1999/xhtml" lang="sk-SK">
+<head><title>
+	Schôdze : Hlasovanie : Výsledky vyhľadávania v hlasovaniach NR SR - Národná rada Slovenskej republiky
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link id="_resetStylesheet" href="CSS/css_reset.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_gridStylesheet" href="CSS/grid.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_formalizeStylesheet" href="CSS/formalize.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_formsStylesheet" href="CSS/forms.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_mainPageStyleSheet" href="CSS/nrsr.css" type="text/css" rel="stylesheet" media="projection, screen, tv" /><link id="_jqueryUIStylesheet" href="CSS/smoothness/jquery-ui-1.8.5.custom.css" type="text/css" rel="Stylesheet" media="projection, screen, tv" /><link id="_printStylesheet" href="CSS/print.css" type="text/css" rel="stylesheet" media="print" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta property="og:image" content="favicon.ico" /><link href="favicon.ico" rel="shortcut icon" />
+
+    <script type="text/javascript">
+      //<![CDATA[
+      window.name = 'nrsr_main';
+      if (top != self) { top.location.replace(self.location.href); }
+      //]]>
+    </script>
+    <!--[if IE 6]>
+    <style type="text/css">
+      html    { overflow-x: hidden}
+      body    { padding-right: 1em }
+    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <style>
+      li { zoom: 1;} /* haslayout=true */
+    </style>
+    <![endif]-->
+<meta name="Description" content="Stránka Národnej rady Slovenskej republiky. Národná rada Slovenskej republiky (ďalej len &quot;národná rada&quot;) je jediným ústavodarným a zákonodarným orgánom Slovenskej republiky. Je orgánom štátnej moci a od jej primárneho postavenia v republike je odvodené postavenie ostatných štátnych orgánov. Ako volený orgán reprezentuje suverenitu štátu a ľudu. Plní závažnú úlohu pri budovaní Slovenskej republiky ako moderného a demokratického štátu a pri zavádzaní sociálnej a ekologicky orientovanej trhovej ekonomiky. Poslanci  národnej rady sú volení vo všeobecných, rovných a priamych voľbách tajným hlasovaním. Počet poslancov je 150 a ich funkčné obdobie trvá štyri roky." /></head>
+<body id="_body" class="section-108 p-section-106 p-section-96">
+  <form name="_f" method="post" action="Default.aspx?sid=schodze%2fhlasovanie%2fvyhladavanie_vysledok&amp;CisObdobia=9" id="_f">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['_f'];
+if (!theForm) {
+    theForm = document._f;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/web/WebResource.axd?d=pSSkbbt2tAdtntWEuWgeENiJBrV0aGiWXGjGDRSV8c7cfmNZTxjHVSfWiC2Ht0SUz3OrKRMyK0Y8hdIfwpt7DJHVXFE1&amp;t=637811807941659717" type="text/javascript"></script>
+
+
+<script src="/web/ScriptResource.axd?d=anyy9mmquGM-qa-uOZWQysE699IUN0V2tmsXohOMl6c4uqIlVQ-iz8bvNOXQdYVJ1ypJ5l8dfQwisoAt9yOM8jwgtdJBrDdDE3DQJV23HGTxicE1A93jhBZbnG8qMmiVWerap_tJdZQbRPvUMJyC1KkjO7o1&amp;t=ffffffff934f7aa9" type="text/javascript"></script>
+<script src="/web/ScriptResource.axd?d=8QnyJP9gqXQhXVi5a4icaSoHIVkCiHh6c4fZcCQ7Bkl2-89_97YDDytX0JBxz7Z7WyFM62FodHDxrdSvh5yTbocdcMXkRNXDfkSmmbuw9ns0c8LAs8Q9Xl6iK2ftcfkx6ju86Yah543DyctOOnJrdFz1Wd1SvGsqrNftBFjWHtD0FF_N0&amp;t=ffffffff934f7aa9" type="text/javascript"></script>
+<script src="JS/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="JS/jquery.formalize.js" type="text/javascript"></script>
+<script src="JS/jquery.colorbox.min.js" type="text/javascript"></script>
+<script src="JS/jquery-ui.min.js" type="text/javascript"></script>
+<script src="JS/jquery.ui.datepicker-sk.js" type="text/javascript"></script>
+<script src="JS/jquery.utils.js" type="text/javascript"></script>
+<script src="JS/jquery.sortpage.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Type.registerNamespace('exeIT.NRSR.Web');
+exeIT.NRSR.Web.CalendarService=function() {
+exeIT.NRSR.Web.CalendarService.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+exeIT.NRSR.Web.CalendarService.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return exeIT.NRSR.Web.CalendarService._staticInstance.get_path();},
+RenderCalendar:function(month,year,app,lang,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'RenderCalendar',true,{month:month,year:year,app:app,lang:lang},succeededCallback,failedCallback,userContext); }}
+exeIT.NRSR.Web.CalendarService.registerClass('exeIT.NRSR.Web.CalendarService',Sys.Net.WebServiceProxy);
+exeIT.NRSR.Web.CalendarService._staticInstance = new exeIT.NRSR.Web.CalendarService();
+exeIT.NRSR.Web.CalendarService.set_path = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_path(value); }
+exeIT.NRSR.Web.CalendarService.get_path = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_path(); }
+exeIT.NRSR.Web.CalendarService.set_timeout = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_timeout(value); }
+exeIT.NRSR.Web.CalendarService.get_timeout = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_timeout(); }
+exeIT.NRSR.Web.CalendarService.set_defaultUserContext = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_defaultUserContext(value); }
+exeIT.NRSR.Web.CalendarService.get_defaultUserContext = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_defaultUserContext(); }
+exeIT.NRSR.Web.CalendarService.set_defaultSucceededCallback = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_defaultSucceededCallback(value); }
+exeIT.NRSR.Web.CalendarService.get_defaultSucceededCallback = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_defaultSucceededCallback(); }
+exeIT.NRSR.Web.CalendarService.set_defaultFailedCallback = function(value) { exeIT.NRSR.Web.CalendarService._staticInstance.set_defaultFailedCallback(value); }
+exeIT.NRSR.Web.CalendarService.get_defaultFailedCallback = function() { return exeIT.NRSR.Web.CalendarService._staticInstance.get_defaultFailedCallback(); }
+exeIT.NRSR.Web.CalendarService.set_path("/web/Services/CalendarService.asmx");
+exeIT.NRSR.Web.CalendarService.RenderCalendar= function(month,year,app,lang,onSuccess,onFailed,userContext) {exeIT.NRSR.Web.CalendarService._staticInstance.RenderCalendar(month,year,app,lang,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DB1B4C9A" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="axlP61WxO7jewghpZ6JDo/+EErmNwgagEcJ8G3InY0XDkqWudCoaJiAvp0046Fs5w6RG1nRGrVF5NPzCX56eiUdaqWgjqStG5DYc3P41Yu8Zl9hpNvIwAvhn/OM4+BiqOcgPWJNxmULlIc6XGFHx/6qrDCZmXSnWbVKjRNaLjN1c+28zM9L7KLY9+hwA8hJhWnCJ+wiX4nFHcwGV6khssmgnFjdM2bjXGYjyjHMTNxJXiRKtgHBBtfnZ/K9M382Cte82xeCU25YA0eBFDmMyBS59Aar+fD9eYwhwhIlnkhXLfrhddSGHY0W6ydOeG/rCWUEZuBYuw/f0xWVuBGbgR5ct/0v4Iei3GzNRLrAEe3mQlSmBMxC9CThIBq0D1SFOOYTKLdfSE13irBcB5XyABv5aAh8cyXOQRDs0UMDd8SyFhZ5RC59lOREVYmZO+wAvchoXMl7Li7qRFJOpUNcT3pAIRXqSHNf9MRdgr5MjDiB2K1I0AvdvClmgRLAjE/OyAcgf3PG9n7xkXIBykG6mQbYze/us1+Cw1WM6hFr4yISR+i8YrgUBmsVhbML3gAtLg4c3AR0i8vVMroAVs5gOdBwLVbgFauJJdSa6mBMXx7soxzSdtezN6Dpypg2VKRFYy/BunuoAl8YFD8dPhJmc5iy/j1d8tV4kDLFp19k7Lwjre4WDCKL/Tx8ACJHhjSs7DbudU/s4yU+CYtpBfB1mDivazYlT9290i0sZDUdskAJxXRCKRkrQ1mLuVkFQuEmPJOhzWb7jtN5IDM4+XpZ3xtYLEFGXoXSK02Mi5stIvBPW+0x1EjbGwCOWsvwTN+JIx5aVnl3Cb7LRdra6w9TcKVWU4MwleetwIASJiG6xPMu7zldU/gltMsqoW+hL4yXHQpUrJ3DNeGc/o7tLpOddOHkYeonjUwm3MHHMF4L0ANHZgb+/D7zRhqtWUiTzL+j67f4ZY0GSCo+g88ar5EHZbPqWTbvunPq+7i5Des4lkqUBRQH5emc45jPKmdh43CvL5GQBNi3cD2WcGMZkakmRcBxitg086SA/GYA6pM7ryZb3blKBMefhcnSL6hU0qUk/kxkBDZV7BZBpq24gO6cOB7QEaGE=" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('_globalScriptManager', document.getElementById('_f'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var lcCode = 'sk';
+      //]]>
+    </script>
+    <div class="page_header">
+      <div class="container_16">
+        <div class="grid_6 prefix_1 page_title">
+          <a href="./?" id="_pageTitle" class="lang_sk" title="Národná rada Slovenskej republiky"><span>Národná rada Slovenskej republiky</span></a>
+        </div>
+
+        
+        <div class="prefix_3 grid_6 page_top_menu">
+          <span class="float_right">
+            
+            
+            <a id="_switchToLangEN" title="English version of website" class="lang" href="LanguageSwitch.aspx?lang=en"><img src="img/layout/FlagEN.gif" alt="English version of website" /></a>
+            
+          </span>
+          <span class="float_right">
+            <a id="_contactHyperlink" class="contact" href="./?sid=contact">Kontakt</a> |
+            <a id="_sitemapHyperlink" href="./?sid=sitemap">Mapa stránok</a>
+          </span>
+        </div>
+
+        <div id="_searchPanel" class="prefix_3 grid_6 page_top_search">
+          <span class="float_right">
+            <input name="_searchText" type="text" id="_searchText" class="search_placeholder_text" />
+            
+            <input type="image" name="_doSearch" id="_doSearch" src="Img/layout/search_icon.png" alt="Vyhľadať" style="border-width:0px;" />
+          </span>
+        </div>
+
+        <div class="clear"></div>
+
+        
+        <div class="grid_16 menu">
+          <ul><li class=""><a href="?sid=home" class="home"><span>Úvod</span></a></li><li class="menu_level_0"><a href="?sid=nrsr">Národná rada</a><ul><li class="menu_level_1"><a href="?sid=nrsr/poslanie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=nrsr/nrsreu">Národná rada a Európska únia</a><ul><li class="menu_level_2"><a href="?sid=nrsr/nrsreu/posobnost">Pôsobnosť NR SR v&nbsp;záležitostiach EÚ</a></li><li class="menu_level_2"><a href="?sid=eu/medziparlamentna_spolupraca/ssez">Systém sledovania európskych záležitostí</a></li><li class="menu_level_2"><a href="?sid=eu/medziparlamentna_spolupraca/ipex">Medziparlamentná výmena informácií o EÚ (IPEX)</a></li><li class="menu_level_2"><a href="?sid=skpres">Slovenské predsedníctvo v Rade EU a jeho parlamentná dimenzia</a></li></ul></li><li class="menu_level_1"><a href="?sid=eu">Zahraničné vzťahy</a><ul><li class="menu_level_2"><a href="?sid=eu/medziparlamentna_spolupraca">Medziparlamentná spolupráca</a><ul><li class="menu_level_3"><a href="?sid=eu/medziparlamentna_spolupraca/eurovoc">Eurovoc</a></li><li class="menu_level_3"><a href="?sid=eu/medziparlamentna_spolupraca/ecprd">ECPRD</a></li></ul></li><li class="menu_level_2"><a href="?sid=eu/delegacie">Parlamentné delegácie</a><ul><li class="menu_level_3"><a href="?sid=eu/delegacie/postavenie">Postavenie a právomoci</a></li><li class="menu_level_3"><a href="?sid=eu/delegacie/zoznam">Zoznam</a></li></ul></li><li class="menu_level_2"><a href="?sid=eu/sp">Skupiny priateľstva</a><ul><li class="menu_level_3"><a href="?sid=eu/sp/postavenie">Postavenie a právomoci</a></li><li class="menu_level_3"><a href="?sid=eu/sp/zoznam">Zoznam</a></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/historia">História NR SR</a></li></ul></li><li class="menu_level_0"><a href="?sid=predseda">Predseda</a><ul><li class="menu_level_1"><a href="?sid=predseda/zivotopis">Predseda Národnej rady Slovenskej republiky</a></li><li class="menu_level_1"><a href="?sid=predseda/kompetencie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=predseda/rozhodnutia/redirect">Rozhodnutia predsedu NR SR</a><ul><li class="menu_level_2"><a href="?sid=predseda/rozhodnutia/zakladne">Rozhodnutia predsedu NR SR</a></li><li class="menu_level_2"><a href="?sid=predseda/rozhodnutia/neucast">Rozhodnutia o ospravedlnení neúčasti poslancov</a></li></ul></li><li class="menu_level_1"><a href="?sid=predseda/infoservis">Informačný servis</a><ul><li class="menu_level_2"><a href="?sid=predseda/informacie/podujatia">Kalendár podujatí</a></li><li class="menu_level_2"><a href="?sid=predseda/informacie/tlac">Tlačové správy</a></li><li class="menu_level_2"><a href="?sid=predseda/informacie/konf">Tlačové konferencie</a></li></ul></li><li class="menu_level_1"><a href="?sid=predseda/video">Videogaléria</a></li><li class="menu_level_1"><a href="?sid=predseda/napistePredsedovi">Napíšte predsedovi NR SR</a></li><li class="menu_level_1"><a href="?sid=predseda/fotogaleria/redirect">Fotogaléria</a></li><li class="menu_level_1"><a href="?sid=predseda/kontakty/predseda">Kancelária predsedu NR SR</a></li><li class="menu_level_1"><a href="?sid=predseda/history">Predchádzajúci predsedovia NR SR</a></li></ul></li><li class="menu_level_0"><a href="?sid=podpredsedovia">Podpredsedovia</a></li><li class="menu_level_0"><a href="?sid=poslanci">Poslanci</a><ul><li class="menu_level_1"><a href="?sid=poslanci/poslanie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=poslanci/zasadaci_poriadok">Zasadací poriadok</a></li><li class="menu_level_1"><a href="?sid=poslanci/volby2020">Zvolení poslanci Národnej rady Slovenskej republiky</a></li><li class="menu_level_1"><a href="?sid=poslanci/zoznam_abc">Zoznam poslancov</a></li><li class="menu_level_1"><a href="?sid=poslanci/kluby">Kluby</a><ul><li class="menu_level_2"><a href="?sid=poslanci/kluby/postavenie">Postavenie a právomoci</a></li><li class="menu_level_2"><a href="?sid=poslanci/kluby/zoznam">Zoznam</a></li></ul></li><li class="menu_level_1"><a href="?sid=poslanci/ucast">Účasť na schôdzi</a></li><li class="menu_level_1"><a href="?sid=poslanci/zmeny">Zmeny v poslaneckom zbore</a></li><li class="menu_level_1"><a href="?sid=poslanci/asistenti">Asistenti a poslanecké kancelárie</a></li><li class="menu_level_1"><a href="?sid=poslanci/publikacia">Publikácia</a></li></ul></li><li class="menu_level_0"><a href="?sid=vybory">Výbory</a><ul><li class="menu_level_1"><a href="?sid=vybory/kompetencie">Postavenie a právomoci</a></li><li class="menu_level_1"><a href="?sid=vybory/zoznam">Zoznam</a></li><li class="menu_level_1"><a href="?sid=vybory/schodze/redirect">Schôdze</a><ul><li class="menu_level_2"><a href="?sid=vybory/schodze">Prehľady</a></li></ul></li><li class="menu_level_1"><a href="?sid=vybory/documents">Dokumenty výborov</a></li><li class="menu_level_1"><a href="?sid=vybory/informacie">Informácie</a></li></ul></li><li class="menu_level_0 selected"><a href="?sid=schodze" class="selected"><span>Schôdze</span></a><ul><li class="menu_level_1"><a href="?sid=schodze/harmonogram">Harmonogram schôdzí</a></li><li class="menu_level_1"><a href="?sid=schodze/zoznam">Program schôdzí</a></li><li class="menu_level_1"><a href="?sid=schodze/informacia_denne_rokovanie_vysledok">Informácia o výsledku denného rokovania</a></li><li class="menu_level_1"><a href="?sid=schodze/rozprava/redirect">Rozprava</a><ul><li class="menu_level_2"><a href="?sid=schodze/live">Živé vysielanie a videoarchív</a></li><li class="menu_level_2"><a href="?sid=schodze/rozprava">Textový prepis rozpravy</a></li></ul></li><li class="menu_level_1"><a href="?sid=schodze/cpt/redirect">Parlamentné tlače</a></li><li class="menu_level_1"><a href="?sid=schodze/nrepdn/redirect">Pozmeňujúce a doplňujúce návrhy</a></li><li class="menu_level_1"><a href="?sid=schodze/uznesenia/redirect">Uznesenia</a></li><li class="menu_level_1"><a href="?sid=schodze/hlasovanie">Hlasovanie</a><ul><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/schodze">Podľa schôdzí</a></li><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/vyhladavanie_vysledok">Vyhľadávanie v hlasovaniach</a></li><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/poslanci_vysledok">Štatistika hlasovaní poslancov</a></li><li class="menu_level_2"><a href="?sid=schodze/hlasovanie/kluby_vysledok">Štatistika hlasovaní klubov</a></li></ul></li><li class="menu_level_1"><a href="?sid=schodze/dochadzka">Účasť na schôdzach</a><ul><li class="menu_level_2"><a href="?sid=poslanci/ospravedlnenia_result">Zoznam žiadostí o ospravedlnenie</a></li><li class="menu_level_2"><a href="?sid=schodze/absenceSpeakerDecisions">Rozhodnutia predsedu NR SR o ospravedlnení neúčasti poslancov</a></li></ul></li><li class="menu_level_1"><a href="?sid=schodze/hodina_otazok">Hodina otázok</a><ul></ul></li><li class="menu_level_1"><a href="?sid=schodze/interpelacie">Interpelácie</a></li></ul></li><li class="menu_level_0"><a href="?sid=zakony">Zákony</a><ul><li class="menu_level_1"><a href="?sid=zakony/prehlad">Prehľady zákonov</a><ul><li class="menu_level_2"><a href="?sid=zakony/prehlad/posledneSchvalene">Posledné schválené zákony</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/neschvalene">Neschválené návrhy zákonov</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/poslanecke">Poslanecké návrhy zákonov</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/poslednaSchodza">Návrhy zákonov na programe poslednej schôdze</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/predlozene">Návrhy zákonov predložené NR SR</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/vratene">Zákony vrátené prezidentom SR</a></li><li class="menu_level_2"><a href="?sid=zakony/prehlad/slk">Zákony schválené v skrátenom legislatívnom konaní</a></li></ul></li><li class="menu_level_1"><a href="?sid=zakony/sslp">Vyhľadávanie v návrhoch zákonov</a><ul><li class="menu_level_2"><a href="?sid=zakony/eurovoc_search">Vyhľadávanie termínmi tezaura Eurovoc</a></li></ul></li></ul></li><li class="menu_level_0"><a href="?sid=documents">Dokumenty</a><ul><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/zakladne">Základné dokumenty</a></li><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/vyhlasenia">Vyhlásenia a deklarácie</a></li><li class="menu_level_1"><a href="?sid=schodze/cpt">Parlamentné tlače</a><ul><li class="menu_level_2"><a href="?sid=nrsr/materialy">Materiály doručené NR SR</a></li></ul></li><li class="menu_level_1"><a href="?sid=predseda/rozhodnutia_result">Rozhodnutia predsedu NR SR</a></li><li class="menu_level_1"><a href="?sid=schodze/uznesenia">Uznesenia schôdze NR SR</a></li><li class="menu_level_1"><a href="?sid=schodze/nrepdn">Pozmeňujúce a doplňujúce návrhy</a></li><li class="menu_level_1"><a href="?sid=vybory/stat_result">Dokumenty výborov</a></li><li class="menu_level_1"><a href="?sid=documents/dk">Digitálna knižnica (archív)</a></li><li class="menu_level_1"><a href="?sid=oznamenia_funkcionarov">Oznámenia verejných funkcionárov</a></li><li class="menu_level_1"><a href="?sid=financne_spravy_stran">Výročné správy politických strán</a><ul><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2014">Výročné správy politických strán za rok 2014</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2013">Výročné správy politických strán za rok 2013</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2012">Výročné správy politických strán za rok 2012</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2011">Výročné správy politických strán za rok 2011</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2010">Výročné správy politických strán za rok 2010</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2009">Výročné správy politických strán za rok 2009</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2008">Výročné správy politických strán za rok 2008</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2007">Výročné správy politických strán za rok 2007</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2006">Výročné správy politických strán za rok 2006</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2005">Výročné správy politických strán za rok 2005</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2004">Výročné správy politických strán za rok 2004</a></li><li class="menu_level_2"><a href="?sid=financne_spravy_stran/financne_spravy_2003">Výročné správy politických strán za rok 2003</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/publikacie">Publikácie</a></li><li class="menu_level_1"><a href="?sid=nrsr/dokumenty/statistiky_a_prehlady">Štatistiky a prehľady</a></li><li class="menu_level_1"><a href="?sid=nrsr/formulare">Formuláre</a></li><li class="menu_level_1"><a href="?sid=nrsr/mpforms">Informácie a tlačivá pre poslancov</a></li></ul></li><li class="menu_level_0"><a href="?sid=nrsr/kancelaria">Kancelária NR SR</a><ul><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/popis">Postavenie a pôsobnosť </a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/veduci">Vedúci Kancelárie NR SR</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/orgstruc">Organizačná štruktúra</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/organizacnyporiadok">Organizačný poriadok</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/rozpocet">Rozpočet a záverečný účet Kancelárie NR SR  </a></li><li class="menu_level_1"><a href="https://www.nrsr.sk/web/Default.aspx?sid=nrsr/kancelaria/zoznamutajovanychskutocnosti">Zoznam utajovaných skutočností</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/zakladnezasadymanipulacie">Základné zásady manipulácie s limitovanými informáciami v pôsobnosti Kancelárie NR SR</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/opk">Osobitné ponukové konanie</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/praca">Voľné pracovné miesta</a></li><li class="menu_level_1"><a href="?sid=obligatoryInfo">Povinne zverejňované informácie</a><ul><li class="menu_level_2"><a href="?sid=invoices">Faktúry</a><ul><li class="menu_level_3"><a href="?sid=invoices/2011">2011</a></li><li class="menu_level_3"><a href="?sid=invoices/2012">2012</a></li><li class="menu_level_3"><a href="?sid=invoices/2013">2013</a></li><li class="menu_level_3"><a href="?sid=invoices/2014">2014</a></li><li class="menu_level_3"><a href="?sid=invoices/2015">2015</a></li><li class="menu_level_3"><a href="?sid=invoices/2016">2016</a></li><li class="menu_level_3"><a href="?sid=invoices/2017">2017</a></li><li class="menu_level_3"><a href="?sid=invoices/2018">2018</a></li><li class="menu_level_3"><a href="?sid=invoices/2019">2019</a></li><li class="menu_level_3"><a href="?sid=invoices/2020">2020</a></li><li class="menu_level_3"><a href="?sid=invoices/2021">2021</a></li><li class="menu_level_3"><a href="?sid=invoices/2022">2022</a></li><li class="menu_level_3"><a href="?sid=invoices/2023">2023</a></li><li class="menu_level_3"><a href="?sid=invoices/2024">2024</a></li><li class="menu_level_3"><a href="?sid=invoices/2025">2025</a></li><li class="menu_level_3"><a href="?sid=invoices/2026">2026</a></li></ul></li><li class="menu_level_2"><a href="?sid=orders">Objednávky</a><ul><li class="menu_level_3"><a href="?sid=orders/2011">2011</a></li><li class="menu_level_3"><a href="?sid=orders/2012">2012</a></li><li class="menu_level_3"><a href="?sid=orders/2013">2013</a></li><li class="menu_level_3"><a href="?sid=orders/2014">2014</a></li><li class="menu_level_3"><a href="?sid=orders/2015">2015</a></li><li class="menu_level_3"><a href="?sid=orders/2016">2016</a></li><li class="menu_level_3"><a href="?sid=orders/2017">2017</a></li><li class="menu_level_3"><a href="?sid=orders/2018">2018</a></li><li class="menu_level_3"><a href="?sid=orders/2019">2019</a></li><li class="menu_level_3"><a href="?sid=orders/2020">2020</a></li><li class="menu_level_3"><a href="?sid=orders/2021">2021</a></li><li class="menu_level_3"><a href="?sid=orders/2022">2022</a></li><li class="menu_level_3"><a href="?sid=orders/2023">2023</a></li><li class="menu_level_3"><a href="?sid=orders/2024">2024</a></li><li class="menu_level_3"><a href="?sid=orders/2025">2025</a></li><li class="menu_level_3"><a href="?sid=orders/2026">2026</a></li></ul></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/predpisy">Služobné predpisy</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/Oznamprotičin">Oznamovanie protispoločenskej činnosti</a></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/pi/pi">Parlamentný inštitút</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/oa">Parlamentný výskum a vzdelávanie</a><ul><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/knihy">Knihy</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/vyrsprava">Výročná správa NR SR a K NR SR</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/publikacie">Parlamentné publikácie</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/materialy">Materiály</a></li><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/oa/stazeVS">Stáž študentov vysokých škôl v K NR SR</a></li></ul></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/archiv">Oddelenie Parlamentný archív</a><ul></ul></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/kniznica">Oddelenie Parlamentná knižnica</a></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/pi/staze">Stáže v Kancelárii NR SR</a><ul><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/pi/staze/stazeVS">Stáže študentov vysokých škôl</a></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/staz">Stáž v Kancelárii NR SR</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/staz/aktualna_ponuka">Aktuálna ponuka</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/ou">GDPR - Ochrana osobných údajov, Privacy Policy</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/ou/13">podľa článku 13 Nariadenia</a></li><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/ou/14">podľa článku 14 Nariadenia</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/vo">Verejné obstarávanie</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/verejne_obstaravanie_trhkonz">Prípravné trhové konzultácie</a><ul><li class="menu_level_3"><a href="?sid=nrsr/kancelaria/verejne_obstaravanie_trhkonz/SSLP">SSLP</a></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/VPP">Verejné pripomienkovanie projektov</a><ul><li class="menu_level_2"><a href="?sid=nrsr/kancelaria/VPP/Vybud-ISVS-SSLP">Vybudovanie ISVS SSLP</a></li></ul></li><li class="menu_level_1"><a href="?sid=nrsr/kancelaria/PREB">Ponuka prebytočného hnuteľného majetku</a></li></ul></li><li class="menu_level_0"><a href="?sid=publicAndMedia">Verejnosť a médiá</a><ul><li class="menu_level_1"><a href="?sid=publicAndMedia/contact">Kontakt</a></li><li class="menu_level_1"><a href="?sid=navstevyaprehliadky">Návštevy a prehliadky</a><ul><li class="menu_level_2"><a href="?sid=prehliadkaziadost">Žiadosť o prehliadku (on-line formulár)</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/info">Sprístupňovanie informácií</a><ul><li class="menu_level_2"><a href="?sid=publicAndMedia/info/general">Všeobecné informácie</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/how">Ako a kde podať žiadosť</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/repair">Opravné prostriedky</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/procedure">Postup pri vybavovaní žiadosti</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/info/payments">Sadzobník úhrad materiálnych nákladov</a></li><li class="menu_level_2"><a href="?sid=infoziadost">Žiadosť o sprístupnenie informácie (on-line formulár)</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/complaints">Sťažnosti</a><ul><li class="menu_level_2"><a href="?sid=publicAndMedia/complaints/procedure">Postup pri vybavovaní sťažností</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/petitions">Petície</a><ul><li class="menu_level_2"><a href="?sid=publicAndMedia/petitions/procedure">Postup pri vybavovaní petícií</a></li><li class="menu_level_2"><a href="?sid=publicAndMedia/petitions/peticnyHarok">Návrh na kandidáta na prezidenta Slovenskej republiky</a></li></ul></li><li class="menu_level_1"><a href="?sid=publicAndMedia/instructions">Prehľad predpisov, pokynov, inštrukcií</a></li><li class="menu_level_1"><a href="?sid=photo">Fotogaléria NR SR</a><ul><li class="menu_level_2"><a href="?sid=photoUdalosti">Fotogaléria udalostí</a></li><li class="menu_level_2"><a href="?sid=predseda/fotogaleria">Fotogaléria predsedu NR SR</a></li><li class="menu_level_2"><a href="?sid=photoPriestory">Fotogaléria priestorov NR SR</a><ul><li class="menu_level_3"><a href="?sid=photoPriestoryHlavnaBudova">Hlavná budova NR SR</a></li><li class="menu_level_3"><a href="?sid=photoPriestoryZupNamestie">Budova NR SR na Župnom námestí</a></li><li class="menu_level_3"><a href="?sid=photoPriestoryBAHrad">Bratislavský hrad</a><ul></ul></li></ul></li></ul></li><li class="menu_level_1"><a href="?sid=videos">Videogaléria NR SR</a></li><li class="menu_level_1"><a href="?sid=slovnik">Slovník parlamentných pojmov</a></li><li class="menu_level_1"><a href="?sid=faq">Často kladené otázky</a></li><li class="menu_level_1"><a href="?sid=adresar">Adresár inštitúcií</a></li><li class="menu_level_1"><a href="?sid=media">Pre médiá</a><ul><li class="menu_level_2"><a href="?sid=vseobecneinformacie">Všeobecné informácie</a></li><li class="menu_level_2"><a href="?sid=tvziadost">Žiadosť o preberanie TV signálu kamerového systému (on-line formulár)</a></li><li class="menu_level_2"><a href="?sid=akreditaciaziadost">Žiadosť o vydanie akreditačného preukazu (on-line formulár)</a></li></ul></li><li class="menu_level_1"><a href="?sid=udalosti">Udalosti</a></li><li class="menu_level_1"><a href="?sid=pressEventsMenu">Tlačové konferencie</a><ul><li class="menu_level_2"><a href="?sid=pressEvents">Pripravované tlačové konferencie</a></li><li class="menu_level_2"><a href="?sid=pressEventsSearch">Vyhľadávanie v tlačových konferenciách</a></li></ul></li></ul></li></ul>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div class="page_content">
+      
+      
+
+
+
+<div class="layout_section">
+  <div class="container_16 ">
+    <div class="grid_16 omega layout_section_content">
+      <div class="article">
+        <div class="breadcrumb">
+          <span class="breadcrumb-part"><a href="?sid=schodze">Schôdze</a></span><span class="breadcrumb-part"><a href="?sid=schodze/hlasovanie">Hlasovanie</a></span><span class="breadcrumb-part"><a href="?sid=schodze/hlasovanie/vyhladavanie_vysledok">Vyhľadávanie v hlasovaniach</a></span>
+        </div>
+        <h1>
+
+          Výsledky vyhľadávania v hlasovaniach NR SR
+          <span class="print"><a href="#" onclick="window.print(); return false;" title="Vytlačiť stránku / Print page">
+            <img src="img/layout/print_icon.gif" id="_sectionLayoutContainer_Img1" alt="Vytlačiť stránku / Print page" /></a></span>
+        </h1>
+        <div class="clear"></div>
+        <div id="_sectionLayoutContainer__panelContent">
+	
+        
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(function () {
+      $("#_sectionLayoutContainer_ctl01__rbs1").buttonset();
+    });
+  });
+</script>
+
+<div id="_sectionLayoutContainer_ctl01__searchParametersPanel" class="form" onkeypress="javascript:return WebForm_FireDefaultButton(event, '_sectionLayoutContainer_ctl01__searchButton')">
+		
+  <ul>
+    <li class="grid_6 alpha">
+      <label for="_sectionLayoutContainer_ctl01__textTextBox" id="_sectionLayoutContainer_ctl01__textLabel" title="Názov dokumentu, o ktorom sa hlasovalo" class="has_tooltip">Hľadaný text</label>
+      <input name="_sectionLayoutContainer$ctl01$_textTextBox" type="text" id="_sectionLayoutContainer_ctl01__textTextBox" />
+    </li>
+    <li class="grid_3">
+      <label for="_sectionLayoutContainer_ctl01__termNrCombo" id="_sectionLayoutContainer_ctl01__termNrLabel" title="Číslo volebného obdobia NR SR" class="has_tooltip">Volebné obdobie</label>
+      <select name="_sectionLayoutContainer$ctl01$_termNrCombo" onchange="javascript:setTimeout('__doPostBack(\'_sectionLayoutContainer$ctl01$_termNrCombo\',\'\')', 0)" id="_sectionLayoutContainer_ctl01__termNrCombo">
+			<option selected="selected" value="9">9</option>
+			<option value="8">8</option>
+			<option value="7">7</option>
+			<option value="6">6</option>
+			<option value="5">5</option>
+			<option value="4">4</option>
+			<option value="3">3</option>
+			<option value="2">2</option>
+
+		</select>
+    </li>
+    <li class="grid_3 omega">
+      <label for="_sectionLayoutContainer_ctl01__cptTextBox" id="_sectionLayoutContainer_ctl01__cptLabel" title="Číslo parlamentnej tlače, o ktorej sa hlasovalo" class="has_tooltip">Číslo tlače:</label>
+      <input name="_sectionLayoutContainer$ctl01$_cptTextBox" type="text" id="_sectionLayoutContainer_ctl01__cptTextBox" />
+    </li>
+  </ul>
+
+  <fieldset class="collapsible collapsed">
+    <legend><span class="collapsible">Rozšírené vyhľadávanie </span></legend>
+    <ul class="fields">
+      <li class="grid_4 alpha">
+        <label for="_sectionLayoutContainer_ctl01__meetingNrCombo" id="_sectionLayoutContainer_ctl01__meetingNrLabel" title="Číslo parlamentnej schôdze, na ktorej sa odohralo hlasovanie" class="has_tooltip">Číslo schôdze</label>
+        <select name="_sectionLayoutContainer$ctl01$_meetingNrCombo" id="_sectionLayoutContainer_ctl01__meetingNrCombo">
+			<option value="0">-</option>
+			<option value="66">66. sch&#244;dza</option>
+			<option value="65">65. sch&#244;dza</option>
+			<option value="64">64. sch&#244;dza</option>
+			<option value="63">63. sch&#244;dza</option>
+			<option value="62">62. sch&#244;dza</option>
+			<option value="61">61. sch&#244;dza</option>
+			<option value="60">60. sch&#244;dza</option>
+			<option value="58">58. sch&#244;dza</option>
+			<option value="59">59. sch&#244;dza</option>
+			<option value="57">57. sch&#244;dza</option>
+			<option value="56">56. sch&#244;dza</option>
+			<option value="55">55. sch&#244;dza</option>
+			<option value="54">54. sch&#244;dza</option>
+			<option value="53">53. sch&#244;dza</option>
+			<option value="52">52. sch&#244;dza</option>
+			<option value="51">51. sch&#244;dza</option>
+			<option value="50">50. sch&#244;dza</option>
+			<option value="49">49. sch&#244;dza</option>
+			<option value="48">48. sch&#244;dza</option>
+			<option value="47">47. sch&#244;dza</option>
+			<option value="46">46. sch&#244;dza</option>
+			<option value="45">45. sch&#244;dza</option>
+			<option value="44">44. sch&#244;dza</option>
+			<option value="43">43. sch&#244;dza</option>
+			<option value="42">42. sch&#244;dza</option>
+			<option value="41">41. sch&#244;dza</option>
+			<option value="40">40. sch&#244;dza</option>
+			<option value="39">39. sch&#244;dza</option>
+			<option value="38">38. sch&#244;dza</option>
+			<option value="37">37. sch&#244;dza</option>
+			<option value="36">36. sch&#244;dza</option>
+			<option value="35">35. sch&#244;dza</option>
+			<option value="34">34. sch&#244;dza</option>
+			<option value="33">33. sch&#244;dza</option>
+			<option value="32">32. sch&#244;dza</option>
+			<option value="31">31. sch&#244;dza</option>
+			<option value="30">30. sch&#244;dza</option>
+			<option value="29">29. sch&#244;dza</option>
+			<option value="28">28. sch&#244;dza</option>
+			<option value="27">27. sch&#244;dza</option>
+			<option value="26">26. sch&#244;dza</option>
+			<option value="25">25. sch&#244;dza</option>
+			<option value="24">24. sch&#244;dza</option>
+			<option value="23">23. sch&#244;dza</option>
+			<option value="22">22. sch&#244;dza</option>
+			<option value="21">21. sch&#244;dza</option>
+			<option value="20">20. sch&#244;dza</option>
+			<option value="19">19. sch&#244;dza</option>
+			<option value="18">18. sch&#244;dza</option>
+			<option value="17">17. sch&#244;dza</option>
+			<option value="16">16. sch&#244;dza</option>
+			<option value="1001">Mimoriadna sch&#244;dza</option>
+			<option value="15">15. sch&#244;dza</option>
+			<option value="14">14. sch&#244;dza</option>
+			<option value="13">13. sch&#244;dza</option>
+			<option value="12">12. sch&#244;dza</option>
+			<option value="11">11. sch&#244;dza</option>
+			<option value="10">10. sch&#244;dza</option>
+			<option value="9">9. sch&#244;dza</option>
+			<option value="8">8. sch&#244;dza</option>
+			<option value="7">7. sch&#244;dza</option>
+			<option value="6">6. sch&#244;dza</option>
+			<option value="5">5. sch&#244;dza</option>
+			<option value="4">4. sch&#244;dza</option>
+			<option value="3">3. sch&#244;dza</option>
+			<option value="2">2. sch&#244;dza</option>
+			<option value="1">1. sch&#244;dza</option>
+
+		</select>
+      </li>
+      <li class="grid_2 alpha">
+        <label for="_sectionLayoutContainer_ctl01__dateFromTextBox" id="_sectionLayoutContainer_ctl01__dateFromLabel" title="Minimálny dátum hlasovania" class="has_tooltip">Dátum od</label>
+        <input name="_sectionLayoutContainer$ctl01$_dateFromTextBox" type="text" id="_sectionLayoutContainer_ctl01__dateFromTextBox" class="datepicker" />
+      </li>
+      <li class="grid_2 alpha">
+        <label for="_sectionLayoutContainer_ctl01__dateToTextBox" id="_sectionLayoutContainer_ctl01__dateToLabel" title="Maximálny dátum hlasovania" class="has_tooltip">Dátum do</label>
+        <input name="_sectionLayoutContainer$ctl01$_dateToTextBox" type="text" id="_sectionLayoutContainer_ctl01__dateToTextBox" class="datepicker" />
+      </li>
+      <li class="grid_4 omega">
+        <label id="_sectionLayoutContainer_ctl01__searchTypeSimpleLabel" title="Vyhľadávanie presného výrazu vs. vyhľadávanie s ohybom slov" class="has_tooltip">Spôsob vyhľadávania textu</label>
+        <div id="_sectionLayoutContainer_ctl01__rbs1" class="radio_buttons_set">
+          <input id="_sectionLayoutContainer_ctl01__searchTypeSimpleOption" type="radio" name="_sectionLayoutContainer$ctl01$Type" value="_searchTypeSimpleOption" /><label for="_sectionLayoutContainer_ctl01__searchTypeSimpleOption">Jednoduché vyhľadávanie</label>
+					<input id="_sectionLayoutContainer_ctl01__searchTypeFullTextOption" type="radio" name="_sectionLayoutContainer$ctl01$Type" value="_searchTypeFullTextOption" checked="checked" /><label for="_sectionLayoutContainer_ctl01__searchTypeFullTextOption">Vyhľadávanie ohybov slov</label>
+        </div>
+      </li>
+    </ul>
+  </fieldset>
+
+  <div class="clear"></div>
+  <div class="buttons">
+    <input type="submit" name="_sectionLayoutContainer$ctl01$_searchButton" value="Vyhľadať" id="_sectionLayoutContainer_ctl01__searchButton" class="grid_2 alpha" />
+  </div>
+  <div class="clear"></div>
+
+	</div>
+
+
+<div>
+		<table class="tab_zoznam" cellspacing="0" cellpadding="3" border="0" id="_sectionLayoutContainer_ctl01__resultGrid2" style="width:100%;border-collapse:collapse;">
+			<tr class="pager">
+				<td colspan="6"><table border="0">
+					<tr>
+						<td><span>1</span></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$2')">2</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$3')">3</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$4')">4</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$5')">5</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$6')">6</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$7')">7</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$8')">8</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$9')">9</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$10')">10</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$11')">...</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$Last')">»</a></td>
+					</tr>
+				</table></td>
+			</tr><tr class="tab_zoznam_header">
+				<th scope="col">Č&#237;slo sch&#244;dze</th><th scope="col">Dátum</th><th scope="col">Číslo</th><th scope="col">ČPT</th><th scope="col">N&#225;zov</th><th scope="col">Hlasovanie podľa klubov</th>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        11:51:11
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51426' title='Zobraziť detail hlasovania'>
+          1
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=1'>1</a>
+			</td><td>Schv&#225;lenie volebn&#233;ho poriadku o podrobnostiach o hlasovan&#237; a o voľb&#225;ch na ustanovuj&#250;cej sch&#244;dzi N&#225;rodnej rady Slovenskej republiky IX. volebn&#233;ho obdobia (tlač 1).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51426' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 1
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        11:53:04
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51427' title='Zobraziť detail hlasovania'>
+          2
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=2'>2</a>
+			</td><td>Voľba overovateľov N&#225;rodnej rady Slovenskej republiky (tlač 2).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51427' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 2
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        11:54:55
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51428' title='Zobraziť detail hlasovania'>
+          3
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=3'>3</a>
+			</td><td>Zriadenie Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky a zriadenie V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237; a určenie počtu členov t&#253;chto v&#253;borov (tlač 3).
+Zriadenie Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51428' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 3
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        11:55:51
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51429' title='Zobraziť detail hlasovania'>
+          4
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=3'>3</a>
+			</td><td>Zriadenie Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky a zriadenie V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237; a určenie počtu členov t&#253;chto v&#253;borov (tlač 3).
+Zriadenie V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237;.
+</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51429' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 4
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        12:10:00
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51437' title='Zobraziť detail hlasovania'>
+          5
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=4'>4</a>
+			</td><td>Z&#225;pisnica o v&#253;sledku tajn&#233;ho hlasovania o n&#225;vrhu na voľbu predsedu Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky</td><td>
+        <a href='' title='Zobraziť detail hlasovania podľa klubov'>
+          
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        12:10:01
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51438' title='Zobraziť detail hlasovania'>
+          6
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=4'>4</a>
+			</td><td>Z&#225;pisnica o v&#253;sledku tajn&#233;ho hlasovania o n&#225;vrhu na voľbu predsedu V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237;</td><td>
+        <a href='' title='Zobraziť detail hlasovania podľa klubov'>
+          
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        12:48:21
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51430' title='Zobraziť detail hlasovania'>
+          7
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=5'>5</a>
+			</td><td>Voľba ďalš&#237;ch členov Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky a voľba ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237; (tlač 5) 
+Voľba ďalš&#237;ch členov Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51430' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 7
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        12:49:07
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51431' title='Zobraziť detail hlasovania'>
+          8
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=5'>5</a>
+			</td><td>Voľba ďalš&#237;ch členov Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky a voľba ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237; (tlač 5) 
+Voľba ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky pre nezlučiteľnosť funkci&#237;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51431' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 8
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        13:23:08
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51434' title='Zobraziť detail hlasovania'>
+          9
+        </a>
+      </td><td>
+				
+			</td><td>N&#225;vrh Mand&#225;tov&#233;ho a imunitn&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky na overenie platnosti voľby poslancov N&#225;rodnej rady Slovenskej republiky, zvolen&#253;ch vo voľb&#225;ch 30. semptembra 2023.
+Hlasovanie o n&#225;vrhu uznesenia, ktor&#253;m NR SR overuje platnosť voľby poslancov NR SR.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51434' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 9
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        13:24:01
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51435' title='Zobraziť detail hlasovania'>
+          10
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o inform&#225;cii, o nast&#250;pen&#237; n&#225;hradn&#237;kov na zaniknut&#233; mand&#225;ty poslancov N&#225;rodnej rady Slovenskej republiky a neuplatňovan&#233; mand&#225;ty poslancov N&#225;rodnej rady Slovenskej republiky.
+Hlasovanie o n&#225;vrhu uznesenia.
+</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51435' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 10
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        14:25:00
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51436' title='Zobraziť detail hlasovania'>
+          11
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=6'>6</a>
+			</td><td>Voľba predsedu N&#225;rodnej rady Slovenskej republiky (tlač 6). </td><td>
+        <a href='' title='Zobraziť detail hlasovania podľa klubov'>
+          
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        16:37:41
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51439' title='Zobraziť detail hlasovania'>
+          12
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o inform&#225;cii, o nast&#250;pen&#237; n&#225;hradn&#237;kov na neuplatňovan&#233; mand&#225;ty poslancov N&#225;rodnej rady Slovenskej republiky.
+Hlasovanie o n&#225;vrhu uznesenia.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51439' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 12
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        16:51:40
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51440' title='Zobraziť detail hlasovania'>
+          13
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=7'>7</a>
+			</td><td>Určenie počtu podpredsedov N&#225;rodnej rady Slovenskej republiky (tlač 7). 
+Hlasovanie o n&#225;vrhu uznesenia.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51440' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 13
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        18:03:10
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51441' title='Zobraziť detail hlasovania'>
+          15
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=9'>9</a>
+			</td><td>Zriadenie V&#253;boru N&#225;rodnej rady Slovenskej republiky pre eur&#243;pske z&#225;ležitosti a určenie počtu jeho členov (tlač 9).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51441' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 15
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        18:04:47
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51442' title='Zobraziť detail hlasovania'>
+          16
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=10'>10</a>
+			</td><td>N&#225;vrh na zriadenie ďalš&#237;ch v&#253;borov N&#225;rodnej rady Slovenskej republiky (tlač 10).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51442' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 16
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        18:09:48
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51443' title='Zobraziť detail hlasovania'>
+          17
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=14'>14</a>
+			</td><td>Zriadenie Osobitn&#233;ho kontroln&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky na kontrolu činnosti N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu, Osobitn&#233;ho kontroln&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby a Osobitn&#233;ho kontroln&#233;ho v&#253;boru N&#225;rodnej rady Slovenskej republiky na kontrolu činnosti Vojensk&#233;ho spravodajstva a určenie počtu členov t&#253;chto v&#253;borov (tlač 14).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51443' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 17
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        18:11:21
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51444' title='Zobraziť detail hlasovania'>
+          18
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=15'>15</a>
+			</td><td>Zriadenie V&#253;boru N&#225;rodnej rady Slovenskej republiky na presk&#250;mavanie rozhodnut&#237; N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu (tlač 15).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51444' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 18
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        20:44:18
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51462' title='Zobraziť detail hlasovania'>
+          36
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=12'>12</a>
+			</td><td>Voľba ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky pre eur&#243;pske z&#225;ležitosti a voľba n&#225;hradn&#253;ch členov tohto v&#253;boru (tlač 12).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51462' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 36
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        20:45:20
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51463' title='Zobraziť detail hlasovania'>
+          37
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=13'>13</a>
+			</td><td>Voľba ďalš&#237;ch členov v&#253;borov N&#225;rodnej rady Slovenskej republiky (tlač 13).</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51463' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 37
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        20:46:47
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51464' title='Zobraziť detail hlasovania'>
+          38
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=17'>17</a>
+			</td><td>N&#225;vrh na voľbu ďalš&#237;ch členov osobitn&#253;ch kontroln&#253;ch v&#253;borov N&#225;rodnej rady Slovenskej republiky a ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky na presk&#250;mavanie rozhodnut&#237; N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu (tlač 17).
+Hlasovanie o členoch OKV pre kontrolu činnosti NB&#218;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51464' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 38
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        20:47:47
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51465' title='Zobraziť detail hlasovania'>
+          39
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=17'>17</a>
+			</td><td>N&#225;vrh na voľbu ďalš&#237;ch členov osobitn&#253;ch kontroln&#253;ch v&#253;borov N&#225;rodnej rady Slovenskej republiky a ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky na presk&#250;mavanie rozhodnut&#237; N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu (tlač 17).
+Hlasovanie o členoch OKV pre kontrolu činnosti SIS.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51465' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 39
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        20:48:26
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51466' title='Zobraziť detail hlasovania'>
+          40
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=17'>17</a>
+			</td><td>N&#225;vrh na voľbu ďalš&#237;ch členov osobitn&#253;ch kontroln&#253;ch v&#253;borov N&#225;rodnej rady Slovenskej republiky a ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky na presk&#250;mavanie rozhodnut&#237; N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu (tlač 17).
+Hlasovanie o členoch OKV pre Vojensk&#233; spravodajstvo.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51466' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 40
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">1</td><td>
+        25.10.2023
+        <br />
+        20:49:09
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51467' title='Zobraziť detail hlasovania'>
+          41
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=17'>17</a>
+			</td><td>N&#225;vrh na voľbu ďalš&#237;ch členov osobitn&#253;ch kontroln&#253;ch v&#253;borov N&#225;rodnej rady Slovenskej republiky a ďalš&#237;ch členov V&#253;boru N&#225;rodnej rady Slovenskej republiky na presk&#250;mavanie rozhodnut&#237; N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu (tlač 17).
+Hlasovanie o členoch OKV pre presk&#250;mavanie rozhodnut&#237; N&#225;rodn&#233;ho bezpečnostn&#233;ho &#250;radu.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51467' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 41
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">2</td><td>
+        14.11.2023
+        <br />
+        12:19:33
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52714' title='Zobraziť detail hlasovania'>
+          1
+        </a>
+      </td><td>
+				
+			</td><td>Prezent&#225;cia č.1</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52714' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 1
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">2</td><td>
+        14.11.2023
+        <br />
+        12:26:48
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52715' title='Zobraziť detail hlasovania'>
+          2
+        </a>
+      </td><td>
+				
+			</td><td>Prezent&#225;cia č. 2</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52715' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 2
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">2</td><td>
+        14.11.2023
+        <br />
+        12:27:25
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51497' title='Zobraziť detail hlasovania'>
+          3
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o n&#225;vrhu uznesenia Mand&#225;toveho a imunitn&#233;ho v&#253;boru.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51497' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 3
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">2</td><td>
+        14.11.2023
+        <br />
+        12:28:41
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51504' title='Zobraziť detail hlasovania'>
+          4
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o programe  2. sch&#244;dze NR SR ako o celku</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51504' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 4
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:03:21
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52735' title='Zobraziť detail hlasovania'>
+          1
+        </a>
+      </td><td>
+				
+			</td><td>Prezent&#225;cia</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52735' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 1
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:11:01
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51783' title='Zobraziť detail hlasovania'>
+          2
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o pozmeňuj&#250;cich a doplňuj&#250;cich n&#225;vrhoch k programu 3. sch&#244;dze N&#225;rodnej rady Slovenskej republiky.
+N&#225;vrh posl. Poll&#225;ka.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51783' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 2
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:11:55
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51793' title='Zobraziť detail hlasovania'>
+          3
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o pozmeňuj&#250;cich a doplňuj&#250;cich n&#225;vrhoch k programu 3. sch&#244;dze N&#225;rodnej rady Slovenskej republiky.
+1. N&#225;vrh posl. Remišov&#225;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51793' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 3
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:12:47
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51803' title='Zobraziť detail hlasovania'>
+          4
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o pozmeňuj&#250;cich a doplňuj&#250;cich n&#225;vrhoch k programu 3. sch&#244;dze N&#225;rodnej rady Slovenskej republiky.
+2. N&#225;vrh posl. Remišov&#225;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51803' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 4
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:13:34
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51810' title='Zobraziť detail hlasovania'>
+          5
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o pozmeňuj&#250;cich a doplňuj&#250;cich n&#225;vrhoch k programu 3. sch&#244;dze N&#225;rodnej rady Slovenskej republiky.
+N&#225;vrh posl. Jakab.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51810' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 5
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:14:16
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51817' title='Zobraziť detail hlasovania'>
+          6
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o programe 3. sch&#244;dze NR SR ako o celku.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51817' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 6
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:19:07
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51863' title='Zobraziť detail hlasovania'>
+          7
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=32'>32</a>
+			</td><td>N&#225;vrh na odvolanie a voľbu poslancov N&#225;rodnej rady Slovenskej republiky za členov v&#253;borov N&#225;rodnej rady Slovenskej republiky a voľbu overovateľov N&#225;rodnej rady Slovenskej republiky (tlač 32).
+Hlasovanie o pozmeňuj&#250;cich n&#225;vrhoch zo spoločnej spr&#225;vy v&#253;borov - bod 1.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51863' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 7
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:20:16
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51873' title='Zobraziť detail hlasovania'>
+          8
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o 1. procedur&#225;lnom n&#225;vrhu posl. Remišov&#225;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51873' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 8
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:21:09
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51883' title='Zobraziť detail hlasovania'>
+          9
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o 2. procedur&#225;lnom n&#225;vrhu posl. Remišov&#225;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51883' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 9
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        14.11.2023
+        <br />
+        13:21:55
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=51890' title='Zobraziť detail hlasovania'>
+          10
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o 3. procedur&#225;lnom n&#225;vrhu posl. Remišov&#225;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=51890' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 10
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        15.11.2023
+        <br />
+        17:17:37
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52713' title='Zobraziť detail hlasovania'>
+          11
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=27'>27</a>
+			</td><td>Hlasovanie o procedur&#225;lnom n&#225;vrhu predsedu NR SR Pellegriniho.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52713' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 11
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        21.11.2023
+        <br />
+        11:46:14
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52717' title='Zobraziť detail hlasovania'>
+          12
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=27'>27</a>
+			</td><td>Programov&#233; vyhl&#225;senie vl&#225;dy Slovenskej republiky (tlač 27).
+Hlasovanie o doplňuj&#250;com n&#225;vrhu k programov&#233;mu vyhl&#225;seniu vl&#225;dy NR SR.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52717' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 12
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        21.11.2023
+        <br />
+        11:47:59
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52718' title='Zobraziť detail hlasovania'>
+          13
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=27'>27</a>
+			</td><td>Programov&#233; vyhl&#225;senie vl&#225;dy Slovenskej republiky (tlač 27).
+Hlasovanie o programovom vyhl&#225;sen&#237; vl&#225;dy a vysloven&#237; d&#244;very vl&#225;de SR.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52718' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 13
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        21.11.2023
+        <br />
+        18:56:19
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52719' title='Zobraziť detail hlasovania'>
+          14
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o procedur&#225;lnom n&#225;vrhu predsedu NR SR Pellegriniho.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52719' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 14
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        21.11.2023
+        <br />
+        18:58:05
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52720' title='Zobraziť detail hlasovania'>
+          15
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=28'>28</a>
+			</td><td>N&#225;vrh vl&#225;dy na skr&#225;ten&#233; legislat&#237;vne konanie o vl&#225;dnom n&#225;vrhu z&#225;kona,  ktor&#253;m sa dopĺňa z&#225;kon č. 296/2020 Z. z. o 13. d&#244;chodku a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; neskorš&#237;ch predpisov (tlač 28).
+Hlasovanie o n&#225;vrhu vl&#225;dy na skr&#225;ten&#233; legislat&#237;vne konanie.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52720' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 15
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        21.11.2023
+        <br />
+        18:59:21
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52721' title='Zobraziť detail hlasovania'>
+          16
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=30'>30</a>
+			</td><td>N&#225;vrh vl&#225;dy na skr&#225;ten&#233; legislat&#237;vne konanie o vl&#225;dnom n&#225;vrhu z&#225;kona, ktor&#253;m sa men&#237; a dopĺňa z&#225;kon č. 540/2021 Z. z. o kategoriz&#225;cii &#250;stavnej zdravotnej starostlivosti a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; z&#225;kona č. 518/2022 Z. z. (tlač 30).
+Hlasovanie o n&#225;vrhu vl&#225;dy na skr&#225;ten&#233; legislat&#237;vne konanie.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52721' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 16
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        11:57:26
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52722' title='Zobraziť detail hlasovania'>
+          17
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=29'>29</a>
+			</td><td>Vl&#225;dny n&#225;vrh z&#225;kona, ktor&#253;m sa dopĺňa z&#225;kon č. 296/2020 Z. z. o 13. d&#244;chodku a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; neskorš&#237;ch predpisov (tlač 29).
+Hlasovanie o tom, aby bol n&#225;vrh z&#225;kona prerokovan&#253; v druhom č&#237;tan&#237;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52722' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 17
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        12:01:14
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52723' title='Zobraziť detail hlasovania'>
+          18
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=29'>29</a>
+			</td><td>Vl&#225;dny n&#225;vrh z&#225;kona, ktor&#253;m sa dopĺňa z&#225;kon č. 296/2020 Z. z. o 13. d&#244;chodku a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; neskorš&#237;ch predpisov (tlač 29).
+Hlasovanie o pridelen&#237; n&#225;vrhu z&#225;kona v&#253;borom a určen&#237; lehoty na prerokovanie.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52723' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 18
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        12:03:01
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52724' title='Zobraziť detail hlasovania'>
+          19
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=31'>31</a>
+			</td><td>Vl&#225;dny n&#225;vrh z&#225;kona, ktor&#253;m sa men&#237; a dopĺňa z&#225;kon č. 540/2021 Z. z. o kategoriz&#225;cii &#250;stavnej zdravotnej starostlivosti a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; z&#225;kona č. 518/2022 Z.  (tlač 31) - prv&#233; č&#237;tanie.
+Hlasovanie o tom, aby bol n&#225;vrh z&#225;kona prerokovan&#253; v druhom č&#237;tan&#237;.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52724' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 19
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        12:07:44
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52725' title='Zobraziť detail hlasovania'>
+          20
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=31'>31</a>
+			</td><td>Vl&#225;dny n&#225;vrh z&#225;kona, ktor&#253;m sa men&#237; a dopĺňa z&#225;kon č. 540/2021 Z. z. o kategoriz&#225;cii &#250;stavnej zdravotnej starostlivosti a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; z&#225;kona č. 518/2022 Z.  (tlač 31) - prv&#233; č&#237;tanie.
+Hlasovanie o pozmeňuj&#250;cich a doplňuj&#250;cich n&#225;vrhoch z rozpravy - posl. Dost&#225;l.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52725' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 20
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        12:09:14
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52726' title='Zobraziť detail hlasovania'>
+          21
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=31'>31</a>
+			</td><td>Vl&#225;dny n&#225;vrh z&#225;kona, ktor&#253;m sa men&#237; a dopĺňa z&#225;kon č. 540/2021 Z. z. o kategoriz&#225;cii &#250;stavnej zdravotnej starostlivosti a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; z&#225;kona č. 518/2022 Z.  (tlač 31) - prv&#233; č&#237;tanie.
+Hlasovanie o pridelen&#237; n&#225;vrhu z&#225;kona v&#253;borom a určen&#237; lehoty na prerokovanie.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52726' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 21
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_nonalt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        17:11:21
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52727' title='Zobraziť detail hlasovania'>
+          22
+        </a>
+      </td><td>
+				
+			</td><td>Hlasovanie o procedur&#225;lnom n&#225;vrhu predsedu NR SR Petra Pellegriniho.</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52727' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 22
+        </a>
+      </td>
+			</tr><tr class="tab_zoznam_alt">
+				<td style="white-space:nowrap;">3</td><td>
+        22.11.2023
+        <br />
+        18:46:20
+      </td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasovanie&ID=52728' title='Zobraziť detail hlasovania'>
+          23
+        </a>
+      </td><td>
+				<a href='Default.aspx?sid=zakony/cpt&amp;ZakZborID=13&amp;CisObdobia=9&amp;ID=29'>29</a>
+			</td><td>Vl&#225;dny n&#225;vrh z&#225;kona, ktor&#253;m sa dopĺňa z&#225;kon č. 296/2020 Z. z. o 13. d&#244;chodku a o zmene a doplnen&#237; niektor&#253;ch z&#225;konov v znen&#237; neskorš&#237;ch predpisov (tlač 29).
+Hlasovanie o pozmeňuj&#250;com n&#225;vrhu zo spoločnej spr&#225;vy v&#253;borov - 1 bod</td><td>
+        <a href='Default.aspx?sid=schodze/hlasovanie/hlasklub&ID=52728' title='Zobraziť detail hlasovania podľa klubov'>
+          Hlasovanie č. 23
+        </a>
+      </td>
+			</tr><tr class="pager">
+				<td colspan="6"><table border="0">
+					<tr>
+						<td><span>1</span></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$2')">2</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$3')">3</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$4')">4</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$5')">5</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$6')">6</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$7')">7</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$8')">8</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$9')">9</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$10')">10</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$11')">...</a></td><td><a href="javascript:__doPostBack('_sectionLayoutContainer$ctl01$_resultGrid2','Page$Last')">»</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table>
+	</div>
+
+<div class="clear"></div>
+
+
+</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="panels no_print">
+    <div class="container_16">
+      <div class="grid_4">
+        <div id="_sectionLayoutContainer__panelCalendar" class="layout_section_calendar">
+	
+        <div id="_sectionLayoutContainer_ctl00__calendarBox" class="day_in_parliament_box box">
+  <h2>Deň v parlamente</h2>
+<noscript>
+  Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript.<br />
+  We are sorry, but for proper usage of calendar you have to have JavaScript enabled.</noscript>
+
+<script type="text/javascript">
+ //<![CDATA[
+  var calendarLangControlId = '#_sectionLayoutContainer_ctl00__calendarLang';
+  var calendarAppControlId = '#_sectionLayoutContainer_ctl00__calendarApp';
+  var calendarMonthControlId = '#_sectionLayoutContainer_ctl00__calendarMonth';
+  var calendarYearControlId = '#_sectionLayoutContainer_ctl00__calendarYear';
+  var calendarMinYear = 2016
+  var calendarMaxYear = 2027
+
+  function GetMonthPersistentValue() {
+    return parseInt($(calendarMonthControlId).val());
+  }
+
+  function SetMonthPersistentValue(value) {
+    $(calendarMonthControlId).val(value);
+  }
+
+  function GetYearPersistentValue() {
+    return parseInt($(calendarYearControlId).val());
+  }
+
+  function SetYearPersistentValue(value) {
+    $(calendarYearControlId).val(value);
+  }
+
+  function GetAppPersistentValue() {
+    return $(calendarAppControlId).val();
+  }
+
+  function GetLangPersistentValue() {
+    return $(calendarLangControlId).val();
+  }
+
+  $(document).ready(function () {
+    SetMonth( GetMonthPersistentValue );
+    SetYear( GetYearPersistentValue );
+
+    BeginOnCalendarUpdate();
+  });
+
+  function SetMonth(n)
+  {
+    SetMonthPersistentValue(n);
+    $('.cal_month_selector').val(n);
+  }
+
+  function SetYear(n)
+  {
+    SetYearPersistentValue(n);
+    $('.cal_year_selector').val(n);
+  }
+
+  function OnShowNextMonthClicked()
+  {
+    UnhookCalendarChangeHandlers();
+
+    if ( GetMonthPersistentValue() == 12) {
+      if (GetYearPersistentValue() + 1 > calendarMaxYear) {
+        HookCalendarChangeHandlers();
+        return false;
+      };
+      SetMonth( 1 );
+      SetYear( GetYearPersistentValue() + 1);
+    }
+    else
+      SetMonth( GetMonthPersistentValue() + 1);
+
+    BeginOnCalendarUpdate();
+
+    return false;
+  }
+
+  function OnShowPreviousMonthClicked()
+  {
+    UnhookCalendarChangeHandlers();
+
+    if ( GetMonthPersistentValue() == 1)
+    {
+    if (GetYearPersistentValue() - 1 < calendarMinYear) {
+        HookCalendarChangeHandlers();
+        return false;
+      };
+      SetMonth( 12 );
+      SetYear( GetYearPersistentValue() - 1)
+    }
+    else
+      SetMonth( GetMonthPersistentValue() - 1 );
+
+    BeginOnCalendarUpdate();
+
+    return false;
+  }
+
+  function OnMonthOrYearChanged() {
+    UnhookCalendarChangeHandlers();
+
+    SetMonthPersistentValue(parseInt($('.cal_month_selector').val()));
+    SetYearPersistentValue(parseInt($('.cal_year_selector').val()));
+
+    BeginOnCalendarUpdate();
+  }
+
+  function BeginOnCalendarUpdate()
+  {
+    
+    $('.cal_panel').addClass('loading');
+    $('#_sectionLayoutContainer_ctl00__calendarContent').html('');
+    DisableCalendarControls();
+
+    month = GetMonthPersistentValue();
+    year = GetYearPersistentValue();
+    lang = GetLangPersistentValue();
+    app = GetAppPersistentValue();
+
+    // Zavolame ziskanie dat kalendara zo sluzby.
+    exeIT.NRSR.Web.CalendarService.RenderCalendar(
+      month, year, app, lang,
+      OnCallCalendarUpdateCompleted, OnCallCalendarUpdateError);
+  }
+
+  function HookCalendarChangeHandlers()
+  {
+    $('.cal_month_selector').change(OnMonthOrYearChanged);
+    $('.cal_year_selector').change(OnMonthOrYearChanged);
+    $('.cal_previous_month_button').click(OnShowPreviousMonthClicked);
+    $('.cal_next_month_button').click(OnShowNextMonthClicked);
+  }
+
+  function UnhookCalendarChangeHandlers()
+  {
+    $('.cal_month_selector').unbind("change");
+    $('.cal_year_selector').unbind("change");
+    $('.cal_previous_month_button').unbind("click");
+    $('.cal_next_month_button').unbind("click");
+  }
+
+  function OnCallCalendarUpdateError(error, userContext, methodName)
+  {
+    $('.cal_panel').removeClass('loading');
+    EnableCalendarControls();
+    HookCalendarChangeHandlers();
+  }
+  
+  function OnCallCalendarUpdateCompleted(result, userContext, methodName) {
+    $('.cal_panel').removeClass('loading');
+    $('#_sectionLayoutContainer_ctl00__calendarContent').html(result);
+    EnableCalendarControls();
+    HookCalendarChangeHandlers();
+  }
+
+  function DisableCalendarControls()
+  {
+    $(".cal_previous_month_button").attr("disabled", "disabled");
+    $(".cal_next_month_button").attr("disabled", "disabled");
+    $(".cal_month_selector").attr("disabled", "disabled");
+    $(".cal_year_selector").attr("disabled", "disabled");
+  }
+
+  function EnableCalendarControls()
+  {
+    $(".cal_previous_month_button").removeAttr("disabled");
+    $(".cal_next_month_button").removeAttr("disabled");
+    $(".cal_month_selector").removeAttr("disabled");
+    $(".cal_year_selector").removeAttr("disabled");
+  }
+
+ //]]>
+</script>
+
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarYear" id="_sectionLayoutContainer_ctl00__calendarYear" value="2026" />
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarMonth" id="_sectionLayoutContainer_ctl00__calendarMonth" value="11" />
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarApp" id="_sectionLayoutContainer_ctl00__calendarApp" value="nrhpo" />
+<input type="hidden" name="_sectionLayoutContainer$ctl00$_calendarLang" id="_sectionLayoutContainer_ctl00__calendarLang" />
+<div class="cal_header_panel">
+<table class="cal_header">
+  <tr>
+    <td class="prev">
+      <a href="#" class="cal_previous_month_button">
+        <img src="img/layout/button_left.png" alt="&lt;-" /></a>
+    </td>
+    <td class="month_year">
+      <select name="_sectionLayoutContainer$ctl00$_monthSelector" id="_sectionLayoutContainer_ctl00__monthSelector" class="cal_month_selector">
+		<option value="1">janu&#225;r</option>
+		<option value="2">febru&#225;r</option>
+		<option value="3">marec</option>
+		<option value="4">apr&#237;l</option>
+		<option value="5">m&#225;j</option>
+		<option value="6">j&#250;n</option>
+		<option value="7">j&#250;l</option>
+		<option value="8">august</option>
+		<option value="9">september</option>
+		<option value="10">okt&#243;ber</option>
+		<option value="11">november</option>
+		<option value="12">december</option>
+
+	</select>
+      <select name="_sectionLayoutContainer$ctl00$_yearSelector" id="_sectionLayoutContainer_ctl00__yearSelector" class="cal_year_selector">
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option value="2024">2024</option>
+		<option value="2025">2025</option>
+		<option value="2026">2026</option>
+		<option value="2027">2027</option>
+
+	</select>
+    </td>
+    <td class="next">
+      <a href="#" class="cal_next_month_button">
+        <img src="img/layout/button_right.png" alt="->" /></a>
+    </td>
+  </tr>
+</table>
+</div>
+<div id="_sectionLayoutContainer_ctl00__calendarContent" class="cal_panel loading"></div>
+<div id="_sectionLayoutContainer_ctl00__calendarDescriptionDiv" class="cal_description">Kalendár ukáže hlasovania pre daný deň.</div>
+<div class="clear"></div>
+</div>
+</div>
+      </div>
+      <div class="grid_6">
+        <div id="_sectionLayoutContainer__panelShortcuts" class="layout_section_shortcuts">
+	
+        <div class="shortcuts_box box"><h2>Rýchly prístup</h2><ul><li><a href="/web/?SectionId=591">Informácie a tlačivá pre poslancov</a></li><li><a title="Zoznam poslancov" href="/web/?SectionId=60">Zoznam poslancov</a></li><li><a title="Oznámenia verejných funkcionárov" href="/web/?SectionId=136">Oznámenia verejných funkcionárov</a></li><li><a title="Návštevy a prehliadky" href="/web/?SectionId=155">Návštevy a prehliadky</a></li><li><a title="Vyhľadávanie v návrhoch zákonov" href="/web/?SectionId=91">Vyhľadávanie v návrhoch zákonov</a></li><li><a title="Týždeň v parlamente" href="/web/?SectionId=174">Týždeň v parlamente</a></li><li><a title="Fotogaléria NR SR" href="/web/?SectionId=159">Fotogaléria NR SR</a></li><li><a title="Parlamentná knižnica" href="http://kniznica.nrsr.sk/">Parlamentná knižnica</a></li><li><a title="Online vysielanie pre mobilné zariadenia" href="http://m.nrsr.sk/">Online vysielanie pre mobilné zariadenia</a></li><li><a href="http://www.rtvs.sk/televizia/live-nr-sr?p=h5&amp;q=1">Online vysielanie na stránkach STVR</a></li><li><a title="Stáž v Kancelárii NR SR" href="/web/?SectionId=457">Stáž v Kancelárii NR SR</a></li><li><a title="SSEZ" href="http://www.nrsr.sk/ssez/">Systém sledovania európskych záležitostí</a></li><li><a href="/web/?SectionId=621">GDPR - Ochrana osobných údajov, Privacy Policy</a></li></ul></div>
+</div>
+      </div>
+      <div class="grid_6">
+        <div id="_sectionLayoutContainer__panelLeft" class="layout_section_left">
+	
+        
+</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+      <div class="clear"></div>
+    </div>
+
+    
+
+    <div class="page_footer">
+      <div class="container_16">
+        <div class="grid_6">
+          <span class="float_left">&copy; 2004 - 2026 K NR SR. Všetky práva vyhradené.</span>
+        </div>
+
+        <div class="grid_10">
+          <div class="box float_right"><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'sk', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></div>
+          <span id="_law211LinkBox" class="box float_right"><a href="./?sid=publicAndMedia/info/general">Zákon o slobodnom prístupe k informáciám.</a></span>
+          
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+</body>
+</html>
+<!-- Rendering this page took 1,4575228 seconds. -->
