@@ -20,7 +20,7 @@ assert p == {"id": "1008", "first": "Ján", "title": "PhDr. Mgr., MBA", "last": 
 print("ok mp")
 sp = parse.parse_speeches((here / "fixtures/rozprava_mp1008.html").read_text(encoding="utf-8"))
 assert len(sp) == 20, len(sp)
-f = [x for x in sp if x["id"] == "375348"][0]
+f = [x for x in sp if x["id"] == "20260924114310-ferencak-jan"][0]
 assert (f["start"], f["dur"], f["session"], f["day"], f["tlac"]) == ("2026-09-24T11:43:10+02:00", 120, 61, 7, "1316"), f
 assert f["speaker"] == "Ferenčák, Ján" and f["role"] == "poslanec NR SR" and f["kind"] == "Vystúpenie s faktickou poznámkou"
 assert f["text"].startswith("Ja vám to poviem celkom presne.") and f["video"] == "https://tv.nrsr.sk/archiv/schodza/9/61?id=375348"

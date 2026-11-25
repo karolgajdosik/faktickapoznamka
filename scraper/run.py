@@ -113,7 +113,9 @@ def scrape_speeches(sessions: list[int], meta: dict, minutes: float):
         if time.time() > deadline: break
         f = SPEECHES / f"{sess}.json"
         old = {x["id"]: x for x in json.loads(f.read_text())} if f.exists() else {}
-        items = nrsr.session_speeches(sess, TERM, deadline=deadline)
+        recent = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=21)).isoformat()
+        incremental = sess in latest and bool(old)
+        items = nrsr.session_speeches(sess, TERM, stop_before=recent if incremental else None, deadline=deadline)
         complete = time.time() <= deadline
         for x in items:
             prev = old.get(x["id"])

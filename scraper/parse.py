@@ -1,6 +1,6 @@
 """Parsers for nrsr.sk HTML. Written defensively (text patterns + link IDs rather
 than brittle CSS paths). Calibrate against probe/*.html; tests in test_parse.py."""
-import re
+import re, unicodedata
 from bs4 import BeautifulSoup
 
 CODE_RE = re.compile(r"\[(Z|P|\?|N|0)\]")
@@ -149,8 +149,9 @@ def parse_speeches(html: str) -> list[dict]:
             parts = [p for p in parts if p]
             if parts and re.fullmatch(r"\d+\.", parts[0]): parts = parts[1:]  # running number
             text = "\n".join(parts)
+        slug = re.sub(r"[^a-z]+", "-", unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()).strip("-")
         out.append({
-            "id": vid or f"{start}-{name}", "start": start, "end": end, "dur": max(dur, 0),
+            "id": f"{y:04d}{mo:02d}{d:02d}{h1:02d}{m1:02d}{s1:02d}-{slug}", "start": start, "end": end, "dur": max(dur, 0),
             "session": int(pm.group(1)) if pm else None, "day": int(pm.group(2)) if pm else None,
             "tlac": tl.group(1) if tl else None, "speaker": name, "role": role,
             "kind": "" if kind == "-" else kind, "video": video["href"].replace("http://", "https://") if video else None,

@@ -133,7 +133,28 @@ def session_vote_ids(session: int, term: int = 9) -> list[str]:
     ids = paginate(url, lambda html: re.findall(r"hlasovanie/hlasklub&(?:amp;)?ID=(\d+)", html))
     return list(dict.fromkeys(ids))
 
-def session_speeches(session: int, term: int = 9, deadline: float | None = None) -> list[dict]:
+def session_speeches(session: int, term: int = 9, stop_before: str | None = None, deadline: float | None = None) -> list[dict]:
+    """Debate of one session, newest first, walking back in time with plain GET requests
+    (DatumDo = start of the oldest item seen). Avoids the ASP.NET pager entirely."""
     import parse
-    url = BASE + f"?sid=schodze/rozprava/vyhladavanie&CisObdobia={term}&CisSchodze={session}"
-    return paginate(url, parse.parse_speeches, deadline=deadline)
+    from urllib.parse import quote
+    def local(iso: str, shift: int = 0) -> str:
+        import datetime
+        t = datetime.datetime.fromisoformat(iso) + datetime.timedelta(seconds=shift)
+        return f"{t.year}-{t.month}-{t.day} {t.hour}:{t.minute}:{t.second}"
+    until, out = "2100-1-1 0:0:0", {}
+    while True:
+        if deadline and time.time() > deadline: break
+        url = (BASE + f"?sid=schodze%2frozprava%2fvyhladavanie&CisObdobia={term}&CPT=&CisSchodze={session}&PoslanecID=0"
+               f"&DatumOd={quote('1900-1-1 0:0:0')}&DatumDo={quote(until)}&TypVystupenia=")
+        r = get(url=url)
+        if not r.ok: break
+        items = parse.parse_speeches(r.text)
+        if not items: break
+        new = [x for x in items if x["id"] not in out]
+        for x in items: out.setdefault(x["id"], x)
+        oldest = min(x["start"] for x in items)
+        # +1 s keeps items sharing the boundary second; if nothing new came back, step past it
+        until = local(oldest, 1 if new else -1)
+        if stop_before and oldest < stop_before: break
+    return list(out.values())
