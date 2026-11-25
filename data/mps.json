@@ -3,7 +3,7 @@
   "id": "1180",
   "name": "Martina Bajo Holečková",
   "sortName": "Bajo Holečková Martina",
-  "club": "KDH"
+  "club": "SaS"
  },
  {
   "id": "871",
@@ -39,13 +39,19 @@
   "id": "976",
   "name": "Jana Bittó Cigániková",
   "sortName": "Bittó Cigániková Jana",
-  "club": "SaS"
+  "club": "Nezaradení"
  },
  {
   "id": "885",
   "name": "Ľuboš Blaha",
   "sortName": "Blaha Ľuboš",
   "club": "SMER - SD"
+ },
+ {
+  "id": "238",
+  "name": "Juraj Blanár",
+  "sortName": "Blanár Juraj",
+  "club": "Nezaradení"
  },
  {
   "id": "997",
@@ -57,13 +63,19 @@
   "id": "1144",
   "name": "Lukáš Bužo",
   "sortName": "Bužo Lukáš",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1195",
   "name": "Jozef Cech",
   "sortName": "Cech Jozef",
   "club": "HLAS - SD"
+ },
+ {
+  "id": "790",
+  "name": "Igor Choma",
+  "sortName": "Choma Igor",
+  "club": "Nezaradení"
  },
  {
   "id": "929",
@@ -78,10 +90,28 @@
   "club": "PS"
  },
  {
+  "id": "1216",
+  "name": "Dávid Demečko",
+  "sortName": "Demečko Dávid",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1168",
+  "name": "Zuzana Dolinková",
+  "sortName": "Dolinková Zuzana",
+  "club": "Nezaradení"
+ },
+ {
   "id": "779",
   "name": "Ondrej Dostál",
   "sortName": "Dostál Ondrej",
   "club": "SaS"
+ },
+ {
+  "id": "1164",
+  "name": "Tomáš Drucker",
+  "sortName": "Drucker Tomáš",
+  "club": "Nezaradení"
  },
  {
   "id": "1213",
@@ -94,6 +124,12 @@
   "name": "Martin Dubéci",
   "sortName": "Dubéci Martin",
   "club": "PS"
+ },
+ {
+  "id": "1221",
+  "name": "Igor Dušenka",
+  "sortName": "Dušenka Igor",
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1123",
@@ -123,7 +159,19 @@
   "id": "1008",
   "name": "Ján Ferenčák",
   "sortName": "Ferenčák Ján",
-  "club": "HLAS - SD"
+  "club": "Nezaradení"
+ },
+ {
+  "id": "40",
+  "name": "Robert Fico",
+  "sortName": "Fico Robert",
+  "club": "Nezaradení"
+ },
+ {
+  "id": "966",
+  "name": "Karol Galek",
+  "sortName": "Galek Karol",
+  "club": "SaS"
  },
  {
   "id": "656",
@@ -135,7 +183,7 @@
   "id": "785",
   "name": "Ľubomír Galko",
   "sortName": "Galko Ľubomír",
-  "club": "SLOVENSKO"
+  "club": "Nezaradení"
  },
  {
   "id": "1198",
@@ -162,6 +210,12 @@
   "club": "PS"
  },
  {
+  "id": "1155",
+  "name": "Juraj Gedra",
+  "sortName": "Gedra Juraj",
+  "club": "Nezaradení"
+ },
+ {
   "id": "1214",
   "name": "Richard Glück",
   "sortName": "Glück Richard",
@@ -174,10 +228,16 @@
   "club": "SMER - SD"
  },
  {
+  "id": "1222",
+  "name": "Gréta Gregorová",
+  "sortName": "Gregorová Gréta",
+  "club": "PS"
+ },
+ {
   "id": "910",
   "name": "Gábor Grendel",
   "sortName": "Grendel Gábor",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "971",
@@ -240,16 +300,28 @@
   "club": "KDH"
  },
  {
+  "id": "1219",
+  "name": "Ján Horváth",
+  "sortName": "Horváth Ján",
+  "club": "SMER - SD"
+ },
+ {
+  "id": "1202",
+  "name": "Ján Hrubý",
+  "sortName": "Hrubý Ján",
+  "club": "HLAS - SD"
+ },
+ {
   "id": "1148",
   "name": "Rudolf Huliak",
   "sortName": "Huliak Rudolf",
-  "club": "SNS"
+  "club": "Nezaradení"
  },
  {
   "id": "1188",
   "name": "Július Jakab",
   "sortName": "Jakab Július",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1169",
@@ -300,10 +372,28 @@
   "club": "SMER - SD"
  },
  {
+  "id": "1165",
+  "name": "Michal Kaliňák",
+  "sortName": "Kaliňák Michal",
+  "club": "Nezaradení"
+ },
+ {
+  "id": "271",
+  "name": "Robert Kaliňák",
+  "sortName": "Kaliňák Robert",
+  "club": "Nezaradení"
+ },
+ {
   "id": "1137",
   "name": "Viera Kalmárová",
   "sortName": "Kalmárová Viera",
   "club": "PS"
+ },
+ {
+  "id": "880",
+  "name": "Ladislav Kamenický",
+  "sortName": "Kamenický Ladislav",
+  "club": "Nezaradení"
  },
  {
   "id": "1205",
@@ -318,6 +408,12 @@
   "club": "SMER - SD"
  },
  {
+  "id": "1218",
+  "name": "Jozef Kačmár",
+  "sortName": "Kačmár Jozef",
+  "club": "SMER - SD"
+ },
+ {
   "id": "1125",
   "name": "Štefan Kišš",
   "sortName": "Kišš Štefan",
@@ -328,6 +424,18 @@
   "name": "Dana Kleinert",
   "sortName": "Kleinert Dana",
   "club": "PS"
+ },
+ {
+  "id": "1023",
+  "name": "Peter Kmec",
+  "sortName": "Kmec Peter",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1224",
+  "name": "Monika Kolejáková",
+  "sortName": "Kolejáková Monika",
+  "club": "KDH"
  },
  {
   "id": "1025",
@@ -348,10 +456,16 @@
   "club": "SNS"
  },
  {
+  "id": "1227",
+  "name": "Milan Kováč",
+  "sortName": "Kováč Milan",
+  "club": "SNS"
+ },
+ {
   "id": "907",
   "name": "Marek Krajčí",
   "sortName": "Krajčí Marek",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1210",
@@ -363,7 +477,7 @@
   "id": "1190",
   "name": "Rastislav Krátky",
   "sortName": "Krátky Rastislav",
-  "club": "SLOVENSKO"
+  "club": "KDH"
  },
  {
   "id": "1032",
@@ -376,6 +490,24 @@
   "name": "Stanislav Kubánek",
   "sortName": "Kubánek Stanislav",
   "club": "SMER - SD"
+ },
+ {
+  "id": "1034",
+  "name": "Filip Kuffa",
+  "sortName": "Kuffa Filip",
+  "club": "Nezaradení"
+ },
+ {
+  "id": "858",
+  "name": "Štefan Kuffa",
+  "sortName": "Kuffa Štefan",
+  "club": "Nezaradení"
+ },
+ {
+  "id": "1166",
+  "name": "Lucia Kurilovská",
+  "sortName": "Kurilovská Lucia",
+  "club": "Nezaradení"
  },
  {
   "id": "671",
@@ -432,6 +564,12 @@
   "club": "PS"
  },
  {
+  "id": "1223",
+  "name": "Vladimír Macášek",
+  "sortName": "Macášek Vladimír",
+  "club": "SMER - SD"
+ },
+ {
   "id": "1184",
   "name": "František Majerský",
   "sortName": "Majerský František",
@@ -447,7 +585,7 @@
   "id": "1173",
   "name": "Roman Malatinec",
   "sortName": "Malatinec Roman",
-  "club": "HLAS - SD"
+  "club": "Nezaradení"
  },
  {
   "id": "1042",
@@ -465,7 +603,7 @@
   "id": "808",
   "name": "Igor Matovič",
   "sortName": "Matovič Igor",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1211",
@@ -486,6 +624,12 @@
   "club": "SMER - SD"
  },
  {
+  "id": "1157",
+  "name": "Igor Melicher",
+  "sortName": "Melicher Igor",
+  "club": "Nezaradení"
+ },
+ {
   "id": "1130",
   "name": "Zuzana Mesterová",
   "sortName": "Mesterová Zuzana",
@@ -501,7 +645,7 @@
   "id": "1201",
   "name": "Samuel Migaľ",
   "sortName": "Migaľ Samuel",
-  "club": "HLAS - SD"
+  "club": "Nezaradení"
  },
  {
   "id": "92",
@@ -513,7 +657,7 @@
   "id": "1046",
   "name": "Roman Mikulec",
   "sortName": "Mikulec Roman",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1174",
@@ -525,7 +669,7 @@
   "id": "322",
   "name": "Dušan Muňko",
   "sortName": "Muňko Dušan",
-  "club": "SMER - SD"
+  "club": "SNS"
  },
  {
   "id": "1212",
@@ -550,6 +694,12 @@
   "name": "Peter Náhlik",
   "sortName": "Náhlik Peter",
   "club": "HLAS - SD"
+ },
+ {
+  "id": "1225",
+  "name": "Gabriel Paľa",
+  "sortName": "Paľa Gabriel",
+  "club": "KDH"
  },
  {
   "id": "1138",
@@ -597,7 +747,7 @@
   "id": "1088",
   "name": "Peter Pollák",
   "sortName": "Pollák Peter",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1131",
@@ -609,7 +759,7 @@
   "id": "1054",
   "name": "Jozef Pročko",
   "sortName": "Pročko Jozef",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "879",
@@ -624,10 +774,22 @@
   "club": "HLAS - SD"
  },
  {
+  "id": "1220",
+  "name": "Miroslav Radačovský",
+  "sortName": "Radačovský Miroslav",
+  "club": "Nezaradení"
+ },
+ {
+  "id": "761",
+  "name": "Richard Raši",
+  "sortName": "Raši Richard",
+  "club": "HLAS - SD"
+ },
+ {
   "id": "905",
   "name": "Veronika Remišová",
   "sortName": "Remišová Veronika",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "689",
@@ -640,6 +802,12 @@
   "name": "Michal Sabo",
   "sortName": "Sabo Michal",
   "club": "PS"
+ },
+ {
+  "id": "941",
+  "name": "Denisa Saková",
+  "sortName": "Saková Denisa",
+  "club": "Nezaradení"
  },
  {
   "id": "762",
@@ -663,7 +831,13 @@
   "id": "1197",
   "name": "Peter Slyško",
   "sortName": "Slyško Peter",
-  "club": "HLAS - SD"
+  "club": "Nezaradení"
+ },
+ {
+  "id": "1162",
+  "name": "Jozef Smatana",
+  "sortName": "Smatana Jozef",
+  "club": "Nezaradení"
  },
  {
   "id": "1206",
@@ -708,9 +882,21 @@
   "club": "SaS"
  },
  {
+  "id": "877",
+  "name": "Boris Susko",
+  "sortName": "Susko Boris",
+  "club": "Nezaradení"
+ },
+ {
   "id": "1087",
   "name": "Zdenko Svoboda",
   "sortName": "Svoboda Zdenko",
+  "club": "HLAS - SD"
+ },
+ {
+  "id": "1217",
+  "name": "Andrea Szabóová",
+  "sortName": "Szabóová Andrea",
   "club": "HLAS - SD"
  },
  {
@@ -720,16 +906,34 @@
   "club": "SaS"
  },
  {
+  "id": "1071",
+  "name": "Richard Takáč",
+  "sortName": "Takáč Richard",
+  "club": "Nezaradení"
+ },
+ {
   "id": "1145",
   "name": "Viliam Tankó",
   "sortName": "Tankó Viliam",
-  "club": "SLOVENSKO"
+  "club": "PS"
+ },
+ {
+  "id": "1072",
+  "name": "Tomáš Taraba",
+  "sortName": "Taraba Tomáš",
+  "club": "Nezaradení"
  },
  {
   "id": "930",
   "name": "Dušan Tittel",
   "sortName": "Tittel Dušan",
   "club": "HLAS - SD"
+ },
+ {
+  "id": "940",
+  "name": "Erik Tomáš",
+  "sortName": "Tomáš Erik",
+  "club": "Nezaradení"
  },
  {
   "id": "1115",
@@ -771,7 +975,7 @@
   "id": "861",
   "name": "Richard Vašečka",
   "sortName": "Vašečka Richard",
-  "club": "SLOVENSKO"
+  "club": "Nezaradení"
  },
  {
   "id": "1141",
@@ -837,19 +1041,25 @@
   "id": "1152",
   "name": "Pavel Ľupták",
   "sortName": "Ľupták Pavel",
-  "club": "SNS"
+  "club": "Nezaradení"
  },
  {
   "id": "1175",
   "name": "Radomír Šalitroš",
   "sortName": "Šalitroš Radomír",
-  "club": "HLAS - SD"
+  "club": "Nezaradení"
+ },
+ {
+  "id": "1171",
+  "name": "Kamil Šaško",
+  "sortName": "Šaško Kamil",
+  "club": "Nezaradení"
  },
  {
   "id": "1150",
   "name": "Ivan Ševčík",
   "sortName": "Ševčík Ivan",
-  "club": "SNS"
+  "club": "Nezaradení"
  },
  {
   "id": "1114",
@@ -864,16 +1074,22 @@
   "club": "HLAS - SD"
  },
  {
+  "id": "918",
+  "name": "Martina Šimkovičová",
+  "sortName": "Šimkovičová Martina",
+  "club": "Nezaradení"
+ },
+ {
   "id": "1065",
   "name": "Michal Šipoš",
   "sortName": "Šipoš Michal",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "1146",
   "name": "Anežka Škopová",
   "sortName": "Škopová Anežka",
-  "club": "SLOVENSKO"
+  "club": "SLOVENSKO - ZA ĽUDÍ"
  },
  {
   "id": "862",
@@ -910,6 +1126,12 @@
   "name": "Peter Šuca",
   "sortName": "Šuca Peter",
   "club": "SMER - SD"
+ },
+ {
+  "id": "1069",
+  "name": "Matúš Šutaj Eštok",
+  "sortName": "Šutaj Eštok Matúš",
+  "club": "Nezaradení"
  },
  {
   "id": "691",
