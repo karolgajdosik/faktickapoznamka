@@ -7,6 +7,7 @@ interface Props { title?: string; description?: string; wide?: boolean; ogImage?
 const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false, ogImage = "/og/default.png", index = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
+const chips = [["/schodze/", "Schôdze"], ["/statistiky/", "Štatistiky"], ["/vybory/", "Výbory"], ["/kraje/", "Kraje"], ["/poslanci/zmeny/", "Zmeny v zložení"], ["/o-projekte/", "O projekte"]];
 const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
@@ -56,6 +57,10 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
         {nav.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
         <a href="https://tv.nrsr.sk/" rel="noopener" id="nav-live" hidden><span class="live-dot" aria-hidden="true"></span>Naživo</a>
       </nav>
+      <nav class="m-chips" aria-label="Sekcie">
+        {chips.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
+      </nav>
+      <script is:inline>{(() => { const a = document.querySelector(".m-chips [aria-current]"); if (a) a.parentElement.scrollLeft = a.offsetLeft - 16; })()}</script>
       <button class="theme-btn" id="theme" type="button" aria-label="Prepnúť svetlý a tmavý režim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
     </div>
   </header>
