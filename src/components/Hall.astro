@@ -1,7 +1,7 @@
 ---
 // The plenary hall: one seat per MP, ring = club colour, fill = vote (vote mode).
 // Clubs fill the hemicycle left→right by size (neutral, not political left/right).
-import { clubs, mps as current, mpById, clubColor, initials, photo, LABEL, cls, type Code, type Mp } from "../lib/data";
+import { clubs, mps as current, mpById, clubColor, initials, photo, LABEL, cls, mpStats, pct, type Code, type Mp } from "../lib/data";
 interface Props { votes?: Record<string, Code>; clubsAt?: Record<string, string>; id?: string; intro?: boolean; label?: string }
 const { votes, clubsAt, id = "hall", intro = false, label = "Sála Národnej rady SR" } = Astro.props;
 
@@ -74,17 +74,19 @@ const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R *
       return (
         <g class:list={["seat", c && `v-${cls(c)}`]}
            style={`--club:${clubColor(club)};--i:${i};--x2:${s.x.toFixed(1)}px;--y2:${s.y.toFixed(1)}px;--x3:${d.x.toFixed(1)}px;--y3:${d.y.toFixed(1)}px;--k3:${d.k.toFixed(3)}`}
-           data-id={m.id} data-name={m.name} data-club={club} data-vote={c ? LABEL[c] : ""} tabindex="0" role="link"
+           data-id={m.id} data-name={m.name} data-club={club} data-vote={c ? LABEL[c] : ""} data-photo={photo(m.id) ?? ""} data-ini={initials(m)} data-att={mpStats(m.id).attendance != null ? pct(mpStats(m.id).attendance) : ""} tabindex="0" role="link"
            aria-label={`${m.name}, ${club}${c ? `: ${LABEL[c].toLowerCase()}` : ""}`}>
           <g class="chair" aria-hidden="true">
             <ellipse class="shadow" cx="0" cy={(R * 1.95).toFixed(1)} rx={(R * 1.05).toFixed(1)} ry={(R * .38).toFixed(1)} />
             <path class="back" d={`M ${(-R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Q 0 ${(R * 2.15).toFixed(1)} ${(-R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Z`} />
             <path class="sheen" fill={`url(#${id}-chair)`} d={`M ${(-R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .78).toFixed(1)} ${(R * .2).toFixed(1)} L ${(R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Q 0 ${(R * 2.15).toFixed(1)} ${(-R * .62).toFixed(1)} ${(R * 1.9).toFixed(1)} Z`} />
           </g>
-          <circle r={R.toFixed(1)} />
-          {photo(m.id) && !votes
-            ? <image href={photo(m.id)!} x={(-R + 2.2).toFixed(1)} y={(-R + 2.2).toFixed(1)} width={(2 * R - 4.4).toFixed(1)} height={(2 * R - 4.4).toFixed(1)} preserveAspectRatio="xMidYMid slice" />
-            : <text>{initials(m)}</text>}
+          <g class="pop">
+            <circle r={R.toFixed(1)} />
+            {photo(m.id) && !votes
+              ? <image href={photo(m.id)!} x={(-R + 2.2).toFixed(1)} y={(-R + 2.2).toFixed(1)} width={(2 * R - 4.4).toFixed(1)} height={(2 * R - 4.4).toFixed(1)} preserveAspectRatio="xMidYMid slice" />
+              : <text>{initials(m)}</text>}
+          </g>
         </g>
       );
     })}
@@ -95,23 +97,59 @@ const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R *
   // Tooltip + default click (go to MP page). Pages can override by listening to "seat:select".
   for (const hall of document.querySelectorAll<HTMLElement>(".hall")) {
     const tip = hall.querySelector<HTMLElement>(".tip")!;
+    const fine = matchMedia("(hover: hover) and (pointer: fine)").matches;
+    let lifted: { g: SVGGElement; next: Node | null } | null = null;
+    const lift = (g: SVGGElement) => {
+      if (!fine || lifted?.g === g) return;
+      drop();
+      lifted = { g, next: g.nextSibling }; g.parentNode!.appendChild(g); // paint above neighbours
+      hall.classList.add("hovering"); hall.style.setProperty("--spot", g.dataset.club ?? "");
+      for (const s of hall.querySelectorAll<SVGGElement>(".seat")) s.classList.toggle("same", s.dataset.club === g.dataset.club);
+      requestAnimationFrame(() => g.classList.add("up"));
+    };
+    const drop = () => {
+      if (!lifted) return;
+      const { g, next } = lifted; lifted = null;
+      g.classList.remove("up"); g.parentNode!.insertBefore(g, next);
+      hall.classList.remove("hovering");
+    };
     const show = (g: SVGGElement) => {
       const r = g.getBoundingClientRect(), h = hall.getBoundingClientRect();
-      const extra = g.dataset.extra ? ` · ${g.dataset.extra}` : g.dataset.vote ? ` · ${g.dataset.vote}` : "";
+      const extra = g.dataset.extra || g.dataset.vote || (g.dataset.att ? `účasť ${g.dataset.att}` : "");
       tip.innerHTML = "";
+      const card = document.createElement("div"); card.className = "tip-card";
+      if (fine) {
+        const ph = document.createElement("span"); ph.className = "tip-ph"; ph.style.setProperty("--club", getComputedStyle(g).getPropertyValue("--club"));
+        if (g.dataset.photo) { const img = document.createElement("img"); img.src = g.dataset.photo; img.alt = ""; ph.append(img); } else ph.textContent = g.dataset.ini ?? "";
+        card.append(ph);
+      }
+      const txt = document.createElement("span"); txt.className = "tip-tx";
       const b = document.createElement("b"); b.textContent = g.dataset.name!;
-      const s = document.createElement("span"); s.textContent = g.dataset.club + extra;
-      tip.append(b, s);
-      tip.style.left = `${r.left - h.left + r.width / 2}px`; tip.style.top = `${r.top - h.top}px`;
+      const s = document.createElement("span"); s.textContent = g.dataset.club + (extra ? ` · ${extra}` : "");
+      txt.append(b, s); card.append(txt); tip.append(card);
+      tip.style.left = `${r.left - h.left + r.width / 2}px`; tip.style.top = `${r.top - h.top - (fine ? r.height * .55 : 0)}px`;
       tip.hidden = false;
+      const half = tip.offsetWidth / 2, x = r.left - h.left + r.width / 2; // keep the card inside the hall
+      tip.style.left = `${Math.min(Math.max(x, half + 8), h.width - half - 8)}px`;
+      tip.classList.remove("in"); void tip.offsetWidth; tip.classList.add("in");
     };
     const hide = () => { tip.hidden = true; };
     const select = (g: SVGGElement) => {
       const ev = new CustomEvent("seat:select", { detail: g.dataset.id, cancelable: true, bubbles: true });
       if (hall.dispatchEvent(ev)) location.href = `/poslanci/${g.dataset.id}/`;
     };
-    hall.addEventListener("pointerover", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) show(g); });
-    hall.addEventListener("pointerout", (e) => { if ((e.target as Element).closest(".seat")) hide(); });
+    hall.addEventListener("pointerover", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) { lift(g); show(g); } });
+    hall.addEventListener("pointerout", (e) => {
+      const from = (e.target as Element).closest(".seat"), to = (e.relatedTarget as Element | null)?.closest?.(".seat");
+      if (from && from !== to) { hide(); if (!to) drop(); }
+    });
+    hall.addEventListener("pointerleave", () => { hide(); drop(); });
+    // The MP list next to the hall can point at a seat (hover a name → that seat lifts).
+    hall.addEventListener("seat:hover", (e) => {
+      const id = (e as CustomEvent).detail as string | null;
+      const g = id ? hall.querySelector<SVGGElement>(`.seat[data-id="${id}"]`) : null;
+      if (g && !hall.classList.contains("filtered") || g?.classList.contains("match")) { lift(g!); show(g!); } else { hide(); drop(); }
+    });
     hall.addEventListener("focusin", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) show(g); });
     hall.addEventListener("focusout", hide);
     hall.addEventListener("click", (e) => { const g = (e.target as Element).closest<SVGGElement>(".seat"); if (g) select(g); });

@@ -110,8 +110,8 @@ const data = mps.map((m) => {
           el("span", { className: "val" }, val, el("small", { textContent: lab })));
         btn.style.setProperty("--club", m.color);
         btn.addEventListener("click", () => open(m.id));
-        btn.addEventListener("mouseenter", () => seats.get(m.id)?.classList.add("hi"));
-        btn.addEventListener("mouseleave", () => seats.get(m.id)?.classList.remove("hi"));
+        btn.addEventListener("mouseenter", () => { seats.get(m.id)?.classList.add("hi"); hall.dispatchEvent(new CustomEvent("seat:hover", { detail: m.id })); });
+        btn.addEventListener("mouseleave", () => { seats.get(m.id)?.classList.remove("hi"); hall.dispatchEvent(new CustomEvent("seat:hover", { detail: null })); });
         return el("li", {}, btn);
       }));
       document.getElementById("count")!.textContent = String(rows.length);

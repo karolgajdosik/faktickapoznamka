@@ -579,3 +579,27 @@ details.day[open] > summary::before { transform: rotate(90deg); }
 .fx-day a { font-weight: 600; }
 .fx-adv { border: 1px solid var(--line); border-radius: 1rem; padding: .8rem; display: grid; gap: .7rem; background: var(--panel); }
 .fx-adv[hidden] { display: none; }
+
+/* ---------- hall: hover lift on large screens ---------- */
+.hall .seat .pop { transform-box: fill-box; transform-origin: center; }
+.hall .tip-card { display: flex; align-items: center; gap: .65rem; }
+.hall .tip-tx { display: flex; flex-direction: column; }
+.hall .tip-ph { width: 3.2rem; height: 3.2rem; flex: none; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font-weight: 800; background: var(--panel-2); box-shadow: 0 0 0 2px var(--club); }
+.hall .tip-ph img { width: 100%; height: 100%; object-fit: cover; }
+@media (hover: hover) and (pointer: fine) {
+  .hall .seat .pop { transition: transform .38s cubic-bezier(.34, 1.56, .64, 1), filter .3s; }
+  .hall .seat.up .pop { transform: translateY(-7px) scale(2.1); filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .45)) drop-shadow(0 0 7px color-mix(in srgb, var(--club) 70%, transparent)); }
+  .hall.hall .seat.up circle { stroke: var(--club); stroke-width: 1.4; }
+  .hall .seat .chair { transition: opacity .4s, transform .3s; transform-box: fill-box; transform-origin: center bottom; }
+  .hall .seat.up .chair { transform: scale(1.15); }
+  .hall .seat { transition: transform .6s cubic-bezier(.2,.8,.2,1), opacity .25s, filter .25s; }
+  .hall.hovering .seat:not(.same) { opacity: .28; filter: saturate(.4); }
+  .hall.hovering .seat.same:not(.up) .pop { transform: scale(1.12); }
+  .hall .tip { padding: .55rem .8rem .55rem .55rem; border-radius: 14px; }
+  .hall .tip.in { animation: tipIn .22s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes tipIn { from { opacity: 0; transform: translate(-50%, calc(-100% - 4px)) scale(.94); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hall .seat .pop, .hall .seat .chair { transition: none !important; }
+  .hall .tip.in { animation: none; }
+}
