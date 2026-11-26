@@ -709,3 +709,5 @@ kbd { font: 600 .7rem var(--font); color: var(--muted); border: 1px solid var(--
 
 /* larger text: keep the header on one line */
 @media (min-width: 44.01rem) { :root[style*="font-size"] .k-open { flex: 0 0 2.3rem; min-width: 2.3rem; padding: 0; justify-content: center; } :root[style*="font-size"] .k-open span, :root[style*="font-size"] .k-open kbd { display: none; } }
+
+.tr-bar { padding: .45rem 1rem; text-align: center; font-size: var(--step--1); background: color-mix(in srgb, var(--accent) 14%, var(--bg)); border-bottom: 1px solid var(--line); }

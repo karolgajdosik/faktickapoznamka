@@ -136,7 +136,16 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     }
     // "Nová verzia" check: compare this page's <meta name="app-version"> with the one in a fresh "/".
     // Runs 20 s after load, every 5 minutes and on returning to the tab; never while hidden.
-    {
+    // On Google's translated copy (*.translate.goog) skip the update check and the service worker:
+    // they belong to the original site and only confuse the proxy.
+    const proxied = location.hostname.endsWith(".translate.goog");
+    if (proxied) {
+      navigator.serviceWorker?.getRegistrations?.().then((rs) => rs.forEach((r) => r.unregister())).catch(() => {});
+      const back = document.createElement("div"); back.className = "tr-bar";
+      const a = document.createElement("a"); a.href = `https://faktickapoznamka.sk${location.pathname}`; a.textContent = "Pôvodná slovenská verzia";
+      back.append("Strojový preklad cez Google Prekladač. ", a); document.body.prepend(back);
+    }
+    if (!proxied) {
       const mine = document.querySelector<HTMLMetaElement>('meta[name="app-version"]')?.content;
       const bar = document.getElementById("update")!;
       let shown = false;
