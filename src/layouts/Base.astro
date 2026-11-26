@@ -7,8 +7,8 @@ interface Props { title?: string; description?: string; wide?: boolean; ogImage?
 const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false, ogImage = "/og/default.png", index = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
-const chips = [["/schodze/", "Schôdze"], ["/statistiky/", "Štatistiky"], ["/vybory/", "Výbory"], ["/kraje/", "Kraje"], ["/poslanci/zmeny/", "Zmeny v zložení"], ["/o-projekte/", "O projekte"]];
-const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
+const chips = [["/schodze/", "Schôdze"], ["/statistiky/", "Štatistiky"], ["/vybory/", "Výbory"], ["/kraje/", "Kraje"]];
+const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/majetok/", "Majetok"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
 <html lang="sk">
@@ -81,12 +81,13 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     <a href="/poslanci/" aria-current={path.startsWith("/poslanci/") ? "page" : undefined}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="4" cy="17" r="1.6"/><circle cx="6" cy="11" r="1.6"/><circle cx="10" cy="7.2" r="1.6"/><circle cx="14" cy="7.2" r="1.6"/><circle cx="18" cy="11" r="1.6"/><circle cx="20" cy="17" r="1.6"/><circle cx="9.5" cy="15" r="1.4"/><circle cx="14.5" cy="15" r="1.4"/></svg><span>Sála</span></a>
     <a href="/zakony/" aria-current={path.startsWith("/zakony/") ? "page" : undefined}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg><span>Zákony</span></a>
     <a href="/hlasovania/" aria-current={path.startsWith("/hlasovania/") ? "page" : undefined}><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>Hlasovania</span></a>
-    <a href="/sledujem/" aria-current={path.startsWith("/sledujem/") ? "page" : undefined}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Sledujem</span></a>
+    <a href="/majetok/" aria-current={path.startsWith("/majetok/") ? "page" : undefined}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5M5 9.5V20h14V9.5"/><path d="M10 20v-5h4v5"/></svg><span>Majetok</span></a>
     <button type="button" id="more-btn" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Viac</span></button>
   </nav>
   <dialog class="sheet" id="more" aria-label="Ďalšie stránky">
     <div class="sheet-grip" aria-hidden="true"></div>
     <a href="/">Úvod</a>
+    <a href="/sledujem/">Sledujem</a>
     <a href="/schodze/">Schôdze</a>
     <a href="/vybory/">Výbory</a>
     <a href="/kraje/">Poslanci podľa krajov</a>

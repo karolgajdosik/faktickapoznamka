@@ -158,7 +158,7 @@ def parse_declaration(html: str) -> dict | None:
                 return out
         return None
     def items(label):
-        raw = [x for x in (after(label, multi=True) or []) if not x.lower().startswith("požitky") and not re.match(r"^(nevlastním|nemám|nevykonávam|nie)\b", x, re.I)]
+        raw = [x for x in (after(label, multi=True) or []) if not x.lower().startswith("požitky") and not re.match(r"^(nevlastním|nemám|nevykonávam|neužívam|žiadn\w*|nie)\b", x, re.I)]
         out = []
         for x in raw:                       # "(ORGANIZÁCIA)" belongs to the function above it
             if x.startswith("(") and out: out[-1] += " " + x

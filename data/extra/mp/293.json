@@ -333,9 +333,7 @@
    "Peňažná hotovosť",
    "Cenné papiere"
   ],
-  "obligations": [
-   "Žiadny"
-  ],
+  "obligations": [],
   "userId": "VaznLubo"
  },
  "at": "2026-11-26T01:05:52+00:00"

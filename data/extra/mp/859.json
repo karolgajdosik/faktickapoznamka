@@ -359,9 +359,7 @@
    "Vklady v banke",
    "Cenné papiere"
   ],
-  "obligations": [
-   "Žiadny"
-  ],
+  "obligations": [],
   "userId": "Alojz.Hlina"
  },
  "at": "2026-11-25T23:42:31+00:00"

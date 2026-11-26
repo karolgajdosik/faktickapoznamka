@@ -1,0 +1,81 @@
+---
+import Base from "../layouts/Base.astro";
+import Ava from "../components/Ava.astro";
+import { mpExtra, eur } from "../lib/extra";
+import { mps, clubColor } from "../lib/data";
+const rows = mps.map((m) => ({ m, d: mpExtra.get(m.id)?.declaration ?? null })).filter((r) => r.d)
+  .map(({ m, d }) => ({ m, d: d!, other: d!.incomeOther ?? 0, pub: d!.incomePublic ?? 0, re: d!.realEstateCount, mov: d!.movablesCount, obl: d!.obligations.length }))
+  .sort((a, b) => b.other - a.other);
+const med = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor(s.length / 2)] : 0; };
+const withOther = rows.filter((r) => r.other > 0).length;
+const clubList = [...new Set(rows.map((r) => r.m.club))].sort((a, b) => a.localeCompare(b, "sk"));
+const year = rows.map((r) => r.d.year).filter(Boolean).sort().pop();
+---
+<Base title="Majetkové priznania poslancov" description="Príjmy, nehnuteľnosti, hnuteľné veci a záväzky poslancov NR SR podľa oznámení verejných funkcionárov.">
+  <h1>Majetkové priznania</h1>
+  <p class="meta-line">Oznámenia verejných funkcionárov{year && ` za rok ${year}`}, ako ich zverejňuje nrsr.sk. Presné polohy nehnuteľností neuvádzame.</p>
+  {rows.length === 0 ? <p class="empty">Údaje sa práve načítavajú.</p> : (<>
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class="tile accent"><dt>Medián príjmu z funkcie</dt><dd>{eur(med(rows.map((r) => r.pub)))}</dd></div>
+    <div class="tile"><dt>Poslanci s inými príjmami</dt><dd>{withOther}<small>z {rows.length}</small></dd></div>
+    <div class="tile"><dt>Medián nehnuteľností</dt><dd>{med(rows.map((r) => r.re))}</dd></div>
+    <div class="tile"><dt>Poslanci so záväzkami</dt><dd>{rows.filter((r) => r.obl > 0).length}</dd></div>
+  </dl>
+  <div class="ctl">
+    <label>Zoradiť <select id="sort">
+      <option value="other">podľa iných príjmov</option><option value="pub">podľa príjmu z funkcie</option>
+      <option value="re">podľa počtu nehnuteľností</option><option value="mov">podľa hnuteľných vecí</option>
+      <option value="obl">podľa záväzkov</option><option value="name">podľa mena</option></select></label>
+    <label>Klub <select id="club"><option value="">všetky</option>{clubList.map((c) => <option>{c}</option>)}</select></label>
+  </div>
+  <div class="head-row" aria-hidden="true"><span>Poslanec</span><span>Z funkcie</span><span>Iné príjmy</span><span>Nehnut.</span><span>Hnut.</span><span>Záväzky</span></div>
+  <ol class="assets" id="assets">
+    {rows.map((r) => (
+      <li data-club={r.m.club} data-name={r.m.sortName} data-other={r.other} data-pub={r.pub} data-re={r.re} data-mov={r.mov} data-obl={r.obl}>
+        <a href={`/poslanci/${r.m.id}/#majetok`} style={`--club:${clubColor(r.m.club)}`}>
+          <span class="who"><Ava m={r.m} /><span>{r.m.name}<small>{r.m.club}</small></span></span>
+          <span class="n" data-l="Z funkcie">{eur(r.d.incomePublic)}</span>
+          <span class="n strong" data-l="Iné príjmy">{eur(r.d.incomeOther)}</span>
+          <span class="n" data-l="Nehnuteľnosti">{r.re}</span>
+          <span class="n" data-l="Hnuteľné veci">{r.mov}</span>
+          <span class="n" data-l="Záväzky">{r.obl}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+  <p class="meta-line">Počty sú počty položiek v oznámení (napríklad jeden list vlastníctva môže zahŕňať viac parciel). Iné príjmy zahŕňajú všetky príjmy mimo výkonu verejnej funkcie. Kliknutím otvoríte detail poslanca s odkazom na celé oznámenie.</p>
+  </>)}
+</Base>
+<script>
+  const list = document.getElementById("assets"), sort = document.getElementById("sort") as HTMLSelectElement, club = document.getElementById("club") as HTMLSelectElement;
+  const apply = () => {
+    if (!list) return;
+    const items = [...list.children] as HTMLElement[]; const k = sort.value;
+    items.sort((a, b) => k === "name" ? a.dataset.name!.localeCompare(b.dataset.name!, "sk") : Number(b.dataset[k]) - Number(a.dataset[k]));
+    for (const li of items) { li.hidden = !!club.value && li.dataset.club !== club.value; list.append(li); }
+  };
+  sort?.addEventListener("change", apply); club?.addEventListener("change", apply);
+</script>
+<style>
+  .ctl { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: 1.5rem 0 .75rem; font-size: var(--step--1); color: var(--muted); }
+  .ctl select { margin-left: .4rem; font: inherit; color: var(--text); background: var(--panel); border: 1px solid var(--line-2); border-radius: .5rem; padding: .35rem .5rem; }
+  .head-row, .assets a { display: grid; grid-template-columns: minmax(0, 1fr) 7.5rem 7.5rem 4.5rem 4.5rem 4.5rem; gap: .75rem; align-items: center; }
+  .head-row { font-size: var(--step--2); color: var(--muted); padding: 0 .7rem .4rem; border-bottom: 1px solid var(--line); }
+  .head-row span:not(:first-child) { text-align: right; }
+  .assets { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .assets a { padding: .55rem .7rem; text-decoration: none; color: inherit; border-bottom: 1px solid var(--line); border-left: 3px solid var(--club); }
+  .assets a:hover { background: var(--panel); }
+  .who { display: flex; align-items: center; gap: .6rem; min-width: 0; }
+  .who > span { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+  .who small { color: var(--muted); font-size: var(--step--1); }
+  .n { text-align: right; font-variant-numeric: tabular-nums; font-size: var(--step--1); }
+  .n.strong { font-weight: 700; }
+  @media (max-width: 44rem) {
+    .head-row { display: none; }
+    .assets a { grid-template-columns: repeat(3, 1fr); gap: .35rem .75rem; padding: .75rem .7rem; }
+    .who { grid-column: 1 / -1; }
+    .n { text-align: left; }
+    .n::before { content: attr(data-l); display: block; color: var(--muted); font-size: var(--step--2); font-weight: 400; }
+    .n:nth-child(5), .n:nth-child(6) { }
+  }
+</style>

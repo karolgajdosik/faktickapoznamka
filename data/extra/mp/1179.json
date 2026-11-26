@@ -886,9 +886,7 @@
    "Peňažné prostriedky na bankovom účte",
    "Životné poistenie"
   ],
-  "obligations": [
-   "Žiadny"
-  ],
+  "obligations": [],
   "userId": "Marian.Caucik"
  },
  "at": "2026-11-26T01:08:02+00:00"
