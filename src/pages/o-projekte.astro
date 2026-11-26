@@ -1,27 +1,131 @@
 ---
 import Base from "../layouts/Base.astro";
+import { votes, speeches, mps, laws, meta } from "../lib/data";
+const updated = new Date(meta.updatedAt).toLocaleString("sk-SK", { timeZone: "Europe/Bratislava", day: "numeric", month: "numeric", year: "numeric", hour: "2-digit", minute: "2-digit" });
+const nf = (n: number) => n.toLocaleString("sk-SK");
+const methods = [
+  { id: "metodika", t: "Účasť na hlasovaniach", d: "Podiel hlasovaní, pri ktorých poslanec nebol vedený ako neprítomný. Neprítomnosť považujeme za ospravedlnenú, ak má poslanec v daný deň zapísané ospravedlnenie na nrsr.sk; neospravedlnená môže byť aj krátka neprítomnosť počas rokovacieho dňa." },
+  { id: "sulad", t: "Súlad s klubom", d: "Podiel hlasovaní, v ktorých poslanec hlasoval rovnako ako väčšina jeho klubu (počítajú sa len hlasy za, proti a zdržal sa). Klub berieme podľa stavu v čase hlasovania. Ak klub nemal jasnú väčšinu, hlasovanie sa nepočíta. Pri nezaradených poslancoch sa súlad nepočíta." },
+  { id: "podobnost", t: "Hlasuje najčastejšie ako", d: "Podiel hlasovaní, v ktorých dvaja poslanci hlasovali rovnako, spomedzi tých, kde obaja hlasovali za, proti alebo sa zdržali (aspoň 50 spoločných hlasovaní)." },
+  { id: "stav", t: "Stav zákona", d: "„Schválený“ alebo „neschválený“ podľa záverečného hlasovania v treťom čítaní (pri uzneseniach, voľbách a správach podľa posledného hlasovania). „V procese“ pri aktivite za posledné 3 mesiace, inak „bez záverečného hlasovania“. Oficiálny priebeh vrátane čísla v Zbierke zákonov preberáme z nrsr.sk." },
+  { id: "tesne", t: "Tesné hlasovania a súdržnosť", d: "Tesné hlasovanie je také, o ktorom rozhodlo najviac 5 hlasov. Súdržnosť klubu je Riceov/Hixov index zhody: 100 % znamená, že všetci členovia hlasovali rovnako." },
+  { id: "slova", t: "Charakteristické slová", d: "Slová, ktoré poslanec v rozprave používa výrazne častejšie ako ostatní, počítané metódou TF-IDF zo stenografických prepisov, bez vlastných mien, rokovacích fráz a vystúpení predsedajúceho." },
+  { id: "aktivita", t: "Aktivita poslancov", d: "Ospravedlnenia, návrhy zákonov, pozmeňujúce návrhy, interpelácie, zahraničné cesty, kancelárie, výbory a zmeny v zložení parlamentu preberáme z nrsr.sk a obnovujeme približne raz týždenne." },
+  { id: "majetok", t: "Majetkové priznania", d: "Z oznámení verejných funkcionárov uvádzame príjmy, funkcie, zamestnanie, podnikanie a druhy a počty majetku. Presné polohy nehnuteľností (katastrálne územia, listy vlastníctva) zámerne neuvádzame; celé oznámenie je dostupné cez odkaz na nrsr.sk." },
+  { id: "ai", t: "AI zhrnutia vystúpení", d: "Pri dlhších vystúpeniach zobrazujeme krátke zhrnutie označené „AI zhrnutie“. Vytvára ho jazykový model (GitHub Models) výlučne z oficiálneho prepisu, s pokynom zachovať nestrannosť a nič nepridávať. Zhrnutie môže byť nepresné, rozhoduje celý prepis." },
+  { id: "prezentacie", t: "Čo nepočítame", d: "Prezentácie (kontroly prítomnosti) neuvádzame v štatistikách, lebo sa pri nich o ničom nerozhoduje. Kluby sú v sále zoradené podľa veľkosti a ich farby sú neutrálne, nie stranícke." },
+];
+const faq = [
+  ["Je to oficiálna stránka parlamentu?", "Nie. Faktická poznámka je nezávislý projekt bez väzby na Národnú radu SR, vládu či politické strany. Ak sa údaj líši od nrsr.sk, platí nrsr.sk."],
+  ["Ako často sa údaje obnovujú?", "Hlasovania a rozprava sa kontrolujú každú hodinu počas pracovných dní. Aktivita poslancov, výbory a majetkové priznania približne raz týždenne."],
+  ["Môžem dáta použiť?", "Áno. Kód aj dáta sú verejné na GitHube a môžete ich voľne použiť, uvítame uvedenie zdroja."],
+  ["Odkiaľ sú fotografie?", "Zo stránky politicheck.sk, pôvodne ide o oficiálne portréty poslancov NR SR. Kde fotografia chýba, zobrazujeme iniciály."],
+  ["Ako sledovať konkrétneho poslanca?", "Na profile poslanca kliknite na Sledovať, alebo si pridajte jeho RSS kanál. Novinky zo všetkých hlasovaní sú v RSS kanáli hlasovaní."],
+];
 ---
-<Base title="O projekte" description="Čo je faktická poznámka, odkiaľ berie dáta a ako počíta štatistiky.">
-  <div class="prose">
-    <h1>O projekte</h1>
-    <p>Faktická poznámka je nezávislá a neoficiálna stránka, ktorá prehľadne ukazuje, ako hlasujú poslanci Národnej rady Slovenskej republiky. Nie je stránkou Národnej rady SR ani žiadnej politickej strany.</p>
-    <h2>Odkiaľ sú dáta</h2>
-    <p>Všetky údaje pochádzajú z verejných stránok <a href="https://www.nrsr.sk/">nrsr.sk</a>. Automaticky ich sťahujeme niekoľkokrát denne. Pri každom hlasovaní a poslancovi je odkaz na pôvodný zdroj. Ak nájdete chybu, rozhoduje údaj na nrsr.sk.</p>
-    <h2 id="metodika">Ako počítame štatistiky</h2>
-    <p><strong>Účasť na hlasovaniach</strong> je podiel hlasovaní, pri ktorých poslanec nebol vedený ako neprítomný. Ospravedlnenú neprítomnosť nerozlišujeme.</p>
-    <p><strong>Súlad s klubom</strong> je podiel hlasovaní, v ktorých poslanec hlasoval rovnako ako väčšina jeho klubu (počítajú sa iba hlasy za, proti a zdržal sa). Klub berieme podľa stavu v čase hlasovania. Ak klub nemal jasnú väčšinu, hlasovanie sa nepočíta. Pri nezaradených poslancoch sa súlad nepočíta.</p>
-    <p><strong>Prezentácie</strong> (kontroly prítomnosti) v zoznamoch ani štatistikách neuvádzame, lebo sa pri nich o ničom nerozhoduje.</p>
-    <p><strong>Stav zákona</strong> určujeme z hlasovaní: „schválený“ alebo „neschválený“ podľa záverečného hlasovania v treťom čítaní (pri uzneseniach, voľbách a správach podľa posledného hlasovania), „v procese“ pri aktivite za posledné 3 mesiace, inak „bez záverečného hlasovania“ (napr. stiahnutý alebo neprerokovaný návrh). Platnosť zákona (podpis prezidenta, vyhlásenie v Zbierke) nesledujeme.</p>
-    <p>Kluby sú v sále zoradené podľa veľkosti, nie podľa politickej orientácie, a ich farby sú neutrálne, nie stranícke.</p>
-    <h2 id="aktivita">Aktivita poslancov a majetkové priznania</h2>
-    <p>Ospravedlnenia, predložené návrhy zákonov, pozmeňujúce návrhy, interpelácie, zahraničné pracovné cesty, poslanecké kancelárie, výbory, zmeny v zložení parlamentu, priebeh legislatívneho procesu a oznámenia verejných funkcionárov preberáme z verejných stránok nrsr.sk a obnovujeme ich približne raz týždenne. Neprítomnosť pri hlasovaní považujeme za ospravedlnenú, ak má poslanec v daný deň zapísané ospravedlnenie. „Hlasuje najčastejšie ako“ je podiel hlasovaní, v ktorých dvaja poslanci hlasovali rovnako, spomedzi hlasovaní, kde obaja hlasovali za, proti alebo sa zdržali (aspoň 50 spoločných). Charakteristické slová počítame metódou TF-IDF zo stenografických prepisov bez vystúpení predsedajúceho. Z majetkových priznaní uvádzame príjmy, funkcie, zamestnanie, podnikanie a druhy a počty majetku. Presné polohy nehnuteľností (katastrálne územia, listy vlastníctva) zámerne neuvádzame; celé oznámenie je dostupné cez odkaz na nrsr.sk.</p>
-    <h2 id="ai">AI zhrnutia vystúpení</h2>
-    <p>Pri dlhších vystúpeniach zobrazujeme krátke zhrnutie označené „AI zhrnutie“. Vytvára ho jazykový model (GitHub Models) výlučne z oficiálneho prepisu NR SR, s pokynom zachovať nestrannosť a nepridávať nič, čo v prepise nie je. Zhrnutie môže byť nepresné; vždy rozhoduje celý prepis, ktorý je pri každom vystúpení dostupný. Kvôli bezplatnému limitu sa zhrnutia dopĺňajú postupne od najnovších vystúpení.</p>
-    <h2>Fotografie</h2>
-    <p>Fotografie poslancov sú prevzaté zo stránky <a href="https://politicheck.sk/">politicheck.sk</a>; pôvodne ide o oficiálne portréty poslancov NR SR. Pri poslancoch bez fotografie zobrazujeme iniciály.</p>
-    <h2>Otvorený kód a dáta</h2>
-    <p>Kód aj dáta sú verejné na <a href="https://github.com/karolgajdosik/faktickapoznamka">GitHube</a> a môžete ich voľne použiť. Novinky odoberáte cez <a href="/rss.xml">RSS kanál hlasovaní</a> alebo RSS kanál konkrétneho poslanca (na jeho profile).</p>
-    <h2>Kontakt</h2>
-    <p>Chyby a návrhy posielajte na <a href="mailto:kontakt@faktickapoznamka.sk">kontakt@faktickapoznamka.sk</a>.</p>
-  </div>
+<Base title="O projekte" description="Čo je faktická poznámka, odkiaľ berie dáta, ako počíta štatistiky a ako nás kontaktovať.">
+  <section class="ab-hero">
+    <h1>Parlament, ktorému sa dá rozumieť</h1>
+    <p class="lead">Faktická poznámka prehľadne ukazuje, ako hlasujú a čo hovoria poslanci Národnej rady SR. Nezávisle, bez reklám, s otvoreným kódom a dátami.</p>
+    <dl class="ab-stats">
+      <div><dt>hlasovaní</dt><dd>{nf(votes.length)}</dd></div>
+      <div><dt>vystúpení v rozprave</dt><dd>{nf(speeches.length)}</dd></div>
+      <div><dt>tlačí a zákonov</dt><dd>{nf(laws.length)}</dd></div>
+      <div><dt>poslancov</dt><dd>{mps.length}</dd></div>
+    </dl>
+    <p class="ab-upd"><span class="dot" aria-hidden="true"></span>Posledná aktualizácia {updated}</p>
+  </section>
+
+  <section class="ab-sec wide">
+    <h2>Ako to funguje</h2>
+    <ol class="ab-flow">
+      <li><b>nrsr.sk</b><span>Verejné stránky parlamentu: hlasovania, prepisy, tlače, výbory, oznámenia funkcionárov.</span></li>
+      <li><b>Automatický zber</b><span>Každú hodinu počas pracovných dní skript stiahne nové údaje a skontroluje ich.</span></li>
+      <li><b>Výpočty</b><span>Účasť, súlad s klubom, stav zákonov a ďalšie ukazovatele podľa metodiky nižšie.</span></li>
+      <li><b>Stránka</b><span>Nová verzia sa zverejní do pár minút. Pri každom údaji je odkaz na pôvodný zdroj.</span></li>
+    </ol>
+  </section>
+
+  <section class="ab-sec wide" id="metodika-zoznam">
+    <h2>Metodika</h2>
+    <p class="muted">Ako počítame jednotlivé čísla. Kliknutím rozbalíte.</p>
+    <div class="ab-acc">
+      {methods.map((m) => (
+        <details id={m.id}>
+          <summary>{m.t}</summary>
+          <p>{m.d}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="ab-sec wide">
+    <h2>Časté otázky</h2>
+    <div class="ab-acc">
+      {faq.map(([q, a]) => <details><summary>{q}</summary><p>{a}</p></details>)}
+    </div>
+  </section>
+
+  <section class="ab-cards">
+    <a class="ab-card" href="mailto:kontakt@faktickapoznamka.sk">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <b>Napíšte nám</b><span>Našli ste chybu alebo máte nápad? kontakt@faktickapoznamka.sk</span>
+    </a>
+    <a class="ab-card" href="https://github.com/karolgajdosik/faktickapoznamka" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+      <b>Otvorený kód a dáta</b><span>Všetko je verejné na GitHube, môžete to voľne použiť.</span>
+    </a>
+    <a class="ab-card" href="/rss.xml">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a1 1 0 1 0 0-.01M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/></svg>
+      <b>RSS kanál</b><span>Nové hlasovania priamo vo vašej čítačke. Každý poslanec má aj vlastný kanál.</span>
+    </a>
+  </section>
+
 </Base>
+
+<script>
+  // Opening /o-projekte/#ai (and other methodology anchors) expands that item.
+  const open = () => { const el = location.hash && document.getElementById(location.hash.slice(1)); if (el instanceof HTMLDetailsElement) { el.open = true; el.scrollIntoView({ block: "center" }); } };
+  open(); window.addEventListener("hashchange", open);
+</script>
+
+<style>
+  .ab-hero { padding: clamp(1.5rem, 5vw, 3.5rem) 0 1rem; max-width: 52rem; }
+  .ab-hero h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 1rem; }
+  .lead { font-size: var(--step-1); color: var(--muted); line-height: 1.5; max-width: 40rem; margin: 0; }
+  .ab-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin: 2rem 0 1rem; }
+  @media (max-width: 44rem) { .ab-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .ab-stats div { padding: .9rem 1rem; border-radius: 1rem; background: var(--panel); border: 1px solid var(--line); }
+  .ab-stats dd { margin: 0; font-size: var(--step-2); font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .ab-stats dt { order: 2; font-size: var(--step--2); color: var(--muted); font-weight: 600; }
+  .ab-stats div { display: flex; flex-direction: column-reverse; }
+  .ab-upd { display: flex; align-items: center; gap: .5rem; font-size: var(--step--1); color: var(--muted); margin: 0; }
+  .ab-upd .dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--za); box-shadow: 0 0 0 4px color-mix(in srgb, var(--za) 20%, transparent); }
+  .ab-sec { margin-top: 3rem; max-width: 52rem; }
+  .ab-sec h2 { font-size: var(--step-2); margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .ab-flow { list-style: none; counter-reset: s; padding: 0; margin: 1.25rem 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+  @media (max-width: 52rem) { .ab-flow { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 30rem) { .ab-flow { grid-template-columns: 1fr; } }
+  .ab-flow li { position: relative; counter-increment: s; display: flex; flex-direction: column; gap: .35rem; padding: 1rem 1rem 1.1rem; border-radius: 1rem; background: var(--panel); border: 1px solid var(--line); }
+  .ab-flow li::before { content: counter(s); display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; font-size: var(--step--1); margin-bottom: .25rem; }
+  .ab-flow b { font-size: var(--step-0); }
+  .ab-flow span { color: var(--muted); font-size: var(--step--1); line-height: 1.45; }
+  .ab-acc { display: grid; gap: .5rem; margin-top: 1rem; align-items: start; }
+  .ab-sec.wide { max-width: none; }
+  @media (min-width: 64rem) { .ab-acc { grid-template-columns: 1fr 1fr; } .ab-flow { max-width: none; } }
+  .ab-acc details { border-radius: 1rem; background: var(--panel); border: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .ab-acc details[open] { border-color: var(--line-2); }
+  .ab-acc summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .95rem 1.1rem; font-weight: 700; }
+  .ab-acc summary::-webkit-details-marker { display: none; }
+  .ab-acc summary::after { content: ""; flex: none; width: .6rem; height: .6rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg) translateY(-2px); transition: transform .2s; }
+  .ab-acc details[open] summary::after { transform: rotate(225deg) translateY(-2px); }
+  .ab-acc summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 1rem; }
+  .ab-acc p { margin: 0; padding: 0 1.1rem 1.1rem; color: var(--muted); line-height: 1.6; max-width: 70ch; }
+  .ab-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: .75rem; margin-top: 3rem; }
+  .ab-card { display: grid; align-content: start; gap: .35rem; padding: 1.2rem; border-radius: 1rem; background: var(--panel); border: 1px solid var(--line); text-decoration: none; color: inherit; transition: border-color .2s, transform .2s; }
+  .ab-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .ab-card svg { width: 1.6rem; height: 1.6rem; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; margin-bottom: .3rem; }
+  .ab-card span { color: var(--muted); font-size: var(--step--1); line-height: 1.45; }
+  .ab-foot { margin: 2.5rem 0 1rem; color: var(--muted); font-size: var(--step--1); max-width: 52rem; }
+  @media (prefers-reduced-motion: reduce) { .ab-card, .ab-acc summary::after { transition: none; } .ab-card:hover { transform: none; } }
+</style>
