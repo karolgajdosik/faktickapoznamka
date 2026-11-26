@@ -37,7 +37,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="faktická poznámka" />
   <meta name="app-version" content={versionInfo.v} />
-  <script is:inline>try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+  <script is:inline>try { const d = document.documentElement, t = localStorage.getItem("theme"), f = localStorage.getItem("fp-size"), c = localStorage.getItem("fp-contrast"); if (t) d.dataset.theme = t; if (f) d.style.fontSize = f + "%"; if (c) d.dataset.contrast = c; } catch {}</script>
 </head>
 <body>
   <a class="skip" href="#obsah">Preskočiť na obsah</a>
@@ -65,7 +65,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <span>Hľadať poslanca, zákon…</span><kbd id="k-key">Ctrl K</kbd>
       </button>
-      <button class="theme-btn" id="theme" type="button" aria-label="Prepnúť svetlý a tmavý režim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+      <button class="theme-btn a11y-btn" id="a11y-open" type="button" aria-haspopup="dialog" aria-controls="a11y" aria-label="Zobrazenie: veľkosť písma, kontrast, režim a jazyk" title="Veľkosť písma, kontrast, jazyk"><span aria-hidden="true">Aa</span></button>
     </div>
   </header>
   <div id="live" class="live" hidden data-since={live.item ? live.since : ""}>
@@ -100,7 +100,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     <a href="/hladat/">Hľadať v prepisoch</a>
     <a href="/o-projekte/">O projekte</a>
     <a href="/rss.xml">RSS kanál hlasovaní</a>
-    <button type="button" id="theme-m">Prepnúť svetlý a tmavý režim</button>
+    <button type="button" id="theme-m">Písmo, kontrast, jazyk a režim</button>
     <button type="button" class="sheet-close" data-close>Zavrieť</button>
     <p class="sheet-note">Neoficiálna, nezávislá stránka, nie je stránkou NR SR. Zdroj dát: <a href="https://www.nrsr.sk/">nrsr.sk</a>. Kód a dáta: <a href="https://github.com/karolgajdosik/faktickapoznamka">GitHub</a>. Aktualizované {new Date(meta.updatedAt).toLocaleString("sk-SK", { timeZone: "Europe/Bratislava", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}.</p>
   </dialog>
@@ -132,7 +132,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
       const sheet = document.getElementById("more") as HTMLDialogElement;
       document.getElementById("more-btn")!.addEventListener("click", () => sheet.showModal());
       sheet.addEventListener("click", (e) => { if (e.target === sheet || (e.target as Element).closest("[data-close]")) sheet.close(); });
-      document.getElementById("theme-m")!.addEventListener("click", () => { document.getElementById("theme")!.click(); sheet.close(); });
+      document.getElementById("theme-m")!.addEventListener("click", () => { sheet.close(); document.getElementById("a11y-open")!.click(); });
     }
     // "Nová verzia" check: compare this page's <meta name="app-version"> with the one in a fresh "/".
     // Runs 20 s after load, every 5 minutes and on returning to the tab; never while hidden.
@@ -168,12 +168,6 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
         addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
       }
     }
-    document.getElementById("theme")!.addEventListener("click", () => {
-      const root = document.documentElement;
-      const dark = root.dataset.theme ? root.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
-      root.dataset.theme = dark ? "light" : "dark";
-      try { localStorage.setItem("theme", root.dataset.theme); } catch {}
-    });
   </script>
   <dialog class="k-pal" id="k-pal" aria-label="Rýchle vyhľadávanie">
     <form method="dialog" class="k-box" role="search">
@@ -239,6 +233,78 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     list.addEventListener("click", (e) => { const a = (e.target as HTMLElement).closest("a"); if (a) { e.preventDefault(); go(a.getAttribute("href")!); } });
     list.addEventListener("mousemove", (e) => { const li = (e.target as HTMLElement).closest('[role="option"]'); if (li) { const i = Number(li.id.slice(3)); if (i !== sel) move(i - sel); } });
     dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+  </script>
+  <dialog class="a11y" id="a11y" aria-labelledby="a11y-h">
+    <div class="a11y-head"><h2 id="a11y-h">Zobrazenie</h2><button type="button" class="a11y-x" data-close aria-label="Zavrieť">✕</button></div>
+    <section>
+      <h3>Veľkosť písma</h3>
+      <div class="a11y-size" role="group" aria-label="Veľkosť písma">
+        <button type="button" data-size="-1" aria-label="Zmenšiť písmo">A−</button>
+        <output id="a11y-val" aria-live="polite">100 %</output>
+        <button type="button" data-size="1" aria-label="Zväčšiť písmo">A+</button>
+        <button type="button" class="a11y-reset" data-size="0">Pôvodná</button>
+      </div>
+    </section>
+    <section>
+      <h3>Pre slabozrakých</h3>
+      <label class="a11y-sw"><input type="checkbox" id="a11y-contrast" /><span><b>Vysoký kontrast</b><small>Tmavší text, výraznejšie okraje a podčiarknuté odkazy</small></span></label>
+      <label class="a11y-sw"><input type="checkbox" id="a11y-motion" /><span><b>Bez animácií</b><small>Vypne pohyb a prechody</small></span></label>
+    </section>
+    <section>
+      <h3>Režim</h3>
+      <div class="a11y-seg" role="group" aria-label="Farebný režim">
+        <button type="button" data-theme-set="light">Svetlý</button><button type="button" data-theme-set="dark">Tmavý</button><button type="button" data-theme-set="" title="Podľa nastavenia systému">Automaticky</button>
+      </div>
+    </section>
+    <section>
+      <h3>Jazyk</h3>
+      <div class="a11y-langs">
+        <a href="#" data-lang="sk" aria-current="true"><span>SK</span>Slovenčina</a>
+        <a href="#" data-lang="en"><span>EN</span>English</a>
+        <a href="#" data-lang="de"><span>DE</span>Deutsch</a>
+        <a href="#" data-lang="hu"><span>HU</span>Magyar</a>
+        <a href="#" data-lang="pl"><span>PL</span>Polski</a>
+      </div>
+      <p class="a11y-note">Cudzie jazyky sú automatický preklad cez Google Prekladač: otvorí sa tá istá stránka preložená. Môže obsahovať nepresnosti, platí slovenský originál.</p>
+    </section>
+  </dialog>
+  <script>
+    const d = document.documentElement, dlgA = document.getElementById("a11y") as HTMLDialogElement;
+    const STEPS = [87.5, 100, 112.5, 125, 137.5, 150];
+    const store = (k: string, v: string | null) => { try { v === null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
+    const cur = () => { const v = parseFloat(d.style.fontSize) || 100; return STEPS.reduce((a, b) => (Math.abs(b - v) < Math.abs(a - v) ? b : a)); };
+    function paint() {
+      const v = cur(); (document.getElementById("a11y-val") as HTMLOutputElement).value = `${v} %`;
+      (dlgA.querySelector('[data-size="-1"]') as HTMLButtonElement).disabled = v === STEPS[0];
+      (dlgA.querySelector('[data-size="1"]') as HTMLButtonElement).disabled = v === STEPS[STEPS.length - 1];
+      (document.getElementById("a11y-contrast") as HTMLInputElement).checked = d.dataset.contrast === "high";
+      (document.getElementById("a11y-motion") as HTMLInputElement).checked = d.dataset.motion === "off";
+      const th = d.dataset.theme ?? "";
+      for (const b of dlgA.querySelectorAll<HTMLElement>("[data-theme-set]")) b.setAttribute("aria-pressed", String(b.dataset.themeSet === th));
+    }
+    dlgA.addEventListener("click", (e) => {
+      const t = e.target as HTMLElement;
+      if (t === dlgA || t.closest("[data-close]")) { dlgA.close(); return; }
+      const sz = t.closest<HTMLElement>("[data-size]");
+      if (sz) { const step = Number(sz.dataset.size); const i = STEPS.indexOf(cur()); const v = step === 0 ? 100 : STEPS[Math.max(0, Math.min(STEPS.length - 1, i + step))];
+        d.style.fontSize = v === 100 ? "" : `${v}%`; store("fp-size", v === 100 ? null : String(v)); paint(); }
+      const th = t.closest<HTMLElement>("[data-theme-set]");
+      if (th) { const v = th.dataset.themeSet!; if (v) d.dataset.theme = v; else delete d.dataset.theme; store("theme", v || null); paint(); }
+      const lang = t.closest<HTMLAnchorElement>("[data-lang]");
+      if (lang) {
+        e.preventDefault(); const l = lang.dataset.lang!;
+        if (l === "sk") { dlgA.close(); return; }
+        // Google's translation proxy for the current page (no script or cookie on our side).
+        const host = location.hostname.replace(/-/g, "--").replace(/\./g, "-");
+        location.href = `https://${host}.translate.goog${location.pathname}?_x_tr_sl=sk&_x_tr_tl=${l}&_x_tr_hl=${l}&_x_tr_pto=wapp${location.search ? "&" + location.search.slice(1) : ""}${location.hash}`;
+      }
+    });
+    document.getElementById("a11y-contrast")!.addEventListener("change", (e) => { const on = (e.target as HTMLInputElement).checked; if (on) d.dataset.contrast = "high"; else delete d.dataset.contrast; store("fp-contrast", on ? "high" : null); });
+    document.getElementById("a11y-motion")!.addEventListener("change", (e) => { const on = (e.target as HTMLInputElement).checked; if (on) d.dataset.motion = "off"; else delete d.dataset.motion; store("fp-motion", on ? "off" : null); });
+    try { if (localStorage.getItem("fp-motion")) d.dataset.motion = "off"; } catch {}
+    document.getElementById("a11y-open")!.addEventListener("click", () => { paint(); dlgA.showModal(); });
+    // On a translated copy, "Slovenčina" returns to the original site.
+    if (location.hostname.endsWith(".translate.goog")) for (const a of dlgA.querySelectorAll<HTMLAnchorElement>("[data-lang]")) a.removeAttribute("aria-current");
   </script>
 </body>
 </html>
