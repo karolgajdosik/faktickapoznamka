@@ -603,3 +603,25 @@ details.day[open] > summary::before { transform: rotate(90deg); }
   .hall .seat .pop, .hall .seat .chair { transition: none !important; }
   .hall .tip.in { animation: none; }
 }
+
+/* ---------- hall: large hover card ---------- */
+.hall .tip.rich { width: 19rem; white-space: normal; padding: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 24px 50px -20px rgba(0,0,0,.5), 0 0 0 1px var(--line-2); }
+.hall .tip.rich.below { transform: translate(-50%, 14px); }
+.hall .tc-head { display: flex; gap: .9rem; align-items: center; padding: .9rem; background: linear-gradient(135deg, color-mix(in srgb, var(--club) 22%, var(--panel)), var(--panel) 70%); border-bottom: 1px solid var(--line); }
+.hall .tip .tc-ph { width: 5.6rem; height: 5.6rem; flex: none; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font-weight: 800; font-size: 1.4rem; background: var(--panel-2);
+  box-shadow: 0 0 0 3px var(--club), 0 8px 18px -8px rgba(0,0,0,.6); }
+.hall .tc-ph img { width: 100%; height: 100%; object-fit: cover; }
+.hall .tc-who { display: flex; flex-direction: column; gap: .15rem; min-width: 0; }
+.hall .tip .tc-name { font-size: var(--step-0); line-height: 1.2; }
+.hall .tip .tc-club { align-self: flex-start; font-size: var(--step--2); font-weight: 750; color: var(--text); padding: .1rem .5rem; border-radius: 999px; background: color-mix(in srgb, var(--club) 25%, transparent); }
+.hall .tip .tc-meta, .hall .tip .tc-role { font-size: var(--step--2); color: var(--muted); }
+.hall .tip .tc-role { color: var(--text); }
+.hall .tc-vote { padding: .5rem .9rem; font-size: var(--step--1); font-weight: 700; border-bottom: 1px solid var(--line); }
+.hall .tc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 0; }
+.hall .tc-stats div { padding: .55rem .9rem; border-bottom: 1px solid var(--line); }
+.hall .tc-stats div:nth-child(odd) { border-right: 1px solid var(--line); }
+.hall .tc-stats dt { font-size: var(--step--2); color: var(--muted); }
+.hall .tc-stats dd { margin: 0; font-weight: 800; font-size: var(--step-0); font-variant-numeric: tabular-nums; }
+.hall .tip .tc-hint { display: block; padding: .45rem .9rem; font-size: var(--step--2); color: var(--muted); text-align: center; }
+@keyframes tipInBelow { from { opacity: 0; transform: translate(-50%, 4px) scale(.96); } }
+@media (hover: hover) and (pointer: fine) { .hall .tip.rich.below.in { animation-name: tipInBelow; } }

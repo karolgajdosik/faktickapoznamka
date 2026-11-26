@@ -1,7 +1,8 @@
 ---
 // The plenary hall: one seat per MP, ring = club colour, fill = vote (vote mode).
 // Clubs fill the hemicycle left→right by size (neutral, not political left/right).
-import { clubs, mps as current, mpById, clubColor, initials, photo, LABEL, cls, mpStats, pct, type Code, type Mp } from "../lib/data";
+import { clubs, mps as current, mpById, clubColor, initials, photo, LABEL, cls, mpStats, pct, age, talk, fmtDur, type Code, type Mp } from "../lib/data";
+import { committeesOf } from "../lib/extra";
 interface Props { votes?: Record<string, Code>; clubsAt?: Record<string, string>; id?: string; intro?: boolean; label?: string }
 const { votes, clubsAt, id = "hall", intro = false, label = "Sála Národnej rady SR" } = Astro.props;
 
@@ -9,6 +10,13 @@ const people: Mp[] = votes
   ? Object.keys(votes).map((k) => mpById.get(k)).filter((m): m is Mp => !!m)
   : current;
 const clubOf = (m: Mp) => clubsAt?.[m.id] ?? m.club;
+// Facts for the hover card (one compact record per seat).
+const info = Object.fromEntries(people.map((m) => {
+  const st = mpStats(m.id), t = talk.get(m.id), a = age(m.born);
+  const roles = committeesOf(m.id).filter((c) => c.role === "predseda" || c.role === "podpredseda").map((c) => `${c.label} výboru: ${c.short.replace(/ NR SR$/, "")}`);
+  return [m.id, { t: m.title ?? "", age: a, place: [m.city, m.region && `${m.region} kraj`].filter(Boolean).join(", "), att: st.attendance, loy: st.loyalty, reb: st.rebels.length,
+    talk: t ? fmtDur(t.seconds) : "", sp: t?.count ?? 0, role: roles[0] ?? "" }];
+}));
 const total = people.length;
 const W = 1000, CX = 500, CY = 500, RO = 478, RI = 0.36;
 const rows = 7;
@@ -92,6 +100,7 @@ const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R *
     })}
   </svg>
   <div class="tip" hidden></div>
+  <script type="application/json" class="hall-info" set:html={JSON.stringify(info)} />
 </div>
 <script>
   // Tooltip + default click (go to MP page). Pages can override by listening to "seat:select".
@@ -113,24 +122,41 @@ const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R *
       g.classList.remove("up"); g.parentNode!.insertBefore(g, next);
       hall.classList.remove("hovering");
     };
+    const info = JSON.parse(hall.querySelector(".hall-info")?.textContent || "{}") as Record<string, { t: string; age: number | null; place: string; att: number | null; loy: number | null; reb: number; talk: string; sp: number; role: string }>;
+    const P = (x: number | null) => (x == null ? "–" : `${(x * 100 > 99 && x < 1 ? (x * 100).toFixed(1).replace(".", ",") : Math.round(x * 100))} %`);
+    const E = (tag: string, cls: string, text?: string) => { const e = document.createElement(tag); e.className = cls; if (text !== undefined) e.textContent = text; return e; };
     const show = (g: SVGGElement) => {
       const r = g.getBoundingClientRect(), h = hall.getBoundingClientRect();
-      const extra = g.dataset.extra || g.dataset.vote || (g.dataset.att ? `účasť ${g.dataset.att}` : "");
-      tip.innerHTML = "";
-      const card = document.createElement("div"); card.className = "tip-card";
-      if (fine) {
-        const ph = document.createElement("span"); ph.className = "tip-ph"; ph.style.setProperty("--club", getComputedStyle(g).getPropertyValue("--club"));
+      const d = info[g.dataset.id!]; const club = getComputedStyle(g).getPropertyValue("--club");
+      tip.innerHTML = ""; tip.classList.toggle("rich", fine);
+      if (!fine || !d) {
+        const extra = g.dataset.extra || g.dataset.vote || (g.dataset.att ? `účasť ${g.dataset.att}` : "");
+        const b = E("b", "", g.dataset.name!); const s = E("span", "", g.dataset.club + (extra ? ` · ${extra}` : "")); tip.append(b, s);
+      } else {
+        tip.style.setProperty("--club", club);
+        const head = E("div", "tc-head");
+        const ph = E("span", "tc-ph");
         if (g.dataset.photo) { const img = document.createElement("img"); img.src = g.dataset.photo; img.alt = ""; ph.append(img); } else ph.textContent = g.dataset.ini ?? "";
-        card.append(ph);
+        const who = E("div", "tc-who");
+        who.append(E("b", "tc-name", g.dataset.name!), E("span", "tc-club", g.dataset.club!));
+        const meta = [d.t, d.age ? `${d.age} r.` : "", d.place].filter(Boolean).join(", ");
+        if (meta) who.append(E("span", "tc-meta", meta));
+        if (d.role) who.append(E("span", "tc-role", d.role));
+        head.append(ph, who); tip.append(head);
+        if (g.dataset.vote || g.dataset.extra) tip.append(E("div", "tc-vote", g.dataset.extra || `Hlasoval(a): ${g.dataset.vote}`));
+        const stats = E("dl", "tc-stats");
+        const add = (k: string, v: string) => { const w = E("div", ""); w.append(E("dt", "", k), E("dd", "", v)); stats.append(w); };
+        add("Účasť", P(d.att)); add("Súlad s klubom", P(d.loy)); add("Proti klubu", `${d.reb}×`); add("V rozprave", d.talk || "–");
+        tip.append(stats, E("span", "tc-hint", "Kliknutím otvoríte profil"));
       }
-      const txt = document.createElement("span"); txt.className = "tip-tx";
-      const b = document.createElement("b"); b.textContent = g.dataset.name!;
-      const s = document.createElement("span"); s.textContent = g.dataset.club + (extra ? ` · ${extra}` : "");
-      txt.append(b, s); card.append(txt); tip.append(card);
-      tip.style.left = `${r.left - h.left + r.width / 2}px`; tip.style.top = `${r.top - h.top - (fine ? r.height * .55 : 0)}px`;
       tip.hidden = false;
       const half = tip.offsetWidth / 2, x = r.left - h.left + r.width / 2; // keep the card inside the hall
       tip.style.left = `${Math.min(Math.max(x, half + 8), h.width - half - 8)}px`;
+      // above the seat if there is room, otherwise below it
+      const above = r.top - h.top - (fine ? r.height * .6 : 0);
+      const below = above - tip.offsetHeight - 30 < -h.top + 70 && fine;
+      tip.classList.toggle("below", below);
+      tip.style.top = `${below ? r.bottom - h.top + r.height * .6 : above}px`;
       tip.classList.remove("in"); void tip.offsetWidth; tip.classList.add("in");
     };
     const hide = () => { tip.hidden = true; };
