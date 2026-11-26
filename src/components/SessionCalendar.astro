@@ -51,11 +51,16 @@ const data = { days, planned, list, today };
     <div class="scal-month">
       <div class="scal-nav">
         <button type="button" id="scal-prev" aria-label="Predchádzajúci mesiac">‹</button>
-        <strong id="scal-title" aria-live="polite"></strong>
+        <button type="button" id="scal-title" class="scal-title" aria-expanded="false" aria-controls="scal-picker"><span id="scal-title-t" aria-live="polite"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <button type="button" id="scal-next" aria-label="Nasledujúci mesiac">›</button>
         <button type="button" id="scal-today" class="scal-chip">Dnes</button>
       </div>
-      <div class="scal-grid" role="grid" aria-labelledby="scal-title">
+      <div class="scal-picker" id="scal-picker" hidden>
+        <div class="scal-years" id="scal-years" role="group" aria-label="Rok"></div>
+        <div class="scal-months" id="scal-months" role="group" aria-label="Mesiac"></div>
+        <p class="scal-hint">Pri mesiaci je počet rokovacích dní, výška podfarbenia ukazuje, ako intenzívne sa rokovalo.</p>
+      </div>
+      <div class="scal-grid" id="scal-grid" role="grid" aria-labelledby="scal-title">
         {["Po", "Ut", "St", "Št", "Pi", "So", "Ne"].map((d) => <span class="wd" role="columnheader">{d}</span>)}
         <div id="scal-cells" style="display:contents"></div>
       </div>
@@ -81,8 +86,47 @@ const data = { days, planned, list, today };
   let [y, m] = (() => { const k = location.hash.match(/^#d=(\d{4})-(\d{2})-(\d{2})$/); const t = (k ? `${k[1]}-${k[2]}-${k[3]}` : D.today).split("-").map(Number); return [t[0], t[1] - 1]; })();
   let sel: string | null = null;
 
+  const allKeys = Object.keys(D.days).sort();
+  const perMonth = new Map<string, number>(); for (const k of allKeys) perMonth.set(k.slice(0, 7), (perMonth.get(k.slice(0, 7)) ?? 0) + 1);
+  const y0 = Number((allKeys[0] ?? D.today).slice(0, 4)), y1 = Math.max(Number(D.today.slice(0, 4)), ...D.planned.map((p) => Number(p.start.slice(0, 4))));
+  let py = y; // year shown in the picker
+  function picker(open: boolean) {
+    $("scal-picker").hidden = !open; $("scal-grid").hidden = open; $("scal-title").setAttribute("aria-expanded", String(open));
+    document.querySelector(".scal-legend")!.toggleAttribute("hidden", open);
+    if (open) { py = y; drawPicker(); (document.querySelector("#scal-months [aria-current]") as HTMLElement)?.focus(); }
+  }
+  function drawPicker() {
+    const ys: string[] = [];
+    for (let yy = y0; yy <= y1; yy++) {
+      const n = [...perMonth.entries()].filter(([k]) => k.startsWith(`${yy}-`)).reduce((a, [, v]) => a + v, 0);
+      ys.push(`<button type="button" data-y="${yy}" aria-pressed="${yy === py}">${yy}${n ? `<small>${n} dní</small>` : ""}</button>`);
+    }
+    $("scal-years").innerHTML = ys.join("");
+    const max = Math.max(1, ...perMonth.values()); const nowM = D.today.slice(0, 7);
+    $("scal-months").innerHTML = MONTHS.map((name, i) => {
+      const k = `${py}-${pad(i + 1)}`; const n = perMonth.get(k) ?? 0; const pl = D.planned.some((p) => p.start.startsWith(k));
+      return `<button type="button" data-m="${i}" class="${n ? "has" : pl ? "pl" : ""} ${k === nowM ? "now" : ""}" style="--h:${n / max}" ${py === y && i === m ? 'aria-current="true"' : ""}>
+        <span>${name}</span>${n ? `<small>${n} ${n === 1 ? "deň" : n <= 4 ? "dni" : "dní"}</small>` : pl ? `<small>plán</small>` : ""}</button>`;
+    }).join("");
+  }
+  $("scal-title").addEventListener("click", () => picker($("scal-picker").hidden));
+  $("scal-years").addEventListener("click", (e) => { const b = (e.target as HTMLElement).closest("[data-y]") as HTMLElement | null; if (b) { py = Number(b.dataset.y); drawPicker(); } });
+  $("scal-months").addEventListener("click", (e) => {
+    const b = (e.target as HTMLElement).closest("[data-m]") as HTMLElement | null; if (!b) return;
+    y = py; m = Number(b.dataset.m); picker(false);
+    const first = allKeys.find((k) => k.startsWith(`${y}-${pad(m + 1)}`)); if (first) show(first); else render();
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("scal-picker").hidden) { picker(false); $("scal-title").focus(); } });
+  // swipe between months on touch screens
+  let tx = 0, ty = 0;
+  $("scal-grid").addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+  $("scal-grid").addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) (dx < 0 ? $("scal-next") : $("scal-prev")).click();
+  }, { passive: true });
+
   function render() {
-    $("scal-title").textContent = `${MONTHS[m]} ${y}`;
+    $("scal-title-t").textContent = `${MONTHS[m]} ${y}`;
     const first = new Date(y, m, 1); const lead = (first.getDay() + 6) % 7; const n = new Date(y, m + 1, 0).getDate();
     const cells: string[] = [];
     for (let i = 0; i < lead; i++) cells.push(`<span class="c blank"></span>`);
@@ -97,7 +141,7 @@ const data = { days, planned, list, today };
   }
 
   function show(k: string) {
-    sel = k; const [yy, mm] = k.split("-").map(Number); y = yy; m = mm - 1; render();
+    sel = k; const [yy, mm] = k.split("-").map(Number); y = yy; m = mm - 1; if (!$("scal-picker").hidden) picker(false); render();
     if (location.hash || init) history.replaceState(null, "", `#d=${k}`);
     const ds = D.days[k] ?? []; const pl = plannedOn(k);
     let html = `<h3>${human(k)}</h3>`;
@@ -133,9 +177,9 @@ const data = { days, planned, list, today };
 
   $("scal-cells").addEventListener("click", (e) => { const b = (e.target as HTMLElement).closest("button[data-k]") as HTMLElement | null; if (b) show(b.dataset.k!); });
   $("scal-detail").addEventListener("click", (e) => { const b = (e.target as HTMLElement).closest("[data-go]") as HTMLElement | null; if (b) show(b.dataset.go!); });
-  $("scal-prev").addEventListener("click", () => { m--; if (m < 0) { m = 11; y--; } render(); });
-  $("scal-next").addEventListener("click", () => { m++; if (m > 11) { m = 0; y++; } render(); });
-  $("scal-today").addEventListener("click", () => show(D.today));
+  $("scal-prev").addEventListener("click", () => { if (!$("scal-picker").hidden) { py--; return drawPicker(); } m--; if (m < 0) { m = 11; y--; } render(); });
+  $("scal-next").addEventListener("click", () => { if (!$("scal-picker").hidden) { py++; return drawPicker(); } m++; if (m > 11) { m = 0; y++; } render(); });
+  $("scal-today").addEventListener("click", () => { picker(false); show(D.today); });
   $("scal-find").addEventListener("submit", (e) => { e.preventDefault(); find(($("scal-q") as HTMLInputElement).value); });
   $("scal-q").addEventListener("change", (e) => find((e.target as HTMLInputElement).value));
   $("scal-date").addEventListener("change", (e) => { const v = (e.target as HTMLInputElement).value; if (v) show(v); });
@@ -175,7 +219,42 @@ const data = { days, planned, list, today };
   .scal-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
   @media (max-width: 52rem) { .scal-body { grid-template-columns: 1fr; } }
   .scal-nav { display: flex; align-items: center; gap: .4rem; margin-bottom: .6rem; }
-  .scal-nav strong { flex: 1; text-align: center; font-size: var(--step-0); text-transform: capitalize; }
+  .scal-nav .scal-title { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: .35rem; height: 2.2rem; font-weight: 750; font-size: var(--step-0); border-color: transparent; background: transparent; }
+  .scal-title:hover, .scal-title[aria-expanded="true"] { background: var(--panel-2) !important; }
+  .scal-title span::first-letter { text-transform: uppercase; }
+  .scal-title svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2.4; transition: transform .2s; }
+  .scal-title[aria-expanded="true"] svg { transform: rotate(180deg); }
+  .scal-picker { animation: pick .16s ease-out; }
+  @keyframes pick { from { opacity: 0; transform: translateY(-4px); } }
+  @media (prefers-reduced-motion: reduce) { .scal-picker { animation: none; } .scal-title svg { transition: none; } }
+  .scal-years { display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: none; padding-bottom: .6rem; margin-bottom: .6rem; border-bottom: 1px solid var(--line); }
+  .scal-years :global(button) { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; font: inherit; font-weight: 700; cursor: pointer; padding: .45rem .9rem; border-radius: .7rem; border: 1px solid var(--line); background: var(--panel); color: var(--text); }
+  .scal-years :global(button small) { font-size: var(--step--2); font-weight: 500; color: var(--muted); }
+  .scal-years :global(button[aria-pressed="true"]) { background: var(--text); color: var(--bg); border-color: var(--text); }
+  .scal-years :global(button[aria-pressed="true"] small) { color: inherit; opacity: .75; }
+  .scal-months { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45rem; }
+  .scal-months :global(button) { position: relative; overflow: hidden; display: flex; justify-content: space-between; align-items: center; gap: .4rem; font: inherit; cursor: pointer;
+    padding: .8rem .8rem; border-radius: .7rem; border: 1px solid var(--line); background: var(--panel); color: var(--muted); text-align: left; min-height: 3.2rem; }
+  .scal-months :global(button span) { position: relative; text-transform: capitalize; font-weight: 600; }
+  .scal-months :global(button small) { position: relative; font-variant-numeric: tabular-nums; font-weight: 700; font-size: var(--step--1); }
+  .scal-months :global(button.has) { color: var(--text); }
+  .scal-months :global(button.has::before) { content: ""; position: absolute; inset: auto 0 0 0; height: calc(var(--h) * 100%); background: color-mix(in srgb, var(--accent) 18%, transparent); }
+  .scal-months :global(button.pl) { border-style: dashed; border-color: var(--accent); color: var(--text); }
+  .scal-months :global(button.now) { box-shadow: inset 0 0 0 2px var(--text); }
+  .scal-months :global(button[aria-current]) { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .scal-months :global(button[aria-current]::before) { display: none; }
+  .scal-months :global(button:hover) { border-color: var(--line-2); }
+  .scal-title { white-space: nowrap; }
+  @media (max-width: 44rem) {
+    .scal-nav { gap: .3rem; }
+    .scal .scal-nav .scal-title { font-size: 1rem; padding: 0 .3rem; min-width: 0; gap: .2rem; }
+    .scal-months { gap: .35rem; }
+    .scal-months :global(button) { flex-direction: column; align-items: flex-start; justify-content: center; gap: .1rem; padding: .55rem .6rem; min-height: 3.4rem; }
+    .scal-months :global(button span) { font-size: var(--step--1); }
+    .scal-months :global(button small) { font-size: var(--step--2); font-weight: 600; }
+    .scal-years :global(button) { padding: .4rem .6rem; }
+  }
+  .scal-hint { font-size: var(--step--2); color: var(--muted); margin: .6rem 0 0; }
   .scal-nav button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 999px; }
   .scal-nav > button:not(.scal-chip) { width: 2.2rem; height: 2.2rem; font-size: 1.3rem; line-height: 1; }
   .scal :global(.scal-chip) { font: inherit; font-size: var(--step--1); font-weight: 600; cursor: pointer; padding: .35rem .8rem; border: 1px solid var(--line-2); background: var(--panel); color: var(--text); border-radius: 999px; }
