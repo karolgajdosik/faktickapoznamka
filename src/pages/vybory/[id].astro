@@ -6,7 +6,7 @@ import { mpById, clubColor, laws, type Mp } from "../../lib/data";
 import { lawProcess } from "../../lib/extra";
 export function getStaticPaths() { return committees.map((c) => ({ params: { id: String(c.id) }, props: { c } })); }
 const { c } = Astro.props as { c: (typeof committees)[number] };
-const order: Record<string, number> = { predseda: 0, podpredseda: 1 };
+const order: Record<string, number> = { predseda: 0, podpredseda: 1, "overovateľ": 2, "člen": 3, "náhradník": 4 };
 const members = c.members.map((x) => ({ ...x, m: mpById.get(x.mpId) })).filter((x): x is typeof x & { m: Mp } => !!x.m)
   .sort((a, b) => (order[a.role] ?? 2) - (order[b.role] ?? 2) || a.m.sortName.localeCompare(b.m.sortName, "sk"));
 const byClub = new Map<string, number>(); for (const x of members) byClub.set(x.m.club, (byClub.get(x.m.club) ?? 0) + 1);
@@ -18,7 +18,7 @@ const gestor = laws.filter((l) => lawProcess.get(l.tlac)?.gestor === c.name).sor
   <p class="clubs">{[...byClub.entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => <span class="club" style={`--club:${clubColor(k)}`}><i aria-hidden="true"></i>{k} {n}</span>)}</p>
   <ul class="mem">
     {members.map((x) => (
-      <li><a href={`/poslanci/${x.m.id}/`} style={`--club:${clubColor(x.m.club)}`}><Ava m={x.m} /><span>{x.m.name}<small>{x.m.club}</small></span>{x.role !== "člen" && <em>{x.role}</em>}</a></li>
+      <li><a href={`/poslanci/${x.m.id}/`} style={`--club:${clubColor(x.m.club)}`}><Ava m={x.m} /><span>{x.m.name}<small>{x.m.club}</small></span>{x.role !== "člen" && <em>{x.label}</em>}</a></li>
     ))}
   </ul>
   {gestor.length > 0 && (<>

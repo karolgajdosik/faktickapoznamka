@@ -25,13 +25,14 @@ const byStem = <T,>(g: Record<string, { default: unknown }>) => new Map(Object.e
 
 export const mpExtra = byStem<MpExtra>(import.meta.glob("../../data/extra/mp/*.json", { eager: true }));
 export const lawProcess = byStem<LawProcess>(import.meta.glob("../../data/extra/law/*.json", { eager: true }));
-export const committees = file<Committee[]>("committees", []).map((c) => ({ ...c, short: c.name.replace(/^Výbor NR SR pre /, "").replace(/^(\p{Ll})/u, (x) => x.toUpperCase()) }));
+const roleKey = (r: string) => (/^predsed/.test(r) ? "predseda" : /^podpredsed/.test(r) ? "podpredseda" : /^overovate/.test(r) ? "overovateľ" : /^náhrad/.test(r) ? "náhradník" : "člen");
+export const committees = file<Committee[]>("committees", []).map((c) => ({ ...c, members: c.members.map((x) => ({ ...x, label: x.role, role: roleKey(x.role) })), short: c.name.replace(/^Výbor NR SR pre /, "").replace(/^(\p{Ll})/u, (x) => x.toUpperCase()) }));
 export const changes = file<Change[]>("changes", []);
 export const program = file<{ n: number; when: string }[]>("program", []);
 export const topics = file<Record<string, string[]>>("topics", {});
 export const hasExtra = mpExtra.size > 0;
 
-export const committeesOf = (id: string) => committees.flatMap((c) => c.members.filter((x) => x.mpId === id).map((x) => ({ ...c, role: x.role })));
+export const committeesOf = (id: string) => committees.flatMap((c) => c.members.filter((x) => x.mpId === id).map((x) => ({ ...c, role: x.role, label: x.label })));
 
 /* ---------- absences: excused vs unexcused ---------- */
 const TZ = "Europe/Bratislava";

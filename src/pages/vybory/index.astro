@@ -1,27 +1,94 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { committees } from "../../lib/extra";
-import { mpById, clubColor } from "../../lib/data";
-const chair = (c: (typeof committees)[number]) => { const x = c.members.find((m) => m.role === "predseda"); return x ? mpById.get(x.mpId) : undefined; };
+import { mpById, clubColor, photo, initials, type Mp } from "../../lib/data";
+const order: Record<string, number> = { predseda: 0, podpredseda: 1, "overovateľ": 2, "člen": 3, "náhradník": 4 };
+const tiles = committees.map((c) => {
+  const members = c.members.map((x) => ({ ...x, m: mpById.get(x.mpId) })).filter((x): x is typeof x & { m: Mp } => !!x.m)
+    .sort((a, b) => (order[a.role] ?? 2) - (order[b.role] ?? 2) || (photo(b.m.id) ? 1 : 0) - (photo(a.m.id) ? 1 : 0));
+  const chair = members.find((x) => x.role === "predseda");
+  const subs = members.filter((x) => x.role === "náhradník").length;
+  const rest = members.filter((x) => x !== chair && x.role !== "náhradník");
+  const clubs = new Map<string, number>(); for (const x of members) clubs.set(x.m.club, (clubs.get(x.m.club) ?? 0) + 1);
+  for (const x of members) if (x.role === "náhradník") clubs.set(x.m.club, clubs.get(x.m.club)! - 1);
+  return { c, chair, rest, subs, clubs: [...clubs.entries()].filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]), total: members.length - subs };
+});
+const SHOW = 6;
 ---
-<Base title="Výbory" description="Výbory Národnej rady SR: zloženie, predsedovia a členovia podľa poslaneckých klubov.">
+<Base title="Výbory" description="Výbory Národnej rady SR: predsedovia, členovia a zloženie podľa poslaneckých klubov.">
   <h1>Výbory</h1>
   <p class="meta-line">Výbory pripravujú návrhy zákonov pred hlasovaním v pléne. Zloženie podľa nrsr.sk.</p>
-  {committees.length === 0 ? <p class="empty">Údaje o výboroch sa práve načítavajú.</p> : (
+  {tiles.length === 0 ? <p class="empty">Údaje o výboroch sa práve načítavajú.</p> : (
   <ul class="cgrid">
-    {committees.map((c) => { const ch = chair(c); return (
-      <li><a href={`/vybory/${c.id}/`} class="panel">
-        <b>{c.short}</b>
-        <span class="muted">{c.members.length} členov{ch && <>, predseda {ch.name}</>}</span>
-        <span class="bar" aria-hidden="true">{c.members.map((x) => { const m = mpById.get(x.mpId); return <i style={`background:${m ? clubColor(m.club) : "var(--line-2)"}`} />; })}</span>
-      </a></li>); })}
+    {tiles.map(({ c, chair, rest, subs, clubs, total }) => (
+      <li>
+        <a href={`/vybory/${c.id}/`} class="ctile">
+          <h2>{c.short.replace(/ NR SR$/, "")}</h2>
+          <div class="cstage">
+            {chair && (
+              <figure class="chair" style={`--club:${clubColor(chair.m.club)}`}>
+                <span class="ph">{photo(chair.m.id) ? <img src={photo(chair.m.id)!} alt="" loading="lazy" width="96" height="96" /> : <span class="ini">{initials(chair.m)}</span>}</span>
+                <figcaption><b>{chair.m.name}</b><small>{chair.label}</small><small>{chair.m.club}</small></figcaption>
+              </figure>
+            )}
+            <div class="fan" aria-hidden="true">
+              {rest.slice(0, SHOW).map((x, i) => (
+                <span class="ph" style={`--club:${clubColor(x.m.club)};--i:${i};z-index:${SHOW - i}`} title={x.m.name}>
+                  {photo(x.m.id) ? <img src={photo(x.m.id)!} alt="" loading="lazy" width="64" height="64" /> : <span class="ini">{initials(x.m)}</span>}
+                </span>
+              ))}
+              {rest.length > SHOW && <span class="ph more" style={`--i:${SHOW}`}>+{rest.length - SHOW}</span>}
+            </div>
+          </div>
+          <div class="comp">
+            <span class="cbar" role="img" aria-label={clubs.map(([k, n]) => `${k} ${n}`).join(", ")}>
+              {clubs.map(([k, n]) => <i style={`flex:${n};background:${clubColor(k)}`} />)}
+            </span>
+            <span class="cnt">{total} členov{subs > 0 && `, ${subs} náhr.`}</span>
+          </div>
+        </a>
+      </li>
+    ))}
   </ul>)}
 </Base>
 <style>
-  .cgrid { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); }
-  .cgrid a { display: flex; flex-direction: column; gap: .4rem; padding: 1rem 1.1rem; text-decoration: none; color: inherit; height: 100%; }
-  .cgrid a:hover b { text-decoration: underline; }
-  .cgrid .muted { font-size: var(--step--1); }
-  .bar { display: flex; gap: 2px; margin-top: auto; padding-top: .4rem; }
-  .bar i { flex: 1; height: 8px; border-radius: 2px; }
+  .cgrid { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); }
+  .ctile { position: relative; display: flex; flex-direction: column; gap: 1rem; height: 100%; padding: 1.15rem 1.2rem 1rem; text-decoration: none; color: inherit; border-radius: 1.1rem; overflow: hidden;
+    background: radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%), var(--panel); border: 1px solid var(--line);
+    transition: border-color .2s, transform .2s, box-shadow .2s; }
+  .ctile:hover { border-color: var(--line-2); transform: translateY(-2px); box-shadow: 0 14px 30px -18px rgba(0, 0, 0, .45); }
+  .ctile:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  h2 { margin: 0; font-size: var(--step-0); line-height: 1.25; font-weight: 750; }
+  .cstage { display: flex; align-items: center; gap: .9rem; perspective: 600px; }
+
+  /* photos: a glossy disc with a club-coloured rim and a soft floor shadow */
+  .ph { position: relative; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--panel-2);
+    box-shadow: 0 0 0 2px var(--club, var(--line-2)), 0 8px 14px -6px rgba(0, 0, 0, .55), 0 2px 3px rgba(0, 0, 0, .25); }
+  .ph img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+  .ph::after { content: ""; position: absolute; inset: 0; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(70% 55% at 32% 22%, rgba(255, 255, 255, .38), transparent 60%), linear-gradient(to bottom, transparent 55%, rgba(0, 0, 0, .28)); }
+  .ini { font-weight: 800; font-size: .8rem; color: var(--text); }
+
+  .chair { margin: 0; display: flex; flex-direction: column; align-items: center; gap: .45rem; width: 6.2rem; flex: none; text-align: center; }
+  .chair .ph { width: 4.6rem; height: 4.6rem; box-shadow: 0 0 0 3px var(--club), 0 0 0 6px color-mix(in srgb, var(--club) 25%, transparent), 0 14px 22px -10px rgba(0, 0, 0, .65); transform: translateZ(20px); }
+  .chair .ini { font-size: 1.2rem; }
+  .chair figcaption { display: flex; flex-direction: column; line-height: 1.2; }
+  .chair b { font-size: var(--step--1); font-weight: 700; }
+  .chair small { font-size: var(--step--2); color: var(--muted); }
+
+  /* members fan out on a tilted plane, receding into the tile */
+  .fan { flex: 1; min-width: 0; display: flex; align-items: center; height: 4.6rem; padding: 0 .3rem 0 .2rem; transform-style: preserve-3d; transform: rotateY(-12deg); transform-origin: left center; }
+  .fan .ph { width: 2.75rem; height: 2.75rem; margin-left: -1.05rem; transform: translateZ(calc(var(--i) * -9px)) scale(calc(1 - var(--i) * .035)); transition: transform .3s ease, margin .3s ease; }
+  .fan .ph:first-child { margin-left: 0; }
+  .fan .more { box-shadow: 0 0 0 2px var(--line-2), 0 8px 14px -6px rgba(0, 0, 0, .55); font-size: var(--step--2); font-weight: 800; color: var(--muted); background: var(--panel-2); }
+  .fan .more::after { display: none; }
+  .ctile:hover .fan .ph { margin-left: -.8rem; transform: translateZ(calc(var(--i) * -4px)) translateY(calc(sin(var(--i) * 1rad) * -2px)); }
+  .ctile:hover .fan .ph:first-child { margin-left: 0; }
+
+  .comp { display: flex; align-items: center; gap: .75rem; margin-top: auto; }
+  .cbar { flex: 1; display: flex; gap: 2px; height: .5rem; }
+  .cbar i { display: block; height: 100%; border-radius: 3px; }
+  .cnt { font-size: var(--step--2); color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  @media (max-width: 26rem) { .chair { width: 5.6rem; } .fan .ph { width: 2.5rem; height: 2.5rem; margin-left: -1rem; } }
+  @media (prefers-reduced-motion: reduce) { .ctile, .fan .ph { transition: none; } .ctile:hover { transform: none; } }
 </style>

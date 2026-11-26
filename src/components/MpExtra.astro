@@ -35,7 +35,7 @@ const roleLabel = (r: string) => (r === "predseda" ? "predseda" : r === "podpred
   {com.length > 0 && (
     <section>
       <h2>Výbory</h2>
-      <ul class="chips">{com.map((c) => <li><a href={`/vybory/${c.id}/`}>{c.short}</a> <small>{roleLabel(c.role)}</small></li>)}</ul>
+      <ul class="chips">{com.map((c) => <li><a href={`/vybory/${c.id}/`}>{c.short}</a> <small>{c.label}</small></li>)}</ul>
     </section>
   )}
 
