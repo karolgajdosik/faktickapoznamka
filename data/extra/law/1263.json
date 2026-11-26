@@ -1,0 +1,22 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ vzal navrhovateľ späť",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (A. Danko, M. Garaj, D. Kramplová, A. Lučanský)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1492 zo dňa 5. 5. 2026. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Výb",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1492 zo dňa 5. 5. 2026",
+   "result": "NZ vzal navrhovateľ späť."
+  }
+ ],
+ "at": "2026-11-26T01:25:49+00:00"
+}

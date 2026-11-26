@@ -1,0 +1,352 @@
+{
+ "id": "1224",
+ "excuses": [
+  {
+   "from": "2026-02-12",
+   "to": "2026-02-12",
+   "days": [
+    "2026-02-12"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti)"
+  },
+  {
+   "from": "2026-03-19",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-19",
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-04-27",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-05-04",
+   "to": "2026-05-04",
+   "days": [
+    "2026-05-04"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-06-05",
+   "to": "2026-06-05",
+   "days": [
+    "2026-06-05"
+   ],
+   "reason": "iný dôvod (Neodkladná práca v regióne)"
+  },
+  {
+   "from": "2026-06-12",
+   "to": "2026-06-12",
+   "days": [
+    "2026-06-12"
+   ],
+   "reason": "iný dôvod (Neodkladná práca v regióne)"
+  },
+  {
+   "from": "2026-09-18",
+   "to": "2026-09-18",
+   "days": [
+    "2026-09-18"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-10-09",
+   "to": "2026-10-12",
+   "days": [
+    "2026-10-09",
+    "2026-10-10",
+    "2026-10-11",
+    "2026-10-12"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-11-06",
+   "to": "2026-11-06",
+   "days": [
+    "2026-11-06"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k postoju slovenských poslancov Európskeho parlamentu k návratu násilne deportovaných ukrajinských detí",
+   "tlac": "1590",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-18",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Andrey TURČANOVEJ a Moniky KOLEJÁKOVEJ na vydanie zákona, ktorým sa mení zákon č. 73/1998 Z. z. o štátnej službe príslušníkov Policajného zboru, Slovenskej informačnej služby, Zboru väzenskej a justičnej stráže Slovenskej republiky a Železničnej polície v znení neskorších predpisov",
+   "tlac": "1542",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "M. Kolejáková, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Moniky KOLEJÁKOVEJ, Andrey TURČANOVEJ, Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov",
+   "tlac": "1494",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "M. Kolejáková, F. Majerský, P. Stachura, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi DRUCKEROVI, poverenému riadením Ministerstva školstva, výskumu, vývoja a mládeže Slovenskej republiky",
+   "tlac": "1409",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-04",
+   "approved": null,
+   "sponsors": "J. Horecký, F. Majerský, M. Majerský, G. Paľa, R. Krátky, M. Kolejáková, B. Škripek, A. Turčanová, M. Čaučík, F. Mikloško, I. Janckulík, M. Šipoš, R. Vašečka, G. Grendel, V. Remišová, I. Matovič, R. Mikulec, I. Dušenka, J. Pročko, T. Gažovičová, I.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Andrey TURČANOVEJ a Moniky KOLEJÁKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 376/2024 Z. z. o integrovanej posudkovej činnosti a o zmene a doplnení niektorých zákonov v znení zákona č. 406/2025 Z. z.",
+   "tlac": "1372",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Kolejáková, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andrey TURČANOVEJ, Milana MAJERSKÉHO, Rastislava KRÁTKEHO a Moniky KOLEJÁKOVEJ na vydanie zákona o rodinnej karte",
+   "tlac": "1371",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Kolejáková, R. Krátky, M. Majerský, A. Turčanová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HORECKÉHO, Petra STACHURU a Moniky KOLEJÁKOVEJ na vydanie zákona o ochrane maloletých osôb v digitálnom priestore a o povinnostiach poskytovateľov platforiem sociálnych sietí a o zmene a doplnení niektorých zákonov",
+   "tlac": "1367",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "J. Horecký, M. Kolejáková, P. Stachura",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Moniky KOLEJÁKOVEJ a Mariána ČAUČÍKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 216/2018 Z. z. o rybárstve a o doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov",
+   "tlac": "1360",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Čaučík, M. Kolejáková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena a náhradného člena stálych delegácií Národnej rady Slovenskej republiky",
+   "tlac": "1293",
+   "state": "Evidencia",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, F. Majerský, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek, A. Turčanová, L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána ČAUČÍKA, Rastislava KRÁTKEHO a Moniky KOLEJÁKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 543/2002 Z. z. o ochrane prírody a krajiny v znení neskorších predpisov (Navrhovateľom tohto návrhu bol aj poslanec Jozef Hajko, ktorý sa 15. apríla 2026 vzdal mandátu poslanca NR SR.)",
+   "tlac": "1279",
+   "state": "I. čítanie",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, M. Kolejáková, R. Krátky",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Tibora GAŠPARA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1208",
+   "state": "Evidencia",
+   "delivered": "2026-03-13",
+   "approved": null,
+   "sponsors": "M. Šimečka, D. Kleinert, Z. Mesterová, N. Nash, D. Luščíková, V. Šrobová, J. Spišiak, O. Prostredník, J. Hargaš, Š. Kišš, T. Valášek, V. Veslárová, Z. Števulová, M. Lackovič, O. Dvořák, B. Jurík, S. Petrík, M. Sabo, T. Stohlová, Z. Jaurová, T. Gažov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-09-17",
+   "by": "Turčanová, Andrea",
+   "tlac": "1333",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 448/2008 Z. z. o sociálnych službách a o zmene a doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 61,
+   "voteId": null,
+   "id": "4585"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4029",
+   "title": "vo veci postupov pri rozhodovaní ÚPSVaR Dunajská Streda",
+   "state": "Rokovanie o interpelácii",
+   "date": "2026-09-24",
+   "to": "Tomáš, Erik"
+  },
+  {
+   "id": "3965",
+   "title": "vo veci financovania strategických investícií v oblasti zdravotníctva, osobitne dostavby novej nemocnice v Prešove",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-05-07",
+   "to": "Kamenický, Ladislav"
+  }
+ ],
+ "trips": [],
+ "offices": [
+  "AP ANDREAS, spol. s r.o., Hlavná 40, Košice"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "pri ujatí sa funkcie",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 0,
+  "incomeOther": 0,
+  "employment": "MEDKOL, S.R.O.",
+  "business": "SPOLOČNÍK, KONATEĽ",
+  "roles": [
+   "POSLANKYŇA (ZASTUPITEĽSTVO NITRIANSKEHO SAMOSPRÁVNEHO KRAJA)",
+   "POSLANKYŇA (MESTSKÉ ZASTUPITEĽSTVO NOVÉ ZÁMKY)"
+  ],
+  "realEstateCount": 6,
+  "realEstateKinds": {
+   "Byt": 2,
+   "Záhrada": 2,
+   "Dom, garáž": 1,
+   "Sad": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Hypotéka"
+  ],
+  "userId": "Monika.Kolejakova"
+ },
+ "at": "2026-11-25T23:59:21+00:00"
+}

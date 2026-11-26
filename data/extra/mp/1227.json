@@ -1,0 +1,72 @@
+{
+ "id": "1227",
+ "excuses": [
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Iný dôvod)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Iný závažný dôvod)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výborov Národnej rady Slovenskej republiky",
+   "tlac": "1567",
+   "state": "Evidencia",
+   "delivered": "2026-10-16",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, P. Kotlár, M. Kováč, D. Kramplová, A. Lučanský, R. Michelko, D. Muňko",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-10-06",
+   "by": "Michelko, Roman",
+   "tlac": "1261",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Dagmar KRAMPLOVEJ, Andreja DANKA a Karola FARKAŠOVSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4604"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "pri ujatí sa funkcie",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 0,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 4,
+  "realEstateKinds": {
+   "Ostatná plocha": 1,
+   "Trvalý trávnatý porast": 2,
+   "Lesný pozemok": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobné motorové vozidlo"
+  ],
+  "rights": [],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Milan.Kovac"
+ },
+ "at": "2026-11-26T00:02:14+00:00"
+}

@@ -1,0 +1,17 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NR SR nebude pokračovať v rokovaní o návrhu zákona",
+ "delivered": "2026-08-03",
+ "submitter": "poslanci NR SR (O. Dvořák, V. Veslárová)",
+ "gestor": "Výbor NR SR pre zdravotníctvo",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 61. schôdzi NR SR, uznesenie číslo 1729 zo dňa 18. 11. 2026.",
+   "result": "NR SR nebude pokračovať v rokovaní o návrhu zákona."
+  }
+ ],
+ "at": "2026-11-26T01:23:26+00:00"
+}

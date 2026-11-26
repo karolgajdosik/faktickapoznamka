@@ -1,0 +1,22 @@
+{
+ "state": "Redakcia",
+ "stateNote": "NZ postúpil do redakcie",
+ "delivered": "2026-04-27",
+ "submitter": "vláda (Ministerstvo financií SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR dňa 28. 4. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1456 zo dňa 28. 4. 2026",
+   "result": "NZ postupuje do redakcie."
+  }
+ ],
+ "at": "2026-11-26T01:25:13+00:00"
+}

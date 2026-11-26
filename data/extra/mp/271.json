@@ -1,0 +1,50 @@
+{
+ "id": "271",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 63452,
+  "incomeOther": 491723,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 4,
+  "realEstateKinds": {
+   "Byt": 2,
+   "Garáž": 1,
+   "Rekreačná chata": 1
+  },
+  "movablesCount": 12,
+  "movables": [
+   "Automobil",
+   "Automobil",
+   "Automobil",
+   "Automobil",
+   "Motocykel",
+   "Motocykel",
+   "Motocykel",
+   "Motocykel",
+   "Motocykel",
+   "Motocykel",
+   "Osobný majetok",
+   "Zariadenie domácnosti"
+  ],
+  "rights": [
+   "Peňažné prostriedky",
+   "Cenné papiere",
+   "Obchodné podiely"
+  ],
+  "obligations": [
+   "Úver"
+  ],
+  "userId": "KaliRobe"
+ },
+ "at": "2026-11-25T23:52:54+00:00"
+}

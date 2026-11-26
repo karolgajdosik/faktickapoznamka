@@ -1,0 +1,108 @@
+{
+ "id": "1072",
+ "excuses": [
+  {
+   "from": "2026-10-01",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-01",
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2026-10-05",
+   "to": "2026-10-12",
+   "days": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-10",
+    "2026-10-11",
+    "2026-10-12"
+   ],
+   "reason": "iný dôvod (rodinné dôvody)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Pracovné dôvody)"
+  },
+  {
+   "from": "2026-11-05",
+   "to": "2026-11-06",
+   "days": [
+    "2026-11-05",
+    "2026-11-06"
+   ],
+   "reason": "iný dôvod (Pracovne)"
+  }
+ ],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 62966,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 12,
+  "realEstateKinds": {
+   "Vinica": 2,
+   "Orná pôda": 2,
+   "Byt s garážou": 1,
+   "Dom so záhradou": 2,
+   "Pozemok so stavbou": 1,
+   "Rekreačná chata a zastavaná plocha": 1,
+   "Vinica a trávnatý porast": 1,
+   "Vinica, záhrada a ostatná plocha": 1,
+   "Vinica, lesný pozemok": 1
+  },
+  "movablesCount": 6,
+  "movables": [
+   "Automobil",
+   "Automobil",
+   "Automobil",
+   "Zariadenie domácnosti",
+   "Traktor + príslušenstvo",
+   "Nákladné vozidlo"
+  ],
+  "rights": [
+   "Podiel v s.r.o.",
+   "Podiel v s.r.o.",
+   "Obchodný podiel v spoločnosti",
+   "Bankové účty",
+   "Pohľadávka",
+   "Pohľadávka",
+   "Pohľadávka",
+   "Pôžička",
+   "Pohľadávka",
+   "Pohľadávka",
+   "Pohľadávka",
+   "Finančná hotovosť",
+   "Akcie v spoločnosti",
+   "Bankový účet",
+   "Akcie na burze",
+   "Pohľadávka"
+  ],
+  "obligations": [
+   "Záväzok",
+   "Záväzok",
+   "Hypotéka",
+   "Hypotéka"
+  ],
+  "userId": "Tomáš.Taraba"
+ },
+ "at": "2026-11-26T00:56:04+00:00"
+}

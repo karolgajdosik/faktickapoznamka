@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2025-10-16",
+ "submitter": "vláda (Ministerstvo cestovného ruchu a športu SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR, uznesenie číslo 1244 zo dňa 23. 10. 2025. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet a Ústavnoprávny výbor NR SR s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre financie a rozpočet s lehotou na prerokovan",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR dňa 23. 10. 2025. Pozmeňujúce a doplňujúce návrhy: 23. 10. 2025 00:32 Šipoš, Michal Detail návrhu 9 1061 Michal Šipoš II (201 KB) 23. 10. 2025 00:32 Turčanová, Andrea Detail návrhu 9 1061 Andrea Turčanová II (206 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR, uznesenie číslo 1246 zo dňa 23. 10. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to have JavaScript enabled. január február marec apríl máj jún júl august september októ",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:30:49+00:00"
+}

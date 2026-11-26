@@ -1,0 +1,427 @@
+{
+ "id": "873",
+ "excuses": [
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Obštrukcia, neodkladné povinnosti, dlhodobo plánované aktivity, letné dovolenky)"
+  },
+  {
+   "from": "2024-10-28",
+   "to": "2024-10-28",
+   "days": [
+    "2024-10-28"
+   ],
+   "reason": "iný dôvod (Účasť na rokovaní zastupiteľstva Nitrianskeho samosprávneho kraja)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-02-19",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-02",
+   "days": [
+    "2025-04-01",
+    "2025-04-02"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-14",
+   "to": "2025-04-14",
+   "days": [
+    "2025-04-14"
+   ],
+   "reason": "iný dôvod (Štátne skúšky na Právnickej fakulte UMB v Banskej Bystrici)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-12-08",
+   "to": "2025-12-08",
+   "days": [
+    "2025-12-08"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti)"
+  },
+  {
+   "from": "2026-03-20",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Nedokladné povinnosti)"
+  },
+  {
+   "from": "2026-04-17",
+   "to": "2026-04-17",
+   "days": [
+    "2026-04-17"
+   ],
+   "reason": "iný dôvod (Neodkladné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (52. schôdza NRSR - Dlhodobo plánovaný pracovný program v regióne, 53. schôdza NRSR- obštrukcia)"
+  },
+  {
+   "from": "2026-10-12",
+   "to": "2026-10-12",
+   "days": [
+    "2026-10-12"
+   ],
+   "reason": "iný dôvod (Dlhodobo plánovaný program v regióne)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Ustanovujúce zasadnutie mestského zastupiteľstva v Zlatých Moravciach (zloženie primátorskeho sľubu))"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána KÉRYHO, Michala BARTEKA a Romana MICHELKA na vydanie zákona, ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 241/1993 Z. z. o štátnych sviatkoch, dňoch pracovného pokoja a pamätných dňoch v znení neskorších predpisov",
+   "tlac": "1577",
+   "state": "Výber poradcov k NZ",
+   "delivered": "2026-11-09",
+   "approved": null,
+   "sponsors": "M. Kéry, M. Bartek, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Dagmar KRAMPLOVEJ a Mariána KÉRYHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 63/1993 Z. z. o štátnych symboloch Slovenskej republiky a ich používaní v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1533",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "M. Garaj, M. Kéry, D. Kramplová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu skupiny priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie a vymenovanie člena Stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1387",
+   "state": "Evidencia",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, V. Macášek, Z",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1243",
+   "state": "Redakcia",
+   "delivered": "2026-03-27",
+   "approved": "2026-11-24",
+   "sponsors": "T. Gašpar, J. Habánik, P. Goga, V. Faič, M. Čavojová, J. Baška, V. Baláž, R. Glück, J. Horváth, A. Hambálek, D. Galis, D. Jarjabek, D. Karas, J. Kačmár, M. Kéry, S. Kubánek, J. Kvorka, J. Ježík, M. Kapuš, I. Hazucha, M. Lukša, J. Mego, Z. Matejičkov",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1066",
+   "state": "Evidencia",
+   "delivered": "2025-10-21",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, T. Gašpar, D. Galis, R. Glück, P. Goga, J. Habánik, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičková, J. Mažgút",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Mariána KÉRYHO na prijatie uznesenia Národnej rady Slovenskej republiky k situácii v pásme Gazy (Navrhovateľ vzal listom zo 16. októbra 2025 svoj návrh uznesenia späť.)",
+   "tlac": "1048",
+   "state": "Evidencia",
+   "delivered": "2025-10-01",
+   "approved": null,
+   "sponsors": "M. Kéry",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k vykonaniu auditu a k prijatiu systémových riadiacich a kontrolných opatrení pri čerpaní dotačných a grantových finančných prostriedkov v ústredných orgánoch štátnej správy za obdobie rokov 2020 – 2024",
+   "tlac": "1014",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "T. Gašpar, J. Habánik, J. Richter, M. Saloň, F. Petro, Z. Plevíková, V. Zahorčák, B. Lešo, D. Karas, D. Jarjabek, I. Válek, D. Muňko, P. Goga, P. Sokol, J. Kačmár, J. Kvorka, A. Sitkár, J. Sedlák, R. Glück, J. Horváth, P. Šuca, J. Mažgút, J. Ježík,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zneužívaniu legislatívneho procesu k zákonu o neziskových organizáciách poskytujúcich všeobecne prospešné služby na presadzovanie politických a súkromných záujmov",
+   "tlac": "792",
+   "state": "Evidencia",
+   "delivered": "2025-04-03",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Stuška, M. Čavojová, R. Glück, T. Gašpar, D. Karas, M. Lukša, J. Mažgút, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, P. Šuca, Ľ. Vážny, D. Galis, J. Ježík, F. Petro, A. Stredák,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k právoplatnému rozhodnutiu súdu za spáchanie trestného činu daňového podvodu bývalým prezidentom Slovenskej republiky Andrejom Kiskom",
+   "tlac": "580",
+   "state": "Evidencia",
+   "delivered": "2024-11-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, R. Glück, M. Čavojová, M. Stuška, T. Gašpar, J. Mažgút, Z. Plevíková, D. Karas, M. Lukša, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "578",
+   "state": "Evidencia",
+   "delivered": "2024-11-04",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána KÉRYHO, Jána PODMANICKÉHO, Richarda GLÜCKA a Romana MICHELKA na prijatie uznesenia Národnej rady Slovenskej republiky k neprimeraným zásahom Európskeho parlamentu do práv členských štátov Európskej únie",
+   "tlac": "530",
+   "state": "Evidencia",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "R. Glück, M. Kéry, R. Michelko, J. Podmanický",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie vedúcej stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "480",
+   "state": "Evidencia",
+   "delivered": "2024-09-17",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Michala ŠIMEČKU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "464",
+   "state": "Evidencia",
+   "delivered": "2024-09-05",
+   "approved": null,
+   "sponsors": "J. Richter, T. Gašpar, A. Hambálek, Z. Plevíková, J. Kvorka, I. Hazucha, J. Mažgút, A. Stredák, Z. Matejičková, M. Lukša, M. Čavojová, P. Sokol, F. Petro, B. Lešo, M. Saloň, J. Sedlák, J. Vaľová, I. Válek, Ľ. Vážny, V. Baláž, J. Baška, A. Danko, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Mariána KÉRYHO na prijatie uznesenia Národnej rady Slovenskej republiky k teroristickému útoku hnutia Hamas proti Izraelu a následnému konfliktu",
+   "tlac": "98",
+   "state": "Evidencia",
+   "delivered": "2023-12-04",
+   "approved": null,
+   "sponsors": "M. Kéry",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "tlac": "92",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-12-01",
+   "approved": null,
+   "sponsors": "J. Sedlák, J. Mego, Z. Matejičková, M. Čavojová, M. Kapuš, J. Valocký, A. Stredák, P. Šuca, M. Saloň, J. Habánik, A. Hambálek, P. Goga, M. Nemky, V. Zahorčák, J. Richter, S. Kubánek, D. Karas, P. Sokol, I. Hazucha, D. Galis, B. Lešo, Z. Plevíková, J",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-04-30",
+   "by": "Kéry, Marián",
+   "tlac": "1172",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Juraja KRÚPU na prijatie uznesenia Národnej rady Slovenskej republiky k zásadám dodržiavania medzinárodného práva, územnej celistvosti štátov a mierového riešenia medzinárodných sporov",
+   "session": 49,
+   "voteId": null,
+   "id": "4546"
+  },
+  {
+   "date": "2024-09-18",
+   "by": "Kéry, Marián",
+   "tlac": "480",
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie vedúcej stálej delegácie Národnej rady Slovenskej republiky",
+   "session": 19,
+   "voteId": null,
+   "id": "4207"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2026-09-07",
+   "to": "2026-09-08",
+   "desc": "Alžírsko - Predseda Zahraničného výboru Národnej rady Slovenskej republiky Marián Kéry sa zúčastní pracovného stretnutia s ministrom zahraničných vecí a európskych záležitostí SR Jurajom Blanárom v Severnej Afrike."
+  },
+  {
+   "from": "2026-08-26",
+   "to": "2026-08-26",
+   "desc": "Záhreb - Predseda Zahraničného výboru Národnej rady Slovenskej republiky Marián Kéry sa zúčastní pracovného stretnutia s ministrom zahraničných vecí a európskych záležitostí SR Juraja Blanára v Chorvátskej republike."
+  },
+  {
+   "from": "2026-06-29",
+   "to": "2026-06-30",
+   "desc": "Tata - Predseda Zahraničného výboru NR SR Marián Kéry a podpredseda Výboru európskych záležitostí SR Michal Stuška sa zúčastnia na Stretnutí predsedov výborov pre európske záležitosti a výbore pre zahraničné veci paramentov krajín V4 v Maďarskej republike."
+  },
+  {
+   "from": "2026-06-16",
+   "to": "2026-06-17",
+   "desc": "Praha - Predseda NR SR Richard Raši, podpredseda NR SR Tibor Gašpar a poslanci NR SR Peter Kalivoda, Miroslav Čellár, Róbert Puci, Ján Richter, Marián Kéry a Paula Puškárová sa zúčastnia pracovnej návštevy v Českej republike."
+  },
+  {
+   "from": "2025-11-08",
+   "to": "2025-11-17",
+   "desc": "Peking, Xian, Chongqing- Poslankyňa NR SR Zuzana Plevíková a poslanci NR SR Marián Kéry, Michal Lukša, Michal Stuška, Karol Farkašovský, Dušan Tittel, Michal Bartek, Richard Eliáš, Dávid Demečko, Ivan Ševčík a Igor Janckulík sa zúčastnia na pracovnej návšteve v Čínskej ľudovej republike."
+  },
+  {
+   "from": "2025-09-01",
+   "to": "2025-09-06",
+   "desc": "Japonsko - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róbert Puci, Marián Kéry, Karol Farkašovský, Igor Janckulík, Zuzana Plevíková, Andrea Szabóová, Ivan Štefunko, Marián Viskupič a Michal Stuška sa zúčastnia pracovnej návštevy predsedu NR SR Richarda Rašiho v Japonsku."
+  },
+  {
+   "from": "2025-04-24",
+   "to": "2025-04-25",
+   "desc": "Biškek- Predseda Zahraničného výboru Národnej rady Slovenskej republiky Marián Kéry sa zúčastní zahraničnej pracovnej cesty v Kirgizsku."
+  },
+  {
+   "from": "2025-03-16",
+   "to": "2025-03-21",
+   "desc": "Naí Dillí a Kalkata- Predseda Zahraničného výboru NR SR Marián Kéry sa zúčastní zahraničnej pracovnej cesty ministra zahraničných vecí a európskych záležitostí SR pána Juraja Blanára a jeho delegácie v Indii."
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-18",
+   "desc": "Praha- Poslanec NR SR Marián Kéry sa zúčastní na Stretnutí s predsedami zahraničných výborov Parlamentu ČR v Českej republike."
+  },
+  {
+   "from": "2025-02-10",
+   "to": "2025-02-10",
+   "desc": "Rím- Poslanec NR SR Marián Kéry sa zúčastní na stretnutí na Výbore pre európske záležitosti a na Zahraničnom výbore Senátu Talianskej republiky v Talianskej republike."
+  },
+  {
+   "from": "2025-01-22",
+   "to": "2025-01-23",
+   "desc": "Praha- Predseda Zahraničného výboru NR SR Marián Kéry sa zúčastní na pracovnom stretnutí s predsedom partnerského výboru Poslaneckej snemovne Parlamentu ČR."
+  },
+  {
+   "from": "2025-01-12",
+   "to": "2025-01-15",
+   "desc": "Moskva - podpredsedovia NR SR Andrej Danko a Tibor Gašpar a poslanci NR SR Marián Kéry, Richard Glück, Ján Mažgút a Adam Lučanský sa zúčastnia na pracovnej návšteve delegácie Národnej rady SR v Ruskej federácii."
+  },
+  {
+   "from": "2024-10-18",
+   "to": "2024-10-18",
+   "desc": "Belehrad - Predseda Zahraničného výboru NR SR Marián Kéry sa zúčastní na programe návštevy ministra ZVEZ SR pána Juraja Blanára v Srbsku."
+  },
+  {
+   "from": "2024-06-26",
+   "to": "2024-06-26",
+   "desc": "Praha - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a predseda Zahraničného výboru NR SR Marián Kéry sa zúčastnia na rokovaní s predsedom VEZ Poslaneckej snemovne Parlamentu Českej republiky."
+  },
+  {
+   "from": "2024-01-22",
+   "to": "2024-01-24",
+   "desc": "Krakov, Brusel - Predseda NR SR Peter Pellegrini, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a predseda Zahraničného výboru NR SR Marián Kéry sa zúčastnia pracovnej návštevy v Poľskej republike a oficiálnej návštevy v inštitúciách EÚ."
+  }
+ ],
+ "offices": [
+  "Mária Krajčová, ulica Partizánska 6, 966 81 Žarnovica",
+  "René Kramár, Janka Kráľa 23, Zlaté Moravce"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 51927,
+  "incomeOther": 9792,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "POSLANEC NSK (NITRIANSKY SAMOSPRÁVNY KRAJ)"
+  ],
+  "realEstateCount": 21,
+  "realEstateKinds": {
+   "Orná pôda": 5,
+   "Orná pôda a trvalý trávny porast": 2,
+   "Záhrady, zastavané plochy a nádvoria": 3,
+   "Zastavané plochy a nádvoria": 2,
+   "Rodinný dom s dvojgarážou": 1,
+   "Rodinný dom": 1,
+   "Orná pôda a ostatné plochy": 1,
+   "Orná pôda, trvalý trávny porast, vinica": 1,
+   "Orná pôda, trvalý trávny porast, lesný pozemok": 1,
+   "Zastavaná plocha a nádvorie, orná pôda, trvalý trávny porast": 2,
+   "Trvalý trávny porast, orná pôda, lesný pozemok": 1,
+   "Orná pôda, záhrada a vinica": 1
+  },
+  "movablesCount": 2,
+  "movables": [
+   "Osobný automobil",
+   "Obrazy"
+  ],
+  "rights": [
+   "Finančné prostriedky"
+  ],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Marián.Kéry"
+ },
+ "at": "2026-11-26T00:09:22+00:00"
+}

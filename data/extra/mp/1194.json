@@ -1,0 +1,373 @@
+{
+ "id": "1194",
+ "excuses": [
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Obštrukcia, neodkladné povinnosti, dlhodobo plánované aktivity, letné dovolenky)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-18",
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-02",
+   "days": [
+    "2025-04-01",
+    "2025-04-02"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-12-01",
+   "to": "2025-12-01",
+   "days": [
+    "2025-12-01"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu predsedu skupiny priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie a vymenovanie člena Stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1387",
+   "state": "Evidencia",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, V. Macášek, Z",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie Podrobnejších pravidiel rokovania Národnej rady Slovenskej republiky",
+   "tlac": "1386",
+   "state": "Evidencia",
+   "delivered": "2026-05-22",
+   "approved": null,
+   "sponsors": "M. Čellár, T. Gašpar, A. Lučanský, R. Michelko, Z. Plevíková, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie Pravidiel pre podávanie a doručovanie materiálov Národnej rade Slovenskej republiky",
+   "tlac": "1385",
+   "state": "Evidencia",
+   "delivered": "2026-05-22",
+   "approved": null,
+   "sponsors": "M. Čellár, T. Gašpar, A. Lučanský, R. Michelko, Z. Plevíková, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie Pravidiel hlasovania na schôdzach Národnej rady Slovenskej republiky",
+   "tlac": "1384",
+   "state": "Evidencia",
+   "delivered": "2026-05-22",
+   "approved": null,
+   "sponsors": "M. Čellár, T. Gašpar, A. Lučanský, R. Michelko, Z. Plevíková, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1243",
+   "state": "Redakcia",
+   "delivered": "2026-03-27",
+   "approved": "2026-11-24",
+   "sponsors": "T. Gašpar, J. Habánik, P. Goga, V. Faič, M. Čavojová, J. Baška, V. Baláž, R. Glück, J. Horváth, A. Hambálek, D. Galis, D. Jarjabek, D. Karas, J. Kačmár, M. Kéry, S. Kubánek, J. Kvorka, J. Ježík, M. Kapuš, I. Hazucha, M. Lukša, J. Mego, Z. Matejičkov",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k negatívnemu vplyvu rozšírenia systému obchodovania s emisnými kvótami pre budovy a cestnú dopravu (ETS2) na sociálnu a hospodársku situáciu domácností v Slovenskej republike",
+   "tlac": "1069",
+   "state": "Evidencia",
+   "delivered": "2025-10-23",
+   "approved": null,
+   "sponsors": "R. Puci, M. Čellár, M. Bartek, P. Náhlik, Z. Svoboda, E. Vlček, A. Szabóová, P. Slyško, A. Nováková, K. Janas, Ľ. Laššáková, R. Eliáš, J. Cech, P. Kalivoda, I. Šimko, Z. Mačicová, D. Demečko, D. Tittel, J. Richter, T. Gašpar, J. Mažgút, Z. Plevíková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1066",
+   "state": "Evidencia",
+   "delivered": "2025-10-21",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, T. Gašpar, D. Galis, R. Glück, P. Goga, J. Habánik, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičková, J. Mažgút",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k vykonaniu auditu a k prijatiu systémových riadiacich a kontrolných opatrení pri čerpaní dotačných a grantových finančných prostriedkov v ústredných orgánoch štátnej správy za obdobie rokov 2020 – 2024",
+   "tlac": "1014",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "T. Gašpar, J. Habánik, J. Richter, M. Saloň, F. Petro, Z. Plevíková, V. Zahorčák, B. Lešo, D. Karas, D. Jarjabek, I. Válek, D. Muňko, P. Goga, P. Sokol, J. Kačmár, J. Kvorka, A. Sitkár, J. Sedlák, R. Glück, J. Horváth, P. Šuca, J. Mažgút, J. Ježík,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k právoplatnému rozhodnutiu súdu za spáchanie trestného činu daňového podvodu bývalým prezidentom Slovenskej republiky Andrejom Kiskom",
+   "tlac": "580",
+   "state": "Evidencia",
+   "delivered": "2024-11-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, R. Glück, M. Čavojová, M. Stuška, T. Gašpar, J. Mažgút, Z. Plevíková, D. Karas, M. Lukša, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "578",
+   "state": "Evidencia",
+   "delivered": "2024-11-04",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Zuzany Plevíkovej, Miroslava Čellára a Ivana Ševčíka na vydanie zákona, ktorým sa dopĺňa zákon č. 153/2001 Z. z. o prokuratúre v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "487",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-09-19",
+   "approved": "2024-11-28",
+   "sponsors": "M. Čellár, Z. Plevíková, I. Ševčík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie vedúcej stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "480",
+   "state": "Evidencia",
+   "delivered": "2024-09-17",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Michala ŠIMEČKU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "464",
+   "state": "Evidencia",
+   "delivered": "2024-09-05",
+   "approved": null,
+   "sponsors": "J. Richter, T. Gašpar, A. Hambálek, Z. Plevíková, J. Kvorka, I. Hazucha, J. Mažgút, A. Stredák, Z. Matejičková, M. Lukša, M. Čavojová, P. Sokol, F. Petro, B. Lešo, M. Saloň, J. Sedlák, J. Vaľová, I. Válek, Ľ. Vážny, V. Baláž, J. Baška, A. Danko, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "tlac": "92",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-12-01",
+   "approved": null,
+   "sponsors": "J. Sedlák, J. Mego, Z. Matejičková, M. Čavojová, M. Kapuš, J. Valocký, A. Stredák, P. Šuca, M. Saloň, J. Habánik, A. Hambálek, P. Goga, M. Nemky, V. Zahorčák, J. Richter, S. Kubánek, D. Karas, P. Sokol, I. Hazucha, D. Galis, B. Lešo, Z. Plevíková, J",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-10-15",
+   "by": "Glück, Richard",
+   "tlac": "1314",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4609"
+  },
+  {
+   "date": "2026-10-15",
+   "by": "Glück, Richard",
+   "tlac": "1313",
+   "title": "Vládny návrh zákona, ktorým sa dopĺňa zákon č. 385/2000 Z. z. o sudcoch a prísediacich a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4610"
+  },
+  {
+   "date": "2026-10-14",
+   "by": "Plevíková, Zuzana",
+   "tlac": "1243",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4608"
+  },
+  {
+   "date": "2025-06-16",
+   "by": "Plevíková, Zuzana",
+   "tlac": "733",
+   "title": "Vládny návrh ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 35,
+   "voteId": null,
+   "id": "4375"
+  },
+  {
+   "date": "2024-10-23",
+   "by": "Plevíková, Zuzana",
+   "tlac": "553",
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a overovateľov Národnej rady Slovenskej republiky",
+   "session": 22,
+   "voteId": null,
+   "id": "4244"
+  },
+  {
+   "date": "2024-09-11",
+   "by": "Plevíková, Zuzana",
+   "tlac": "293",
+   "title": "Vládny návrh zákona o niektorých povinnostiach a oprávneniach v oblasti kryptoaktív a o zmene a doplnení niektorých zákonov",
+   "session": 19,
+   "voteId": null,
+   "id": "4204"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2026-03-04",
+   "to": "2026-03-05",
+   "desc": "Brusel- Poslankyňa NR SR Zuzana Plevíková sa zúčastní na Medziparlamentnom zasadnutí na tému „Práva žien a demokracia: boj so stereotypom, dezinformáciám a násiliu v digitálnom veku “ v Belgicku."
+  },
+  {
+   "from": "2025-11-08",
+   "to": "2025-11-17",
+   "desc": "Peking, Xian, Chongqing- Poslankyňa NR SR Zuzana Plevíková a poslanci NR SR Marián Kéry, Michal Lukša, Michal Stuška, Karol Farkašovský, Dušan Tittel, Michal Bartek, Richard Eliáš, Dávid Demečko, Ivan Ševčík a Igor Janckulík sa zúčastnia na pracovnej návšteve v Čínskej ľudovej republike."
+  },
+  {
+   "from": "2025-11-03",
+   "to": "2025-11-04",
+   "desc": "Brusel- Poslankyňa NR SR Zuzana Plevíková a poslanec NR SR Gábor Grendel sa zúčastnia na Stretnutí parlamentnej skupiny Europol v Belgickom kráľovstve."
+  },
+  {
+   "from": "2025-10-10",
+   "to": "2025-10-13",
+   "desc": "Ľubľana- Poslanec NR SR Tomáš Valášek a poslankyňa Zuzana Plevíková sa zúčastnia na NATO 71st Annual Session v Slovinsku."
+  },
+  {
+   "from": "2025-09-01",
+   "to": "2025-09-06",
+   "desc": "Japonsko - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róbert Puci, Marián Kéry, Karol Farkašovský, Igor Janckulík, Zuzana Plevíková, Andrea Szabóová, Ivan Štefunko, Marián Viskupič a Michal Stuška sa zúčastnia pracovnej návštevy predsedu NR SR Richarda Rašiho v Japonsku."
+  },
+  {
+   "from": "2025-05-21",
+   "to": "2025-05-27",
+   "desc": "Dayton- Poslanec NR SR Tomáš Valášek a poslankyňa NR SR Zuzana Plevíková sa zúčastnia na Jarnom zasadnutí PZ NATO v Spojených Štátoch Amerických."
+  },
+  {
+   "from": "2025-02-23",
+   "to": "2025-02-24",
+   "desc": "Varšava- Poslanec NR SR Gábor Grendel a poslankyňa NR SR Zuzana Plevíková sa zúčastnia na Stretnutí Spojenej parlamentnej skupiny EUROPOL v Poľskej republike."
+  },
+  {
+   "from": "2024-12-02",
+   "to": "2024-12-02",
+   "desc": "Brusel - Poslankyňa NR SR Zuzana Plevíková sa zúčastní na Medziparlamentnej konferencii \"Vývoj EUROJUST agentúr v EÚ\" v Belgicku."
+  },
+  {
+   "from": "2024-11-11",
+   "to": "2024-11-12",
+   "desc": "Brusel - Poslankyne NR SR Beáta Jurík a Zuzana Plevíková sa zúčastnia na Stretnutí parlamentnej skupiny Europol v Belgicku."
+  },
+  {
+   "from": "2024-10-13",
+   "to": "2024-10-15",
+   "desc": "Brusel - Poslankyňa NR SR Zuzana Plevíková a poslanci NR SR Gábor Grendel, Juraj Krúpa a Dávid Demečko sa zúčastnina Návšteve sídla NATO v Belgicku."
+  },
+  {
+   "from": "2024-02-18",
+   "to": "2024-02-19",
+   "desc": "Brusel, Gent - Poslankyňa NR SR Zuzana Plevíková sa zúčastní na Stretnutí parlamentnej skupiny Europol v Belgicku."
+  }
+ ],
+ "offices": [
+  "ondrej Kvak a spol., Fraňa Kráľa 2771/9, Nové Mesto nad Váhom",
+  "STOGAT s.r.o., Nám. M. R. Štefánika č. 2030/20, Myjava"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 51222,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 2,
+  "realEstateKinds": {
+   "Zastavaná plocha a nádvorie": 1,
+   "Byt v bytovom dome": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobný automobil"
+  ],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Zuzana.Plevikova"
+ },
+ "at": "2026-11-26T00:34:36+00:00"
+}

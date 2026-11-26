@@ -1,0 +1,751 @@
+{
+ "id": "976",
+ "excuses": [
+  {
+   "from": "2023-11-14",
+   "to": "2023-11-16",
+   "days": [
+    "2023-11-14",
+    "2023-11-15",
+    "2023-11-16"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2023-11-23",
+   "to": "2023-11-24",
+   "days": [
+    "2023-11-23",
+    "2023-11-24"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-02-02",
+   "to": "2024-02-02",
+   "days": [
+    "2024-02-02"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-02-09",
+   "to": "2024-02-09",
+   "days": [
+    "2024-02-09"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-02-16",
+   "to": "2024-02-16",
+   "days": [
+    "2024-02-16"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody - sprevádzanie dieťaťa k lekárovi)"
+  },
+  {
+   "from": "2024-02-27",
+   "to": "2024-02-27",
+   "days": [
+    "2024-02-27"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-02-28",
+   "to": "2024-02-28",
+   "days": [
+    "2024-02-28"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-04-19",
+   "to": "2024-04-19",
+   "days": [
+    "2024-04-19"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-05-09",
+   "to": "2024-05-09",
+   "days": [
+    "2024-05-09"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-05-15",
+   "to": "2024-05-15",
+   "days": [
+    "2024-05-15"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-06-11",
+   "to": "2024-06-14",
+   "days": [
+    "2024-06-11",
+    "2024-06-12",
+    "2024-06-13",
+    "2024-06-14"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-06-27",
+   "to": "2024-06-28",
+   "days": [
+    "2024-06-27",
+    "2024-06-28"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-07-15",
+   "to": "2024-07-15",
+   "days": [
+    "2024-07-15"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-09-24",
+   "to": "2024-09-27",
+   "days": [
+    "2024-09-24",
+    "2024-09-25",
+    "2024-09-26",
+    "2024-09-27"
+   ],
+   "reason": "iný dôvod (Čerpanie dovolenky)"
+  },
+  {
+   "from": "2024-10-01",
+   "to": "2024-10-03",
+   "days": [
+    "2024-10-01",
+    "2024-10-02",
+    "2024-10-03"
+   ],
+   "reason": "iný dôvod (Čerpanie dovolenky)"
+  },
+  {
+   "from": "2024-11-26",
+   "to": "2024-11-29",
+   "days": [
+    "2024-11-26",
+    "2024-11-27",
+    "2024-11-28",
+    "2024-11-29"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-01-29",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-03-25",
+   "to": "2025-03-28",
+   "days": [
+    "2025-03-25",
+    "2025-03-26",
+    "2025-03-27",
+    "2025-03-28"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-04-14",
+   "to": "2025-04-16",
+   "days": [
+    "2025-04-14",
+    "2025-04-15",
+    "2025-04-16"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-13",
+   "days": [
+    "2025-08-13"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-08-14",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-09-29",
+   "to": "2025-09-29",
+   "days": [
+    "2025-09-29"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-10-24",
+   "to": "2025-10-24",
+   "days": [
+    "2025-10-24"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-12-08",
+   "to": "2025-12-08",
+   "days": [
+    "2025-12-08"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2026-01-28",
+   "to": "2026-01-28",
+   "days": [
+    "2026-01-28"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2026-03-20",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-24",
+   "days": [
+    "2026-04-24"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2026-04-27",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-30",
+   "days": [
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankyne Národnej rady Slovenskej republiky Jany BITTÓ CIGÁNIKOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k potrebe otvorenia rokovaní so Svätou stolicou o úprave Zmluvy medzi Slovenskou republikou a Svätou stolicou",
+   "tlac": "1363",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1159",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, B. Gröhling, M. Kolíková, V. Marcinková, T. Szalay, M. Viskupič, M. Bajo Holečková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 575/2001 Z. z. o organizácii činnosti vlády a organizácii ústrednej štátnej správy v znení neskorších predpisov",
+   "tlac": "1071",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-10-24",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, K. Galek, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1054",
+   "state": "Evidencia",
+   "delivered": "2025-10-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, J. Bittó Cigániková, K. Galek, B. Gröhling, A. Hlina, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tomáša SZALAYA, Jany BITTÓ CIGÁNIKOVEJ a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "985",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Vladimíra LEDECKÉHO, Martiny BAJO HOLEČKOVEJ, Ondreja DOSTÁLA a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "965",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Vladimíra LEDECKÉHO, Martiny BAJO HOLEČKOVEJ, Ondreja DOSTÁLA a Jany BITTÓ CIGÁNIKOVEJ na vydanie ústavného zákona, ktorým sa dopĺňa ústavný zákon č. 493/2011 Z. z. o rozpočtovej zodpovednosti",
+   "tlac": "949",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, V. Ledecký, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh poslankyne Národnej rady Slovenskej republiky Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "931",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-21",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa zrušuje zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "880",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-06-04",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, M. Kolíková, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "834",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Jany BITTÓ CIGÁNIKOVEJ a Martiny BAJO HOLEČKOVEJ na vydanie zákona, ktorým sa mení zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "751",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tomáša SZALAYA a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "749",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona o primeranom hmotnom zabezpečení v starobe",
+   "tlac": "717",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-02-19",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, K. Galek, J. Krúpa, V. Ledecký, M. Kolíková, V. Marcinková, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "693",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Vladimíry MARCINKOVEJ, Vladimíra LEDECKÉHO a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov",
+   "tlac": "685",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA a Jany BlTTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov",
+   "tlac": "675",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 79/2015 Z. z. o odpadoch a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "674",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": "2025-06-10",
+   "sponsors": "J. Bittó Cigániková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tomáša SZALAYA, Ondreja DOSTÁLA, Jany BITTÓ CIGÁNIKOVEJ, Juraja KRÚPU a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (Navrhovatelia vzali listom z 30. januára 2025 svoj návrh zákona späť.)",
+   "tlac": "644",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-07",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, J. Krúpa, T. Szalay, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výboru Národnej rady Slovenskej republiky",
+   "tlac": "479",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, K. Galek, B. Gröhling, A. Hlina, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA, Jany BITTÓ CIGÁNIKOVEJ, Juraja KRÚPU, Márie KOLÍKOVEJ a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 400/2015 Z. z. o tvorbe právnych predpisov a o Zbierke zákonov Slovenskej republiky a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "443",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "442",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "441",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov",
+   "tlac": "440",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 153/2001 Z. z. o prokuratúre v znení neskorších predpisov",
+   "tlac": "439",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tomáša SZALAYA a Jany BITTÓ CIGÁNIKOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k odsúdeniu výrokov splnomocnenca vlády pre preverenie procesu riadenia a manažovania zdrojov počas pandémie COVID-19 Petra Kotlára",
+   "tlac": "372",
+   "state": "Evidencia",
+   "delivered": "2024-06-21",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jany BITTÓ CIGÁNIKOVEJ, Tomáša SZALAYA a Mariána VISKUPIČA na vydanie zákona, ktorým sa dopĺňa zákon č. 577/2004 Z. z. o rozsahu zdravotnej starostlivosti uhrádzanej na základe verejného zdravotného poistenia a o úhradách za služby súvisiace s poskytovaním zdravotnej starostlivosti v znení neskorších predpisov a o doplnení niektorých zákonov",
+   "tlac": "348",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jany BITTÓ CIGÁNIKOVEJ a Tomáša SZALAYA na vydanie zákona, ktorým sa dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "347",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení zákon č. 43/2004 Z. z. o starobnom dôchodkovom sporení a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "340",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Branislava GRÖHLlNGA, Jany BITTÓ CIGÁNIKOVEJ a Vladimíra LEDECKÉHO na vydanie ústavného zákona o primeranom hmotnom zabezpečeni v starobe",
+   "tlac": "280",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-04-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, B. Gröhling, V. Ledecký, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jany BITTÓ CIGÁNIKOVEJ a Tomáša SZALAYA na vydanie zákona, ktorým sa dopĺňa zákon č. 73/1986 Zb. o umelom prerušení tehotenstva v znení neskorších predpisov (Navrhovatelia vzali listom z 18. apríla 2024 svoj návrh zákona späť.)",
+   "tlac": "234",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "194",
+   "state": "Evidencia",
+   "delivered": "2024-02-06",
+   "approved": null,
+   "sponsors": "L. Plaváková, M. Šimečka, Z. Mesterová, M. Dubéci, B. Jurík, Z. Števulová, I. Štefunko, D. Dej, O. Dvořák, M. Truban, V. Šrobová, M. Sabo, V. Veslárová, J. Hanuliaková, O. Prostredník, S. Petrík, N. Nash, J. Hargaš, T. Gažovičová, D. Luščíková, V. K",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ruským útokom severokórejskými balistickými strelami na Ukrajine",
+   "tlac": "145",
+   "state": "Evidencia",
+   "delivered": "2024-01-10",
+   "approved": null,
+   "sponsors": "V. Marcinková, V. Ledecký, A. Hlina, M. Viskupič, B. Gröhling, O. Dostál, J. Bittó Cigániková, M. Kolíková, J. Krúpa, R. Sulík, T. Szalay",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jany BITTÓ CIGÁNIKOVEJ a Tomáša SZALAYA na vydanie zákona, ktorým sa dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "37",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-13",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, T. Szalay",
+   "category": "Novela zákona"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2025-10-15",
+   "by": "Bittó Cigániková, Jana",
+   "tlac": "918",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 40,
+   "voteId": null,
+   "id": "4427"
+  },
+  {
+   "date": "2025-09-10",
+   "by": "Bittó Cigániková, Jana",
+   "tlac": "730",
+   "title": "Vládny návrh zákona o psychologickej činnosti a psychoterapeutickej činnosti a o zmene a doplnení niektorých zákonov",
+   "session": 39,
+   "voteId": null,
+   "id": "4385"
+  },
+  {
+   "date": "2023-12-13",
+   "by": "Viskupič, Marián",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4018"
+  },
+  {
+   "date": "2023-12-13",
+   "by": "Szalay, Tomáš",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4022"
+  },
+  {
+   "date": "2023-12-13",
+   "by": "Bittó Cigániková, Jana",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4023"
+  },
+  {
+   "date": "2023-12-13",
+   "by": "Bittó Cigániková, Jana",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4024"
+  },
+  {
+   "date": "2023-12-13",
+   "by": "Bittó Cigániková, Jana",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4025"
+  },
+  {
+   "date": "2023-12-13",
+   "by": "Bittó Cigániková, Jana",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4026"
+  },
+  {
+   "date": "2023-11-22",
+   "by": "Szalay, Tomáš",
+   "tlac": "31",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 540/2021 Z. z. o kategorizácii ústavnej zdravotnej starostlivosti a o zmene a doplnení niektorých zákonov v znení zákona č. 518/2022 Z.",
+   "session": 3,
+   "voteId": null,
+   "id": "3990"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49380,
+  "incomeOther": 3321,
+  "employment": "NÁRODNÝ ÚSTAV DETSKÝCH CHORÔB",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 3,
+  "realEstateKinds": {
+   "Byt, záhrada, zastavaná plocha a nádvorie 2x": 1,
+   "Zastavané plochy, záhrady": 1,
+   "Byt": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Hypotéka",
+   "Hypotéka"
+  ],
+  "userId": "Jana.Cigániková"
+ },
+ "at": "2026-11-25T23:11:43+00:00"
+}

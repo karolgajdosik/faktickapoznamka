@@ -1,0 +1,68 @@
+{
+ "id": "1138",
+ "excuses": [
+  {
+   "from": "2023-11-21",
+   "to": "2023-11-22",
+   "days": [
+    "2023-11-21",
+    "2023-11-22"
+   ],
+   "reason": "iný dôvod (Zahraničná cesta Poľsko - FormeID Slovakia)"
+  },
+  {
+   "from": "2023-11-23",
+   "to": "2023-11-28",
+   "days": [
+    "2023-11-23",
+    "2023-11-24",
+    "2023-11-25",
+    "2023-11-26",
+    "2023-11-27",
+    "2023-11-28"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen správnej rady Ústavu pamäti národa",
+  "incomePublic": 14006,
+  "incomeOther": 96408,
+  "employment": "CEDITRA, A.S.",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 1,
+  "realEstateKinds": {
+   "Záhrada, zastavaná plocha a nádvorie, rodinný dom": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobné motorové vozidlo"
+  ],
+  "rights": [
+   "Vklad v banke"
+  ],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Martin.Pekar"
+ },
+ "at": "2026-11-26T00:31:13+00:00"
+}

@@ -1,0 +1,682 @@
+{
+ "id": "1008",
+ "excuses": [
+  {
+   "from": "2023-11-29",
+   "to": "2023-11-29",
+   "days": [
+    "2023-11-29"
+   ],
+   "reason": "iný dôvod (Plenárna schôdza výboru regiónov v Bruseli)"
+  },
+  {
+   "from": "2024-02-01",
+   "to": "2024-02-01",
+   "days": [
+    "2024-02-01"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-02-22",
+   "to": "2024-02-23",
+   "days": [
+    "2024-02-22",
+    "2024-02-23"
+   ],
+   "reason": "iný dôvod (Povinnosti v regióne)"
+  },
+  {
+   "from": "2024-04-26",
+   "to": "2024-04-26",
+   "days": [
+    "2024-04-26"
+   ],
+   "reason": "iný dôvod (Iné pracovné dôvody)"
+  },
+  {
+   "from": "2024-06-21",
+   "to": "2024-06-21",
+   "days": [
+    "2024-06-21"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-11-29",
+   "to": "2024-11-29",
+   "days": [
+    "2024-11-29"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2024-12-09",
+   "to": "2024-12-09",
+   "days": [
+    "2024-12-09"
+   ],
+   "reason": "iný dôvod (Iné pracovné záležitosti)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-02-19",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-01",
+   "days": [
+    "2025-04-01"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-02",
+   "to": "2025-04-02",
+   "days": [
+    "2025-04-02"
+   ],
+   "reason": "iný dôvod (Pracovná cesta, Brusel)"
+  },
+  {
+   "from": "2025-04-11",
+   "to": "2025-04-11",
+   "days": [
+    "2025-04-11"
+   ],
+   "reason": "iný dôvod (Iné pracovné záležitosti)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2025-06-06",
+   "to": "2025-06-06",
+   "days": [
+    "2025-06-06"
+   ],
+   "reason": "iný dôvod (Rokovania v regióne)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-09-19",
+   "to": "2025-09-19",
+   "days": [
+    "2025-09-19"
+   ],
+   "reason": "iný dôvod (Aktivity v regióne )"
+  },
+  {
+   "from": "2025-09-26",
+   "to": "2025-09-26",
+   "days": [
+    "2025-09-26"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-11-28",
+   "to": "2025-11-28",
+   "days": [
+    "2025-11-28"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-12-10",
+   "to": "2025-12-10",
+   "days": [
+    "2025-12-10"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta- Brusel)"
+  },
+  {
+   "from": "2026-01-27",
+   "to": "2026-01-27",
+   "days": [
+    "2026-01-27"
+   ],
+   "reason": "iný dôvod (Účasť na zahraničnej pracovnej ceste v Bruseli (Belgicko))"
+  },
+  {
+   "from": "2026-01-30",
+   "to": "2026-01-30",
+   "days": [
+    "2026-01-30"
+   ],
+   "reason": "iný dôvod (Iný závažný dôvod, práca v regióne)"
+  },
+  {
+   "from": "2026-02-06",
+   "to": "2026-02-06",
+   "days": [
+    "2026-02-06"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-02-10",
+   "to": "2026-02-10",
+   "days": [
+    "2026-02-10"
+   ],
+   "reason": "iný dôvod (Účasť na zahraničnej ceste Bureau, CoR, Cyprus )"
+  },
+  {
+   "from": "2026-04-17",
+   "to": "2026-04-17",
+   "days": [
+    "2026-04-17"
+   ],
+   "reason": "iný dôvod (Práca a aktivity v meste Kežmarok a regióne)"
+  },
+  {
+   "from": "2026-04-27",
+   "to": "2026-04-28",
+   "days": [
+    "2026-04-27",
+    "2026-04-28"
+   ],
+   "reason": "choroba"
+  },
+  {
+   "from": "2026-04-29",
+   "to": "2026-04-30",
+   "days": [
+    "2026-04-29",
+    "2026-04-30"
+   ],
+   "reason": "iný dôvod (Práca a aktivity v meste Kežmarok a regióne)"
+  },
+  {
+   "from": "2026-05-06",
+   "to": "2026-05-06",
+   "days": [
+    "2026-05-06"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta- Brusel)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-06-12",
+   "to": "2026-06-12",
+   "days": [
+    "2026-06-12"
+   ],
+   "reason": "iný dôvod (Práca v meste a regióne)"
+  },
+  {
+   "from": "2026-06-15",
+   "to": "2026-06-15",
+   "days": [
+    "2026-06-15"
+   ],
+   "reason": "iný dôvod (Práca v meste a regióne)"
+  },
+  {
+   "from": "2026-06-18",
+   "to": "2026-06-18",
+   "days": [
+    "2026-06-18"
+   ],
+   "reason": "iný dôvod (Práca v meste a regióne)"
+  },
+  {
+   "from": "2026-09-22",
+   "to": "2026-09-23",
+   "days": [
+    "2026-09-22",
+    "2026-09-23"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta, Zasadnnutie k írskemu predsedníctvu EÚ)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Práca v meste a regióne)"
+  },
+  {
+   "from": "2026-09-29",
+   "to": "2026-09-29",
+   "days": [
+    "2026-09-29"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta- Brusel)"
+  },
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Práca v meste a regióne)"
+  },
+  {
+   "from": "2026-10-09",
+   "to": "2026-10-09",
+   "days": [
+    "2026-10-09"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-10-12",
+   "to": "2026-10-13",
+   "days": [
+    "2026-10-12",
+    "2026-10-13"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obnoveným spoločným rokovaniam vlád Slovenskej republiky a Českej republiky. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1072",
+   "state": "Evidencia",
+   "delivered": "2025-10-28",
+   "approved": null,
+   "sponsors": "R. Raši, R. Puci, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie ústavného zákona, ktorým sa mení Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "938",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "J. Ferenčák",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána FERENČÁKA a Štefana GAŠPAROVIČA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "tlac": "937",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": "2025-10-28",
+   "sponsors": "J. Ferenčák, Š. Gašparovič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa dopĺňa zákon Slovenskej národnej rady č. 369/1990 Zb. o obecnom zriadení v znení neskorších predpisov a ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 162/1995 Z. z. o katastri nehnuteľností a o zápise vlastníckych a iných práv k nehnuteľnostiam (katastrálny zákon) v znení neskorších predpisov",
+   "tlac": "936",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "J. Ferenčák",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a vymenovanie vedúceho stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "860",
+   "state": "Evidencia",
+   "delivered": "2025-05-21",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, A. Szabóová, I. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona o podmienkach predaja energetických nápojov",
+   "tlac": "838",
+   "state": "II. čítanie",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "J. Ferenčák",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "778",
+   "state": "Evidencia",
+   "delivered": "2025-03-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, I. Šimko, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky (Navrhovateľ oznámil listom z 24. marca 2025 späťvzatie návrhu na zmeny v zložení výborov a delegácie.)",
+   "tlac": "708",
+   "state": "Evidencia",
+   "delivered": "2025-02-07",
+   "approved": null,
+   "sponsors": "M. Bartek, J. Blcháč, B. Becík, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabóová, I. Šimko, D. Tittel, E.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MALATINCA, Samuela MIGAĽA, Radomíra ŠALlTROŠA a Jána FERENČÁKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov (Navrhovatelia vzali listom z 20. marca 2025 svoj návrh zákona späť.)",
+   "tlac": "682",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Ferenčák, R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána FERENČÁKA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov (Navrhovateľom tohto návrhu zákona bol aj Samuel Migaľ, ktorý bol 19. marca 2025 vymenovaný za člena vlády a Radomír Šalitroš, ktorý bol dňom 22. marca 2025 vymenovaný za štátneho tajomníka, ich mandát sa neuplatňuje.)",
+   "tlac": "599",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-07",
+   "approved": "2025-04-03",
+   "sponsors": "J. Ferenčák, R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "tlac": "528",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-03",
+   "approved": "2024-11-28",
+   "sponsors": "J. Ferenčák",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "472",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, J. Krúpa, V. Ledecký, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, S. Migaľ, P. Náhlik, A. Nováková, P.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 138/1991 Zb. o majetku obcí v znení neskorších predpisov",
+   "tlac": "420",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": "2024-11-05",
+   "sponsors": "J. Ferenčák",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedníčky Výboru Národnej rady Slovenskej republiky pre vzdelávanie, vedu, mládež a šport",
+   "tlac": "91",
+   "state": "Evidencia",
+   "delivered": "2023-11-29",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, M. Moško, P. Náhlik, A. Nováková, S. Petrík, P. Puškárová, P. Slyško, Z. Svoboda, R. Šalitroš,",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2025-10-21",
+   "by": "Ferenčák, Ján",
+   "tlac": "937",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána FERENČÁKA a Štefana GAŠPAROVIČA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "session": 40,
+   "voteId": null,
+   "id": "4453"
+  },
+  {
+   "date": "2025-10-01",
+   "by": "Sabo, Michal",
+   "tlac": "838",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona o podmienkach predaja energetických nápojov",
+   "session": 39,
+   "voteId": null,
+   "id": "4421"
+  },
+  {
+   "date": "2024-11-27",
+   "by": "Podmanický, Ján",
+   "tlac": "528",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "session": 23,
+   "voteId": null,
+   "id": "4276"
+  },
+  {
+   "date": "2024-11-27",
+   "by": "Podmanický, Ján",
+   "tlac": "528",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "session": 23,
+   "voteId": null,
+   "id": "4278"
+  },
+  {
+   "date": "2024-11-07",
+   "by": "Ferenčák, Ján",
+   "tlac": "446",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andreja DANKA, Milana GARAJA, Dagmar KRAMPLOVEJ a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 543/2002 Z. z. o ochrane prírody a krajiny v znení neskorších predpisov (Navrhovateľom tohto návrhu zákona bol aj poslanec Rudolf Huliak, ktorý listom zo 7. novembra 2024 oznámil, že berie späť svoj podpis pod týmto návrhom zákona.)",
+   "session": 22,
+   "voteId": null,
+   "id": "4268"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2025-11-30",
+   "to": "2025-12-01",
+   "desc": "Kodaň – predseda Výboru pre európske záležitosti Národnej rady Slovenskej republiky Ján Ferenčák, podpredsedníčka CEZ NR SR Beáta Jurík a poslanci Branislav Škripek a Dušan Tittel sa zúčastnia na Plenárnom zasadnutí COSAC v Dánskom kráľovstve."
+  },
+  {
+   "from": "2025-11-03",
+   "to": "2025-11-04",
+   "desc": "Billund- Poslanci NR SR Ján Ferenčák a Ján Hargaš sa zúčastnia na Medziparlamentnej konferencii \"Za bezpečnejšiu a inovatívnejšiu digitálnu Európu: Napĺňanie sľubov Aktu o digitálnych službách (DSA) pre občanov a trhy\" v Dánsku."
+  },
+  {
+   "from": "2025-10-05",
+   "to": "2025-10-08",
+   "desc": "Kyjev-Poslankyňa NR SR Beáta Jurík a poslanci Ján Ferenčák a Ján Hargaš sa zúčastnia na Stretnutí s predsedníčkou Výboru U1 do EÚ a členmi partnerského výboru Verkhovnej Rady Ekrajiny v Ukrajine."
+  },
+  {
+   "from": "2025-07-03",
+   "to": "2025-07-04",
+   "desc": "Kodaň, Poslanec NR SR Ján Ferenčák sa zúčastní na Stretnutí parlamentných výborov pre európske záležitosti- Conference of Parliamentary Committees for Union Affairs of Parliaments of the European Union (COSAC) v Dánsku."
+  },
+  {
+   "from": "2025-06-08",
+   "to": "2025-06-09",
+   "desc": "Varšava- Poslankyňa NR SR Beata Jurík a poslanci Ján Ferenčák a Ján Hargaš sa zúčastnia na Stretnutí parlamentných výborov pre európske záležitosti- Conference of Parliamentary Committees for Union Affairs of Parliaments of the European Union (COSAC) ."
+  },
+  {
+   "from": "2025-01-26",
+   "to": "2025-01-27",
+   "desc": "Varšava- Poslanec NR SR Ján Ferenčák sa zúčastní na Konferencii parlamentných výborov pre záležitosti Únie parlamentov Európskej únie- COSAC."
+  },
+  {
+   "from": "2024-10-27",
+   "to": "2024-10-29",
+   "desc": "Budapešť - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák, poslankyňa NR SR Beáta Jurík a poslanci NR SR Ján Mažgút a Dušan Tittel sa zúčastnia na Medziparlamentnej výmene informácií EÚ v Maďarsku."
+  },
+  {
+   "from": "2024-10-23",
+   "to": "2024-10-24",
+   "desc": "Riga - Podpredseda NR SR Peter Žiga, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslankyňa NR SR Beáta Jurík sa zúčastnia na Pracovnej návšteve podpredsedu Národnej rady SR p. Petra Žigu v Lotyšskej republike."
+  },
+  {
+   "from": "2024-07-28",
+   "to": "2024-07-29",
+   "desc": "Budapešť - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák sa zúčastní na Stretnutí predsedov parlamentných výborov pre záležitosti Únie parlamentov Európskej únie - COSAC v Maďarsku."
+  },
+  {
+   "from": "2024-06-26",
+   "to": "2024-06-26",
+   "desc": "Praha - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a predseda Zahraničného výboru NR SR Marián Kéry sa zúčastnia na rokovaní s predsedom VEZ Poslaneckej snemovne Parlamentu Českej republiky."
+  },
+  {
+   "from": "2024-04-21",
+   "to": "2024-04-23",
+   "desc": "Palma de Mallorca - Podpredseda NR SR Peter Žiga, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslanec NR SR Samuel Migaľ sa zúčastnia na pracovnej návšteve v Španieľskom kráľovstve."
+  },
+  {
+   "from": "2024-03-24",
+   "to": "2024-03-26",
+   "desc": "Brusel - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák, poslankyňa NR SR Beáta Jurík a poslanci NR SR Michal Stuška a Dušan Tittel sa zúčastnia na Konferencii predsedov parlamentných výborov pre európske záležitosti - COSAC v Belgicku."
+  },
+  {
+   "from": "2024-03-14",
+   "to": "2024-03-14",
+   "desc": "Berlín - Predseda NR SR Peter Pellegrini a predseda Výboru NR SR pre európske záležitosti Ján Ferenčák sa zúčastnia na oficiálnej návšteve v Nemeckej spolkovej republike."
+  },
+  {
+   "from": "2024-03-03",
+   "to": "2024-03-05",
+   "desc": "Nikózia - predseda NR SR Peter Pellegrini a poslanci NR SR Ján Ferenčák a Samuel Migaľ sa zúčastnia na pracovnej návšteve predsedu NR SR v Cyperskej republike."
+  },
+  {
+   "from": "2024-01-28",
+   "to": "2024-01-29",
+   "desc": "Viedeň - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslanci NR SR Michal Stuška, Peter Kalivoda a Branislav Škripek sa zúčastnia na Spoločnom zasadnutí výborov EÚ v rámci S3."
+  },
+  {
+   "from": "2024-01-22",
+   "to": "2024-01-24",
+   "desc": "Krakov, Brusel - Predseda NR SR Peter Pellegrini, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a predseda Zahraničného výboru NR SR Marián Kéry sa zúčastnia pracovnej návštevy v Poľskej republike a oficiálnej návštevy v inštitúciách EÚ."
+  },
+  {
+   "from": "2023-11-26",
+   "to": "2023-11-28",
+   "desc": "Madrid- Poslankyňa NR SR Vladímíra Marcinková a poslanci NR SR Ján Ferenčák, Michal Stuška a Dušan Tittel sa zúčastnia Konferencie parlamentných výborov pre záležitosti Únie parlamentov Európskej únie - COSAC v Španielsku."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 62264,
+  "incomeOther": 12168,
+  "employment": "MESTSKÉ KULTÚRNE STREDISKO",
+  "business": "nevykonávam",
+  "roles": [
+   "POSLANEC (PREŠOVSKÝ SAMOSPRÁVNY KRAJ)",
+   "VICEPREZIDENT (ÚNIA MIEST SLOVENSKA)",
+   "ČLEN VÝBORU (VÝBOR REGIÓNOV)",
+   "ČLEN DOZORNEJ RADY (PODTATRANSKÁ VODÁRENSKÁ SPOLOČNOSŤ, A.S.)",
+   "ČLEN VALNÉHO ZHROMAŽDENIA (TATRANSKÁ ODPADOVÁ SPOLOČNOSŤ S.R.O)",
+   "PREDSEDA VALNÉHO ZHROMAŽDENIA (LESY MESTA KEŽMAROK S.R.O.)",
+   "PREDSEDA VALNÉHO ZHROMAŽDENIA (SPRAVBYTHERM S.R.O.)",
+   "PREDSEDA VALNÉHO ZHROMAŽDENIA (TECHNICKÉ SLUŽBY, S.R.O.)",
+   "PREDSEDA VALNÉHO ZHROMAŽDENIA (KEŽMAROK INVEST, S.R.O.)",
+   "ČLEN RADY (ZDRUŽENIE EUROREGIÓN TATRY)",
+   "PREDSEDA PREDSTAVENSTVA (OBLASTNÁ ORGANIZÁCIA CESTOVNÉHO RUCHU TSP)",
+   "PREDSEDA SPRÁVNEJ RADY (CENTRUM PODPORY REGIONÁLNEHO ROZVOJA OKRESU KEŽMAROK)"
+  ],
+  "realEstateCount": 66,
+  "realEstateKinds": {
+   "Rodinný dom": 1,
+   "Pozemok": 64,
+   "Nebytový priestor": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Vklady v banke",
+   "Obchodný podiel v spoločnosti",
+   "Cenné papiere",
+   "Obchodný podiel v spoločnosti",
+   "Obchodný podiel v spoločnosti",
+   "Pôžička"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver",
+   "Hypotekárny úver",
+   "Pôžička",
+   "Pôžička",
+   "Hypotekárny úver"
+  ],
+  "userId": "Ján.Ferenčák"
+ },
+ "at": "2026-11-25T23:26:50+00:00"
+}

@@ -1,0 +1,27 @@
+{
+ "state": "Redakcia",
+ "stateNote": "NZ postúpil do redakcie",
+ "delivered": "2026-05-07",
+ "submitter": "vláda (Ministerstvo dopravy SR)",
+ "gestor": "Výbor NR SR pre hospodárske záležitosti",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1567 zo dňa 3. 6. 2026. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 11. 9. 2026. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre hospodárske záležitosti s lehotou n",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 61. schôdzi NR SR dňa 15. 9. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 61. schôdzi NR SR, uznesenie číslo 1616 zo dňa 15. 9. 2026",
+   "result": "NZ postupuje do redakcie."
+  }
+ ],
+ "at": "2026-11-26T01:24:48+00:00"
+}

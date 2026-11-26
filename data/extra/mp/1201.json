@@ -1,0 +1,200 @@
+{
+ "id": "1201",
+ "excuses": [
+  {
+   "from": "2024-01-23",
+   "to": "2024-01-23",
+   "days": [
+    "2024-01-23"
+   ],
+   "reason": "iný dôvod (Výjazdové rokovanie vlády SR)"
+  },
+  {
+   "from": "2024-02-01",
+   "to": "2024-02-07",
+   "days": [
+    "2024-02-01",
+    "2024-02-02",
+    "2024-02-03",
+    "2024-02-04",
+    "2024-02-05",
+    "2024-02-06",
+    "2024-02-07"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2024-02-21",
+   "to": "2024-02-21",
+   "days": [
+    "2024-02-21"
+   ],
+   "reason": "iný dôvod (Pohreb)"
+  },
+  {
+   "from": "2024-06-21",
+   "to": "2024-06-21",
+   "days": [
+    "2024-06-21"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MALATINCA, Samuela MIGAĽA, Radomíra ŠALlTROŠA a Jána FERENČÁKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov (Navrhovatelia vzali listom z 20. marca 2025 svoj návrh zákona späť.)",
+   "tlac": "682",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Ferenčák, R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána FERENČÁKA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov (Navrhovateľom tohto návrhu zákona bol aj Samuel Migaľ, ktorý bol 19. marca 2025 vymenovaný za člena vlády a Radomír Šalitroš, ktorý bol dňom 22. marca 2025 vymenovaný za štátneho tajomníka, ich mandát sa neuplatňuje.)",
+   "tlac": "599",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-07",
+   "approved": "2025-04-03",
+   "sponsors": "J. Ferenčák, R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Samuela MIGAĽA, Radomíra ŠALlTROŠA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 305/2005 Z. z. o sociálnoprávnej ochrane detí a o sociálnej kuratele a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "534",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": "2024-11-28",
+   "sponsors": "R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "472",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, J. Krúpa, V. Ledecký, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, S. Migaľ, P. Náhlik, A. Nováková, P.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Samuela MIGAĽA na vydanie zákona, ktorým sa dopĺňa zákon č. 315/2001 Z. z. o Hasičskom a záchrannom zbore v znení neskorších predpisov",
+   "tlac": "320",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-22",
+   "approved": "2024-09-25",
+   "sponsors": "S. Migaľ",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Samuela MIGAĽA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 544/2002 Z. z. o Horskej záchrannej službe v znení neskorších predpisov (Navrhovateľ vzal listom zo 14. augusta 2024 svoj návrh zákona späť.)",
+   "tlac": "319",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-22",
+   "approved": null,
+   "sponsors": "S. Migaľ",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslankyne Národnej rady Slovenskej republiky Marie KOLÍKOVEJ z funkcie predsedníčky Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "299",
+   "state": "Evidencia",
+   "delivered": "2024-05-07",
+   "approved": null,
+   "sponsors": "T. Gašpar, S. Migaľ, R. Glück, M. Saloň, P. Šuca, D. Muňko, D. Demečko, P. Kotlár",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedníčky Výboru Národnej rady Slovenskej republiky pre vzdelávanie, vedu, mládež a šport",
+   "tlac": "91",
+   "state": "Evidencia",
+   "delivered": "2023-11-29",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, M. Moško, P. Náhlik, A. Nováková, S. Petrík, P. Puškárová, P. Slyško, Z. Svoboda, R. Šalitroš,",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2024-11-26",
+   "by": "Migaľ, Samuel",
+   "tlac": "534",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Samuela MIGAĽA, Radomíra ŠALlTROŠA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 305/2005 Z. z. o sociálnoprávnej ochrane detí a o sociálnej kuratele a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 23,
+   "voteId": null,
+   "id": "4273"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2024-05-25",
+   "to": "2024-05-27",
+   "desc": "Sofia - Poslanec NR SR Samuel Migaľ sa zúčastnil na Jarnom zasadnutí PZ NATO v Bulharsku."
+  },
+  {
+   "from": "2024-04-28",
+   "to": "2024-04-29",
+   "desc": "Praha - Predseda Výboru NR SR pre obranu a bezpečnosť Tibor Gašpar, poslankyňa NR SR Andrea Turčanová a poslanec NR SR Samuel Migaľ sa zúčastnia na Stretnutí parlamentných výborov pre obranu a bezpečnosť krajín V4 v Českej republike."
+  },
+  {
+   "from": "2024-04-21",
+   "to": "2024-04-23",
+   "desc": "Palma de Mallorca - Podpredseda NR SR Peter Žiga, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslanec NR SR Samuel Migaľ sa zúčastnia na pracovnej návšteve v Španieľskom kráľovstve."
+  },
+  {
+   "from": "2024-03-03",
+   "to": "2024-03-05",
+   "desc": "Nikózia - predseda NR SR Peter Pellegrini a poslanci NR SR Ján Ferenčák a Samuel Migaľ sa zúčastnia na pracovnej návšteve predsedu NR SR v Cyperskej republike."
+  }
+ ],
+ "offices": [
+  "OC KOMUNAL services, s.r.o., Nám. Slobody 2, Vranou nad Topľou"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 57016,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 2,
+  "realEstateKinds": {
+   "Rodinný dom": 1,
+   "Byt": 1
+  },
+  "movablesCount": 2,
+  "movables": [
+   "Osobné motorové vozidlo",
+   "Vybavenie domácnosti"
+  ],
+  "rights": [
+   "Úspory"
+  ],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Samuel.Migaľ"
+ },
+ "at": "2026-11-26T00:24:12+00:00"
+}

@@ -1,0 +1,60 @@
+{
+ "id": "767",
+ "excuses": [
+  {
+   "from": "2023-11-21",
+   "to": "2023-11-24",
+   "days": [
+    "2023-11-21",
+    "2023-11-22",
+    "2023-11-23",
+    "2023-11-24"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ruským útokom severokórejskými balistickými strelami na Ukrajine",
+   "tlac": "145",
+   "state": "Evidencia",
+   "delivered": "2024-01-10",
+   "approved": null,
+   "sponsors": "V. Marcinková, V. Ledecký, A. Hlina, M. Viskupič, B. Gröhling, O. Dostál, J. Bittó Cigániková, M. Kolíková, J. Krúpa, R. Sulík, T. Szalay",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2023-12-13",
+   "by": "Viskupič, Marián",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4020"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": null,
+ "at": "2026-11-26T00:51:14+00:00"
+}

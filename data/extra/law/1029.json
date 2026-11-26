@@ -1,0 +1,17 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NR SR nebude pokračovať v rokovaní o návrhu zákona",
+ "delivered": "2025-09-25",
+ "submitter": "poslanci NR SR (I. Janckulík, F. Mikloško)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1407 zo dňa 14. 4. 2026.",
+   "result": "NR SR nebude pokračovať v rokovaní o návrhu zákona."
+  }
+ ],
+ "at": "2026-11-26T01:31:32+00:00"
+}

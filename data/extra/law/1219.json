@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2026-03-27",
+ "submitter": "vláda (Ministerstvo zdravotníctva SR)",
+ "gestor": "Výbor NR SR pre zdravotníctvo",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1435 zo dňa 21. 4. 2026. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie 25. ",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR dňa 9. 6. 2026. Pozmeňujúce a doplňujúce návrhy: 03. 06. 2026 Svoboda, Zdenko Detail návrhu 9_1219-Zdenko Svoboda (227 KB) 05. 06. 2026 Lučanský, Adam Detail návrhu 9_1219-Adam Lučanský (206 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1588 zo dňa 9. 6. 2026",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 16. 6. 2026 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (1. 7. 2026), číslo 165/2026. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to hav",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:27:13+00:00"
+}

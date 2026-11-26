@@ -1,0 +1,1148 @@
+[
+ {
+  "id": 172,
+  "name": "Mandátový a imunitný výbor NR SR",
+  "members": [
+   {
+    "mpId": "762",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1169",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "907",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1140",
+    "role": "člen"
+   },
+   {
+    "mpId": "1213",
+    "role": "člen"
+   },
+   {
+    "mpId": "971",
+    "role": "člen"
+   },
+   {
+    "mpId": "1205",
+    "role": "člen"
+   },
+   {
+    "mpId": "1210",
+    "role": "členka"
+   },
+   {
+    "mpId": "1173",
+    "role": "člen"
+   },
+   {
+    "mpId": "1212",
+    "role": "členka"
+   },
+   {
+    "mpId": "900",
+    "role": "člen"
+   },
+   {
+    "mpId": "1183",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1170",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "874",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 173,
+  "name": "Výbor NR SR pre nezlučiteľnosť funkcií",
+  "members": [
+   {
+    "mpId": "905",
+    "role": "predsedníčka"
+   },
+   {
+    "mpId": "738",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "930",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1160",
+    "role": "členka"
+   },
+   {
+    "mpId": "779",
+    "role": "člen"
+   },
+   {
+    "mpId": "1202",
+    "role": "člen"
+   },
+   {
+    "mpId": "1218",
+    "role": "člen"
+   },
+   {
+    "mpId": "1224",
+    "role": "členka"
+   },
+   {
+    "mpId": "1227",
+    "role": "člen"
+   },
+   {
+    "mpId": "1159",
+    "role": "členka"
+   },
+   {
+    "mpId": "1143",
+    "role": "členka"
+   },
+   {
+    "mpId": "1135",
+    "role": "člen"
+   },
+   {
+    "mpId": "1130",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "1217",
+    "role": "overovateľka"
+   }
+  ]
+ },
+ {
+  "id": 174,
+  "name": "Výbor NR SR pre európske záležitosti",
+  "members": [
+   {
+    "mpId": "1170",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1172",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1128",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "1116",
+    "role": "náhradná"
+   },
+   {
+    "mpId": "1161",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1009",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "873",
+    "role": "člen"
+   },
+   {
+    "mpId": "738",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1151",
+    "role": "člen"
+   },
+   {
+    "mpId": "931",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1042",
+    "role": "členka"
+   },
+   {
+    "mpId": "1037",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1156",
+    "role": "člen"
+   },
+   {
+    "mpId": "1214",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "899",
+    "role": "člen"
+   },
+   {
+    "mpId": "1217",
+    "role": "náhradná"
+   },
+   {
+    "mpId": "1194",
+    "role": "členka"
+   },
+   {
+    "mpId": "61",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "905",
+    "role": "členka"
+   },
+   {
+    "mpId": "910",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1114",
+    "role": "člen"
+   },
+   {
+    "mpId": "1121",
+    "role": "náhradná"
+   },
+   {
+    "mpId": "862",
+    "role": "člen"
+   },
+   {
+    "mpId": "1190",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1142",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1135",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "930",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1207",
+    "role": "náhradný"
+   }
+  ]
+ },
+ {
+  "id": 175,
+  "name": "Ústavnoprávny výbor NR SR",
+  "members": [
+   {
+    "mpId": "1203",
+    "role": "predseda"
+   },
+   {
+    "mpId": "779",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1194",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "1221",
+    "role": "člen"
+   },
+   {
+    "mpId": "1172",
+    "role": "člen"
+   },
+   {
+    "mpId": "1154",
+    "role": "člen"
+   },
+   {
+    "mpId": "1214",
+    "role": "člen"
+   },
+   {
+    "mpId": "1199",
+    "role": "člen"
+   },
+   {
+    "mpId": "92",
+    "role": "člen"
+   },
+   {
+    "mpId": "892",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1135",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1116",
+    "role": "náhradníčka"
+   }
+  ]
+ },
+ {
+  "id": 176,
+  "name": "Výbor NR SR pre financie a rozpočet",
+  "members": [
+   {
+    "mpId": "997",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1158",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "991",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "961",
+    "role": "člen"
+   },
+   {
+    "mpId": "1125",
+    "role": "člen"
+   },
+   {
+    "mpId": "1152",
+    "role": "člen"
+   },
+   {
+    "mpId": "1134",
+    "role": "členka"
+   },
+   {
+    "mpId": "1211",
+    "role": "členka"
+   },
+   {
+    "mpId": "1087",
+    "role": "člen"
+   },
+   {
+    "mpId": "1193",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1188",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "322",
+    "role": "náhradný"
+   }
+  ]
+ },
+ {
+  "id": 177,
+  "name": "Výbor NR SR pre hospodárske záležitosti",
+  "members": [
+   {
+    "mpId": "879",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1190",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1152",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "966",
+    "role": "člen"
+   },
+   {
+    "mpId": "1188",
+    "role": "člen"
+   },
+   {
+    "mpId": "1204",
+    "role": "člen"
+   },
+   {
+    "mpId": "1217",
+    "role": "členka"
+   },
+   {
+    "mpId": "293",
+    "role": "člen"
+   },
+   {
+    "mpId": "1163",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1115",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1177",
+    "role": "náhradník"
+   },
+   {
+    "mpId": "1127",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 178,
+  "name": "Výbor NR SR pre pôdohospodárstvo a životné prostredie",
+  "members": [
+   {
+    "mpId": "1150",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1187",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1118",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "1179",
+    "role": "člen"
+   },
+   {
+    "mpId": "1170",
+    "role": "člen"
+   },
+   {
+    "mpId": "671",
+    "role": "člen"
+   },
+   {
+    "mpId": "1200",
+    "role": "člen"
+   },
+   {
+    "mpId": "1054",
+    "role": "člen"
+   },
+   {
+    "mpId": "1120",
+    "role": "člen"
+   },
+   {
+    "mpId": "1159",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "859",
+    "role": "náhradník"
+   },
+   {
+    "mpId": "1177",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 179,
+  "name": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+  "members": [
+   {
+    "mpId": "233",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "961",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1195",
+    "role": "člen"
+   },
+   {
+    "mpId": "929",
+    "role": "člen"
+   },
+   {
+    "mpId": "36",
+    "role": "člen"
+   },
+   {
+    "mpId": "1037",
+    "role": "člen"
+   },
+   {
+    "mpId": "1173",
+    "role": "člen"
+   },
+   {
+    "mpId": "1065",
+    "role": "člen"
+   },
+   {
+    "mpId": "1189",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1019",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1187",
+    "role": "náhradník"
+   },
+   {
+    "mpId": "1129",
+    "role": "náhradníčka"
+   }
+  ]
+ },
+ {
+  "id": 180,
+  "name": "Výbor NR SR pre sociálne veci",
+  "members": [
+   {
+    "mpId": "689",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1210",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "962",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "1224",
+    "role": "členka"
+   },
+   {
+    "mpId": "1081",
+    "role": "členka"
+   },
+   {
+    "mpId": "1037",
+    "role": "člen"
+   },
+   {
+    "mpId": "1223",
+    "role": "člen"
+   },
+   {
+    "mpId": "1211",
+    "role": "členka"
+   },
+   {
+    "mpId": "1196",
+    "role": "členka"
+   },
+   {
+    "mpId": "1186",
+    "role": "členka"
+   },
+   {
+    "mpId": "1161",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1141",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "1195",
+    "role": "náhradník"
+   },
+   {
+    "mpId": "1146",
+    "role": "náhradníčka"
+   }
+  ]
+ },
+ {
+  "id": 181,
+  "name": "Výbor NR SR pre zdravotníctvo",
+  "members": [
+   {
+    "mpId": "871",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1123",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "891",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1172",
+    "role": "člen"
+   },
+   {
+    "mpId": "1169",
+    "role": "člen"
+   },
+   {
+    "mpId": "907",
+    "role": "člen"
+   },
+   {
+    "mpId": "1199",
+    "role": "člen"
+   },
+   {
+    "mpId": "1184",
+    "role": "člen"
+   },
+   {
+    "mpId": "1087",
+    "role": "člen"
+   },
+   {
+    "mpId": "1147",
+    "role": "člen"
+   },
+   {
+    "mpId": "1177",
+    "role": "člen"
+   },
+   {
+    "mpId": "976",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "705",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1182",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 182,
+  "name": "Výbor NR SR pre obranu a bezpečnosť",
+  "members": [
+   {
+    "mpId": "1214",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1207",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "910",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1119",
+    "role": "členka"
+   },
+   {
+    "mpId": "1154",
+    "role": "člen"
+   },
+   {
+    "mpId": "1170",
+    "role": "člen"
+   },
+   {
+    "mpId": "1032",
+    "role": "člen"
+   },
+   {
+    "mpId": "1150",
+    "role": "člen"
+   },
+   {
+    "mpId": "1186",
+    "role": "členka"
+   },
+   {
+    "mpId": "762",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1117",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1216",
+    "role": "náhradný"
+   }
+  ]
+ },
+ {
+  "id": 183,
+  "name": "Zahraničný výbor NR SR",
+  "members": [
+   {
+    "mpId": "873",
+    "role": "predseda"
+   },
+   {
+    "mpId": "931",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1075",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1172",
+    "role": "člen"
+   },
+   {
+    "mpId": "785",
+    "role": "člen"
+   },
+   {
+    "mpId": "1032",
+    "role": "člen"
+   },
+   {
+    "mpId": "1194",
+    "role": "členka"
+   },
+   {
+    "mpId": "1208",
+    "role": "členka"
+   },
+   {
+    "mpId": "1222",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "733",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1207",
+    "role": "náhradník"
+   },
+   {
+    "mpId": "1178",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 184,
+  "name": "Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch",
+  "members": [
+   {
+    "mpId": "1208",
+    "role": "predsedníčka"
+   },
+   {
+    "mpId": "1009",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1183",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "931",
+    "role": "člen"
+   },
+   {
+    "mpId": "656",
+    "role": "člen"
+   },
+   {
+    "mpId": "1169",
+    "role": "člen"
+   },
+   {
+    "mpId": "1124",
+    "role": "členka"
+   },
+   {
+    "mpId": "1149",
+    "role": "člen"
+   },
+   {
+    "mpId": "1225",
+    "role": "člen"
+   },
+   {
+    "mpId": "861",
+    "role": "člen"
+   },
+   {
+    "mpId": "1176",
+    "role": "člen"
+   },
+   {
+    "mpId": "1126",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "874",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "971",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 185,
+  "name": "Výbor NR SR pre kultúru a médiá",
+  "members": [
+   {
+    "mpId": "1149",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1121",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "1081",
+    "role": "podpredsedníčka"
+   },
+   {
+    "mpId": "61",
+    "role": "člen"
+   },
+   {
+    "mpId": "1156",
+    "role": "člen"
+   },
+   {
+    "mpId": "1225",
+    "role": "člen"
+   },
+   {
+    "mpId": "685",
+    "role": "člen"
+   },
+   {
+    "mpId": "1147",
+    "role": "člen"
+   },
+   {
+    "mpId": "1144",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "899",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1139",
+    "role": "náhradníčka"
+   },
+   {
+    "mpId": "1173",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 186,
+  "name": "Výbor NR SR pre ľudské práva a národnostné menšiny",
+  "members": [
+   {
+    "mpId": "1116",
+    "role": "predsedníčka"
+   },
+   {
+    "mpId": "1192",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1088",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1179",
+    "role": "člen"
+   },
+   {
+    "mpId": "1227",
+    "role": "člen"
+   },
+   {
+    "mpId": "1200",
+    "role": "člen"
+   },
+   {
+    "mpId": "1211",
+    "role": "členka"
+   },
+   {
+    "mpId": "1042",
+    "role": "členka"
+   },
+   {
+    "mpId": "1206",
+    "role": "člen"
+   },
+   {
+    "mpId": "1176",
+    "role": "člen"
+   },
+   {
+    "mpId": "1196",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "1131",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1191",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1132",
+    "role": "náhradná"
+   }
+  ]
+ },
+ {
+  "id": 187,
+  "name": "Osobitný kontrolný výbor NR SR na kontrolu činnosti NBÚ",
+  "members": [
+   {
+    "mpId": "1046",
+    "role": "predseda"
+   },
+   {
+    "mpId": "1195",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "705",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1207",
+    "role": "člen"
+   },
+   {
+    "mpId": "1140",
+    "role": "člen"
+   },
+   {
+    "mpId": "1214",
+    "role": "člen"
+   },
+   {
+    "mpId": "1142",
+    "role": "člen"
+   },
+   {
+    "mpId": "322",
+    "role": "člen"
+   },
+   {
+    "mpId": "1115",
+    "role": "člen"
+   },
+   {
+    "mpId": "668",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "991",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1182",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "1019",
+    "role": "náhradný"
+   }
+  ]
+ },
+ {
+  "id": 188,
+  "name": "Osobitný kontrolný výbor NR SR na kontrolu činnosti SIS",
+  "members": [
+   {
+    "mpId": "1199",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "769",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1207",
+    "role": "člen"
+   },
+   {
+    "mpId": "1133",
+    "role": "člen"
+   },
+   {
+    "mpId": "1214",
+    "role": "člen"
+   },
+   {
+    "mpId": "910",
+    "role": "člen"
+   },
+   {
+    "mpId": "1025",
+    "role": "členka"
+   },
+   {
+    "mpId": "733",
+    "role": "člen"
+   },
+   {
+    "mpId": "1132",
+    "role": "členka"
+   },
+   {
+    "mpId": "1216",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1117",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1184",
+    "role": "náhradný"
+   },
+   {
+    "mpId": "762",
+    "role": "náhradný"
+   }
+  ]
+ },
+ {
+  "id": 189,
+  "name": "Osobitný kontrolný výbor NR SR na kontrolu činnosti Vojenského spravodajstva",
+  "members": [
+   {
+    "mpId": "1075",
+    "role": "predseda"
+   },
+   {
+    "mpId": "899",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "769",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "785",
+    "role": "člen"
+   },
+   {
+    "mpId": "1154",
+    "role": "člen"
+   },
+   {
+    "mpId": "892",
+    "role": "člen"
+   },
+   {
+    "mpId": "1032",
+    "role": "člen"
+   },
+   {
+    "mpId": "92",
+    "role": "člen"
+   },
+   {
+    "mpId": "762",
+    "role": "člen"
+   },
+   {
+    "mpId": "1121",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "733",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1116",
+    "role": "náhradníčka"
+   },
+   {
+    "mpId": "1150",
+    "role": "náhradník"
+   }
+  ]
+ },
+ {
+  "id": 190,
+  "name": "Výbor NR SR na preskúmavanie rozhodnutí NBÚ",
+  "members": [
+   {
+    "mpId": "1119",
+    "role": "predsedníčka"
+   },
+   {
+    "mpId": "1177",
+    "role": "podpredseda"
+   },
+   {
+    "mpId": "1216",
+    "role": "člen"
+   },
+   {
+    "mpId": "1219",
+    "role": "člen"
+   },
+   {
+    "mpId": "1158",
+    "role": "člen"
+   },
+   {
+    "mpId": "1025",
+    "role": "členka"
+   },
+   {
+    "mpId": "1199",
+    "role": "člen"
+   },
+   {
+    "mpId": "862",
+    "role": "člen"
+   },
+   {
+    "mpId": "891",
+    "role": "overovateľ"
+   },
+   {
+    "mpId": "1130",
+    "role": "overovateľka"
+   },
+   {
+    "mpId": "1144",
+    "role": "náhradník"
+   }
+  ]
+ }
+]

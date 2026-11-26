@@ -1,0 +1,39 @@
+{
+ "id": "40",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 66959,
+  "incomeOther": 0,
+  "employment": "MINISTERSTVO SPRAVODLIVOSTI SR",
+  "business": "nevykonávam",
+  "roles": [
+   "PREDSEDA STRANY (STRANA SMER - SOCIÁLNA DEMOKRACIA)"
+  ],
+  "realEstateCount": 5,
+  "realEstateKinds": {
+   "Vinica": 1,
+   "Orná pôda dedičstvo": 2,
+   "Orná pôda dedičtvo": 1,
+   "Byt a garaž": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Úspory",
+   "Stavebné sporenie"
+  ],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "FicoRobe"
+ },
+ "at": "2026-11-25T23:27:31+00:00"
+}

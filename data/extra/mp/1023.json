@@ -1,0 +1,136 @@
+{
+ "id": "1023",
+ "excuses": [
+  {
+   "from": "2026-02-06",
+   "to": "2026-02-06",
+   "days": [
+    "2026-02-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-03-18",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-18",
+    "2026-03-19",
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-04-17",
+   "to": "2026-04-17",
+   "days": [
+    "2026-04-17"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti )"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-24",
+   "days": [
+    "2026-04-24"
+   ],
+   "reason": "iný dôvod (49. schôdza NR SR- iné pracovné povinnosti v regióne, 50. schôdza NR SR- Obštrukcia)"
+  },
+  {
+   "from": "2026-04-27",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-06-05",
+   "to": "2026-06-05",
+   "days": [
+    "2026-06-05"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-06-12",
+   "to": "2026-06-12",
+   "days": [
+    "2026-06-12"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1195",
+   "state": "Evidencia",
+   "delivered": "2026-02-12",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1168",
+   "state": "Evidencia",
+   "delivered": "2026-01-22",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1120",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1119",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, R. Puci, I. Šimko,",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 60599,
+  "incomeOther": 0,
+  "employment": "MINISTERSTVO ZAHRANIČNÝCH VECÍ A EURÓPSKYCH ZÁLEŽITOSTÍ SR",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 1,
+  "realEstateKinds": {
+   "Rodinný dom": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Peter.Kmec"
+ },
+ "at": "2026-11-25T23:58:37+00:00"
+}

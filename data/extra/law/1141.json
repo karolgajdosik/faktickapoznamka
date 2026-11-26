@@ -1,0 +1,27 @@
+{
+ "state": "Redakcia",
+ "stateNote": "NZ postúpil do redakcie",
+ "delivered": "2026-01-05",
+ "submitter": "vláda (Ministerstvo vnútra SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 46. schôdzi NR SR, uznesenie číslo 1300 zo dňa 3. 2. 2026. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR a Výbor NR SR pre obranu a bezpečnosť s lehotou na prerokovanie 10. 4. 2026. NR SR uznesením rozhod",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR dňa 14. 4. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1357 zo dňa 14. 4. 2026",
+   "result": "NZ postupuje do redakcie."
+  }
+ ],
+ "at": "2026-11-26T01:28:44+00:00"
+}

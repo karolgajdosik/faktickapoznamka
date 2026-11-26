@@ -1,0 +1,37 @@
+{
+ "id": "1166",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "štátny tajomník",
+  "incomePublic": 67670,
+  "incomeOther": 61904,
+  "employment": "SLOVENSKÁ ZDRAVOTNÍCKA UNIVERZITA V BRATISLAVE",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 5,
+  "realEstateKinds": {
+   "Ostatná plocha": 1,
+   "Rekreačný dom a zastavaná plocha": 1,
+   "Byt": 1,
+   "Pozemok na ktorom je bytová budova": 1,
+   "Byt a pozemok na ktorom je bytová budova": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Motorové vozidlo"
+  ],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Lucia.Kurilovska"
+ },
+ "at": "2026-11-26T00:07:56+00:00"
+}

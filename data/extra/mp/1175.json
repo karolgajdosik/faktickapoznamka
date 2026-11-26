@@ -1,0 +1,158 @@
+{
+ "id": "1175",
+ "excuses": [
+  {
+   "from": "2024-04-26",
+   "to": "2024-04-26",
+   "days": [
+    "2024-04-26"
+   ],
+   "reason": "iný dôvod (Iné pracovné záležitosti)"
+  },
+  {
+   "from": "2024-06-28",
+   "to": "2024-06-28",
+   "days": [
+    "2024-06-28"
+   ],
+   "reason": "iný dôvod (Iné pracovné záležitosti v kraji)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-02-19",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MALATINCA, Samuela MIGAĽA, Radomíra ŠALlTROŠA a Jána FERENČÁKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov (Navrhovatelia vzali listom z 20. marca 2025 svoj návrh zákona späť.)",
+   "tlac": "682",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Ferenčák, R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána FERENČÁKA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov (Navrhovateľom tohto návrhu zákona bol aj Samuel Migaľ, ktorý bol 19. marca 2025 vymenovaný za člena vlády a Radomír Šalitroš, ktorý bol dňom 22. marca 2025 vymenovaný za štátneho tajomníka, ich mandát sa neuplatňuje.)",
+   "tlac": "599",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-07",
+   "approved": "2025-04-03",
+   "sponsors": "J. Ferenčák, R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Samuela MIGAĽA, Radomíra ŠALlTROŠA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 305/2005 Z. z. o sociálnoprávnej ochrane detí a o sociálnej kuratele a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "534",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": "2024-11-28",
+   "sponsors": "R. Malatinec, S. Migaľ, R. Šalitroš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "472",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, J. Krúpa, V. Ledecký, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, S. Migaľ, P. Náhlik, A. Nováková, P.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedníčky Výboru Národnej rady Slovenskej republiky pre vzdelávanie, vedu, mládež a šport",
+   "tlac": "91",
+   "state": "Evidencia",
+   "delivered": "2023-11-29",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, M. Moško, P. Náhlik, A. Nováková, S. Petrík, P. Puškárová, P. Slyško, Z. Svoboda, R. Šalitroš,",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2024-11-26",
+   "by": "Migaľ, Samuel",
+   "tlac": "534",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Samuela MIGAĽA, Radomíra ŠALlTROŠA a Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 305/2005 Z. z. o sociálnoprávnej ochrane detí a o sociálnej kuratele a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 23,
+   "voteId": null,
+   "id": "4273"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 67657,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 0,
+  "realEstateKinds": {},
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Akcie akciovej spoločnosti (verejne neobchodované)",
+   "Obchodný podiel v s.r.o.",
+   "Pohľadávky z titulu prevodu obchodného podielu a z titulu",
+   "Poskytnutých pôžičiek",
+   "3x poskytnutá peňažná pôžička"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Prijatá peňažná pôžička",
+   "Prijatá peňažná pôžička",
+   "Prijatá peňažná pôžička",
+   "Prijatá peňažná pôžička",
+   "Prijatá peňažná pôžička",
+   "Prijatá peňažná pôžička"
+  ],
+  "userId": "Radomir.Salitros"
+ },
+ "at": "2026-11-26T01:10:47+00:00"
+}

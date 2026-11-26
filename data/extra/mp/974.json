@@ -1,0 +1,79 @@
+{
+ "id": "974",
+ "excuses": [
+  {
+   "from": "2023-11-24",
+   "to": "2023-11-24",
+   "days": [
+    "2023-11-24"
+   ],
+   "reason": "iný dôvod (Dlhodobo plánované aktivity)"
+  },
+  {
+   "from": "2024-02-01",
+   "to": "2024-02-02",
+   "days": [
+    "2024-02-01",
+    "2024-02-02"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti)"
+  },
+  {
+   "from": "2024-02-06",
+   "to": "2024-02-06",
+   "days": [
+    "2024-02-06"
+   ],
+   "reason": "iný dôvod (Dlhodobo plánované aktivity)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "tlac": "92",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-12-01",
+   "approved": null,
+   "sponsors": "J. Sedlák, J. Mego, Z. Matejičková, M. Čavojová, M. Kapuš, J. Valocký, A. Stredák, P. Šuca, M. Saloň, J. Habánik, A. Hambálek, P. Goga, M. Nemky, V. Zahorčák, J. Richter, S. Kubánek, D. Karas, P. Sokol, I. Hazucha, D. Galis, B. Lešo, Z. Plevíková, J",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [
+  "Službyt Nitra, s.r.o., Farská ul. 5, Nitra",
+  "RVRENT s.r.o., Šafáriková 22/2246, Rožňava",
+  "PB Capital, a.s., Mlynská 27, Košice"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 52073,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "ČLEN KONTROLNÉHO VÝBORU (SLOVENSKÝ RYBÁRSKY ZVÄZ MSO NITRA)"
+  ],
+  "realEstateCount": 7,
+  "realEstateKinds": {
+   "Byt": 1,
+   "Orná pôda": 2,
+   "Rekreačná chata, 3 x zastavaná plocha a nádvorie": 1,
+   "5x ostatná plocha, orná pôda": 1,
+   "Zastavaná plocha a nádvorie, rodinný dom": 1,
+   "2x orná pôda, 2x ostatná plocha": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver",
+   "Spotrebný úver"
+  ],
+  "userId": "Martin.Nemky"
+ },
+ "at": "2026-11-26T00:28:24+00:00"
+}

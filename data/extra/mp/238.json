@@ -1,0 +1,47 @@
+{
+ "id": "238",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 42713,
+  "incomeOther": 0,
+  "employment": "VÁHOSTAV, A.S.",
+  "business": "nevykonávam",
+  "roles": [
+   "PREDSEDA (OZ SPOLOČNÝMI SILAMI)"
+  ],
+  "realEstateCount": 10,
+  "realEstateKinds": {
+   "3x orná pôda, 6x zastavaná plocha a nádvorie": 1,
+   "Rodinný dom s garážou": 1,
+   "Záhrada, zastavané plochy a nádvoria": 1,
+   "Orná pôda": 2,
+   "Trvalé trávnaté porasty, lesné pozemky": 1,
+   "Trvalé trávnaté porasty": 1,
+   "Trvalý trávnatý porast, ostatná plocha": 1,
+   "3x zastavané plochy a nádvoria": 1,
+   "Rodinný dom - chata (drevenica), garáž": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobný autobil"
+  ],
+  "rights": [
+   "2x vklady v banke",
+   "Cenné papiere",
+   "Životné poistenie"
+  ],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "BlanJura"
+ },
+ "at": "2026-11-25T23:13:11+00:00"
+}

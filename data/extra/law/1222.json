@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2026-03-27",
+ "submitter": "vláda (Ministerstvo spravodlivosti SR)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1440 zo dňa 21. 4. 2026. NR SR uznesením rozhodla o výboroch Výbor NR SR pre ľudské práva a národnostné menšiny a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na ",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR dňa 4. 6. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1581 zo dňa 4. 6. 2026",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 16. 6. 2026 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (1. 7. 2026), číslo 168/2026. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to hav",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:27:07+00:00"
+}

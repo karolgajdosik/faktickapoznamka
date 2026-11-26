@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2025-10-10",
+ "submitter": "vláda (Ministerstvo financií SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR dňa 21. 10. 2025. Pozmeňujúce a doplňujúce návrhy: 16. 10. 2025 08:54 Karas, Daniel Detail návrhu 9 1037 Daniel Karas II (198 KB) 16. 10. 2025 18:29 Jakab, Július Detail návrhu 9 1037 Július Jakab II (201 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR, uznesenie číslo 1210 zo dňa 21. 10. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 6. 11. 2025 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (14. 11. 2025), číslo 303/2025. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to h",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:31:23+00:00"
+}

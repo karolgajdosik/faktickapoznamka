@@ -1,0 +1,411 @@
+{
+ "id": "762",
+ "excuses": [
+  {
+   "from": "2024-02-16",
+   "to": "2024-02-16",
+   "days": [
+    "2024-02-16"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti)"
+  },
+  {
+   "from": "2024-02-21",
+   "to": "2024-02-21",
+   "days": [
+    "2024-02-21"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti)"
+  },
+  {
+   "from": "2024-02-22",
+   "to": "2024-02-22",
+   "days": [
+    "2024-02-22"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti)"
+  },
+  {
+   "from": "2024-06-13",
+   "to": "2024-06-14",
+   "days": [
+    "2024-06-13",
+    "2024-06-14"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Obštrukcia, neodkladné povinnosti, dlhodobo plánované aktivity, letné dovolenky)"
+  },
+  {
+   "from": "2024-10-28",
+   "to": "2024-10-28",
+   "days": [
+    "2024-10-28"
+   ],
+   "reason": "iný dôvod (Zasadnutie mestského zastupiteľstva v Starej Ľubovni)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-18",
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-03-28",
+   "to": "2025-03-28",
+   "days": [
+    "2025-03-28"
+   ],
+   "reason": "iný dôvod (Účasť na mestskom zastupiteľstve Stará Ľubovňa)"
+  },
+  {
+   "from": "2025-04-02",
+   "to": "2025-04-02",
+   "days": [
+    "2025-04-02"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-14",
+   "to": "2025-04-14",
+   "days": [
+    "2025-04-14"
+   ],
+   "reason": "iný dôvod (Dlhodobo plánované pracovné aktivity)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Pohreb)"
+  },
+  {
+   "from": "2025-06-04",
+   "to": "2025-06-04",
+   "days": [
+    "2025-06-04"
+   ],
+   "reason": "iný dôvod (Rokovanie vlády)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-09-18",
+   "to": "2025-09-19",
+   "days": [
+    "2025-09-18",
+    "2025-09-19"
+   ],
+   "reason": "iný dôvod (Zasadnutie MsZ Stará Ľubovňa)"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-24",
+   "days": [
+    "2026-04-24"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2026-04-30",
+   "to": "2026-04-30",
+   "days": [
+    "2026-04-30"
+   ],
+   "reason": "iný dôvod (Účasť na rokovaní mestského zastupiteľstva v Starej Ľubovni)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Neodkladné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Neodkladné pracovné povinnosti v regióne)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu predsedu skupiny priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie a vymenovanie člena Stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1387",
+   "state": "Evidencia",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, V. Macášek, Z",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1243",
+   "state": "Redakcia",
+   "delivered": "2026-03-27",
+   "approved": "2026-11-24",
+   "sponsors": "T. Gašpar, J. Habánik, P. Goga, V. Faič, M. Čavojová, J. Baška, V. Baláž, R. Glück, J. Horváth, A. Hambálek, D. Galis, D. Jarjabek, D. Karas, J. Kačmár, M. Kéry, S. Kubánek, J. Kvorka, J. Ježík, M. Kapuš, I. Hazucha, M. Lukša, J. Mego, Z. Matejičkov",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1066",
+   "state": "Evidencia",
+   "delivered": "2025-10-21",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, T. Gašpar, D. Galis, R. Glück, P. Goga, J. Habánik, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičková, J. Mažgút",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k vykonaniu auditu a k prijatiu systémových riadiacich a kontrolných opatrení pri čerpaní dotačných a grantových finančných prostriedkov v ústredných orgánoch štátnej správy za obdobie rokov 2020 – 2024",
+   "tlac": "1014",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "T. Gašpar, J. Habánik, J. Richter, M. Saloň, F. Petro, Z. Plevíková, V. Zahorčák, B. Lešo, D. Karas, D. Jarjabek, I. Válek, D. Muňko, P. Goga, P. Sokol, J. Kačmár, J. Kvorka, A. Sitkár, J. Sedlák, R. Glück, J. Horváth, P. Šuca, J. Mažgút, J. Ježík,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zneužívaniu legislatívneho procesu k zákonu o neziskových organizáciách poskytujúcich všeobecne prospešné služby na presadzovanie politických a súkromných záujmov",
+   "tlac": "792",
+   "state": "Evidencia",
+   "delivered": "2025-04-03",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Stuška, M. Čavojová, R. Glück, T. Gašpar, D. Karas, M. Lukša, J. Mažgút, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, P. Šuca, Ľ. Vážny, D. Galis, J. Ježík, F. Petro, A. Stredák,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k právoplatnému rozhodnutiu súdu za spáchanie trestného činu daňového podvodu bývalým prezidentom Slovenskej republiky Andrejom Kiskom",
+   "tlac": "580",
+   "state": "Evidencia",
+   "delivered": "2024-11-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, R. Glück, M. Čavojová, M. Stuška, T. Gašpar, J. Mažgút, Z. Plevíková, D. Karas, M. Lukša, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "578",
+   "state": "Evidencia",
+   "delivered": "2024-11-04",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie vedúcej stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "480",
+   "state": "Evidencia",
+   "delivered": "2024-09-17",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, Z. Matejičkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Michala ŠIMEČKU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "464",
+   "state": "Evidencia",
+   "delivered": "2024-09-05",
+   "approved": null,
+   "sponsors": "J. Richter, T. Gašpar, A. Hambálek, Z. Plevíková, J. Kvorka, I. Hazucha, J. Mažgút, A. Stredák, Z. Matejičková, M. Lukša, M. Čavojová, P. Sokol, F. Petro, B. Lešo, M. Saloň, J. Sedlák, J. Vaľová, I. Válek, Ľ. Vážny, V. Baláž, J. Baška, A. Danko, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslankyne Národnej rady Slovenskej republiky Marie KOLÍKOVEJ z funkcie predsedníčky Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "299",
+   "state": "Evidencia",
+   "delivered": "2024-05-07",
+   "approved": null,
+   "sponsors": "T. Gašpar, S. Migaľ, R. Glück, M. Saloň, P. Šuca, D. Muňko, D. Demečko, P. Kotlár",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "tlac": "92",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-12-01",
+   "approved": null,
+   "sponsors": "J. Sedlák, J. Mego, Z. Matejičková, M. Čavojová, M. Kapuš, J. Valocký, A. Stredák, P. Šuca, M. Saloň, J. Habánik, A. Hambálek, P. Goga, M. Nemky, V. Zahorčák, J. Richter, S. Kubánek, D. Karas, P. Sokol, I. Hazucha, D. Galis, B. Lešo, Z. Plevíková, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Mariána SALOŇA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 8/2009 Z. z. o cestnej premávke a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "60",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": "2024-02-13",
+   "sponsors": "M. Saloň",
+   "category": "Novela zákona"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-01-30",
+   "by": "Glück, Richard",
+   "tlac": "1076",
+   "title": "Vládny návrh zákona o obchodnom registri a o zmene a doplnení niektorých zákonov (zákon o obchodnom registri)",
+   "session": 46,
+   "voteId": null,
+   "id": "4511"
+  },
+  {
+   "date": "2025-10-14",
+   "by": "Saloň, Marián",
+   "tlac": "1054",
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "session": 40,
+   "voteId": null,
+   "id": "4424"
+  },
+  {
+   "date": "2025-09-23",
+   "by": "Saloň, Marián",
+   "tlac": "1005",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s konsolidáciou verejných financií",
+   "session": 39,
+   "voteId": null,
+   "id": "4411"
+  },
+  {
+   "date": "2024-12-06",
+   "by": "Glück, Richard",
+   "tlac": "515",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 281/2015 Z. z. o štátnej službe profesionálnych vojakov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 23,
+   "voteId": null,
+   "id": "4300"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2026-06-28",
+   "to": "2026-06-29",
+   "desc": "Istanbul - Predseda NR SR Richard Raši a poslanci NR SR Róbert Puci a Marián Saloň sa zúčastnia Parlamentného summitu NATO v Turecku."
+  }
+ ],
+ "offices": [
+  "Agentúra SMER, s.r.o., Bayerova ulica s.č. 11753, Prešov",
+  "Agentúra SMER, s.r.o., Levočská č.3, Spišská Nová Ves"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 51372,
+  "incomeOther": 569,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "POSLANEC MESTSKÉHO ZASTUPITEĽSTVA (MESTO STARÁ ĽUBOVŇA)",
+   "GENERÁLNY MANAŽÉR (POLITICKÁ STRANA SMER - SOCIÁLNA DEMOKRACIA)"
+  ],
+  "realEstateCount": 84,
+  "realEstateKinds": {
+   "Zastavaná plocha a nádvorie - garáž": 3,
+   "Ostatné plochy": 3,
+   "Trvalý trávny porast": 31,
+   "Lesný pozemok": 2,
+   "Trvalý trávny porast, orná pôda, ostatná plocha": 2,
+   "Orná pôda, ostatná plocha": 3,
+   "Orná pôda": 26,
+   "Trvalý trávny porast, orná pôda": 2,
+   "Trvalý trávny porast, ostatná plocha": 1,
+   "Byt": 1,
+   "Podiel na spoločných častiach a zariadeniach domu": 1,
+   "Zastavaná plocha a nádvorie": 2,
+   "Rodinný dom, zastavaná plocha a nádvorie, záhrada": 1,
+   "Záhrada": 1,
+   "Trvalý trávny porast, lesný pozemok": 4,
+   "Trvalý trávny porast, lesný pozemok, ostatná plocha": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Zariadenie domácnosti"
+  ],
+  "rights": [
+   "Úspory"
+  ],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "SaloMari"
+ },
+ "at": "2026-11-26T00:43:39+00:00"
+}

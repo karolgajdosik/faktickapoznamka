@@ -1,0 +1,645 @@
+{
+ "id": "1115",
+ "excuses": [
+  {
+   "from": "2024-01-19",
+   "to": "2024-01-19",
+   "days": [
+    "2024-01-19"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2024-02-27",
+   "to": "2024-02-28",
+   "days": [
+    "2024-02-27",
+    "2024-02-28"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-05-03",
+   "to": "2024-05-03",
+   "days": [
+    "2024-05-03"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-09-26",
+   "to": "2024-09-27",
+   "days": [
+    "2024-09-26",
+    "2024-09-27"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-10-28",
+   "to": "2024-10-28",
+   "days": [
+    "2024-10-28"
+   ],
+   "reason": "iný dôvod (Výjazd výboru pre hospodárske záležitosti)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-09-29",
+   "to": "2025-09-30",
+   "days": [
+    "2025-09-29",
+    "2025-09-30"
+   ],
+   "reason": "iný dôvod (Pracovný výjazd do regiónov)"
+  },
+  {
+   "from": "2025-10-01",
+   "to": "2025-10-01",
+   "days": [
+    "2025-10-01"
+   ],
+   "reason": "iný dôvod (Pracovný výjazd do regiónov)"
+  },
+  {
+   "from": "2026-09-24",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-24",
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedníčke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "1580",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-10",
+   "approved": null,
+   "sponsors": "Z. Jaurová, B. Jurík, Z. Mesterová, L. Plaváková, G. Gregorová, I. Kosová, N. Nash, T. Stohlová, V. Šrobová, Z. Števulová, O. Prostredník, D. Luščíková, V. Veslárová, R. Dubovický, M. Sabo, D. Dej, T. Gažovičová, M. Dubéci, D. Kleinert, M. Lackovič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 523/2004 Z. z. o rozpočtových pravidlách verejnej správy a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1525",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 71/1967 Zb. o správnom konaní (správny poriadok) v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov",
+   "tlac": "1524",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 145/1995 Z. z. o správnych poplatkoch v znení neskorších predpisov",
+   "tlac": "1522",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Štefana KIŠŠA, Ivana ŠTEFUNKA, Jána HARGAŠA, Michala TRUBANA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa mení zákon č. 91/2016 Z. z. o trestnej zodpovednosti právnických osôb a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1521",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1520",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov",
+   "tlac": "1519",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Tiny GAŽOVIČOVEJ a GRÉTY GREGOROVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2025 Z. z. o vysokých školách a o zmene a doplnení niektorých zákonov (vysokoškolský zákon) v znení zákona č. 121/2026 Z. z. a ktorým sa dopĺňajú niektoré zákony",
+   "tlac": "1428",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-08-13",
+   "approved": null,
+   "sponsors": "T. Gažovičová, G. Gregorová, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi DRUCKEROVI, poverenému riadením Ministerstva školstva, výskumu, vývoja a mládeže Slovenskej republiky",
+   "tlac": "1409",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-04",
+   "approved": null,
+   "sponsors": "J. Horecký, F. Majerský, M. Majerský, G. Paľa, R. Krátky, M. Kolejáková, B. Škripek, A. Turčanová, M. Čaučík, F. Mikloško, I. Janckulík, M. Šipoš, R. Vašečka, G. Grendel, V. Remišová, I. Matovič, R. Mikulec, I. Dušenka, J. Pročko, T. Gažovičová, I.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky",
+   "tlac": "1401",
+   "state": "Evidencia",
+   "delivered": "2026-05-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Gregorová, J. Hanuliaková, J. Hargaš, Z. Jaurová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, N. Nash, S. Petrík, L. Plaváková, O. Prostredník, M. Sabo, J. S",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky o skrátení volebného obdobia Národnej rady Slovenskej republiky",
+   "tlac": "1398",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, O. Dvořák, Ľ. Galko, T. Gažovičová, G. Gregorová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, Z. Mesterová, N. Nash, S. Petrík, L. Plaváková, O. Prostredník, M. Sabo",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Michala TRUBANA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia niektoré zákony",
+   "tlac": "1323",
+   "state": "I. čítanie",
+   "delivered": "2026-05-06",
+   "approved": null,
+   "sponsors": "M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany MESTEROVEJ, Zuzany ŠTEVULOVEJ a Michala TRUBANA na prijatie uznesenia Národnej rady Slovenskej republiky k zisteniam Európskej prokuratúry o daňových podvodoch s prepojením na Slovensko",
+   "tlac": "1157",
+   "state": "Evidencia",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, Z. Števulová, M. Truban",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zlyhaniu ministerky hospodárstva Slovenskej republiky pri adresnej energopomoci",
+   "tlac": "1138",
+   "state": "Evidencia",
+   "delivered": "2025-12-10",
+   "approved": null,
+   "sponsors": "J. Jakab, I. Matovič, R. Mikulec, I. Dušenka, M. Šipoš, J. Pročko, L. Bužo, P. Pollák, A. Škopová, G. Grendel, Z. Mesterová, M. Truban, B. Jurík, L. Plaváková, V. Veslárová, D. Kleinert, M. Lackovič, I. Kosová, G. Gregorová, Z. Jaurová, T. Stohlová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jozefovi RÁŽOVI, poverenému riadením Minsterstva dopravy Slovenskej republiky",
+   "tlac": "1125",
+   "state": "Evidencia",
+   "delivered": "2025-11-24",
+   "approved": null,
+   "sponsors": "I. Dušenka, M. Šipoš, A. Škopová, J. Pročko, G. Grendel, I. Matovič, R. Mikulec, J. Jakab, P. Pollák, L. Bužo, M. Krajčí, V. Remišová, J. Hargaš, Z. Mesterová, T. Stohlová, I. Štefunko, M. Truban, T. Valášek, M. Šimečka, M. Sabo, V. Šrobová, O. Pros",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA a Michala TRUBANA na prijatie uznesenia Národnej rady Slovenskej republiky k dotáciám poskytnutým Úradom podpredsedu vlády Slovenskej republiky pre plán obnovy a znalostnú ekonomiku a k návrhu na vykonanie poslaneckého prieskumu",
+   "tlac": "1124",
+   "state": "Evidencia",
+   "delivered": "2025-11-24",
+   "approved": null,
+   "sponsors": "J. Hargaš, M. Truban",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Jána HARGAŠA a Simony PETRÍK na vydanie zákona o mikropodnikaní a o zmene a doplnení niektorých zákonov",
+   "tlac": "1045",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-09-26",
+   "approved": null,
+   "sponsors": "J. Hargaš, S. Petrík, M. Truban",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie členky stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "994",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Grendel, J. Hanuliaková, J. Hargaš, J. Jakab, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Krajčí, R. Krátky, M. Lackovič, D. Luščíková, I. Matovič, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Michala TRUBANA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "980",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jany HANULlAKOVEJ, Mareka LACKOVIČA a Michala TRUBANA na prijatie uznesenia Národnej rady Slovenskej republiky k vráteniu výlučnej rozhodovacej právomoci nad alokáciou eurofondov pre integrované územné investície do pôsobnosti orgánov územnej samosprávy",
+   "tlac": "908",
+   "state": "Evidencia",
+   "delivered": "2025-08-14",
+   "approved": null,
+   "sponsors": "J. Hanuliaková, M. Lackovič, M. Truban",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "886",
+   "state": "Evidencia",
+   "delivered": "2025-06-17",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, N. Nash, Z. Mesterová, S. Petrík, L. Plaváková, O. Pr",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Ivana ŠTEFUNKA a Beáty JURÍK na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s podnikaním osôb mladších ako 18 rokov",
+   "tlac": "848",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK a Michala TRUBANA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov a ktorým sa dopĺňajú niektoré zákony",
+   "tlac": "832",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "B. Jurík, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Michala TRUBANA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "760",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Štefana KIŠŠA a Ivana ŠTEFUNKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "740",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-06",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Martina DUBÉCIHO, Michala TRUBANA, Alojza HLINU a Mariána ČAUČÍKA na prijatie uznesenia Národnej rady Slovenskej republiky ku stavu kybernetickej bezpečnosti verejnej správy a o opatreniach na jej posilnenie",
+   "tlac": "739",
+   "state": "Evidencia",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "M. Čaučík, M. Dubéci, J. Hargaš, A. Hlina, M. Truban",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k tretiemu výročiu vojenskej agresie Ruskej Federácie proti Ukrajine",
+   "tlac": "718",
+   "state": "Evidencia",
+   "delivered": "2025-02-24",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, R. Dubovický, T. Gažovičová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, I. Bihariová, M. Lackovič, D. Luščíková, N. Nash, Z. Mesterová, S. Petrík, L. Plaváková, O. Pr",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA a Štefana KIŠŠA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia niektoré zákony (Návrh zákona nie je podaný v súlade s § 96 ods. 3 zákona o rokovacom poriadku; rozhodnutie predsedu NR SR č. 744.)",
+   "tlac": "713",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2025-02-17",
+   "approved": null,
+   "sponsors": "Š. Kišš, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "711",
+   "state": "Evidencia",
+   "delivered": "2025-02-12",
+   "approved": null,
+   "sponsors": "D. Dej, M. Sabo, T. Stohlová, M. Truban, V. Veslárová, Š. Kišš, N. Nash, J. Hargaš, V. Kalmárová, I. Kosová, M. Lackovič, M. Šimečka, B. Vančo, I. Štefunko, Z. Jaurová, D. Kleinert, M. Dubéci, O. Dvořák, T. Gažovičová, O. Prostredník, J. Spišiak, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "710",
+   "state": "Evidencia",
+   "delivered": "2025-02-12",
+   "approved": null,
+   "sponsors": "D. Dej, Z. Jaurová, D. Kleinert, J. Hargaš, Š. Kišš, N. Nash, T. Stohlová, M. Truban, V. Veslárová, B. Vančo, I. Štefunko, M. Šimečka, M. Lackovič, I. Kosová, V. Kalmárová, M. Dubéci, R. Dubovický, I. Bihariová, T. Gažovičová, B. Jurík, D. Luščíková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky",
+   "tlac": "697",
+   "state": "Evidencia",
+   "delivered": "2025-01-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Mikloško, P. Stachura, M. Šmilňák, A. Turčanová, J. Horecký, F. Majerský, M. Majerský, I. Janckulík, M. Čaučík, B. Škripek, M. Šimečka, T. Stohlová, M. Sabo, N. Nash, O. Prostredník, J. Hanuliaková, V. Kalmárová, S. Petrík, D. Dej, J. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 27. novembra 2024 svoj návrh späť.)",
+   "tlac": "621",
+   "state": "Evidencia",
+   "delivered": "2024-11-22",
+   "approved": null,
+   "sponsors": "M. Šimečka, N. Nash, D. Luščíková, T. Valášek, M. Sabo, S. Petrík, V. Veslárová, M. Dubéci, D. Dej, V. Šrobová, B. Vančo, L. Plaváková, O. Dvořák, B. Jurík, J. Hanuliaková, J. Hargaš, M. Truban, M. Lackovič, O. Prostredník, T. Gažovičová, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠSA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov",
+   "tlac": "536",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k spolupráci v oblasti bezpečnosti a spravodlivosti",
+   "tlac": "529",
+   "state": "Evidencia",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, T. Valášek, T. Szalay, V. Marcinková, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Majerský, I. Janckulík, J. Hajko, M. Čaučík, M. Dubéci, F. Mikloško, P. Stachura, B. Vančo, Z. Števulová, J. Spišiak, I. Kosová, V. Kalmáro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "478",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "O. Dvořák, Z. Mesterová, Z. Števulová, D. Luščíková, J. Spišiak, T. Stohlová, N. Nash, B. Jurík, R. Dubovický, D. Dej, V. Šrobová, O. Prostredník, M. Lackovič, J. Hargaš, V. Veslárová, I. Štefunko, Š. Kišš, I. Kosová, I. Bihariová, T. Gažovičová, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Ivana ŠTEFUNKA, Jána HARGAŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "438",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "M. Truban, I. Štefunko, D. Luščíková, J. Hargaš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA, Jána HARGAŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "333",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Štefana KIŠŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "233",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "194",
+   "state": "Evidencia",
+   "delivered": "2024-02-06",
+   "approved": null,
+   "sponsors": "L. Plaváková, M. Šimečka, Z. Mesterová, M. Dubéci, B. Jurík, Z. Števulová, I. Štefunko, D. Dej, O. Dvořák, M. Truban, V. Šrobová, M. Sabo, V. Veslárová, J. Hanuliaková, O. Prostredník, S. Petrík, N. Nash, J. Hargaš, T. Gažovičová, D. Luščíková, V. K",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Dariny LUŠČÍKOVEJ, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA a Jána HARGAŠA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "170",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána HARGAŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠSA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov",
+   "tlac": "169",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Štefana KIŠŠA, Michala TRUBANA, Ivana ŠTEFUNKA, Jána HARGAŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "168",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Ivana ŠTEFUNKA, Štefana KIŠŠA, Jána HARGAŠA a Dariny LUŠČÍKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "167",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslankyne Národnej rady Slovenskej republiky za členku výboru Národnej rady Slovenskej republiky",
+   "tlac": "101",
+   "state": "Evidencia",
+   "delivered": "2023-12-06",
+   "approved": null,
+   "sponsors": "M. Dubéci, S. Petrík, I. Bihariová, D. Dej, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, T. Hellebrandt, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, Z. Mesterová, N. Nash, L. Plaváková, O.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-05-27",
+   "by": "Luščíková, Darina",
+   "tlac": "1249",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Dagmar KRAMPLOVEJ, Jozefa CECHA, Pauly PUŠKÁROVEJ a Zdenky MAČICOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4556"
+  },
+  {
+   "date": "2025-04-01",
+   "by": "Truban, Michal",
+   "tlac": "784",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 564/2004 Z. z. o rozpočtovom určení výnosu dane z príjmov územnej samospráve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 33,
+   "voteId": null,
+   "id": "4326"
+  },
+  {
+   "date": "2024-04-18",
+   "by": "Kišš, Štefan",
+   "tlac": "199",
+   "title": "Vládny návrh zákona o mimoriadnych opatreniach pre strategické investície a pre výstavbu transeurópskej dopravnej siete a o zmene a doplnení niektorých zákonov",
+   "session": 12,
+   "voteId": null,
+   "id": "4135"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4049",
+   "title": "vo veci krokov Ministerstva financií SR súvisiacich s výmenou vedenia Slovak Investment Holdingu, a. s. a so zriadením Inovačného fondu pre slovenské regióny",
+   "state": "Príjem odpovede na interpeláciu",
+   "date": "2026-11-06",
+   "to": "Kamenický, Ladislav"
+  },
+  {
+   "id": "4050",
+   "title": "vo veci zriadenia novej rezortnej štruktúry Mirri Investments s.r.o.",
+   "state": "Príjem odpovede na interpeláciu",
+   "date": "2026-11-06",
+   "to": "Migaľ, Samuel"
+  },
+  {
+   "id": "3910",
+   "title": "vo veci financovania a vlastníckych vzťahov v záujmovom združení Národné inovačné a technologické centrum",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-11-27",
+   "to": "Drucker, Tomáš"
+  }
+ ],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49380,
+  "incomeOther": 11005,
+  "employment": "TRANTOR S.R.O.",
+  "business": "nevykonávam",
+  "roles": [
+   "PODPREDSEDA (PROGRESÍVNE SLOVENSKO)"
+  ],
+  "realEstateCount": 32,
+  "realEstateKinds": {
+   "Trvalý trávnatý porast": 5,
+   "Vodná plocha": 1,
+   "Zastavané plochy a nádvoria": 2,
+   "Lesný pozemok": 12,
+   "Zastavaná plocha a nádvorie": 5,
+   "Byt": 4,
+   "Záhrada": 1,
+   "Rodinný dom": 1,
+   "Orná pôda, zastavané plochy a nádvoria": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Obchodný podiel v spoločnosti",
+   "Úspory",
+   "Umenie"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver",
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "Michal.Truban"
+ },
+ "at": "2026-11-26T00:58:10+00:00"
+}

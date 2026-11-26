@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ nebol schválený",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (A. Danko, M. Garaj, D. Kramplová, R. Michelko)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1447 zo dňa 23. 4. 2026. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na ",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR dňa 17. 6. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1602 zo dňa 17. 6. 2026",
+   "result": "NZ nebol schválený."
+  }
+ ],
+ "at": "2026-11-26T01:25:37+00:00"
+}

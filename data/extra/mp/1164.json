@@ -1,0 +1,37 @@
+{
+ "id": "1164",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 57115,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 2,
+  "realEstateKinds": {
+   "Rodinný dom, ostatná plocha, zastavaná plocha a nádvoria": 1,
+   "Ostatná plocha, altán, zastavaná plocha a nádvorie": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobné veci"
+  ],
+  "rights": [
+   "Akcie"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Pôžička"
+  ],
+  "userId": "DrucToma"
+ },
+ "at": "2026-11-25T23:20:44+00:00"
+}

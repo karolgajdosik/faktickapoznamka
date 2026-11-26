@@ -1,0 +1,37 @@
+{
+ "id": "940",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 55080,
+  "incomeOther": 0,
+  "employment": "ÚRAD VLÁDY SLOVENSKEJ REPUBLIKY",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 3,
+  "realEstateKinds": {
+   "Rodinný dom": 1,
+   "Zastavané plochy a nádvoria": 1,
+   "Ostatné plochy": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobné auto"
+  ],
+  "rights": [
+   "Finančné prostriedky"
+  ],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Erik.Tomáš"
+ },
+ "at": "2026-11-26T00:57:28+00:00"
+}

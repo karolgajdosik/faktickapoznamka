@@ -1,0 +1,372 @@
+{
+ "id": "691",
+ "excuses": [
+  {
+   "from": "2024-01-23",
+   "to": "2024-01-26",
+   "days": [
+    "2024-01-23",
+    "2024-01-24",
+    "2024-01-25",
+    "2024-01-26"
+   ],
+   "reason": "iný dôvod (Dlhodobo plánovaná cesta)"
+  },
+  {
+   "from": "2024-02-16",
+   "to": "2024-02-16",
+   "days": [
+    "2024-02-16"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-02-23",
+   "to": "2024-02-23",
+   "days": [
+    "2024-02-23"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-03-27",
+   "to": "2025-03-28",
+   "days": [
+    "2025-03-27",
+    "2025-03-28"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-02",
+   "days": [
+    "2025-04-01",
+    "2025-04-02"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-04",
+   "to": "2025-04-04",
+   "days": [
+    "2025-04-04"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2026-01-30",
+   "to": "2026-01-30",
+   "days": [
+    "2026-01-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-04-27",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-04-29",
+   "to": "2026-04-30",
+   "days": [
+    "2026-04-29",
+    "2026-04-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2026-06-15",
+   "to": "2026-06-15",
+   "days": [
+    "2026-06-15"
+   ],
+   "reason": "iný dôvod (Iné pracovné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1442",
+   "state": "II. čítanie",
+   "delivered": "2026-08-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko, D. Tittel",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 216/2018 Z. z. o rybárstve a o doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov (Navrhovateľ požiadal listom z 10. septembra 2026 o zaradenie druhého čítania návrhu na schôdzu Národnej rady Slovenskej republiky so začiatkom 17. novembra 2026)",
+   "tlac": "1224",
+   "state": "Rokovanie výboru",
+   "delivered": "2026-03-25",
+   "approved": null,
+   "sponsors": "P. Kalivoda, R. Puci, P. Žiga, D. Tittel, I. Šimko, Z. Mačicová, Š. Gašparovič, J. Blcháč, J. Cech, K. Janas",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1195",
+   "state": "Evidencia",
+   "delivered": "2026-02-12",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1168",
+   "state": "Evidencia",
+   "delivered": "2026-01-22",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1120",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1119",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, R. Puci, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obnoveným spoločným rokovaniam vlád Slovenskej republiky a Českej republiky. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1072",
+   "state": "Evidencia",
+   "delivered": "2025-10-28",
+   "approved": null,
+   "sponsors": "R. Raši, R. Puci, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a vymenovanie vedúceho stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "860",
+   "state": "Evidencia",
+   "delivered": "2025-05-21",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, A. Szabóová, I. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "778",
+   "state": "Evidencia",
+   "delivered": "2025-03-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, I. Šimko, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky (Navrhovateľ oznámil listom z 24. marca 2025 späťvzatie návrhu na zmeny v zložení výborov a delegácie.)",
+   "tlac": "708",
+   "state": "Evidencia",
+   "delivered": "2025-02-07",
+   "approved": null,
+   "sponsors": "M. Bartek, J. Blcháč, B. Becík, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabóová, I. Šimko, D. Tittel, E.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na vytvorenie skupín priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie a voľbu ich predsedov",
+   "tlac": "494",
+   "state": "Evidencia",
+   "delivered": "2024-09-26",
+   "approved": null,
+   "sponsors": "P. Žiga",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "472",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, J. Krúpa, V. Ledecký, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, S. Migaľ, P. Náhlik, A. Nováková, P.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedníčky Výboru Národnej rady Slovenskej republiky pre vzdelávanie, vedu, mládež a šport",
+   "tlac": "91",
+   "state": "Evidencia",
+   "delivered": "2023-11-29",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, M. Moško, P. Náhlik, A. Nováková, S. Petrík, P. Puškárová, P. Slyško, Z. Svoboda, R. Šalitroš,",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-05-26",
+   "by": "Raši, Richard",
+   "tlac": "1237",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4551"
+  },
+  {
+   "date": "2026-05-26",
+   "by": "Raši, Richard",
+   "tlac": "1243",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4552"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2026-05-12",
+   "to": "2026-05-15",
+   "desc": "Baku, Karabach - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róber Puci, Roman Michelko, Ľubica Laššáková, Peter Náhlik, Michal Bartek, Igor Janckulík, Marcela Čavojová a Zuzana Matejičková sa zúčastnia pracovnej cesty v Azerbajdžanskej republike."
+  },
+  {
+   "from": "2025-09-01",
+   "to": "2025-09-06",
+   "desc": "Japonsko - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róbert Puci, Marián Kéry, Karol Farkašovský, Igor Janckulík, Zuzana Plevíková, Andrea Szabóová, Ivan Štefunko, Marián Viskupič a Michal Stuška sa zúčastnia pracovnej návštevy predsedu NR SR Richarda Rašiho v Japonsku."
+  },
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-01",
+   "desc": "Komárom- Podpredseda NR SR Peter Žiga sa zúčastní na pracovnej návšteve v Maďarsku."
+  },
+  {
+   "from": "2025-03-20",
+   "to": "2025-03-21",
+   "desc": "Štrasburg- Podpredseda NR SR Peter Žiga , poslanec NR SR Pavol Goga a vedúci Kancelárie NR SR Daniel Guspan sa zúčastnia na Konferencii predsedov parlamentov členských krajín Rady Európy vo Francúzskej republike."
+  },
+  {
+   "from": "2024-11-15",
+   "to": "2024-11-15",
+   "desc": "Budapešť - Podpredseda NR SR Peter Žiga a poslanec NR SR Karol Farkašovský sa zúčastnia na pracovnej návšteve Maďarska."
+  },
+  {
+   "from": "2024-10-23",
+   "to": "2024-10-24",
+   "desc": "Riga - Podpredseda NR SR Peter Žiga, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslankyňa NR SR Beáta Jurík sa zúčastnia na Pracovnej návšteve podpredsedu Národnej rady SR p. Petra Žigu v Lotyšskej republike."
+  },
+  {
+   "from": "2024-10-14",
+   "to": "2024-10-16",
+   "desc": "Ženeva - Podpredseda NR SR Peter Žiga sa zúčastní na pracovnej návšteve Švajčiarska."
+  },
+  {
+   "from": "2024-08-22",
+   "to": "2024-08-23",
+   "desc": "Salzburg - Podpredseda NR SR Peter Žiga sa zúčastní na Neformálnom stretnutí predsedov parlamentov Slavkovského formátu +."
+  },
+  {
+   "from": "2024-04-21",
+   "to": "2024-04-23",
+   "desc": "Palma de Mallorca - Podpredseda NR SR Peter Žiga, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslanec NR SR Samuel Migaľ sa zúčastnia na pracovnej návšteve v Španieľskom kráľovstve."
+  },
+  {
+   "from": "2024-03-19",
+   "to": "2024-03-19",
+   "desc": "Viedeň - Podpredseda NR SR Peter Žiga sa zúčastní na pracovnej návšteve Rakúskej republiky."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 53642,
+  "incomeOther": 0,
+  "employment": "TAPER SPOL. S R.O.",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 2,
+  "realEstateKinds": {
+   "Pozemok pod bytovým domom": 1,
+   "Byt": 1
+  },
+  "movablesCount": 2,
+  "movables": [
+   "Elektronika",
+   "Šperky"
+  ],
+  "rights": [
+   "Podiel vo firme",
+   "Podiel vo firme",
+   "Podiel vo firme",
+   "Podiel vo firme",
+   "Podiel vo firme",
+   "Finančný vklad",
+   "Finančný vklad",
+   "Finančny vklad",
+   "Finančná hotovosť"
+  ],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "ZigaPete"
+ },
+ "at": "2026-11-26T01:21:20+00:00"
+}

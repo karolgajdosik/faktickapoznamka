@@ -1,0 +1,791 @@
+{
+ "id": "1124",
+ "excuses": [
+  {
+   "from": "2024-01-12",
+   "to": "2024-01-12",
+   "days": [
+    "2024-01-12"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-01-16",
+   "to": "2024-01-19",
+   "days": [
+    "2024-01-16",
+    "2024-01-17",
+    "2024-01-18",
+    "2024-01-19"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-01-26",
+   "to": "2024-01-26",
+   "days": [
+    "2024-01-26"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-02-16",
+   "to": "2024-02-16",
+   "days": [
+    "2024-02-16"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-04-26",
+   "to": "2024-04-26",
+   "days": [
+    "2024-04-26"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-05-21",
+   "to": "2024-05-22",
+   "days": [
+    "2024-05-21",
+    "2024-05-22"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2025-08-14",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  },
+  {
+   "from": "2026-04-22",
+   "to": "2026-04-22",
+   "days": [
+    "2026-04-22"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2026-05-07",
+   "to": "2026-05-07",
+   "days": [
+    "2026-05-07"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2026-06-09",
+   "to": "2026-06-12",
+   "days": [
+    "2026-06-09",
+    "2026-06-10",
+    "2026-06-11",
+    "2026-06-12"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedníčke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "1580",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-10",
+   "approved": null,
+   "sponsors": "Z. Jaurová, B. Jurík, Z. Mesterová, L. Plaváková, G. Gregorová, I. Kosová, N. Nash, T. Stohlová, V. Šrobová, Z. Števulová, O. Prostredník, D. Luščíková, V. Veslárová, R. Dubovický, M. Sabo, D. Dej, T. Gažovičová, M. Dubéci, D. Kleinert, M. Lackovič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Tiny GAŽOVIČOVEJ, Ireny BIHARIOVEJ a Ingrid KOSOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2025 Z. z. o vysokých školách a o zmene a doplnení niektorých zákonov (vysokoškolský zákon) v znení zákona č. 121/2026 Z. z.",
+   "tlac": "1496",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "T. Gažovičová, I. Bihariová, I. Kosová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 192/2023 Z. z. o registri trestov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1486",
+   "state": "I. čítanie",
+   "delivered": "2026-08-27",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, I. Kosová, N. Nash, L. Plaváková, O. Prostredník, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankyne Národnej rady Slovenskej republiky Ingrid KOSOVEJ na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s integráciou lesných materských škôl do systému výchovy a vzdelávania a úpravou postavenia detských lesných klubov",
+   "tlac": "1430",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-08-14",
+   "approved": null,
+   "sponsors": "I. Kosová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslankyne Národnej rady Slovenskej republiky Ingrid KOSOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 245/2008 Z. z. o výchove a vzdelávaní (školský zákon) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1424",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-08-03",
+   "approved": null,
+   "sponsors": "I. Kosová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Richardovi TAKÁČOVI, poverenému riadením Ministerstva pôdohospodárstva a rozvoja vidieka Slovenskej republiky",
+   "tlac": "1412",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-05",
+   "approved": null,
+   "sponsors": "K. Galek, B. Gröhling, A. Hlina, M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, T. Szalay, M. Viskupič, M. Čaučík, J. Horecký, R. Krátky, B. Škripek, L. Bužo, I. Dušenka, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Po",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi DRUCKEROVI, poverenému riadením Ministerstva školstva, výskumu, vývoja a mládeže Slovenskej republiky",
+   "tlac": "1409",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-04",
+   "approved": null,
+   "sponsors": "J. Horecký, F. Majerský, M. Majerský, G. Paľa, R. Krátky, M. Kolejáková, B. Škripek, A. Turčanová, M. Čaučík, F. Mikloško, I. Janckulík, M. Šipoš, R. Vašečka, G. Grendel, V. Remišová, I. Matovič, R. Mikulec, I. Dušenka, J. Pročko, T. Gažovičová, I.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky",
+   "tlac": "1401",
+   "state": "Evidencia",
+   "delivered": "2026-05-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Gregorová, J. Hanuliaková, J. Hargaš, Z. Jaurová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, N. Nash, S. Petrík, L. Plaváková, O. Prostredník, M. Sabo, J. S",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky o skrátení volebného obdobia Národnej rady Slovenskej republiky",
+   "tlac": "1398",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, O. Dvořák, Ľ. Galko, T. Gažovičová, G. Gregorová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, Z. Mesterová, N. Nash, S. Petrík, L. Plaváková, O. Prostredník, M. Sabo",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ingrid KOSOVEJ, Beáty JURÍK a Lucie PLAVÁKOVEJ na vydanie zákona o finančnom odškodnení obetí sterilizácií v rozpore s právom a o doplnení zákona Slovenskej národnej rady č. 71/1992 Zb. o súdnych poplatkoch a poplatku za výpis z registra trestov v znení neskorších predpisov",
+   "tlac": "1298",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Kosová, L. Plaváková",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Ingrid KOSOVEJ a Gréty GREGOROVEJ na vydanie zákona o niektorých opatreniach na zníženie stavu menštruačnej chudoby",
+   "tlac": "1240",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "G. Gregorová, B. Jurík, I. Kosová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k tragédii zo 17. marca 2026 v osade v obci Mirkovce",
+   "tlac": "1236",
+   "state": "Evidencia",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, I. Kosová, L. Plaváková, Z. Števulová, V. Tankó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ingrid KOSOVEJ a Beáty JURÍK na prijatie uznesenia Národnej rady Slovenskej republiky k odstráneniu segregácie v školách a školských zariadeniach",
+   "tlac": "1158",
+   "state": "Evidencia",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Kosová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zlyhaniu ministerky hospodárstva Slovenskej republiky pri adresnej energopomoci",
+   "tlac": "1138",
+   "state": "Evidencia",
+   "delivered": "2025-12-10",
+   "approved": null,
+   "sponsors": "J. Jakab, I. Matovič, R. Mikulec, I. Dušenka, M. Šipoš, J. Pročko, L. Bužo, P. Pollák, A. Škopová, G. Grendel, Z. Mesterová, M. Truban, B. Jurík, L. Plaváková, V. Veslárová, D. Kleinert, M. Lackovič, I. Kosová, G. Gregorová, Z. Jaurová, T. Stohlová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Natálie NASH a Ingrid KOSOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 440/2015 Z. z. o športe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (Navrhovateľka požiadala listom z 20. novembra 2025 o preloženie jej návrhu na program ďalšej riadnej schôdze Národnej rady Slovenskej republiky so začiatkom 27. januára 2026.)",
+   "tlac": "1090",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "N. Nash, I. Kosová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany ŠTEVULOVEJ a Ingrid KOSOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky o nebezpečnej normalizácii prejavov nenávisti, mizogýnie a dešpektu voči ženám a potrebe prevencie a boja s rodovo-podmieneným násilím",
+   "tlac": "1086",
+   "state": "Evidencia",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Kosová, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie členky stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "994",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Grendel, J. Hanuliaková, J. Hargaš, J. Jakab, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Krajčí, R. Krátky, M. Lackovič, D. Luščíková, I. Matovič, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Natálie NASH a Ingrid KOSOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 245/2008 Z. z. o výchove a vzdelávaní (školský zákon) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "930",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-21",
+   "approved": null,
+   "sponsors": "I. Kosová, N. Nash",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Veroniky VESLÁROVEJ, Ingrid KOSOVEJ a TINY GAŽOVIČOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 447/2008 Z. z. o peňažných príspevkoch na kompenzáciu ťažkého zdravotného postihnutia a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony, zákona č. 131/2002 Z. z. o vysokých školách a o zmene a doplnení niektorých zákonov v znení zákona, zákona č. 245/2008 Z. z. o výchove a vzdelávaní (školský zákon)",
+   "tlac": "929",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-21",
+   "approved": null,
+   "sponsors": "T. Gažovičová, I. Kosová, V. Veslárová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ingrid KOSOVEJ, Natálie NASH a Veroniky VESLÁROVEJ na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zavedením dočasných vyrovnávacích opatrení na stredných školách a vysokých školách",
+   "tlac": "910",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-15",
+   "approved": null,
+   "sponsors": "I. Kosová, N. Nash, V. Veslárová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "886",
+   "state": "Evidencia",
+   "delivered": "2025-06-17",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, N. Nash, Z. Mesterová, S. Petrík, L. Plaváková, O. Pr",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ingrid KOSOVEJ, Viery KALMÁROVEJ a Natálie NASH na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 596/2003 Z. z. o štátnej správe v školstve a školskej samospráve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "829",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "V. Kalmárová, I. Kosová, N. Nash",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Viery KALMÁROVEJ a Ingrid KOSOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k zvýšeniu bezpečnosti v školách a školských zariadeniach",
+   "tlac": "801",
+   "state": "Evidencia",
+   "delivered": "2025-04-15",
+   "approved": null,
+   "sponsors": "B. Jurík, V. Kalmárová, I. Kosová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Viery KALMÁROVEJ, Ingrid KOSOVEJ, Tiny GAŽOVIČOVEJ a Ireny BIHARIOVEJ na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zvýšením bezpečnosti v školách a školských zariadeniach",
+   "tlac": "734",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-05",
+   "approved": null,
+   "sponsors": "I. Bihariová, T. Gažovičová, V. Kalmárová, I. Kosová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k tretiemu výročiu vojenskej agresie Ruskej Federácie proti Ukrajine",
+   "tlac": "718",
+   "state": "Evidencia",
+   "delivered": "2025-02-24",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, R. Dubovický, T. Gažovičová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, I. Bihariová, M. Lackovič, D. Luščíková, N. Nash, Z. Mesterová, S. Petrík, L. Plaváková, O. Pr",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "711",
+   "state": "Evidencia",
+   "delivered": "2025-02-12",
+   "approved": null,
+   "sponsors": "D. Dej, M. Sabo, T. Stohlová, M. Truban, V. Veslárová, Š. Kišš, N. Nash, J. Hargaš, V. Kalmárová, I. Kosová, M. Lackovič, M. Šimečka, B. Vančo, I. Štefunko, Z. Jaurová, D. Kleinert, M. Dubéci, O. Dvořák, T. Gažovičová, O. Prostredník, J. Spišiak, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "710",
+   "state": "Evidencia",
+   "delivered": "2025-02-12",
+   "approved": null,
+   "sponsors": "D. Dej, Z. Jaurová, D. Kleinert, J. Hargaš, Š. Kišš, N. Nash, T. Stohlová, M. Truban, V. Veslárová, B. Vančo, I. Štefunko, M. Šimečka, M. Lackovič, I. Kosová, V. Kalmárová, M. Dubéci, R. Dubovický, I. Bihariová, T. Gažovičová, B. Jurík, D. Luščíková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky",
+   "tlac": "697",
+   "state": "Evidencia",
+   "delivered": "2025-01-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Mikloško, P. Stachura, M. Šmilňák, A. Turčanová, J. Horecký, F. Majerský, M. Majerský, I. Janckulík, M. Čaučík, B. Škripek, M. Šimečka, T. Stohlová, M. Sabo, N. Nash, O. Prostredník, J. Hanuliaková, V. Kalmárová, S. Petrík, D. Dej, J. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Zuzany ŠTEVULOVEJ, Ingrid KOSOVEJ, Ireny BIHARIOVEJ a Viliama TANKÓA na prijatie uznesenia Národnej rady Slovenskej republiky ku krivdám spôsobeným rómskej národnostnej menšine protipandemickými opatreniami počas pandémie Covid-19",
+   "tlac": "680",
+   "state": "Evidencia",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "I. Bihariová, I. Kosová, Z. Števulová, V. Tankó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "632",
+   "state": "Evidencia",
+   "delivered": "2024-12-03",
+   "approved": null,
+   "sponsors": "F. Majerský, J. Horecký, M. Čaučík, I. Janckulík, F. Mikloško, M. Šmilňák, B. Škripek, A. Turčanová, J. Hajko, M. Šimečka, O. Prostredník, I. Kosová, Z. Jaurová, B. Vančo, V. Veslárová, J. Spišiak, J. Hargaš, J. Hanuliaková, O. Dvořák, B. Jurík, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 3. decembra 2024 svoj návrh späť.)",
+   "tlac": "630",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "M. Šimečka, M. Lackovič, J. Hargaš, J. Spišiak, D. Dej, V. Veslárová, B. Vančo, L. Plaváková, I. Bihariová, R. Dubovický, Z. Števulová, V. Tankó, M. Dubéci, V. Kalmárová, B. Jurík, M. Sabo, T. Stohlová, I. Kosová, Š. Kišš, T. Gažovičová, D. Luščíkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k spolupráci v oblasti bezpečnosti a spravodlivosti",
+   "tlac": "529",
+   "state": "Evidencia",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, T. Valášek, T. Szalay, V. Marcinková, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Majerský, I. Janckulík, J. Hajko, M. Čaučík, M. Dubéci, F. Mikloško, P. Stachura, B. Vančo, Z. Števulová, J. Spišiak, I. Kosová, V. Kalmáro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "478",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "O. Dvořák, Z. Mesterová, Z. Števulová, D. Luščíková, J. Spišiak, T. Stohlová, N. Nash, B. Jurík, R. Dubovický, D. Dej, V. Šrobová, O. Prostredník, M. Lackovič, J. Hargaš, V. Veslárová, I. Štefunko, Š. Kišš, I. Kosová, I. Bihariová, T. Gažovičová, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výboru Národnej rady Slovenskej republiky",
+   "tlac": "466",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, I. Kosová, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "297",
+   "state": "Evidencia",
+   "delivered": "2024-05-02",
+   "approved": null,
+   "sponsors": "O. Dvořák, F. Majerský, P. Stachura, M. Šipoš, V. Tankó, M. Krajčí, Ľ. Galko, P. Pollák, A. Škopová, R. Mikulec, G. Grendel, J. Pročko, R. Krátky, I. Matovič, J. Jakab, O. Prostredník, R. Vašečka, B. Vančo, L. Plaváková, B. Jurík, J. Hargaš, Z. Mest",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "194",
+   "state": "Evidencia",
+   "delivered": "2024-02-06",
+   "approved": null,
+   "sponsors": "L. Plaváková, M. Šimečka, Z. Mesterová, M. Dubéci, B. Jurík, Z. Števulová, I. Štefunko, D. Dej, O. Dvořák, M. Truban, V. Šrobová, M. Sabo, V. Veslárová, J. Hanuliaková, O. Prostredník, S. Petrík, N. Nash, J. Hargaš, T. Gažovičová, D. Luščíková, V. K",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslankyne Národnej rady Slovenskej republiky za členku výboru Národnej rady Slovenskej republiky",
+   "tlac": "101",
+   "state": "Evidencia",
+   "delivered": "2023-12-06",
+   "approved": null,
+   "sponsors": "M. Dubéci, S. Petrík, I. Bihariová, D. Dej, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, T. Hellebrandt, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, Z. Mesterová, N. Nash, L. Plaváková, O.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-11-19",
+   "by": "Kosová, Ingrid",
+   "tlac": "1471",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 66,
+   "voteId": null,
+   "id": "4618"
+  },
+  {
+   "date": "2026-11-19",
+   "by": "Kosová, Ingrid",
+   "tlac": "1471",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 66,
+   "voteId": null,
+   "id": "4619"
+  },
+  {
+   "date": "2025-10-15",
+   "by": "Kosová, Ingrid",
+   "tlac": "924",
+   "title": "Vládny návrh zákona o vysokých školách a o zmene a doplnení niektorých zákonov (vysokoškolský zákon)",
+   "session": 40,
+   "voteId": null,
+   "id": "4429"
+  },
+  {
+   "date": "2025-10-15",
+   "by": "Kosová, Ingrid",
+   "tlac": "934",
+   "title": "Vládny návrh zákona o financovaní škôl a školských zariadení",
+   "session": 40,
+   "voteId": null,
+   "id": "4430"
+  },
+  {
+   "date": "2025-10-15",
+   "by": "Kosová, Ingrid",
+   "tlac": "935",
+   "title": "Vládny návrh zákona o školskej správe a o zmene a doplnení niektorých zákonov",
+   "session": 40,
+   "voteId": null,
+   "id": "4431"
+  },
+  {
+   "date": "2025-10-15",
+   "by": "Kosová, Ingrid",
+   "tlac": "921",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 138/2019 Z. z. o pedagogických zamestnancoch a odborných zamestnancoch a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 40,
+   "voteId": null,
+   "id": "4432"
+  },
+  {
+   "date": "2025-10-15",
+   "by": "Kosová, Ingrid",
+   "tlac": "933",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 245/2008 Z. z. o výchove a vzdelávaní (školský zákon) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 40,
+   "voteId": null,
+   "id": "4433"
+  },
+  {
+   "date": "2025-09-10",
+   "by": "Kosová, Ingrid",
+   "tlac": "802",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 39,
+   "voteId": null,
+   "id": "4386"
+  },
+  {
+   "date": "2025-05-27",
+   "by": "Kosová, Ingrid",
+   "tlac": "727",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 5/2004 Z. z. o službách zamestnanosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 35,
+   "voteId": null,
+   "id": "4348"
+  },
+  {
+   "date": "2025-04-01",
+   "by": "Števulová, Zuzana",
+   "tlac": "591",
+   "title": "Vládny návrh zákona o náprave krívd spôsobených fyzickým osobám v súvislosti s protipandemickými opatreniami a o doplnení zákona Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov",
+   "session": 33,
+   "voteId": null,
+   "id": "4330"
+  },
+  {
+   "date": "2024-11-26",
+   "by": "Kosová, Ingrid",
+   "tlac": "503",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 131/2002 Z. z. o vysokých školách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 23,
+   "voteId": null,
+   "id": "4270"
+  },
+  {
+   "date": "2024-10-22",
+   "by": "Kosová, Ingrid",
+   "tlac": "400",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 597/2003 Z. z. o financovaní základných škôl, stredných škôl a školských zariadení v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 22,
+   "voteId": null,
+   "id": "4236"
+  },
+  {
+   "date": "2024-02-06",
+   "by": "Kosová, Ingrid",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4115"
+  },
+  {
+   "date": "2024-02-06",
+   "by": "Kosová, Ingrid",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4116"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4055",
+   "title": "vo veci zabezpečenia a financovania dopravy žiakov z obce Malý Slivník do základných škôl",
+   "state": "Príjem odpovede na interpeláciu",
+   "date": "2026-11-10",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "4046",
+   "title": "vo veci priebehu a realizácie národného projektu „Podpora vzdelávacích príležitostí“",
+   "state": "Príjem odpovede na interpeláciu",
+   "date": "2026-10-30",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "4008",
+   "title": "vo veci právneho výkladu k uplatňovaniu výsledkov experimentálneho overovania a vekovo zmiešaných tried",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-08-03",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "4007",
+   "title": "vo veci personálneho zabezpečenia a financovania úvodných ročníkov na základných školách",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-07-23",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "3953",
+   "title": "vo veci poskytnutia podrobných a vecných informácií o dopadoch opatrenia „práca namiesto dávok“",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-04-28",
+   "to": "Tomáš, Erik"
+  },
+  {
+   "id": "3954",
+   "title": "vo veci vyhodnotenia systému ospravedlňovania vymeškaných hodín",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-04-28",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "3924",
+   "title": "vo veci odstránenia segregácie v školách a školských zariadeniach",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-02-11",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "3900",
+   "title": "vo veci poskytnutia informácií týkajúcich sa národných projektov financovaných z Programu Slovensko",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-10-14",
+   "to": "Tomáš, Erik"
+  },
+  {
+   "id": "2892",
+   "title": "vo veci návrhu zákona o jednorazovom finančnom odškodnení osôb sterilizovaných v rozpore s právom",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-09-11",
+   "to": "Susko, Boris"
+  },
+  {
+   "id": "2893",
+   "title": "vo veci regionálnych centier podpory pre učiteľov",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-09-11",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2894",
+   "title": "vo veci plánu desegregácie segregovaných obcí",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-09-11",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2854",
+   "title": "vo veci urýchlenej výstavby kritickej infraštruktúry materských škôl v lokalitách s akútnou situáciou",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-04-30",
+   "to": "Kaliňák, Robert"
+  },
+  {
+   "id": "2841",
+   "title": "vo veci segregácie na základných školách",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-03-27",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2842",
+   "title": "vo veci zámeru vytvorenia pilotnej rómskej národnej školy v Rakúsoch",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-03-27",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2832",
+   "title": "vo veci finančnej alokácie z ESF a EFRR zdrojov vyčlenenej na sociálno-ekonomickú integráciu marginalizovaných rómskych komunít",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-03-05",
+   "to": "Taraba, Tomáš"
+  },
+  {
+   "id": "2833",
+   "title": "vo veci finančnej alokácie z ESF a EFRR zdrojov vyčlenenej na sociálno-ekonomickú integráciu marginalizovaných rómskych komunít",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-03-05",
+   "to": "Raši, Richard"
+  },
+  {
+   "id": "2834",
+   "title": "vo veci finančnej alokácie z ESF a EFRR zdrojov vyčlenenej na sociálno-ekonomickú integráciu marginalizovaných rómskych komunít",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-03-05",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2835",
+   "title": "vo veci finančnej alokácie z ESF a EFRR zdrojov vyčlenenej na sociálno-ekonomickú integráciu marginalizovaných rómskych komunít",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-03-05",
+   "to": "Tomáš, Erik"
+  },
+  {
+   "id": "2821",
+   "title": "vo veci odškodnenia nezákonne sterilizovaných žien",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-02-03",
+   "to": "Susko, Boris"
+  },
+  {
+   "id": "2791",
+   "title": "vo veci výzvy Plánu obnovy a odolnosti - transformačné a inovačné konzorciá",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-11-05",
+   "to": "Kmec, Peter"
+  },
+  {
+   "id": "2745",
+   "title": "Vo veci financovania materských škôl z podielových daní",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-08-07",
+   "to": "Kamenický, Ladislav"
+  },
+  {
+   "id": "2746",
+   "title": "Vo veci implementácie desegregačných opatrení",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-08-07",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2702",
+   "title": "Vo veci informovania o obsahu pripravovaných projektov a zloženia pracovných skupín",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-02-21",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "2696",
+   "title": "Vo veci riešenia plnohodnotného začlenenia ukrajinských a rómskych žiakov a žiačok do vzdelávacieho procesu",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-02-06",
+   "to": "Drucker, Tomáš"
+  }
+ ],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49380,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "PREDSEDKYŇA O.Z. (MONTESSORI, O.Z.)"
+  ],
+  "realEstateCount": 1,
+  "realEstateKinds": {
+   "Rodinný dom": 1
+  },
+  "movablesCount": 3,
+  "movables": [
+   "Osobný automobil",
+   "Osobný automobil",
+   "Osobný automobil"
+  ],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Ingrid.Kosova"
+ },
+ "at": "2026-11-26T00:00:47+00:00"
+}

@@ -1,0 +1,641 @@
+{
+ "id": "1211",
+ "excuses": [
+  {
+   "from": "2023-12-05",
+   "to": "2023-12-08",
+   "days": [
+    "2023-12-05",
+    "2023-12-06",
+    "2023-12-07",
+    "2023-12-08"
+   ],
+   "reason": "choroba"
+  },
+  {
+   "from": "2023-12-12",
+   "to": "2023-12-15",
+   "days": [
+    "2023-12-12",
+    "2023-12-13",
+    "2023-12-14",
+    "2023-12-15"
+   ],
+   "reason": "choroba"
+  },
+  {
+   "from": "2023-12-18",
+   "to": "2023-12-18",
+   "days": [
+    "2023-12-18"
+   ],
+   "reason": "choroba"
+  },
+  {
+   "from": "2024-02-20",
+   "to": "2024-02-20",
+   "days": [
+    "2024-02-20"
+   ],
+   "reason": "iný dôvod (Neodkladné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-11-29",
+   "to": "2024-11-29",
+   "days": [
+    "2024-11-29"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-12-02",
+   "to": "2024-12-02",
+   "days": [
+    "2024-12-02"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2024-12-06",
+   "to": "2024-12-06",
+   "days": [
+    "2024-12-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné dôvody)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-18",
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-01",
+   "days": [
+    "2025-04-01"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-10-24",
+   "to": "2025-10-24",
+   "days": [
+    "2025-10-24"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-11-28",
+   "to": "2025-11-28",
+   "days": [
+    "2025-11-28"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-02-06",
+   "to": "2026-02-06",
+   "days": [
+    "2026-02-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-03-19",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-19",
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v obci a regióne)"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-24",
+   "days": [
+    "2026-04-24"
+   ],
+   "reason": "iný dôvod (49. schôdza NR SR- iné pracovné povinnosti v regióne, 50. schôdza NR SR- Obštrukcia)"
+  },
+  {
+   "from": "2026-04-27",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-04-30",
+   "to": "2026-04-30",
+   "days": [
+    "2026-04-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-05-04",
+   "to": "2026-05-04",
+   "days": [
+    "2026-05-04"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-05-27",
+   "to": "2026-05-27",
+   "days": [
+    "2026-05-27"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (52. schôdza NRSR - Pracovné povinnosti v regióne, 53. schôdza NRSR- obštrukcia)"
+  },
+  {
+   "from": "2026-06-05",
+   "to": "2026-06-05",
+   "days": [
+    "2026-06-05"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-06-15",
+   "to": "2026-06-15",
+   "days": [
+    "2026-06-15"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Iné povinnosti, práca v regióne)"
+  },
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Iné pracovné povnnosti v regióne)"
+  },
+  {
+   "from": "2026-10-09",
+   "to": "2026-10-09",
+   "days": [
+    "2026-10-09"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-11-05",
+   "to": "2026-11-06",
+   "days": [
+    "2026-11-05",
+    "2026-11-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ľubice LAŠŠÁKOVEJ, Aleny NOVÁKOVEJ, Zdenky MAČICOVEJ a Jozefa CECHA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1490",
+   "state": "II. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Cech, Ľ. Laššáková, Z. Mačicová, A. Nováková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Aleny NOVÁKOVEJ, Zdenky MAČICOVEJ, Jozefa CECHA a Ľubice LAŠŠÁKOVEJ na vydanie zákona, ktorým sa mení zákon č. 383/2013 Z. z. o príspevku pri narodení dieťaťa a príspevku na viac súčasne narodených detí a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1489",
+   "state": "II. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "J. Cech, Ľ. Laššáková, Z. Mačicová, A. Nováková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1442",
+   "state": "II. čítanie",
+   "delivered": "2026-08-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko, D. Tittel",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Pauly PUŠKÁROVEJ, Ľubice LAŠŠÁKOVEJ, Aleny NOVÁKOVEJ, Jozefa CECHA a Zdenky MAČICOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 36/2005 Z. z. o rodine a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1252",
+   "state": "Redakcia",
+   "delivered": "2026-03-27",
+   "approved": "2026-09-15",
+   "sponsors": "J. Cech, Ľ. Laššáková, Z. Mačicová, A. Nováková, P. Puškárová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Dagmar KRAMPLOVEJ, Jozefa CECHA, Pauly PUŠKÁROVEJ a Zdenky MAČICOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1249",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": "2026-06-02",
+   "sponsors": "J. Cech, Z. Mačicová, R. Michelko, D. Kramplová, P. Puškárová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Slovenskej národnej rady č. 369/1990 Zb. o obecnom zriadení v znení neskorších predpisov a ktorým sa mení zákon Slovenskej národnej rady č. 401/1990 Zb. o meste Košice v znení neskorších predpisov",
+   "tlac": "1238",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": "2026-06-17",
+   "sponsors": "J. Blcháč, D. Demečko, Z. Mačicová, R. Malatinec, R. Puci, R. Raši",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1237",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "J. Blcháč, D. Demečko, Z. Mačicová, R. Malatinec, R. Puci, R. Raši",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 216/2018 Z. z. o rybárstve a o doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov (Navrhovateľ požiadal listom z 10. septembra 2026 o zaradenie druhého čítania návrhu na schôdzu Národnej rady Slovenskej republiky so začiatkom 17. novembra 2026)",
+   "tlac": "1224",
+   "state": "Rokovanie výboru",
+   "delivered": "2026-03-25",
+   "approved": null,
+   "sponsors": "P. Kalivoda, R. Puci, P. Žiga, D. Tittel, I. Šimko, Z. Mačicová, Š. Gašparovič, J. Blcháč, J. Cech, K. Janas",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1195",
+   "state": "Evidencia",
+   "delivered": "2026-02-12",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1168",
+   "state": "Evidencia",
+   "delivered": "2026-01-22",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1120",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1119",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, R. Puci, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obnoveným spoločným rokovaniam vlád Slovenskej republiky a Českej republiky. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1072",
+   "state": "Evidencia",
+   "delivered": "2025-10-28",
+   "approved": null,
+   "sponsors": "R. Raši, R. Puci, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k negatívnemu vplyvu rozšírenia systému obchodovania s emisnými kvótami pre budovy a cestnú dopravu (ETS2) na sociálnu a hospodársku situáciu domácností v Slovenskej republike",
+   "tlac": "1069",
+   "state": "Evidencia",
+   "delivered": "2025-10-23",
+   "approved": null,
+   "sponsors": "R. Puci, M. Čellár, M. Bartek, P. Náhlik, Z. Svoboda, E. Vlček, A. Szabóová, P. Slyško, A. Nováková, K. Janas, Ľ. Laššáková, R. Eliáš, J. Cech, P. Kalivoda, I. Šimko, Z. Mačicová, D. Demečko, D. Tittel, J. Richter, T. Gašpar, J. Mažgút, Z. Plevíková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č . 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "986",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": "2026-03-17",
+   "sponsors": "M. Bartek, J. Blcháč, R. Eliáš, Š. Gašparovič, K. Janas, D. Kramplová, B. Lešo, A. Lučanský, Z. Mačicová, R. Malatinec, F. Petro, R. Puci, A. Sitkár, A. Szabóová, I. Ševčík, I. Šimko, V. Zahorčák",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a vymenovanie vedúceho stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "860",
+   "state": "Evidencia",
+   "delivered": "2025-05-21",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, A. Szabóová, I. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zneužívaniu legislatívneho procesu k zákonu o neziskových organizáciách poskytujúcich všeobecne prospešné služby na presadzovanie politických a súkromných záujmov",
+   "tlac": "792",
+   "state": "Evidencia",
+   "delivered": "2025-04-03",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Stuška, M. Čavojová, R. Glück, T. Gašpar, D. Karas, M. Lukša, J. Mažgút, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, P. Šuca, Ľ. Vážny, D. Galis, J. Ježík, F. Petro, A. Stredák,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "778",
+   "state": "Evidencia",
+   "delivered": "2025-03-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, I. Šimko, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Róberta PUCIHO, Andrey SZABÓOVEJ, Štefana GAŠPAROVIČA, Zdenky MAČICOVEJ a Michala BARTEKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 447/2015 Z. z. o miestnom poplatku za rozvoj a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 25/2025 Z. z. Stavebný zákon a o zmene a doplnení niektorých zákonov (Stavebný zákon)",
+   "tlac": "747",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": "2025-05-28",
+   "sponsors": "M. Bartek, Š. Gašparovič, Z. Mačicová, R. Puci, A. Szabóová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky (Navrhovateľ oznámil listom z 24. marca 2025 späťvzatie návrhu na zmeny v zložení výborov a delegácie.)",
+   "tlac": "708",
+   "state": "Evidencia",
+   "delivered": "2025-02-07",
+   "approved": null,
+   "sponsors": "M. Bartek, J. Blcháč, B. Becík, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabóová, I. Šimko, D. Tittel, E.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k právoplatnému rozhodnutiu súdu za spáchanie trestného činu daňového podvodu bývalým prezidentom Slovenskej republiky Andrejom Kiskom",
+   "tlac": "580",
+   "state": "Evidencia",
+   "delivered": "2024-11-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, R. Glück, M. Čavojová, M. Stuška, T. Gašpar, J. Mažgút, Z. Plevíková, D. Karas, M. Lukša, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "472",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, J. Krúpa, V. Ledecký, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, S. Migaľ, P. Náhlik, A. Nováková, P.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedníčky Výboru Národnej rady Slovenskej republiky pre vzdelávanie, vedu, mládež a šport",
+   "tlac": "91",
+   "state": "Evidencia",
+   "delivered": "2023-11-29",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, M. Moško, P. Náhlik, A. Nováková, S. Petrík, P. Puškárová, P. Slyško, Z. Svoboda, R. Šalitroš,",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-09-18",
+   "by": "Nováková, Alena",
+   "tlac": "1333",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 448/2008 Z. z. o sociálnych službách a o zmene a doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 61,
+   "voteId": null,
+   "id": "4586"
+  },
+  {
+   "date": "2026-09-18",
+   "by": "Nováková, Alena",
+   "tlac": "1333",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 448/2008 Z. z. o sociálnych službách a o zmene a doplnení zákona č. 455/1991 Zb. o živnostenskom podnikaní (živnostenský zákon) v znení neskorších predpisov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 61,
+   "voteId": null,
+   "id": "4587"
+  },
+  {
+   "date": "2026-09-15",
+   "by": "Puškárová, Paula",
+   "tlac": "1252",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Pauly PUŠKÁROVEJ, Ľubice LAŠŠÁKOVEJ, Aleny NOVÁKOVEJ, Jozefa CECHA a Zdenky MAČICOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 36/2005 Z. z. o rodine a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4580"
+  },
+  {
+   "date": "2026-05-26",
+   "by": "Raši, Richard",
+   "tlac": "1237",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4551"
+  },
+  {
+   "date": "2026-04-14",
+   "by": "Mačicová, Zdenka",
+   "tlac": "1142",
+   "title": "Vládny návrh zákona o rovnakom odmeňovaní mužov a žien za rovnakú prácu alebo za prácu rovnakej hodnoty a o zmene a doplnení niektorých zákonov",
+   "session": 49,
+   "voteId": null,
+   "id": "4535"
+  },
+  {
+   "date": "2026-02-05",
+   "by": "Svoboda, Zdenko",
+   "tlac": "1024",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 483/2001 Z. z. o bankách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 46,
+   "voteId": null,
+   "id": "4518"
+  },
+  {
+   "date": "2025-09-09",
+   "by": "Šimko, Igor",
+   "tlac": "817",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 251/2012 Z. z. o energetike a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 39,
+   "voteId": null,
+   "id": "4381"
+  },
+  {
+   "date": "2024-11-27",
+   "by": "Podmanický, Ján",
+   "tlac": "528",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "session": 23,
+   "voteId": null,
+   "id": "4276"
+  },
+  {
+   "date": "2024-11-27",
+   "by": "Podmanický, Ján",
+   "tlac": "528",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Jána FERENČÁKA na vydanie zákona, ktorým sa dopĺňa zákon č. 583/2004 Z. z. o rozpočtových pravidlách územnej samosprávy a o zmene a doplnení niektorých zákonov",
+   "session": 23,
+   "voteId": null,
+   "id": "4278"
+  },
+  {
+   "date": "2024-11-07",
+   "by": "Ferenčák, Ján",
+   "tlac": "446",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andreja DANKA, Milana GARAJA, Dagmar KRAMPLOVEJ a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 543/2002 Z. z. o ochrane prírody a krajiny v znení neskorších predpisov (Navrhovateľom tohto návrhu zákona bol aj poslanec Rudolf Huliak, ktorý listom zo 7. novembra 2024 oznámil, že berie späť svoj podpis pod týmto návrhom zákona.)",
+   "session": 22,
+   "voteId": null,
+   "id": "4268"
+  },
+  {
+   "date": "2024-04-17",
+   "by": "Mačicová, Zdenka",
+   "tlac": "137",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 12,
+   "voteId": null,
+   "id": "4133"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [
+  "Talamone, s.r.o., Kapitulská 454/12, Trnava"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49380,
+  "incomeOther": 9792,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "STAROSTKA (OBEC KOŠÚTY)"
+  ],
+  "realEstateCount": 2,
+  "realEstateKinds": {
+   "Rodinný dom": 1,
+   "Záhrada": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Zdenka.Macicova"
+ },
+ "at": "2026-11-26T00:20:03+00:00"
+}

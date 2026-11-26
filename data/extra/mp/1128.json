@@ -1,0 +1,1224 @@
+{
+ "id": "1128",
+ "excuses": [
+  {
+   "from": "2023-11-23",
+   "to": "2023-11-24",
+   "days": [
+    "2023-11-23",
+    "2023-11-24"
+   ],
+   "reason": "choroba"
+  },
+  {
+   "from": "2024-06-21",
+   "to": "2024-06-21",
+   "days": [
+    "2024-06-21"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-10-25",
+   "to": "2024-10-25",
+   "days": [
+    "2024-10-25"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Pracovná cesta Odesa (UA) - Black Sea Security Forum - United for Ukraine Group)"
+  },
+  {
+   "from": "2025-09-16",
+   "to": "2025-09-16",
+   "days": [
+    "2025-09-16"
+   ],
+   "reason": "iný dôvod (Pracovné dôvody-regióny)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedníčke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "1580",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-10",
+   "approved": null,
+   "sponsors": "Z. Jaurová, B. Jurík, Z. Mesterová, L. Plaváková, G. Gregorová, I. Kosová, N. Nash, T. Stohlová, V. Šrobová, Z. Števulová, O. Prostredník, D. Luščíková, V. Veslárová, R. Dubovický, M. Sabo, D. Dej, T. Gažovičová, M. Dubéci, D. Kleinert, M. Lackovič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1545",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-09-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, O. Dvořák, J. Hargaš, B. Jurík, T. Gažovičová, S. Petrík, L. Plaváková, O. Prostredník, J. Spišiak, T. Stohlová, V",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedníčke vlády Slovenskej republiky Denise SAKOVEJ, poverenej riadením Ministerstva hospodárstva Slovenskej republiky",
+   "tlac": "1544",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-09-14",
+   "approved": null,
+   "sponsors": "I. Dušenka, J. Jakab, I. Matovič, L. Bužo, G. Grendel, M. Krajčí, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová, V. Remišová, J. Pročko, O. Dvořák, J. Hargaš, B. Jurík, L. Plaváková, O. Prostredník, S. Petrík, T. Gažovičová, J. Spišiak, V. Šrobová, T.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany ŠTEVULOVEJ, Lucie PLAVÁKOVEJ a Ondreja PROSTREDNÍKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 36/2005 Z. z. o rodine v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1528",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, O. Prostredník, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany ŠTEVULOVEJ, Lucie PLAVÁKOVEJ a Jaroslava SPIŠIAKA na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zvýšením ochrany osôb pred domácim násilím",
+   "tlac": "1527",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, J. Spišiak, Z. Števulová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany ŠTEVULOVEJ a Lucie PLAVÁKOVEJ na vydanie zákona o príspevku na okamžitú pomoc obetiam domáceho násilia a o doplnení niektorých zákonov",
+   "tlac": "1526",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, Z. Števulová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1504",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "1503",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona o ústavných orgánoch kontroly hospodárskych záujmov Slovenskej republiky, a ktorým sa mení Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1502",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "1501",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 181/2014 Z. z. o volebnej kampani a o zmene a doplnení zákona č. 85/2005 Z. z. o politických stranách a politických hnutiach v znení neskorších predpisov v znení neskorších predpisov",
+   "tlac": "1500",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 153/2001 Z. z. o prokuratúre v znení neskorších predpisov",
+   "tlac": "1499",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1498",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, Z. Mesterová, L. Plaváková, J. Spišiak, M. Šimečka, Z. Števulová, B. Vančo",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Gréty GREGOROVEJ, Tiny GAŽOVIČOVEJ a Beáty JURÍK na prijatie uznesenia Národnej rady Slovenskej republiky k zavedeniu pravidelnej Správy o odlive ľudí zo Slovenskej republiky a ich návrate",
+   "tlac": "1492",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "T. Gažovičová, G. Gregorová, B. Jurík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 192/2023 Z. z. o registri trestov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1486",
+   "state": "I. čítanie",
+   "delivered": "2026-08-27",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, I. Kosová, N. Nash, L. Plaváková, O. Prostredník, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Richardovi TAKÁČOVI, poverenému riadením Ministerstva pôdohospodárstva a rozvoja vidieka Slovenskej republiky",
+   "tlac": "1412",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-05",
+   "approved": null,
+   "sponsors": "K. Galek, B. Gröhling, A. Hlina, M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, T. Szalay, M. Viskupič, M. Čaučík, J. Horecký, R. Krátky, B. Škripek, L. Bužo, I. Dušenka, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Po",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Jaroslava SPIŠIAKA a Tomáša VALÁŠKA na vydanie zákona, ktorým sa mení zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1405",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-06-02",
+   "approved": null,
+   "sponsors": "B. Jurík, J. Spišiak, T. Valášek",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky",
+   "tlac": "1401",
+   "state": "Evidencia",
+   "delivered": "2026-05-28",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Gregorová, J. Hanuliaková, J. Hargaš, Z. Jaurová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, N. Nash, S. Petrík, L. Plaváková, O. Prostredník, M. Sabo, J. S",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky o skrátení volebného obdobia Národnej rady Slovenskej republiky",
+   "tlac": "1398",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, O. Dvořák, Ľ. Galko, T. Gažovičová, G. Gregorová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, Z. Mesterová, N. Nash, S. Petrík, L. Plaváková, O. Prostredník, M. Sabo",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Zuzany MESTEROVEJ, Zuzany ŠTEVULOVEJ a Beáty JURÍK na odvolanie poslanca Národnej rady Slovenskej republiky Tibora GAŠPARA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1389",
+   "state": "Evidencia",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany MESTEROVEJ a Zuzany ŠTEVULOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky o ohrození eurofondov pre ľudí na Slovensku",
+   "tlac": "1388",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Zuzany ŠTEVULOVEJ, Zuzany MESTEROVEJ a Beáty JURÍK na prijatie uznesenia Národnej rady Slovenskej republiky k návrhu na zmenu Etického kódexu poslanca Národnej rady Slovenskej republiky",
+   "tlac": "1358",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, L. Plaváková, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Zuzany ŠTEVULOVEJ, Zuzany MESTEROVEJ a Beáty JURÍK na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "1357",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, L. Plaváková, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Simony PETRÍK, Štefana KIŠŠA, Dariny LUŠČÍKOVEJ a Lucie PLAVÁKOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1355",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "B. Jurík, Š. Kišš, D. Luščíková, S. Petrík, L. Plaváková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany ŠTEVULOVEJ, Lucie PLAVÁKOVEJ a Ondreja PROSTREDNÍKA na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s poskytovaním pomoci osobám zažívajúcim násilie",
+   "tlac": "1354",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, O. Prostredník, Z. Števulová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky ku kríze bývania",
+   "tlac": "1353",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "M. Dubéci, J. Hargaš, B. Jurík, Z. Mesterová, S. Petrík, M. Šimečka, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja PROSTREDNÍKA, Lucie PLAVÁKOVEJ, Zuzany ŠTEVULOVEJ, Beáty JURÍK a Zory JAUROVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k aktuálnej situácii Bahájskeho spoločenstva v Iráne",
+   "tlac": "1345",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "Z. Jaurová, B. Jurík, L. Plaváková, O. Prostredník, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Zuzany MESTEROVEJ, Beáty JURÍK, Zuzany ŠTEVULOVEJ a Martina DUBÉCIHO na prijatie uznesenia Národnej rady Slovenskej republiky o závažnej situácii v Pôdohospodárskej platobnej agentúre",
+   "tlac": "1308",
+   "state": "Evidencia",
+   "delivered": "2026-04-29",
+   "approved": null,
+   "sponsors": "M. Dubéci, B. Jurík, Z. Mesterová, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ingrid KOSOVEJ, Beáty JURÍK a Lucie PLAVÁKOVEJ na vydanie zákona o finančnom odškodnení obetí sterilizácií v rozpore s právom a o doplnení zákona Slovenskej národnej rady č. 71/1992 Zb. o súdnych poplatkoch a poplatku za výpis z registra trestov v znení neskorších predpisov",
+   "tlac": "1298",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Kosová, L. Plaváková",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany MESTEROVEJ, Zuzany ŠTEVULOVEJ, Martina DUBÉCIHO a Michala ŠIMEČKU na prijatie uznesenia Národnej rady Slovenskej republiky k závažným podozreniam o ovplyvňovaní volieb 2023 do Národnej rady Slovenskej republiky v spojení s cudzou mocou",
+   "tlac": "1297",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "M. Dubéci, B. Jurík, Z. Mesterová, M. Šimečka, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ a Michala SABA na vydanie zákona o príspevku na úhradu nákladov na bývanie",
+   "tlac": "1241",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, M. Sabo",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Ingrid KOSOVEJ a Gréty GREGOROVEJ na vydanie zákona o niektorých opatreniach na zníženie stavu menštruačnej chudoby",
+   "tlac": "1240",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "G. Gregorová, B. Jurík, I. Kosová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k tragédii zo 17. marca 2026 v osade v obci Mirkovce",
+   "tlac": "1236",
+   "state": "Evidencia",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, I. Kosová, L. Plaváková, Z. Števulová, V. Tankó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Tibora GAŠPARA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1208",
+   "state": "Evidencia",
+   "delivered": "2026-03-13",
+   "approved": null,
+   "sponsors": "M. Šimečka, D. Kleinert, Z. Mesterová, N. Nash, D. Luščíková, V. Šrobová, J. Spišiak, O. Prostredník, J. Hargaš, Š. Kišš, T. Valášek, V. Veslárová, Z. Števulová, M. Lackovič, O. Dvořák, B. Jurík, S. Petrík, M. Sabo, T. Stohlová, Z. Jaurová, T. Gažov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany MESTEROVEJ a Zuzany ŠTEVULOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky o vyslovení podpory obetiam Jeffreyho Epsteina",
+   "tlac": "1181",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-02-03",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ingrid KOSOVEJ a Beáty JURÍK na prijatie uznesenia Národnej rady Slovenskej republiky k odstráneniu segregácie v školách a školských zariadeniach",
+   "tlac": "1158",
+   "state": "Evidencia",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Kosová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany MESTEROVEJ, Zuzany ŠTEVULOVEJ a Michala TRUBANA na prijatie uznesenia Národnej rady Slovenskej republiky k zisteniam Európskej prokuratúry o daňových podvodoch s prepojením na Slovensko",
+   "tlac": "1157",
+   "state": "Evidencia",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "B. Jurík, Z. Mesterová, Z. Števulová, M. Truban",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zlyhaniu ministerky hospodárstva Slovenskej republiky pri adresnej energopomoci",
+   "tlac": "1138",
+   "state": "Evidencia",
+   "delivered": "2025-12-10",
+   "approved": null,
+   "sponsors": "J. Jakab, I. Matovič, R. Mikulec, I. Dušenka, M. Šipoš, J. Pročko, L. Bužo, P. Pollák, A. Škopová, G. Grendel, Z. Mesterová, M. Truban, B. Jurík, L. Plaváková, V. Veslárová, D. Kleinert, M. Lackovič, I. Kosová, G. Gregorová, Z. Jaurová, T. Stohlová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Ireny BIHARIOVEJ a Beáty JURÍK na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1100",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany ŠTEVULOVEJ a Ingrid KOSOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky o nebezpečnej normalizácii prejavov nenávisti, mizogýnie a dešpektu voči ženám a potrebe prevencie a boja s rodovo-podmieneným násilím",
+   "tlac": "1086",
+   "state": "Evidencia",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Kosová, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Simony PETRÍK a Beáty JURÍK na vydanie zákona, ktorým sa mení zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1027",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-09-25",
+   "approved": null,
+   "sponsors": "B. Jurík, S. Petrík, L. Plaváková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Zuzany MESTEROVEJ, Martina DUBÉCIHO a Tomáša VALÁŠKA na prijatie uznesenia Národnej rady Slovenskej republiky zo septembra 2025 k vstupu Ukrajiny do Európskej únie",
+   "tlac": "995",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "M. Dubéci, B. Jurík, Z. Mesterová, T. Valášek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie členky stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "994",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Grendel, J. Hanuliaková, J. Hargaš, J. Jakab, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Krajčí, R. Krátky, M. Lackovič, D. Luščíková, I. Matovič, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Beáty JURÍK a Zory JAUROVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k aktuálnej situácii v Gruzínsku",
+   "tlac": "963",
+   "state": "Evidencia",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "Z. Jaurová, B. Jurík, L. Plaváková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Ireny BIHARlOVEJ, Zuzany ŠTEVULOVEJ, Beáty JURÍK a Ondreja PROSTREDNÍKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a o doplnení zákona č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "952",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, L. Plaváková, O. Prostredník, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ, Zuzany ŠTEVULOVEJ, Dany KLEINERT a Tomáša VALÁŠKA na prijatie uznesenia Národnej rady Slovenskej republiky k návratu unesených ukrajinských detí",
+   "tlac": "927",
+   "state": "Evidencia",
+   "delivered": "2025-08-21",
+   "approved": null,
+   "sponsors": "B. Jurík, D. Kleinert, L. Plaváková, Z. Števulová, T. Valášek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Kamilovi ŠAŠKOVI, poverenému riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "903",
+   "state": "Evidencia",
+   "delivered": "2025-08-08",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, T. Gažovičová, B. Jurík, Š. Kišš, M. Lackovič, D. Luščíková, Z. Mesterová, O. Prostredník, I. Štefunko, Z. Števulová, V. Tankó, B. Vančo, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, P. Stachura, K. Galek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "886",
+   "state": "Evidencia",
+   "delivered": "2025-06-17",
+   "approved": null,
+   "sponsors": "I. Bihariová, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, N. Nash, Z. Mesterová, S. Petrík, L. Plaváková, O. Pr",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Martiny BAJO HOLEČKOVEJ, Beáty JURÍK a Júliusa JAKABA na prijatie uznesenia Národnej rady Slovenskej republiky, ktorým sa zrušuje Uznesenie Národnej rady Slovenskej republiky o odmietnutí sankčnej politiky a obchodných obmedzení voči Ruskej federácii a ochrane ekonomických a energetických záujmov Slovenskej republiky zo dňa 5. júna 2025",
+   "tlac": "881",
+   "state": "Evidencia",
+   "delivered": "2025-06-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Jakab, B. Jurík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k situácii v Gaze (Navrhovateľka vzala listom z 21. októbra 2025 návrh na prijatie uznesenia späť.)",
+   "tlac": "879",
+   "state": "Evidencia",
+   "delivered": "2025-06-03",
+   "approved": null,
+   "sponsors": "M. Dubéci, Z. Jaurová, B. Jurík, L. Plaváková, I. Štefunko, Z. Števulová, T. Valášek, B. Vančo",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Michala TRUBANA, Ivana ŠTEFUNKA a Beáty JURÍK na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s podnikaním osôb mladších ako 18 rokov",
+   "tlac": "848",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "B. Jurík, I. Štefunko, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Simony PETRÍK a Beáty JURÍK na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 365/2004 Z. z. o rovnakom zaobchádzaní v niektorých oblastiach a o ochrane pred diskrimináciou a o zmene a doplnení niektorých zákonov (antidiskriminačný zákon) v znení neskorších predpisov a ktorým sa dopĺňajú niektoré zákony (Navrhovatelia vzali listom z 3. februára 2026 svoj návrh späť.)",
+   "tlac": "836",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "B. Jurík, S. Petrík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK a Michala TRUBANA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov a ktorým sa dopĺňajú niektoré zákony",
+   "tlac": "832",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "B. Jurík, M. Truban",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK a Jany HANULlAKOVEJ na vydanie zákona, ktorým sa mení zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "831",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "J. Hanuliaková, B. Jurík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Viery KALMÁROVEJ a Ingrid KOSOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k zvýšeniu bezpečnosti v školách a školských zariadeniach",
+   "tlac": "801",
+   "state": "Evidencia",
+   "delivered": "2025-04-15",
+   "approved": null,
+   "sponsors": "B. Jurík, V. Kalmárová, I. Kosová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "785",
+   "state": "Evidencia",
+   "delivered": "2025-03-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, M. Šipoš, A. Škopová, J. Pročko, I. Matovič, M. Krajčí, R. Krátky, V. Remišová, R. Vašečka, A. Záborská, R. Mikulec, J. Jakab, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, M. Šmilňák, B. Škripek,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k tretiemu výročiu vojenskej agresie Ruskej Federácie proti Ukrajine",
+   "tlac": "718",
+   "state": "Evidencia",
+   "delivered": "2025-02-24",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, R. Dubovický, T. Gažovičová, J. Hanuliaková, J. Hargaš, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, I. Bihariová, M. Lackovič, D. Luščíková, N. Nash, Z. Mesterová, S. Petrík, L. Plaváková, O. Pr",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "711",
+   "state": "Evidencia",
+   "delivered": "2025-02-12",
+   "approved": null,
+   "sponsors": "D. Dej, M. Sabo, T. Stohlová, M. Truban, V. Veslárová, Š. Kišš, N. Nash, J. Hargaš, V. Kalmárová, I. Kosová, M. Lackovič, M. Šimečka, B. Vančo, I. Štefunko, Z. Jaurová, D. Kleinert, M. Dubéci, O. Dvořák, T. Gažovičová, O. Prostredník, J. Spišiak, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "710",
+   "state": "Evidencia",
+   "delivered": "2025-02-12",
+   "approved": null,
+   "sponsors": "D. Dej, Z. Jaurová, D. Kleinert, J. Hargaš, Š. Kišš, N. Nash, T. Stohlová, M. Truban, V. Veslárová, B. Vančo, I. Štefunko, M. Šimečka, M. Lackovič, I. Kosová, V. Kalmárová, M. Dubéci, R. Dubovický, I. Bihariová, T. Gažovičová, B. Jurík, D. Luščíková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky",
+   "tlac": "697",
+   "state": "Evidencia",
+   "delivered": "2025-01-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Mikloško, P. Stachura, M. Šmilňák, A. Turčanová, J. Horecký, F. Majerský, M. Majerský, I. Janckulík, M. Čaučík, B. Škripek, M. Šimečka, T. Stohlová, M. Sabo, N. Nash, O. Prostredník, J. Hanuliaková, V. Kalmárová, S. Petrík, D. Dej, J. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ a Michala SABA na vydanie zákona o príspevku na úhradu nákladov na bývanie",
+   "tlac": "672",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, M. Sabo",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zahraničnopolitickej orientácii Slovenskej republiky",
+   "tlac": "645",
+   "state": "Evidencia",
+   "delivered": "2025-01-08",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hargaš, B. Jurík, J. Krúpa, M. Šimečka, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "632",
+   "state": "Evidencia",
+   "delivered": "2024-12-03",
+   "approved": null,
+   "sponsors": "F. Majerský, J. Horecký, M. Čaučík, I. Janckulík, F. Mikloško, M. Šmilňák, B. Škripek, A. Turčanová, J. Hajko, M. Šimečka, O. Prostredník, I. Kosová, Z. Jaurová, B. Vančo, V. Veslárová, J. Spišiak, J. Hargaš, J. Hanuliaková, O. Dvořák, B. Jurík, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 3. decembra 2024 svoj návrh späť.)",
+   "tlac": "630",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "M. Šimečka, M. Lackovič, J. Hargaš, J. Spišiak, D. Dej, V. Veslárová, B. Vančo, L. Plaváková, I. Bihariová, R. Dubovický, Z. Števulová, V. Tankó, M. Dubéci, V. Kalmárová, B. Jurík, M. Sabo, T. Stohlová, I. Kosová, Š. Kišš, T. Gažovičová, D. Luščíkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Narodnej rady Slovenskej republiky Beaty JURÍK, Lucie PLAVÁKOVEJ a Zuzany ŠTEVULOVEJ na vydanie zákona o pomoci osobám zažívajúcim násilie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "624",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-26",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, Z. Števulová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ a Zuzany ŠTEVULOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k Medzinárodnému dňu eliminácie násilia páchaného na ženách",
+   "tlac": "623",
+   "state": "Evidencia",
+   "delivered": "2024-11-26",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 27. novembra 2024 svoj návrh späť.)",
+   "tlac": "621",
+   "state": "Evidencia",
+   "delivered": "2024-11-22",
+   "approved": null,
+   "sponsors": "M. Šimečka, N. Nash, D. Luščíková, T. Valášek, M. Sabo, S. Petrík, V. Veslárová, M. Dubéci, D. Dej, V. Šrobová, B. Vančo, L. Plaváková, O. Dvořák, B. Jurík, J. Hanuliaková, J. Hargaš, M. Truban, M. Lackovič, O. Prostredník, T. Gažovičová, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k spolupráci v oblasti bezpečnosti a spravodlivosti",
+   "tlac": "529",
+   "state": "Evidencia",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, T. Valášek, T. Szalay, V. Marcinková, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Majerský, I. Janckulík, J. Hajko, M. Čaučík, M. Dubéci, F. Mikloško, P. Stachura, B. Vančo, Z. Števulová, J. Spišiak, I. Kosová, V. Kalmáro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Beáty JURÍK a Simony PETRÍK na vydanie zákona, ktorým sa mení zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "527",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, S. Petrík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "478",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "O. Dvořák, Z. Mesterová, Z. Števulová, D. Luščíková, J. Spišiak, T. Stohlová, N. Nash, B. Jurík, R. Dubovický, D. Dej, V. Šrobová, O. Prostredník, M. Lackovič, J. Hargaš, V. Veslárová, I. Štefunko, Š. Kišš, I. Kosová, I. Bihariová, T. Gažovičová, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ a Zuzany ŠTEVULOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k útoku na detské zdravotnícke zariadenie Ohmatdyt na Ukrajine",
+   "tlac": "380",
+   "state": "Evidencia",
+   "delivered": "2024-07-15",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, Z. Števulová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ a Michala SABA na vydanie zákona o príspevku na úhradu nákladov na bývanie",
+   "tlac": "343",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, M. Sabo",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK a Dávida DEJA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov a ktorým sa dopĺňajú niektoré zákony",
+   "tlac": "338",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "D. Dej, B. Jurík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "297",
+   "state": "Evidencia",
+   "delivered": "2024-05-02",
+   "approved": null,
+   "sponsors": "O. Dvořák, F. Majerský, P. Stachura, M. Šipoš, V. Tankó, M. Krajčí, Ľ. Galko, P. Pollák, A. Škopová, R. Mikulec, G. Grendel, J. Pročko, R. Krátky, I. Matovič, J. Jakab, O. Prostredník, R. Vašečka, B. Vančo, L. Plaváková, B. Jurík, J. Hargaš, Z. Mest",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Simony PETRÍK a Beáty JURÍK na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 365/2004 Z. z. o rovnakom zaobchádzaní v niektorých oblastiach a o ochrane pred diskrimináciou a o zmene a doplnení niektorých zákonov (antidiskriminačný zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "242",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "B. Jurík, S. Petrík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ, Simony PETRÍK, Beáty JURÍK a Zuzany ŠTEVULOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 300/1993 Z. z. o mene a priezvisku v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré ďalšie zákony",
+   "tlac": "240",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "B. Jurík, S. Petrík, L. Plaváková, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ, Zuzany ŠTEVULOVEJ a Simony PETRÍK na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "238",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "B. Jurík, S. Petrík, L. Plaváková, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k druhému výročiu vojenskej agresie Ruskej federácie proti Ukrajine",
+   "tlac": "200",
+   "state": "Evidencia",
+   "delivered": "2024-02-16",
+   "approved": null,
+   "sponsors": "O. Dostál, A. Hlina, M. Kolíková, J. Krúpa, B. Gröhling, T. Szalay, M. Viskupič, V. Ledecký, T. Valášek, M. Dubéci, Z. Mesterová, B. Jurík, J. Spišiak, P. Stachura, M. Šmilňák, A. Turčanová, F. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "194",
+   "state": "Evidencia",
+   "delivered": "2024-02-06",
+   "approved": null,
+   "sponsors": "L. Plaváková, M. Šimečka, Z. Mesterová, M. Dubéci, B. Jurík, Z. Števulová, I. Štefunko, D. Dej, O. Dvořák, M. Truban, V. Šrobová, M. Sabo, V. Veslárová, J. Hanuliaková, O. Prostredník, S. Petrík, N. Nash, J. Hargaš, T. Gažovičová, D. Luščíková, V. K",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k uzneseniu Európskeho parlamentu o plánovanom zrušení kľúčových protikorupčných štruktúr na Slovensku a jeho dôsledkoch pre právny štát (2023/3021 (R8P)) prijatému dňa 17. januára 2024",
+   "tlac": "186",
+   "state": "Evidencia",
+   "delivered": "2024-01-26",
+   "approved": null,
+   "sponsors": "M. Šimečka, B. Jurík, J. Krúpa, Z. Števulová, T. Valášek, V. Kalmárová, D. Luščíková, B. Vančo, Z. Jaurová, D. Kleinert, B. Škripek, J. Spišiak, T. Gažovičová, Z. Mesterová, M. Lackovič, N. Nash, O. Dostál, D. Dej, M. Kolíková, O. Prostredník, L. Pl",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Andreja DANKA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "180",
+   "state": "Evidencia",
+   "delivered": "2024-01-16",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, M. Čaučík, M. Dubéci, O. Dvořák, T. Gažovičová, J. Hajko, I. Janckulík, B. Jurík, V. Kalmárová, J. Jakab, D. Kleinert, M. Bajo Holečková, J. Hargaš, D. Luščíková, F. Majerský, M. Majerský, Z. Mesterová, S. Petrík, O. Prostredn",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Beáty JURÍK, Lucie PLAVÁKOVEJ a Michala ŠIMEČKU na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "177",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "B. Jurík, L. Plaváková, M. Šimečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslankyne Národnej rady Slovenskej republiky za členku výboru Národnej rady Slovenskej republiky",
+   "tlac": "101",
+   "state": "Evidencia",
+   "delivered": "2023-12-06",
+   "approved": null,
+   "sponsors": "M. Dubéci, S. Petrík, I. Bihariová, D. Dej, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, T. Hellebrandt, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, Z. Mesterová, N. Nash, L. Plaváková, O.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie Ľuboša BLAHU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "26",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-07",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-05-28",
+   "by": "Jurík, Beáta",
+   "tlac": "1227",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 576/2004 Z. z. o zdravotnej starostlivosti, službách súvisiacich s poskytovaním zdravotnej starostlivosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4559"
+  },
+  {
+   "date": "2026-04-14",
+   "by": "Petrík, Simona",
+   "tlac": "1142",
+   "title": "Vládny návrh zákona o rovnakom odmeňovaní mužov a žien za rovnakú prácu alebo za prácu rovnakej hodnoty a o zmene a doplnení niektorých zákonov",
+   "session": 49,
+   "voteId": null,
+   "id": "4534"
+  },
+  {
+   "date": "2025-10-17",
+   "by": "Plaváková, Lucia",
+   "tlac": "939",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 40,
+   "voteId": null,
+   "id": "4448"
+  },
+  {
+   "date": "2025-10-17",
+   "by": "Plaváková, Lucia",
+   "tlac": "939",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 40,
+   "voteId": null,
+   "id": "4449"
+  },
+  {
+   "date": "2025-10-17",
+   "by": "Plaváková, Lucia",
+   "tlac": "939",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 40,
+   "voteId": null,
+   "id": "4450"
+  },
+  {
+   "date": "2025-05-27",
+   "by": "Kosová, Ingrid",
+   "tlac": "727",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 5/2004 Z. z. o službách zamestnanosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 35,
+   "voteId": null,
+   "id": "4348"
+  },
+  {
+   "date": "2024-10-23",
+   "by": "Jurík, Beáta",
+   "tlac": "397",
+   "title": "Vládny návrh zákona o niektorých opatreniach súvisiacich s riadením kótovanej spoločnosti",
+   "session": 22,
+   "voteId": null,
+   "id": "4237"
+  },
+  {
+   "date": "2024-07-16",
+   "by": "Jurík, Beáta",
+   "tlac": "375",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "session": 16,
+   "voteId": null,
+   "id": "4200"
+  },
+  {
+   "date": "2024-02-06",
+   "by": "Jurík, Beáta",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4114"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Jurík, Beáta",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4104"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Jurík, Beáta",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4105"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Jurík, Beáta",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4109"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Jurík, Beáta",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4110"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Plaváková, Lucia",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4112"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4028",
+   "title": "vo veci účasti JUDr. Miroslava Lajčáka na Valnom zhromaždení OSN",
+   "state": "Rokovanie o interpelácii",
+   "date": "2026-09-24",
+   "to": "Blanár, Juraj"
+  },
+  {
+   "id": "4020",
+   "title": "vo veci vydávania víz občanom Ruskej federácie",
+   "state": "Rokovanie o interpelácii",
+   "date": "2026-09-15",
+   "to": "Blanár, Juraj"
+  },
+  {
+   "id": "3975",
+   "title": "vo veci utajovania informácií o vývoze zbraní do Izraela",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-05-28",
+   "to": "Kaliňák, Robert"
+  },
+  {
+   "id": "3976",
+   "title": "vo veci využívania hracích konzol príslušníkmi OS SR",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-05-28",
+   "to": "Kaliňák, Robert"
+  },
+  {
+   "id": "3914",
+   "title": "vo veci valorizácie invalidných výsluhových dôchodkov vojakov",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-01-21",
+   "to": "Kaliňák, Robert"
+  },
+  {
+   "id": "3912",
+   "title": "vo veci riešenia menštruačnej chudoby na školách",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-01-13",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "3895",
+   "title": "vo veci transpozície smernice o rovnakom odmeňovaní",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-10-01",
+   "to": "Tomáš, Erik"
+  },
+  {
+   "id": "3896",
+   "title": "vo veci transpozície smernice o boji proti násiliu na ženách a domácemu násiliu",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-10-01",
+   "to": "Susko, Boris"
+  },
+  {
+   "id": "3897",
+   "title": "vo veci právnej analýzy o dopadoch odstrihnutia sa od ruského plynu",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-10-01",
+   "to": "Saková, Denisa"
+  },
+  {
+   "id": "2866",
+   "title": "vo veci kompenzácie dopadov ciel na náš priemysel",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-07-29",
+   "to": "Saková, Denisa"
+  },
+  {
+   "id": "2867",
+   "title": "vo veci analýzy dopadov 18. sankčného balíka na ekonomiku a hospodárstvo SR",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-07-29",
+   "to": "Blanár, Juraj"
+  },
+  {
+   "id": "2868",
+   "title": "vo veci krokov slovenskej diplomacie v súvislosti s vojnou v Gaze",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-07-29",
+   "to": "Blanár, Juraj"
+  },
+  {
+   "id": "2869",
+   "title": "vo veci tragédie v Spišskom Štiavniku",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-07-29",
+   "to": "Šutaj Eštok, Matúš"
+  },
+  {
+   "id": "2870",
+   "title": "vo veci tzv. návratových konaní",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-07-29",
+   "to": "Susko, Boris"
+  },
+  {
+   "id": "2828",
+   "title": "vo veci opatrení v súvislosti s vraždou v Spišskej Novej Vsi",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-02-19",
+   "to": "Šutaj Eštok, Matúš"
+  },
+  {
+   "id": "2822",
+   "title": "vo veci prešetrenia nevhodného správania rektora Akadémie PZ",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-02-03",
+   "to": "Šutaj Eštok, Matúš"
+  },
+  {
+   "id": "2823",
+   "title": "vo veci závažných odhalení existencie hromadných skupín na sociálnych sieťach zdieľajúcich sexuálny obsah",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2025-02-03",
+   "to": "Šutaj Eštok, Matúš"
+  }
+ ],
+ "trips": [
+  {
+   "from": "2026-05-06",
+   "to": "2026-05-06",
+   "desc": "Brusel - Poslankyňa NRSR Beáta Jurík sa zúčastní Konferencie s názvom “The role of the EU and its Member States in supporting global accountability mechanisms, including universal jurisdiction, international courts and special tribunals“."
+  },
+  {
+   "from": "2026-02-15",
+   "to": "2026-02-16",
+   "desc": "Budapešť- Poslanci NR SR Michal Stuška, Dušan Tittel, Branislav Škripek a poslankyňa NR SR Beata Jurík sa zúčastnia na Stretnutí parlamentných výborov krajín V4 pre európske záležitosti v Maďarsku."
+  },
+  {
+   "from": "2025-12-10",
+   "to": "2025-12-11",
+   "desc": "Brusel - Podpredsedníčka Výboru NR SR pre európske záležitosti Beáta Jurík sa zúčastní na konferencii s názvom \"LIBE Interparliamentary Committee Meeting on The situation od the Rule of Law in the EU\" v Belgicku."
+  },
+  {
+   "from": "2025-11-30",
+   "to": "2025-12-01",
+   "desc": "Kodaň – predseda Výboru pre európske záležitosti Národnej rady Slovenskej republiky Ján Ferenčák, podpredsedníčka CEZ NR SR Beáta Jurík a poslanci Branislav Škripek a Dušan Tittel sa zúčastnia na Plenárnom zasadnutí COSAC v Dánskom kráľovstve."
+  },
+  {
+   "from": "2025-10-05",
+   "to": "2025-10-08",
+   "desc": "Kyjev-Poslankyňa NR SR Beáta Jurík a poslanci Ján Ferenčák a Ján Hargaš sa zúčastnia na Stretnutí s predsedníčkou Výboru U1 do EÚ a členmi partnerského výboru Verkhovnej Rady Ekrajiny v Ukrajine."
+  },
+  {
+   "from": "2025-08-26",
+   "to": "2025-08-28",
+   "desc": "Kodaň- Poslankyňa NR SR Beata Jurík a poslanec Ján Mažgút sa zúčastnia na Medziparlamentnej konferencii pre spoločnú zahraničnú a bezpečnostnú politiku (CFSP) a spoločnú bezpečnostnú a obrannú politiku (CSDP) v Dánsku."
+  },
+  {
+   "from": "2025-06-08",
+   "to": "2025-06-09",
+   "desc": "Varšava- Poslankyňa NR SR Beata Jurík a poslanci Ján Ferenčák a Ján Hargaš sa zúčastnia na Stretnutí parlamentných výborov pre európske záležitosti- Conference of Parliamentary Committees for Union Affairs of Parliaments of the European Union (COSAC) ."
+  },
+  {
+   "from": "2025-03-23",
+   "to": "2025-03-25",
+   "desc": "Varšava- Poslanci Beata Jurík, Ján Mažgút a Tomáš Valášek sa zúčastnia na Medziparlamentnej konferencii pre spoločnú zahraničnú a bezpečnostnú politiku a spoločnú bezpečnostnú a obrannú politiku."
+  },
+  {
+   "from": "2025-03-05",
+   "to": "2025-03-06",
+   "desc": "Brusel- Poslankyne NR SR Lucia Plaváková, Beata Jurík a poslanec Ján Mažgút sa zúčastnia na Zasadnutí medziparlamentného výboru pri príležitosti Medzinárodného dňa žien 2025 na tému Posilnenie programu žien, mieru a bezpečnosti- Presadzovanie práv žien pri obrane, bezpečnosti a budovaní mieru v Belgicku."
+  },
+  {
+   "from": "2024-12-16",
+   "to": "2024-12-17",
+   "desc": "Praha - Poslankyňa NR SR Beáta Jurík a poslanci NR SR Michal Stuška a Dušan Tittel sa zúčastnia na Pracovnej návšteve partnerského výboru v Českej republike."
+  },
+  {
+   "from": "2024-11-11",
+   "to": "2024-11-12",
+   "desc": "Brusel - Poslankyne NR SR Beáta Jurík a Zuzana Plevíková sa zúčastnia na Stretnutí parlamentnej skupiny Europol v Belgicku."
+  },
+  {
+   "from": "2024-10-27",
+   "to": "2024-10-29",
+   "desc": "Budapešť - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák, poslankyňa NR SR Beáta Jurík a poslanci NR SR Ján Mažgút a Dušan Tittel sa zúčastnia na Medziparlamentnej výmene informácií EÚ v Maďarsku."
+  },
+  {
+   "from": "2024-10-23",
+   "to": "2024-10-24",
+   "desc": "Riga - Podpredseda NR SR Peter Žiga, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a poslankyňa NR SR Beáta Jurík sa zúčastnia na Pracovnej návšteve podpredsedu Národnej rady SR p. Petra Žigu v Lotyšskej republike."
+  },
+  {
+   "from": "2024-03-24",
+   "to": "2024-03-26",
+   "desc": "Brusel - Predseda Výboru NR SR pre európske záležitosti Ján Ferenčák, poslankyňa NR SR Beáta Jurík a poslanci NR SR Michal Stuška a Dušan Tittel sa zúčastnia na Konferencii predsedov parlamentných výborov pre európske záležitosti - COSAC v Belgicku."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 51233,
+  "incomeOther": 675,
+  "employment": "MINISTERSTVO OBRANY",
+  "business": "nevykonávam",
+  "roles": [
+   "PODPREDSEDNÍČKA HNUTIA (PROGRESÍVNE SLOVENSKO )"
+  ],
+  "realEstateCount": 1,
+  "realEstateKinds": {
+   "Pozemok": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Automobil"
+  ],
+  "rights": [],
+  "obligations": [
+   "Úver"
+  ],
+  "userId": "Beata.Jurik"
+ },
+ "at": "2026-11-25T23:50:08+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (J. Habánik, K. Janas, P. Puškárová)",
+ "gestor": "Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1458 zo dňa 28. 4. 2026. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre vzdelávan",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR dňa 2. 6. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1563 zo dňa 2. 6. 2026",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 11. 6. 2026 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (16. 6. 2026), číslo 121/2026. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to ha",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:26:15+00:00"
+}

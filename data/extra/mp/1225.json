@@ -1,0 +1,265 @@
+{
+ "id": "1225",
+ "excuses": [
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-24",
+    "2026-04-25",
+    "2026-04-26",
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Účasť na konferencii, účasť na komisii pre oceňovanie pedagógov pri PSK)"
+  },
+  {
+   "from": "2026-04-30",
+   "to": "2026-04-30",
+   "days": [
+    "2026-04-30"
+   ],
+   "reason": "iný dôvod (Práca v regióne, účasť na stretnutiach s učiteľmi škôl)"
+  },
+  {
+   "from": "2026-05-04",
+   "to": "2026-05-04",
+   "days": [
+    "2026-05-04"
+   ],
+   "reason": "iný dôvod (Práca v regióne, účasť na stretnutiach s učiteľmi škôl, účasť na rokovaní Rady partnerstva PSK)"
+  },
+  {
+   "from": "2026-05-07",
+   "to": "2026-05-07",
+   "days": [
+    "2026-05-07"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Účasť na štátnych skúškach v komisii)"
+  },
+  {
+   "from": "2026-06-05",
+   "to": "2026-06-05",
+   "days": [
+    "2026-06-05"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-06-12",
+   "to": "2026-06-15",
+   "days": [
+    "2026-06-12",
+    "2026-06-13",
+    "2026-06-14",
+    "2026-06-15"
+   ],
+   "reason": "iný dôvod (Aktivity v regióne)"
+  },
+  {
+   "from": "2026-06-17",
+   "to": "2026-06-17",
+   "days": [
+    "2026-06-17"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-09-17",
+   "to": "2026-09-18",
+   "days": [
+    "2026-09-17",
+    "2026-09-18"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  },
+  {
+   "from": "2026-09-22",
+   "to": "2026-09-22",
+   "days": [
+    "2026-09-22"
+   ],
+   "reason": "iný dôvod (Účasť na akcii v regióne)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Účasť na podujatí v regióne)"
+  },
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Účasť na konferencii)"
+  },
+  {
+   "from": "2026-10-08",
+   "to": "2026-10-09",
+   "days": [
+    "2026-10-08",
+    "2026-10-09"
+   ],
+   "reason": "iný dôvod (Povinnosti v regióne)"
+  },
+  {
+   "from": "2026-10-12",
+   "to": "2026-10-12",
+   "days": [
+    "2026-10-12"
+   ],
+   "reason": "iný dôvod (Účasť na zastupiteľstve PSK)"
+  },
+  {
+   "from": "2026-10-15",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-15",
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Práca v regióne, návšteva u lekára)"
+  },
+  {
+   "from": "2026-11-05",
+   "to": "2026-11-06",
+   "days": [
+    "2026-11-05",
+    "2026-11-06"
+   ],
+   "reason": "iný dôvod (Organizácia a účasť na konferencii v Humennom)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Výjazdové rokovanie výboru pre RR a VS Domaša)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k postoju slovenských poslancov Európskeho parlamentu k návratu násilne deportovaných ukrajinských detí",
+   "tlac": "1590",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-18",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi DRUCKEROVI, poverenému riadením Ministerstva školstva, výskumu, vývoja a mládeže Slovenskej republiky",
+   "tlac": "1409",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-04",
+   "approved": null,
+   "sponsors": "J. Horecký, F. Majerský, M. Majerský, G. Paľa, R. Krátky, M. Kolejáková, B. Škripek, A. Turčanová, M. Čaučík, F. Mikloško, I. Janckulík, M. Šipoš, R. Vašečka, G. Grendel, V. Remišová, I. Matovič, R. Mikulec, I. Dušenka, J. Pročko, T. Gažovičová, I.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena a náhradného člena stálych delegácií Národnej rady Slovenskej republiky",
+   "tlac": "1293",
+   "state": "Evidencia",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, F. Majerský, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek, A. Turčanová, L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-11-24",
+   "by": "Horecký, Ján",
+   "tlac": "1448",
+   "title": "Vládny návrh zákona o integrovanom systéme ochrany pred radikalizáciou a mobilizáciou k násiliu a o zmene a doplnení niektorých zákonov",
+   "session": 66,
+   "voteId": null,
+   "id": "4621"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "pri ujatí sa funkcie",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 0,
+  "incomeOther": 0,
+  "employment": "PREŠOVSKÁ UNIVERZITA V PREŠOVE",
+  "business": "nevykonávam",
+  "roles": [
+   "POSLANEC (PREŠOVSKÝ SAMOSPRÁVNY KRAJ)",
+   "ČLEN SPRÁVNEJ RADY (INOVAČNÉ PARTNERSKÉ CENTRUM)"
+  ],
+  "realEstateCount": 10,
+  "realEstateKinds": {
+   "Trvalý trávnatý porast": 2,
+   "Orná pôda": 3,
+   "Zastavaná plocha a nádvorie": 1,
+   "Ovocný sad": 1,
+   "Záhrada": 1,
+   "Rodinný dom - prízemie": 1,
+   "Rodinný dom - 1. poschodie": 1
+  },
+  "movablesCount": 2,
+  "movables": [
+   "Osobný automobil",
+   "Osobný automobil"
+  ],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "Gabriel.Pala"
+ },
+ "at": "2026-11-26T00:30:30+00:00"
+}

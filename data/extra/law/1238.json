@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (J. Blcháč, D. Demečko, Z. Mačicová, R. Malatinec, R. Puci, R. Raši)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1446 zo dňa 23. 4. 2026. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre verejnú správu a region",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR dňa 17. 6. 2026. Pozmeňujúce a doplňujúce návrhy: 11. 06. 2026 Šimko, Igor Detail návrhu 9_1238-Igor Šimko (253 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1601 zo dňa 17. 6. 2026",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 23. 6. 2026 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (24. 6. 2026), číslo 144/2026. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to ha",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:26:36+00:00"
+}

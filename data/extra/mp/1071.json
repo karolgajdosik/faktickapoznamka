@@ -1,0 +1,52 @@
+{
+ "id": "1071",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 55681,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 23,
+  "realEstateKinds": {
+   "Lesný pozemok": 2,
+   "Orná pôda, lesný pozemok, trvalý trávny porast, záhrada": 1,
+   "Orná pôda": 3,
+   "Zastavaná plocha a nádvorie": 5,
+   "Záhrada": 1,
+   "Ostatná plocha": 3,
+   "Trvalý trávny porast": 1,
+   "Polyfunkčná budova garáž": 1,
+   "Podiel priestoru na spoločných častiach": 2,
+   "Zastavaná plocha a nádvorie, ostatná plocha": 1,
+   "Apartmán": 1,
+   "Podiel na spoločných priestoroch": 1,
+   "Apartmánový dom": 1
+  },
+  "movablesCount": 3,
+  "movables": [
+   "Vybavenie domu",
+   "Hodiny",
+   "Umelecké diela zberateľskej hodnoty"
+  ],
+  "rights": [
+   "Finančný vklad v banke",
+   "Pohľadávky"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Pôžička",
+   "Hypotekárny úver"
+  ],
+  "userId": "Richard.Takáč"
+ },
+ "at": "2026-11-26T00:54:41+00:00"
+}

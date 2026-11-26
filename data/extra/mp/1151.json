@@ -1,0 +1,316 @@
+{
+ "id": "1151",
+ "excuses": [
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Príprava podkladov na výbor a iné pracovné povinnosti poslanca)"
+  },
+  {
+   "from": "2024-06-11",
+   "to": "2024-06-11",
+   "days": [
+    "2024-06-11"
+   ],
+   "reason": "iný dôvod (Návšteva lekára)"
+  },
+  {
+   "from": "2024-07-15",
+   "to": "2024-07-16",
+   "days": [
+    "2024-07-15",
+    "2024-07-16"
+   ],
+   "reason": "iný dôvod (Návšteva lekára)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-11-29",
+   "to": "2024-11-29",
+   "days": [
+    "2024-11-29"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2024-12-02",
+   "to": "2024-12-02",
+   "days": [
+    "2024-12-02"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Zdravotné problémy)"
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-18",
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-09-19",
+   "to": "2025-09-19",
+   "days": [
+    "2025-09-19"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2025-11-28",
+   "to": "2025-11-28",
+   "days": [
+    "2025-11-28"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-12-01",
+   "to": "2025-12-01",
+   "days": [
+    "2025-12-01"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-24",
+   "days": [
+    "2026-04-24"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (Iný závažný dôvod)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Iný závažný dôvod)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Iné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výborov Národnej rady Slovenskej republiky",
+   "tlac": "1567",
+   "state": "Evidencia",
+   "delivered": "2026-10-16",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, P. Kotlár, M. Kováč, D. Kramplová, A. Lučanský, R. Michelko, D. Muňko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k vykonaniu auditu a k prijatiu systémových riadiacich a kontrolných opatrení pri čerpaní dotačných a grantových finančných prostriedkov v ústredných orgánoch štátnej správy za obdobie rokov 2020 – 2024",
+   "tlac": "1014",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "T. Gašpar, J. Habánik, J. Richter, M. Saloň, F. Petro, Z. Plevíková, V. Zahorčák, B. Lešo, D. Karas, D. Jarjabek, I. Válek, D. Muňko, P. Goga, P. Sokol, J. Kačmár, J. Kvorka, A. Sitkár, J. Sedlák, R. Glück, J. Horváth, P. Šuca, J. Mažgút, J. Ježík,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 68/1997 Z. z. o Matici slovenskej v znení neskorších predpisov",
+   "tlac": "821",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-07",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, P. Kotlár, D. Kramplová, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "802",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-04-15",
+   "approved": "2025-09-30",
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, D. Kramplová, P. Kotlár, A. Lučanský, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky",
+   "tlac": "629",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, P. Kotlár, D. Kramplová, A. Lučanský, R. Michelko, D. Muňko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k právoplatnému rozhodnutiu súdu za spáchanie trestného činu daňového podvodu bývalým prezidentom Slovenskej republiky Andrejom Kiskom",
+   "tlac": "580",
+   "state": "Evidencia",
+   "delivered": "2024-11-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, R. Glück, M. Čavojová, M. Stuška, T. Gašpar, J. Mažgút, Z. Plevíková, D. Karas, M. Lukša, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Petra KOTLÁRA a Milana GARAJA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 299/2020 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "526",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-03",
+   "approved": "2025-05-29",
+   "sponsors": "M. Garaj, P. Kotlár, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Michala ŠIMEČKU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "464",
+   "state": "Evidencia",
+   "delivered": "2024-09-05",
+   "approved": null,
+   "sponsors": "J. Richter, T. Gašpar, A. Hambálek, Z. Plevíková, J. Kvorka, I. Hazucha, J. Mažgút, A. Stredák, Z. Matejičková, M. Lukša, M. Čavojová, P. Sokol, F. Petro, B. Lešo, M. Saloň, J. Sedlák, J. Vaľová, I. Válek, Ľ. Vážny, V. Baláž, J. Baška, A. Danko, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Zákon z 21. mája 2024, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov, vrátený prezidentkou Slovenskej republiky na opätovné prerokovanie Národnou radou Slovenskej republiky",
+   "tlac": "349",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-29",
+   "approved": "2024-06-11",
+   "sponsors": "A. Danko, K. Farkašovský, R. Huliak, D. Jarjabek, P. Kotlár, Ľ. Laššáková, P. Ľupták, R. Malatinec, R. Michelko, I. Ševčík",
+   "category": "Zákon vrátený prezidentom"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslankyne Národnej rady Slovenskej republiky Marie KOLÍKOVEJ z funkcie predsedníčky Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "299",
+   "state": "Evidencia",
+   "delivered": "2024-05-07",
+   "approved": null,
+   "sponsors": "T. Gašpar, S. Migaľ, R. Glück, M. Saloň, P. Šuca, D. Muňko, D. Demečko, P. Kotlár",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 138/2017 Z. z. o Fonde na podporu kultúry národnostných menšín a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "155",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": "2024-09-17",
+   "sponsors": "K. Farkašovský, M. Garaj, D. Jarjabek, P. Kotlár, D. Kramplová, Ľ. Laššáková, A. Lučanský, P. Ľupták, R. Malatinec, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 49/2002 Z. z. o ochrane pamiatkového fondu v znení neskorších predpisov",
+   "tlac": "153",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": "2024-09-17",
+   "sponsors": "A. Danko, R. Huliak, D. Jarjabek, D. Kramplová, P. Kotlár, Ľ. Laššáková, A. Lučanský, R. Malatinec, R. Michelko, I. Ševčík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov",
+   "tlac": "151",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, R. Huliak, D. Jarjabek, P. Kotlár, Ľ. Laššáková, P. Ľupták, R. Malatinec, R. Michelko, I. Ševčík",
+   "category": "Novela zákona"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2025-04-15",
+   "by": "Michelko, Roman",
+   "tlac": "526",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Petra KOTLÁRA a Milana GARAJA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 299/2020 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení neskorších predpisov",
+   "session": 33,
+   "voteId": null,
+   "id": "4342"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49784,
+  "incomeOther": 9832,
+  "employment": "ÚRAD VLÁDY SR",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 0,
+  "realEstateKinds": {},
+  "movablesCount": 1,
+  "movables": [
+   "Osobné vozidlo"
+  ],
+  "rights": [
+   "Podiel v s.r.o.",
+   "Podiel v s.r.o. 2x",
+   "Podiel v s.r.o."
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Spotrebný úver"
+  ],
+  "userId": "Peter.Kotlar"
+ },
+ "at": "2026-11-26T00:01:29+00:00"
+}

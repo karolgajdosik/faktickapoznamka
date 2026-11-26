@@ -1,0 +1,359 @@
+{
+ "id": "966",
+ "excuses": [
+  {
+   "from": "2024-10-23",
+   "to": "2024-10-25",
+   "days": [
+    "2024-10-23",
+    "2024-10-24",
+    "2024-10-25"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-11-04",
+   "to": "2024-11-04",
+   "days": [
+    "2024-11-04"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-12-06",
+   "to": "2024-12-06",
+   "days": [
+    "2024-12-06"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-01-15",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-01-29",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-04-14",
+   "to": "2025-04-14",
+   "days": [
+    "2025-04-14"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-04-16",
+   "to": "2025-04-16",
+   "days": [
+    "2025-04-16"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  },
+  {
+   "from": "2025-12-04",
+   "to": "2025-12-04",
+   "days": [
+    "2025-12-04"
+   ],
+   "reason": "iný dôvod (Vážne rodinné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Karola GALEKA, Martiny BAJO HOLEČKOVEJ a Vladimíry MARCINKOVEJ na vydanie zákona, ktorým sa dopĺňajú niektoré zákony v súvislosti s riešením problematiky vysokých cien pohonných hmôt",
+   "tlac": "1581",
+   "state": "Výber poradcov k NZ",
+   "delivered": "2026-11-12",
+   "approved": null,
+   "sponsors": "J. Viskupič, K. Galek, M. Bajo Holečková, V. Marcinková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1545",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-09-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, O. Dvořák, J. Hargaš, B. Jurík, T. Gažovičová, S. Petrík, L. Plaváková, O. Prostredník, J. Spišiak, T. Stohlová, V",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedníčke vlády Slovenskej republiky Denise SAKOVEJ, poverenej riadením Ministerstva hospodárstva Slovenskej republiky",
+   "tlac": "1544",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-09-14",
+   "approved": null,
+   "sponsors": "I. Dušenka, J. Jakab, I. Matovič, L. Bužo, G. Grendel, M. Krajčí, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová, V. Remišová, J. Pročko, O. Dvořák, J. Hargaš, B. Jurík, L. Plaváková, O. Prostredník, S. Petrík, T. Gažovičová, J. Spišiak, V. Šrobová, T.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola GALEKA a Ivanan ŠTEFUNKA na prijatie uznesenia Národnej rady Slovenskej republiky k stavu prípravy projektu výstavby jadrového zdroja v lokalite Jaslovské Bohunice, k zmene vlastníckej štruktúry spoločnosti Jadrová energetická spoločnosť Slovenska, a. s., a ku kompetenčným zmenám týkajúcim sa spoločnosti JAVYS, a. s.",
+   "tlac": "1512",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "K. Galek, I. Štefunko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1425",
+   "state": "I. čítanie",
+   "delivered": "2026-08-04",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, K. Galek, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Richardovi TAKÁČOVI, poverenému riadením Ministerstva pôdohospodárstva a rozvoja vidieka Slovenskej republiky",
+   "tlac": "1412",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-05",
+   "approved": null,
+   "sponsors": "K. Galek, B. Gröhling, A. Hlina, M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, T. Szalay, M. Viskupič, M. Čaučík, J. Horecký, R. Krátky, B. Škripek, L. Bužo, I. Dušenka, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Po",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Branislava GRÖHLlNGA a Karola GALEKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1306",
+   "state": "I. čítanie",
+   "delivered": "2026-04-27",
+   "approved": null,
+   "sponsors": "K. Galek, B. Gröhling, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Národnej rady Slovenskej republiky č. 241/1993 Z. z. o štátnych sviatkoch, dňoch pracovného pokoja a pamätných dňoch v znení neskorších predpisov",
+   "tlac": "1163",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 384/2025 Z. z. o evidencii tržieb a o zmene a doplnení niektorých zákonov",
+   "tlac": "1162",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jozefovi RÁŽOVI, poverenému riadením Minsterstva dopravy Slovenskej republiky",
+   "tlac": "1125",
+   "state": "Evidencia",
+   "delivered": "2025-11-24",
+   "approved": null,
+   "sponsors": "I. Dušenka, M. Šipoš, A. Škopová, J. Pročko, G. Grendel, I. Matovič, R. Mikulec, J. Jakab, P. Pollák, L. Bužo, M. Krajčí, V. Remišová, J. Hargaš, Z. Mesterová, T. Stohlová, I. Štefunko, M. Truban, T. Valášek, M. Šimečka, M. Sabo, V. Šrobová, O. Pros",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 575/2001 Z. z. o organizácii činnosti vlády a organizácii ústrednej štátnej správy v znení neskorších predpisov",
+   "tlac": "1071",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-10-24",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, K. Galek, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1054",
+   "state": "Evidencia",
+   "delivered": "2025-10-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, J. Bittó Cigániková, K. Galek, B. Gröhling, A. Hlina, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Kamilovi ŠAŠKOVI, poverenému riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "903",
+   "state": "Evidencia",
+   "delivered": "2025-08-08",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, T. Gažovičová, B. Jurík, Š. Kišš, M. Lackovič, D. Luščíková, Z. Mesterová, O. Prostredník, I. Štefunko, Z. Števulová, V. Tankó, B. Vančo, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, P. Stachura, K. Galek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona o primeranom hmotnom zabezpečení v starobe",
+   "tlac": "717",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-02-19",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, K. Galek, J. Krúpa, V. Ledecký, M. Kolíková, V. Marcinková, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "632",
+   "state": "Evidencia",
+   "delivered": "2024-12-03",
+   "approved": null,
+   "sponsors": "F. Majerský, J. Horecký, M. Čaučík, I. Janckulík, F. Mikloško, M. Šmilňák, B. Škripek, A. Turčanová, J. Hajko, M. Šimečka, O. Prostredník, I. Kosová, Z. Jaurová, B. Vančo, V. Veslárová, J. Spišiak, J. Hargaš, J. Hanuliaková, O. Dvořák, B. Jurík, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola GALEKA, Ivana ŠTEFUNKA a Jozefa HAJKA na prijatie uznesenia Národnej rady Slovenskej republiky k politike vlády v oblasti pomoci slovenským domácnostiam s cenami energií v roku 2025",
+   "tlac": "573",
+   "state": "Evidencia",
+   "delivered": "2024-10-29",
+   "approved": null,
+   "sponsors": "K. Galek, J. Hajko, I. Štefunko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k spolupráci v oblasti bezpečnosti a spravodlivosti",
+   "tlac": "529",
+   "state": "Evidencia",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, T. Valášek, T. Szalay, V. Marcinková, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Majerský, I. Janckulík, J. Hajko, M. Čaučík, M. Dubéci, F. Mikloško, P. Stachura, B. Vančo, Z. Števulová, J. Spišiak, I. Kosová, V. Kalmáro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výboru Národnej rady Slovenskej republiky",
+   "tlac": "479",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, K. Galek, B. Gröhling, A. Hlina, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2025-09-09",
+   "by": "Galek, Karol",
+   "tlac": "817",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 251/2012 Z. z. o energetike a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 39,
+   "voteId": null,
+   "id": "4378"
+  },
+  {
+   "date": "2024-12-02",
+   "by": "Galek, Karol",
+   "tlac": "573",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola GALEKA, Ivana ŠTEFUNKA a Jozefa HAJKA na prijatie uznesenia Národnej rady Slovenskej republiky k politike vlády v oblasti pomoci slovenským domácnostiam s cenami energií v roku 2025",
+   "session": 23,
+   "voteId": null,
+   "id": "4289"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4045",
+   "title": "vo veci predkupného práva Slovenskej republiky na akcie spoločnosti Slovenské elektrárne, a. s.",
+   "state": "Príjem odpovede na interpeláciu",
+   "date": "2026-10-28",
+   "to": "Saková, Denisa"
+  }
+ ],
+ "trips": [
+  {
+   "from": "2024-11-12",
+   "to": "2024-11-13",
+   "desc": "Varšava - Poslanci NR SR Igor Šimko a Karol Galek sa zúčastnia na Stretnutí výborov pre hospodárske záležitosti V4 v Poľsku."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49380,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 9,
+  "realEstateKinds": {
+   "Záhrada": 1,
+   "Byt": 2,
+   "Parcela registra c": 1,
+   "Zastavaná plocha a nádvorie": 2,
+   "Garáž": 1,
+   "Podiel na spoločných častiach domu": 1,
+   "Ostatná plocha": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Automobil"
+  ],
+  "rights": [
+   "Úspory"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "Karol.Galek"
+ },
+ "at": "2026-11-25T23:28:13+00:00"
+}

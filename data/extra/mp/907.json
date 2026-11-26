@@ -1,0 +1,2082 @@
+{
+ "id": "907",
+ "excuses": [
+  {
+   "from": "2023-11-28",
+   "to": "2023-11-29",
+   "days": [
+    "2023-11-28",
+    "2023-11-29"
+   ],
+   "reason": "iný dôvod (Praha - odborná konferencia Efektívni nemocnice 2023, HealthCare Institute)"
+  },
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-13",
+   "days": [
+    "2024-02-12",
+    "2024-02-13"
+   ],
+   "reason": "iný dôvod (Izrael, Misia solidarity)"
+  },
+  {
+   "from": "2024-05-21",
+   "to": "2024-05-22",
+   "days": [
+    "2024-05-21",
+    "2024-05-22"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta - Taiwan, účasť na inaugurácii prezidenta a viceprezidentky Čínskej republiky Taiwan)"
+  },
+  {
+   "from": "2024-07-15",
+   "to": "2024-07-16",
+   "days": [
+    "2024-07-15",
+    "2024-07-16"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2024-11-26",
+   "to": "2024-11-27",
+   "days": [
+    "2024-11-26",
+    "2024-11-27"
+   ],
+   "reason": "iný dôvod (Účasť na odbornej konferencii)"
+  },
+  {
+   "from": "2025-01-28",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-28",
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-18",
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-04-10",
+   "to": "2025-04-11",
+   "days": [
+    "2025-04-10",
+    "2025-04-11"
+   ],
+   "reason": "iný dôvod (Účasť na zahraničnej konferencii)"
+  },
+  {
+   "from": "2025-04-14",
+   "to": "2025-04-16",
+   "days": [
+    "2025-04-14",
+    "2025-04-15",
+    "2025-04-16"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2025-11-25",
+   "to": "2025-11-25",
+   "days": [
+    "2025-11-25"
+   ],
+   "reason": "iný dôvod (Praha- Účasť na odbornej konferencii-Health Care Institute)"
+  },
+  {
+   "from": "2025-12-09",
+   "to": "2025-12-12",
+   "days": [
+    "2025-12-09",
+    "2025-12-10",
+    "2025-12-11",
+    "2025-12-12"
+   ],
+   "reason": "iný dôvod (Účasť na medzinárodnej konferencii, Washington, D.C.)"
+  },
+  {
+   "from": "2026-01-27",
+   "to": "2026-01-28",
+   "days": [
+    "2026-01-27",
+    "2026-01-28"
+   ],
+   "reason": "iný dôvod (Účasť na medzinárodnej konferencii-KNESET , Jeruzalem, Izrael)"
+  },
+  {
+   "from": "2026-06-03",
+   "to": "2026-06-03",
+   "days": [
+    "2026-06-03"
+   ],
+   "reason": "iný dôvod (European Policy Summit 2026 (Lisabon, Portugalsko))"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1585",
+   "state": "Výber poradcov k NZ",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "I. Matovič, L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 523/2004 Z. z. o rozpočtových pravidlách verejnej správy a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1579",
+   "state": "Výber poradcov k NZ",
+   "delivered": "2026-11-10",
+   "approved": null,
+   "sponsors": "J. Jakab, L. Bužo, I. Dušenka, G. Grendel, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ohrozeniu ďalších pracovných miest v dôsledku neúspešnej konsolidácie verejných financií",
+   "tlac": "1578",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-10",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "1563",
+   "state": "Výber poradcov k NZ",
+   "delivered": "2026-10-12",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k poklesu reálnych miezd a prehlbovaniu rozdielov medzi politikmi a obyvateľmi",
+   "tlac": "1546",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-09-15",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1545",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-09-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, O. Dvořák, J. Hargaš, B. Jurík, T. Gažovičová, S. Petrík, L. Plaváková, O. Prostredník, J. Spišiak, T. Stohlová, V",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedníčke vlády Slovenskej republiky Denise SAKOVEJ, poverenej riadením Ministerstva hospodárstva Slovenskej republiky",
+   "tlac": "1544",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-09-14",
+   "approved": null,
+   "sponsors": "I. Dušenka, J. Jakab, I. Matovič, L. Bužo, G. Grendel, M. Krajčí, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová, V. Remišová, J. Pročko, O. Dvořák, J. Hargaš, B. Jurík, L. Plaváková, O. Prostredník, S. Petrík, T. Gažovičová, J. Spišiak, V. Šrobová, T.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 540/2021 Z. z. o kategorizácii ústavnej zdravotnej starostlivosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1518",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 30/2019 Z. z. o hazardných hrách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1517",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 235/2012 Z. z. o osobitnom odvode z podnikania v regulovaných odvetviach a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1516",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Národnej rady Slovenskej republiky č. 145/1995 Z. z. o správnych poplatkoch v znení neskorších predpisov",
+   "tlac": "1515",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1514",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ochrane závlahovej infraštruktúry Slovenskej republiky, ako aj prístavu a pozemkov pri Dunaji",
+   "tlac": "1513",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k neschopnosti ministra zdravotníctva Slovenskej republiky zabezpečiť transparentný výber a štandardné fungovanie záchannej zdavotnej služby",
+   "tlac": "1511",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Michelko, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 264/2022 Z. z. o mediálnych službách a o zmene a doplnení niektorých zákonov (zákon o mediálnych službách) v znení neskorších predpisov",
+   "tlac": "1510",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová, M. Šipoš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k negatívnym dopadom zmien v trestnom práve na vyšetrovanie korupcie",
+   "tlac": "1509",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1508",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 55/2017 Z. z. o štátnej službe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1507",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov (Návrh zákona nie je podaný v súlade s § 96 ods. 3 zákona o rokovacom poriadku; rozhodnutie predsedu NR SR č. 1624.)",
+   "tlac": "1506",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Richardovi TAKÁČOVI, poverenému riadením Ministerstva pôdohospodárstva a rozvoja vidieka Slovenskej republiky",
+   "tlac": "1412",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-05",
+   "approved": null,
+   "sponsors": "K. Galek, B. Gröhling, A. Hlina, M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, T. Szalay, M. Viskupič, M. Čaučík, J. Horecký, R. Krátky, B. Škripek, L. Bužo, I. Dušenka, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Po",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu skupiny priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie",
+   "tlac": "1408",
+   "state": "Evidencia",
+   "delivered": "2026-06-03",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Národnej rady Slovenskej republiky Tibora GAŠPARA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1399",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k politickým útokom a nenávistným prejavom proti verejnému ochrancovi práv",
+   "tlac": "1397",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k bezpečnostnej situácii na východnej hranici Slovenskej republiky",
+   "tlac": "1396",
+   "state": "Rokovanie výboru",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k výzve poslancovi Národnej rady Slovenskej republiky Tiborovi Gašparovi na vzdanie sa funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1395",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ochrane ústavného práva na bezplatnú zdravotnú starostlivosť a k regulácii poplatkov v zdravotníctve",
+   "tlac": "1394",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky, ktorým sa dopĺňa Etický kódex poslanca Národnej rady Slovenskej republiky",
+   "tlac": "1393",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, M. Šipoš, A. Škopová, I. Matovič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k výzve poslancovi Národnej rady Slovenskej republiky Tiborovi Gašparovi na vzdanie sa mandátu poslanca Národnej rady Slovenskej republiky",
+   "tlac": "1392",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k vysokým cenám pohonných hmôt",
+   "tlac": "1391",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky proti neprimeraným pokutám pre malých podnikateľov",
+   "tlac": "1390",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 566/1992 Zb. o Národnej banke Slovenska v znení neskorších predpisov",
+   "tlac": "1356",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 73/1998 Z. z. o štátnej službe príslušníkov Policajného zboru, Slovenskej informačnej služby, Zboru väzenskej a justičnej stráže Slovenskej republiky a Železničnej polície v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1352",
+   "state": "I. čítanie",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1351",
+   "state": "I. čítanie",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1350",
+   "state": "I. čítanie",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 108/2024 Z. z. o ochrane spotrebiteľa a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1348",
+   "state": "I. čítanie",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 280/2017 Z. z. o poskytovaní podpory a dotácie v pôdohospodárstve a rozvoji vidieka a o zmene zákona č. 292/2014 Z. z. o príspevku poskytovanom z európskych štrukturálnych a investičných fondov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov v znení neskorších predpisov",
+   "tlac": "1347",
+   "state": "I. čítanie",
+   "delivered": "2026-05-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1315",
+   "state": "I. čítanie",
+   "delivered": "2026-05-04",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena a náhradného člena stálych delegácií Národnej rady Slovenskej republiky",
+   "tlac": "1293",
+   "state": "Evidencia",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, F. Majerský, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek, A. Turčanová, L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k chaosu s novou právnou úpravou daňového bonusu",
+   "tlac": "1291",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k pretrvávajúcemu porušovaniu ústavného zákona č. 493/2011 Z. z. o rozpočtovej zodpovednosti vládou Slovenskej republiky (Navrhovateľ vzal listom z 2. septembra 2026 svoj návrh späť)",
+   "tlac": "1290",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, M. Krajčí, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k návrhu na okamžité zníženie paušálnych náhrad členov vlády Slovenskej republiky a zastavenie vládneho papalašizmu",
+   "tlac": "1289",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, M. Krajčí",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k systémovej likvidácii nezávislej kultúry na území Slovenskej republiky (Navrhovatelia vzali listom z 26. mája 2026 svoj návrh späť.)",
+   "tlac": "1288",
+   "state": "Evidencia",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, M. Krajčí",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k systémovému zlyhávaniu štátu v boji proti daňovej kriminalite",
+   "tlac": "1287",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k presadzovaniu cudzích štátnych záujmov na úkor Slovenskej republiky",
+   "tlac": "1286",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k pripravovanej konsolidácii verejných financií",
+   "tlac": "1285",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-14",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1246",
+   "state": "I. čítanie",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 8/2009 Z. z. o cestnej premávke a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1244",
+   "state": "I. čítanie",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Tibora GAŠPARA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1208",
+   "state": "Evidencia",
+   "delivered": "2026-03-13",
+   "approved": null,
+   "sponsors": "M. Šimečka, D. Kleinert, Z. Mesterová, N. Nash, D. Luščíková, V. Šrobová, J. Spišiak, O. Prostredník, J. Hargaš, Š. Kišš, T. Valášek, V. Veslárová, Z. Števulová, M. Lackovič, O. Dvořák, B. Jurík, S. Petrík, M. Sabo, T. Stohlová, Z. Jaurová, T. Gažov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1145",
+   "state": "I. čítanie",
+   "delivered": "2025-12-17",
+   "approved": null,
+   "sponsors": "J. Jakab, I. Matovič, J. Pročko, M. Šipoš, M. Krajčí, I. Dušenka, V. Remišová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jozefovi RÁŽOVI, poverenému riadením Minsterstva dopravy Slovenskej republiky",
+   "tlac": "1125",
+   "state": "Evidencia",
+   "delivered": "2025-11-24",
+   "approved": null,
+   "sponsors": "I. Dušenka, M. Šipoš, A. Škopová, J. Pročko, G. Grendel, I. Matovič, R. Mikulec, J. Jakab, P. Pollák, L. Bužo, M. Krajčí, V. Remišová, J. Hargaš, Z. Mesterová, T. Stohlová, I. Štefunko, M. Truban, T. Valášek, M. Šimečka, M. Sabo, V. Šrobová, O. Pros",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Rastislava KRÁTKEHO, Richarda VAŠEČKU, Petra STACHURU a Mareka KRAJČÍHO na prijatie uznesenia Národnej rady Slovenskej republiky k aktuálnej situácii vo výskyte vírusovej hepatitídy typu A na území Slovenskej republiky",
+   "tlac": "1111",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "M. Krajčí, R. Krátky, P. Stachura, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 514/2003 Z. z. o zodpovednosti za škodu spôsobenú pri výkone verejnej moci a o zmene niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1098",
+   "state": "I. čítanie",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona o jednorazovom finančnom odškodnení osôb sterilizovaných v rozpore s právom a o doplnení zákona Slovenskej národnej rady č. 71/1992 Zb. o súdnych poplatkoch a poplatku za výpis z registra trestov v znení neskorších predpisov",
+   "tlac": "1097",
+   "state": "I. čítanie",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1096",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, J. Pročko, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 219/1996 Z. z. o ochrane pred zneužívaním alkoholických nápojov a o zriaďovaní a prevádzke protialkoholických záchytných izieb v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1095",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona o zamedzení zneužívania výhod predstaviteľmi verejnej moci a o ochrane verejných financií a o zmene a doplnení niektorých zákonov (zákon proti papalášizmu)",
+   "tlac": "1073",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-03",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, J. Jakab, M. Krajčí, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k výške odvodu z hazardných hier v súvislosti s konsolidáciou verejných financií",
+   "tlac": "1058",
+   "state": "Evidencia",
+   "delivered": "2025-10-14",
+   "approved": null,
+   "sponsors": "I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, M. Šipoš",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 73/1998 Z. z. o štátnej službe príslušníkov Policajného zboru, Slovenskej informačnej služby, Zboru väzenskej a justičnej stráže Slovenskej republiky a Železničnej polície v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 315/2001 Z. z. o Hasičskom a záchrannom zbore v znení neskorších predpisov",
+   "tlac": "1043",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-09-26",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov",
+   "tlac": "1041",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-09-26",
+   "approved": null,
+   "sponsors": "L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k neschopnosti vlády Slovenskej republiky konsolidovať verejné financie (Navrhovatelia vzali listom zo 7. októbra 2025 späť svoj návrh na prijatie uznesenia.)",
+   "tlac": "1001",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k podvodu vo voľbách prezidenta Slovenskej republiky",
+   "tlac": "1000",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stretnutiam predsedu vlády Slovenskej republiky Roberta Fica s diktátormi a vojnovými zločincami v Pekingu (Navrhovatelia vzali listom z 5. mája 2026 svoj návrh späť.)",
+   "tlac": "999",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky o podpore slovenských vedcov a odmietnutiu nebezpečných dezinformácií šírených vládnym splnomocnencom Petrom Kotlárom",
+   "tlac": "998",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k škandalóznemu 2-miliardovému tendru na záchranky",
+   "tlac": "997",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie členky stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "994",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, D. Dej, M. Dubéci, R. Dubovický, O. Dvořák, T. Gažovičová, G. Grendel, J. Hanuliaková, J. Hargaš, J. Jakab, Z. Jaurová, B. Jurík, Š. Kišš, D. Kleinert, I. Kosová, M. Krajčí, R. Krátky, M. Lackovič, D. Luščíková, I. Matovič, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "977",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 171/1993 Z. z. o Policajnom zbore v znení neskorších predpisov",
+   "tlac": "973",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "972",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "971",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "967",
+   "state": "I. čítanie",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Kamilovi ŠAŠKOVI, poverenému riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "903",
+   "state": "Evidencia",
+   "delivered": "2025-08-08",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, T. Gažovičová, B. Jurík, Š. Kišš, M. Lackovič, D. Luščíková, Z. Mesterová, O. Prostredník, I. Štefunko, Z. Števulová, V. Tankó, B. Vančo, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, P. Stachura, K. Galek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k projektu Národnej univerzitnej nemocnice generála Milana Rastislava Štefánika vo Vajnoroch",
+   "tlac": "873",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-05-27",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia k alarmujúcemu stavu narastajúcej chudoby na území Slovenskej republiky",
+   "tlac": "872",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-05-27",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zneužitiu úspor dôchodcov na zníženie štátneho dlhu",
+   "tlac": "871",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-05-27",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, J. Pročko, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ohrozeniu liečby pacientov z dôvodu zastavenia príchodu inovatívnych liekov na územie Slovenskej republiky",
+   "tlac": "870",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-05-27",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, R. Krátky, M. Krajčí, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k rezignácii vlády Slovenskej republiky na pomoc ľuďom so zvyšujúcimi sa cenami potravín",
+   "tlac": "869",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-05-27",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, J. Pročko, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "842",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 245/2008 Z. z. o výchove a vzdelávaní (školský zákon) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "841",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "840",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "839",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "785",
+   "state": "Evidencia",
+   "delivered": "2025-03-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, M. Šipoš, A. Škopová, J. Pročko, I. Matovič, M. Krajčí, R. Krátky, V. Remišová, R. Vašečka, A. Záborská, R. Mikulec, J. Jakab, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, M. Šmilňák, B. Škripek,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov (Navrhovatelia vzali listom zo 7. októbra 2025 svoj návrh ústavného zákona späť.)",
+   "tlac": "782",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-25",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k výrokom podpredsedu vlády Slovenskej republiky a ministra obrany Slovenskej republiky Roberta Kaliňáka (Navrhovatelia vzali listom z 5. mája 2026 svoj návrh späť.)",
+   "tlac": "780",
+   "state": "Evidencia",
+   "delivered": "2025-03-25",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k poplatkom v zdravotníctve a nedostupnosti ambulantnej zdravotnej starostlivosti",
+   "tlac": "779",
+   "state": "Evidencia",
+   "delivered": "2025-03-25",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, P. Pollák, J. Pročko, A. Škopová, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k odchodu mladých ľudí do zahraničia",
+   "tlac": "758",
+   "state": "Evidencia",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zneužívaniu Slovenskej informačnej služby na politické účely",
+   "tlac": "757",
+   "state": "Evidencia",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "754",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, V. Remišová, P. Pollák, M. Šipoš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 55/2017 Z. z. o štátnej službe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "753",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "752",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Národnej rady Slovenskej republiky č. 566/1992 Zb. o Národnej banke Slovenska v znení neskorších predpisov",
+   "tlac": "691",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k aktuálnemu stavu čerpania eurofondov",
+   "tlac": "690",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona o preukazovaní pôvodu príjmov a majetku a o zmene a doplnení niektorých zákonov",
+   "tlac": "689",
+   "state": "I. čítanie",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k protirómskemu rasizmu",
+   "tlac": "688",
+   "state": "Evidencia",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová, M. Šipoš",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov",
+   "tlac": "687",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "641",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-12-11",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov",
+   "tlac": "614",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-08",
+   "approved": null,
+   "sponsors": "G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "605",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-08",
+   "approved": null,
+   "sponsors": "G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 264/2022 Z. z. o mediálnych službách a o zmene a doplnení niektorých zákonov (zákon o mediálnych službách) v znení neskorších predpisov",
+   "tlac": "604",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-11-08",
+   "approved": null,
+   "sponsors": "G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zrušeniu InterCity vlakov (Navrhovatelia vzali listom z 18. novembra 2024 svoj návrh späť.)",
+   "tlac": "566",
+   "state": "Evidencia",
+   "delivered": "2024-10-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zverejneniu Rozhodnutia predsedu Národnej rady Slovenskej republiky č. 96 zo dňa 6. decembra 2023 a prevereniu platnosti Rozhodnutia predsedu Národnej rady Slovenskej republiky č. 269 zo 6. apríla 2024 (Navrhovateľ vzal listom z 23. októbra 2024 svoj návrh späť.)",
+   "tlac": "565",
+   "state": "Evidencia",
+   "delivered": "2024-10-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k uzavretiu zmieru medzi Slovenskou republikou a Andrejom Babišom",
+   "tlac": "564",
+   "state": "Evidencia",
+   "delivered": "2024-10-22",
+   "approved": null,
+   "sponsors": "L. Bužo, M. Krajčí, I. Matovič, P. Pollák, J. Pročko, M. Šipoš",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k hrubému zneužívaniu Slovenskej informačnej služby na politický zápas proti opozícii",
+   "tlac": "562",
+   "state": "Evidencia",
+   "delivered": "2024-10-22",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a overovateľov Národnej rady Slovenskej republiky",
+   "tlac": "553",
+   "state": "Evidencia",
+   "delivered": "2024-10-08",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 85/2005 Z. z. o politických stranách a politických hnutiach v znení neskorších predpisov",
+   "tlac": "544",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 514/2003 Z. z. o zodpovednosti za škodu spôsobenú pri výkone verejnej moci a o zmene niektorých zákonov v znení neskorších predpisov",
+   "tlac": "543",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, P. Pollák",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k cenám potravín",
+   "tlac": "542",
+   "state": "Evidencia",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 663/2007 Z. z. o minimálnej mzde v znení neskorších predpisov (Navrhovatelia vzali listom z 18. novembra 2024 svoj návrh zákona späť.)",
+   "tlac": "541",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 274/2007 Z. z. o príplatku k dôchodku politickým väzňom v znení neskorších predpisov",
+   "tlac": "540",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona o jednorazovom finančnom odškodnení osôb sterilizovaných v rozpore s právom a o doplnení zákona Slovenskej národnej rady č. 71/1992 Zb. o súdnych poplatkoch a poplatku za výpis z registra trestov v znení neskorších predpisov",
+   "tlac": "539",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová, M. Šipoš",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Národnej rady Slovenskej republiky č. 120/1993 Z. z. o platových pomeroch niektorých ústavných činiteľov Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "495",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-09-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre verejnú správu a regionálny rozvoj",
+   "tlac": "473",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka, A. Záborská",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu pripravenosti zavedenia maximálnych čakacích lehôt pre pacientov",
+   "tlac": "471",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, V. Remišová, M. Šipoš, A. Škopová, P. Pollák",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k znefunkčneniu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby (Navrhovateľ vzal listom z 22. októbra 2024 návrh skupiny poslancov späť.)",
+   "tlac": "470",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky ku kritickej situácii vo Fakultnej nemocnici Trenčín (Navrhovatelia vzali listom z 18. novembra 2024 svoj návrh späť.)",
+   "tlac": "469",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, M. Krajčí, R. Krátky, R. Mikulec, J. Jakab, M. Šipoš, A. Škopová, P. Pollák",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k priamemu ohrozeniu čerpania finančných prostriedkov z fondov Európskej únie a Plánu obnovy a odolnosti",
+   "tlac": "468",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k prijatým bezpečnostným opatreniam na zaistenie bezpečnosti detí, pedagógov, nepedagogických zamestnancov a obyvateľov ohrozených vyhrážkami bombovými útokmi",
+   "tlac": "467",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výboru Národnej rady Slovenskej republiky",
+   "tlac": "466",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, I. Kosová, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov (Navrhovatelia vzali listom z 18. novembra 2024 svoj návrh zákona späť.)",
+   "tlac": "430",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "429",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 519/2022 Z. z. o solidárnom príspevku z činností v odvetviach ropy, zemného plynu, uhlia a rafinérií a o doplnení niektorých zákonov v znení zákona č. 124/2023 Z. z. a zákona č. 530/2023 Z. z. (Navrhovatelia vzali listom z 1. októbra 2024 svoj návrh zákona späť.)",
+   "tlac": "427",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu pripravenosti centrálneho systému elektronického objednávania pacientov",
+   "tlac": "361",
+   "state": "Evidencia",
+   "delivered": "2024-06-11",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopÍňa zákon č. 108/2024 Z. z. o ochrane spotrebiteľa a o zmene a doplnení niektorých zákonov",
+   "tlac": "335",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "J. Jakab, Ľ. Galko, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, R. Vašečka, A. Záborská",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "334",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-24",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, A. Škopová, M. Šipoš, V. Tankó, R. Vašečka, A. Záborská",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "297",
+   "state": "Evidencia",
+   "delivered": "2024-05-02",
+   "approved": null,
+   "sponsors": "O. Dvořák, F. Majerský, P. Stachura, M. Šipoš, V. Tankó, M. Krajčí, Ľ. Galko, P. Pollák, A. Škopová, R. Mikulec, G. Grendel, J. Pročko, R. Krátky, I. Matovič, J. Jakab, O. Prostredník, R. Vašečka, B. Vančo, L. Plaváková, B. Jurík, J. Hargaš, Z. Mest",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "296",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-02",
+   "approved": null,
+   "sponsors": "I. Matovič, L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka, A. Záborská",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskoršich predpisov a ktorým sa mení a dopĺňa zákon č. 328/2002 Z. z. o sociálnom zabezpečení policajtov a vojakov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (Navrhovatelia vzali listom z 18. novembra 2024 svoj návrh zákona späť.)",
+   "tlac": "287",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-04-25",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, P. Pollák, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k dopravnej nehode podpredsedu Národnej rady Slovenskej republiky Andreja Danka (Navrhovateľ Michal Šipoš oznámil listom z 30. mája 2024, že svoj návrh berie späť.)",
+   "tlac": "268",
+   "state": "Evidencia",
+   "delivered": "2024-04-16",
+   "approved": null,
+   "sponsors": "G. Grendel, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k priamemu ohrozeniu čerpania finančných prostriedkov z fondov Európskej únie a Plánu obnovy a odolnosti",
+   "tlac": "267",
+   "state": "Evidencia",
+   "delivered": "2024-04-16",
+   "approved": null,
+   "sponsors": "G. Grendel, M. Krajčí, R. Krátky, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 447/2008 Z. z. o peňažných príspevkoch na kompenzáciu ťažkého zdravotného postihnutia a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "253",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa mení zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "252",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k porušovaniu základných práv a slobôd osôb patriacich k rómskej národnostnej menšine",
+   "tlac": "251",
+   "state": "Evidencia",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Mikulec, I. Matovič, R. Krátky, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Tankó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov",
+   "tlac": "174",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, J. Pročko, P. Pollák, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "165",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, V. Remišová, A. Škopová, M. Šipoš, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa ústavný zákon č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "164",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, V. Remišová, R. Krátky, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "tlac": "163",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona o školskom ombudsmanovi a o zmene a doplnení niektorých zákonov",
+   "tlac": "162",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, V. Tankó, R. Vašečka",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona o preukazovaní pôvodu príjmov a majetku a o zmene a doplnení niektorých zákonov",
+   "tlac": "158",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "157",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 18/1996 Z. z. o cenách v znení neskorších právnych predpisov",
+   "tlac": "75",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, I. Matovič, R. Mikulec, M. Krajčí, R. Krátky, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zavedeniu štátnej bonifikácie hypotekárnych úverov (Navrhovateľ Július Jakab vzal späť listom z 31. januára 2024 za skupinu poslancov ich návrh na prijatie uznesenia Národnej rady Slovenskej republiky.)",
+   "tlac": "74",
+   "state": "Evidencia",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa dopĺňa a zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "73",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 296/2020 Z. z. o 13. dôchodku a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (Navrhovateteľ vzal listom z 26. apríla 2024 svoj návrh zákona späť.)",
+   "tlac": "72",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "71",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k členstvu Slovenskej republiky v Severoatlantickej aliancii",
+   "tlac": "70",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky, ktorým sa pripája k záverom zo zasadnutia Európskej rady z dní 26. a 27. októbra 2023, ktoré za Slovenskú republiku podporil predseda vlády Slovenskej republiky Robert Fico vo veci odsúdenia útočnej vojny Ruska proti Ukrajine a odsúdenia Hamasu za brutálne a nerozlišujúce teroristické útoky v Izraeli",
+   "tlac": "69",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k porušovaniu základných práv a slobôd z dôvodu rasy, farby pleti a príslušnosti k národnosti či etnickej skupine garantovaných Ústavou Slovenskej republiky a medzinárodnými zmluvami",
+   "tlac": "68",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k členstvu Slovenskej republiky v Európskej únii",
+   "tlac": "67",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k cenám energií",
+   "tlac": "66",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "63",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 404/2011 Z. z. o pobyte cudzincov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "62",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, R. Mikulec, I. Matovič, M. Krajčí, R. Krátky, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, V. Tankó, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 514/2003 Z. z. o zodpovednosti za škodu spôsobenú pri výkone verejnej moci a o zmene niektorých zákonov v znení neskorších predpisov",
+   "tlac": "61",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "J. Pročko, I. Matovič, M. Šipoš, J. Jakab, R. Krátky, L. Bužo, Ľ. Galko, R. Vašečka, V. Remišová, G. Grendel, R. Mikulec, A. Škopová, P. Pollák, M. Krajčí, V. Tankó",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie Ľuboša BLAHU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "26",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-07",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-11-24",
+   "by": "Pollák, Peter",
+   "tlac": "1471",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 66,
+   "voteId": null,
+   "id": "4628"
+  },
+  {
+   "date": "2026-11-24",
+   "by": "Matovič, Igor",
+   "tlac": "1471",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 66,
+   "voteId": null,
+   "id": "4629"
+  },
+  {
+   "date": "2026-11-24",
+   "by": "Matovič, Igor",
+   "tlac": "1490",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ľubice LAŠŠÁKOVEJ, Aleny NOVÁKOVEJ, Zdenky MAČICOVEJ a Jozefa CECHA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "session": 66,
+   "voteId": null,
+   "id": "4630"
+  },
+  {
+   "date": "2026-11-03",
+   "by": "Mikulec, Roman",
+   "tlac": "1314",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4617"
+  },
+  {
+   "date": "2026-10-13",
+   "by": "Jakab, Július",
+   "tlac": "1555",
+   "title": "Vládny návrh zákona o štátnom rozpočte na rok 2027 (Vládny návrh rozpočtu verejnej správy na roky 2027 až 2029)",
+   "session": 61,
+   "voteId": null,
+   "id": "4607"
+  },
+  {
+   "date": "2026-09-23",
+   "by": "Matovič, Igor",
+   "tlac": "1314",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4597"
+  },
+  {
+   "date": "2026-09-22",
+   "by": "Dušenka, Igor",
+   "tlac": "1312",
+   "title": "Vládny návrh zákona Občiansky zákonník",
+   "session": 61,
+   "voteId": null,
+   "id": "4592"
+  },
+  {
+   "date": "2026-09-16",
+   "by": "Matovič, Igor",
+   "tlac": "1369",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Adama LUČANSKÉHO, Andreja DANKA na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4584"
+  },
+  {
+   "date": "2026-09-15",
+   "by": "Mikulec, Roman",
+   "tlac": "1324",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 25/2025 Z. z. Stavebný zákon a o zmene a doplnení niektorých zákonov (Stavebný zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 61,
+   "voteId": null,
+   "id": "4581"
+  },
+  {
+   "date": "2026-09-15",
+   "by": "Pročko, Jozef",
+   "tlac": "1331",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 39/2007 Z. z. o veterinárnej starostlivosti v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4582"
+  },
+  {
+   "date": "2026-06-11",
+   "by": "Matovič, Igor",
+   "tlac": "1243",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4576"
+  },
+  {
+   "date": "2026-06-09",
+   "by": "Šipoš, Michal",
+   "tlac": "1260",
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Romana MALATINCA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4574"
+  },
+  {
+   "date": "2026-05-29",
+   "by": "Jakab, Július",
+   "tlac": "1228",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 52,
+   "voteId": null,
+   "id": "4562"
+  },
+  {
+   "date": "2026-05-29",
+   "by": "Dušenka, Igor",
+   "tlac": "1228",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 52,
+   "voteId": null,
+   "id": "4563"
+  },
+  {
+   "date": "2026-05-27",
+   "by": "Jakab, Július",
+   "tlac": "1272",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana GARAJA, Dagmar KRAMPLOVEJ, Andreja DANKA a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 36/2005 Z. z. o rodine a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4554"
+  },
+  {
+   "date": "2026-05-26",
+   "by": "Šipoš, Michal",
+   "tlac": "1235",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Róberta PUCIHO, Petra KALIVODU a Andrey SZABÓOVEJ na vydanie zákona, ktorým sa mení zákon č. 261/2017 Z. z. o štátnej cene Jozefa Miloslava Hurbana a štátnej cene Alexandra Dubčeka v znení zákona č. 199/2020 Z. z.",
+   "session": 52,
+   "voteId": null,
+   "id": "4553"
+  },
+  {
+   "date": "2026-02-10",
+   "by": "Krajčí, Marek",
+   "tlac": "1024",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 483/2001 Z. z. o bankách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 46,
+   "voteId": null,
+   "id": "4523"
+  },
+  {
+   "date": "2026-02-03",
+   "by": "Jakab, Július",
+   "tlac": "1024",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 483/2001 Z. z. o bankách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 46,
+   "voteId": null,
+   "id": "4514"
+  },
+  {
+   "date": "2026-01-30",
+   "by": "Dušenka, Igor",
+   "tlac": "1076",
+   "title": "Vládny návrh zákona o obchodnom registri a o zmene a doplnení niektorých zákonov (zákon o obchodnom registri)",
+   "session": 46,
+   "voteId": null,
+   "id": "4512"
+  },
+  {
+   "date": "2026-01-29",
+   "by": "Šipoš, Michal",
+   "tlac": "939",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 46,
+   "voteId": null,
+   "id": "4505"
+  },
+  {
+   "date": "2026-01-29",
+   "by": "Jakab, Július",
+   "tlac": "1169",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na prijatie Etického kódexu poslanca Národnej rady Slovenskej republiky",
+   "session": 46,
+   "voteId": null,
+   "id": "4506"
+  },
+  {
+   "date": "2026-01-29",
+   "by": "Jakab, Július",
+   "tlac": "1169",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na prijatie Etického kódexu poslanca Národnej rady Slovenskej republiky",
+   "session": 46,
+   "voteId": null,
+   "id": "4507"
+  },
+  {
+   "date": "2026-01-29",
+   "by": "Jakab, Július",
+   "tlac": "939",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 46,
+   "voteId": null,
+   "id": "4508"
+  },
+  {
+   "date": "2026-01-29",
+   "by": "Dušenka, Igor",
+   "tlac": "1169",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na prijatie Etického kódexu poslanca Národnej rady Slovenskej republiky",
+   "session": 46,
+   "voteId": null,
+   "id": "4509"
+  },
+  {
+   "date": "2026-01-29",
+   "by": "Jakab, Július",
+   "tlac": "1169",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na prijatie Etického kódexu poslanca Národnej rady Slovenskej republiky",
+   "session": 46,
+   "voteId": null,
+   "id": "4510"
+  },
+  {
+   "date": "2025-12-11",
+   "by": "Remišová, Veronika",
+   "tlac": "1115",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 233/1995 Z. z. o súdnych exekútoroch a exekučnej činnosti (Exekučný poriadok) a o zmene a doplnení ďalších zákonov v znení neskorších predpisov (NÁVRH ZÁKONA SCHVÁLENÝ 11.12.2025, SCHVÁLENÉ ZNENIE CEZ LINK - Legislatívny proces - v balíku ZIP, viď dole. Zákon vyšiel v Zbierke zákonov SR 27.12.2025 pod číslom 416/2025.)",
+   "session": 43,
+   "voteId": null,
+   "id": "4492"
+  },
+  {
+   "date": "2025-12-04",
+   "by": "Matovič, Igor",
+   "tlac": "1123",
+   "title": "Vládny návrh zákona o Úrade na ochranu obetí trestných činov a oznamovateľov protispoločenskej činnosti a o zmene a doplnení niektorých zákonov",
+   "session": 43,
+   "voteId": null,
+   "id": "4479"
+  },
+  {
+   "date": "2025-12-04",
+   "by": "Jakab, Július",
+   "tlac": "1123",
+   "title": "Vládny návrh zákona o Úrade na ochranu obetí trestných činov a oznamovateľov protispoločenskej činnosti a o zmene a doplnení niektorých zákonov",
+   "session": 43,
+   "voteId": null,
+   "id": "4480"
+  },
+  {
+   "date": "2025-10-23",
+   "by": "Šipoš, Michal",
+   "tlac": "1061",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 30/2019 Z. z. o hazardných hrách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 145/1995 Z. z. o správnych poplatkoch v znení neskorších predpisov",
+   "session": 40,
+   "voteId": null,
+   "id": "4459"
+  },
+  {
+   "date": "2025-09-23",
+   "by": "Krajčí, Marek",
+   "tlac": "1005",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s konsolidáciou verejných financií",
+   "session": 39,
+   "voteId": null,
+   "id": "4412"
+  },
+  {
+   "date": "2025-04-08",
+   "by": "Krajčí, Marek",
+   "tlac": "591",
+   "title": "Vládny návrh zákona o náprave krívd spôsobených fyzickým osobám v súvislosti s protipandemickými opatreniami a o doplnení zákona Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov",
+   "session": 33,
+   "voteId": null,
+   "id": "4338"
+  },
+  {
+   "date": "2024-12-11",
+   "by": "Krajčí, Marek",
+   "tlac": "637",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s niektorými opatreniami na zabezpečenie dostupnosti ústavnej zdravotnej starostlivosti",
+   "session": 23,
+   "voteId": null,
+   "id": "4302"
+  },
+  {
+   "date": "2024-12-04",
+   "by": "Krajčí, Marek",
+   "tlac": "517",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 26,
+   "voteId": null,
+   "id": "4299"
+  },
+  {
+   "date": "2024-12-02",
+   "by": "Krajčí, Marek",
+   "tlac": "471",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu pripravenosti zavedenia maximálnych čakacích lehôt pre pacientov",
+   "session": 23,
+   "voteId": null,
+   "id": "4287"
+  },
+  {
+   "date": "2024-12-02",
+   "by": "Krajčí, Marek",
+   "tlac": "361",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu pripravenosti centrálneho systému elektronického objednávania pacientov",
+   "session": 23,
+   "voteId": null,
+   "id": "4288"
+  },
+  {
+   "date": "2024-11-28",
+   "by": "Krajčí, Marek",
+   "tlac": "497",
+   "title": "Vládny návrh zákona o štátnom rozpočte na rok 2025 (Vládny návrh rozpočtu verejnej správy na roky 2025 až 2027)",
+   "session": 23,
+   "voteId": null,
+   "id": "4280"
+  },
+  {
+   "date": "2024-11-28",
+   "by": "Matovič, Igor",
+   "tlac": "497",
+   "title": "Vládny návrh zákona o štátnom rozpočte na rok 2025 (Vládny návrh rozpočtu verejnej správy na roky 2025 až 2027)",
+   "session": 23,
+   "voteId": null,
+   "id": "4286"
+  },
+  {
+   "date": "2024-11-06",
+   "by": "Krajčí, Marek",
+   "tlac": "575",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 22,
+   "voteId": null,
+   "id": "4266"
+  },
+  {
+   "date": "2024-10-24",
+   "by": "Krajčí, Marek",
+   "tlac": "361",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu pripravenosti centrálneho systému elektronického objednávania pacientov",
+   "session": 22,
+   "voteId": null,
+   "id": "4259"
+  },
+  {
+   "date": "2024-10-01",
+   "by": "Krajčí, Marek",
+   "tlac": "483",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s ďalším zlepšovaním stavu verejných financií",
+   "session": 19,
+   "voteId": null,
+   "id": "4217"
+  },
+  {
+   "date": "2024-09-18",
+   "by": "Krajčí, Marek",
+   "tlac": "361",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu pripravenosti centrálneho systému elektronického objednávania pacientov",
+   "session": 19,
+   "voteId": null,
+   "id": "4208"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Krajčí, Marek",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4072"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Krajčí, Marek",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4097"
+  },
+  {
+   "date": "2023-12-20",
+   "by": "Krajčí, Marek",
+   "tlac": "100",
+   "title": "Vládny návrh zákona o štátnom rozpočte na rok 2024 (Vládny návrh rozpočtu verejnej správy na roky 2024 až 2026)",
+   "session": 6,
+   "voteId": null,
+   "id": "4048"
+  },
+  {
+   "date": "2023-12-08",
+   "by": "Krajčí, Marek",
+   "tlac": "90",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 575/2001 Z. z. o organizácii činnosti vlády a organizácii ústrednej štátnej správy v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 6,
+   "voteId": null,
+   "id": "4004"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4001",
+   "title": "vo veci plnenia cieľov Plánu obnovy a odolnosti SR",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-06-22",
+   "to": "Drucker, Tomáš"
+  },
+  {
+   "id": "3935",
+   "title": "vo veci financovania výstavby nemocníc na Slovensku",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-03-17",
+   "to": "Šaško, Kamil"
+  },
+  {
+   "id": "3936",
+   "title": "vo veci riešenia poplatkovej bariéry v slovenskom zdravotníctve",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-03-17",
+   "to": "Šaško, Kamil"
+  },
+  {
+   "id": "3937",
+   "title": "vo veci financovania výstavby nemocníc na Slovensku",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-03-17",
+   "to": "Kaliňák, Robert"
+  },
+  {
+   "id": "3931",
+   "title": "vo veci predaja psychoaktívnych látok a ich derivátov v predajných automatoch",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-03-04",
+   "to": "Šaško, Kamil"
+  }
+ ],
+ "trips": [
+  {
+   "from": "2026-10-06",
+   "to": "2026-10-09",
+   "desc": "Andorra la Vella - Poslanec NR SR Marek Krajčí sa zúčastní Jesenného zasadnutia Parlamentného zhromaždenia OBSE v Andorre."
+  },
+  {
+   "from": "2026-07-04",
+   "to": "2026-07-08",
+   "desc": "Haag - Poslanec NR SR Marek Krajčí sa zúčastní výročného zasadnutia Parlamentného zhromaždenia OBSE v Holandsku."
+  },
+  {
+   "from": "2025-06-28",
+   "to": "2025-07-03",
+   "desc": "Porto- Poslanci NR SR Marek Krajčí a Martin Šmilňák sa zúčastnia na 32. Výročnom zasadnutí Parlamentného zhromaždenia OBSE v Portugalsku."
+  },
+  {
+   "from": "2025-02-20",
+   "to": "2025-02-21",
+   "desc": "Viedeň- Poslanci NR SR Marek Krajčí sa zúčastní na Zimnom zasadnutí Parlamentného zhromaždenia OBSE v Rakúskej republike."
+  },
+  {
+   "from": "2024-10-01",
+   "to": "2024-10-04",
+   "desc": "Dublin - Poslanci NR SR Martin Šmilňák a Marek Krajčí sa zúčastní na Jesennom zasadnutí Parlamentného zhromaždenia OBSE v Írsku."
+  },
+  {
+   "from": "2024-06-28",
+   "to": "2024-07-03",
+   "desc": "Bukurešť - Poslanci NR SR Marek Krajčí a Martin Šmilňák sa zúčastnia na 31. výročnom zasadnutí Parlamentného zhromaždenia OBSE v Rumunsku."
+  },
+  {
+   "from": "2024-05-05",
+   "to": "2024-05-09",
+   "desc": "Skopje - Poslanec NR SR Marek Krajčí sa zúčastnil na Pozorovaní parlamentných volieb v Severnom Macedónsku."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 50856,
+  "incomeOther": 0,
+  "employment": "NÁRODNÝ ÚSTAV SRDCOVÝCH A CIEVNYCH CHORÔB, A.S.",
+  "business": "nevykonávam",
+  "roles": [
+   "PREDSEDA SPRÁVNEJ RADY (KRESŤANIA V MESTE)",
+   "ČLEN SPRÁVNEJ RADY (NADÁCIA DOBRÁ BUDÚCNOSŤ A NÁDEJ - GOOD FUTURE AND HOPE)"
+  ],
+  "realEstateCount": 0,
+  "realEstateKinds": {},
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Osobný dôchodkový účet",
+   "Peňažné prostriedky"
+  ],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Krajčí.Marek"
+ },
+ "at": "2026-11-26T00:03:02+00:00"
+}

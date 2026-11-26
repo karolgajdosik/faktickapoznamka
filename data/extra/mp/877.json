@@ -1,0 +1,50 @@
+{
+ "id": "877",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 55080,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "ADVOKÁT - POZASTAVENÝ VÝKON ADVOKÁCIE OD 15.11.2023",
+  "roles": [
+   "PREDSEDA (LAVELA)",
+   "ČLEN SPRÁVNEJ RADY (NEZISKOVÁ ORGANIZÁCIA LAVELA V LIKVIDÁCII)"
+  ],
+  "realEstateCount": 13,
+  "realEstateKinds": {
+   "Zastavaná plocha a nádvorie": 4,
+   "Záhrada": 1,
+   "Rodinný dom": 1,
+   "Orná pôda": 4,
+   "Trvalý trávny porast": 1,
+   "Byt": 1,
+   "Nebytový priestor": 1
+  },
+  "movablesCount": 3,
+  "movables": [
+   "Osobné cennosti",
+   "Zariadenie domácnosti",
+   "Umelecké predmety"
+  ],
+  "rights": [
+   "Pohľadávky voči tretím osobám",
+   "Obchodný podiel v s.r.o.",
+   "Podielové listy/cenné papiere",
+   "Finančné prostriedky"
+  ],
+  "obligations": [
+   "Bankový úver",
+   "Bankový úver"
+  ],
+  "userId": "Boris.Susko"
+ },
+ "at": "2026-11-26T00:51:55+00:00"
+}

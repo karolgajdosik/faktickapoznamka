@@ -1,0 +1,88 @@
+{
+ "id": "1223",
+ "excuses": [
+  {
+   "from": "2026-03-19",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-19",
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti)"
+  },
+  {
+   "from": "2026-06-15",
+   "to": "2026-06-15",
+   "days": [
+    "2026-06-15"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu predsedu skupiny priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie a vymenovanie člena Stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1387",
+   "state": "Evidencia",
+   "delivered": "2026-05-26",
+   "approved": null,
+   "sponsors": "V. Baláž, J. Baška, M. Čavojová, V. Faič, D. Galis, T. Gašpar, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. Hazucha, J. Horváth, D. Jarjabek, J. Ježík, J. Kačmár, M. Kapuš, D. Karas, M. Kéry, S. Kubánek, J. Kvorka, B. Lešo, M. Lukša, V. Macášek, Z",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1243",
+   "state": "Redakcia",
+   "delivered": "2026-03-27",
+   "approved": "2026-11-24",
+   "sponsors": "T. Gašpar, J. Habánik, P. Goga, V. Faič, M. Čavojová, J. Baška, V. Baláž, R. Glück, J. Horváth, A. Hambálek, D. Galis, D. Jarjabek, D. Karas, J. Kačmár, M. Kéry, S. Kubánek, J. Kvorka, J. Ježík, M. Kapuš, I. Hazucha, M. Lukša, J. Mego, Z. Matejičkov",
+   "category": "Novela zákona"
+  }
+ ],
+ "amendments": [],
+ "interpellations": [
+  {
+   "id": "3919",
+   "title": "vo veci mikroodvodu",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-02-04",
+   "to": "Tomáš, Erik"
+  }
+ ],
+ "trips": [],
+ "offices": [
+  "Agentúra SMER, s.r.o., ul. Komenského č. 6, Žilina",
+  "Cirkevný zbor ECAV na Slovensku Liptovský Mikuláš, Jura Janošku č. 5, Liptovský Mikuláš"
+ ],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 5487,
+  "incomeOther": 0,
+  "employment": "SÚKROMNÁ ZÁKLADNÁ UMELECKÁ ŠKOLA",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 36,
+  "realEstateKinds": {
+   "Urbariát": 2,
+   "Orná pôda": 3,
+   "Zastavaná plocha a nádvorie": 3,
+   "Garáž": 1,
+   "Trvalý trávny porast": 7,
+   "2x orná pôda": 10,
+   "2x zastavaná plocha a nádvorie": 2,
+   "2x trvalý trávny porast": 6,
+   "Zastavaná plocha a nádvoria": 1,
+   "Záhrada": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "MacaVlad"
+ },
+ "at": "2026-11-26T00:15:05+00:00"
+}

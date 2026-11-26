@@ -1,0 +1,78 @@
+{
+ "id": "1153",
+ "excuses": [
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2024-06-21",
+   "to": "2024-06-21",
+   "days": [
+    "2024-06-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jána MAŽGÚTA a Erika KALlŇÁKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 135/1961 Zb. o pozemných komunikáciách (cestný zákon) v znení neskorších predpisov (Navrhovatelia vzali listom z 15. februára 2024 svoj návrh zákona späť.)",
+   "tlac": "57",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-16",
+   "approved": null,
+   "sponsors": "E. Kaliňák, J. Mažgút",
+   "category": "Novela zákona"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2023-12-05",
+   "by": "Kaliňák, Erik",
+   "tlac": "92",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "session": 5,
+   "voteId": null,
+   "id": "3994"
+  },
+  {
+   "date": "2023-12-05",
+   "by": "Kaliňák, Erik",
+   "tlac": "92",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "session": 5,
+   "voteId": null,
+   "id": "3997"
+  },
+  {
+   "date": "2023-12-05",
+   "by": "Kaliňák, Erik",
+   "tlac": "92",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "session": 5,
+   "voteId": null,
+   "id": "3998"
+  },
+  {
+   "date": "2023-12-05",
+   "by": "Kaliňák, Erik",
+   "tlac": "92",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Správe (NKÚ) o výsledku kontroly 2023 s názvom: Hospodárenie s verejnými prostriedkami vynaloženými na EXPO Dubaj",
+   "session": 5,
+   "voteId": null,
+   "id": "3999"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [
+  "Agentúra SMER, s.r.o., Gunduličova 12, Bratislava",
+  "Agentúra SMER, s.r.o., Bayerova ulica s.č. 11753, Prešov"
+ ],
+ "declaration": null,
+ "at": "2026-11-25T23:51:29+00:00"
+}

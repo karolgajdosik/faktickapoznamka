@@ -1,0 +1,45 @@
+{
+ "id": "941",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "člen vlády Slovenskej republiky",
+  "incomePublic": 61235,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 18,
+  "realEstateKinds": {
+   "Ostatné plochy": 2,
+   "Orná pôda": 3,
+   "Dom": 2,
+   "Zastavané plochy a nádvoria": 5,
+   "Záhrada": 1,
+   "Trvalé trávnaté plochy": 2,
+   "Byt": 1,
+   "Garáž": 2
+  },
+  "movablesCount": 3,
+  "movables": [
+   "Osobné vozidlo",
+   "Vybavenie domácnosti",
+   "Šperky"
+  ],
+  "rights": [
+   "Prostriedky na účte",
+   "Obchodný podiel v spoločnosti"
+  ],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Denisa.Saková"
+ },
+ "at": "2026-11-26T00:42:57+00:00"
+}

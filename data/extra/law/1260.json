@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ nebol schválený",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (R. Malatinec)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1503 zo dňa 6. 5. 2026. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre financie a rozpočet s lehotou na prerok",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 61. schôdzi NR SR dňa 6. 10. 2026. Pozmeňujúce a doplňujúce návrhy: 09. 06. 2026 Šipoš, Michal Detail návrhu 9_1260-Michal Šipoš (251 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 61. schôdzi NR SR, uznesenie číslo 1691 zo dňa 6. 10. 2026",
+   "result": "NZ nebol schválený."
+  }
+ ],
+ "at": "2026-11-26T01:25:56+00:00"
+}

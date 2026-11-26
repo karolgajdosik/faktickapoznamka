@@ -1,0 +1,1001 @@
+{
+ "id": "1184",
+ "excuses": [
+  {
+   "from": "2023-11-24",
+   "to": "2023-11-24",
+   "days": [
+    "2023-11-24"
+   ],
+   "reason": "iný dôvod (Vyšetrenie u lekára)"
+  },
+  {
+   "from": "2023-11-28",
+   "to": "2023-11-28",
+   "days": [
+    "2023-11-28"
+   ],
+   "reason": "iný dôvod (Starostlivosť o choré deti)"
+  },
+  {
+   "from": "2023-12-05",
+   "to": "2023-12-05",
+   "days": [
+    "2023-12-05"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2023-12-15",
+   "to": "2023-12-15",
+   "days": [
+    "2023-12-15"
+   ],
+   "reason": "iný dôvod (Zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2023-12-18",
+   "to": "2023-12-18",
+   "days": [
+    "2023-12-18"
+   ],
+   "reason": "iný dôvod (Odborné zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2024-01-12",
+   "to": "2024-01-12",
+   "days": [
+    "2024-01-12"
+   ],
+   "reason": "iný dôvod (Zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2024-01-19",
+   "to": "2024-01-19",
+   "days": [
+    "2024-01-19"
+   ],
+   "reason": "iný dôvod (Pracovná cesta v Prešove)"
+  },
+  {
+   "from": "2024-02-02",
+   "to": "2024-02-02",
+   "days": [
+    "2024-02-02"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Zastupiteľstvo PSK)"
+  },
+  {
+   "from": "2024-02-22",
+   "to": "2024-02-23",
+   "days": [
+    "2024-02-22",
+    "2024-02-23"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-02-27",
+   "to": "2024-02-28",
+   "days": [
+    "2024-02-27",
+    "2024-02-28"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-04-26",
+   "to": "2024-04-30",
+   "days": [
+    "2024-04-26",
+    "2024-04-27",
+    "2024-04-28",
+    "2024-04-29",
+    "2024-04-30"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody a zdravotné vyšetrenia)"
+  },
+  {
+   "from": "2024-05-02",
+   "to": "2024-05-03",
+   "days": [
+    "2024-05-02",
+    "2024-05-03"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody a zdravotné vyšetrenia)"
+  },
+  {
+   "from": "2024-06-21",
+   "to": "2024-06-25",
+   "days": [
+    "2024-06-21",
+    "2024-06-22",
+    "2024-06-23",
+    "2024-06-24",
+    "2024-06-25"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2024-07-15",
+   "to": "2024-07-16",
+   "days": [
+    "2024-07-15",
+    "2024-07-16"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-09-20",
+   "to": "2024-09-20",
+   "days": [
+    "2024-09-20"
+   ],
+   "reason": "iný dôvod (Pracovné dôvody)"
+  },
+  {
+   "from": "2024-09-27",
+   "to": "2024-09-27",
+   "days": [
+    "2024-09-27"
+   ],
+   "reason": "iný dôvod (Pracovná cesta v regiónoch)"
+  },
+  {
+   "from": "2024-10-01",
+   "to": "2024-10-03",
+   "days": [
+    "2024-10-01",
+    "2024-10-02",
+    "2024-10-03"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta a rodinné dôvody)"
+  },
+  {
+   "from": "2024-10-24",
+   "to": "2024-10-25",
+   "days": [
+    "2024-10-24",
+    "2024-10-25"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti a zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2024-10-28",
+   "to": "2024-10-28",
+   "days": [
+    "2024-10-28"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody)"
+  },
+  {
+   "from": "2024-11-06",
+   "to": "2024-11-07",
+   "days": [
+    "2024-11-06",
+    "2024-11-07"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2024-11-29",
+   "to": "2024-11-29",
+   "days": [
+    "2024-11-29"
+   ],
+   "reason": "iný dôvod (Pracovné stretnutie s ministrom zdravotníctva v Prešove)"
+  },
+  {
+   "from": "2024-12-06",
+   "to": "2024-12-09",
+   "days": [
+    "2024-12-06",
+    "2024-12-07",
+    "2024-12-08",
+    "2024-12-09"
+   ],
+   "reason": "iný dôvod (Zdravotné dôvody, pracovné stretnutie a zastupiteľstvo vo VÚC Prešov)"
+  },
+  {
+   "from": "2025-02-18",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-18",
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2025-03-28",
+   "to": "2025-03-28",
+   "days": [
+    "2025-03-28"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti)"
+  },
+  {
+   "from": "2025-04-11",
+   "to": "2025-04-14",
+   "days": [
+    "2025-04-11",
+    "2025-04-12",
+    "2025-04-13",
+    "2025-04-14"
+   ],
+   "reason": "iný dôvod (Pracovné dôvody)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2025-06-06",
+   "to": "2025-06-06",
+   "days": [
+    "2025-06-06"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2025-06-13",
+   "to": "2025-06-16",
+   "days": [
+    "2025-06-13",
+    "2025-06-14",
+    "2025-06-15",
+    "2025-06-16"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2025-09-12",
+   "to": "2025-09-12",
+   "days": [
+    "2025-09-12"
+   ],
+   "reason": "iný dôvod (Povinnosti poslanca v regióne)"
+  },
+  {
+   "from": "2025-09-19",
+   "to": "2025-09-19",
+   "days": [
+    "2025-09-19"
+   ],
+   "reason": "iný dôvod (Povinnosti poslanca v regióne)"
+  },
+  {
+   "from": "2025-09-24",
+   "to": "2025-09-24",
+   "days": [
+    "2025-09-24"
+   ],
+   "reason": "iný dôvod (Pracovná cesta, Praha)"
+  },
+  {
+   "from": "2025-09-29",
+   "to": "2025-09-29",
+   "days": [
+    "2025-09-29"
+   ],
+   "reason": "iný dôvod (Zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2025-10-17",
+   "to": "2025-10-17",
+   "days": [
+    "2025-10-17"
+   ],
+   "reason": "iný dôvod (Práca v regióne a zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2025-10-24",
+   "to": "2025-10-24",
+   "days": [
+    "2025-10-24"
+   ],
+   "reason": "iný dôvod (Zdravotný stav rodinného príslušníka)"
+  },
+  {
+   "from": "2025-11-28",
+   "to": "2025-11-28",
+   "days": [
+    "2025-11-28"
+   ],
+   "reason": "iný dôvod (Zdravotné vyšetrenie s rodinným príslušníkom)"
+  },
+  {
+   "from": "2025-12-01",
+   "to": "2025-12-01",
+   "days": [
+    "2025-12-01"
+   ],
+   "reason": "iný dôvod (Zdravotné vyšetrenie s rodinným príslušníkom)"
+  },
+  {
+   "from": "2025-12-05",
+   "to": "2025-12-08",
+   "days": [
+    "2025-12-05",
+    "2025-12-06",
+    "2025-12-07",
+    "2025-12-08"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti v regióne, zastupiteľstvo)"
+  },
+  {
+   "from": "2026-02-06",
+   "to": "2026-02-06",
+   "days": [
+    "2026-02-06"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-02-13",
+   "to": "2026-02-13",
+   "days": [
+    "2026-02-13"
+   ],
+   "reason": "iný dôvod (Z rodinných dôvodov)"
+  },
+  {
+   "from": "2026-03-20",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Z dôvodu práce v regióne, zdravotné vyšetrenie)"
+  },
+  {
+   "from": "2026-04-17",
+   "to": "2026-04-21",
+   "days": [
+    "2026-04-17",
+    "2026-04-18",
+    "2026-04-19",
+    "2026-04-20",
+    "2026-04-21"
+   ],
+   "reason": "iný dôvod (Z rodinných dôvodov)"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-24",
+    "2026-04-25",
+    "2026-04-26",
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Zdravotné vyšetrenie, práca v regióne)"
+  },
+  {
+   "from": "2026-05-04",
+   "to": "2026-05-07",
+   "days": [
+    "2026-05-04",
+    "2026-05-05",
+    "2026-05-06",
+    "2026-05-07"
+   ],
+   "reason": "iný dôvod (Z rodinných dôvodov)"
+  },
+  {
+   "from": "2026-05-26",
+   "to": "2026-05-27",
+   "days": [
+    "2026-05-26",
+    "2026-05-27"
+   ],
+   "reason": "iný dôvod (Z dôvodu rodinných záležitostí)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Z dôvodu pracovných povinností v regióne)"
+  },
+  {
+   "from": "2026-06-01",
+   "to": "2026-06-01",
+   "days": [
+    "2026-06-01"
+   ],
+   "reason": "iný dôvod (Z dôvodu pracovných povinností v regióne)"
+  },
+  {
+   "from": "2026-06-05",
+   "to": "2026-06-05",
+   "days": [
+    "2026-06-05"
+   ],
+   "reason": "iný dôvod (Z dôvodu zdravotného vyšetrenia)"
+  },
+  {
+   "from": "2026-06-12",
+   "to": "2026-06-12",
+   "days": [
+    "2026-06-12"
+   ],
+   "reason": "iný dôvod (Práca v regióne)"
+  },
+  {
+   "from": "2026-09-18",
+   "to": "2026-09-22",
+   "days": [
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-22"
+   ],
+   "reason": "iný dôvod (Pracovná účasť v regióne a stretnutie so starostami)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Moniky KOLEJÁKOVEJ, Andrey TURČANOVEJ, Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov",
+   "tlac": "1494",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "M. Kolejáková, F. Majerský, P. Stachura, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi DRUCKEROVI, poverenému riadením Ministerstva školstva, výskumu, vývoja a mládeže Slovenskej republiky",
+   "tlac": "1409",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-04",
+   "approved": null,
+   "sponsors": "J. Horecký, F. Majerský, M. Majerský, G. Paľa, R. Krátky, M. Kolejáková, B. Škripek, A. Turčanová, M. Čaučík, F. Mikloško, I. Janckulík, M. Šipoš, R. Vašečka, G. Grendel, V. Remišová, I. Matovič, R. Mikulec, I. Dušenka, J. Pročko, T. Gažovičová, I.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andrey TURČANOVEJ, Mariána ČAUČÍKA, Igora JANCKULÍKA, Jána HORECKÉHO a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení zákon č. 73/1998 Z. z. o štátnej službe príslušníkov Policajného zboru, Slovenskej informačnej služby, Zboru väzenskej a justičnej stráže Slovenskej republiky a Železničnej polície v znení neskorších predpisov",
+   "tlac": "1376",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, F. Majerský, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU, Františka MAJERSKÉHO a Richarda VAŠEČKU na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 576/2004 Z. z. o zdravotnej starostlivosti, službách súvisiacich s poskytovaním zdravotnej starostlivosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1374",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, R. Vašečka",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena a náhradného člena stálych delegácií Národnej rady Slovenskej republiky",
+   "tlac": "1293",
+   "state": "Evidencia",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, F. Majerský, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek, A. Turčanová, L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 577/2004 Z. z. o rozsahu zdravotnej starostlivosti uhrádzanej na základe verejného zdravotného poistenia a o úhradách za služby súvisiace s poskytovaním zdravotnej starostlivosti v znení neskorších predpisov",
+   "tlac": "1084",
+   "state": "I. čítanie",
+   "delivered": "2025-11-06",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Františka MAJERSKÉHO a Igora JANCKULÍKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 330/1991 Z. z. o pozemkových úpravách, usporiadaní pozemkového vlastníctva, pozemkových úradoch, pozemkovom fonde a o pozemkových spoločenstvách v znení neskorších predpisov",
+   "tlac": "1030",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-09-26",
+   "approved": null,
+   "sponsors": "I. Janckulík, F. Majerský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na prijatie uznesenia Národnej rady Slovenskej republiky k analýze zloženia mRNA vakcín proti ochoreniu COVID-19 vykonanej Slovenskou akadémiou vied",
+   "tlac": "996",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Františka MAJERSKÉHO a Igora JANCKULÍKA na vydanie zákona, ktorým sa dopĺňa zákon č. 278/1993 Z. z. o správe majetku štátu v znení neskorších predpisov",
+   "tlac": "948",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "I. Janckulík, F. Majerský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Kamilovi ŠAŠKOVI, poverenému riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "903",
+   "state": "Evidencia",
+   "delivered": "2025-08-08",
+   "approved": null,
+   "sponsors": "D. Dej, M. Dubéci, O. Dvořák, T. Gažovičová, B. Jurík, Š. Kišš, M. Lackovič, D. Luščíková, Z. Mesterová, O. Prostredník, I. Štefunko, Z. Števulová, V. Tankó, B. Vančo, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, P. Stachura, K. Galek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Európskej iniciatíve občanov s názvom \"My Voice, My Choice: For Safe And Accessible Abortion\" (\"Môj hlas, moja voľba: Za bezpečný a dostupný potrat\"), na základe žiadosti o registráciu registrované ako vykonávacie rozhodnutie Komisie (EÚ) 2024/1158 z 10. apríla 2024 podľa nariadenia Európskeho parlamentu a Rady (EÚ) 2019/788 [oznámené v Úradnom vestníku Európskej únie pod číslom C(2024)2353]",
+   "tlac": "845",
+   "state": "Evidencia",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 363/2011 Z. z. o rozsahu a podmienkach úhrady liekov, zdravotníckych pomôcok a dietetických potravín na základe verejného zdravotného poistenia a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "824",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-07",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na prijatie uznesenia Národnej rady Slovenskej republiky k výrokom poslanca Národnej rady Slovenskej republiky a splnomocnenca vlády Slovenskej republiky pre preverenie procesu riadenia a manažovania zdrojov počas pandémie COVID-19: MUDr. Petra Kotlára k „ukončeniu očkovania mRNA vakcínami na princípe distribúcie pomocou nanotechnoIógie\", ktoré odzneli na tlačovej konferencii dňa 10. aprila 2025",
+   "tlac": "799",
+   "state": "Evidencia",
+   "delivered": "2025-04-10",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "785",
+   "state": "Evidencia",
+   "delivered": "2025-03-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, M. Šipoš, A. Škopová, J. Pročko, I. Matovič, M. Krajčí, R. Krátky, V. Remišová, R. Vašečka, A. Záborská, R. Mikulec, J. Jakab, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, M. Šmilňák, B. Škripek,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 577/2004 Z. z. o rozsahu zdravotnej starostlivosti uhrádzanej na základe verejného zdravotného poistenia a o úhradách za služby súvisiace s poskytovaním zdravotnej starostlivosti",
+   "tlac": "741",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-06",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jozefa HAJKA a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "723",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-03",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Majerský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "712",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-02-13",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, J. Horecký, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky",
+   "tlac": "697",
+   "state": "Evidencia",
+   "delivered": "2025-01-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Mikloško, P. Stachura, M. Šmilňák, A. Turčanová, J. Horecký, F. Majerský, M. Majerský, I. Janckulík, M. Čaučík, B. Škripek, M. Šimečka, T. Stohlová, M. Sabo, N. Nash, O. Prostredník, J. Hanuliaková, V. Kalmárová, S. Petrík, D. Dej, J. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 46/2024 Z. z., ktorým sa mení a dopĺňa zákon č. 50/1976 Zb. o územnom plánovaní a stavebnom poriadku (stavebný zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (Navrhovatelia vzali listom z 27. marca 2025 svoj návrh zákona späť.)",
+   "tlac": "694",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU, Františka MAJERSKÉHO a Igora JANCKULÍKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 8/2009 Z. z. o cestnej premávke a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "677",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "I. Janckulík, F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "632",
+   "state": "Evidencia",
+   "delivered": "2024-12-03",
+   "approved": null,
+   "sponsors": "F. Majerský, J. Horecký, M. Čaučík, I. Janckulík, F. Mikloško, M. Šmilňák, B. Škripek, A. Turčanová, J. Hajko, M. Šimečka, O. Prostredník, I. Kosová, Z. Jaurová, B. Vančo, V. Veslárová, J. Spišiak, J. Hargaš, J. Hanuliaková, O. Dvořák, B. Jurík, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 3. decembra 2024 svoj návrh späť.)",
+   "tlac": "630",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "M. Šimečka, M. Lackovič, J. Hargaš, J. Spišiak, D. Dej, V. Veslárová, B. Vančo, L. Plaváková, I. Bihariová, R. Dubovický, Z. Števulová, V. Tankó, M. Dubéci, V. Kalmárová, B. Jurík, M. Sabo, T. Stohlová, I. Kosová, Š. Kišš, T. Gažovičová, D. Luščíkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a overovateľov Národnej rady Slovenskej republiky",
+   "tlac": "553",
+   "state": "Evidencia",
+   "delivered": "2024-10-08",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 577/2004 Z. z. o rozsahu zdravotnej starostlivosti uhrádzanej na základe verejného zdravotného poistenia a o úhradách za služby súvisiace s poskytovaním zdravotnej starostlivosti",
+   "tlac": "549",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andrey TURČANOVEJ, Igora JANCKULÍKA, Františka MAJERSKÉHO, Martina ŠMILŇÁKA a Branislava ŠKRIPEKA na vydanie zákona, ktorým sa dopĺňa zákon Slovenskej národnej rady č. 369/1990 Zb. o obecnom zriadení v znení neskorších predpisov",
+   "tlac": "493",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-09-26",
+   "approved": null,
+   "sponsors": "I. Janckulík, F. Majerský, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "478",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "O. Dvořák, Z. Mesterová, Z. Števulová, D. Luščíková, J. Spišiak, T. Stohlová, N. Nash, B. Jurík, R. Dubovický, D. Dej, V. Šrobová, O. Prostredník, M. Lackovič, J. Hargaš, V. Veslárová, I. Štefunko, Š. Kišš, I. Kosová, I. Bihariová, T. Gažovičová, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Jozefa HAJKA a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "322",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Majerský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Františka MAJERSKÉHO a Petra STACHURU na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov",
+   "tlac": "321",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-22",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "297",
+   "state": "Evidencia",
+   "delivered": "2024-05-02",
+   "approved": null,
+   "sponsors": "O. Dvořák, F. Majerský, P. Stachura, M. Šipoš, V. Tankó, M. Krajčí, Ľ. Galko, P. Pollák, A. Škopová, R. Mikulec, G. Grendel, J. Pročko, R. Krátky, I. Matovič, J. Jakab, O. Prostredník, R. Vašečka, B. Vančo, L. Plaváková, B. Jurík, J. Hargaš, Z. Mest",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 577/2004 Z. z. o rozsahu zdravotnej starostlivosti uhrádzanej na základe verejného zdravotného poistenia a o úhradách za služby súvisiace s poskytovaním zdravotnej starostlivosti v znení neskorších predpisov",
+   "tlac": "247",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-03-27",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k druhému výročiu vojenskej agresie Ruskej federácie proti Ukrajine",
+   "tlac": "200",
+   "state": "Evidencia",
+   "delivered": "2024-02-16",
+   "approved": null,
+   "sponsors": "O. Dostál, A. Hlina, M. Kolíková, J. Krúpa, B. Gröhling, T. Szalay, M. Viskupič, V. Ledecký, T. Valášek, M. Dubéci, Z. Mesterová, B. Jurík, J. Spišiak, P. Stachura, M. Šmilňák, A. Turčanová, F. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Andreja DANKA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "180",
+   "state": "Evidencia",
+   "delivered": "2024-01-16",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, M. Čaučík, M. Dubéci, O. Dvořák, T. Gažovičová, J. Hajko, I. Janckulík, B. Jurík, V. Kalmárová, J. Jakab, D. Kleinert, M. Bajo Holečková, J. Hargaš, D. Luščíková, F. Majerský, M. Majerský, Z. Mesterová, S. Petrík, O. Prostredn",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 540/2021 Z. z. o kategorizácii ústavnej zdravotnej starostlivosti a o zmene a doplnení niektorých zákonov",
+   "tlac": "144",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-10",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Petra STACHURU a Františka MAJERSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov",
+   "tlac": "143",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-10",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie Ľuboša BLAHU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "26",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-07",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2025-06-16",
+   "by": "Čaučík, Marián",
+   "tlac": "733",
+   "title": "Vládny návrh ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 35,
+   "voteId": null,
+   "id": "4371"
+  },
+  {
+   "date": "2025-06-16",
+   "by": "Horecký, Ján",
+   "tlac": "733",
+   "title": "Vládny návrh ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 35,
+   "voteId": null,
+   "id": "4373"
+  },
+  {
+   "date": "2025-04-02",
+   "by": "Majerský, František",
+   "tlac": "591",
+   "title": "Vládny návrh zákona o náprave krívd spôsobených fyzickým osobám v súvislosti s protipandemickými opatreniami a o doplnení zákona Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov",
+   "session": 33,
+   "voteId": null,
+   "id": "4332"
+  },
+  {
+   "date": "2025-03-27",
+   "by": "Majerský, František",
+   "tlac": "772",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 579/2004 Z. z. o záchrannej zdravotnej službe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 33,
+   "voteId": null,
+   "id": "4318"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Janckulík, Igor",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4304"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Janckulík, Igor",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4305"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Janckulík, Igor",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4306"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Majerský, František",
+   "tlac": "703",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zabezpečením ochrany pacienta a s nastolením sociálneho zmieru v zdravotníctve",
+   "session": 30,
+   "voteId": null,
+   "id": "4307"
+  },
+  {
+   "date": "2024-12-03",
+   "by": "Stachura, Peter",
+   "tlac": "517",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 23,
+   "voteId": null,
+   "id": "4291"
+  },
+  {
+   "date": "2024-09-27",
+   "by": "Majerský, František",
+   "tlac": "483",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s ďalším zlepšovaním stavu verejných financií",
+   "session": 19,
+   "voteId": null,
+   "id": "4209"
+  },
+  {
+   "date": "2024-06-20",
+   "by": "Majerský, Milan",
+   "tlac": "364",
+   "title": "Vládny návrh zákona o niektorých opatreniach na zlepšenie bezpečnostnej situácie v Slovenskej republike",
+   "session": 15,
+   "voteId": null,
+   "id": "4194"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Majerský, Milan",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4076"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "3913",
+   "title": "vo veci užívania elektronických cigariet a nikotínových výrobkov medzi deťmi a mladistvými",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-01-16",
+   "to": "Šaško, Kamil"
+  },
+  {
+   "id": "2685",
+   "title": "Vo veci vybudovania verejnej kanalizácie vo vybraných obciach okresu Kežmarok",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-01-04",
+   "to": "Taraba, Tomáš"
+  },
+  {
+   "id": "2682",
+   "title": "Vo veci vypovedania zmlúv s poskytovateľmi dopravnej zdravotnej služby v Prešovskom kraji",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2023-12-12",
+   "to": "Dolinková, Zuzana"
+  },
+  {
+   "id": "2680",
+   "title": "Vo veci rekonštrukcie ciest I. triedy",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2023-12-06",
+   "to": "Ráž, Jozef"
+  }
+ ],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 60431,
+  "incomeOther": 163,
+  "employment": "ZÁCHRANNÁ SLUŽBA KOŠICE",
+  "business": "nevykonávam",
+  "roles": [
+   "PREZIDENT (SLOVENSKÁ KOMORA ZDRAVOTNÍCKYCH ZÁCHRANÁROV)",
+   "PREDSEDA (ZÁCHRANA, OBČIANSKE ZDRUŽENIE)",
+   "POSLANEC MESTSKÉHO ZASTUPITEĽSTVA (MESTO POPRAD)",
+   "POSLANEC KRAJSKÉHO ZASTUPITEĽSTVA (PREŠOVSKÝ SAMOSPRÁVNY KRAJ)"
+  ],
+  "realEstateCount": 3,
+  "realEstateKinds": {
+   "Rodinný dom": 1,
+   "Byt": 1,
+   "Orná pôda": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "Frantisek.Majersky"
+ },
+ "at": "2026-11-26T00:15:48+00:00"
+}

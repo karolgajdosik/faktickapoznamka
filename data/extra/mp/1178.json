@@ -1,0 +1,909 @@
+{
+ "id": "1178",
+ "excuses": [
+  {
+   "from": "2023-11-28",
+   "to": "2023-11-28",
+   "days": [
+    "2023-11-28"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti - Konferencia CURI)"
+  },
+  {
+   "from": "2023-12-05",
+   "to": "2023-12-05",
+   "days": [
+    "2023-12-05"
+   ],
+   "reason": "iný dôvod (Neodkladné povinnosti predsedu Prešovského samosprávneho kraja)"
+  },
+  {
+   "from": "2023-12-14",
+   "to": "2023-12-14",
+   "days": [
+    "2023-12-14"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu Prešovského samosprávneho kraja )"
+  },
+  {
+   "from": "2023-12-18",
+   "to": "2023-12-19",
+   "days": [
+    "2023-12-18",
+    "2023-12-19"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti)"
+  },
+  {
+   "from": "2024-01-08",
+   "to": "2024-01-08",
+   "days": [
+    "2024-01-08"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu vyššieho územného celku (Prešovský samosprávny kraj))"
+  },
+  {
+   "from": "2024-01-11",
+   "to": "2024-01-12",
+   "days": [
+    "2024-01-11",
+    "2024-01-12"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu Prešovského samosprávneho kraja - stretnutie s prezidentkou)"
+  },
+  {
+   "from": "2024-01-23",
+   "to": "2024-01-24",
+   "days": [
+    "2024-01-23",
+    "2024-01-24"
+   ],
+   "reason": "iný dôvod (Výjazdové rokovanie vlády v PSK a prijatie delegácie - poklepanie základného kameňa stavby I/68 Sabinov)"
+  },
+  {
+   "from": "2024-02-02",
+   "to": "2024-02-02",
+   "days": [
+    "2024-02-02"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC)"
+  },
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Zastupiteľstvo PSK)"
+  },
+  {
+   "from": "2024-02-23",
+   "to": "2024-02-23",
+   "days": [
+    "2024-02-23"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC)"
+  },
+  {
+   "from": "2024-04-26",
+   "to": "2024-04-26",
+   "days": [
+    "2024-04-26"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu VÚC Prešovský kraj)"
+  },
+  {
+   "from": "2024-04-30",
+   "to": "2024-04-30",
+   "days": [
+    "2024-04-30"
+   ],
+   "reason": "iný dôvod (Účasť na pohrebe)"
+  },
+  {
+   "from": "2024-06-14",
+   "to": "2024-06-14",
+   "days": [
+    "2024-06-14"
+   ],
+   "reason": "iný dôvod (Zahraničná služobná cesta)"
+  },
+  {
+   "from": "2024-06-25",
+   "to": "2024-06-25",
+   "days": [
+    "2024-06-25"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti)"
+  },
+  {
+   "from": "2024-08-21",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Dovolenka)"
+  },
+  {
+   "from": "2024-09-13",
+   "to": "2024-09-13",
+   "days": [
+    "2024-09-13"
+   ],
+   "reason": "iný dôvod (Pietna spomienka (Radatice))"
+  },
+  {
+   "from": "2024-09-27",
+   "to": "2024-09-27",
+   "days": [
+    "2024-09-27"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC (Prešovský samosprávny kraj))"
+  },
+  {
+   "from": "2024-10-22",
+   "to": "2024-10-22",
+   "days": [
+    "2024-10-22"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2024-10-25",
+   "to": "2024-10-25",
+   "days": [
+    "2024-10-25"
+   ],
+   "reason": "iný dôvod (Návšteva lekára)"
+  },
+  {
+   "from": "2024-10-28",
+   "to": "2024-10-28",
+   "days": [
+    "2024-10-28"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2024-11-29",
+   "to": "2024-11-29",
+   "days": [
+    "2024-11-29"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu VÚC (PSK) - návšteva ministra zdravotníctva)"
+  },
+  {
+   "from": "2024-12-02",
+   "to": "2024-12-02",
+   "days": [
+    "2024-12-02"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu VÚC (PSK) - návšteva ministra zdravotníctva)"
+  },
+  {
+   "from": "2024-12-05",
+   "to": "2024-12-09",
+   "days": [
+    "2024-12-05",
+    "2024-12-06",
+    "2024-12-07",
+    "2024-12-08",
+    "2024-12-09"
+   ],
+   "reason": "iný dôvod (Účasť na SK8, zastupiteľstvo PSK)"
+  },
+  {
+   "from": "2025-01-29",
+   "to": "2025-01-29",
+   "days": [
+    "2025-01-29"
+   ],
+   "reason": "iný dôvod (Účasť na zasadnutí vlády SR v PSK)"
+  },
+  {
+   "from": "2025-02-19",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Pracovná cesta do Bruselu)"
+  },
+  {
+   "from": "2025-03-28",
+   "to": "2025-03-28",
+   "days": [
+    "2025-03-28"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2025-04-02",
+   "to": "2025-04-03",
+   "days": [
+    "2025-04-02",
+    "2025-04-03"
+   ],
+   "reason": "iný dôvod (Cesta do Bruselu-výbor regiónov)"
+  },
+  {
+   "from": "2025-04-14",
+   "to": "2025-04-14",
+   "days": [
+    "2025-04-14"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Stretnutie s veľvyslancom Ukrajiny)"
+  },
+  {
+   "from": "2025-06-04",
+   "to": "2025-06-04",
+   "days": [
+    "2025-06-04"
+   ],
+   "reason": "iný dôvod (Účasť na výjazdovom rokovaní vlády SR v PSK)"
+  },
+  {
+   "from": "2025-06-06",
+   "to": "2025-06-06",
+   "days": [
+    "2025-06-06"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta)"
+  },
+  {
+   "from": "2025-06-13",
+   "to": "2025-06-13",
+   "days": [
+    "2025-06-13"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2025-08-14",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Osobné rodinné dôvody)"
+  },
+  {
+   "from": "2025-09-12",
+   "to": "2025-09-12",
+   "days": [
+    "2025-09-12"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC Prešovský kraj)"
+  },
+  {
+   "from": "2025-09-19",
+   "to": "2025-09-19",
+   "days": [
+    "2025-09-19"
+   ],
+   "reason": "iný dôvod (Povinnosti župana PSK)"
+  },
+  {
+   "from": "2025-09-29",
+   "to": "2025-09-29",
+   "days": [
+    "2025-09-29"
+   ],
+   "reason": "iný dôvod (Povinnosti župana PSK)"
+  },
+  {
+   "from": "2025-10-01",
+   "to": "2025-10-01",
+   "days": [
+    "2025-10-01"
+   ],
+   "reason": "iný dôvod (Pracovná cesta predsedu PSK do Bruselu)"
+  },
+  {
+   "from": "2025-10-14",
+   "to": "2025-10-14",
+   "days": [
+    "2025-10-14"
+   ],
+   "reason": "iný dôvod (Pracovná cesta predsedu PSK do Bruselu)"
+  },
+  {
+   "from": "2025-10-17",
+   "to": "2025-10-17",
+   "days": [
+    "2025-10-17"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2025-10-24",
+   "to": "2025-10-24",
+   "days": [
+    "2025-10-24"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2025-11-26",
+   "to": "2025-11-27",
+   "days": [
+    "2025-11-26",
+    "2025-11-27"
+   ],
+   "reason": "iný dôvod (26.11.2025-Výjazdové rokovanie vlády v PSK, 27.11.2025- Stretnutie Karpatskej skupiny výboru regiónov a ďalších partnerov, Civex externý seminár o cezhraničnej spolupráci s Ukrajinou)"
+  },
+  {
+   "from": "2025-11-28",
+   "to": "2025-11-28",
+   "days": [
+    "2025-11-28"
+   ],
+   "reason": "iný dôvod (Povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2025-12-01",
+   "to": "2025-12-01",
+   "days": [
+    "2025-12-01"
+   ],
+   "reason": "iný dôvod (Povinnosti župana PSK, Stretnutie pracovnej skupiny pre Ukrajinu-Výbor regiónov, RADA PSK)"
+  },
+  {
+   "from": "2025-12-05",
+   "to": "2025-12-05",
+   "days": [
+    "2025-12-05"
+   ],
+   "reason": "iný dôvod (Účasť na konferencii)"
+  },
+  {
+   "from": "2026-01-30",
+   "to": "2026-01-30",
+   "days": [
+    "2026-01-30"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC, Prešovský kraj (Odovzdávanie ocenení záchranárom v Poprade))"
+  },
+  {
+   "from": "2026-02-13",
+   "to": "2026-02-13",
+   "days": [
+    "2026-02-13"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu PSK)"
+  },
+  {
+   "from": "2026-03-19",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-19",
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (19.3.2026- SK 8, 20.3.2026- Návšteva lekára)"
+  },
+  {
+   "from": "2026-04-17",
+   "to": "2026-04-17",
+   "days": [
+    "2026-04-17"
+   ],
+   "reason": "iný dôvod (Pohreb exprimátora p. Šipoša)"
+  },
+  {
+   "from": "2026-04-24",
+   "to": "2026-04-27",
+   "days": [
+    "2026-04-24",
+    "2026-04-25",
+    "2026-04-26",
+    "2026-04-27"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC Prešovský samosprávny kraj)"
+  },
+  {
+   "from": "2026-04-30",
+   "to": "2026-04-30",
+   "days": [
+    "2026-04-30"
+   ],
+   "reason": "iný dôvod (Pracovné povinnosti predsedu VÚC Prešovský samosprávny kraj)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k postoju slovenských poslancov Európskeho parlamentu k návratu násilne deportovaných ukrajinských detí",
+   "tlac": "1590",
+   "state": "Rozhodnutie predsedu NR SR",
+   "delivered": "2026-11-18",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Ladislavovi KAMENICKÉMU, poverenému riadením Ministerstva financií Slovenskej republiky",
+   "tlac": "1416",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-10",
+   "approved": null,
+   "sponsors": "L. Bužo, Ľ. Galko, G. Grendel, I. Matovič, P. Pollák, J. Pročko, V. Remišová, M. Bajo Holečková, K. Galek, B. Gröhling, M. Krajčí, A. Hlina, T. Szalay, M. Viskupič, V. Marcinková, M. Čaučík, J. Horecký, I. Janckulík, G. Paľa, P. Stachura, B. Škripek",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Tomášovi DRUCKEROVI, poverenému riadením Ministerstva školstva, výskumu, vývoja a mládeže Slovenskej republiky",
+   "tlac": "1409",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-04",
+   "approved": null,
+   "sponsors": "J. Horecký, F. Majerský, M. Majerský, G. Paľa, R. Krátky, M. Kolejáková, B. Škripek, A. Turčanová, M. Čaučík, F. Mikloško, I. Janckulík, M. Šipoš, R. Vašečka, G. Grendel, V. Remišová, I. Matovič, R. Mikulec, I. Dušenka, J. Pročko, T. Gažovičová, I.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andrey TURČANOVEJ, Milana MAJERSKÉHO, Rastislava KRÁTKEHO a Moniky KOLEJÁKOVEJ na vydanie zákona o rodinnej karte",
+   "tlac": "1371",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Kolejáková, R. Krátky, M. Majerský, A. Turčanová",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena a náhradného člena stálych delegácií Národnej rady Slovenskej republiky",
+   "tlac": "1293",
+   "state": "Evidencia",
+   "delivered": "2026-04-21",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Horecký, I. Janckulík, M. Kolejáková, R. Krátky, F. Majerský, M. Majerský, F. Mikloško, G. Paľa, P. Stachura, B. Škripek, A. Turčanová, L. Bužo, I. Dušenka, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Pollák, J. Pročko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána ČAUČÍKA, Milana MAJERSKÉHO a Andrey TURČANOVEJ na vydanie zákona, ktorým sa dopĺňa zákon č. 442/2002 Z. z. o verejných vodovodoch a verejných kanalizáciách a o zmene a doplnení zákona č. 276/2001 Z. z. o regulácii v sieťových odvetviach",
+   "tlac": "1281",
+   "state": "I. čítanie",
+   "delivered": "2026-04-02",
+   "approved": null,
+   "sponsors": "M. Čaučík, M. Majerský, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Tibora GAŠPARA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "1208",
+   "state": "Evidencia",
+   "delivered": "2026-03-13",
+   "approved": null,
+   "sponsors": "M. Šimečka, D. Kleinert, Z. Mesterová, N. Nash, D. Luščíková, V. Šrobová, J. Spišiak, O. Prostredník, J. Hargaš, Š. Kišš, T. Valášek, V. Veslárová, Z. Števulová, M. Lackovič, O. Dvořák, B. Jurík, S. Petrík, M. Sabo, T. Stohlová, Z. Jaurová, T. Gažov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zlyhaniu ministerky hospodárstva Slovenskej republiky pri adresnej energopomoci",
+   "tlac": "1138",
+   "state": "Evidencia",
+   "delivered": "2025-12-10",
+   "approved": null,
+   "sponsors": "J. Jakab, I. Matovič, R. Mikulec, I. Dušenka, M. Šipoš, J. Pročko, L. Bužo, P. Pollák, A. Škopová, G. Grendel, Z. Mesterová, M. Truban, B. Jurík, L. Plaváková, V. Veslárová, D. Kleinert, M. Lackovič, I. Kosová, G. Gregorová, Z. Jaurová, T. Stohlová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána ČAUČÍKA, Milana MAJERSKÉHO a Igora JANCKULÍKA na vydanie zákona, ktorým sa dopĺňa zákon č. 442/2002 Z. z. o verejných vodovodoch a verejných kanalizáciách a o zmene a doplnení zákona č. 276/2001 Z. z. o regulácii v sieťových odvetviach (Navrhovatelia vzali listom zo 17. marca 2026 svoj návrh zákona späť.)",
+   "tlac": "1033",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-09-26",
+   "approved": null,
+   "sponsors": "M. Čaučík, I. Janckulík, M. Majerský, M. Šmilňák",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Jozefa HAJKA, Igora JANCKULÍKA a Mariána ČAUČÍKA na prijatie uznesenia Národnej rady Slovenskej republiky k zákazu nákupu osobných vozidiel nad 40.000 eur v rokoch 2026 a 2027",
+   "tlac": "1019",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Jozefa HAJKA, Igora JANCKULÍKA a Mariána ČAUČÍKA na prijatie uznesenia Národnej rady Slovenskej republiky k úspore tepla, plynu a elektrickej energie v štátnej správe a podriadených organizáciách o 15 percent v porovnaní so spotrebou za rok 2023 pre vykurovacie sezóny 2025/2026 a 2026/2027",
+   "tlac": "1018",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Jozefa HAJKA, Igora JANCKULÍKA a Mariána ČAUČÍKA na prijatie uznesenia Národnej rady Slovenskej republiky k prehodnoteniu a úprave súčasných dohôd o úrovni služieb v IT sektore s 24/7 podporou s ciel'om znížiť finančné náklady v rokoch 2026 a 2027",
+   "tlac": "1017",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Jozefa HAJKA, Igora JANCKULÍKA a Mariána ČAUČÍKA na prijatie uznesenia Národnej rady Slovenskej republiky k záväzku zvyšovania čerpania fondov Európskej únie na mesačnej báze priemerne o 2 percentá do konca roka 2026",
+   "tlac": "1016",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Jozefa HAJKA, Igora JANCKULÍKA a Mariána ČAUČÍKA na prijatie uznesenia Národnej rady Slovenskej republiky k centrálnemu obstarávaniu energií v štátnej správe a podriadených organizáciách s cieľom získať výhodnejšie kontrakty na dodávku energií",
+   "tlac": "1015",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Milana MAJERSKÉHO, Martiny BAJO HOLEČKOVEJ, Beáty JURÍK a Júliusa JAKABA na prijatie uznesenia Národnej rady Slovenskej republiky, ktorým sa zrušuje Uznesenie Národnej rady Slovenskej republiky o odmietnutí sankčnej politiky a obchodných obmedzení voči Ruskej federácii a ochrane ekonomických a energetických záujmov Slovenskej republiky zo dňa 5. júna 2025",
+   "tlac": "881",
+   "state": "Evidencia",
+   "delivered": "2025-06-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Jakab, B. Jurík, M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Európskej iniciatíve občanov s názvom \"My Voice, My Choice: For Safe And Accessible Abortion\" (\"Môj hlas, moja voľba: Za bezpečný a dostupný potrat\"), na základe žiadosti o registráciu registrované ako vykonávacie rozhodnutie Komisie (EÚ) 2024/1158 z 10. apríla 2024 podľa nariadenia Európskeho parlamentu a Rady (EÚ) 2019/788 [oznámené v Úradnom vestníku Európskej únie pod číslom C(2024)2353]",
+   "tlac": "845",
+   "state": "Evidencia",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andrey TURČANOVEJ , Milana MAJERSKÉHO a Martina ŠMILŇÁKA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov (Navrhovatelia vzali listom z 27. mája 2025 svoj návrh zákona späť.)",
+   "tlac": "833",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "M. Majerský, M. Šmilňák, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "785",
+   "state": "Evidencia",
+   "delivered": "2025-03-26",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, M. Šipoš, A. Škopová, J. Pročko, I. Matovič, M. Krajčí, R. Krátky, V. Remišová, R. Vašečka, A. Záborská, R. Mikulec, J. Jakab, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, M. Šmilňák, B. Škripek,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "712",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-02-13",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, I. Janckulík, J. Horecký, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky",
+   "tlac": "697",
+   "state": "Evidencia",
+   "delivered": "2025-01-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Mikloško, P. Stachura, M. Šmilňák, A. Turčanová, J. Horecký, F. Majerský, M. Majerský, I. Janckulík, M. Čaučík, B. Škripek, M. Šimečka, T. Stohlová, M. Sabo, N. Nash, O. Prostredník, J. Hanuliaková, V. Kalmárová, S. Petrík, D. Dej, J. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 46/2024 Z. z., ktorým sa mení a dopĺňa zákon č. 50/1976 Zb. o územnom plánovaní a stavebnom poriadku (stavebný zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (Navrhovatelia vzali listom z 27. marca 2025 svoj návrh zákona späť.)",
+   "tlac": "694",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Šmilňák, A. Turčanová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 3. decembra 2024 svoj návrh späť.)",
+   "tlac": "630",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "M. Šimečka, M. Lackovič, J. Hargaš, J. Spišiak, D. Dej, V. Veslárová, B. Vančo, L. Plaváková, I. Bihariová, R. Dubovický, Z. Števulová, V. Tankó, M. Dubéci, V. Kalmárová, B. Jurík, M. Sabo, T. Stohlová, I. Kosová, Š. Kišš, T. Gažovičová, D. Luščíkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 27. novembra 2024 svoj návrh späť.)",
+   "tlac": "621",
+   "state": "Evidencia",
+   "delivered": "2024-11-22",
+   "approved": null,
+   "sponsors": "M. Šimečka, N. Nash, D. Luščíková, T. Valášek, M. Sabo, S. Petrík, V. Veslárová, M. Dubéci, D. Dej, V. Šrobová, B. Vančo, L. Plaváková, O. Dvořák, B. Jurík, J. Hanuliaková, J. Hargaš, M. Truban, M. Lackovič, O. Prostredník, T. Gažovičová, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a overovateľov Národnej rady Slovenskej republiky",
+   "tlac": "553",
+   "state": "Evidencia",
+   "delivered": "2024-10-08",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, J. Jakab, M. Krajčí, R. Krátky, I. Matovič, R. Mikulec, P. Pollák, J. Pročko, V. Remišová, M. Šipoš, A. Škopová, M. Čaučík, J. Hajko, J. Horecký, I. Janckulík, F. Majerský, M. Majerský, F. Mikloško, P. Stachura, B. Škripek, M. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k spolupráci v oblasti bezpečnosti a spravodlivosti",
+   "tlac": "529",
+   "state": "Evidencia",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, T. Valášek, T. Szalay, V. Marcinková, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Majerský, I. Janckulík, J. Hajko, M. Čaučík, M. Dubéci, F. Mikloško, P. Stachura, B. Vančo, Z. Števulová, J. Spišiak, I. Kosová, V. Kalmáro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "478",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "O. Dvořák, Z. Mesterová, Z. Števulová, D. Luščíková, J. Spišiak, T. Stohlová, N. Nash, B. Jurík, R. Dubovický, D. Dej, V. Šrobová, O. Prostredník, M. Lackovič, J. Hargaš, V. Veslárová, I. Štefunko, Š. Kišš, I. Kosová, I. Bihariová, T. Gažovičová, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Milana MAJERSKÉHO na prijatie uznesenia Národnej rady Slovenskej republiky k uzneseniu Európskeho parlamentu o zahrnutí práva na potrat do Charty základných práv Európskej únie 2024/2655 (RSP), prijatom dňa 11. aprila 2024 (Navrhovateľ oznámil listom z 31. mája 2024, že berie späť svoj návrh.)",
+   "tlac": "285",
+   "state": "Evidencia",
+   "delivered": "2024-04-24",
+   "approved": null,
+   "sponsors": "M. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Andreja DANKA z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "180",
+   "state": "Evidencia",
+   "delivered": "2024-01-16",
+   "approved": null,
+   "sponsors": "I. Bihariová, L. Bužo, M. Čaučík, M. Dubéci, O. Dvořák, T. Gažovičová, J. Hajko, I. Janckulík, B. Jurík, V. Kalmárová, J. Jakab, D. Kleinert, M. Bajo Holečková, J. Hargaš, D. Luščíková, F. Majerský, M. Majerský, Z. Mesterová, S. Petrík, O. Prostredn",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-01-27",
+   "by": "Horecký, Ján",
+   "tlac": "939",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tibora GAŠPARA, Róberta PUCIHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov",
+   "session": 46,
+   "voteId": null,
+   "id": "4499"
+  },
+  {
+   "date": "2025-10-23",
+   "by": "Turčanová, Andrea",
+   "tlac": "1061",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 30/2019 Z. z. o hazardných hrách a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 145/1995 Z. z. o správnych poplatkoch v znení neskorších predpisov",
+   "session": 40,
+   "voteId": null,
+   "id": "4458"
+  },
+  {
+   "date": "2025-06-16",
+   "by": "Čaučík, Marián",
+   "tlac": "733",
+   "title": "Vládny návrh ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 35,
+   "voteId": null,
+   "id": "4371"
+  },
+  {
+   "date": "2025-06-16",
+   "by": "Horecký, Ján",
+   "tlac": "733",
+   "title": "Vládny návrh ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 35,
+   "voteId": null,
+   "id": "4373"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Janckulík, Igor",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4304"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Janckulík, Igor",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4305"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Janckulík, Igor",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4306"
+  },
+  {
+   "date": "2024-10-01",
+   "by": "Majerský, Milan",
+   "tlac": "485",
+   "title": "Vládny návrh zákona o dani z finančných transakcií a o zmene a doplnení niektorých zákonov",
+   "session": 19,
+   "voteId": null,
+   "id": "4224"
+  },
+  {
+   "date": "2024-06-20",
+   "by": "Majerský, Milan",
+   "tlac": "364",
+   "title": "Vládny návrh zákona o niektorých opatreniach na zlepšenie bezpečnostnej situácie v Slovenskej republike",
+   "session": 15,
+   "voteId": null,
+   "id": "4194"
+  },
+  {
+   "date": "2024-06-19",
+   "by": "Majerský, Milan",
+   "tlac": "224",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 343/2015 Z. z. o verejnom obstarávaní a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 15,
+   "voteId": null,
+   "id": "4187"
+  },
+  {
+   "date": "2024-02-08",
+   "by": "Majerský, Milan",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4121"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Majerský, Milan",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4076"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Majerský, Milan",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4079"
+  },
+  {
+   "date": "2023-11-22",
+   "by": "Hajko, Jozef",
+   "tlac": "29",
+   "title": "Vládny návrh zákona, ktorým sa dopĺňa zákon č. 296/2020 Z. z. o 13. dôchodku a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 3,
+   "voteId": null,
+   "id": "3992"
+  }
+ ],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 49380,
+  "incomeOther": 19652,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "PREDSEDA (PREŠOVSKÝ SAMOSPRÁVNY KRAJ)",
+   "PREDSEDA (KRESŤANSKO - DEMOKRATICKÉ HNUTIE)",
+   "ČLEN PREDSTAVENSTVA (PREŠOVSKÉ ZDRAVOTNÍCTVO)"
+  ],
+  "realEstateCount": 5,
+  "realEstateKinds": {
+   "Zastavaná plocha a nádvorie - rodinný dom": 1,
+   "Zastavaná plocha a nádvorie - záhradný dom": 1,
+   "Zastavaná plocha a nádvorie- byt": 1,
+   "Trvalý trávnatý porast": 1,
+   "Ostatná plocha": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Vklad v banke",
+   "Umelecké predmety"
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "Milan.Majersky"
+ },
+ "at": "2026-11-26T00:16:31+00:00"
+}

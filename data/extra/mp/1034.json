@@ -1,0 +1,37 @@
+{
+ "id": "1034",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "štátny tajomník",
+  "incomePublic": 64572,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 7,
+  "realEstateKinds": {
+   "Rodinný dom, hospodárska budova, pozemky": 1,
+   "Trvalý trávny porast": 1,
+   "Orná pôda": 1,
+   "Lesný pozemok, ostatná plocha": 1,
+   "Lesný pozemok": 3
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Bankové účty a sporenie"
+  ],
+  "obligations": [
+   "Hypotekárny úver"
+  ],
+  "userId": "Filip.Kuffa"
+ },
+ "at": "2026-11-26T00:06:34+00:00"
+}

@@ -1,0 +1,444 @@
+{
+ "id": "761",
+ "excuses": [
+  {
+   "from": "2025-04-01",
+   "to": "2025-04-02",
+   "days": [
+    "2025-04-01",
+    "2025-04-02"
+   ],
+   "reason": "iný dôvod (Obštrukcia)"
+  },
+  {
+   "from": "2025-05-30",
+   "to": "2025-05-30",
+   "days": [
+    "2025-05-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2025-06-06",
+   "to": "2025-06-06",
+   "days": [
+    "2025-06-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2025-06-13",
+   "to": "2025-06-13",
+   "days": [
+    "2025-06-13"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-10-24",
+   "to": "2025-10-24",
+   "days": [
+    "2025-10-24"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-11-28",
+   "to": "2025-11-28",
+   "days": [
+    "2025-11-28"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-01-30",
+   "to": "2026-01-30",
+   "days": [
+    "2026-01-30"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-02-06",
+   "to": "2026-02-06",
+   "days": [
+    "2026-02-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-03-20",
+   "to": "2026-03-20",
+   "days": [
+    "2026-03-20"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-04-17",
+   "to": "2026-04-17",
+   "days": [
+    "2026-04-17"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-05-29",
+   "to": "2026-05-29",
+   "days": [
+    "2026-05-29"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-06-05",
+   "to": "2026-06-05",
+   "days": [
+    "2026-06-05"
+   ],
+   "reason": "iný dôvod (Rodinné dôvody)"
+  },
+  {
+   "from": "2026-09-25",
+   "to": "2026-09-25",
+   "days": [
+    "2026-09-25"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-10-02",
+   "to": "2026-10-02",
+   "days": [
+    "2026-10-02"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-10-09",
+   "to": "2026-10-09",
+   "days": [
+    "2026-10-09"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-10-16",
+   "to": "2026-10-16",
+   "days": [
+    "2026-10-16"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  },
+  {
+   "from": "2026-11-06",
+   "to": "2026-11-06",
+   "days": [
+    "2026-11-06"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2026-11-20",
+   "to": "2026-11-20",
+   "days": [
+    "2026-11-20"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti v regióne)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1442",
+   "state": "II. čítanie",
+   "delivered": "2026-08-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko, D. Tittel",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Slovenskej národnej rady č. 369/1990 Zb. o obecnom zriadení v znení neskorších predpisov a ktorým sa mení zákon Slovenskej národnej rady č. 401/1990 Zb. o meste Košice v znení neskorších predpisov",
+   "tlac": "1238",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": "2026-06-17",
+   "sponsors": "J. Blcháč, D. Demečko, Z. Mačicová, R. Malatinec, R. Puci, R. Raši",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1237",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "J. Blcháč, D. Demečko, Z. Mačicová, R. Malatinec, R. Puci, R. Raši",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1195",
+   "state": "Evidencia",
+   "delivered": "2026-02-12",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1168",
+   "state": "Evidencia",
+   "delivered": "2026-01-22",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky, voľbu overovateľa Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "1126",
+   "state": "Evidencia",
+   "delivered": "2025-11-25",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, B. Becík, J. Baška, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, D. Demečko, R. Eliáš, V. Faič, J. Ferenčák, D. Galis, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, I. Hazucha, J. Horváth, J. Hrubý, K. Janas, D. Jarjabek, J. Ježík",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na voľbu predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1120",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, R. Puci, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie predsedu Výboru Národnej rady Slovenskej republiky pre európske záležitosti",
+   "tlac": "1119",
+   "state": "Evidencia",
+   "delivered": "2025-11-20",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, P. Kmec, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, Z. Svoboda, A. Szabóová, R. Puci, I. Šimko,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obnoveným spoločným rokovaniam vlád Slovenskej republiky a Českej republiky. (Navrhovatelia vzali listom z 20. januára 2026 svoj návrh späť.)",
+   "tlac": "1072",
+   "state": "Evidencia",
+   "delivered": "2025-10-28",
+   "approved": null,
+   "sponsors": "R. Raši, R. Puci, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, P. Slyško, Z. Svoboda, A. Szabó",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a vymenovanie vedúceho stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "860",
+   "state": "Evidencia",
+   "delivered": "2025-05-21",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, A. Szabóová, I. Š",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k zneužívaniu legislatívneho procesu k zákonu o neziskových organizáciách poskytujúcich všeobecne prospešné služby na presadzovanie politických a súkromných záujmov",
+   "tlac": "792",
+   "state": "Evidencia",
+   "delivered": "2025-04-03",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Stuška, M. Čavojová, R. Glück, T. Gašpar, D. Karas, M. Lukša, J. Mažgút, P. Sokol, J. Horváth, S. Kubánek, J. Kvorka, P. Šuca, Ľ. Vážny, D. Galis, J. Ježík, F. Petro, A. Stredák,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výborov Národnej rady Slovenskej republiky a vymenovanie člena stálej delegácie Národnej rady Slovenskej republiky",
+   "tlac": "778",
+   "state": "Evidencia",
+   "delivered": "2025-03-24",
+   "approved": null,
+   "sponsors": "M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, J. Hrubý, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, P. Náhlik, A. Nováková, P. Puškárová, R. Raši, P. Slyško, Z. Svoboda, I. Šimko, R. Puci",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-06-11",
+   "by": "Raši, Richard",
+   "tlac": "1237",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4578"
+  },
+  {
+   "date": "2026-05-26",
+   "by": "Raši, Richard",
+   "tlac": "1237",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4551"
+  },
+  {
+   "date": "2026-05-26",
+   "by": "Raši, Richard",
+   "tlac": "1243",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4552"
+  }
+ ],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2026-10-23",
+   "to": "2026-10-23",
+   "desc": "Budapešť - Predseda NR SR Richard Raši sa zúčastní na Spomienkovom podujatí pri príležitosti 70. výročia Maďarskej revolúcie v Maďarsku."
+  },
+  {
+   "from": "2026-09-17",
+   "to": "2026-09-18",
+   "desc": "Wachau - Predseda NR SR Richard Raši sa zúčastní Stretnutia predsedov parlamentov krajín Slavkovského formátu v Rakúskej republike."
+  },
+  {
+   "from": "2026-06-28",
+   "to": "2026-06-29",
+   "desc": "Istanbul - Predseda NR SR Richard Raši a poslanci NR SR Róbert Puci a Marián Saloň sa zúčastnia Parlamentného summitu NATO v Turecku."
+  },
+  {
+   "from": "2026-06-16",
+   "to": "2026-06-17",
+   "desc": "Praha - Predseda NR SR Richard Raši, podpredseda NR SR Tibor Gašpar a poslanci NR SR Peter Kalivoda, Miroslav Čellár, Róbert Puci, Ján Richter, Marián Kéry a Paula Puškárová sa zúčastnia pracovnej návštevy v Českej republike."
+  },
+  {
+   "from": "2026-05-12",
+   "to": "2026-05-15",
+   "desc": "Baku, Karabach - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róber Puci, Roman Michelko, Ľubica Laššáková, Peter Náhlik, Michal Bartek, Igor Janckulík, Marcela Čavojová a Zuzana Matejičková sa zúčastnia pracovnej cesty v Azerbajdžanskej republike."
+  },
+  {
+   "from": "2026-05-03",
+   "to": "2026-05-05",
+   "desc": "Kodaň - Predseda Národnej rady Slovenskej republiky Richard Raši sa zúčastní Konferencie predsedov parlamentov krajín EÚ v Dánsku."
+  },
+  {
+   "from": "2026-03-24",
+   "to": "2026-03-25",
+   "desc": "Záhreb- Predseda Národnej rady Slovenskej republiky Richard Raši sa zúčastní na Parlamentnom samite Iniciatívy Trojmoria v Chorvátsku."
+  },
+  {
+   "from": "2026-03-18",
+   "to": "2026-03-19",
+   "desc": "Nadlak- Predseda Národnej rady Slovenskej reubliky sa zúčastní na Pracovnej návšteve predsedu NR SR v Rumunsku."
+  },
+  {
+   "from": "2026-03-06",
+   "to": "2026-03-09",
+   "desc": "Miláno/Cortina- Predseda Národnej rady Slovenskej republiky Richard Raši a poslanec NR SR Erik Vlček sa zúčastnia na Zimných paralympijských hrách Milano/Cortina 2026 v Taliansku."
+  },
+  {
+   "from": "2026-02-26",
+   "to": "2026-02-27",
+   "desc": "Budapešť- Predseda NR SR Richard Raši sa zúčastní na Konferencii predsedov parlamentov krajín V4 a na Konferencii predsedov parlamentov krajín juhovýchodnej Európy v Maďarsku."
+  },
+  {
+   "from": "2026-01-20",
+   "to": "2026-01-21",
+   "desc": "Rím - Predseda NR SR Richard Raši, poslanci NR SR Ivan Hazucha, Daniel Karas, Róbert Puci, Peter Kalivoda, Zdenko Svoboda, Igor Janckulík a Zora Jaurová, sa zúčastnia na pracovnej návšteve v Talianskej republike."
+  },
+  {
+   "from": "2025-12-17",
+   "to": "2025-12-17",
+   "desc": "Praha- Predseda Národnej rady Slovenskej republiky Richard Raši a poslanci NR SR Paula Puškárová a Michal Bartek sa zúčastnia na pracovnej návšteve predsedu NR SR v Českej republike."
+  },
+  {
+   "from": "2025-11-18",
+   "to": "2025-11-19",
+   "desc": "Londýn- Predseda Národnej rady Slovenskej republiky Richard Raši sa zúčastní na pracovnej návšteve v Spojenom kráľovstve."
+  },
+  {
+   "from": "2025-11-06",
+   "to": "2025-11-06",
+   "desc": "Brusel- Predseda Národnej rady Slovenskej republiky Richard Raši a predseda Ústavnoprávneho výboru NRSR Miroslav Čellár sa zúčastnia na pracovnej návšteve Európskeho parlamentu v Belgicku."
+  },
+  {
+   "from": "2025-10-07",
+   "to": "2025-10-08",
+   "desc": "Paríž- Predseda NR SR Richard Raši sa zúčastní pracovnej návštevy vo Francúzskej republike."
+  },
+  {
+   "from": "2025-10-02",
+   "to": "2025-10-03",
+   "desc": "Monako-Predseda NR SR Richard Raši sa zúčastní Pracovnej návštevy Monackého kniežatstva ."
+  },
+  {
+   "from": "2025-09-01",
+   "to": "2025-09-06",
+   "desc": "Japonsko - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róbert Puci, Marián Kéry, Karol Farkašovský, Igor Janckulík, Zuzana Plevíková, Andrea Szabóová, Ivan Štefunko, Marián Viskupič a Michal Stuška sa zúčastnia pracovnej návštevy predsedu NR SR Richarda Rašiho v Japonsku."
+  },
+  {
+   "from": "2025-07-29",
+   "to": "2025-07-30",
+   "desc": "Ženeva-Predseda NR SR Richard Raši sa zúčastní na 6. Svetovej konferencii predsedov vo Švajčiarsku."
+  },
+  {
+   "from": "2025-07-07",
+   "to": "2025-07-07",
+   "desc": "Tapolca- Predseda NR SR Richard Raši sa zúčastní na pracovnom stretnutí s ministrom regionálneho rozvoja Maďarska T. Navracsicsom v Maďarskej republike."
+  },
+  {
+   "from": "2025-05-18",
+   "to": "2025-05-23",
+   "desc": "Peking, Ningbo- Predseda NR SR Richard Raši a podpredseda NR SR Tibor Gašpar sa zúčastnia na pracovnej návšteve predsedu Národnej rady Slovenskej republiky v Čínskej ľudovej republike."
+  },
+  {
+   "from": "2025-05-11",
+   "to": "2025-05-13",
+   "desc": "Budapešť- Predseda NR SR Richard Raši sa zúčastí na Konferencii predsedov parlamentov EÚ a na oficiálnej návšteve predsedu NR SR v Maďarsku."
+  },
+  {
+   "from": "2025-05-07",
+   "to": "2025-05-07",
+   "desc": "Praha- Predseda NR SR Richard Raši sa zúčastní na Oficiálnej návšteve v Českej republike."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 56000,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "ČLEN PREDSTAVENSTVA (VÝCHODOSLOVENSKÁ INVESTIČNÁ AGENTÚRA)"
+  ],
+  "realEstateCount": 6,
+  "realEstateKinds": {
+   "Záhrada": 1,
+   "Garáž": 1,
+   "Pozemok s rodinným domom": 1,
+   "Byt": 1,
+   "Záhrada - dedičstvo": 1,
+   "Ostatná plocha - dedičstvo": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Finančné úspory",
+   "Finančné prostriedky (predaj nehnuteľností - dedičstva v r. 2021)"
+  ],
+  "obligations": [
+   "Pôžička"
+  ],
+  "userId": "RasiRich"
+ },
+ "at": "2026-11-26T00:40:10+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (A. Danko, M. Garaj, D. Kramplová, A. Lučanský)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1499 zo dňa 5. 5. 2026. NR SR uznesením rozhodla o výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 25. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 25. 5. 2026.",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR dňa 2. 6. 2026. Pozmeňujúce a doplňujúce návrhy: 27. 05. 2026 14:59 Jakab, Július Detail návrhu 9_1272-Július Jakab (151 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 52. schôdzi NR SR, uznesenie číslo 1556 zo dňa 2. 6. 2026",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 11. 6. 2026 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (18. 6. 2026), číslo 132/2026. Všetky dokumenty v balíku ZIP Hlasovania poslancov o ČPT Deň v parlamente Ľutujeme, ale pre používanie kalendára musíte mať povolený JavaScript. We are sorry, but for proper usage of calendar you have to ha",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T01:25:35+00:00"
+}

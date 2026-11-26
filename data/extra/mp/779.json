@@ -1,0 +1,937 @@
+{
+ "id": "779",
+ "excuses": [
+  {
+   "from": "2024-05-21",
+   "to": "2024-05-22",
+   "days": [
+    "2024-05-21",
+    "2024-05-22"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta - Taiwan, účasť na inaugurácii prezidenta a viceprezidentky Čínskej republiky Taiwan)"
+  },
+  {
+   "from": "2025-10-28",
+   "to": "2025-10-28",
+   "days": [
+    "2025-10-28"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta, Čínska republika -Taiwan)"
+  },
+  {
+   "from": "2026-05-06",
+   "to": "2026-05-07",
+   "days": [
+    "2026-05-06",
+    "2026-05-07"
+   ],
+   "reason": "iný dôvod (Zahraničná pracovná cesta-2026 Formosa Club Europe Spring Catering, Brusel)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jurajovi BLANÁROVI, poverenému riadením Ministerstva zahraničných vecí a európskych záležitostí Slovenskej republiky",
+   "tlac": "1589",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-11-17",
+   "approved": null,
+   "sponsors": "M. Šipoš, V. Remišová, R. Mikulec, G. Grendel, I. Dušenka, J. Jakab, L. Bužo, M. Krajčí, P. Pollák, A. Škopová, I. Matovič, Z. Mesterová, M. Šimečka, M. Dubéci, B. Jurík, L. Plaváková, V. Šrobová, G. Gregorová, D. Kleinert, N. Nash, O. Prostredník,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 171/1993 Z. z. o Policajnom zbore v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1541",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1425",
+   "state": "I. čítanie",
+   "delivered": "2026-08-04",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, K. Galek, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Samuelovi MIGAĽOVI, poverenému riadením Ministerstva investícií, regionálneho rozvoja a informatizácie Slovenskej republiky",
+   "tlac": "1417",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-11",
+   "approved": null,
+   "sponsors": "J. Hargaš, B. Jurík, L. Plaváková, M. Šimečka, M. Truban, B. Vančo, V. Tankó, I. Štefunko, Z. Števulová, T. Stohlová, I. Bihariová, G. Gregorová, M. Lackovič, V. Veslárová, N. Nash, S. Petrík, M. Sabo, J. Spišiak, V. Šrobová, R. Dubovický, D. Dej, T",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Richardovi TAKÁČOVI, poverenému riadením Ministerstva pôdohospodárstva a rozvoja vidieka Slovenskej republiky",
+   "tlac": "1412",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-05",
+   "approved": null,
+   "sponsors": "K. Galek, B. Gröhling, A. Hlina, M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, T. Szalay, M. Viskupič, M. Čaučík, J. Horecký, R. Krátky, B. Škripek, L. Bužo, I. Dušenka, Ľ. Galko, G. Grendel, J. Jakab, M. Krajčí, I. Matovič, R. Mikulec, P. Po",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Robertovi KALIŇÁKOVI, poverenému riadením Ministerstva obrany Slovenskej republiky",
+   "tlac": "1403",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-06-01",
+   "approved": null,
+   "sponsors": "F. Majerský, P. Stachura, I. Janckulík, M. Majerský, M. Kolejáková, B. Škripek, A. Turčanová, G. Paľa, M. Šipoš, F. Mikloško, M. Čaučík, I. Dušenka, B. Jurík, Ľ. Galko, O. Prostredník, V. Šrobová, V. Tankó, D. Luščíková, M. Lackovič, G. Gregorová, J",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery podpredsedovi vlády Slovenskej republiky Tomášovi TARABOVI, poverenému riadením Ministerstva životného prostredia Slovenskej republiky",
+   "tlac": "1400",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-05-27",
+   "approved": null,
+   "sponsors": "T. Stohlová, M. Sabo, Z. Mesterová, B. Jurík, G. Gregorová, O. Dvořák, M. Lackovič, L. Plaváková, V. Veslárová, Z. Števulová, O. Prostredník, S. Petrík, Ľ. Galko, J. Hargaš, I. Bihariová, V. Tankó, I. Kosová, D. Kleinert, B. Vančo, D. Dej, N. Nash,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA, Márie KOLÍKOVEJ, Martiny BAJO HOLEČKOVEJ a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1375",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, M. Kolíková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA, Martiny BAJO HOLEČKOVEJ a Márie KOLÍKOVEJ na vydanie zákona, ktorým sa mení zákon č. 180/2014 Z. z. o podmienkach výkonu volebného práva a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré ďalšie zákony",
+   "tlac": "1373",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, M. Kolíková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA, Vladimíry MARCINKOVEJ a Martiny BAJO HOLEČKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 400/2015 Z. z. o tvorbe právnych predpisov a o Zbierke zákonov Slovenskej republiky a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1370",
+   "state": "I. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, V. Marcinková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení ústavný zákon č. 493/2011 Z. z. o rozpočtovej zodpovednosti",
+   "tlac": "1316",
+   "state": "I. čítanie",
+   "delivered": "2026-05-04",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "1296",
+   "state": "Rokovanie NR SR",
+   "delivered": "2026-04-20",
+   "approved": null,
+   "sponsors": "L. Bužo, G. Grendel, P. Pollák, J. Pročko, M. Šipoš, A. Škopová, V. Remišová, R. Mikulec, J. Jakab, I. Dušenka, M. Krajčí, I. Matovič, M. Bajo Holečková, J. Bittó Cigániková, B. Gröhling, A. Hlina, K. Galek, O. Dostál, M. Kolíková, J. Krúpa, V. Lede",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA a Márie KOLÍKOVEJ na vydanie zákona, ktorým sa zrušuje zákon č. 376/2025 Z.z. o Úrade na ochranu obetí trestných činov a oznamovateľov protispoločenskej činnosti a o zmene a doplnení niektorých zákonov",
+   "tlac": "1206",
+   "state": "I. čítanie",
+   "delivered": "2026-03-12",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stavu trestného stíhania korupcie v Slovenskej republike a k závažným zisteniam generálneho prokurátora",
+   "tlac": "1191",
+   "state": "Evidencia",
+   "delivered": "2026-02-05",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, B. Gröhling, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, Z. Mesterová, L. Plaváková, B. Vančo, Z. Števulová, D. Kleinert, G. Gregorová, J. Hanuliaková, Z. Jaurová, J. Spišiak, J. Horecký, I. Janckulík, F. Majerský, M. Majersk",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Národnej rady Slovenskej republiky č. 241/1993 Z. z. o štátnych sviatkoch, dňoch pracovného pokoja a pamätných dňoch v znení neskorších predpisov",
+   "tlac": "1163",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 384/2025 Z. z. o evidencii tržieb a o zmene a doplnení niektorých zákonov",
+   "tlac": "1162",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Márie KOLÍKOVEJ, Ondreja DOSTÁLA, Martiny BAJO HOLEČKOVEJ, Vladimíry MARCINKOVEJ a Branislava GRÖHLINGA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "1160",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, B. Gröhling, M. Kolíková, V. Marcinková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1159",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-01-09",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, B. Gröhling, M. Kolíková, V. Marcinková, T. Szalay, M. Viskupič, M. Bajo Holečková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Vladimíry MARCINKOVEJ, Ondreja DOSTÁLA a Márie KOLÍKOVEJ na prijatie uznesenia Národnej rady Slovenskej republiky k výzve predsedovi Národnej rady Slovenskej republiky na vyhlásenie voľby kandidátov na sudcu ústavného súdu",
+   "tlac": "1137",
+   "state": "Evidencia",
+   "delivered": "2025-12-08",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková, V. Marcinková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Jozefovi RÁŽOVI, poverenému riadením Minsterstva dopravy Slovenskej republiky",
+   "tlac": "1125",
+   "state": "Evidencia",
+   "delivered": "2025-11-24",
+   "approved": null,
+   "sponsors": "I. Dušenka, M. Šipoš, A. Škopová, J. Pročko, G. Grendel, I. Matovič, R. Mikulec, J. Jakab, P. Pollák, L. Bužo, M. Krajčí, V. Remišová, J. Hargaš, Z. Mesterová, T. Stohlová, I. Štefunko, M. Truban, T. Valášek, M. Šimečka, M. Sabo, V. Šrobová, O. Pros",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1104",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, B. Gröhling, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "1103",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, B. Gröhling, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "1102",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-11-07",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, B. Gröhling, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 575/2001 Z. z. o organizácii činnosti vlády a organizácii ústrednej štátnej správy v znení neskorších predpisov",
+   "tlac": "1071",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-10-24",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, K. Galek, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "tlac": "1054",
+   "state": "Evidencia",
+   "delivered": "2025-10-09",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, J. Bittó Cigániková, K. Galek, B. Gröhling, A. Hlina, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k odsúdeniu dronového útoku Ruskej federácie na územie Poľskej republiky",
+   "tlac": "1035",
+   "state": "Rokovanie NR SR",
+   "delivered": "2025-09-26",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Márie KOLÍKOVEJ, Juraja KRÚPU a Ondreja DOSTÁLA na prijatie uznesenia Národnej rady Slovenskej republiky k dôveryhodnosti Slovenskej informačnej služby vedenej Pavlom Gašparom",
+   "tlac": "1002",
+   "state": "Evidencia",
+   "delivered": "2025-09-09",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková, J. Krúpa",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 526/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva vnútra Slovenskej republiky v znení neskorších predpisov a o zmene zákona č. 487/2013 Z. z. o protifašistickom odboji, postavení a pôsobnosti Slovenského zväzu protifašistických bojovníkov v znení zákona č. 338/2020 Z. z.",
+   "tlac": "981",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 180/2013 Z. z. o organizácii miestnej štátnej správy a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "976",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Vladimíra LEDECKÉHO, Martiny BAJO HOLEČKOVEJ, Ondreja DOSTÁLA a Jany BITTÓ CIGÁNIKOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "965",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, V. Ledecký, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Mariána VISKUPIČA, Vladimíra LEDECKÉHO, Martiny BAJO HOLEČKOVEJ, Ondreja DOSTÁLA a Jany BITTÓ CIGÁNIKOVEJ na vydanie ústavného zákona, ktorým sa dopĺňa ústavný zákon č. 493/2011 Z. z. o rozpočtovej zodpovednosti",
+   "tlac": "949",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-08-22",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, V. Ledecký, M. Viskupič",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k stanovisku Slovenskej republiky k sankčnej politike Európskej únie voči Ruskej federácii podľa čl. 2 ods. 3 ústavného zákona č. 397/2004 Z. z. o spolupráci Národnej rady Slovenskej republiky a vlády Slovenskej republiky v záležitostiach Európskej únie",
+   "tlac": "889",
+   "state": "Evidencia",
+   "delivered": "2025-06-27",
+   "approved": null,
+   "sponsors": "V. Marcinková, B. Jurík, M. Kolíková, J. Jakab, G. Grendel, J. Pročko, L. Bužo, O. Dostál, M. Viskupič, M. Šmilňák, I. Janckulík, J. Horecký, Z. Mesterová, P. Pollák, V. Veslárová, J. Krúpa, V. Ledecký, F. Mikloško, M. Majerský, J. Bittó Cigániková",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa zrušuje zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "tlac": "880",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-06-04",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, J. Bittó Cigániková, O. Dostál, M. Kolíková, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 181/2014 Z. z. o volebnej kampani a o zmene a doplnení zákona č. 85/2005 Z. z. o politických stranách a politických hnutiach v znení neskorších predpisov v znení neskorších predpisov",
+   "tlac": "847",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-09",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k odsúdeniu raketových útokov Ruskej federácie na civilné ciele v ukrajinských mestách Kryvyj Rih a Sumy",
+   "tlac": "800",
+   "state": "Evidencia",
+   "delivered": "2025-04-15",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, M. Kolíková, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "756",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-03-07",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky",
+   "tlac": "697",
+   "state": "Evidencia",
+   "delivered": "2025-01-22",
+   "approved": null,
+   "sponsors": "J. Hajko, F. Mikloško, P. Stachura, M. Šmilňák, A. Turčanová, J. Horecký, F. Majerský, M. Majerský, I. Janckulík, M. Čaučík, B. Škripek, M. Šimečka, T. Stohlová, M. Sabo, N. Nash, O. Prostredník, J. Hanuliaková, V. Kalmárová, S. Petrík, D. Dej, J. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA. Vladimíry MARCINKOVEJ, Branislava GRÖHLlNGA, Martiny BAJO HOLEČKOVEJ a Mariána VISKUPIČA na vydanie ústavného zákona, ktorým sa mení a dopĺňa Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "696",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "M. Bajo Holečková, O. Dostál, B. Gröhling, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "693",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-17",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery vláde Slovenskej republiky (Navrhovatelia vzali listom z 21. januára 2025 svoj návrh späť.)",
+   "tlac": "652",
+   "state": "Evidencia",
+   "delivered": "2025-01-15",
+   "approved": null,
+   "sponsors": "I. Bihariová, B. Jurík, M. Šimečka, V. Tankó, D. Dej, O. Dvořák, Š. Kišš, M. Lackovič, O. Prostredník, V. Šrobová, N. Nash, J. Hanuliaková, Z. Mesterová, M. Sabo, T. Stohlová, V. Veslárová, I. Kosová, V. Kalmárová, D. Kleinert, S. Petrík, J. Spišiak",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Tomáša SZALAYA, Ondreja DOSTÁLA, Jany BITTÓ CIGÁNIKOVEJ, Juraja KRÚPU a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení zákon č. 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (Navrhovatelia vzali listom z 30. januára 2025 svoj návrh zákona späť.)",
+   "tlac": "644",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-01-07",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, J. Krúpa, T. Szalay, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "632",
+   "state": "Evidencia",
+   "delivered": "2024-12-03",
+   "approved": null,
+   "sponsors": "F. Majerský, J. Horecký, M. Čaučík, I. Janckulík, F. Mikloško, M. Šmilňák, B. Škripek, A. Turčanová, J. Hajko, M. Šimečka, O. Prostredník, I. Kosová, Z. Jaurová, B. Vančo, V. Veslárová, J. Spišiak, J. Hargaš, J. Hanuliaková, O. Dvořák, B. Jurík, Z.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJOVI EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky (Navrhovatelia vzali listom z 3. decembra 2024 svoj návrh späť.)",
+   "tlac": "630",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "M. Šimečka, M. Lackovič, J. Hargaš, J. Spišiak, D. Dej, V. Veslárová, B. Vančo, L. Plaváková, I. Bihariová, R. Dubovický, Z. Števulová, V. Tankó, M. Dubéci, V. Kalmárová, B. Jurík, M. Sabo, T. Stohlová, I. Kosová, Š. Kišš, T. Gažovičová, D. Luščíkov",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Márie KOLÍKOVEJ, Ondreja DOSTÁLA Juraja KRÚPU a Mariána VISKUPIČA na vydanie zákona, ktorým sa dopĺňa zákon č. 160/2015 Z. z. Civilný sporový poriadok v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 553/2002 Z. z. o sprístupnení dokumentov o činnosti bezpečnostných zložiek štátu 1939 - 1989 a o založeni Ústavu pamäti národa a o doplnení niektorých zákonov (zákon o pamäti národa) v znení neskorších predpisov",
+   "tlac": "568",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-24",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková, J. Krúpa, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Márie KOLÍKOVEJ, Ondreja DOSTÁLA a Mariána VISKUPIČA na prijatie uznesenia Národnej rady Slovenskej republiky k schváleniu súdneho zmieru medzi Ministerstvom vnútra Slovenskej republiky a Ing. Andrejom Babišom",
+   "tlac": "567",
+   "state": "Evidencia",
+   "delivered": "2024-10-23",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslanca Národnej rady Slovenskej republiky Ondreja DOSTÁLA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 311/2001 Z. z. Zákonník práce v znení neskorších predpisov",
+   "tlac": "547",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-10-04",
+   "approved": null,
+   "sponsors": "O. Dostál",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k spolupráci v oblasti bezpečnosti a spravodlivosti",
+   "tlac": "529",
+   "state": "Evidencia",
+   "delivered": "2024-10-03",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, T. Valášek, T. Szalay, V. Marcinková, K. Galek, B. Gröhling, M. Kolíková, V. Ledecký, M. Majerský, I. Janckulík, J. Hajko, M. Čaučík, M. Dubéci, F. Mikloško, P. Stachura, B. Vančo, Z. Števulová, J. Spišiak, I. Kosová, V. Kalmáro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 222/2004 Z. z. o dani z pridanej hodnoty v znení neskorších predpisov (Navrhovatelia oznámili listom z 22. októbra 2024 späťvzatie svojho návrhu zákona.)",
+   "tlac": "489",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-09-25",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková, J. Krúpa, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výboru Národnej rady Slovenskej republiky",
+   "tlac": "479",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, K. Galek, B. Gröhling, A. Hlina, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Zuzane DOLlNKOVEJ, poverenej riadením Ministerstva zdravotníctva Slovenskej republiky",
+   "tlac": "478",
+   "state": "Evidencia",
+   "delivered": "2024-09-11",
+   "approved": null,
+   "sponsors": "O. Dvořák, Z. Mesterová, Z. Števulová, D. Luščíková, J. Spišiak, T. Stohlová, N. Nash, B. Jurík, R. Dubovický, D. Dej, V. Šrobová, O. Prostredník, M. Lackovič, J. Hargaš, V. Veslárová, I. Štefunko, Š. Kišš, I. Kosová, I. Bihariová, T. Gažovičová, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Osobitného kontrolného výboru Národnej rady Slovenskej republiky na kontrolu činnosti Slovenskej informačnej služby",
+   "tlac": "472",
+   "state": "Evidencia",
+   "delivered": "2024-09-10",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, J. Krúpa, V. Ledecký, M. Bartek, B. Becík, J. Blcháč, J. Cech, M. Čellár, D. Demečko, R. Eliáš, J. Ferenčák, Š. Gašparovič, K. Janas, P. Kalivoda, Ľ. Laššáková, Z. Mačicová, R. Malatinec, S. Migaľ, P. Náhlik, A. Nováková, P.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Ondreja DOSTÁLA, Jany BITTÓ CIGÁNIKOVEJ, Juraja KRÚPU, Márie KOLÍKOVEJ a Mariána VISKUPIČA na vydanie zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 350/1996 Z. z. o rokovacom poriadku Národnej rady Slovenskej republiky v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 400/2015 Z. z. o tvorbe právnych predpisov a o Zbierke zákonov Slovenskej republiky a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "443",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "tlac": "442",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "441",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení zákon Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov",
+   "tlac": "440",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa dopĺňa zákon č. 153/2001 Z. z. o prokuratúre v znení neskorších predpisov",
+   "tlac": "439",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-23",
+   "approved": null,
+   "sponsors": "J. Bittó Cigániková, O. Dostál, M. Kolíková, J. Krúpa, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Vladimíry MARCINKOVEJ, Vladimíra LEDECKÉHO a Ondreja DOSTÁLA na vydanie zákona, ktorým sa mení zákon č. 36/2005 Z. z. o rodine a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "418",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-08-22",
+   "approved": null,
+   "sponsors": "O. Dostál, V. Ledecký, V. Marcinková",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k smrti ruského opozičného lídra Alexeja Navaľného a apel na dôkladné, spravodlivé a transparentné vyšetrenie jeho úmrtia",
+   "tlac": "205",
+   "state": "Evidencia",
+   "delivered": "2024-02-23",
+   "approved": null,
+   "sponsors": "O. Dostál, J. Krúpa, V. Ledecký, V. Marcinková, T. Szalay, M. Viskupič",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k druhému výročiu vojenskej agresie Ruskej federácie proti Ukrajine",
+   "tlac": "200",
+   "state": "Evidencia",
+   "delivered": "2024-02-16",
+   "approved": null,
+   "sponsors": "O. Dostál, A. Hlina, M. Kolíková, J. Krúpa, B. Gröhling, T. Szalay, M. Viskupič, V. Ledecký, T. Valášek, M. Dubéci, Z. Mesterová, B. Jurík, J. Spišiak, P. Stachura, M. Šmilňák, A. Turčanová, F. Majerský",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členke vlády Slovenskej republiky Martine ŠIMKOVIČOVEJ, poverenej riadením Ministerstva kultúry Slovenskej republiky",
+   "tlac": "194",
+   "state": "Evidencia",
+   "delivered": "2024-02-06",
+   "approved": null,
+   "sponsors": "L. Plaváková, M. Šimečka, Z. Mesterová, M. Dubéci, B. Jurík, Z. Števulová, I. Štefunko, D. Dej, O. Dvořák, M. Truban, V. Šrobová, M. Sabo, V. Veslárová, J. Hanuliaková, O. Prostredník, S. Petrík, N. Nash, J. Hargaš, T. Gažovičová, D. Luščíková, V. K",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k uzneseniu Európskeho parlamentu o plánovanom zrušení kľúčových protikorupčných štruktúr na Slovensku a jeho dôsledkoch pre právny štát (2023/3021 (R8P)) prijatému dňa 17. januára 2024",
+   "tlac": "186",
+   "state": "Evidencia",
+   "delivered": "2024-01-26",
+   "approved": null,
+   "sponsors": "M. Šimečka, B. Jurík, J. Krúpa, Z. Števulová, T. Valášek, V. Kalmárová, D. Luščíková, B. Vančo, Z. Jaurová, D. Kleinert, B. Škripek, J. Spišiak, T. Gažovičová, Z. Mesterová, M. Lackovič, N. Nash, O. Dostál, D. Dej, M. Kolíková, O. Prostredník, L. Pl",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k ruským útokom severokórejskými balistickými strelami na Ukrajine",
+   "tlac": "145",
+   "state": "Evidencia",
+   "delivered": "2024-01-10",
+   "approved": null,
+   "sponsors": "V. Marcinková, V. Ledecký, A. Hlina, M. Viskupič, B. Gröhling, O. Dostál, J. Bittó Cigániková, M. Kolíková, J. Krúpa, R. Sulík, T. Szalay",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Márie KOLÍKOVEJ, Juraja KRÚPU, Branislava GRÖHLlNGA a Ondreja DOSTÁLA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 301/2005 Z. z. Trestný poriadok v znení neskorších predpisov",
+   "tlac": "59",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, M. Kolíková, J. Krúpa",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Márie KOLÍKOVEJ, Juraja KRÚPU a Ondreja DOSTÁLA na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa mení zákon č. 91/2016 Z. z. o trestnej zodpovednosti právnických osôb a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "58",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-20",
+   "approved": null,
+   "sponsors": "O. Dostál, M. Kolíková, J. Krúpa",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Vladimíry MARCINKOVEJ, Vladimíra LEDECKÉHO, Ondreja DOSTÁLA, Mariána VISKUPIČA a Branislava GRÖHLlNGA na vydanie zákona, ktorým sa dopĺňa zákon č. 55/2017 Z. z. o štátnej službe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "41",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-16",
+   "approved": null,
+   "sponsors": "O. Dostál, B. Gröhling, V. Ledecký, V. Marcinková, M. Viskupič",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie Ľuboša BLAHU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "26",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-07",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-05-29",
+   "by": "Kolíková, Mária",
+   "tlac": "1210",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 160/2015 Z. z. Civilný sporový poriadok v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 97/1963 Zb. o medzinárodnom práve súkromnom a procesnom v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4566"
+  },
+  {
+   "date": "2026-05-29",
+   "by": "Kolíková, Mária",
+   "tlac": "1210",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 160/2015 Z. z. Civilný sporový poriadok v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 97/1963 Zb. o medzinárodnom práve súkromnom a procesnom v znení neskorších predpisov",
+   "session": 52,
+   "voteId": null,
+   "id": "4567"
+  },
+  {
+   "date": "2026-05-26",
+   "by": "Dostál, Ondrej",
+   "tlac": "1386",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie Podrobnejších pravidiel rokovania Národnej rady Slovenskej republiky",
+   "session": 52,
+   "voteId": null,
+   "id": "4547"
+  },
+  {
+   "date": "2026-04-14",
+   "by": "Dostál, Ondrej",
+   "tlac": "1233",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k Vyhláseniu Národnej rady Slovenskej republiky k 60. výročiu udelenia Ceny Akadémie (Oscar) filmu Obchod na korze (Navrhovateľ oznámil listom zo 16.4.2026 späťvzatie ich návrhu.)",
+   "session": 49,
+   "voteId": null,
+   "id": "4538"
+  },
+  {
+   "date": "2026-02-12",
+   "by": "Dostál, Ondrej",
+   "tlac": "1195",
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "session": 46,
+   "voteId": null,
+   "id": "4526"
+  },
+  {
+   "date": "2026-01-30",
+   "by": "Kolíková, Mária",
+   "tlac": "1076",
+   "title": "Vládny návrh zákona o obchodnom registri a o zmene a doplnení niektorých zákonov (zákon o obchodnom registri)",
+   "session": 46,
+   "voteId": null,
+   "id": "4513"
+  },
+  {
+   "date": "2025-12-11",
+   "by": "Kolíková, Mária",
+   "tlac": "1115",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 233/1995 Z. z. o súdnych exekútoroch a exekučnej činnosti (Exekučný poriadok) a o zmene a doplnení ďalších zákonov v znení neskorších predpisov (NÁVRH ZÁKONA SCHVÁLENÝ 11.12.2025, SCHVÁLENÉ ZNENIE CEZ LINK - Legislatívny proces - v balíku ZIP, viď dole. Zákon vyšiel v Zbierke zákonov SR 27.12.2025 pod číslom 416/2025.)",
+   "session": 43,
+   "voteId": null,
+   "id": "4491"
+  },
+  {
+   "date": "2025-12-04",
+   "by": "Plaváková, Lucia",
+   "tlac": "1123",
+   "title": "Vládny návrh zákona o Úrade na ochranu obetí trestných činov a oznamovateľov protispoločenskej činnosti a o zmene a doplnení niektorých zákonov",
+   "session": 43,
+   "voteId": null,
+   "id": "4470"
+  },
+  {
+   "date": "2025-12-04",
+   "by": "Plaváková, Lucia",
+   "tlac": "1123",
+   "title": "Vládny návrh zákona o Úrade na ochranu obetí trestných činov a oznamovateľov protispoločenskej činnosti a o zmene a doplnení niektorých zákonov",
+   "session": 43,
+   "voteId": null,
+   "id": "4471"
+  },
+  {
+   "date": "2025-12-04",
+   "by": "Plaváková, Lucia",
+   "tlac": "1123",
+   "title": "Vládny návrh zákona o Úrade na ochranu obetí trestných činov a oznamovateľov protispoločenskej činnosti a o zmene a doplnení niektorých zákonov",
+   "session": 43,
+   "voteId": null,
+   "id": "4472"
+  },
+  {
+   "date": "2025-10-22",
+   "by": "Dostál, Ondrej",
+   "tlac": "1066",
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky",
+   "session": 40,
+   "voteId": null,
+   "id": "4456"
+  },
+  {
+   "date": "2025-09-17",
+   "by": "Dostál, Ondrej",
+   "tlac": "1005",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s konsolidáciou verejných financií",
+   "session": 39,
+   "voteId": null,
+   "id": "4393"
+  },
+  {
+   "date": "2025-06-10",
+   "by": "Dostál, Ondrej",
+   "tlac": "800",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k odsúdeniu raketových útokov Ruskej federácie na civilné ciele v ukrajinských mestách Kryvyj Rih a Sumy",
+   "session": 35,
+   "voteId": null,
+   "id": "4364"
+  },
+  {
+   "date": "2025-06-10",
+   "by": "Dostál, Ondrej",
+   "tlac": "800",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k odsúdeniu raketových útokov Ruskej federácie na civilné ciele v ukrajinských mestách Kryvyj Rih a Sumy",
+   "session": 35,
+   "voteId": null,
+   "id": "4365"
+  },
+  {
+   "date": "2025-02-05",
+   "by": "Dostál, Ondrej",
+   "tlac": "587",
+   "title": "Vládny návrh Stavebného zákona",
+   "session": 30,
+   "voteId": null,
+   "id": "4308"
+  },
+  {
+   "date": "2024-10-23",
+   "by": "Dostál, Ondrej",
+   "tlac": "553",
+   "title": "Návrh na zmeny v zložení výboru Národnej rady Slovenskej republiky a overovateľov Národnej rady Slovenskej republiky",
+   "session": 22,
+   "voteId": null,
+   "id": "4239"
+  },
+  {
+   "date": "2024-10-02",
+   "by": "Dostál, Ondrej",
+   "tlac": "494",
+   "title": "Návrh na vytvorenie skupín priateľstva v rámci Slovenskej skupiny Medziparlamentnej únie a voľbu ich predsedov",
+   "session": 19,
+   "voteId": null,
+   "id": "4232"
+  },
+  {
+   "date": "2024-06-21",
+   "by": "Kolíková, Mária",
+   "tlac": "364",
+   "title": "Vládny návrh zákona o niektorých opatreniach na zlepšenie bezpečnostnej situácie v Slovenskej republike",
+   "session": 15,
+   "voteId": null,
+   "id": "4196"
+  },
+  {
+   "date": "2024-02-27",
+   "by": "Dostál, Ondrej",
+   "tlac": "203",
+   "title": "Návrh vlády na skrátené legislatívne konanie o vládnom návrhu zákona, ktorým sa dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov",
+   "session": 9,
+   "voteId": null,
+   "id": "4127"
+  },
+  {
+   "date": "2024-01-31",
+   "by": "Kolíková, Mária",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 9,
+   "voteId": null,
+   "id": "4075"
+  },
+  {
+   "date": "2024-01-25",
+   "by": "Dostál, Ondrej",
+   "tlac": "106",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 300/2005 Z. z. Trestný zákon v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony",
+   "session": 6,
+   "voteId": null,
+   "id": "4069"
+  },
+  {
+   "date": "2023-12-14",
+   "by": "Kolíková, Mária",
+   "tlac": "97",
+   "title": "Vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti so zlepšením stavu verejných financií",
+   "session": 6,
+   "voteId": null,
+   "id": "4028"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "4040",
+   "title": "vo veci pripraveného vyňatia kancelárskeho papiera zo systému rozšírenej zodpovednosti výrobcov",
+   "state": "Rokovanie o interpelácii",
+   "date": "2026-10-01",
+   "to": "Fico, Robert"
+  },
+  {
+   "id": "3986",
+   "title": "vo veci chýbajúcich analýz a možného konfliktu záujmov pri návrhu na vyňatie kancelárskeho papiera zo systému rozšírenej zodpovednosti výrobcov",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2026-06-04",
+   "to": "Fico, Robert"
+  },
+  {
+   "id": "2815",
+   "title": "vo veci vymenovania členov Rady Fondu na podporu umenia",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-12-20",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2816",
+   "title": "vo veci vymenovania Slavomíra Lopúcha za člena Rady Fondu na podporu umenia",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-12-20",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2775",
+   "title": "Vo veci personálnej politiky Ministerstva kultúry SR",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-10-03",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2771",
+   "title": "vo veci odvolania člena Rady Fondu na podporu umenia Jána Hrkúta",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-09-27",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2772",
+   "title": "vo veci vymenovania členov Rady Audiovizuálneho fondu",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-09-27",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2773",
+   "title": "vo veci výberu členov Rady STVR",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-09-27",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2707",
+   "title": "Vo veci prístupu štátu k obnove Hradu Tematín, národnej kultúrnej pamiatky, realizovanej od roku 2008 dobrovoľníkmi z Občianskeho združenia Hrad Tematín",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-02-21",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2708",
+   "title": "Vo veci prístupu štátu k obnove Hradu Tematín, národnej kultúrnej pamiatky, realizovanej od roku 2008 dobrovoľníkmi z Občianskeho združenia Hrad Tematín",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-02-21",
+   "to": "Takáč, Richard"
+  }
+ ],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 50376,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [
+   "PREDSEDA (OBČIANSKA KONZERVATÍVNA STRANA)",
+   "PREDSEDA (PRIATELIA SLOBODNÝCH INFORMÁCIÍ)"
+  ],
+  "realEstateCount": 3,
+  "realEstateKinds": {
+   "Byt + podiel na pozemku a spoločných častiach domu": 2,
+   "Záhrada a zastavaná plocha a nádvorie": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "DostOndr"
+ },
+ "at": "2026-11-25T23:19:59+00:00"
+}

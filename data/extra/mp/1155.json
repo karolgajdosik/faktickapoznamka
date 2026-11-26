@@ -1,0 +1,41 @@
+{
+ "id": "1155",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "vedúci ústredného orgánu štátnej správy, ktorý nie je členom vlády Slovenskej republiky (ÚRAD VLÁDY SR)",
+  "incomePublic": 79250,
+  "incomeOther": 33152,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 8,
+  "realEstateKinds": {
+   "Pozemok - parkovacie státie": 1,
+   "Pozemok - zastavaný pozemok - byt": 1,
+   "Pozemok - parkovacie stojisko": 1,
+   "Byt": 2,
+   "Nebytový priestor - pivničná kobka": 1,
+   "Nebytový priestor - parkovacie státie": 1,
+   "Pozemok - zastavaná plocha nádvorie - sklad": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Obchodný podiel v s.r.o."
+  ],
+  "obligations": [
+   "Hypotekárny úver",
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "Juraj.Gedra"
+ },
+ "at": "2026-11-25T23:33:16+00:00"
+}

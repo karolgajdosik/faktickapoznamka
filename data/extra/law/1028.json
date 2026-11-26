@@ -1,0 +1,27 @@
+{
+ "state": "Redakcia",
+ "stateNote": "NZ postúpil do redakcie",
+ "delivered": "2025-09-25",
+ "submitter": "poslanci NR SR (D. Demečko, R. Eliáš)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 46. schôdzi NR SR, uznesenie číslo 1308 zo dňa 4. 2. 2026. NR SR uznesením rozhodla o výboroch Výbor NR SR pre ľudské práva a národnostné menšiny, Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 10. 4. 2026. NR SR uznesením rozhodla o gestor",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR dňa 16. 4. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1427 zo dňa 16. 4. 2026",
+   "result": "NZ postupuje do redakcie."
+  }
+ ],
+ "at": "2026-11-26T01:31:34+00:00"
+}

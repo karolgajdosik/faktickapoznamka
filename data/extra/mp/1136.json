@@ -1,0 +1,95 @@
+{
+ "id": "1136",
+ "excuses": [
+  {
+   "from": "2023-12-05",
+   "to": "2023-12-08",
+   "days": [
+    "2023-12-05",
+    "2023-12-06",
+    "2023-12-07",
+    "2023-12-08"
+   ],
+   "reason": "choroba"
+  },
+  {
+   "from": "2023-12-18",
+   "to": "2023-12-18",
+   "days": [
+    "2023-12-18"
+   ],
+   "reason": "iný dôvod (Rodinná záležitosť)"
+  },
+  {
+   "from": "2024-01-19",
+   "to": "2024-01-19",
+   "days": [
+    "2024-01-19"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2024-01-23",
+   "to": "2024-01-26",
+   "days": [
+    "2024-01-23",
+    "2024-01-24",
+    "2024-01-25",
+    "2024-01-26"
+   ],
+   "reason": "iný dôvod (Choroba)"
+  },
+  {
+   "from": "2024-02-06",
+   "to": "2024-02-06",
+   "days": [
+    "2024-02-06"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh poslankýň Národnej rady Slovenskej republiky Lucie PLAVÁKOVEJ a Zuzany ŠTEVULOVEJ na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 404/2011 Z. z. o pobyte cudzincov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (Navrhovateľom tohto návrhu bol aj poslanec Tomáš Hellebrandt, ktorý sa vzdal mandátu poslanca NR SR.) (Navrhovateľky požiadali listom zo 14. apríla 2026 o preloženie rokovania o tomto návrhu zákona na program schôdze Národnej rady Slovenskej republiky so začiatkom 15. septembra 2026.)",
+   "tlac": "160",
+   "state": "I. čítanie",
+   "delivered": "2024-01-12",
+   "approved": null,
+   "sponsors": "T. Hellebrandt, L. Plaváková, Z. Števulová",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu poslankyne Národnej rady Slovenskej republiky za členku výboru Národnej rady Slovenskej republiky",
+   "tlac": "101",
+   "state": "Evidencia",
+   "delivered": "2023-12-06",
+   "approved": null,
+   "sponsors": "M. Dubéci, S. Petrík, I. Bihariová, D. Dej, O. Dvořák, T. Gažovičová, J. Hanuliaková, J. Hargaš, T. Hellebrandt, Z. Jaurová, B. Jurík, V. Kalmárová, Š. Kišš, D. Kleinert, I. Kosová, M. Lackovič, D. Luščíková, Z. Mesterová, N. Nash, L. Plaváková, O.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vyslovenie nedôvery členovi vlády Slovenskej republiky Matúšovi ŠUTAJ EŠTOKOVI, poverenému riadením Ministerstva vnútra Slovenskej republiky",
+   "tlac": "76",
+   "state": "Evidencia",
+   "delivered": "2023-11-22",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie Ľuboša BLAHU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "26",
+   "state": "Uzavretá úloha",
+   "delivered": "2023-11-07",
+   "approved": null,
+   "sponsors": "",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": null,
+ "at": "2026-11-25T23:41:49+00:00"
+}

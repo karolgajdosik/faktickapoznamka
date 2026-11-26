@@ -1,0 +1,35 @@
+{
+ "id": "858",
+ "excuses": [],
+ "bills": [],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "štátny tajomník",
+  "incomePublic": 58554,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 6,
+  "realEstateKinds": {
+   "Trvalý trávny porast": 1,
+   "Orná pôda": 2,
+   "Záhrada, rodinný dom, zastavaná plocha a nádvorie": 1,
+   "Zastavaná plocha a nádvorie": 1,
+   "Lesný pozemok": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Štefan.Kuffa"
+ },
+ "at": "2026-11-26T00:07:15+00:00"
+}

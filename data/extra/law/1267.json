@@ -1,0 +1,22 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ vzal navrhovateľ späť",
+ "delivered": "2026-03-27",
+ "submitter": "poslanci NR SR (A. Danko, M. Garaj, D. Kramplová, R. Michelko)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1448 zo dňa 23. 4. 2026. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 22. 5. 2026. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre verejnú správu a region",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1448 zo dňa 23. 4. 2026",
+   "result": "NZ vzal navrhovateľ späť."
+  }
+ ],
+ "at": "2026-11-26T01:25:41+00:00"
+}

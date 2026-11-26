@@ -1,0 +1,431 @@
+{
+ "id": "931",
+ "excuses": [
+  {
+   "from": "2024-02-12",
+   "to": "2024-02-12",
+   "days": [
+    "2024-02-12"
+   ],
+   "reason": "iný dôvod (Rokovanie mimo Bratislavy)"
+  },
+  {
+   "from": "2024-08-20",
+   "to": "2024-08-21",
+   "days": [
+    "2024-08-20",
+    "2024-08-21"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  },
+  {
+   "from": "2025-01-14",
+   "to": "2025-01-15",
+   "days": [
+    "2025-01-14",
+    "2025-01-15"
+   ],
+   "reason": "iný dôvod (Závažný osobný dôvod)"
+  },
+  {
+   "from": "2025-01-21",
+   "to": "2025-01-21",
+   "days": [
+    "2025-01-21"
+   ],
+   "reason": "iný dôvod (Závažný osobný dôvod)"
+  },
+  {
+   "from": "2025-02-19",
+   "to": "2025-02-19",
+   "days": [
+    "2025-02-19"
+   ],
+   "reason": "iný dôvod (Cesta mimo Bratislavy)"
+  },
+  {
+   "from": "2025-08-13",
+   "to": "2025-08-14",
+   "days": [
+    "2025-08-13",
+    "2025-08-14"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  },
+  {
+   "from": "2025-10-24",
+   "to": "2025-10-24",
+   "days": [
+    "2025-10-24"
+   ],
+   "reason": "iný dôvod (Iné pracovné povinnosti)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na voľbu poslanca Národnej rady Slovenskej republiky za člena výborov Národnej rady Slovenskej republiky",
+   "tlac": "1567",
+   "state": "Evidencia",
+   "delivered": "2026-10-16",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, P. Kotlár, M. Kováč, D. Kramplová, A. Lučanský, R. Michelko, D. Muňko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola FARKAŠOVSKÉHO, Romana MICHELKA a Dagmar KRAMPLOVEJ na vydanie ústavného zákona, ktorým sa mení Ústava Slovenskej republiky č. 460/1992 Zb. v znení neskorších predpisov",
+   "tlac": "1537",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "K. Farkašovský, D. Kramplová, R. Michelko",
+   "category": "Ústavný zákon"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola FARKAŠOVSKÉHO, Romana MICHELKA, Dagmar KRAMPLOVEJ a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 600/2003 Z. z. o prídavku na dieťa a o zmene a doplnení zákona č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1536",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "K. Farkašovský, D. Kramplová, A. Lučanský, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Adama LUČANSKÉHO a Karola FARKAŠOVSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 106/2018 Z. z. o prevádzke vozidiel v cestnej premávke a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa mení zákon č. 8/2009 Z. z. o cestnej premávke a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1532",
+   "state": "Rokovanie výboru",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "K. Farkašovský, M. Garaj, A. Lučanský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Adama LUČANSKÉHO, Romana MICHELKA a Karola FARKAŠOVSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 108/2024 Z. z. o ochrane spotrebiteľa a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1531",
+   "state": "Rokovanie výboru",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "K. Farkašovský, M. Garaj, A. Lučanský, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola FARKAŠOVSKÉHO, Romana MICHELKA a Dagmar KRAMPLOVEJ na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s ustanovením podmienky štátneho občianstva Slovenskej republiky pre výkon vybraných funkcií v územnej samospráve",
+   "tlac": "1530",
+   "state": "I. čítanie",
+   "delivered": "2026-08-28",
+   "approved": null,
+   "sponsors": "K. Farkašovský, D. Kramplová, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Andreja DANKA, Romana MICHELKA, Karola FARKAŠOVSKÉHO a Adama LUČANSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon Národnej rady Slovenskej republiky č. 241/1993 Z. z. o štátnych sviatkoch, dňoch pracovného pokoja a pamätných dňoch v znení neskorších predpisov",
+   "tlac": "1366",
+   "state": "Redakcia",
+   "delivered": "2026-05-08",
+   "approved": "2026-10-01",
+   "sponsors": "A. Danko, K. Farkašovský, A. Lučanský, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola FARKAŠOVSKÉHO, Romanan MICHELKA a Andreja DANKA na vydanie zákona, ktorým sa mení zákon č. 385/2008 Z. z. o Tlačovej agentúre Slovenskej republiky a o zmene niektorých zákonov v znení neskorších predpisov",
+   "tlac": "1365",
+   "state": "II. čítanie",
+   "delivered": "2026-05-08",
+   "approved": null,
+   "sponsors": "A. Danko, M. Garaj, K. Farkašovský, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Adama LUČANSKÉHO, Karola FARKAŠOVSKÉHO, Andreja DANKA a Romana MICHELKA na vydanie zákona o licenciách samostatne zárobkovo činných osôb a o zmene a doplnení niektorých zákonov (Navrhovateľ vzal listom z 27. októbra 2026 svoj návrh zákona späť.)",
+   "tlac": "1270",
+   "state": "I. čítanie",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, A. Lučanský, R. Michelko",
+   "category": "Návrh nového zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola FARKAŠOVSKÉHO, Dagmar KRAMPLOVEJ, Andreja DANKA a Adama LUČANSKÉHO na vydanie zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s ochranou pred neoprávneným vyhotovením a sprístupnením klamlivých záznamov vytvorených alebo podstatne pozmenených technickým postupom (Navrhovatelia požiadali listom zo 7. septembra 2026 o zaradenie ich návrhu na schôdzu Národnej rady Slovenskej republiky začínajúcu dňa 17. novembra 2026)",
+   "tlac": "1266",
+   "state": "Rokovanie výboru",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, D. Kramplová, A. Lučanský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Adama LUČANSKÉHO, Dagmar KRAMPLOVEJ, Andreja DANKA a Karola FARKAŠOVSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1264",
+   "state": "Uzavretá úloha",
+   "delivered": "2026-03-27",
+   "approved": "2026-06-17",
+   "sponsors": "A. Danko, K. Farkašovský, D. Kramplová, A. Lučanský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Karola FARKAŠOVSKÉHO, Andreja DANKA a Adama LUČANSKÉHO na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov",
+   "tlac": "1262",
+   "state": "II. čítanie",
+   "delivered": "2026-03-27",
+   "approved": null,
+   "sponsors": "A. Danko, M. Garaj, K. Farkašovský, A. Lučanský",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Dagmar KRAMPLOVEJ, Andreja DANKA a Karola FARKAŠOVSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "tlac": "1261",
+   "state": "Redakcia",
+   "delivered": "2026-03-27",
+   "approved": "2026-10-14",
+   "sponsors": "A. Danko, K. Farkašovský, D. Kramplová, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k vykonaniu auditu a k prijatiu systémových riadiacich a kontrolných opatrení pri čerpaní dotačných a grantových finančných prostriedkov v ústredných orgánoch štátnej správy za obdobie rokov 2020 – 2024",
+   "tlac": "1014",
+   "state": "Evidencia",
+   "delivered": "2025-09-23",
+   "approved": null,
+   "sponsors": "T. Gašpar, J. Habánik, J. Richter, M. Saloň, F. Petro, Z. Plevíková, V. Zahorčák, B. Lešo, D. Karas, D. Jarjabek, I. Válek, D. Muňko, P. Goga, P. Sokol, J. Kačmár, J. Kvorka, A. Sitkár, J. Sedlák, R. Glück, J. Horváth, P. Šuca, J. Mažgút, J. Ježík,",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 68/1997 Z. z. o Matici slovenskej v znení neskorších predpisov",
+   "tlac": "821",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-05-07",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, P. Kotlár, D. Kramplová, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 279/2024 Z. z. o dani z finančných transakcií a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "802",
+   "state": "Uzavretá úloha",
+   "delivered": "2025-04-15",
+   "approved": "2025-09-30",
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, D. Kramplová, P. Kotlár, A. Lučanský, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh na voľbu predsedu Národnej rady Slovenskej republiky",
+   "tlac": "776",
+   "state": "Evidencia",
+   "delivered": "2025-03-20",
+   "approved": null,
+   "sponsors": "V. Baláž, M. Bartek, J. Baška, B. Becík, J. Blcháč, J. Cech, M. Čavojová, M. Čellár, A. Danko, D. Demečko, R. Eliáš, V. Faič, K. Farkašovský, J. Ferenčák, D. Galis, M. Garaj, T. Gašpar, Š. Gašparovič, R. Glück, P. Goga, J. Habánik, A. Hambálek, I. H",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na prijatie uznesenia Národnej rady Slovenskej republiky k obsahu verejných prejavov šírenia nenávisti, politického extrémizmu opozičných politikov, ktoré odzneli dňa 17. novembra 2024 pri príležitosti spomienky na 35. výročie Dňa boja za slobodu a demokraciu (Navrhovatelia oznámili listom z 27. mája 2025, že berú späť svoje podpisy pod návrhom.)",
+   "tlac": "634",
+   "state": "Evidencia",
+   "delivered": "2024-12-05",
+   "approved": null,
+   "sponsors": "J. Richter, M. Saloň, I. Válek, P. Goga, M. Kapuš, Z. Matejičková, M. Čavojová, R. Glück, M. Stuška, Z. Plevíková, T. Gašpar, J. Mažgút, P. Sokol, D. Karas, M. Lukša, J. Kvorka, S. Kubánek, J. Horváth, D. Galis, P. Šuca, Ľ. Vážny, J. Ježík, F. Petro",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh na voľbu poslancov Národnej rady Slovenskej republiky za členov výborov Národnej rady Slovenskej republiky",
+   "tlac": "629",
+   "state": "Evidencia",
+   "delivered": "2024-11-27",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, P. Kotlár, D. Kramplová, A. Lučanský, R. Michelko, D. Muňko",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na odvolanie poslanca Michala ŠIMEČKU z funkcie podpredsedu Národnej rady Slovenskej republiky",
+   "tlac": "464",
+   "state": "Evidencia",
+   "delivered": "2024-09-05",
+   "approved": null,
+   "sponsors": "J. Richter, T. Gašpar, A. Hambálek, Z. Plevíková, J. Kvorka, I. Hazucha, J. Mažgút, A. Stredák, Z. Matejičková, M. Lukša, M. Čavojová, P. Sokol, F. Petro, B. Lešo, M. Saloň, J. Sedlák, J. Vaľová, I. Válek, Ľ. Vážny, V. Baláž, J. Baška, A. Danko, V.",
+   "category": "Iný typ"
+  },
+  {
+   "title": "Zákon z 21. mája 2024, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov, vrátený prezidentkou Slovenskej republiky na opätovné prerokovanie Národnou radou Slovenskej republiky",
+   "tlac": "349",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-29",
+   "approved": "2024-06-11",
+   "sponsors": "A. Danko, K. Farkašovský, R. Huliak, D. Jarjabek, P. Kotlár, Ľ. Laššáková, P. Ľupták, R. Malatinec, R. Michelko, I. Ševčík",
+   "category": "Zákon vrátený prezidentom"
+  },
+  {
+   "title": "Zákon z 24. apríla 2024. ktorým sa mení a dopĺňa zákon č. 206/2009 Z. z. o múzeách a o galériách a o ochrane predmetov kultúrnej hodnoty a o zmene zákona Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov v znení neskoršich predpisov. vrátený prezidentkou Slovenskej republiky na opätovné prerokovanie Národnou radou Slovenskej republiky",
+   "tlac": "300",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-05-07",
+   "approved": "2024-06-11",
+   "sponsors": "K. Farkašovský, M. Garaj, D. Jarjabek, D. Kramplová, Ľ. Laššáková, A. Lučanský, R. Malatinec, R. Michelko, J. Podmanický, I. Ševčík",
+   "category": "Zákon vrátený prezidentom"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 138/2017 Z. z. o Fonde na podporu kultúry národnostných menšín a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "155",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": "2024-09-17",
+   "sponsors": "K. Farkašovský, M. Garaj, D. Jarjabek, P. Kotlár, D. Kramplová, Ľ. Laššáková, A. Lučanský, P. Ľupták, R. Malatinec, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 206/2009 Z. z. o múzeách a o galériách a o ochrane predmetov kultúrnej hodnoty a o zmene zákona Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov v znení neskorších predpisov",
+   "tlac": "154",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": null,
+   "sponsors": "K. Farkašovský, M. Garaj, D. Jarjabek, D. Kramplová, Ľ. Laššáková, A. Lučanský, R. Malatinec, R. Michelko, J. Podmanický, I. Ševčík",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 516/2008 Z. z. o Audiovizuálnom fonde a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "tlac": "152",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": "2024-06-28",
+   "sponsors": "A. Danko, K. Farkašovský, M. Garaj, R. Huliak, D. Jarjabek, D. Kramplová, Ľ. Laššáková, A. Lučanský, R. Malatinec, R. Michelko",
+   "category": "Novela zákona"
+  },
+  {
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 284/2014 Z. z. o Fonde na podporu umenia a o zmene a doplnení zákona č. 434/2010 Z. z. o poskytovaní dotácií v pôsobnosti Ministerstva kultúry Slovenskej republiky v znení zákona č. 79/2013 Z. z. v znení neskorších predpisov",
+   "tlac": "151",
+   "state": "Uzavretá úloha",
+   "delivered": "2024-01-11",
+   "approved": null,
+   "sponsors": "A. Danko, K. Farkašovský, R. Huliak, D. Jarjabek, P. Kotlár, Ľ. Laššáková, P. Ľupták, R. Malatinec, R. Michelko, I. Ševčík",
+   "category": "Novela zákona"
+  }
+ ],
+ "amendments": [
+  {
+   "date": "2026-10-06",
+   "by": "Michelko, Roman",
+   "tlac": "1261",
+   "title": "Návrh poslancov Národnej rady Slovenskej republiky Romana MICHELKA, Dagmar KRAMPLOVEJ, Andreja DANKA a Karola FARKAŠOVSKÉHO na vydanie zákona, ktorým sa dopĺňa zákon č. 461/2003 Z. z. o sociálnom poistení v znení neskorších predpisov",
+   "session": 61,
+   "voteId": null,
+   "id": "4604"
+  },
+  {
+   "date": "2026-09-22",
+   "by": "Farkašovský, Karol",
+   "tlac": "1312",
+   "title": "Vládny návrh zákona Občiansky zákonník",
+   "session": 61,
+   "voteId": null,
+   "id": "4595"
+  },
+  {
+   "date": "2024-06-25",
+   "by": "Farkašovský, Karol",
+   "tlac": "152",
+   "title": "Návrh skupiny poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 516/2008 Z. z. o Audiovizuálnom fonde a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 15,
+   "voteId": null,
+   "id": "4197"
+  },
+  {
+   "date": "2024-01-09",
+   "by": "Farkašovský, Karol",
+   "tlac": "56",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 213/2019 Z. z. o odplatách a o poskytovaní príspevku v civilnom letectve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 6,
+   "voteId": null,
+   "id": "4067"
+  },
+  {
+   "date": "2023-12-22",
+   "by": "Farkašovský, Karol",
+   "tlac": "56",
+   "title": "Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 213/2019 Z. z. o odplatách a o poskytovaní príspevku v civilnom letectve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov",
+   "session": 6,
+   "voteId": null,
+   "id": "4065"
+  }
+ ],
+ "interpellations": [
+  {
+   "id": "2797",
+   "title": "dokončenia diaľnice D1",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-11-20",
+   "to": "Ráž, Jozef"
+  },
+  {
+   "id": "2798",
+   "title": "vo veci dokončenia rekonštrukcie hradu Krásna Hôrka",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-11-20",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2686",
+   "title": "Vo veci financovania filmov vysielaných vo verejnoprávnej televízii počas sviatkov na prelome rokov 2023/2024",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-01-08",
+   "to": "Šimkovičová, Martina"
+  },
+  {
+   "id": "2687",
+   "title": "Vo veci rozhodnutia o budúcnosti chovu koní - norika muránskeho",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-01-08",
+   "to": "Taraba, Tomáš"
+  },
+  {
+   "id": "2688",
+   "title": "Vo veci termínu doplatenia dotácií pre poľnohospodárov za rok 2023",
+   "state": "Uzavretá odpoveď na interpeláciu",
+   "date": "2024-01-08",
+   "to": "Takáč, Richard"
+  }
+ ],
+ "trips": [
+  {
+   "from": "2025-11-08",
+   "to": "2025-11-17",
+   "desc": "Peking, Xian, Chongqing- Poslankyňa NR SR Zuzana Plevíková a poslanci NR SR Marián Kéry, Michal Lukša, Michal Stuška, Karol Farkašovský, Dušan Tittel, Michal Bartek, Richard Eliáš, Dávid Demečko, Ivan Ševčík a Igor Janckulík sa zúčastnia na pracovnej návšteve v Čínskej ľudovej republike."
+  },
+  {
+   "from": "2025-09-01",
+   "to": "2025-09-06",
+   "desc": "Japonsko - Predseda NR SR Richard Raši, podpredseda NR SR Peter Žiga a poslanci NR SR Róbert Puci, Marián Kéry, Karol Farkašovský, Igor Janckulík, Zuzana Plevíková, Andrea Szabóová, Ivan Štefunko, Marián Viskupič a Michal Stuška sa zúčastnia pracovnej návštevy predsedu NR SR Richarda Rašiho v Japonsku."
+  },
+  {
+   "from": "2024-11-15",
+   "to": "2024-11-15",
+   "desc": "Budapešť - Podpredseda NR SR Peter Žiga a poslanec NR SR Karol Farkašovský sa zúčastnia na pracovnej návšteve Maďarska."
+  },
+  {
+   "from": "2024-03-03",
+   "to": "2024-03-04",
+   "desc": "Bruggy - poslanci NR SR Dušan Tittel, Karol Farkašovský a Michal Bartek sa zúčastnia na parlamentnej konferencii pre spoločnú zahraničnú a bezpečnostnú politiku."
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "poslanec Národnej rady Slovenskej republiky",
+  "incomePublic": 50556,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 1,
+  "realEstateKinds": {
+   "Byt": 1
+  },
+  "movablesCount": 1,
+  "movables": [
+   "Osobné motorové vozidlo"
+  ],
+  "rights": [],
+  "obligations": [
+   "Žiadny"
+  ],
+  "userId": "Karol.Farkašovský"
+ },
+ "at": "2026-11-25T23:26:07+00:00"
+}
