@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2023-11-30",
+ "submitter": "vláda (Ministerstvo práce, sociálnych vecí a rodiny SR)",
+ "gestor": "Výbor NR SR pre sociálne veci",
+ "returnedByPresident": false,
+ "zbierka": "526/2023",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 55 zo dňa 7. 12. 2023. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre sociálne veci s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre sociálne veci s ",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR dňa 12. 12. 2023.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 74 zo dňa 12. 12. 2023",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 27. 12. 2023 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (29. 12. 2023), číslo 526/2023.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:04:03+00:00"
+}

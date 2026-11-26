@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2023-12-01",
+ "submitter": "vláda (Ministerstvo zdravotníctva SR)",
+ "gestor": "Výbor NR SR pre zdravotníctvo",
+ "returnedByPresident": false,
+ "zbierka": "529/2023",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 59 zo dňa 7. 12. 2023. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie ihneď. NZ bud",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR dňa 22. 12. 2023.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 85 zo dňa 22. 12. 2023",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 29. 12. 2023 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (30. 12. 2023), číslo 529/2023.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:03:59+00:00"
+}

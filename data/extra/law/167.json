@@ -1,0 +1,17 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NR SR nebude pokračovať v rokovaní o návrhu zákona",
+ "delivered": "2024-01-12",
+ "submitter": "poslanci NR SR (J. Hargaš, Š. Kišš, D. Luščíková, I. Štefunko, M. Truban)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 155 zo dňa 27. 2. 2024.",
+   "result": "NR SR nebude pokračovať v rokovaní o návrhu zákona."
+  }
+ ],
+ "at": "2026-11-26T18:01:31+00:00"
+}

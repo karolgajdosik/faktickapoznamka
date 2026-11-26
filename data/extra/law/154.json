@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-01-11",
+ "submitter": "poslanci NR SR (K. Farkašovský, M. Garaj, D. Jarjabek, D. Kramplová, Ľ. Laššáková, A. Lučanský, R. Malatinec, R. Michelko, J. Podmanický, I. Ševčík)",
+ "gestor": "Výbor NR SR pre kultúru a médiá",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 138 zo dňa 15. 2. 2024. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre kultúru a médiá s lehotou na prerokovanie 16. 3. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre kultúru a médiá s lehotou na prerokovanie 18",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR dňa 24. 4. 2024. Stanovisko vlády k návrhu zákona je súhlasné.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 224 zo dňa 24. 4. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:01:55+00:00"
+}

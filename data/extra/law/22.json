@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2023-11-10",
+ "submitter": "vláda (Ministerstvo zdravotníctva SR)",
+ "gestor": "Výbor NR SR pre zdravotníctvo",
+ "returnedByPresident": false,
+ "zbierka": "44/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 62 zo dňa 8. 12. 2023. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR a Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie 7. 1. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre zdravot",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR dňa 13. 2. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 108 zo dňa 13. 2. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 29. 2. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (12. 3. 2024), číslo 44/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:05:53+00:00"
+}

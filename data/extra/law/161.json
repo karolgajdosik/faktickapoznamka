@@ -1,0 +1,17 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NR SR nebude pokračovať v rokovaní o návrhu zákona",
+ "delivered": "2024-01-12",
+ "submitter": "poslanci NR SR (T. Valášek)",
+ "gestor": "Výbor NR SR pre obranu a bezpečnosť",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 153 zo dňa 27. 2. 2024.",
+   "result": "NR SR nebude pokračovať v rokovaní o návrhu zákona."
+  }
+ ],
+ "at": "2026-11-26T18:01:43+00:00"
+}

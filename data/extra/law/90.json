@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2023-11-30",
+ "submitter": "vláda (predseda vlády SR, dočasne poverený vedením MŽP SR)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 60 zo dňa 8. 12. 2023. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR, Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch a Výbor NR SR pre verejnú správu a ",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR dňa 20. 12. 2023. Pozmeňujúce a doplňujúce návrhy: 08. 12. 2023 11:10 Krajčí, Marek Detail návrhu 9 0090 Marek Krajčí II (62 KB) 08. 12. 2023 11:10 Dvořák, Oskar Detail návrhu 9 0090 Oskar Dvořák II (69 KB) 12. 12. 2023 Plaváková, Lucia Detail návrhu 9 0090 Lucia Plaváková II (83 ",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 79 zo dňa 20. 12. 2023",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:03:56+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2023-11-20",
+ "submitter": "poslanci NR SR (M. Saloň)",
+ "gestor": "Výbor NR SR pre obranu a bezpečnosť",
+ "returnedByPresident": false,
+ "zbierka": "42/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 69 zo dňa 8. 12. 2023. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre obranu a bezpečnosť s lehotou na prerokovanie 7. 1. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre obranu a bezpečnosť s lehotou na prerokova",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR dňa 13. 2. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 115 zo dňa 13. 2. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 29. 2. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (12. 3. 2024), číslo 42/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:04:47+00:00"
+}

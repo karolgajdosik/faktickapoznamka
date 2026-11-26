@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-01-11",
+ "submitter": "poslanci NR SR (A. Danko, K. Farkašovský, R. Huliak, D. Jarjabek, P. Kotlár, Ľ. Laššáková, P. Ľupták, R. Malatinec, R. Michelko, I. Ševčík)",
+ "gestor": "Výbor NR SR pre kultúru a médiá",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 130 zo dňa 15. 2. 2024. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre kultúru a médiá s lehotou na prerokovanie 16. 3. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre kultúru a médiá s lehotou na prerokovanie 18",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR dňa 21. 5. 2024. Stanovisko vlády k návrhu zákona je súhlasné. Pozmeňujúce a doplňujúce návrhy: 19. 04. 2024 14:04 Bužo, Lukáš Detail návrhu 9 0151 Lukáš Bužo II (70 KB) 19. 04. 2024 14:04 Bužo, Lukáš Detail návrhu 9 0151 Lukáš Bužo II 2 (52 KB) 19. 04. 2024 14:04 Jaurová, Zora D",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 296 zo dňa 21. 5. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:02:02+00:00"
+}

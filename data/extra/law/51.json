@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2023-11-20",
+ "submitter": "vláda (Ministerstvo financií SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": "43/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 61 zo dňa 8. 12. 2023. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti, Výbor NR SR pre pôdohospodárstvo a životné prostredie a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 7. 1. 2024. NR SR u",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR dňa 13. 2. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 114 zo dňa 13. 2. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 29. 2. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (12. 3. 2024), číslo 43/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:05:03+00:00"
+}

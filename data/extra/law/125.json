@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-01-02",
+ "submitter": "vláda (predseda vlády SR, dočasne poverený vedením MŽP SR)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": true,
+ "zbierka": "7/2024",
+ "stages": [
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR dňa 16. 1. 2024. Pozmeňujúce a doplňujúce návrhy: 11. 01. 2024 Malatinec, Roman Detail návrhu 9 0125 Roman Malatinec II (121 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 90 zo dňa 16. 1. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 24. 1. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (25. 1. 2024), číslo 7/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:02:48+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2023-12-05",
+ "submitter": "vláda (Ministerstvo financií SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": "507/2023",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 52 zo dňa 7. 12. 2023. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti a Ústavnoprávny výbor NR SR s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre financ",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR dňa 8. 12. 2023.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 6. schôdzi NR SR, uznesenie číslo 71 zo dňa 8. 12. 2023",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 21. 12. 2023 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (23. 12. 2023), číslo 507/2023.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:03:46+00:00"
+}

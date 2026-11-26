@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-01-12",
+ "submitter": "vláda (Ministerstvo vnútra SR)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": false,
+ "zbierka": "94/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 9. schôdzi NR SR, uznesenie číslo 133 zo dňa 15. 2. 2024. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 16. 3. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre verejnú správu a regionál",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR dňa 17. 4. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 203 zo dňa 17. 4. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 2. 5. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (10. 5. 2024), číslo 94/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T18:02:30+00:00"
+}
