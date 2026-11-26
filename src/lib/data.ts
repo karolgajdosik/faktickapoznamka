@@ -158,7 +158,7 @@ export const speakerLabel = (x: Speech) => { const [last, first] = x.speaker.spl
 export interface Law { tlac: string; title: string; kind: string; votes: Vote[]; speeches: Speech[]; first: string; last: string;
   status: LawStatus; finalVote: Vote | null }
 export type LawStatus = "schválený" | "neschválený" | "v procese" | "bez záverečného hlasovania";
-const kindOf = (t: string) => /^vládny/i.test(t) ? "Vládny návrh" : /^návrh posl/i.test(t) ? "Poslanecký návrh" : /výbor/i.test(t) ? "Návrh výboru" : /^návrh na voľbu|voľb/i.test(t) ? "Voľba" : /správa|informácia/i.test(t) ? "Správa" : "Iný návrh";
+const kindOf = (t: string) => /^vládny/i.test(t) ? "Vládny návrh" : /^návrh (?:skupiny )?posl/i.test(t) ? "Poslanecký návrh" : /výbor/i.test(t) ? "Návrh výboru" : /^návrh na voľbu|voľb/i.test(t) ? "Voľba" : /správa|informácia/i.test(t) ? "Správa" : "Iný návrh";
 export const laws: Law[] = (() => {
   const by = new Map<string, { votes: Vote[]; speeches: Speech[] }>();
   for (const v of votes) if (v.tlac) { const e = by.get(v.tlac) ?? { votes: [], speeches: [] }; e.votes.push(v); by.set(v.tlac, e); }

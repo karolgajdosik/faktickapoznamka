@@ -1,36 +1,176 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { laws, fmtShort, shortTitle, plural } from "../../lib/data";
-const kinds = [...new Set(laws.map((l) => l.kind))];
+const first = laws.slice(0, 30);
 ---
-<Base title="Zákony a návrhy" description="Zákony a ďalšie návrhy v NR SR: priebeh čítaní, hlasovania a rozprava k jednotlivým tlačiam.">
+<Base title="Zákony a návrhy" description="Zákony a návrhy v NR SR s filtrom podľa stavu, navrhovateľa, gestorského výboru a roku: priebeh čítaní, hlasovania a rozprava.">
   <h1>Zákony a návrhy</h1>
-  <p class="meta-line">{laws.length} parlamentných tlačí s hlasovaním v IX. volebnom období. Pri každej je priebeh čítaní, všetky hlasovania a rozprava.</p>
-  <div class="filter-row">
-    <label class="sr-only" for="lq">Hľadať</label>
-    <input class="input" id="lq" type="search" placeholder="Názov alebo číslo tlače, napr. „rozpočet“ alebo „1448“" />
-    <label class="sr-only" for="lk">Typ</label>
-    <select class="select" id="lk"><option value="">Všetky typy</option>{kinds.map((k) => <option>{k}</option>)}</select>
-    <label class="sr-only" for="ls">Stav</label>
-    <select class="select" id="ls"><option value="">Každý stav</option><option value="schválený">Schválené</option><option value="neschválený">Neschválené</option><option value="v procese">V procese</option><option value="bez záverečného hlasovania">Bez záverečného hlasovania</option></select>
+  <p class="meta-line">{laws.length.toLocaleString("sk-SK")} parlamentných tlačí s hlasovaním v IX. volebnom období. Pri každej je priebeh čítaní, všetky hlasovania a rozprava.</p>
+
+  <form class="fx" role="search" onsubmit="return false">
+    <label class="fx-search">
+      <span class="sr-only">Hľadať v zákonoch</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Hľadať: „daň“, „Trestný zákon“, „1448“, meno navrhovateľa" autocomplete="off" enterkeyhint="search" />
+      <button type="button" class="fx-clear" id="q-clear" aria-label="Vymazať" hidden>✕</button>
+    </label>
+    <div class="lz-dist" id="dist" role="group" aria-label="Stav: kliknutím vyfiltrujete"></div>
+    <div class="fx-row fx-wrap" id="f-status" role="group" aria-label="Stav"></div>
+    <div class="fx-row fx-wrap"><span class="fx-label">Navrhovateľ</span><span id="f-kind" role="group" aria-label="Navrhovateľ" style="display:contents"></span></div>
+    <div class="fx-row fx-wrap">
+      <select class="fx-sel" id="f-gestor" aria-label="Gestorský výbor"><option value="">Každý gestorský výbor</option></select>
+      <span class="fx-label" style="margin-left:.4rem">Podané</span>
+      <span id="f-year" role="group" aria-label="Rok" style="display:contents"></span>
+      <span id="f-flags" role="group" aria-label="Ďalšie" style="display:contents"></span>
+    </div>
+  </form>
+
+  <div class="fx-bar" aria-live="polite">
+    <span class="fx-count" id="count">{laws.length} <small>tlačí</small></span>
+    <span class="fx-active" id="active"></span>
+    <select class="fx-sel fx-sort" id="sort" aria-label="Zoradiť">
+      <option value="last">Posledná aktivita</option><option value="first">Najnovšie podané</option><option value="talk">Najviac rozpravy</option><option value="votes">Najviac hlasovaní</option><option value="tlac">Číslo tlače</option>
+    </select>
   </div>
-  <ul class="laws" id="laws">
-    {laws.map((l) => (
-      <li data-k={l.kind} data-s={l.status} data-q={`${l.tlac} ${l.title}`.toLowerCase()}>
-        <a href={`/zakony/${l.tlac}/`}>
-          <span class="tl">tlač {l.tlac}</span>
-          <span class="tt">{shortTitle(l.title, 200)}</span>
-          <span class="tm">{l.kind}, {fmtShort(l.last)}, {l.votes.length} {plural(l.votes.length, "hlasovanie", "hlasovania", "hlasovaní")}{l.speeches.length > 0 && <>, {l.speeches.length} {plural(l.speeches.length, "vystúpenie", "vystúpenia", "vystúpení")}</>}</span>
-          <span class={`pill ${l.status === "schválený" ? "yes" : l.status === "neschválený" ? "no" : ""}`}>{l.status}</span>
-        </a>
-      </li>
+  <ul class="laws lz" id="laws">
+    {first.map((l) => (
+      <li><a href={`/zakony/${l.tlac}/`}><span class="tl">tlač {l.tlac}</span><span class="tt">{shortTitle(l.title, 200)}</span>
+        <span class="tm">{l.kind}, {fmtShort(l.last)}, {l.votes.length} {plural(l.votes.length, "hlasovanie", "hlasovania", "hlasovaní")}</span>
+        <span class={`pill ${l.status === "schválený" ? "yes" : l.status === "neschválený" ? "no" : ""}`}>{l.status}</span></a></li>
     ))}
   </ul>
-  <script>
-    const q = document.getElementById("lq") as HTMLInputElement, k = document.getElementById("lk") as HTMLSelectElement, st = document.getElementById("ls") as HTMLSelectElement;
-    const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
-    const rows = [...document.querySelectorAll<HTMLLIElement>("#laws li")].map((li) => ({ li, q: norm(li.dataset.q!) }));
-    function apply() { const t = norm(q.value.trim()); for (const r of rows) r.li.hidden = !((!t || r.q.includes(t)) && (!k.value || r.li.dataset.k === k.value) && (!st.value || r.li.dataset.s === st.value)); }
-    q.addEventListener("input", apply); k.addEventListener("change", apply); st.addEventListener("change", apply);
-  </script>
+  <button type="button" class="fx-more" id="more" hidden>Načítať ďalšie</button>
 </Base>
+
+<script>
+  // [tlac, title, kind, status, first, last, votes, speeches, gestor, zbierka, returned, submitter, officialState]
+  type Row = [string, string, string, string, string, string, number, number, string, string, number, string, string];
+  const $ = (id: string) => document.getElementById(id)!;
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+  // Slovak is inflected (rozpočet, rozpočte, rozpočtu): match word starts and drop the ending of longer words.
+  const stem = (w: string) => (w.length >= 6 ? w.slice(0, -2) : w.length === 5 ? w.slice(0, -1) : w);
+  const words = (s: string) => " " + norm(s).replace(/[^\p{L}\p{N}]+/gu, " ");
+  const nf = (n: number) => n.toLocaleString("sk-SK");
+  const pl = (n: number, a: string, b: string, c: string) => (n === 1 ? a : n >= 2 && n <= 4 ? b : c);
+  const fmt = (iso: string) => new Date(iso).toLocaleDateString("sk-SK", { day: "numeric", month: "numeric", year: "numeric", timeZone: "Europe/Bratislava" });
+
+  const STATUS: [string, string, string][] = [["", "Všetky", ""], ["schválený", "Schválené", "yes"], ["v procese", "V procese", "proc"], ["neschválený", "Neschválené", "no"], ["bez záverečného hlasovania", "Bez záverečného hlasovania", "none"]];
+  const FLAGS: [string, string][] = [["zz", "Vyšlo v Zbierke"], ["ret", "Vrátil prezident"], ["talk", "S rozpravou"]];
+  const S = { q: "", status: "", kind: "", gestor: "", year: "", zz: "", ret: "", talk: "", sort: "last" };
+  const fromUrl = () => { const u = new URLSearchParams(location.search); for (const k of Object.keys(S) as (keyof typeof S)[]) if (u.has(k)) S[k] = u.get(k)!; };
+  const toUrl = () => { const u = new URLSearchParams(); for (const [k, v] of Object.entries(S)) if (v && !(k === "sort" && v === "last")) u.set(k, v); history.replaceState(null, "", `${location.pathname}${u.size ? `?${u}` : ""}`); };
+
+  let rows: Row[] = [], idx: string[] = [], list: Row[] = [], shown = 0;
+  const PAGE = 40;
+
+  function match(r: Row, i: number, skip?: keyof typeof S) {
+    if (S.q) {
+      const q = norm(S.q); const tl = q.match(/^(?:tl(?:ac)?\.?\s*)?(\d{1,4})$/);
+      if (tl) { if (r[0] !== tl[1]) return false; } else if (!q.split(/\s+/).map(stem).every((w) => idx[i].includes(" " + w))) return false;
+    }
+    if (skip !== "status" && S.status && r[3] !== S.status) return false;
+    if (skip !== "kind" && S.kind && r[2] !== S.kind) return false;
+    if (skip !== "gestor" && S.gestor && r[8] !== S.gestor) return false;
+    if (skip !== "year" && S.year && !r[4].startsWith(S.year)) return false;
+    if (skip !== "zz" && S.zz && !r[9]) return false;
+    if (skip !== "ret" && S.ret && !r[10]) return false;
+    if (skip !== "talk" && S.talk && !r[7]) return false;
+    return true;
+  }
+  const count = (skip: keyof typeof S, key: (r: Row) => string[]) => {
+    const m = new Map<string, number>(); let all = 0;
+    rows.forEach((r, i) => { if (!match(r, i, skip)) return; all++; for (const k of key(r)) m.set(k, (m.get(k) ?? 0) + 1); });
+    m.set("", all); return m;
+  };
+  const chip = (k: keyof typeof S, v: string, label: string, n?: number, cls = "") =>
+    `<button type="button" class="fx-chip ${cls}" data-k="${k}" data-v="${esc(v)}" aria-pressed="${S[k] === v}" ${n === 0 && S[k] !== v ? "disabled" : ""}>${esc(label)}${n !== undefined ? `<span class="n">${nf(n)}</span>` : ""}</button>`;
+
+  function card(r: Row) {
+    const [tlac, title, kind, status, first, last, nv, ns, gestor, zz, ret, sub] = r;
+    const meta = [kind === "Poslanecký návrh" && sub ? sub : kind, gestor && `gestor: ${gestor}`, `podané ${fmt(first)}`, `${nv} ${pl(nv, "hlasovanie", "hlasovania", "hlasovaní")}`, ns ? `${ns} ${pl(ns, "vystúpenie", "vystúpenia", "vystúpení")}` : ""].filter(Boolean).join(" · ");
+    return `<li><a href="/zakony/${tlac}/"><span class="tl">tlač ${tlac}</span><span class="tt">${esc(title)}</span><span class="tm">${esc(meta)}</span>
+      <span class="badges"><span class="pill ${status === "schválený" ? "yes" : status === "neschválený" ? "no" : ""}">${status}</span>${zz ? `<span class="pill zz">${zz} Z. z.</span>` : ""}${ret ? `<span class="pill ret">vrátil prezident</span>` : ""}</span></a></li>`;
+  }
+
+  function render(reset = true) {
+    if (reset) {
+      list = rows.filter((r, i) => match(r, i));
+      const by = { last: (a: Row, b: Row) => b[5].localeCompare(a[5]), first: (a: Row, b: Row) => b[4].localeCompare(a[4]), talk: (a: Row, b: Row) => b[7] - a[7], votes: (a: Row, b: Row) => b[6] - a[6], tlac: (a: Row, b: Row) => Number(b[0]) - Number(a[0]) }[S.sort as "last"] ?? (() => 0);
+      list.sort(by); shown = 0; $("laws").innerHTML = "";
+    }
+    const chunk = list.slice(shown, shown + PAGE);
+    $("laws").insertAdjacentHTML("beforeend", chunk.map(card).join(""));
+    shown += chunk.length;
+    if (!list.length) $("laws").innerHTML = `<li class="fx-empty"><b>Nič sa nenašlo</b>Skúste zmeniť alebo zrušiť niektorý filter.</li>`;
+    $("more").hidden = shown >= list.length; $("more").textContent = `Načítať ďalšie (${nf(list.length - shown)})`;
+    if (reset) ui();
+  }
+
+  function ui() {
+    const st = count("status", (r) => [r[3]]);
+    const tot = st.get("") || 1;
+    $("dist").innerHTML = STATUS.slice(1).map(([v, l, c]) => { const n = st.get(v) ?? 0; return n ? `<button type="button" class="d ${c}${S.status === v ? " on" : ""}${S.status && S.status !== v ? " dim" : ""}" data-k="status" data-v="${esc(v)}" style="flex-grow:${n}" title="${l}: ${n}" aria-label="${l}: ${n} (${Math.round((n / tot) * 100)} %)"><span><i class="lbl">${l} </i><b>${Math.round((n / tot) * 100)} %</b></span></button>` : ""; }).join("");
+    $("f-status").innerHTML = STATUS.map(([v, l, c]) => chip("status", v, l, st.get(v) ?? 0, c === "yes" ? "yes" : c === "no" ? "no" : "")).join("");
+    const kinds = count("kind", (r) => [r[2]]);
+    $("f-kind").innerHTML = chip("kind", "", "Všetci", kinds.get("")) + [...kinds.entries()].filter(([k]) => k).sort((a, b) => b[1] - a[1]).map(([k, n]) => chip("kind", k, k, n)).join("");
+    const g = count("gestor", (r) => (r[8] ? [r[8]] : []));
+    ($("f-gestor") as HTMLSelectElement).innerHTML = `<option value="">Každý gestorský výbor</option>` + [...g.entries()].filter(([k]) => k).sort((a, b) => a[0].localeCompare(b[0], "sk")).map(([k, n]) => `<option value="${esc(k)}">${esc(k)} (${n})</option>`).join("");
+    ($("f-gestor") as HTMLSelectElement).value = S.gestor; $("f-gestor").classList.toggle("on", !!S.gestor);
+    const y = count("year", (r) => [r[4].slice(0, 4)]);
+    $("f-year").innerHTML = chip("year", "", "Kedykoľvek") + [...y.keys()].filter(Boolean).sort().reverse().map((k) => chip("year", k, k, y.get(k))).join("");
+    $("f-flags").innerHTML = FLAGS.map(([k, l]) => { const key = k as keyof typeof S; const c = count(key, (r) => ((key === "zz" ? r[9] : key === "ret" ? r[10] : r[7]) ? ["1"] : [])); return chip(key, "1", l, c.get("1") ?? 0); }).join("");
+    ($("sort") as HTMLSelectElement).value = S.sort;
+    const qi = $("q") as HTMLInputElement; if (qi.value !== S.q && document.activeElement !== qi) qi.value = S.q; $("q-clear").hidden = !S.q;
+    $("count").innerHTML = `${nf(list.length)} <small>${pl(list.length, "tlač", "tlače", "tlačí")}</small>`;
+    const tags: [keyof typeof S, string][] = [];
+    if (S.q) tags.push(["q", `„${S.q}“`]);
+    if (S.status) tags.push(["status", STATUS.find((s) => s[0] === S.status)![1]]);
+    if (S.kind) tags.push(["kind", S.kind]);
+    if (S.gestor) tags.push(["gestor", S.gestor]);
+    if (S.year) tags.push(["year", `podané ${S.year}`]);
+    for (const [k, l] of FLAGS) if (S[k as keyof typeof S]) tags.push([k as keyof typeof S, l]);
+    $("active").innerHTML = tags.map(([k, l]) => `<button type="button" class="fx-tag" data-tag="${k}" aria-label="Zrušiť filter ${esc(l)}">${esc(l)}</button>`).join("") + (tags.length > 1 ? `<button type="button" class="fx-reset" id="reset">Zrušiť všetko</button>` : "");
+    toUrl();
+  }
+
+  document.querySelector("form.fx")!.addEventListener("click", (e) => {
+    const b = (e.target as HTMLElement).closest("button[data-k]") as HTMLButtonElement | null; if (!b || b.disabled) return;
+    const k = b.dataset.k as keyof typeof S, v = b.dataset.v!;
+    S[k] = S[k] === v && v ? "" : v; render();
+  });
+  $("f-gestor").addEventListener("change", (e) => { S.gestor = (e.target as HTMLSelectElement).value; render(); });
+  $("sort").addEventListener("change", (e) => { S.sort = (e.target as HTMLSelectElement).value; render(); });
+  let t: number | undefined;
+  $("q").addEventListener("input", (e) => { clearTimeout(t); t = window.setTimeout(() => { S.q = (e.target as HTMLInputElement).value.trim(); render(); }, 150); });
+  $("q-clear").addEventListener("click", () => { S.q = ""; ($("q") as HTMLInputElement).value = ""; render(); ($("q") as HTMLInputElement).focus(); });
+  $("active").addEventListener("click", (e) => {
+    const b = e.target as HTMLElement;
+    if (b.id === "reset") { Object.assign(S, { q: "", status: "", kind: "", gestor: "", year: "", zz: "", ret: "", talk: "" }); ($("q") as HTMLInputElement).value = ""; render(); return; }
+    const k = b.dataset.tag as keyof typeof S | undefined; if (k) { S[k] = ""; if (k === "q") ($("q") as HTMLInputElement).value = ""; render(); }
+  });
+  $("more").addEventListener("click", () => render(false));
+  new IntersectionObserver((es) => { if (es[0].isIntersecting && !$("more").hidden && shown > 0 && shown < 400) render(false); }, { rootMargin: "600px" }).observe($("more"));
+
+  fromUrl(); ($("q") as HTMLInputElement).value = S.q;
+  fetch("/zakony/data.json").then((r) => r.json()).then((d: Row[]) => {
+    rows = d; idx = rows.map((r) => words(`${r[1]} ${r[11]} ${r[8]} ${r[2]}`)); render();
+  });
+</script>
+
+<style>
+  .lz-dist { display: flex; gap: 3px; height: 2.4rem; border-radius: .8rem; overflow: hidden; }
+  .lz-dist :global(.d) { min-width: 0; border: 0; padding: 0 .7rem; cursor: pointer; display: flex; align-items: center; font: inherit; font-size: var(--step--2); font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; transition: opacity .2s, flex-grow .3s; }
+  .lz-dist :global(.d span) { overflow: hidden; text-overflow: ellipsis; }
+  .lz-dist :global(.d.yes) { background: var(--za); } .lz-dist :global(.d.no) { background: var(--proti); }
+  .lz-dist :global(.d.proc) { background: var(--accent); } .lz-dist :global(.d.none) { background: var(--nepritomny, #8a94a6); }
+  .lz-dist :global(.lbl) { font-style: normal; }
+  @media (max-width: 44rem) { .lz-dist :global(.lbl) { display: none; } .lz-dist :global(.d) { justify-content: center; padding: 0 .3rem; } }
+  .lz-dist :global(.d.dim) { opacity: .3; } .lz-dist :global(.d:hover) { opacity: 1; filter: brightness(1.08); }
+  .lz-dist :global(.d:focus-visible) { outline: 3px solid var(--text); outline-offset: -3px; }
+  .lz :global(.badges) { grid-row: 1 / 3; grid-column: 3; display: flex; flex-direction: column; align-items: flex-end; gap: .25rem; }
+  .lz :global(.pill.zz) { color: var(--text); }
+  .lz :global(.pill.ret) { color: var(--proti); border-style: dashed; }
+  .lz :global(.fx-empty) { list-style: none; }
+  @media (max-width: 44rem) { .lz :global(.badges) { grid-row: 1; grid-column: 2; } }
+</style>
