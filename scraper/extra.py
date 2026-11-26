@@ -115,7 +115,7 @@ def main():
         if comms: wr(X / "committees.json", comms)
         ch = nrsr.paginate(url("poslanci/zmeny"), P.parse_changes, max_pages=20)
         if ch:
-            uniq = list({json.dumps(c, sort_keys=True): c for c in ch}.values())
+            uniq = [c for c in {json.dumps(c, sort_keys=True): c for c in ch}.values() if c["date"] >= "2023-10-25"]  # IX. term only
             wr(X / "changes.json", sorted(uniq, key=lambda c: c["date"], reverse=True))
         meta["globalAt"] = iso(NOW()); wr(X / "meta.json", meta)
         print(f"global: {len(comms)} committees, {len(ch)} changes", flush=True)

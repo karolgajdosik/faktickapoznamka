@@ -125,11 +125,11 @@ def parse_law(html: str) -> dict:
     for i, (pos, st) in enumerate(marks):
         end = marks[i + 1][0] if i + 1 < len(marks) else len(flat)
         chunk = flat[pos + len(st):end]
-        chunk = chunk.split("Priložené dokumenty")[0].split("Výsledok štádia")[0]
+        chunk = re.split(r"Priložené dokumenty|Výsledok štádia|Všetky dokumenty|Hlasovania poslancov|Deň v parlamente", chunk)[0]
         res = re.search(r"Výsledok štádia procesu:\s*(.+?)(?: Priložené| Všetky dokumenty| Hlasovania poslancov| I{1,3}\. čítanie|$)", flat[pos:end])
         stages.append({"stage": st, "text": re.sub(r"\s+([.,])", r"\1", chunk.strip())[:320],
                        "result": re.sub(r"\s+([.,])", r"\1", res.group(1).strip())[:120] if res else None})
-    zz = re.search(r"(\d{1,4}/\d{4})\s*Z\.\s*z\.", flat.split("Stav legislatívneho procesu")[-1]) if "Zbierka" in flat else None
+    zz = re.search(r"vyšiel v Zbierke zákonov.{0,40}?číslo (\d{1,4}/\d{4})", flat)
     return {
         "state": (g(r"Stav legislatívneho procesu:\s*(.+?)\s*(?:\(|grafické)") or "").strip(),
         "stateNote": (g(r"Stav legislatívneho procesu:\s*[^(]+\((.+?)\)") or "").strip() or None,
