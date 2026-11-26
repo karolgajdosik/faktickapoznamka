@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-05-24",
+ "submitter": "poslanci NR SR (A. Danko, M. Garaj, R. Huliak, A. Lučanský)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 334 zo dňa 13. 6. 2024. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 6. 9. 2024. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na pr",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR dňa 7. 11. 2024. Pozmeňujúce a doplňujúce návrhy: 23. 10. 2024 Remišová, Veronika Detail návrhu 9 0345 Veronika Remišová II (798 KB) 29. 10. 2024 Gašparovič, Štefan Detail návrhu 9 0345 Štefan Gašparovič II (875 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 647 zo dňa 7. 11. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:47:16+00:00"
+}

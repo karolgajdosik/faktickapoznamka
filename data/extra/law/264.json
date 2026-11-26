@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-04-15",
+ "submitter": "vláda (Ministerstvo práce, sociálnych vecí a rodiny SR)",
+ "gestor": "Výbor NR SR pre sociálne veci",
+ "returnedByPresident": false,
+ "zbierka": "84/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 208 zo dňa 18. 4. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre sociálne veci s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre sociálne veci ",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR dňa 25. 4. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 238 zo dňa 25. 4. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 29. 4. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (1. 5. 2024), číslo 84/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:49:45+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-10-04",
+ "submitter": "vláda (Ministerstvo kultúry SR)",
+ "gestor": "Výbor NR SR pre kultúru a médiá",
+ "returnedByPresident": false,
+ "zbierka": "344/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 573 zo dňa 23. 10. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre kultúru a médiá s lehotou na prerokovanie 22. 11. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre kult",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR dňa 27. 11. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 669 zo dňa 27. 11. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 6. 12. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (11. 12. 2024), číslo 344/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:42:15+00:00"
+}

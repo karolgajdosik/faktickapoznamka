@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-05-24",
+ "submitter": "vláda (Ministerstvo financií SR)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": "251/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 367 zo dňa 18. 6. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti, Výbor NR SR pre pôdohospodárstvo a životné prostredie a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 6. 9. 2024. NR SR",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR dňa 11. 9. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 447 zo dňa 11. 9. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 23. 9. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (5. 10. 2024), číslo 251/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:48:16+00:00"
+}

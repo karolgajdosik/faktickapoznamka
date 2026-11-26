@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-08-23",
+ "submitter": "vláda (Ministerstvo spravodlivosti SR)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": false,
+ "zbierka": "298/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 462 zo dňa 17. 9. 2024. NR SR uznesením rozhodla o výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 17. 10. 2024. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 17. 10. 2024.",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR dňa 23. 10. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 575 zo dňa 23. 10. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 7. 11. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (19. 11. 2024), číslo 298/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:45:39+00:00"
+}

@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-06-11",
+ "submitter": "vláda (Ministerstvo životného prostredia SR)",
+ "gestor": "Výbor NR SR pre pôdohospodárstvo a životné prostredie",
+ "returnedByPresident": true,
+ "zbierka": "202/2024",
+ "stages": [
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR dňa 27. 6. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 411 zo dňa 27. 6. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 17. 7. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (23. 7. 2024), číslo 202/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:46:45+00:00"
+}

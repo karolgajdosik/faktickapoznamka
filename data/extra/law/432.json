@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-08-23",
+ "submitter": "poslanci NR SR (D. Karas)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 688 zo dňa 28. 11. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 31. 1. 2025. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 3.",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR dňa 27. 3. 2025.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR, uznesenie číslo 820 zo dňa 27. 3. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:44:32+00:00"
+}

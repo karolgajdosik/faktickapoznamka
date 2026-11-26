@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-08-23",
+ "submitter": "poslanci NR SR (Z. Svoboda)",
+ "gestor": "Výbor NR SR pre zdravotníctvo",
+ "returnedByPresident": false,
+ "zbierka": "321/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 534 zo dňa 25. 9. 2024. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR, Výbor NR SR pre verejnú správu a regionálny rozvoj a Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie 25. 10. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR dňa 5. 11. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 622 zo dňa 5. 11. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 21. 11. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (27. 11. 2024), číslo 321/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:44:22+00:00"
+}

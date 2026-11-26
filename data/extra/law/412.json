@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-08-23",
+ "submitter": "vláda (Ministerstvo cestovného ruchu a športu SR)",
+ "gestor": "Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch",
+ "returnedByPresident": false,
+ "zbierka": "304/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 501 zo dňa 19. 9. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR a Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch s lehotou na prerokovanie 19. 10",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR dňa 23. 10. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 576 zo dňa 23. 10. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 7. 11. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (20. 11. 2024), číslo 304/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:45:07+00:00"
+}

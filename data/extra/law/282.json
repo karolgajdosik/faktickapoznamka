@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-04-24",
+ "submitter": "vláda (Ministerstvo životného prostredia SR)",
+ "gestor": "Výbor NR SR pre pôdohospodárstvo a životné prostredie",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 298 zo dňa 21. 5. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre pôdohospodárstvo a životné prostredie a Ústavnoprávny výbor NR SR s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre pôdohospodárstvo a životné ",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR dňa 22. 5. 2024. Pozmeňujúce a doplňujúce návrhy: 21. 05. 2024 20:02 Čaučík, Marián Detail návrhu 9 0282 Marián Čaučík II (107 KB) 21. 05. 2024 20:02 Stohlová, Tamara Detail návrhu 9 0282 Tamara Stohlová II (170 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 301 zo dňa 22. 5. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:49:09+00:00"
+}

@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-08-22",
+ "submitter": "poslanci NR SR (A. Nováková)",
+ "gestor": "Výbor NR SR pre sociálne veci",
+ "returnedByPresident": false,
+ "zbierka": "322/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 531 zo dňa 25. 9. 2024. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre sociálne veci s lehotou na prerokovanie 25. 10. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre sociálne veci s lehotou na prerokovanie 27. ",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR dňa 5. 11. 2024. Stanovisko vlády k návrhu zákona je súhlasné.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 619 zo dňa 5. 11. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 21. 11. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (27. 11. 2024), číslo 322/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:45:03+00:00"
+}

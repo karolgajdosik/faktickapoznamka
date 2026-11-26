@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-05-24",
+ "submitter": "vláda (Ministerstvo životného prostredia SR)",
+ "gestor": "Výbor NR SR pre pôdohospodárstvo a životné prostredie",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 341 zo dňa 13. 6. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre pôdohospodárstvo a životné prostredie a Ústavnoprávny výbor NR SR s lehotou na prerokovanie 6. 9. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre pôdohospodárstvo a živ",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR dňa 17. 9. 2024. Pozmeňujúce a doplňujúce návrhy: 17. 09. 2024 17:30 Kvorka, Ján Detail návrhu 9 0325 Ján Kvorka II (91 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 480 zo dňa 17. 9. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:47:56+00:00"
+}

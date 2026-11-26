@@ -1,0 +1,22 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ vzal navrhovateľ späť",
+ "delivered": "2024-08-23",
+ "submitter": "poslanci NR SR (A. Danko, R. Huliak, A. Lučanský, R. Michelko)",
+ "gestor": "Výbor NR SR pre sociálne veci",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 536 zo dňa 25. 9. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre sociálne veci s lehotou na prerokovanie 25. 10. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre sociáln",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 536 zo dňa 25. 9. 2024",
+   "result": "NZ vzal navrhovateľ späť."
+  }
+ ],
+ "at": "2026-11-26T15:43:48+00:00"
+}

@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-05-29",
+ "submitter": "poslanci NR SR (A. Danko, K. Farkašovský, R. Huliak, D. Jarjabek, P. Kotlár, Ľ. Laššáková, P. Ľupták, R. Malatinec, R. Michelko, I. Ševčík)",
+ "gestor": "Výbor NR SR pre kultúru a médiá",
+ "returnedByPresident": true,
+ "zbierka": "169/2024",
+ "stages": [
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR dňa 11. 6. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 308 zo dňa 11. 6. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 26. 6. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (10. 7. 2024), číslo 169/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:47:07+00:00"
+}

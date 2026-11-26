@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-05-24",
+ "submitter": "vláda (Ministerstvo kultúry SR)",
+ "gestor": "Výbor NR SR pre kultúru a médiá",
+ "returnedByPresident": false,
+ "zbierka": "203/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 399 zo dňa 27. 6. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR a Výbor NR SR pre kultúru a médiá s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre kultúru ",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR dňa 27. 6. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 421 zo dňa 27. 6. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 17. 7. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (24. 7. 2024), číslo 203/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:47:58+00:00"
+}

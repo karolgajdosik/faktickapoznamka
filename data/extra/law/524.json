@@ -1,0 +1,27 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ nebol schválený",
+ "delivered": "2024-10-03",
+ "submitter": "poslanci NR SR (J. Horecký, I. Janckulík)",
+ "gestor": "Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 708 zo dňa 3. 12. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre pôdohospodárstvo a životné prostredie, Ústavnoprávny výbor NR SR a Výbor NR SR pre vzdelávanie, vedu, mládež, šport a cestovný ruch s lehotou na prero",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 39. schôdzi NR SR dňa 11. 9. 2025. Pozmeňujúce a doplňujúce návrhy: 10. 06. 2025 Horecký, Ján Detail návrhu 9 0524 Ján Horecký II (170 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 39. schôdzi NR SR, uznesenie číslo 1094 zo dňa 11. 9. 2025",
+   "result": "NZ nebol schválený."
+  }
+ ],
+ "at": "2026-11-26T15:41:43+00:00"
+}

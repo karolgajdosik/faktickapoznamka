@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-05-22",
+ "submitter": "poslanci NR SR (S. Migaľ)",
+ "gestor": "Výbor NR SR pre obranu a bezpečnosť",
+ "returnedByPresident": false,
+ "zbierka": "258/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 15. schôdzi NR SR, uznesenie číslo 332 zo dňa 12. 6. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre obranu a bezpečnosť s lehotou na prerokovanie 6. 9. 2024. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre obr",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR dňa 25. 9. 2024. Stanovisko vlády k návrhu zákona je súhlasné.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 530 zo dňa 25. 9. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 4. 10. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (9. 10. 2024), číslo 258/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:48:06+00:00"
+}

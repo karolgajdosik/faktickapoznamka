@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-08-01",
+ "submitter": "vláda (Ministerstvo dopravy SR)",
+ "gestor": "Výbor NR SR pre hospodárske záležitosti",
+ "returnedByPresident": false,
+ "zbierka": "308/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 509 zo dňa 24. 9. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 24. 10. 2024. NR SR uznesením rozhodla o gestorskom výbor",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR dňa 23. 10. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 580 zo dňa 23. 10. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 7. 11. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (21. 11. 2024), číslo 308/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:46:16+00:00"
+}

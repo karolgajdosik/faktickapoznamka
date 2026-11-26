@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-03-27",
+ "submitter": "vláda (Ministerstvo životného prostredia SR)",
+ "gestor": "Výbor NR SR pre pôdohospodárstvo a životné prostredie",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 12. schôdzi NR SR, uznesenie číslo 193 zo dňa 16. 4. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre pôdohospodárstvo a životné prostredie, Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 7. 6. 2024. NR SR uznesením rozhodla o gest",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR dňa 17. 9. 2024. Pozmeňujúce a doplňujúce návrhy: 17. 09. 2024 17:23 Baška, Jaroslav Detail návrhu 9 0230 Jaroslav Baška II (100 KB)",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 19. schôdzi NR SR, uznesenie číslo 479 zo dňa 17. 9. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:50:42+00:00"
+}

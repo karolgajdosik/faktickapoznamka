@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-09-19",
+ "submitter": "poslanci NR SR (M. Čellár, Z. Plevíková, I. Ševčík)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": false,
+ "zbierka": "353/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 22. schôdzi NR SR, uznesenie číslo 644 zo dňa 6. 11. 2024. NR SR uznesením rozhodla o výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 8. 12. 2024. NR SR uznesením rozhodla o gestorskom výbore Ústavnoprávny výbor NR SR s lehotou na prerokovanie 8. 12. 2024.",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR dňa 28. 11. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 689 zo dňa 28. 11. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 13. 12. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (17. 12. 2024), číslo 353/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T15:43:01+00:00"
+}
