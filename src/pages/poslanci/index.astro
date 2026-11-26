@@ -106,7 +106,7 @@ const data = mps.map((m) => {
         const sub = [m.age ? `${m.age} r.` : null, m.city, m.region ? `${m.region} kraj` : null].filter(Boolean).join(", ");
         const btn = el("button", { type: "button" },
           ava(m),
-          el("span", {}, el("span", { className: "nm", textContent: m.name }), el("span", { className: "cl", textContent: m.club }), sub ? el("span", { className: "sub", textContent: sub }) : null),
+          el("span", {}, el("span", { className: "nm", textContent: m.name, translate: false }), el("span", { className: "cl", textContent: m.club, translate: false }), sub ? el("span", { className: "sub", textContent: sub }) : null),
           el("span", { className: "val" }, val, el("small", { textContent: lab })));
         btn.style.setProperty("--club", m.color);
         btn.addEventListener("click", () => open(m.id));
