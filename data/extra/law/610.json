@@ -1,0 +1,17 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NR SR nebude pokračovať v rokovaní o návrhu zákona",
+ "delivered": "2024-11-08",
+ "submitter": "poslanci NR SR (V. Ledecký, V. Marcinková)",
+ "gestor": "Výbor NR SR pre hospodárske záležitosti",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 778 zo dňa 10. 12. 2024.",
+   "result": "NR SR nebude pokračovať v rokovaní o návrhu zákona."
+  }
+ ],
+ "at": "2026-11-26T03:17:56+00:00"
+}

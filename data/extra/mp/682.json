@@ -1,0 +1,102 @@
+{
+ "id": "682",
+ "excuses": [
+  {
+   "from": "2024-01-19",
+   "to": "2024-01-19",
+   "days": [
+    "2024-01-19"
+   ],
+   "reason": "iný dôvod (Osobné dôvody)"
+  }
+ ],
+ "bills": [
+  {
+   "title": "Návrh na vol'bu predsedu Štátnej komisie pre vol'by a kontrolu financovania politických strán",
+   "tlac": "99",
+   "state": "Evidencia",
+   "delivered": "2023-12-05",
+   "approved": null,
+   "sponsors": "P. Pellegrini",
+   "category": "Iný typ"
+  }
+ ],
+ "amendments": [],
+ "interpellations": [],
+ "trips": [
+  {
+   "from": "2024-03-14",
+   "to": "2024-03-14",
+   "desc": "Berlín - Predseda NR SR Peter Pellegrini a predseda Výboru NR SR pre európske záležitosti Ján Ferenčák sa zúčastnia na oficiálnej návšteve v Nemeckej spolkovej republike."
+  },
+  {
+   "from": "2024-03-11",
+   "to": "2024-03-11",
+   "desc": "Budapešť - Predseda NR SR Peter Pellegrini sa zúčastní na pracovnej návšteve Maďarska."
+  },
+  {
+   "from": "2024-03-03",
+   "to": "2024-03-05",
+   "desc": "Nikózia - predseda NR SR Peter Pellegrini a poslanci NR SR Ján Ferenčák a Samuel Migaľ sa zúčastnia na pracovnej návšteve predsedu NR SR v Cyperskej republike."
+  },
+  {
+   "from": "2024-02-27",
+   "to": "2024-02-29",
+   "desc": "Dublin, Praha - Predseda NR SR Peter Pellegrini sa zúčastní na oficiálnej návšteve v Írsku a na pracovnej návšteve v Českej republike."
+  },
+  {
+   "from": "2024-01-22",
+   "to": "2024-01-24",
+   "desc": "Krakov, Brusel - Predseda NR SR Peter Pellegrini, predseda Výboru NR SR pre európske záležitosti Ján Ferenčák a predseda Zahraničného výboru NR SR Marián Kéry sa zúčastnia pracovnej návštevy v Poľskej republike a oficiálnej návštevy v inštitúciách EÚ."
+  },
+  {
+   "from": "2023-12-13",
+   "to": "2023-12-14",
+   "desc": "Frankfurt - Predseda NR SR Peter Pellegrini navštívi Nemeckú spolkovú republiku."
+  },
+  {
+   "from": "2023-12-04",
+   "to": "2023-12-04",
+   "desc": "Viedeň - predseda NR SR Peter Pellegrini sa zúčastní na oficiálnej návšteve v Rakúskej republike."
+  },
+  {
+   "from": "2023-11-30",
+   "to": "2023-11-30",
+   "desc": "Praha - Predseda NR SR Peter Pellegrini odcestuje na oficiálnu návštevu do Českej republiky"
+  }
+ ],
+ "offices": [],
+ "declaration": {
+  "year": 2025,
+  "filed": "k 30. aprílu",
+  "function": "prezident Slovenskej republiky",
+  "incomePublic": 200797,
+  "incomeOther": 0,
+  "employment": "nevykonávam",
+  "business": "nevykonávam",
+  "roles": [],
+  "realEstateCount": 9,
+  "realEstateKinds": {
+   "Ostatné plochy": 1,
+   "Garážové státie 2x": 1,
+   "Byt + pivničná kobka": 2,
+   "Trvalý trávny porast": 1,
+   "Byt": 1,
+   "Garážové státie": 2,
+   "Rekreačná chata": 1
+  },
+  "movablesCount": 0,
+  "movables": [],
+  "rights": [
+   "Úspory",
+   "Podiel v s.r.o."
+  ],
+  "obligations": [
+   "Úver",
+   "Hypotekárny úver",
+   "Hypotekárny úver"
+  ],
+  "userId": "PelePete"
+ },
+ "at": "2026-11-26T03:08:56+00:00"
+}

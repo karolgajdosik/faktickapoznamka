@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2025-03-07",
+ "submitter": "vláda (Ministerstvo dopravy SR)",
+ "gestor": "Výbor NR SR pre sociálne veci",
+ "returnedByPresident": false,
+ "zbierka": "142/2025",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR, uznesenie číslo 865 zo dňa 3. 4. 2025. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR, Výbor NR SR pre sociálne veci a Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie 23. 5. 2025. NR SR uznesením rozhodla o gestorsk",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 35. schôdzi NR SR dňa 28. 5. 2025.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 35. schôdzi NR SR, uznesenie číslo 938 zo dňa 28. 5. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 11. 6. 2025 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (18. 6. 2025), číslo 142/2025.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T03:14:20+00:00"
+}

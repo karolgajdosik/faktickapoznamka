@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon bol vrátený prezidentom",
+ "delivered": "2024-11-07",
+ "submitter": "vláda (predseda vlády SR, dočasne poverený vedením MŽP SR)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 675 zo dňa 28. 11. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 31. 1. 2025. NR SR uznesením rozhodla o gestorskom výbore Ús",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR dňa 9. 4. 2025. Pozmeňujúce a doplňujúce návrhy: 01. 04. 2025 Glück, Richard Detail návrhu 9 0591 Richard Glück II (223 KB) 01. 04. 2025 Števulová, Zuzana Detail návrhu 9 0591 Zuzana Števulová II (279 KB) 02. 04. 2025 19:49 Majerský, František Detail návrhu 9 0591 Frnatišek Majer",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR, uznesenie číslo 882 zo dňa 9. 4. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol vrátený prezidentom.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T03:18:30+00:00"
+}

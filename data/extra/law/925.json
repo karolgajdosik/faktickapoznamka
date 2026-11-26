@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2025-08-22",
+ "submitter": "vláda (Úrad pre normalizáciu, metrológiu a skúšobníctvo SR)",
+ "gestor": "Výbor NR SR pre hospodárske záležitosti",
+ "returnedByPresident": false,
+ "zbierka": "318/2025",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 39. schôdzi NR SR, uznesenie číslo 1083 zo dňa 9. 9. 2025. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR, Výbor NR SR pre sociálne veci a Výbor NR SR pre zdravotníctvo s lehotou na prerokovanie 10. 10. 2025. NR SR uznesením rozhodla o gestor",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR dňa 21. 10. 2025.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 40. schôdzi NR SR, uznesenie číslo 1225 zo dňa 21. 10. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 6. 11. 2025 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (21. 11. 2025), číslo 318/2025.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T03:09:03+00:00"
+}

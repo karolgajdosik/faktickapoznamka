@@ -1,0 +1,17 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NR SR nebude pokračovať v rokovaní o návrhu zákona",
+ "delivered": "2024-11-06",
+ "submitter": "poslanci NR SR (R. Vašečka, A. Záborská)",
+ "gestor": "Výbor NR SR pre financie a rozpočet",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 729 zo dňa 3. 12. 2024.",
+   "result": "NR SR nebude pokračovať v rokovaní o návrhu zákona."
+  }
+ ],
+ "at": "2026-11-26T03:18:22+00:00"
+}

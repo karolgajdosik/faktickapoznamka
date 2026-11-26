@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2025-04-08",
+ "submitter": "vláda (Ministerstvo dopravy SR)",
+ "gestor": "Výbor NR SR pre hospodárske záležitosti",
+ "returnedByPresident": false,
+ "zbierka": "77/2025",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR, uznesenie číslo 877 zo dňa 9. 4. 2025. NR SR uznesením rozhodla o výboroch Výbor NR SR pre financie a rozpočet, Výbor NR SR pre hospodárske záležitosti, Ústavnoprávny výbor NR SR a Výbor NR SR pre sociálne veci s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorsk",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR dňa 10. 4. 2025.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 33. schôdzi NR SR, uznesenie číslo 889 zo dňa 10. 4. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 15. 4. 2025 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (17. 4. 2025), číslo 77/2025.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T03:12:37+00:00"
+}

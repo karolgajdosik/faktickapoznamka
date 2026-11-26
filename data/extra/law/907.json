@@ -1,0 +1,27 @@
+{
+ "state": "Redakcia",
+ "stateNote": "NZ postúpil do redakcie",
+ "delivered": "2025-08-13",
+ "submitter": "poslanci NR SR (A. Sitkár, I. Šimko)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": false,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 39. schôdzi NR SR, uznesenie číslo 1187 zo dňa 1. 10. 2025. NR SR uznesením rozhodla o výboroch Ústavnoprávny výbor NR SR a Výbor NR SR pre verejnú správu a regionálny rozvoj s lehotou na prerokovanie 10. 10. 2025. NR SR uznesením rozhodla o gestorskom výbore Výbor NR SR pre verejnú správu a regio",
+   "result": "Príprava informácie k NZ."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR dňa 28. 4. 2026.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 49. schôdzi NR SR, uznesenie číslo 1457 zo dňa 28. 4. 2026",
+   "result": "NZ postupuje do redakcie."
+  }
+ ],
+ "at": "2026-11-26T03:09:40+00:00"
+}

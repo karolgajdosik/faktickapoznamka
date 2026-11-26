@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2024-11-22",
+ "submitter": "vláda (Ministerstvo vnútra SR)",
+ "gestor": "Výbor NR SR pre obranu a bezpečnosť",
+ "returnedByPresident": false,
+ "zbierka": "342/2024",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 659 zo dňa 26. 11. 2024. NR SR uznesením rozhodla o výboroch Výbor NR SR pre ľudské práva a národnostné menšiny, Ústavnoprávny výbor NR SR a Výbor NR SR pre obranu a bezpečnosť s lehotou na prerokovanie ihneď. NR SR uznesením rozhodla o gestorskom výbore Výbor NR",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR dňa 28. 11. 2024.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 23. schôdzi NR SR, uznesenie číslo 676 zo dňa 28. 11. 2024",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 6. 12. 2024 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (11. 12. 2024), číslo 342/2024.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T03:17:41+00:00"
+}

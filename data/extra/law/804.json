@@ -1,0 +1,22 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "NZ nebol schválený",
+ "delivered": "2025-04-16",
+ "submitter": "poslanci NR SR (D. Karas)",
+ "gestor": "Ústavnoprávny výbor NR SR",
+ "returnedByPresident": true,
+ "zbierka": null,
+ "stages": [
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 35. schôdzi NR SR dňa 18. 6. 2025.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 35. schôdzi NR SR, uznesenie číslo 1072 zo dňa 18. 6. 2025",
+   "result": "NZ nebol schválený."
+  }
+ ],
+ "at": "2026-11-26T03:12:22+00:00"
+}

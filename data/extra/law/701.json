@@ -1,0 +1,32 @@
+{
+ "state": "Uzavretá úloha",
+ "stateNote": "Zákon vyšiel v Zbierke zákonov",
+ "delivered": "2025-01-30",
+ "submitter": "vláda (Ministerstvo dopravy SR)",
+ "gestor": "Výbor NR SR pre verejnú správu a regionálny rozvoj",
+ "returnedByPresident": false,
+ "zbierka": "26/2025",
+ "stages": [
+  {
+   "stage": "I. čítanie",
+   "text": "NZ bol prerokovaný na 30. schôdzi NR SR, uznesenie číslo 790 zo dňa 4. 2. 2025. NR SR uznesením rozhodla o výboroch Výbor NR SR pre hospodárske záležitosti, Výbor NR SR pre pôdohospodárstvo a životné prostredie, Ústavnoprávny výbor NR SR, Výbor NR SR pre obranu a bezpečnosť a Výbor NR SR pre verejnú správu a regionálny",
+   "result": "Zápis uznesenia / návrhu uznesenia výborov."
+  },
+  {
+   "stage": "II. čítanie",
+   "text": "NZ bol prerokovaný na 30. schôdzi NR SR dňa 5. 2. 2025.",
+   "result": "NZ postúpil do III. čítania."
+  },
+  {
+   "stage": "III. čítanie",
+   "text": "NZ bol prerokovaný na 30. schôdzi NR SR, uznesenie číslo 793 zo dňa 5. 2. 2025",
+   "result": "NZ postupuje do redakcie."
+  },
+  {
+   "stage": "Redakcia",
+   "text": "Zákon bol 14. 2. 2025 odoslaný do Zbierky zákonov. Zákon vyšiel v Zbierke zákonov. (19. 2. 2025), číslo 26/2025.",
+   "result": null
+  }
+ ],
+ "at": "2026-11-26T03:15:24+00:00"
+}
