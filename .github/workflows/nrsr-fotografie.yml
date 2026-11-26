@@ -1,0 +1,95 @@
+name: Doplnenie poslednych 9 fotografii
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Ulozit aj do public/foto
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: pip install requests pillow
+
+      - name: Download 9 photos
+        run: |
+          python <<'PY'
+          import requests, io, pathlib, time
+          from PIL import Image
+
+          urls = {
+            1173: "https://politicheck.sk/api/media/members/1173/274825d01829742a.jpg",
+            1197: "https://politicheck.sk/api/media/members/1197/e69094580cbae9c3.jpg",
+            1152: "https://politicheck.sk/api/media/members/1152/569c9793c7bb1f31.jpg",
+            1150: "https://politicheck.sk/api/media/members/1150/f4d93cc4858a8774.jpg",
+            1008: "https://upload.wikimedia.org/wikipedia/commons/4/47/CoR_Members_portraits_-_Jan_FERENCAK.jpg",
+            785: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Lubomir_Galko.jpg",
+            1072: "https://upload.wikimedia.org/wikipedia/commons/8/80/Tom%C3%A1%C5%A1_Taraba_in_May_2026.jpg",
+            861: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Vasecka.jpg",
+            1227: "https://www.sns.sk/images/people/kovac.webp"
+          }
+
+          out = pathlib.Path("downloaded-photos")
+          out.mkdir(exist_ok=True)
+
+          headers = {
+            "User-Agent": "FaktickaPoznamka/1.0 (https://github.com/karolgajdosik/faktickapoznamka)"
+          }
+
+          for i, url in urls.items():
+              try:
+                  r = requests.get(
+                      url, headers=headers, timeout=60)
+                  r.raise_for_status()
+                  img = Image.open(io.BytesIO(r.content))
+                  img.load()
+                  target = out / f"{i}.jpg"
+
+                  if img.format == "JPEG":
+                      target.write_bytes(r.content)
+                  else:
+                      img.convert("RGB").save(
+                          target, "JPEG", quality=98,
+                          subsampling=0)
+
+                  print("OK:", i, img.size)
+
+              except Exception as e:
+                  print("ERROR:", i, str(e))
+
+              time.sleep(1)
+
+          print("TOTAL:", len(list(out.glob("*.jpg"))), "/ 9")
+          PY
+
+      - name: Create ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: poslednych-9-fotografii
+          path: downloaded-photos/*.jpg
+          if-no-files-found: error
+
+      - name: Check completeness
+        run: |
+          count=$(find downloaded-photos -name '*.jpg' | wc -l)
+          test "$count" -eq 9
+
+      - name: Save directly to repository
+        if: inputs.publish && github.ref == 'refs/heads/main'
+        run: |
+          mkdir -p public/foto
+          cp -n downloaded-photos/*.jpg public/foto/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/foto/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add remaining 9 member photos"
+          git push
