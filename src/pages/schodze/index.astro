@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import SessionCard from "../../components/SessionCard.astro";
+import SessionCalendar from "../../components/SessionCalendar.astro";
 import { sessions, votes } from "../../lib/data";
 import { program } from "../../lib/extra";
 const known = new Set(sessions.map((s) => s.n));
@@ -11,9 +12,10 @@ const upcoming = program.filter((p) => ongoing(p.when) || p.n > lastKnown).sort(
 <Base title="Schôdze" description="Schôdze Národnej rady SR v IX. volebnom období: rokovacie dni, hlasovania a účasť.">
   <h1>Schôdze</h1>
   <p class="meta-line">IX. volebné obdobie: {sessions.length} schôdzí, {votes.length} hlasovaní. Stĺpčeky ukazujú jednotlivé hlasovania: výška je účasť, farba výsledok.</p>
+  <SessionCalendar />
   {upcoming.length > 0 && (
     <section class="panel pad cal">
-      <h2>Program a kalendár</h2>
+      <h2>Program schôdzí</h2>
       <ul>{upcoming.map((p) => <li><b>{p.n}. schôdza</b> <span class:list={["muted", { off: /SPÄŤ|ZRUŠ/i.test(p.when) }]}>{ongoing(p.when) ? `od ${p.when.replace(/\s*-\s*$/, "")}, prebieha` : p.when.replace(/\s*-\s*NÁVRH BOL VZATÝ SPÄŤ/i, ", návrh na zvolanie vzatý späť")}</span>
         <a href={`https://www.nrsr.sk/web/Default.aspx?sid=schodze/schodza&CisSchodze=${p.n}`} rel="noopener">program na nrsr.sk</a></li>)}</ul>
       <p class="muted" style="font-size:var(--step--1);margin:.5rem 0 0"><a href="https://www.nrsr.sk/web/Default.aspx?sid=schodze/harmonogram" rel="noopener">Harmonogram schôdzí na celý rok</a></p>

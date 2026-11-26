@@ -1,0 +1,215 @@
+---
+// Month calendar of sitting days. Search by date or session number; a click on a day shows
+// what happened (session, votes, debate) or what is planned (programme from nrsr.sk).
+import { sessions, speechesBySession, dayKey, voteWhat, lawTitle, isFinal, shortTitle } from "../lib/data";
+import { program } from "../lib/extra";
+
+type Day = { n: number; votes: number; passed: number; failed: number; speeches: number; debate: boolean; top: { id: string; t: string; w: string; ok: boolean | null }[] };
+const days: Record<string, Day[]> = {};
+const add = (d: string, x: Day) => (days[d] ??= []).push(x);
+const debateDays = new Map<number, Map<string, { n: number; text: boolean }>>();
+for (const [n, list] of speechesBySession) {
+  const m = new Map<string, { n: number; text: boolean }>();
+  for (const s of list) { const d = dayKey(s.start); const e = m.get(d) ?? { n: 0, text: false }; e.n++; e.text ||= !!s.text; m.set(d, e); }
+  debateDays.set(n, m);
+}
+for (const s of sessions) {
+  const deb = debateDays.get(s.n) ?? new Map();
+  const all = new Set([...s.days, ...deb.keys()]);
+  for (const d of all) {
+    const vs = s.votes.filter((v) => dayKey(v.datetime) === d);
+    // Most telling votes of the day: final votes on laws first, then other votes on a tlač; no roll calls.
+    const real = vs.filter((v) => v.passed !== null && !/^prezentácia/i.test(v.title));
+    const pick = [...real.filter(isFinal), ...real.filter((v) => !isFinal(v) && v.tlac), ...real.filter((v) => !isFinal(v) && !v.tlac)];
+    const seen = new Set<string>(); const finals = pick.filter((v) => { const t = lawTitle(v.title); if (seen.has(t)) return false; seen.add(t); return true; });
+    add(d, { n: s.n, votes: vs.length, passed: vs.filter((v) => v.passed).length, failed: vs.filter((v) => v.passed === false).length,
+      speeches: deb.get(d)?.n ?? 0, debate: !!deb.get(d)?.text,
+      top: finals.slice(0, 4).map((v) => ({ id: v.id, t: shortTitle(lawTitle(v.title), 120), w: isFinal(v) ? "záverečné hlasovanie" : voteWhat(v).toLowerCase(), ok: v.passed })) });
+  }
+}
+// Planned and ongoing sessions from the programme: "24. 11. 2026 - " or "2. 12. 2026"
+const iso = (s: string) => { const m = s.match(/(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})/); return m ? `${m[3]}-${m[2].padStart(2, "0")}-${m[1].padStart(2, "0")}` : null; };
+const planned = program.filter((p) => !/SPÄŤ|ZRUŠ/i.test(p.when)).map((p) => ({ n: p.n, start: iso(p.when), open: /-\s*$/.test(p.when) })).filter((p) => p.start);
+const list = sessions.map((s) => ({ n: s.n, first: dayKey(s.from), last: dayKey(s.to) }));
+for (const p of planned) if (!list.some((s) => s.n === p.n)) list.push({ n: p.n, first: p.start!, last: p.start! });
+list.sort((a, b) => b.n - a.n);
+const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Bratislava" });
+const data = { days, planned, list, today };
+---
+<section class="panel scal" id="kalendar" aria-label="Kalendár schôdzí">
+  <div class="scal-top">
+    <h2>Kalendár</h2>
+    <form class="scal-find" id="scal-find" role="search">
+      <label class="sr-only" for="scal-q">Nájsť dátum alebo číslo schôdze</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="scal-q" list="scal-sessions" placeholder="Dátum alebo číslo schôdze, napr. 12. 3. 2025" autocomplete="off" />
+      <datalist id="scal-sessions">{list.map((s) => <option value={`${s.n}. schôdza`} />)}</datalist>
+      <input type="date" id="scal-date" aria-label="Vybrať dátum z kalendára" />
+    </form>
+  </div>
+  <div class="scal-body">
+    <div class="scal-month">
+      <div class="scal-nav">
+        <button type="button" id="scal-prev" aria-label="Predchádzajúci mesiac">‹</button>
+        <strong id="scal-title" aria-live="polite"></strong>
+        <button type="button" id="scal-next" aria-label="Nasledujúci mesiac">›</button>
+        <button type="button" id="scal-today" class="scal-chip">Dnes</button>
+      </div>
+      <div class="scal-grid" role="grid" aria-labelledby="scal-title">
+        {["Po", "Ut", "St", "Št", "Pi", "So", "Ne"].map((d) => <span class="wd" role="columnheader">{d}</span>)}
+        <div id="scal-cells" style="display:contents"></div>
+      </div>
+      <p class="scal-legend"><span><i class="lg vote"></i>hlasovalo sa</span><span><i class="lg talk"></i>len rozprava</span><span><i class="lg plan"></i>plánovaná schôdza</span></p>
+    </div>
+    <div class="scal-detail" id="scal-detail" aria-live="polite"></div>
+  </div>
+  <script type="application/json" id="scal-data" set:html={JSON.stringify(data)} />
+</section>
+
+<script>
+  type Day = { n: number; votes: number; passed: number; failed: number; speeches: number; debate: boolean; top: { id: string; t: string; w: string; ok: boolean | null }[] };
+  const D = JSON.parse(document.getElementById("scal-data")!.textContent!) as {
+    days: Record<string, Day[]>; planned: { n: number; start: string; open: boolean }[]; list: { n: number; first: string; last: string }[]; today: string };
+  const $ = (id: string) => document.getElementById(id)!;
+  const MONTHS = ["január", "február", "marec", "apríl", "máj", "jún", "júl", "august", "september", "október", "november", "december"];
+  const pad = (x: number) => String(x).padStart(2, "0");
+  const key = (y: number, m: number, d: number) => `${y}-${pad(m + 1)}-${pad(d)}`;
+  const human = (k: string) => { const [y, m, d] = k.split("-").map(Number); return new Date(y, m - 1, d).toLocaleDateString("sk-SK", { weekday: "long", day: "numeric", month: "long", year: "numeric" }); };
+  const plannedOn = (k: string) => D.planned.filter((p) => p.start === k && !D.days[k]);
+  const plural = (n: number, a: string, b: string, c: string) => `${n} ${n === 1 ? a : n >= 2 && n <= 4 ? b : c}`;
+
+  let [y, m] = (() => { const k = location.hash.match(/^#d=(\d{4})-(\d{2})-(\d{2})$/); const t = (k ? `${k[1]}-${k[2]}-${k[3]}` : D.today).split("-").map(Number); return [t[0], t[1] - 1]; })();
+  let sel: string | null = null;
+
+  function render() {
+    $("scal-title").textContent = `${MONTHS[m]} ${y}`;
+    const first = new Date(y, m, 1); const lead = (first.getDay() + 6) % 7; const n = new Date(y, m + 1, 0).getDate();
+    const cells: string[] = [];
+    for (let i = 0; i < lead; i++) cells.push(`<span class="c blank"></span>`);
+    for (let d = 1; d <= n; d++) {
+      const k = key(y, m, d); const ds = D.days[k] ?? []; const pl = ds.length ? [] : plannedOn(k);
+      const cls = ["c", ds.some((x) => x.votes) ? "vote" : ds.length ? "talk" : pl.length ? "plan" : "", k === D.today ? "today" : "", k === sel ? "sel" : ""].join(" ");
+      const tag = ds.length ? `${ds.map((x) => x.n).join(", ")}.` : pl.length ? `${pl[0].n}.` : "";
+      const label = `${human(k)}${ds.length ? `, ${ds.map((x) => `${x.n}. schôdza`).join(", ")}` : pl.length ? `, plánovaná ${pl[0].n}. schôdza` : ""}`;
+      cells.push(`<button type="button" class="${cls}" data-k="${k}" aria-label="${label}" aria-pressed="${k === sel}"><b>${d}</b>${tag ? `<small>${tag}</small>` : ""}</button>`);
+    }
+    $("scal-cells").innerHTML = cells.join("");
+  }
+
+  function show(k: string) {
+    sel = k; const [yy, mm] = k.split("-").map(Number); y = yy; m = mm - 1; render();
+    if (location.hash || init) history.replaceState(null, "", `#d=${k}`);
+    const ds = D.days[k] ?? []; const pl = plannedOn(k);
+    let html = `<h3>${human(k)}</h3>`;
+    if (ds.length) {
+      html += ds.map((x) => `
+        <article class="sd">
+          <a class="sd-n" href="/schodze/${x.n}/">${x.n}. schôdza</a>
+          <p class="sd-stats">${x.votes ? `${plural(x.votes, "hlasovanie", "hlasovania", "hlasovaní")}${x.passed ? `, <span class="ok">${x.passed} schválených</span>` : ""}${x.failed ? `, <span class="no">${x.failed} neschválených</span>` : ""}` : "bez hlasovania"}${x.speeches ? `, ${plural(x.speeches, "vystúpenie", "vystúpenia", "vystúpení")}` : ""}</p>
+          ${x.top.length ? `<ul>${x.top.map((t) => `<li><a href="/hlasovania/${t.id}/"><i class="${t.ok ? "ok" : "no"}" aria-hidden="true"></i><span>${t.t}<small>${t.w}, ${t.ok ? "schválené" : "neschválené"}</small></span></a></li>`).join("")}</ul>` : ""}
+          <p class="sd-links"><a href="/schodze/${x.n}/">Celá schôdza</a>${x.debate ? `<a href="/rozprava/${x.n}/${k}/">Rozprava v tento deň</a>` : ""}</p>
+        </article>`).join("");
+    } else if (pl.length) {
+      html += pl.map((p) => `<article class="sd plan"><span class="sd-n">${p.n}. schôdza</span><p class="sd-stats">${k > D.today ? "Začiatok schôdze podľa programu NR SR." : "Začiatok schôdze podľa programu NR SR. Hlasovania z tohto dňa ešte nemáme."}</p>
+        <p class="sd-links"><a href="https://www.nrsr.sk/web/Default.aspx?sid=schodze/schodza&CisSchodze=${p.n}" rel="noopener">Program na nrsr.sk</a></p></article>`).join("");
+    } else {
+      const keys = Object.keys(D.days).sort();
+      const next = keys.find((x) => x > k); const prev = [...keys].reverse().find((x) => x < k);
+      html += `<p class="muted">V tento deň parlament nerokoval.</p><p class="sd-links">${prev ? `<button type="button" class="scal-chip" data-go="${prev}">Predchádzajúci rokovací deň</button>` : ""}${next ? `<button type="button" class="scal-chip" data-go="${next}">Nasledujúci rokovací deň</button>` : ""}</p>`;
+    }
+    $("scal-detail").innerHTML = html;
+  }
+
+  function find(q: string) {
+    q = q.trim(); if (!q) return;
+    const sn = q.match(/^(\d{1,3})\.?\s*(schôdza)?$/i);
+    if (sn) { const s = D.list.find((x) => x.n === Number(sn[1])); if (s) return show(s.first); }
+    const d = q.match(/^(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})$/) ?? q.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (d) { const k = d[1].length === 4 ? `${d[1]}-${d[2]}-${d[3]}` : `${d[3]}-${pad(+d[2])}-${pad(+d[1])}`; return show(k); }
+    const mo = q.toLowerCase().match(/^([a-záäčďéíĺľňóôŕšťúýž]+)\s*(\d{4})?$/); const mi = mo ? MONTHS.findIndex((x) => x.startsWith(mo[1].slice(0, 3))) : -1;
+    if (mi >= 0) { m = mi; y = mo![2] ? +mo![2] : y; sel = null; render(); $("scal-detail").innerHTML = `<p class="muted">Vyberte deň v kalendári.</p>`; return; }
+    $("scal-detail").innerHTML = `<p class="muted">Zadajte dátum v tvare 12. 3. 2025, číslo schôdze alebo mesiac (napríklad „máj 2025“).</p>`;
+  }
+
+  $("scal-cells").addEventListener("click", (e) => { const b = (e.target as HTMLElement).closest("button[data-k]") as HTMLElement | null; if (b) show(b.dataset.k!); });
+  $("scal-detail").addEventListener("click", (e) => { const b = (e.target as HTMLElement).closest("[data-go]") as HTMLElement | null; if (b) show(b.dataset.go!); });
+  $("scal-prev").addEventListener("click", () => { m--; if (m < 0) { m = 11; y--; } render(); });
+  $("scal-next").addEventListener("click", () => { m++; if (m > 11) { m = 0; y++; } render(); });
+  $("scal-today").addEventListener("click", () => show(D.today));
+  $("scal-find").addEventListener("submit", (e) => { e.preventDefault(); find(($("scal-q") as HTMLInputElement).value); });
+  $("scal-q").addEventListener("change", (e) => find((e.target as HTMLInputElement).value));
+  $("scal-date").addEventListener("change", (e) => { const v = (e.target as HTMLInputElement).value; if (v) show(v); });
+  document.getElementById("scal-cells")!.addEventListener("keydown", (e) => {
+    const b = (e.target as HTMLElement).closest("button[data-k]") as HTMLElement | null; if (!b) return;
+    const step = ({ ArrowLeft: -1, ArrowRight: 1, ArrowUp: -7, ArrowDown: 7 } as Record<string, number>)[e.key]; if (!step) return;
+    e.preventDefault(); const [a, bm, c] = b.dataset.k!.split("-").map(Number); const t = new Date(a, bm - 1, c + step);
+    show(key(t.getFullYear(), t.getMonth(), t.getDate())); (document.querySelector(`#scal-cells [data-k="${sel}"]`) as HTMLElement)?.focus();
+  });
+
+  let init = false;
+  const h = location.hash.match(/^#d=(\d{4}-\d{2}-\d{2})$/);
+  if (h) show(h[1]);
+  else {
+    const keys = Object.keys(D.days).sort(); const last = [...keys].reverse().find((k) => k <= D.today) ?? D.today;
+    show(D.days[D.today] ? D.today : last);
+  }
+  init = true;
+  if (false) {
+  }
+</script>
+
+<style>
+  .scal { margin-top: 1.25rem; padding: clamp(1rem, 3vw, 1.5rem); }
+  .scal-top { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+  .scal-top h2 { margin: 0; font-size: var(--step-1); }
+  .scal-find { display: flex; align-items: center; gap: .5rem; flex: 1 1 22rem; max-width: 34rem; height: 2.6rem; padding: 0 .4rem 0 .85rem; border: 1px solid var(--line-2); border-radius: 999px; background: var(--bg); }
+  .scal-find:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent); }
+  .scal-find svg { width: 1rem; height: 1rem; fill: none; stroke: var(--muted); stroke-width: 2; flex: none; }
+  .scal-find input:not([type="date"]) { all: unset; flex: 1; min-width: 0; font-size: 16px; color: var(--text); }
+  .scal-find input::placeholder { color: var(--faint); }
+  .scal-find input::-webkit-calendar-picker-indicator { opacity: 0; }
+  .scal-find input[type="date"]::-webkit-calendar-picker-indicator { opacity: .7; cursor: pointer; }
+  .scal-find { min-width: 0; }
+  @media (max-width: 44rem) { .scal-find { flex-basis: 100%; max-width: none; } .scal-find input[type="date"] { width: 2.4rem; color: transparent; padding: .35rem .5rem; } }
+  .scal-find input[type="date"] { font: inherit; font-size: var(--step--1); color: var(--muted); background: var(--panel-2); border: 0; border-radius: 999px; padding: .35rem .6rem; max-width: 9.5rem; }
+  .scal-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+  @media (max-width: 52rem) { .scal-body { grid-template-columns: 1fr; } }
+  .scal-nav { display: flex; align-items: center; gap: .4rem; margin-bottom: .6rem; }
+  .scal-nav strong { flex: 1; text-align: center; font-size: var(--step-0); text-transform: capitalize; }
+  .scal-nav button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 999px; }
+  .scal-nav > button:not(.scal-chip) { width: 2.2rem; height: 2.2rem; font-size: 1.3rem; line-height: 1; }
+  .scal :global(.scal-chip) { font: inherit; font-size: var(--step--1); font-weight: 600; cursor: pointer; padding: .35rem .8rem; border: 1px solid var(--line-2); background: var(--panel); color: var(--text); border-radius: 999px; }
+  .scal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+  .wd { text-align: center; font-size: var(--step--2); color: var(--muted); padding: .2rem 0; }
+  .scal-grid :global(.c) { aspect-ratio: 1 / .9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; border-radius: .6rem; border: 1px solid transparent;
+    background: transparent; color: var(--text); font: inherit; cursor: pointer; padding: 0; min-width: 0; }
+  .scal-grid :global(.c b) { font-weight: 600; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
+  .scal-grid :global(.c small) { font-size: .62rem; line-height: 1; opacity: .85; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .scal-grid :global(.c:hover) { border-color: var(--line-2); }
+  .scal-grid :global(.c.blank) { cursor: default; }
+  .scal-grid :global(.c.vote) { background: var(--accent); color: #fff; }
+  .scal-grid :global(.c.talk) { background: color-mix(in srgb, var(--accent) 22%, var(--panel)); }
+  .scal-grid :global(.c.plan) { border: 1.5px dashed var(--accent); }
+  .scal-grid :global(.c.today) { box-shadow: inset 0 0 0 2px var(--text); }
+  .scal-grid :global(.c.sel) { outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent); outline-offset: 1px; }
+  .scal-grid :global(.c:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .scal-legend { display: flex; flex-wrap: wrap; gap: .4rem 1rem; font-size: var(--step--2); color: var(--muted); margin: .7rem 0 0; }
+  .lg { display: inline-block; width: .8rem; height: .8rem; border-radius: .25rem; margin-right: .35rem; vertical-align: -1px; }
+  .lg.vote { background: var(--accent); } .lg.talk { background: color-mix(in srgb, var(--accent) 22%, var(--panel)); } .lg.plan { border: 1.5px dashed var(--accent); }
+  .scal-detail { border-left: 1px solid var(--line); padding-left: 1.5rem; min-height: 12rem; }
+  @media (max-width: 52rem) { .scal-detail { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 1rem; min-height: 0; } }
+  .scal-detail :global(h3) { margin: 0 0 .75rem; font-size: var(--step-0); }
+  .scal-detail :global(h3::first-letter) { text-transform: uppercase; }
+  .scal-detail :global(.sd) { padding: .9rem 1rem; border: 1px solid var(--line); border-radius: .8rem; margin-bottom: .75rem; background: var(--bg); }
+  .scal-detail :global(.sd.plan) { border-style: dashed; }
+  .scal-detail :global(.sd-n) { font-weight: 750; font-size: var(--step-1); text-decoration: none; }
+  .scal-detail :global(.sd-stats) { margin: .25rem 0 .5rem; font-size: var(--step--1); color: var(--muted); }
+  .scal-detail :global(.ok) { color: var(--za); } .scal-detail :global(.no) { color: var(--proti); }
+  .scal-detail :global(ul) { list-style: none; padding: 0; margin: 0 0 .5rem; display: grid; gap: .35rem; font-size: var(--step--1); }
+  .scal-detail :global(ul a) { text-decoration: none; display: flex; gap: .55rem; align-items: flex-start; color: inherit; }
+  .scal-detail :global(ul a:hover) { text-decoration: underline; }
+  .scal-detail :global(ul small) { display: block; color: var(--muted); font-size: var(--step--2); }
+  .scal-detail :global(ul i) { margin-top: .4em;  flex: none; width: .55rem; height: .55rem; border-radius: 50%; background: currentColor; }
+  .scal-detail :global(ul i.ok) { color: var(--za); } .scal-detail :global(ul i.no) { color: var(--proti); }
+  .scal-detail :global(.sd-links) { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: .25rem 0 0; font-size: var(--step--1); font-weight: 600; }
+</style>
