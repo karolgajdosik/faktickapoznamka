@@ -2,13 +2,6 @@
 // Search: instant matches for MPs, prints and committees (local data), then full-text results
 // from the Pagefind index grouped by kind (transcripts, laws, MPs, sessions, committees).
 import Base from "../layouts/Base.astro";
-import { mps, laws, clubColor, photo, initials } from "../lib/data";
-import { committees } from "../lib/extra";
-const local = {
-  mps: mps.map((m) => ({ id: m.id, n: m.name, c: m.club, col: clubColor(m.club), p: photo(m.id), i: initials(m) })),
-  laws: laws.map((l) => [l.tlac, l.title.slice(0, 100), l.status]),
-  com: committees.map((c) => [c.id, c.short.replace(/ NR SR$/, "")]),
-};
 const ideas = ["rozpočet", "zdravotníctvo", "konsolidácia", "Trestný zákon", "RTVS", "dane", "školstvo", "energie"];
 ---
 <Base title="Hľadať" description="Vyhľadávanie v prepisoch rozpravy, zákonoch, poslancoch, schôdzach a výboroch NR SR.">
@@ -28,18 +21,30 @@ const ideas = ["rozpočet", "zdravotníctvo", "konsolidácia", "Trestný zákon"
     </div>
   </section>
 
-  <section class="sx-quick" id="sx-quick" hidden aria-label="Rýchle výsledky"></section>
+  <nav class="sx-browse" id="sx-browse" aria-label="Prehliadať">
+    {[["/poslanci/", "Poslanci", "150 profilov, účasť a hlasovanie"], ["/zakony/", "Zákony", "Tlače, čítania a stav"], ["/hlasovania/", "Hlasovania", "Všetky hlasovania s filtrom"],
+      ["/schodze/", "Schôdze", "Kalendár a program"], ["/vybory/", "Výbory", "Zloženie a predsedovia"], ["/majetok/", "Majetok", "Príjmy a priznania"]].map(([h, t, d]) => (
+      <a href={h}><b>{t}</b><span>{d}</span></a>
+    ))}
+  </nav>
 
-  <div class="sx-tabs" id="sx-tabs" role="tablist" aria-label="Druh výsledkov" hidden></div>
-  <p class="sx-status" id="sx-status" aria-live="polite"></p>
-  <ol class="sx-results" id="sx-results"></ol>
-  <button type="button" class="fx-more" id="sx-more" hidden>Zobraziť ďalšie</button>
-  <script type="application/json" id="sx-local" set:html={JSON.stringify(local)} />
+  <div class="sx-layout" id="sx-layout" hidden>
+    <aside class="sx-side">
+      <div class="sx-tabs" id="sx-tabs" role="tablist" aria-label="Druh výsledkov" aria-orientation="vertical"></div>
+    </aside>
+    <div class="sx-main-col">
+      <section class="sx-quick" id="sx-quick" hidden aria-label="Rýchle výsledky"></section>
+      <p class="sx-status" id="sx-status" aria-live="polite"></p>
+      <ol class="sx-results" id="sx-results"></ol>
+      <button type="button" class="fx-more" id="sx-more" hidden>Zobraziť ďalšie</button>
+    </div>
+  </div>
 </Base>
 
 <script>
   type Mp = { id: string; n: string; c: string; col: string; p: string | null; i: string };
-  const L = JSON.parse(document.getElementById("sx-local")!.textContent!) as { mps: Mp[]; laws: [string, string, string][]; com: [number, string][] };
+  let L: { mps: Mp[]; laws: [string, string, string][]; com: [number, string][] } = { mps: [], laws: [], com: [] };
+  const local = fetch("/hladat/data.json").then((r) => r.json()).then((d) => { L = d; quick(input.value); });
   const $ = (id: string) => document.getElementById(id)!;
   const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
   const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
@@ -83,7 +88,7 @@ const ideas = ["rozpočet", "zdravotníctvo", "konsolidácia", "Trestný zákon"
   }
   async function full(q: string) {
     const my = ++seq;
-    if (!q.trim()) { $("sx-results").innerHTML = ""; $("sx-status").textContent = ""; $("sx-tabs").hidden = true; $("sx-more").hidden = true; return; }
+    if (!q.trim()) { $("sx-results").innerHTML = ""; $("sx-status").textContent = ""; $("sx-more").hidden = true; return; }
     const p = await load();
     if (!p) { $("sx-status").textContent = "Fulltextové vyhľadávanie je dostupné na zverejnenej stránke."; return; }
     $("sx-status").textContent = "Hľadám…";
@@ -100,7 +105,7 @@ const ideas = ["rozpočet", "zdravotníctvo", "konsolidácia", "Trestný zákon"
       subs: (d.sub_results ?? []).filter((s: any) => s.url !== d.url).slice(0, 3).map((s: any) => ({ url: s.url, title: s.title, excerpt: s.excerpt })) }));
     const counts = new Map<string, number>(); for (const x of all) counts.set(x.kind, (counts.get(x.kind) ?? 0) + 1);
     if (tab && !counts.get(tab)) tab = "";
-    $("sx-tabs").hidden = !all.length;
+    $("sx-tabs").hidden = false;
     $("sx-tabs").innerHTML = [["", "Všetko", all.length] as [string, string, number], ...Object.entries(KINDS).filter(([k]) => counts.get(k)).map(([k, l]) => [k, l, counts.get(k)!] as [string, string, number])]
       .map(([k, l, n]) => `<button role="tab" class="fx-chip" data-tab="${k}" aria-selected="${tab === k}" aria-pressed="${tab === k}">${l}<span class="n">${n}${k === "" && raw.length > all.length ? "+" : ""}</span></button>`).join("");
     const total = raw.length;
@@ -120,11 +125,11 @@ const ideas = ["rozpočet", "zdravotníctvo", "konsolidácia", "Trestný zákon"
   /* wiring */
   let t: number | undefined;
   function go(q: string, push = true) {
-    input.value = q; $("sx-clear").hidden = !q; $("sx-ideas").hidden = !!q;
+    input.value = q; $("sx-clear").hidden = !q; $("sx-ideas").hidden = !!q; $("sx-browse").hidden = !!q; $("sx-layout").hidden = !q;
     quick(q); full(q);
     if (push) history.replaceState(null, "", q ? `?q=${encodeURIComponent(q)}` : location.pathname);
   }
-  input.addEventListener("input", () => { clearTimeout(t); const q = input.value; $("sx-clear").hidden = !q; quick(q); t = window.setTimeout(() => go(q), 200); });
+  input.addEventListener("input", () => { clearTimeout(t); const q = input.value; $("sx-clear").hidden = !q; $("sx-layout").hidden = !q; $("sx-browse").hidden = !!q; $("sx-ideas").hidden = !!q; quick(q); t = window.setTimeout(() => go(q), 200); });
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") { e.preventDefault(); const q = input.value.trim(); if (q) remember(q); go(q); }
     if (e.key === "ArrowDown") { e.preventDefault(); (document.querySelector("#sx-quick a, #sx-results a") as HTMLElement | null)?.focus(); }
@@ -143,9 +148,31 @@ const ideas = ["rozpočet", "zdravotníctvo", "konsolidácia", "Trestný zákon"
 </script>
 
 <style>
-  .sx-hero { padding: clamp(1rem, 4vw, 2.5rem) 0 .5rem; max-width: 46rem; }
+  .sx-hero { padding: clamp(1rem, 5vw, 3.5rem) 0 .5rem; max-width: 46rem; margin: 0 auto; text-align: center; }
+  .sx-hero .meta-line { margin-left: auto; margin-right: auto; }
+  .sx-ideas > div { justify-content: center; }
+  @media (max-width: 44rem) { .sx-hero { text-align: left; } .sx-ideas > div { justify-content: flex-start; } }
+  .sx-browse { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: .6rem; max-width: 60rem; margin: 2.5rem auto 1rem; }
+  .sx-browse a { display: grid; gap: .2rem; padding: 1rem 1.1rem; border-radius: 1rem; background: var(--panel); border: 1px solid var(--line); text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
+  .sx-browse a:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .sx-browse span { color: var(--muted); font-size: var(--step--1); }
+  .sx-browse[hidden], .sx-layout[hidden] { display: none; }
+  .sx-layout { display: grid; grid-template-columns: 12rem minmax(0, 1fr); gap: 2rem; margin-top: 1.75rem; align-items: start; }
+  .sx-side { position: sticky; top: 5rem; }
+  .sx-side .sx-tabs { flex-direction: column; align-items: stretch; margin: 0; overflow: visible; }
+  .sx-side .sx-tabs :global(.fx-chip) { justify-content: space-between; border-radius: .7rem; border-color: transparent; background: transparent; }
+  .sx-side .sx-tabs :global(.fx-chip[aria-pressed="true"]) { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--text); border-color: transparent; }
+  .sx-side .sx-tabs :global(.fx-chip[aria-pressed="true"] .n) { color: var(--accent); }
+  .sx-side .sx-tabs :global(.fx-chip:hover) { background: var(--panel); }
+  .sx-main-col .sx-quick { margin-top: 0; }
+  @media (max-width: 52rem) {
+    .sx-layout { grid-template-columns: 1fr; gap: .5rem; }
+    .sx-side { position: static; }
+    .sx-side .sx-tabs { flex-direction: row; overflow-x: auto; }
+    .sx-side .sx-tabs :global(.fx-chip) { border-color: var(--line-2); background: var(--panel); border-radius: 999px; }
+  }
   .sx-hero h1 { margin-bottom: .3rem; }
-  .sx-box { position: relative; display: flex; align-items: center; gap: .7rem; height: 3.6rem; margin-top: 1.25rem; padding: 0 .6rem 0 1.2rem; border-radius: 1.2rem; background: var(--panel); border: 1px solid var(--line-2);
+  .sx-box { position: relative; text-align: left; display: flex; align-items: center; gap: .7rem; height: 3.6rem; margin-top: 1.25rem; padding: 0 .6rem 0 1.2rem; border-radius: 1.2rem; background: var(--panel); border: 1px solid var(--line-2);
     box-shadow: 0 18px 40px -26px rgba(0, 0, 0, .55); }
   .sx-box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent), 0 18px 40px -26px rgba(0, 0, 0, .55); }
   .sx-box svg { width: 1.3rem; height: 1.3rem; fill: none; stroke: var(--muted); stroke-width: 2; flex: none; }

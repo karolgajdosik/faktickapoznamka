@@ -8,7 +8,7 @@ const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávisl
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
 const chips = [["/schodze/", "Schôdze"], ["/statistiky/", "Štatistiky"], ["/vybory/", "Výbory"], ["/kraje/", "Kraje"]];
-const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/majetok/", "Majetok"], ["/statistiky/", "Štatistiky"], ["/hladat/", "Hľadať"], ["/o-projekte/", "O projekte"]];
+const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/majetok/", "Majetok"], ["/statistiky/", "Štatistiky"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
 <html lang="sk">
@@ -61,6 +61,10 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
         {chips.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
       </nav>
       <script is:inline>{(() => { const a = document.querySelector(".m-chips [aria-current]"); if (a) a.parentElement.scrollLeft = a.offsetLeft - 16; })()}</script>
+      <button type="button" class="k-open" id="k-open" aria-haspopup="dialog" aria-controls="k-pal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Hľadať poslanca, zákon…</span><kbd id="k-key">Ctrl K</kbd>
+      </button>
       <button class="theme-btn" id="theme" type="button" aria-label="Prepnúť svetlý a tmavý režim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
     </div>
   </header>
@@ -170,6 +174,71 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
       root.dataset.theme = dark ? "light" : "dark";
       try { localStorage.setItem("theme", root.dataset.theme); } catch {}
     });
+  </script>
+  <dialog class="k-pal" id="k-pal" aria-label="Rýchle vyhľadávanie">
+    <form method="dialog" class="k-box" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="k-q" type="search" placeholder="Meno poslanca, číslo tlače, výbor alebo slovo z rozpravy" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="k-list" aria-autocomplete="list" />
+      <kbd>Esc</kbd>
+    </form>
+    <ul class="k-list" id="k-list" role="listbox"></ul>
+    <div class="k-foot"><span><kbd>↑</kbd><kbd>↓</kbd> pohyb</span><span><kbd>Enter</kbd> otvoriť</span><span><kbd>Esc</kbd> zavrieť</span></div>
+  </dialog>
+  <script>
+    // Command palette: instant MPs, prints, committees and sections; Enter on text = full-text search.
+    type D = { mps: { id: string; n: string; c: string; col: string; p: string | null; i: string }[]; laws: [string, string, string][]; com: [number, string][] };
+    const dlg = document.getElementById("k-pal") as HTMLDialogElement, q = document.getElementById("k-q") as HTMLInputElement, list = document.getElementById("k-list")!;
+    const SECTIONS: [string, string, string][] = [["/poslanci/", "Sála", "poslanci sala"], ["/zakony/", "Zákony a návrhy", "zakony navrhy tlace"], ["/hlasovania/", "Hlasovania", "hlasovania"],
+      ["/schodze/", "Schôdze a kalendár", "schodze kalendar program"], ["/vybory/", "Výbory", "vybory"], ["/majetok/", "Majetkové priznania", "majetok priznania prijmy"],
+      ["/statistiky/", "Štatistiky", "statistiky rebricky"], ["/kraje/", "Poslanci podľa krajov", "kraje regiony"], ["/poslanci/zmeny/", "Zmeny v zložení parlamentu", "zmeny nahradnici mandat"],
+      ["/sledujem/", "Sledovaní poslanci", "sledujem oblubeni"], ["/o-projekte/", "O projekte a metodika", "o projekte metodika kontakt"]];
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+    const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    let data: D | null = null, items: { href: string; html: string }[] = [], sel = 0;
+    const load = () => data ? Promise.resolve(data) : fetch("/hladat/data.json").then((r) => r.json()).then((d) => (data = d));
+    const recent = () => { try { return JSON.parse(localStorage.getItem("fp-recent") ?? "[]") as string[]; } catch { return []; } };
+    const remember = (t: string) => { try { localStorage.setItem("fp-recent", JSON.stringify([t, ...recent().filter((x) => x !== t)].slice(0, 6))); } catch {} };
+    function draw() {
+      const t = norm(q.value.trim()); const parts = t.split(/\s+/).filter(Boolean); const out: { g: string; href: string; html: string }[] = [];
+      if (!t) {
+        for (const r of recent().slice(0, 4)) out.push({ g: "Naposledy hľadané", href: `/hladat/?q=${encodeURIComponent(r)}`, html: `<span class="k-ic">↺</span><span>${esc(r)}</span>` });
+        for (const [h, l] of SECTIONS.slice(0, 7)) out.push({ g: "Prejsť na", href: h, html: `<span class="k-ic">→</span><span>${l}</span>` });
+      } else if (data) {
+        for (const m of data.mps.filter((m) => { const w = norm(m.n).split(/\s+/); return parts.every((p) => w.some((x) => x.startsWith(p))); }).slice(0, 5))
+          out.push({ g: "Poslanci", href: `/poslanci/${m.id}/`, html: `<span class="ava${m.p ? " img" : ""}" style="--club:${m.col}" aria-hidden="true">${m.p ? `<img src="${m.p}" alt="" width="36" height="36">` : esc(m.i)}</span><span><b>${esc(m.n)}</b><small>${esc(m.c)}</small></span>` });
+        const num = t.match(/^(?:tl(?:ac)?\.?\s*)?(\d{1,4})$/);
+        const laws = num ? data.laws.filter((l) => l[0] === num[1]) : t.length >= 3 ? data.laws.filter((l) => { const w = " " + norm(l[1]).replace(/[^a-z0-9]+/g, " "); return parts.every((p) => w.includes(" " + (p.length >= 6 ? p.slice(0, -2) : p))); }).slice(0, 4) : [];
+        for (const l of laws) out.push({ g: "Zákony", href: `/zakony/${l[0]}/`, html: `<span class="k-tl">${l[0]}</span><span><b>${esc(l[1])}</b><small>${l[2]}</small></span>` });
+        for (const c of data.com.filter((c) => t.length >= 3 && norm(c[1]).includes(t)).slice(0, 2)) out.push({ g: "Výbory", href: `/vybory/${c[0]}/`, html: `<span class="k-ic">▦</span><span>${esc(c[1])}</span>` });
+        for (const [h, l, k] of SECTIONS.filter(([, l, k]) => parts.every((p) => k.includes(p) || norm(l).includes(p))).slice(0, 2)) out.push({ g: "Stránky", href: h, html: `<span class="k-ic">→</span><span>${l}</span>` });
+        out.push({ g: "Fulltext", href: `/hladat/?q=${encodeURIComponent(q.value.trim())}`, html: `<span class="k-ic">⌕</span><span><span class="k-line">Hľadať „<b>${esc(q.value.trim())}</b>“ v prepisoch, zákonoch a schôdzach</span></span>` });
+        out.push({ g: "Fulltext", href: `/hlasovania/?q=${encodeURIComponent(q.value.trim())}`, html: `<span class="k-ic">✓</span><span><span class="k-line">Hľadať „<b>${esc(q.value.trim())}</b>“ v hlasovaniach</span></span>` });
+      }
+      items = out; sel = 0; let g = "";
+      list.innerHTML = out.map((x, i) => `${x.g !== g ? `<li class="k-g" role="presentation">${(g = x.g)}</li>` : ""}<li role="option" id="k-o${i}" aria-selected="${i === 0}"><a href="${x.href}" tabindex="-1">${x.html}</a></li>`).join("") || `<li class="k-g">Načítavam…</li>`;
+      q.setAttribute("aria-activedescendant", out.length ? "k-o0" : "");
+    }
+    const move = (d: number) => {
+      if (!items.length) return; sel = (sel + d + items.length) % items.length;
+      for (const li of list.querySelectorAll('[role="option"]')) li.setAttribute("aria-selected", String(li.id === `k-o${sel}`));
+      document.getElementById(`k-o${sel}`)?.scrollIntoView({ block: "nearest" }); q.setAttribute("aria-activedescendant", `k-o${sel}`);
+    };
+    const go = (href: string) => { if (q.value.trim()) remember(q.value.trim()); location.href = href; };
+    function openPal() { if (dlg.open) return; q.value = ""; dlg.showModal(); draw(); load().then(draw); setTimeout(() => q.focus(), 10); }
+    document.getElementById("k-open")!.addEventListener("click", openPal);
+    document.getElementById("k-key")!.textContent = /Mac|iPhone|iPad/.test(navigator.platform) ? "⌘ K" : "Ctrl K";
+    document.addEventListener("keydown", (e) => {
+      if ((e.key === "k" || e.key === "K") && (e.metaKey || e.ctrlKey)) { e.preventDefault(); dlg.open ? dlg.close() : openPal(); }
+      else if (e.key === "/" && !dlg.open && !(e.target as HTMLElement).matches("input, textarea, select") && location.pathname !== "/hladat/") { e.preventDefault(); openPal(); }
+    });
+    q.addEventListener("input", draw);
+    q.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { e.preventDefault(); move(1); } else if (e.key === "ArrowUp") { e.preventDefault(); move(-1); }
+      else if (e.key === "Enter") { e.preventDefault(); const it = items[sel]; if (it) go(it.href); }
+    });
+    list.addEventListener("click", (e) => { const a = (e.target as HTMLElement).closest("a"); if (a) { e.preventDefault(); go(a.getAttribute("href")!); } });
+    list.addEventListener("mousemove", (e) => { const li = (e.target as HTMLElement).closest('[role="option"]'); if (li) { const i = Number(li.id.slice(3)); if (i !== sel) move(i - sel); } });
+    dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
   </script>
 </body>
 </html>
