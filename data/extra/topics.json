@@ -5,8 +5,8 @@
   "nastúpení",
   "mandáty",
   "neuplatňovaný",
-  "nastupuje",
   "zániku",
+  "nastupuje",
   "zápisnice",
   "poradia",
   "mandátu",
@@ -98,7 +98,7 @@
   "producentov",
   "uverejnený",
   "umenia",
-  "kreovanie",
+  "kreovaní",
   "profesné"
  ],
  "1054": [
@@ -139,9 +139,9 @@
   "pobytových",
   "poradní",
   "opatrovanie",
+  "záškoláctvo",
   "posudkovej",
-  "tripartite",
-  "pilieri"
+  "tripartite"
  ],
  "1042": [
   "dieťati",
@@ -246,10 +246,10 @@
   "hanebná",
   "jubilejné",
   "väzenstva",
-  "mediačných",
   "notárskej",
-  "kroviny",
-  "restoratívnej"
+  "mediačných",
+  "čakateľov",
+  "kroviny"
  ],
  "1166": [],
  "1046": [
@@ -283,8 +283,8 @@
  "905": [
   "arabských",
   "emirátov",
-  "prístav",
   "envirozáťaže",
+  "prístav",
   "prevode",
   "notárskej",
   "deradikalizácii",
@@ -416,8 +416,8 @@
   "sudcovskej",
   "kontumačný",
   "sudkyniam",
-  "čakateľov",
-  "sobášiaci"
+  "sobášiaci",
+  "čakateľov"
  ],
  "1135": [
   "trebárs",
@@ -445,7 +445,7 @@
   "konzulárnych",
   "prekrúcať",
   "veľvyslanec",
-  "izolované"
+  "izolovaný"
  ],
  "1158": [
   "kmeňové",
@@ -482,13 +482,13 @@
   "dohodárov",
   "priehrada",
   "okresov",
-  "prácach",
   "rómsky",
   "stromček",
+  "prácach",
   "strieborná",
   "stromy",
-  "okresy",
-  "reedukačných"
+  "reedukačných",
+  "okresy"
  ],
  "322": [
   "fakultnej",
@@ -521,9 +521,9 @@
   "ratingu",
   "drahota",
   "rating",
-  "protivietor",
   "makroekonomické",
   "protivetor",
+  "protivietor",
   "ratingové"
  ],
  "961": [
@@ -561,8 +561,8 @@
   "nálezu",
   "kategorizácie",
   "nadpisu",
-  "úhrady",
   "ambulancie",
+  "úhrady",
   "nápojov",
   "platnej",
   "nadobúda",
@@ -579,8 +579,8 @@
   "minima",
   "sobášiť",
   "ošetrovateľskej",
-  "výživné",
   "posudkovej",
+  "výživné",
   "manžela",
   "ťažkým",
   "násilia"
@@ -629,6 +629,8 @@
  ],
  "1130": [
   "občaniek",
+  "sudkyne",
+  "čakateľov",
   "občianky",
   "zverili",
   "besedu",
@@ -637,9 +639,7 @@
   "doručuje",
   "neplatný",
   "skutky",
-  "kódexov",
-  "zvedavá",
-  "konáte"
+  "justičnej"
  ],
  "929": [
   "prihlášku",
@@ -665,8 +665,8 @@
   "zásade",
   "jadrovú",
   "trošičku",
-  "jadrová",
   "nazvime",
+  "jadrová",
   "ľavičiari",
   "zatepľovanie"
  ],
@@ -727,8 +727,8 @@
   "pitnej",
   "kanalizácie",
   "okresov",
-  "dobudovať",
   "osvetlenie",
+  "dobudovať",
   "pripojenie",
   "okresy"
  ],
@@ -759,8 +759,8 @@
   "harcovníci",
   "podlimitných",
   "výpisy",
-  "protivietor",
   "zimplementovať",
+  "protivietor",
   "ješitnosť",
   "péeskári",
   "ženiete"
@@ -771,7 +771,6 @@
   "hazard",
   "cirkevné",
   "hazardu",
-  "hnutie",
   "regióny"
  ],
  "1184": [
@@ -780,9 +779,9 @@
   "tender",
   "sestry",
   "sestra",
-  "vraveli",
   "operačné",
   "vravel",
+  "vraveli",
   "onkologických",
   "vystihol",
   "zdržalo",
@@ -817,14 +816,14 @@
   "sterilizácie",
   "moslimov",
   "rómske",
+  "rasistické",
   "bonusy",
   "boliestky",
-  "rasistické",
   "rómskej",
+  "zaraďovania",
   "segregácie",
   "smeráci",
   "ublížili",
-  "prídavky",
   "guvernéra"
  ],
  "1203": [
@@ -900,7 +899,7 @@
   "preživšie",
   "menštruačné",
   "interrupcie",
-  "stážisti",
+  "stážista",
   "sterilizácie",
   "želala",
   "neplatené",
@@ -963,9 +962,9 @@
   "zrovna",
   "určenia",
   "určila",
-  "nebodaj",
   "neoznámili",
   "nezrovnalosti",
+  "nebodaj",
   "určená",
   "zvolávali",
   "auditu"
@@ -1078,7 +1077,7 @@
  "1124": [
   "segregácie",
   "desegregácie",
-  "protirómsky",
+  "protirómskeho",
   "segregovaných",
   "logopédov",
   "sterilizácie",
@@ -1140,7 +1139,7 @@
  ],
  "1143": [
   "jednorodičovských",
-  "samoživiteľka",
+  "samoživiteľky",
   "výživné",
   "fundovaný",
   "najchudobnejších",
@@ -1202,23 +1201,24 @@
   "žiakov",
   "subvenčný",
   "respondentov",
-  "školskej",
   "vyučovania",
+  "školskej",
   "noviel",
   "výchova"
  ],
  "1146": [
   "sterilizácie",
+  "záškoláctvo",
   "rómskych",
   "ombudsman",
+  "prídavky",
   "rómske",
+  "odoberať",
+  "odobratie",
   "ožobračovanie",
   "opatrovanie",
   "tlačou",
-  "znásilnenia",
-  "odškodnenie",
-  "určená",
-  "zločincov"
+  "odškodnenie"
  ],
  "1071": [
   "množiarní",
@@ -1229,8 +1229,8 @@
   "platobnej",
   "vidieka",
   "platby",
-  "pozemky",
   "zvierat",
+  "pozemky",
   "zásade",
   "vyplatiť"
  ],
@@ -1407,6 +1407,7 @@
  "877": [
   "sudcovskej",
   "senátov",
+  "čakateľov",
   "notárskej",
   "resocializácie",
   "mediácie",
@@ -1414,9 +1415,8 @@
   "poručiteľ",
   "notárov",
   "dedičskej",
-  "upustenie",
-  "mediačných",
-  "čakateľov"
+  "čakatelia",
+  "upustenie"
  ],
  "1145": [],
  "1217": [
@@ -1449,8 +1449,8 @@
   "pedagogických",
   "predprimárne",
   "školami",
-  "školskej",
   "podporné",
+  "školskej",
   "normatív",
   "platových",
   "vyučovania"
@@ -1511,17 +1511,17 @@
  "1220": [],
  "1221": [
   "skrátka",
-  "kontumačný",
   "čakateľov",
+  "kontumačný",
+  "čakatelia",
   "anulované",
   "sudcovskej",
   "resocializácie",
+  "notárskej",
   "zmeškanie",
-  "výživné",
+  "justičnej",
   "dedičskej",
-  "prenosnej",
-  "väzenstva",
-  "nesprístupnenie"
+  "výživné"
  ],
  "1222": [
   "menštruačné",
