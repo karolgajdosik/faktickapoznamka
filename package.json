@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist && node scripts/count-files.mjs",
+    "build": "astro build && pagefind --site dist && node scripts/csp.mjs && node scripts/count-files.mjs",
     "preview": "wrangler dev",
     "deploy": "astro build && wrangler deploy",
     "demo-data": "node scripts/demo-data.mjs"

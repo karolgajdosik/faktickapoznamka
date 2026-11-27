@@ -116,6 +116,8 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     </div>
   </footer>
   <script>
+    // Filter forms are live; Enter must not reload the page.
+    document.addEventListener("submit", (e) => { if ((e.target as Element).matches("form.fx")) e.preventDefault(); });
     // Agenda strip only on session days: weekday, 8–20 h, item seen in the last 12 hours.
     const box = document.getElementById("live")!;
     const since = box.dataset.since;

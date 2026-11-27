@@ -10,7 +10,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
   <h1>Hlasovania</h1>
   <p class="meta-line">Všetkých {votes.length.toLocaleString("sk-SK")} hlasovaní IX. volebného obdobia. Filtrujte podľa typu, výsledku, obdobia alebo toho, ako hlasoval klub.</p>
 
-  <form class="fx" id="fx" role="search" onsubmit="return false">
+  <form class="fx" id="fx" role="search">
     <label class="fx-search">
       <span class="sr-only">Hľadať v hlasovaniach</span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
