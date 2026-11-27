@@ -15,13 +15,53 @@ PROMPT = ("Si nestranný redaktor. Zhrň vystúpenie poslanca v Národnej rade S
           "Nehodnoť, nepridávaj fakty ani kontext, ktoré v texte nie sú, nepoužívaj citácie dlhšie ako päť slov. "
           "Ak je text procedurálny alebo príliš krátky na zhrnutie, odpovedz iba slovom PROCEDURÁLNE.")
 
-def call(text: str) -> str | None:
-    body = json.dumps({"model": MODEL, "temperature": 0.2, "max_tokens": 220, "messages": [
-        {"role": "system", "content": PROMPT}, {"role": "user", "content": text[:12000]}]}).encode()
+LAW_PROMPT = ("Si nestranný redaktor. Z dôvodovej správy k návrhu zákona v Národnej rade SR napíš po slovensky 3 až 4 krátke vety "
+              "jednoduchou rečou pre bežného čitateľa: čo návrh mení, koho sa týka a od kedy má platiť, ak je to v texte uvedené. "
+              "Nehodnoť, nepreberaj argumenty navrhovateľa ako fakty (píš „návrh má…“, „podľa navrhovateľa…“), nepridávaj nič, čo v texte nie je, "
+              "a nepoužívaj citácie dlhšie ako päť slov. Ak text nestačí na zhrnutie, odpovedz iba slovom NEDOSTATOČNÉ.")
+
+class Stop(Exception):
+    pass
+
+def call(text: str, prompt: str = PROMPT, max_tokens: int = 220) -> str | None:
+    body = json.dumps({"model": MODEL, "temperature": 0.2, "max_tokens": max_tokens, "messages": [
+        {"role": "system", "content": prompt}, {"role": "user", "content": text[:12000]}]}).encode()
     req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body, headers={
-        "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json", "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)["choices"][0]["message"]["content"].strip()
+        "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
+        "Accept": "application/json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "faktickapoznamka-summaries"})
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            raw = r.read(); status = r.status; ctype = r.headers.get("content-type", "")
+    except urllib.error.HTTPError as e:
+        raise Stop(f"HTTP {e.code} from GitHub Models: {e.read()[:300]!r}")
+    try:
+        d = json.loads(raw)
+    except ValueError:
+        raise Stop(f"non-JSON answer (HTTP {status}, {ctype}, {len(raw)} bytes): {raw[:300]!r}")
+    if "choices" not in d:
+        raise Stop(f"unexpected answer: {str(d)[:300]}")
+    return (d["choices"][0]["message"].get("content") or "").strip()
+
+def laws(meta, today, budget):
+    """Plain-language summaries of bills from their explanatory memorandum (data/extra/lawtext)."""
+    out_f = DATA / "lawsummaries.json"
+    out = json.loads(out_f.read_text()) if out_f.exists() else {}
+    done = 0
+    files = sorted((DATA / "extra" / "lawtext").glob("*.txt"), key=lambda f: int(f.stem), reverse=True)
+    for f in files:
+        if done >= budget or meta["daily"][today] >= PER_DAY: break
+        t = f.stem; txt = f.read_text(encoding="utf-8")
+        if t in out or len(txt) < 400: continue
+        try:
+            s = call(txt, LAW_PROMPT, 260)
+        except Stop as e:
+            print(e); break
+        meta["daily"][today] += 1; done += 1
+        out[t] = {"s": None if not s or s.upper().startswith("NEDOSTAT") else s, "src": txt.split("\n", 1)[0].lstrip("# ").strip(), "at": today}
+        time.sleep(4)
+    out_f.write_text(json.dumps(out, ensure_ascii=False, indent=0))
+    print(f"law summaries: {done} new, {sum(1 for v in out.values() if v.get('s'))} total")
+    return done
 
 def main():
     if not os.environ.get("GITHUB_TOKEN"): print("no GITHUB_TOKEN, skipping"); return
@@ -29,6 +69,7 @@ def main():
     meta = out.setdefault("_meta", {"model": MODEL, "daily": {}})
     today = datetime.date.today().isoformat()
     meta["daily"] = {today: meta.get("daily", {}).get(today, 0)}
+    laws(meta, today, max(PER_RUN // 2, 10))
     todo = []
     for f in DATA.glob("speeches/*.json"):
         for x in json.loads(f.read_text()):
@@ -40,8 +81,8 @@ def main():
         if done >= PER_RUN or meta["daily"][today] >= PER_DAY: break
         try:
             s = call(f"Rečník: {x['speaker']} ({x.get('role','')})\nTyp: {x.get('kind') or 'vystúpenie'}\n\n{x['text']}")
-        except urllib.error.HTTPError as e:
-            print(f"HTTP {e.code} from GitHub Models, stopping ({e.read()[:200]!r})"); break
+        except Stop as e:
+            print(e); break
         except Exception as e:
             print(f"error {e!r}, stopping"); break
         meta["daily"][today] += 1; done += 1

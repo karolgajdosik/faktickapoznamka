@@ -71,6 +71,18 @@ def get(params: dict | None = None, url: str = BASE, tries: int = 3) -> Resp:
         time.sleep(5 * (attempt + 1))
     return r
 
+def get_bytes(url: str) -> bytes | None:
+    """Binary download (documents) through the same browser context; None when blocked or missing."""
+    _start(); _wait()
+    try:
+        res = _ctx.request.get(url, timeout=90_000)
+        body = res.body()
+        if res.status != 200 or body[:15].lower().startswith((b"<!doctype", b"<html")):
+            return None
+        return body
+    except Exception:
+        return None
+
 def close():
     global _pw, _browser, _ctx
     try:

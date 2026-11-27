@@ -59,6 +59,9 @@ jobs:
           [[ "$IN_EXTRA" =~ ^[0-9]+$ ]] || { echo "invalid numeric input"; exit 1; }
           python scraper/test_parse_extra.py > /dev/null
           timeout 300m python scraper/extra.py --minutes "$IN_EXTRA" || echo "extra scraper stopped early, committing progress"
+      - name: Explanatory memoranda of bills (text for law summaries)
+        continue-on-error: true
+        run: timeout 15m python scraper/lawdocs.py --minutes 10 --max 60
       - name: AI summaries (GitHub Models)
         continue-on-error: true
         env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
