@@ -1,0 +1,285 @@
+---
+// Two MPs side by side: how often they vote alike, and every comparable figure as a butterfly bar.
+// Everything runs in the browser from /porovnanie/data.json; the pair lives in the URL (?a=&b=) so it can be shared.
+import Base from "../../layouts/Base.astro";
+---
+<Base title="Porovnanie poslancov" description="Porovnajte dvoch poslancov NR SR: ako často hlasujú rovnako, účasť, rozprava, návrhy zákonov a majetkové priznania.">
+  <header class="cp-head">
+    <h1>Porovnanie poslancov</h1>
+    <p class="meta-line">Vyberte dvoch poslancov. Odkaz na porovnanie môžete poslať ďalej.</p>
+  </header>
+
+  <div class="cp-pick" id="cp-pick">
+    {["a", "b"].map((k) => (
+      <div class="cp-side" data-side={k}>
+        <div class="cp-card" data-card={k}>
+          <span class="cp-ava" aria-hidden="true"></span>
+          <div class="cp-who"><strong class="cp-name">Vyberte poslanca</strong><span class="cp-club"></span></div>
+        </div>
+        <div class="cp-combo">
+          <label class="sr-only" for={`cp-q-${k}`}>{k === "a" ? "Prvý poslanec" : "Druhý poslanec"}</label>
+          <input id={`cp-q-${k}`} class="cp-q" type="search" autocomplete="off" placeholder="Meno alebo klub…" role="combobox" aria-expanded="false" aria-controls={`cp-list-${k}`} data-q={k} />
+          <ul class="cp-list" id={`cp-list-${k}`} role="listbox" hidden></ul>
+        </div>
+      </div>
+    ))}
+    <button type="button" class="cp-swap" id="cp-swap" aria-label="Vymeniť poradie" title="Vymeniť poradie">⇄</button>
+  </div>
+
+  <section class="cp-agree" id="cp-agree" hidden aria-live="polite">
+    <div class="cp-ring" id="cp-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" class="cp-ring-bg"/><circle cx="60" cy="60" r="52" class="cp-ring-fg" id="cp-ring-fg"/></svg><b id="cp-pct"></b></div>
+    <div>
+      <h2 id="cp-agree-h"></h2>
+      <p id="cp-agree-p" class="muted"></p>
+      <p class="note">Ide o štatistický výpočet, nie o hodnotenie politických postojov.</p>
+      <div class="cp-actions">
+        <button type="button" class="cp-btn" id="cp-share">Zdieľať porovnanie</button>
+        <a class="cp-btn ghost" id="cp-prof-a" href="#">Profil A</a>
+        <a class="cp-btn ghost" id="cp-prof-b" href="#">Profil B</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="cp-rows"></div>
+
+  <section class="cp-ideas" id="cp-ideas">
+    <h2>Zaujímavé dvojice</h2>
+    <div class="cp-chips" id="cp-chips"></div>
+  </section>
+</Base>
+
+<script>
+  type P = { id: string; n: string; s: string; c: string; col: string; p: string | null; i: string; r: string | null; att: number | null; loy: number | null; reb: number; unex: number | null;
+    talk: number; spk: number; fact: number; words: number; bills: number | null; billsOk: number | null; amend: number | null; interp: number | null; trips: number | null;
+    incP: number | null; incO: number | null; re: number | null; mov: number | null; obl: number | null; com: [number, string, string][] };
+  const $ = (id: string) => document.getElementById(id)!;
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  const nf = (n: number) => n.toLocaleString("sk-SK");
+  const pc = (v: number) => `${(v * 100).toLocaleString("sk-SK", { maximumFractionDigits: 1 })} %`;
+  const dur = (s: number) => { const h = Math.floor(s / 3600), m = Math.round((s % 3600) / 60); return h ? `${h} h ${String(m).padStart(2, "0")} min` : `${m} min`; };
+  const eur = (n: number) => `${nf(n)} €`;
+  const fold = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+  const res = await fetch("/porovnanie/data.json").then((r) => r.json()) as { people: P[]; tri: number[] };
+  const people = res.people, N = people.length, idx = new Map(people.map((p, i) => [p.id, i]));
+  const agree = (a: string, b: string) => {
+    let i = idx.get(a)!, j = idx.get(b)!; if (i === j) return 1; if (i > j) [i, j] = [j, i];
+    const v = res.tri[i * N - (i * (i + 1)) / 2 + (j - i - 1)]; return v < 0 ? null : v / 1000;
+  };
+  const sorted = people.slice().sort((x, y) => x.s.localeCompare(y.s, "sk"));
+  const url = new URL(location.href);
+  const sel: Record<"a" | "b", P | null> = { a: people.find((p) => p.id === url.searchParams.get("a")) ?? null, b: people.find((p) => p.id === url.searchParams.get("b")) ?? null };
+
+  type Row = { l: string; d?: string; get: (p: P) => number | null; f: (v: number, p: P) => string; better?: "hi" | "lo" };
+  const groups: [string, Row[]][] = [
+    ["Hlasovanie", [
+      { l: "Účasť na hlasovaniach", get: (p) => p.att, f: pc, better: "hi" },
+      { l: "Súlad s klubom", d: "Ako často hlasoval rovnako ako väčšina jeho klubu.", get: (p) => p.loy, f: pc },
+      { l: "Hlasovaní proti klubu", get: (p) => p.reb, f: nf },
+      { l: "Neospravedlnené neúčasti", d: "Dni hlasovania bez účasti a bez ospravedlnenia.", get: (p) => p.unex, f: nf, better: "lo" },
+    ]],
+    ["Rozprava", [
+      { l: "Čas pri rečníckom pulte", get: (p) => p.talk, f: dur },
+      { l: "Vystúpenia", get: (p) => p.spk, f: (v, p) => `${nf(v)} (${nf(p.fact)} faktických)` },
+      { l: "Slov v prepisoch", get: (p) => p.words, f: nf },
+    ]],
+    ["Legislatíva", [
+      { l: "Návrhy zákonov", get: (p) => p.bills, f: (v, p) => `${nf(v)} (${nf(p.billsOk ?? 0)} schválených)` },
+      { l: "Pozmeňujúce návrhy", get: (p) => p.amend, f: nf },
+      { l: "Interpelácie", get: (p) => p.interp, f: nf },
+      { l: "Zahraničné pracovné cesty", get: (p) => p.trips, f: nf },
+    ]],
+    ["Majetkové priznanie", [
+      { l: "Príjem z funkcie", d: "Za posledný rok podľa oznámenia funkcionára.", get: (p) => p.incP, f: eur },
+      { l: "Iné príjmy", get: (p) => p.incO, f: eur },
+      { l: "Nehnuteľnosti", get: (p) => p.re, f: nf },
+      { l: "Hnuteľné veci", get: (p) => p.mov, f: nf },
+      { l: "Záväzky", get: (p) => p.obl, f: nf },
+    ]],
+  ];
+
+  function ava(p: P | null) { return !p ? "?" : p.p ? `<img src="${p.p}" alt="" width="64" height="64">` : esc(p.i); }
+  function card(k: "a" | "b") {
+    const p = sel[k], el = document.querySelector<HTMLElement>(`[data-card=${k}]`)!;
+    el.style.setProperty("--club", p?.col ?? "var(--line-2)");
+    el.querySelector(".cp-ava")!.innerHTML = ava(p);
+    el.querySelector(".cp-name")!.textContent = p ? p.n : "Vyberte poslanca";
+    el.querySelector(".cp-club")!.textContent = p ? p.c + (p.r ? ` · ${p.r} kraj` : "") : "";
+    (document.querySelector(`[data-q=${k}]`) as HTMLInputElement).placeholder = p ? "Zmeniť poslanca…" : "Meno alebo klub…";
+  }
+
+  function render() {
+    card("a"); card("b");
+    const { a, b } = sel;
+    const u = new URL(location.href); u.searchParams.delete("a"); u.searchParams.delete("b");
+    if (a) u.searchParams.set("a", a.id); if (b) u.searchParams.set("b", b.id);
+    history.replaceState(null, "", u);
+    document.title = a && b ? `${a.n} a ${b.n} – porovnanie – faktická poznámka` : "Porovnanie poslancov – faktická poznámka";
+    $("cp-ideas").hidden = !!(a && b);
+    if (!a || !b) { $("cp-agree").hidden = true; $("cp-rows").innerHTML = ""; return; }
+    const g = agree(a.id, b.id);
+    $("cp-agree").hidden = false;
+    $("cp-agree").style.setProperty("--a", a.col); $("cp-agree").style.setProperty("--b", b.col);
+    $("cp-pct").textContent = g == null ? "–" : pc(g);
+    ($("cp-ring-fg") as unknown as SVGCircleElement).style.strokeDashoffset = String(326.7 * (1 - (g ?? 0)));
+    const avg = (() => { const xs = people.filter((p) => p.id !== a.id).map((p) => agree(a.id, p.id)).filter((x): x is number => x != null); return xs.reduce((s, x) => s + x, 0) / xs.length; })();
+    $("cp-agree-h").textContent = g == null ? "Spoločných hlasovaní je príliš málo" : a.id === b.id ? "To je ten istý poslanec" : `Hlasujú rovnako v ${pc(g)} hlasovaní`;
+    $("cp-agree-p").textContent = g == null ? "Na porovnanie potrebujeme aspoň 50 hlasovaní, na ktorých boli obaja." :
+      `Počítajú sa hlasovania, na ktorých obaja hlasovali za, proti alebo sa zdržali. ${a.n} sa s ostatnými poslancami zhoduje priemerne v ${pc(avg)} hlasovaní${a.c === b.c ? "; obaja sú v rovnakom klube." : "."}`;
+    ($("cp-prof-a") as HTMLAnchorElement).href = `/poslanci/${a.id}/`; $("cp-prof-a").textContent = `Profil: ${a.n}`;
+    ($("cp-prof-b") as HTMLAnchorElement).href = `/poslanci/${b.id}/`; $("cp-prof-b").textContent = `Profil: ${b.n}`;
+
+    let html = "";
+    for (const [h, rows] of groups) {
+      const body = rows.map((r) => {
+        const va = r.get(a), vb = r.get(b);
+        if (va == null && vb == null) return "";
+        const max = Math.max(va ?? 0, vb ?? 0) || 1;
+        const win = r.better && va != null && vb != null && va !== vb ? ((r.better === "hi") === (va > vb) ? "a" : "b") : "";
+        const cell = (v: number | null, p: P, side: string) => `<div class="cp-v ${side}${win === side ? " win" : ""}"><span class="cp-num">${v == null ? "–" : esc(r.f(v, p))}</span><span class="cp-bar"><i style="width:${!v ? 0 : Math.max(2, (100 * v) / max)}%;background:${p.col}"></i></span></div>`;
+        return `<div class="cp-row">${cell(va, a, "a")}<div class="cp-l"><span>${esc(r.l)}</span>${r.d ? `<small>${esc(r.d)}</small>` : ""}</div>${cell(vb, b, "b")}</div>`;
+      }).join("");
+      if (body) html += `<section class="cp-grp"><h2>${esc(h)}</h2>${body}</section>`;
+    }
+    const ca = new Map(a.com.map((c) => [c[0], c])), cb = new Map(b.com.map((c) => [c[0], c]));
+    const shared = a.com.filter((c) => cb.has(c[0]));
+    const only = (xs: [number, string, string][], other: Map<number, unknown>) => xs.filter((c) => !other.has(c[0])).map((c) => `<a href="/vybory/${c[0]}/">${esc(c[1])}</a>`).join("") || `<span class="muted">žiadny ďalší</span>`;
+    html += `<section class="cp-grp"><h2>Výbory</h2>
+      ${shared.length ? `<p class="cp-shared">Spolu sedia ${shared.length === 1 ? "v 1 výbore" : `v ${shared.length} výboroch`}: ${shared.map((c) => `<a href="/vybory/${c[0]}/">${esc(c[1])}</a>`).join(", ")}</p>` : `<p class="muted">Nesedia spolu v žiadnom výbore.</p>`}
+      <div class="cp-coms"><div><small class="cp-only">Iba ${esc(a.n)}</small>${only(a.com, cb)}</div><div><small class="cp-only">Iba ${esc(b.n)}</small>${only(b.com, ca)}</div></div></section>`;
+    $("cp-rows").innerHTML = html;
+  }
+
+  // combobox
+  document.querySelectorAll<HTMLInputElement>(".cp-q").forEach((q) => {
+    const k = q.dataset.q as "a" | "b", list = $(`cp-list-${k}`);
+    let hits: P[] = [], act = 0;
+    const draw = () => {
+      const t = fold(q.value.trim());
+      hits = (t ? sorted.filter((p) => fold(p.n + " " + p.c).split(/\s+/).some((w) => w.startsWith(t)) || fold(p.n).includes(t)) : sorted).slice(0, 40);
+      act = 0;
+      list.innerHTML = hits.map((p, i) => `<li role="option" id="cp-o-${k}-${i}" data-id="${p.id}" aria-selected="${i === act}" style="--club:${p.col}"><span class="cp-mini">${p.p ? `<img src="${p.p}" alt="" width="28" height="28" loading="lazy">` : esc(p.i)}</span><span>${esc(p.n)}<small>${esc(p.c)}</small></span></li>`).join("") || `<li class="muted">Nikto nezodpovedá</li>`;
+      list.hidden = false; q.setAttribute("aria-expanded", "true");
+    };
+    const mark = () => list.querySelectorAll("li[data-id]").forEach((li, i) => { li.setAttribute("aria-selected", String(i === act)); if (i === act) { li.scrollIntoView({ block: "nearest" }); q.setAttribute("aria-activedescendant", li.id); } });
+    const pick = (id: string) => { sel[k] = people.find((p) => p.id === id) ?? null; q.value = ""; close(); render(); if (k === "a" && !sel.b) (document.querySelector("[data-q=b]") as HTMLInputElement).focus(); };
+    const close = () => { list.hidden = true; q.setAttribute("aria-expanded", "false"); };
+    q.addEventListener("focus", draw); q.addEventListener("input", draw);
+    q.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown") { act = Math.min(act + 1, hits.length - 1); mark(); e.preventDefault(); }
+      else if (e.key === "ArrowUp") { act = Math.max(act - 1, 0); mark(); e.preventDefault(); }
+      else if (e.key === "Enter" && hits[act]) { pick(hits[act].id); e.preventDefault(); }
+      else if (e.key === "Escape") close();
+    });
+    list.addEventListener("mousedown", (e) => { const li = (e.target as Element).closest<HTMLElement>("li[data-id]"); if (li) { e.preventDefault(); pick(li.dataset.id!); } });
+    q.addEventListener("blur", () => setTimeout(close, 120));
+  });
+  $("cp-swap").addEventListener("click", () => { [sel.a, sel.b] = [sel.b, sel.a]; render(); });
+  $("cp-share").addEventListener("click", async () => {
+    const data = { title: document.title, url: location.href };
+    try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(location.href); $("cp-share").textContent = "Odkaz skopírovaný"; setTimeout(() => ($("cp-share").textContent = "Zdieľať porovnanie"), 1800); } } catch {}
+  });
+
+  // suggested pairs: most alike across clubs, most different, two club leaders by speaking time
+  (() => {
+    let bestX: [number, P, P] = [-1, people[0], people[0]], worst: [number, P, P] = [2, people[0], people[0]];
+    for (let i = 0; i < N; i++) for (let j = i + 1; j < N; j++) {
+      const v = res.tri[i * N - (i * (i + 1)) / 2 + (j - i - 1)]; if (v < 0) continue;
+      const p = people[i], q = people[j];
+      if (p.c !== q.c && v > bestX[0]) bestX = [v, p, q];
+      if (v < worst[0]) worst = [v, p, q];
+    }
+    const talkers = people.slice().sort((x, y) => y.talk - x.talk);
+    const t2 = talkers.find((p) => p.c !== talkers[0].c)!;
+    const att = people.filter((p) => p.att != null).sort((x, y) => y.att! - x.att!);
+    const ideas: [string, P, P][] = [
+      ["Najviac zhodní z rôznych klubov", bestX[1], bestX[2]],
+      ["Najväčší protipól", worst[1], worst[2]],
+      ["Najdlhšie rečniaci z dvoch klubov", talkers[0], t2],
+      ["Najvyššia a najnižšia účasť", att[0], att[att.length - 1]],
+    ];
+    $("cp-chips").innerHTML = ideas.map(([l, p, q]) => `<a class="cp-chip" href="?a=${p.id}&b=${q.id}" data-a="${p.id}" data-b="${q.id}"><small>${esc(l)}</small><span>${esc(p.n)} a ${esc(q.n)}</span></a>`).join("");
+    $("cp-chips").addEventListener("click", (e) => { const a = (e.target as Element).closest<HTMLAnchorElement>("[data-a]"); if (!a) return; e.preventDefault(); sel.a = people.find((p) => p.id === a.dataset.a)!; sel.b = people.find((p) => p.id === a.dataset.b)!; render(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+  })();
+  render();
+</script>
+
+<style is:global>
+  .cp-head { margin-bottom: 1.25rem; }
+  .cp-pick { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .cp-side { display: grid; gap: .6rem; min-width: 0; }
+  .cp-card { display: flex; align-items: center; gap: .9rem; padding: 1rem; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); border-top: 4px solid var(--club); min-height: 6rem; }
+  .cp-ava { flex: none; width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; overflow: hidden; background: var(--panel-2); color: var(--muted); font-weight: 800; box-shadow: 0 0 0 3px var(--club); }
+  .cp-ava img { width: 100%; height: 100%; object-fit: cover; }
+  .cp-who { display: grid; min-width: 0; }
+  .cp-name { font-size: var(--step-1); line-height: 1.2; }
+  .cp-club { color: var(--muted); font-size: var(--step--1); }
+  .cp-combo { position: relative; }
+  .cp-q { width: 100%; font: inherit; padding: .6rem .9rem; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); }
+  .cp-q:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .cp-list { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + .3rem); max-height: 20rem; overflow: auto; margin: 0; padding: .3rem; list-style: none; background: var(--panel); border: 1px solid var(--line-2); border-radius: var(--r); box-shadow: 0 12px 32px rgba(0,0,0,.25); }
+  .cp-list li { display: flex; align-items: center; gap: .6rem; padding: .4rem .5rem; border-radius: var(--r-sm); cursor: pointer; }
+  .cp-list li[aria-selected="true"], .cp-list li[data-id]:hover { background: var(--panel-2); }
+  .cp-list small { display: block; color: var(--muted); font-size: var(--step--2); }
+  .cp-list .cp-mini { flex: none; width: 28px; height: 28px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; font-size: .7rem; font-weight: 800; background: var(--panel-2); box-shadow: 0 0 0 2px var(--club); }
+  .cp-list .cp-mini img { width: 100%; height: 100%; object-fit: cover; }
+  .cp-swap { position: absolute; left: 50%; top: 3rem; transform: translate(-50%, -50%); width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); font-size: 1.1rem; cursor: pointer; z-index: 2; }
+  .cp-swap:hover { border-color: var(--accent); color: var(--accent); }
+
+  .cp-agree { display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; align-items: center; margin: 1.5rem 0; padding: 1.25rem 1.5rem; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); }
+  .cp-ring { position: relative; width: 8.5rem; height: 8.5rem; }
+  .cp-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .cp-ring-bg { fill: none; stroke: var(--line); stroke-width: 12; }
+  .cp-ring-fg { fill: none; stroke: var(--accent); stroke-width: 12; stroke-linecap: round; stroke-dasharray: 326.7; stroke-dashoffset: 326.7; transition: stroke-dashoffset .7s cubic-bezier(.2,.8,.2,1); }
+  .cp-ring b { position: absolute; inset: 0; display: grid; place-items: center; font-size: var(--step-1); font-weight: 800; }
+  .cp-agree h2 { margin: 0 0 .3rem; font-size: var(--step-1); }
+  .cp-agree p { margin: 0 0 .4rem; }
+  .cp-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+  .cp-btn { font: inherit; font-size: var(--step--1); font-weight: 700; padding: .45rem 1rem; border-radius: 999px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); cursor: pointer; text-decoration: none; }
+  .cp-btn.ghost { background: transparent; color: var(--accent); }
+
+  .cp-grp { margin: 1.75rem 0; }
+  .cp-grp h2 { font-size: var(--step-0); margin: 0 0 .5rem; color: var(--muted); }
+  .cp-row { display: grid; grid-template-columns: 1fr minmax(8rem, 13rem) 1fr; gap: .75rem; align-items: center; padding: .55rem 0; border-top: 1px solid var(--line); }
+  .cp-l { text-align: center; font-weight: 650; font-size: var(--step--1); }
+  .cp-l small { display: block; font-weight: 400; color: var(--muted); font-size: var(--step--2); }
+  .cp-v { display: grid; gap: .25rem; }
+  .cp-v.a { text-align: right; justify-items: end; }
+  .cp-num { font-weight: 750; font-variant-numeric: tabular-nums; }
+  .cp-v.win .cp-num::after { content: " ●"; color: var(--za); font-size: .7em; }
+  .cp-v.a.win .cp-num::after { content: ""; }
+  .cp-v.a.win .cp-num::before { content: "● "; color: var(--za); font-size: .7em; }
+  .cp-bar { width: 100%; height: .5rem; border-radius: 999px; background: var(--panel-2); display: flex; overflow: hidden; }
+  .cp-v.a .cp-bar { justify-content: flex-end; }
+  .cp-bar i { display: block; height: 100%; border-radius: 999px; transition: width .5s ease; }
+  .cp-shared a, .cp-coms a { color: var(--accent); }
+  .cp-coms { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: var(--step--1); }
+  .cp-coms > div { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .cp-coms > div:first-child { justify-content: flex-end; }
+  .cp-only { flex-basis: 100%; color: var(--muted); font-size: var(--step--2); }
+  .cp-coms > div:first-child .cp-only { text-align: right; }
+  .cp-coms a { padding: .2rem .6rem; border: 1px solid var(--line-2); border-radius: 999px; text-decoration: none; }
+
+  .cp-ideas { margin-top: 2rem; }
+  .cp-ideas h2 { font-size: var(--step-0); color: var(--muted); }
+  .cp-chips { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: .75rem; }
+  .cp-chip { display: grid; gap: .2rem; padding: .9rem 1rem; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); text-decoration: none; color: var(--text); }
+  .cp-chip:hover { border-color: var(--accent); }
+  .cp-chip small { color: var(--muted); }
+  .cp-chip span { font-weight: 700; }
+
+  @media (max-width: 640px) {
+    .cp-pick { gap: .6rem; }
+    .cp-card { flex-direction: column; text-align: center; padding: .8rem .5rem; gap: .5rem; }
+    .cp-name { font-size: var(--step-0); }
+    .cp-swap { top: 3.6rem; width: 2rem; height: 2rem; }
+    .cp-agree { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 1rem; }
+    .cp-actions { justify-content: center; }
+    .cp-row { grid-template-columns: 1fr 1fr; grid-template-areas: "l l" "a b"; gap: .3rem .75rem; }
+    .cp-l { grid-area: l; }
+    .cp-v.a { grid-area: a; } .cp-v.b { grid-area: b; }
+    .cp-coms { grid-template-columns: 1fr; }
+    .cp-coms > div:first-child { justify-content: flex-start; }
+  }
+  @media (prefers-reduced-motion: reduce) { .cp-ring-fg, .cp-bar i { transition: none; } }
+</style>

@@ -15,9 +15,9 @@
   color-scheme: light;
   --bg: #f6f7fb; --bg-2: #eef1f7; --panel: #ffffff; --panel-2: #f3f5fa;
   --line: #dfe4ee; --line-2: #cbd3e1;
-  --text: #121a2b; --muted: #55627a; --faint: #8a95a9;
+  --text: #121a2b; --muted: #55627a; --faint: #667186;
   --accent: #2456d6; --accent-ink: #fff;
-  --za: #17975f; --proti: #d23a48; --zdrzal: #c88a0e; --nehlasoval: #7b879b; --nepritomny: #c9d0dc;
+  --za: #17975f; --proti: #d23a48; --za-ink: #117d4f; --proti-ink: #b8283a; --zdrzal: #c88a0e; --nehlasoval: #7b879b; --nepritomny: #c9d0dc;
   --glow: 0 0 0 1px var(--line), 0 8px 24px -14px rgba(20,30,60,.25);
 }
 @media (prefers-color-scheme: light) {
@@ -25,9 +25,9 @@
     color-scheme: light;
     --bg: #f6f7fb; --bg-2: #eef1f7; --panel: #ffffff; --panel-2: #f3f5fa;
     --line: #dfe4ee; --line-2: #cbd3e1;
-    --text: #121a2b; --muted: #55627a; --faint: #8a95a9;
+    --text: #121a2b; --muted: #55627a; --faint: #667186;
     --accent: #2456d6; --accent-ink: #fff;
-    --za: #17975f; --proti: #d23a48; --zdrzal: #c88a0e; --nehlasoval: #7b879b; --nepritomny: #c9d0dc;
+    --za: #17975f; --proti: #d23a48; --za-ink: #117d4f; --proti-ink: #b8283a; --zdrzal: #c88a0e; --nehlasoval: #7b879b; --nepritomny: #c9d0dc;
     --glow: 0 0 0 1px var(--line), 0 8px 24px -14px rgba(20,30,60,.25);
   }
 }
@@ -108,8 +108,8 @@ footer.site p { margin: .25rem 0; }
 .verdict { font-size: var(--step-3); font-weight: 850; letter-spacing: -0.035em; line-height: 1; margin: 0 0 1rem; }
 .verdict.yes { color: var(--za); } .verdict.no { color: var(--proti); }
 .pill { display: inline-flex; align-items: center; gap: .35rem; font-size: var(--step--2); font-weight: 700; padding: .2rem .55rem; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
-.pill.yes { color: var(--za); border-color: color-mix(in srgb, var(--za) 40%, var(--line)); }
-.pill.no { color: var(--proti); border-color: color-mix(in srgb, var(--proti) 40%, var(--line)); }
+.pill.yes { color: var(--za-ink, var(--za)); border-color: color-mix(in srgb, var(--za) 40%, var(--line)); }
+.pill.no { color: var(--proti-ink, var(--proti)); border-color: color-mix(in srgb, var(--proti) 40%, var(--line)); }
 
 /* ---------- hall ---------- */
 .hall { position: relative; }
@@ -388,6 +388,8 @@ details.day[open] > summary::before { transform: rotate(90deg); }
 .matrix thead th span { display: inline-block; border-bottom: 3px solid var(--club); padding-bottom: .2rem; white-space: nowrap; }
 .matrix td { background: color-mix(in srgb, var(--accent) calc(var(--a, 0) * 80%), var(--panel)); color: var(--text); font-weight: 650; border: 2px solid var(--panel); border-radius: 6px; }
 .matrix td.self { background: var(--panel-2); }
+.card-acts { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.card-acts > .rss { margin-top: .9rem; }
 .follow-wrap { display: inline-flex; gap: .4rem; align-items: center; margin-top: .9rem; }
 .follow { font: inherit; font-size: var(--step--1); font-weight: 750; cursor: pointer; border-radius: 999px; padding: .4rem 1rem; border: 1px solid var(--accent); background: transparent; color: var(--accent); }
 .follow[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }

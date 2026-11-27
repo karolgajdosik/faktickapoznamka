@@ -88,11 +88,24 @@
     var r = tr(t, 0);
     return r == null || r === t ? null : lead + r + trail;
   }
+  // "<b>4 638</b> hlasovaní": the count sits in the previous node, so pick the plural form from it
+  function counted(n) {
+    var prev = n.previousSibling, t = n.nodeValue.replace(/\s+/g, " ").trim();
+    if (!prev || !t || /\d/.test(t)) return null;
+    var num = (prev.textContent || "").trim();
+    if (!/^\d+(?:[\s\u00a0\u202f]\d{3})*$/.test(num)) return null;
+    var v = D["{n} " + t];
+    if (v == null) return null;
+    var out = pick(v, [num]).replace(/^\{n\}\s*/, "");
+    if (out.indexOf("{n}") >= 0) return null;
+    var lead = n.nodeValue.match(/^\s*/)[0], trail = n.nodeValue.match(/\s*$/)[0];
+    return lead + out + trail;
+  }
   function skip(el) { return !el || el.closest("script,style,noscript,[translate=no],.notranslate,code,pre"); }
   function textNode(n) {
     if (done.get(n) === n.nodeValue) return;
     var p = n.parentElement; if (skip(p)) return;
-    var r = translateString(n.nodeValue);
+    var r = counted(n) || translateString(n.nodeValue);
     if (r != null) n.nodeValue = r;
     done.set(n, n.nodeValue);
   }

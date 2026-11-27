@@ -1,7 +1,7 @@
 """Builds public/i18n/{en,de,hu,pl}.json from the dictionary parts. Run: python scripts/i18n/build.py"""
 import json, pathlib, re, sys
 here = pathlib.Path(__file__).parent; sys.path.insert(0, str(here))
-import dict1, dict2, dict3, dict4, dict5, dict6  # noqa: E401  (parts register rows in dict1.R)
+import dict1, dict2, dict3, dict4, dict5, dict6, dict7, dict8  # noqa: E401  (parts register rows in dict1.R)
 NUM = re.compile(r"\d+(?:[   ]\d{3})*(?:[,.]\d+)?")
 SKIP = {"Posledné hlasovanie, {n}. novembra {n} o {n}:{n}"}
 out = {l: {} for l in ("en", "de", "hu", "pl")}

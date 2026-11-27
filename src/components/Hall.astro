@@ -94,7 +94,7 @@ const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R *
             <circle r={R.toFixed(1)} />
             {photo(m.id) && !votes
               ? <image href={photo(m.id)!} x={(-R + 2.2).toFixed(1)} y={(-R + 2.2).toFixed(1)} width={(2 * R - 4.4).toFixed(1)} height={(2 * R - 4.4).toFixed(1)} preserveAspectRatio="xMidYMid slice" />
-              : <text>{initials(m)}</text>}
+              : <text aria-hidden="true">{initials(m)}</text>}
           </g>
         </g>
       );

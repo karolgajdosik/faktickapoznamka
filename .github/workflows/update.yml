@@ -26,7 +26,7 @@ on:
         description: "Max votes in this run"
         required: false
         default: "400"
-permissions: { contents: write, models: read }
+permissions: { contents: write, models: read, issues: write }
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   update:
@@ -88,3 +88,18 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler deploy
+      - name: Data watchdog
+        # Opens (or updates) an issue when the scraper silently stops producing data; GitHub e-mails the repo owner. Closes it once data flows again.
+        if: always()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          set +e
+          python scraper/watchdog.py > watchdog.md; rc=$?
+          cat watchdog.md
+          gh label create watchdog --color B60205 --description "Strážca dát" 2>/dev/null
+          open=$(gh issue list --label watchdog --state open --json number -q '.[0].number')
+          if [ $rc -ne 0 ]; then
+            if [ -z "$open" ]; then gh issue create --title "Strážca dát: scraper neprináša nové dáta" --label watchdog --body-file watchdog.md
+            elif [ "$(date -u +%H)" = "07" ]; then gh issue comment "$open" --body-file watchdog.md; fi
+            exit 1
+          elif [ -n "$open" ]; then gh issue close "$open" --comment "Dáta opäť pribúdajú: $(cat watchdog.md)"; fi

@@ -98,3 +98,10 @@ export const eur = (n: number | null) => (n == null ? "–" : `${n.toLocaleStrin
 export const clubOrNez = (m: Mp) => (m.club === NEZ ? "nezaradený" : m.club);
 export { clubColor };
 export type { Vote };
+
+/** Voting agreement for all current MP pairs, upper triangle row by row: per mille, or -1 below 50 shared votes. */
+export const agreementTriangle = () => {
+  const out: number[] = [];
+  for (let i = 0; i < N; i++) for (let j = i + 1; j < N; j++) { const b = both[i * N + j]; out.push(b >= 50 ? Math.round((1000 * same[i * N + j]) / b) : -1); }
+  return { ids, tri: out, shared: (i: number, j: number) => both[i * N + j] };
+};

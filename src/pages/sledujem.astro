@@ -6,4 +6,33 @@ import FollowedList from "../components/FollowedList.astro";
   <h1>Sledujem</h1>
   <p class="meta-line">Zoznam je uložený iba v tomto prehliadači.</p>
   <div style="margin-top:1.25rem"><FollowedList always /></div>
+  <section class="rss-box" id="rss-box" hidden>
+    <h2>Novinky do čítačky</h2>
+    <p>Každý poslanec má vlastný RSS kanál s vystúpeniami a hlasovaniami proti klubu. Stiahnite si naraz všetkých sledovaných ako súbor OPML a otvorte ho v čítačke (Feedly, Inoreader, NetNewsWire, Thunderbird).</p>
+    <button type="button" class="follow" id="opml">Stiahnuť OPML</button>
+  </section>
 </Base>
+
+<script>
+  const read = (): string[] => { try { return JSON.parse(localStorage.getItem("fp-follow") || "[]"); } catch { return []; } };
+  const box = document.getElementById("rss-box")!;
+  const sync = () => { box.hidden = read().length === 0; };
+  sync(); document.addEventListener("fp:sync-follow", sync); document.addEventListener("click", () => setTimeout(sync, 0));
+  document.getElementById("opml")!.addEventListener("click", async () => {
+    const ids = read(); if (!ids.length) return;
+    const all = await fetch("/hladat/data.json").then((r) => r.json()).catch(() => ({ mps: [] }));
+    const name = new Map<string, string>(all.mps.map((m: { id: string; n: string }) => [m.id, m.n]));
+    const x = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+    const items = ids.map((id) => { const n = x(name.get(id) ?? id); return `    <outline type="rss" text="${n}" title="${n}" xmlUrl="${location.origin}/poslanci/${id}/rss.xml" htmlUrl="${location.origin}/poslanci/${id}/"/>`; }).join("\n");
+    const opml = `<?xml version="1.0" encoding="UTF-8"?>\n<opml version="2.0">\n  <head><title>faktická poznámka – sledovaní poslanci</title></head>\n  <body>\n  <outline text="faktická poznámka">\n${items}\n  </outline>\n  </body>\n</opml>\n`;
+    const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(new Blob([opml], { type: "text/x-opml" })), download: "faktickapoznamka-sledujem.opml" });
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+</script>
+
+<style>
+  .rss-box { margin-top: 2rem; padding: 1.1rem 1.25rem; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); }
+  .rss-box h2 { margin: 0 0 .4rem; font-size: var(--step-1); }
+  .rss-box p { margin: 0 0 .8rem; color: var(--muted); }
+  .rss-box .follow { margin: 0; }
+</style>
