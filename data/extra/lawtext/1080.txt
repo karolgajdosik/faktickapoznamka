@@ -1,0 +1,173 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 95/2019 Z. z. o informačných technológiách vo verejnej správe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (ďalej len „návrh zákona“) sa predkladá na základe úlohy B.1. z uznesenia vlády Slovenskej republiky č. 55 z 1. februára 2024 k Plánu legislatívnych úloh vlády Slovenskej republiky na rok 2024. 
+Cieľom návrhu zákona je reflektovať na aplikačné problémy v praxi, súvisiace s výkladom niektorých ustanovení zákona č. 95/2019 Z. z. o informačných technológiách vo verejnej správe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (ďalej len „zákon č. 95/2019 Z. z.“), ako napríklad problémy pri určovaní správcu informačnej technológie verejnej správy alebo problémy pri predkladaní projektových výstupov. 
+Návrhom zákona sa taktiež navrhuje rozšírenie sankcionovateľných skutkových podstát správnych deliktov a zvýšenie sankcie za správne delikty na úseku projektového riadenia a prevádzky informačných technológií verejnej správy, pričom výška sankcie bude zohľadňovať celkovú cenu projektu.
+Ďalším cieľom návrhu zákona je precizovať kompetencie vládnej jednotky CSIRT a s tým súvisiacu úpravu právnych vzťahov medzi zákonom č. 95/2019 Z. z. a zákonom č. 69/2018 Z. z. o kybernetickej bezpečnosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov, ako aj reflektovať na zmeny v jeho pojmovom nastavení, ktoré priniesol zákon č. 366/2024 Z. z., ktorým sa mení a dopĺňa zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (napr. vypustenie definície pojmu „základná služba“ a zadefinovanie pojmu „prevádzkovateľ základnej služby“). 
+V záujme predchádzania tzv. vendor lock-in sa tiež upravujú akceptovateľné zmluvné podmienky pri zabezpečovaní riadenia projektov v oblasti informačných technológií verejnej správy.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Návrh zákona má pozitívne a negatívne (rozpočtovo zabezpečené) vplyvy na rozpočet verejnej správy. Návrh zákona nemá vplyvy na limit verejných výdavkov, na podnikateľské prostredie, sociálne vplyvy, vplyvy na životné prostredie, vplyvy na informatizáciu spoločnosti, vplyvy na služby verejnej správy pre občana a vplyvy na manželstvo, rodičovstvo a rodinu.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi a nálezmi Ústavného súdu Slovenskej republiky, so zákonmi a ostatnými všeobecne záväznými právnymi predpismi, s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 95/2019 Z. z. o informačných technológiách vo verejnej správe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (ďalej len „návrh zákona“).
+Predkladateľ (a spolupredkladateľ)
+vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☐
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Termín začiatku a ukončenia PPK
+August - september 2024
+Predpokladaný termín predloženia na pripomienkové konanie
+Máj 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+14. - 20. október 2025
+Predpokladaný termín predloženia na rokovanie vlády SR*
+5. november 2025
+Definovanie problému
+Cieľom návrhu zákona je zabezpečiť úpravy a doplnenia, ktoré reflektujú na aplikačné problémy v praxi, súvisiace s výkladom niektorých ustanovení zákona, napríklad pri určovaní správcu informačnej technológie verejnej správy alebo pri predkladaní projektových výstupov. Zároveň sa návrhom zákona reflektuje na zmeny v pojmovom nastavení, ktoré priniesol zákon č. 366/2024 Z. z., ktorým sa mení a dopĺňa zákon č. 69/2018 Z. z. o kybernetickej bezpečnosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (napr. vypustenie definície pojmu „základná služba“ a zadefinovanie pojmu „poskytovateľ základnej služby“). Z dôvodu dôležitosti plnenia povinností vo vzťahu k riadeniu projektov a zabezpečeniu prevádzky informačných technológií verejnej správy sa navrhuje sprísnenie sankcií za tieto správne delikty.
+Ciele a výsledný stav
+Cieľom predkladaného materiálu je aktualizovať znenie zákona č. 95/2019 Z. z. o informačných technológiách vo verejnej správe a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (ďalej len „zákon č. 95/2019 Z. z.“) s ohľadom na bezpečnostné štandardy ustanovené vnútroštátnym a európskym právom. Zároveň sa prostredníctvom zvýšenia sankcií kladie väčší dôraz na plnenie povinností pri projektovom riadení a zabezpečovaní prevádzky informačných technológií verejnej správy. 
+Dotknuté subjekty
+Orgán vedenia a orgány riadenia podľa zákona č. 95/2019 Z. z.
+Alternatívne riešenia
+Neboli identifikované žiadne alternatívne riešenia, nakoľko návrh zákona obsahuje zmeny ktoré sú nevyhnutné na zosúladenie aktuálnej úpravy s úpravou vyžadovanou praxou a európskymi štandardmi. 
+Nulový variant - v prípade, ak by neboli vykonané zmeny, ktoré sú predmetom návrhu, aktuálne znenie zákona by nezodpovedalo požadovaným bezpečnostným štandardom ustanoveným smernicou NIS2 prostredníctvom zákona č. 69/2018 Z. z. o kybernetickej bezpečnosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov.
+Vykonávacie predpisy
+Predpokladá sa prijatie/zmena vykonávacích predpisov?
+☒ Áno
+☐ Nie
+Ak áno, uveďte ktoré oblasti budú nimi upravené, resp. ktorých vykonávacích predpisov sa zmena dotkne:
+Vyhláška č. 179/2020 Z. z. ktorou sa ustanovuje spôsob kategorizácie a obsah bezpečnostných opatrení informačných technológií verejnej správy
+Transpozícia/implementácia práva EÚ 
+Materiál nie je transpozičným opatrením. Návrhom zákona sa zosúlaďuje aktuálne znenie zákona č. 95/2019 Z. z. so zákonom č. 69/2018 Z, z. o kybernetickej bezpečnosti a o zmene a doplnení niektorých zákonov v znení neskorších predpisov, ktorým sa transponuje smernica NIS2.
+Uveďte, či v predkladanom návrhu právneho predpisu dochádza ku goldplatingu podľa tabuľky zhody, resp. či ku goldplatingu dochádza pri implementácii práva EÚ. 
+ ☐ Áno ☒ Nie
+Ak áno, uveďte, ktorých vplyvov podľa bodu 9 sa goldplating týka: 
+Preskúmanie účelnosti
+Materiál nebol predmetom preskúmania účelnosti. 
+Účelnosť predkladaného návrhu bude preskúmavaná priebežne, najneskôr do troch rokov odo dňa účinnosti návrhu. Kritériom preskúmania účelnosti budú výsledky kontroly dodržiavania povinností ustanovených zákonom č. 95/2019 Z. z., doručené podnety k aplikácii tohto zákona a jeho vykonávacích právnych predpisov v praxi, ako aj z vlastnej činnosti v postavení orgánu vedenia, ktoré budú následne predmetom internej analýzy a hodnotenia účelnosti návrhu.
+* vyplniť iba v prípade, ak materiál nie je zahrnutý do Plánu práce vlády Slovenskej republiky alebo Plánu legislatívnych úloh vlády Slovenskej republiky. 
+** vyplniť iba v prípade, ak sa záverečné posúdenie vybraných vplyvov uskutočnilo v zmysle bodu 9.1. jednotnej metodiky.
+*** posudzovanie sa týka len zmien v I. a II. pilieri univerzálneho systému dôchodkového zabezpečenia s identifikovaným dopadom od 0,1 % HDP (vrátane) na dlhodobom horizonte.
+Vybrané vplyvy materiálu
+Vplyvy na rozpočet verejnej správy
+☒
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ z toho rozpočtovo zabezpečené vplyvy, 
+ v prípade identifikovaného negatívneho 
+ vplyvu
+☒
+Áno
+☐
+Nie
+☐
+Čiastočne
+v tom vplyvy na rozpočty obcí a vyšších územných celkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+z toho rozpočtovo zabezpečené vplyvy,
+v prípade identifikovaného negatívneho vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+Vplyv na dlhodobú udržateľnosť verejných financií v prípade vybraných opatrení ***
+☐
+Áno
+☐
+Nie
+Vplyvy na limit verejných výdavkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na podnikateľské prostredie
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ z toho vplyvy na MSP
+☐
+Pozitívne
+☐
+Žiadne
+☐
+Negatívne
+ Mechanizmus znižovania byrokracie 
+ a nákladov sa uplatňuje:
+☐
+Áno
+☐
+Nie
+Sociálne vplyvy
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na životné prostredie
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Materiál je posudzovaný podľa zákona č. 24/2006 Z. z. o posudzovaní vplyvov na životné prostredie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+☐
+Áno
+☐
+Nie
+Vplyvy na informatizáciu spoločnosti
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na služby verejnej správy pre občana, z toho
+ vplyvy služieb verejnej správy na občana
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ vplyvy na procesy služieb vo verejnej správe
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na manželstvo, rodičovstvo a rodinu
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Poznámky
+Návrh zákona má negatívny vplyv na rozpočet verejnej správy,

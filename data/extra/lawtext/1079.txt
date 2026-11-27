@@ -1,0 +1,36 @@
+# Dôvodová správa
+DÔVODOVÁ SPRÁVA
+A. Všeobecná časť
+Predložený návrh zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 46/1993 Z. z. o Slovenskej informačnej službe v znení neskorších predpisov (ďalej len „návrh zákona“), reflektuje aktuálne nedostatky aplikačnej praxe súvisiace s výberom vhodného kandidáta na funkciu riaditeľa Slovenskej informačnej služby (ďalej len „SIS“) a kontrolou činnosti SIS. 
+Cieľom návrhu zákona je precizovať proces výberu a menovania riaditeľa a priblížiť tento proces s bežnou praxou v okolitých členských štátoch Európskej únie.
+Na základe skúseností vyplývajúcich z uplatňovania doterajšieho kontrolného mechanizmu voči SIS, ktorý je nedostatočný, návrh zákona súčasne precizuje rozsah kontrolných nástrojov Osobitného kontrolného výboru NR SR na kontrolu činnosti SIS. Zmena právnej úpravy kontrolných nástrojov zverených orgánu parlamentnej kontroly činnosti SIS umožní zákonodarnej moci účinnejšie vykonávať svoju ústavnú kompetenciu, a to najmä z aspektu ochrany ľudských práv a základných slobôd jednotlivcov.
+Keďže komisia na kontrolu používania informačno-technických prostriedkov podľa zákona o ochrane súkromia pred odpočúvaním doposiaľ nebola zriadená, v súčasnosti neexistuje kontrolný orgán, ktorý by v aplikačnej praxi dohliadal na zákonnosť používania informačno-technických prostriedkov zo strany SIS. S cieľom zvýšiť úroveň ochrany základných ľudských práv a slobôd jednotlivcov a v aplikačnej praxi vytvoriť dostatočné záruky pred nezákonným odpočúvaním občanov sa navrhuje dočasne priznať osobitnému kontrolnému výboru oprávnenie kontrolovať používanie informačno-technických prostriedkov zo strany SIS. Priznanie tohto kontrolného nástroja bude len dočasné, a to do okamihu zvolenia členov komisie.
+Navrhované doplnenie existujúcej právnej regulácie predstavuje posilnenie postavenia Národnej rady Slovenskej republiky v procese parlamentnej kontroly činnosti SIS, ktorú realizuje predovšetkým prostredníctvom Osobitného kontrolného výboru NR SR na kontrolu činnosti SIS. Navrhovaná úprava kontrolného mechanizmu rešpektuje požiadavku ochrany verejného záujmu štátu na utajenom charaktere činnosti SIS.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentami, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Návrh zákona nebude mať vplyvy na rozpočet verejnej správy, vplyvy na podnikateľské prostredie, sociálne vplyvy, vplyvy na životné prostredie, vplyvy na služby verejnej správy pre občana, vplyvy na informatizáciu spoločnosti ani vplyvy na manželstvo, rodičovstvo a rodinu.
+B. Osobitná časť
+K Čl. I
+K bodu 1
+Navrhuje sa, aby kreačná právomoc prezidenta SR vo vzťahu k riaditeľovi SIS bola podmienená vyžiadaním si stanoviska Osobitného kontrolného výboru NR SR na kontrolu činnosti SIS a verejným vypočutím pred výborom NR SR pre obranu a bezpečnosť. Stanoviská výborov nebudú mať pre prezidenta SR záväzný charakter.
+Súčasne sa navrhuje, aby vláda SR pri výbere osoby, ktorú nominuje prezidentovi SR na vymenovanie do funkcie riaditeľa SIS, bola povinná posúdiť a vziať do úvahy predovšetkým odborné, morálne a osobnostné predpoklady navrhovanej osoby na výkon tejto funkcie. Rovnaká podmienka sa ukladá aj pre prezidenta SR pri uplatňovaní jeho kreačnej právomoci.
+K bodu 2
+S cieľom zvýšenia transparentnosti činnosti SIS a posilnenia jej spoločenskej kontroly (kontroly verejnosťou) sa navrhuje uložiť SIS povinnosť zverejniť na svojom webovom sídle výročnú správu o svojej činnosti. Zároveň sa ustanovuje lehota, v ktorej bude SIS povinná túto správu zverejniť.
+Navrhuje sa tiež, aby SIS bola oprávnená vykonať úpravy vo zverejňovanej správe o činnosti tak, aby zverejnením správy nedošlo k ohrozeniu chránených záujmov štátu.
+K bodu 3
+Navrhuje sa výslovne definovať ciele externej kontroly realizovanej orgánom parlamentného dohľadu. Definované ciele parlamentného modelu kontroly reflektujú platnú právnu úpravu.
+K bodu 4
+Navrhuje sa rozšírenie okruhu interných predpisov, ktoré bude riaditeľ SIS v rámci parlamentnej kontroly povinný predkladať na základe žiadosti osobitného kontrolného výboru. Táto zmena zohľadňuje definovanie SIS ako všeobecnej bezpečnostnej a spravodajskej služby SR.
+K bodu 5
+Za účelom zefektívnenia kontrolnej činnosti Osobitného kontrolného výboru NR SR na kontrolu činnosti SIS sa navrhuje rozšíriť okruh informácií, ktoré bude riaditeľ SIS povinný predkladať tomuto výboru. Výrazne sa tým posilní kontrola exekutívnej moci zo strany zákonodarnej moci. Navrhovanou zmenou sa vytvorí dostatočný právny základ na realizáciu ústavnej kompetencie parlamentu kontrolovať dodržiavanie zákonov. 
+Doplnením existujúcej zákonnej úpravy kontroly činnosti SIS sa tiež výrazne zvýši úroveň ochrany základných ľudských práv a slobôd zo strany Osobitného kontrolného výboru NR SR na kontrolu činnosti SIS.
+Súčasne sa vytvára právny priestor pre riaditeľa SIS na to, aby mohol prispieť k dosiahnutiu zákonom vymedzeným cieľom kontroly formou poskytnutia súčinnosti osobitnému kontrolnému výboru.
+K bodu 6
+Precizuje sa okruh subjektov, ktorým orgán parlamentného dohľadu bude môcť odstupovať svoje zistenia o porušení zákona zo strany SIS. V aktuálne platnom znení zákona o SIS absentuje možnosť odstúpenia takého zistenia prezidentovi SR, ktorý koná a rozhoduje vo veciach služobného pomeru riaditeľa SIS.
+Súčasne sa navrhuje, aby tieto subjekty mohol informovať o porušení zákona zo strany SIS aj člen osobitného kontrolného výboru, ktorý sa o takom porušení dozvedel pri výkone svojej kontrolnej činnosti. Porušenie zákona, ktoré osobitný kontrolný výbor alebo jeho člen zistí počas svojej kontrolnej činnosti, môžu byť podnetom na vyvodenie osobnej zodpovednosti voči riaditeľovi SIS formou návrhu na začatie disciplinárneho konania alebo návrhu na jeho odvolanie z funkcie riaditeľa SIS. Právomoc prezidenta SR rozhodovať o takýchto návrhoch zostáva zachovaná.
+K bodu 7
+Doplnením platnej zákonnej úpravy sa vytvára právny základ na možnosť zaujatia relevantného stanoviska pre prezidenta SR vo vzťahu k osobe navrhnutej na vymenovanie do funkcie riaditeľa SIS. Za týmto účelom bude osobitný kontrolný výbor parlamentu oprávnený pozvať si na svoje zasadnutie a vypočuť osobu navrhovanú na vymenovanie do funkcie riaditeľa SIS
+K bodu 8
+Za účelom posilnenia ochrany základných práv a slobôd občanov sa navrhuje priznať osobitnému kontrolnému výboru oprávnenie kontrolovať používanie informačno-technických prostriedkov zo strany SIS. Priznanie tohto kontrolného nástroja bude len dočasné, a to do okamihu zvolenia členov komisie na kontrolu používania informačno-technických prostriedkov podľa zákona o ochrane súkromia pred odpočúvaním.
+Navrhovaným doplnením kontrolných právomocí výboru sa v aplikačnej praxi vytvoria dostatočné záruky pred neoprávneným zasahovaním do základných ľudských práv a slobôd jednotlivcov zo strany SIS, realizované predovšetkým formou utajeného odpočúvania občanov SR.
+K Čl. II
+Navrhuje sa účinnosť zákona od 1. marca 2026.

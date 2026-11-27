@@ -1,0 +1,54 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Návrh zákona o mikropodnikaní a o zmene a doplnení niektorých zákonov (ďalej len „návrh zákona“) predkladajú na rokovanie Národnej rady Slovenskej republiky poslanci Národnej rady Slovenskej republiky Michal Truban, Ján Hargaš a poslankyňa Národnej rady Slovenskej republiky Simona Petrík.
+Cieľom návrhu zákona je vytvoriť novú jednoduchú formu podnikania pre fyzické osoby – tzv. mikropodnikanie, ktoré umožní administratívne nenáročnú formu zárobkovej činnosti – bez byrokracie a účtovníctva. Ide o moderný inštitút vychádzajúci zo zahraničných skúseností (najmä estónsky model “Entrepreneur account” („ärikonto“) a poľská prax prostredníctvom neregistrovanej činnosti tzv. “działalność nierejestrowana”), upravený na podmienky Slovenskej republiky. 
+Hlavným účelom je sprístupniť podnikanie širšiemu okruhu osôb – mladistvým, študentom, rodičom na materskej alebo rodičovskej dovolenke, dôchodcom, znevýhodneným osobám, či osobám, ktoré si chcú popri zamestnaní alebo štúdiu vyskúšať podnikanie. Zákon umožňuje vykonávať mikropodnikanie aj osobám mladším ako 18 rokov. Mikropodnikanie má byť vedľajšou alebo príležitostnou činnosťou – nepovažuje sa za zamestnanie, podnikanie, či samostatnú zárobkovú činnosť (SZČ).
+Návrh zákona reaguje na tieto pretrvávajúce problémy v oblasti podnikania:
+administratívna náročnosť pri začiatkoch podnikania, ktorá odrádza najmä mladých ľudí,
+neflexibilita súčasného systému SZČO, ktorý spája podnikanie s povinnými odvodmi a evidenciou,
+nedostatok príležitostí pre marginalizované alebo znevýhodnené skupiny (napr. rodičia s malými deťmi, dôchodcovia, dlhodobo nezamestnaní najmä v menej rozvinutých regiónoch s nedostatočnou dostupnosťou pracovných príležitostí),
+nedostatočná motivácia vyskúšať si podnikanie v malom rozsahu, keďže legislatívne a daňovo-odvodové povinnosti sú prekážkou.
+Základné parametre mikropodnikania:
+určené výlučne pre fyzické osoby s trvalým alebo prechodným pobytom na území Slovenskej republiky,
+jednoduchý režim: bez podávania daňového priznania, bez povinnosti viesť účtovníctvo – stačí rýchla registrácia prostredníctvom portálu slovensko.sk spolu s otvorením účtu v banke pre mikropodnikateľov ,
+zdanenie 3 % z každej kreditnej operácie na účte, bez zdravotných či sociálnych odvodov,
+ročný limit príjmov je nastavený ako 60 % z 12-násobku sumy mesačnej minimálnej mzdy platnej pre daný rok. Po jeho prekročení sa uplatní zvýšená sadzba 35 % na ďalšie príjmy nad túto hranicu, pretože príjem z mikropodnikania má byť len doplnkovým, nie plnohodnotným zamestnaním alebo podnikaním. Zvýšená sadzba má motivovať k založeniu živnosti alebo spoločnosti,
+zákaz poskytovania služieb a predaja tovaru pre súčasného alebo bývalého zamestnávateľa (24 mesiacov spätne),
+zákaz kombinácie s aktívnou živnosťou a podnikaním,
+zákaz prijímania platieb z niektorých druhov pasívneho príjmu, ktoré sú zdaňované podľa zákona o dani z príjmov samostatne,
+zúčtovanie dane bankou priamo správcovi dane na mesačnej báze (pri zahraničnej banke platí osobitný režim),
+kompatibilita so sociálnymi dávkami a štipendiami – návrh zákona zabezpečuje, aby mikropodnikanie nebolo penalizované stratou sociálnej podpory.
+Súčasný stav
+Ak chce fyzická osoba na Slovensku začať podnikať, má v súčasnosti obmedzené možnosti:
+živnosť (SZČO) – vyžaduje registráciu na živnostenskom úrade, povinnosť registrácie na daňovom úrade, vedenie účtovníctva alebo daňovej evidencie, povinné platenie zdravotných a po určitom období aj sociálnych odvodov bez ohľadu na skutočnú výšku príjmu. Aj pri malých príjmoch tak podnikateľ nesie vysoké fixné náklady,
+obchodná spoločnosť (s. r. o.) – vyžaduje ešte náročnejší proces založenia, vedenie podvojného účtovníctva, vyššie administratívne a finančné zaťaženie. Tento model je nevhodný pre príležitostné alebo nízke príjmy,
+príležitostné príjmy podľa zákona o dani z príjmov – sú síce možné, ale zdanenie sa vykonáva až spätne cez daňové priznanie, neexistuje špeciálny účet ani systém okamžitého zdanenia, a tento režim je veľmi limitovaný a neprehľadný.
+Súčasná právna úprava teda neumožňuje jednoduchú, flexibilnú a bezpečnú formu podnikania pre osoby, ktoré si chcú podnikanie iba vyskúšať alebo vykonávať drobné, vedľajšie činnosti s nízkym príjmom. Vysoké administratívne zaťaženie a povinné odvody odrádzajú najmä mladých ľudí, rodičov na materskej alebo dôchodcov. Presadením 3. konsolidačného balíčka, ktorý zavádza minimálne odvody pre živnostníkov už od 6. mesiaca sa tento problém iba prehĺbil.
+Čo prináša návrh zákona o mikropodnikaní oproti súčasnému stavu
+Navrhovaná úprava vytvára nový inštitút mikropodnikania, ktorý:
+odstraňuje administratívnu záťaž – jednoduchá registrácia prostredníctvom portálu slovensko.sk, bez vedenia účtovníctva a podávania daňového priznania,
+zjednodušuje zdanenie – zavádza jednu daň podobnú zrážke, ktorá bude odvedená priamo pri pripísaní finančných prostriedkov na osobitný bankový účet, čím odpadá povinnosť vysporiadania dane v daňovom priznaní,
+eliminuje povinné odvody – mikropodnikateľ nemá povinnosť platiť zdravotné a sociálne odvody, čo výrazne znižuje fixné náklady,
+zavádza príjmový limit – umožňuje v malom rozsahu bezpečne podnikať, pričom po prekročení limitu osoba môže prejsť na klasickú živnosť, ktorá bude pre ňu výhodnejšia,
+umožňuje vyskúšať si podnikanie aj mladistvým nad 16 rokov prostredníctvom zodpovedného zástupcu,
+zabraňuje obchádzaniu pracovnoprávnych vzťahov a kráteniu dane, práve naopak, motivuje ľudí priznávať svoje príjmy vďaka férovému zdaneniu,
+podporuje podnikavosť a zodpovednosť za vlastné financie,
+umožňuje kompatibilitu so sociálnymi dávkami a štipendiami – príjem z mikropodnikania nebude viesť k strate nároku na sociálne dávky či študentské štipendiá.
+Výsledkom je flexibilná, inkluzívna a motivačná forma podnikania určená najmä pre začínajúcich podnikateľov a pre osoby, ktoré si chcú legálne privyrobiť bez rizika neúmernej administratívnej a finančnej záťaže.
+Predkladaný návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, nálezmi Ústavného súdu Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentami, ktorými je Slovenská republika viazaná, ako aj v súlade s právom Európskej únie.
+Návrh zákona predpokladá pozitívne vplyvy na rozpočet verejnej správy, podnikateľské prostredie, sociálne vplyvy, informatizáciu spoločnosti, na služby verejnej správy pre občana a nepredpokladá vplyvy na životné prostredie a ani na manželstvo, rodičovstvo a rodinu.
+B. Osobitná časť
+K čl. I
+K § 1 a § 2
+Ide o úvodné vymedzenie predmetu úpravy zákona. Zároveň sa definujú základné pojmy na účely tohto zákona, nevyhnutné pre správnu aplikáciu v praxi, vrátane negatívneho vymedzenia, že mikropodnikanie nie je podnikaním podľa Obchodného zákonníka, živnosťou ani inou samostatnou zárobkovou činnosťou.
+K § 3
+Definuje sa moment vzniku a zániku mikropodnikania. Oprávnenie vykonávať mikropodnikanie vzniká fyzickej osobe dňom zápisu do registra mikropodnikateľov. V prípade zániku mikropodnikania zákon vymedzuje udalosti, s ktorými je zánik mikropodnikania spojený. Pokiaľ fyzická osoba podáva oznámenie o ukončení mikropodnikania, toto podanie realizuje výlučne elektronickými prostriedkami prostredníctvom ústredného portálu verejnej správy a na to určeného elektronického formulára.
+K§ 4
+Ustanovením sa zriaďuje sa register mikropodnikateľov (ďalej len „register“) ako informačný systém verejnej správy v súlade so zákonom č. 95/2019 Z. z. o informačných technológiách vo verejnej správe a o zmene a doplnení niektorých zákonov na účely evidencie mikropodnikateľov a overenia oprávnenia na výkon mikropodnikania podľa tohto zákona. Správcom registra je Ministerstvo vnútra SR.
+Návrh na zápis, zmenu a výmaz z registra sa realizuje výlučne elektronickými prostriedkami prostredníctvom ústredného portálu verejnej správy a na to určeného elektronického formulára a v súlade so zákonom č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov.
+Ďalej sa vymedzuje sada údajov, ktoré sa do registra zapisujú. Údaje dostupné v referenčných registroch ministerstvo vnútra preberá z úradnej moci medzisystémovou komunikáciou informačných systémov tak, aby ich fyzická osoba nemusela predkladať, ak ich už štát má k dispozícii, čím sa minimalizuje byrokracia na strane mikropodnikateľa.
+Upravuje sa aj výmaz z registra, ak došlo k zániku oprávnenia podľa § 3 ods. 2, sprístupňovanie údajov vo verejnej časti registra a sprístupňovanie údajov orgánom plniacim úlohy podľa tohto zákona cez technické rozhranie.
+K § 5
+Ustanovujú sa podmienky výkonu mikropodnikania. Zároveň zákon vyslovene ustanovuje, ktoré činnosti nie sú s mikropodnikaním zlučiteľné. Cieľom je predchádzať obchádzaniu štandardných režimov, v ktorých sa práca vykonáva.
+Fyzická osoba môže vykonávať mikropodnikanie 
