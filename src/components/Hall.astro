@@ -14,7 +14,7 @@ const clubOf = (m: Mp) => clubsAt?.[m.id] ?? m.club;
 const info = Object.fromEntries(people.map((m) => {
   const st = mpStats(m.id), t = talk.get(m.id), a = age(m.born);
   const roles = committeesOf(m.id).filter((c) => c.role === "predseda" || c.role === "podpredseda").map((c) => `${c.label} výboru: ${c.short.replace(/ NR SR$/, "")}`);
-  return [m.id, { t: m.title ?? "", age: a, place: [m.city, m.region && `${m.region} kraj`].filter(Boolean).join(", "), att: st.attendance, loy: st.loyalty, reb: st.rebels.length,
+  return [m.id, { t: m.title ?? "", age: a, place: [m.city, m.region && (/kraj$/.test(m.region) ? m.region : `${m.region} kraj`)].filter(Boolean).join(", "), att: st.attendance, loy: st.loyalty, reb: st.rebels.length,
     talk: t ? fmtDur(t.seconds) : "", sp: t?.count ?? 0, role: roles[0] ?? "" }];
 }));
 const total = people.length;

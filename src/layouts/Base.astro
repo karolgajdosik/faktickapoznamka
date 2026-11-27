@@ -37,7 +37,11 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="faktická poznámka" />
   <meta name="app-version" content={versionInfo.v} />
-  <script is:inline>try { const d = document.documentElement, t = localStorage.getItem("theme"), f = localStorage.getItem("fp-size"), c = localStorage.getItem("fp-contrast"); if (t) d.dataset.theme = t; if (f) d.style.fontSize = f + "%"; if (c) d.dataset.contrast = c; } catch {}</script>
+  <script is:inline>try { const d = document.documentElement, t = localStorage.getItem("theme"), f = localStorage.getItem("fp-size"), c = localStorage.getItem("fp-contrast"), l = localStorage.getItem("fp-lang");
+    if (t) d.dataset.theme = t; if (f) d.style.fontSize = f + "%"; if (c) d.dataset.contrast = c;
+    if (l && /^(en|de|hu|pl)$/.test(l)) { d.dataset.lang = l; d.lang = l; d.classList.add("i18n-wait"); window.__fpDict = fetch("/i18n/" + l + ".json").then((r) => r.json());
+      const s = document.createElement("script"); s.src = "/i18n/i18n.js?v=" + document.querySelector('meta[name="app-version"]')?.content; s.async = false; document.head.append(s); }
+  } catch {}</script>
 </head>
 <body>
   <a class="skip" href="#obsah">Preskočiť na obsah</a>
@@ -136,16 +140,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     }
     // "Nová verzia" check: compare this page's <meta name="app-version"> with the one in a fresh "/".
     // Runs 20 s after load, every 5 minutes and on returning to the tab; never while hidden.
-    // On Google's translated copy (*.translate.goog) skip the update check and the service worker:
-    // they belong to the original site and only confuse the proxy.
-    const proxied = location.hostname.endsWith(".translate.goog");
-    if (proxied) {
-      navigator.serviceWorker?.getRegistrations?.().then((rs) => rs.forEach((r) => r.unregister())).catch(() => {});
-      const back = document.createElement("div"); back.className = "tr-bar";
-      const a = document.createElement("a"); a.href = `https://faktickapoznamka.sk${location.pathname}`; a.textContent = "Pôvodná slovenská verzia";
-      back.append("Strojový preklad cez Google Prekladač. ", a); document.body.prepend(back);
-    }
-    if (!proxied) {
+    {
       const mine = document.querySelector<HTMLMetaElement>('meta[name="app-version"]')?.content;
       const bar = document.getElementById("update")!;
       let shown = false;
@@ -268,13 +263,17 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     <section>
       <h3>Jazyk</h3>
       <div class="a11y-langs" translate="no">
-        <a href="#" data-lang="sk" aria-current="true"><span>SK</span>Slovenčina</a>
-        <a href="#" data-lang="en"><span>EN</span>English</a>
-        <a href="#" data-lang="de"><span>DE</span>Deutsch</a>
-        <a href="#" data-lang="hu"><span>HU</span>Magyar</a>
-        <a href="#" data-lang="pl"><span>PL</span>Polski</a>
+        <a href="#" data-lang="sk" lang="sk"><span>SK</span>Slovenčina</a>
+        <a href="#" data-lang="en" lang="en"><span>EN</span>English</a>
+        <a href="#" data-lang="de" lang="de"><span>DE</span>Deutsch</a>
+        <a href="#" data-lang="hu" lang="hu"><span>HU</span>Magyar</a>
+        <a href="#" data-lang="pl" lang="pl"><span>PL</span>Polski</a>
       </div>
-      <p class="a11y-note">Cudzie jazyky sú automatický preklad cez Google Prekladač: otvorí sa tá istá stránka preložená. Môže obsahovať nepresnosti, platí slovenský originál.</p>
+      <p class="a11y-note">Preložené je ovládanie stránky. Názvy zákonov, prepisy rozpravy a mená ostávajú po slovensky, tak ako ich zverejňuje NR SR.</p>
+    </section>
+    <section class="a11y-foot">
+      <button type="button" class="a11y-resetall" id="a11y-resetall">↺ Obnoviť pôvodné nastavenia</button>
+      <p class="a11y-note">Slovenčina, pôvodná veľkosť písma, bežný kontrast, animácie a farebný režim podľa systému.</p>
     </section>
   </dialog>
   <script>
@@ -302,18 +301,19 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
       const lang = t.closest<HTMLAnchorElement>("[data-lang]");
       if (lang) {
         e.preventDefault(); const l = lang.dataset.lang!;
-        if (l === "sk") { dlgA.close(); return; }
-        // Google's translation proxy for the current page (no script or cookie on our side).
-        const host = location.hostname.replace(/-/g, "--").replace(/\./g, "-");
-        location.href = `https://${host}.translate.goog${location.pathname}?_x_tr_sl=sk&_x_tr_tl=${l}&_x_tr_hl=${l}&_x_tr_pto=wapp${location.search ? "&" + location.search.slice(1) : ""}${location.hash}`;
+        if ((d.dataset.lang ?? "sk") === l) { dlgA.close(); return; }
+        store("fp-lang", l === "sk" ? null : l); location.reload();
       }
     });
     document.getElementById("a11y-contrast")!.addEventListener("change", (e) => { const on = (e.target as HTMLInputElement).checked; if (on) d.dataset.contrast = "high"; else delete d.dataset.contrast; store("fp-contrast", on ? "high" : null); });
     document.getElementById("a11y-motion")!.addEventListener("change", (e) => { const on = (e.target as HTMLInputElement).checked; if (on) d.dataset.motion = "off"; else delete d.dataset.motion; store("fp-motion", on ? "off" : null); });
     try { if (localStorage.getItem("fp-motion")) d.dataset.motion = "off"; } catch {}
     document.getElementById("a11y-open")!.addEventListener("click", () => { paint(); dlgA.showModal(); });
-    // On a translated copy, "Slovenčina" returns to the original site.
-    if (location.hostname.endsWith(".translate.goog")) for (const a of dlgA.querySelectorAll<HTMLAnchorElement>("[data-lang]")) a.removeAttribute("aria-current");
+    for (const a of dlgA.querySelectorAll<HTMLAnchorElement>("[data-lang]")) a.setAttribute("aria-current", String(a.dataset.lang === (d.dataset.lang ?? "sk")));
+    document.getElementById("a11y-resetall")!.addEventListener("click", () => {
+      for (const k of ["fp-lang", "fp-size", "fp-contrast", "fp-motion", "theme"]) store(k, null);
+      location.reload();
+    });
   </script>
 </body>
 </html>
