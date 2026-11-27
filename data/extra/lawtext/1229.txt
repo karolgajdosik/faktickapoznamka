@@ -1,0 +1,49 @@
+# Dôvodová správa
+A. Všeobecná časť
+Hlavným cieľom vládneho návrhu zákona, ktorým sa mení a dopĺňa zákon č. 251/2012 Z. z. o energetike a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a o zmene a doplnení niektorých zákonov (ďalej len „vládny návrh zákona“) je zúženie priestoru pre odber elektriny a plynu za sadzbu určenú pre domácnosť v prípadoch, ak odberateľ odobranú elektrinu alebo plyn používa na podnikanie a úprava niektorých regulačných nástrojov spôsobom, ktorý umožní operatívne reagovať na situáciu v čase, kedy vývoj cien môže mať negatívny dopad na rôzne skupiny odberateľov.
+Na strane odberateľov sa navrhuje zaviesť výslovnú povinnosť pri uzatváraní zmluvy predložiť vyhlásenie, že elektrinu alebo plyn bude odoberať ako odberateľ v domácnosti a tento údaj sa stane aj novou povinnou náležitosťou zmluvy o dodávke elektriny, zmluvy o združenej dodávke elektriny, zmluvy o dodávke plynu a zmluvy o združenej dodávke plynu. Na strane dodávateľov sa navrhuje zaviesť pravidlá pre prideľovanie sadzieb v jednotlivých skupinách odberateľov v rámci pravidiel trhu s elektrinou a plynom. Určenie sadzby pre domácnosť v rozpore s pravidlami v prípadoch, kedy o tomto rozpore dodávateľ musel vedieť, sa stane osobitnou skutkovou podstatou správneho deliktu v rámci postihu postupov v rozpore s cenovou reguláciou.
+Vládny návrh zákona nebude mať vplyv na rozpočet verejnej správy a limit verejných výdavkov, nemá sociálne vplyvy, vplyvy na podnikateľské prostredie, životné prostredie, na služby verejnej správy pre občana, na informatizáciu a tiež nemá vplyv na manželstvo, rodičovstvo a rodinu. 
+Vládny návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi, nálezmi ústavného súdu, inými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, s právom Európskej únie a s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republiky viazaná. Návrh zákona je v súlade s Európskou chartou miestnej samosprávy.
+Vládny návrh zákona nebude predmetom vnútrokomunitárneho pripomienkového konania.
+Návrh zákona nebol predmetom medzirezortného pripomienkového konania, predkladá sa na rokovanie vlády Slovenskej republiky v súlade s § 27 ods. 1 zákona č. 400/2015 Z. z. o tvorbe právnych predpisov a o Zbierke zákonov Slovenskej republiky a o zmene a doplnení niektorých zákonov v znení neskorších predpisov.
+Účinnosť sa navrhuje 1. júla 2026, okrem úprav v zákone o hlásení pobytu občanov, ktorých účinnosť sa navrhuje 1. septembra 2026.
+.
+B. Osobitná časť
+K čl. I (zákon č. 251/2012 Z. z.)
+K bodu 1 [§ 3 písm. a) desiaty bod]
+Vzhľadom na to, že kategória zraniteľných odberateľov je primárne ustanovená na účely cenovej regulácie a je potrebné, aby bolo možné reagovať na aktuálnu situáciu na trhu s energiami, navrhuje sa ustanoviť okruh zraniteľných odberateľov nariadením vlády Slovenskej republiky. V súvisiacom splnomocňovacom ustanovení sa ustanovujú aj kritériá, ktoré sa pri určovaní skupín zraniteľných odberateľov majú brať do úvahy a sú nimi základe kritériá spotreby, spôsobu využitia elektriny alebo plynu, predmetu činnosti, ktorú odberatelia vykonávajú, ako aj sociálne, ekonomické, demografické alebo iné obdobné dôvody.
+K bodom 2 a 3 (odkaz 7 a § 12 ods. 3)
+Legislatívno-technické úpravy.
+K bodu 4 (§ 17c ods. 1)
+V záujme jednoznačnej identifikácie odberateľa elektriny v domácnosti alebo odberateľa plynu v domácnosti sa navrhuje doplnenie, aby povinnou náležitosťou zmluvy o dodávke elektriny, zmluvy o združenej dodávke elektriny, zmluvy o dodávke plynu a zmluvy o združenej dodávke plynu bol údaj o tom, či odberateľom je odberateľ elektriny v domácnosti alebo odberateľ plynu v domácnosti. Z dôvodu zriadenia evidencie charakteru odberu na odbernom mieste, ktorá je potrebná tak na regulačné účely, ako aj na poskytovanie adresnej energopomoci sa navrhuje, aby tento údaj bol rovnako náležitosťou zmluvy s dodávateľom.
+K bodom 5 až 7 (§ 17c)
+Ide o legislatívno–technické úpravy v nadväznosti na navrhovanú úpravu v treťom bode.
+K bodom 8 a 9 (§ 17f)
+Navrhuje sa doplnenie novej náležitosti vyúčtovacích faktúr elektriny a plynu, ktorou je informácia o tom, či je odberateľ odberateľom v domácnosti. Dôvodom je snaha poskytnúť odberateľom jednoduchý spôsob. akým zistia, v akej skupine odberateľov sú zaradení. Nadväzne na túto zmenu sa navrhujú aj legislatívno-technické úpravy.
+K bodu 10 (§ 34 ods. 7)
+Na regulačné účely, ako aj na poskytovanie adresnej energopomoci sa navrhuje evidovať pri odberateľoch v domácnosti aj charakter odberu na odbernom mieste (typicky či ide o odber v byte, dome, záhrade, garáži a podobne). Klasifikáciu ustanoví vykonávací predpis, ktorý vydá ministerstvo hospodárstva, vychádzajúc najmä z oficiálnej klasifikácie stavieb a klasifikácie údajov v katastri nehnuteľností.
+K bodu 11 (§ 35 ods. 3)
+Navrhuje sa doplnenie povinností koncového odberateľa elektriny, aby pri uzatváraní zmluvy o dodávke elektriny a zmluvy o združenej dodávke elektriny poskytol úplné a pravdivé údaje, ako aj poskytol vyhlásenie, či ide o odberateľa elektriny v domácnosti alebo odberateľa elektriny mimo domácnosti spolu s identifikáciou odberných miest a s údajom o charaktere odberu. Ide o pendant zákazu pre odberateľov uzatvárať zmluvy na sadzbu pre domácnosti s právnickými osobami a podnikateľmi, ktorý sa navrhuje ustanoviť v zákone č. 250/2012 Z. z.
+K bodu 12 (§ 35b)
+Ide o legislatívno–technickú úpravu v nadväznosti na navrhovanú úpravu v treťom bode.
+K bodu 13 (§ 69 ods. 11)
+Dopĺňa sa povinnosť dodávateľa plynu viesť evidenciu odberateľov plynu v domácnosti v rovnakom rozsahu, ako to už je ustanovené v účinnej právnej úprave pre dodávateľa elektriny v § 34 ods. 7 zákona.
+K bodu 14 [§ 70 ods. 3 písm. g)]
+Navrhuje sa doplnenie povinností koncového odberateľa plynu, pri uzatváraní zmluvy o dodávke plynu a zmluvy o združenej dodávke plynu poskytol úplné a pravdivé údaje, ako aj poskytol vyhlásenie, či ide o odberateľa plynu v domácnosti alebo odberateľa plynu mimo domácnosti spolu s identifikáciou odberných miest a charakteru odberu.
+K bodu 15 (§ 90)
+V nadväznosti na navrhovanú úpravu sa dopĺňajú a spresňujú dozorové kompetencie Úradu pre reguláciu sieťových odvetví a definície správnych deliktov.
+K bodu 16 [§ 91 písm. f)]
+V nadväznosti na povinnosť vedenia evidencie odberateľov plynu v domácnosti sa navrhuje doplniť ustanovenie o správnych deliktoch totožne, ako pri rovnakom type povinnosti podľa § 34 ods. 7.
+K bodom 17 a 18 (§ 95)
+Nadväzne na ostatné úpravy sa navrhuje doplniť potrebné splnomocňujúce ustanovenia na vydanie vykonávacích predpisov.
+K bodu 19 (§ 96r)
+Navrhuje sa doplnenie prechodných ustanovení, ktorými sa upravujú právne vzťahy pri uzatváraní zmluvy o dodávke elektriny, zmluvy o združenej dodávke elektriny, zmluvy o dodávke plynu a zmluvy o združenej dodávke plynu. 
+Na plnenie povinnosti dodávateľov plynu viesť evidenciu odberateľov plynu v domácnosti sa ustanovujú hraničné dátumy, ktoré na jednej strane umožnia efektívne plnenie povinností a na druhej strane vytvoria dostatočný časový priestor na optimalizáciu procesných krokov na strane dodávateľov plynu.
+K čl. II (zákon č. 253/1998 Zb.)
+K bodom 1 a 2 (§ 8 ods. 1 a 5)
+Navrhovanou právnou úpravou sa reaguje na požiadavky aplikačnej praxe. Doterajšia právna úprava umožňovala evidenciu prechodného pobytu bez časového obmedzenia, resp. bez dostatočných limitov, čo v praxi vytváralo priestor na účelové prihlasovanie sa na rôzne adresy.
+Zavedením maximálnej dĺžky trvania prechodného pobytu sa zabezpečí, že evidencia prechodného pobytu bude odrážať reálny a časovo ohraničený stav. Obmedzením počtu súčasne evidovaných prechodných pobytov sa predíde situáciám, v ktorých je jedna osoba formálne evidovaná na viacerých adresách bez reálneho vzťahu k daným nehnuteľnostiam.
+Cieľom navrhovanej úpravy je zvýšiť transparentnosť evidencie obyvateľov, zosúladiť evidenčný stav so skutočným miestom pobytu, posilniť právnu istotu obcí a iných orgánov verejnej moci pri výkone ich pôsobnosti.
+Navrhovaná úprava má potenciál využiteľnosti aj ako nástroj vyššej adresnosti rôznych druhov podpory a pomoci, vrátane pomoci s cenami energií, čím prispieva k spravodlivejšiemu rozdeleniu verejných zdrojov a k efektívnejšiemu výkonu pôsobnosti orgánov verejnej moci.
+K bodu 3 (§27b) 
+Pre zosúladenie evidovaných prechodných pobytov s novo-zavádzanými podmienkami sa navrhujú prechodné ustanovenia, ktorými sa zabezpečí odstránenie duplicít v evidencii prechodných pobytov, ktoré vznikli pred účinnosťou novely v prípadoch, keď mal občan zapísaných viacero prechodných pobytov súčasne. Keďže podľa novej právnej úpravy bude môcť mať občan len jeden prechodný pobyt v danom čase, je potrebné zabezpečiť zosúladenie údajov v registri obyvateľov s novou právnou úpravou a to stanovením jednotného dátumu, ku ktorému sa ukončia všetky paralelne evidované prechodné pobyty občana. Taktiež sa v rámci prechodných ustanovení v súvislosti so zavedením maximálnej dĺžky trvania prechodného pobytu ri

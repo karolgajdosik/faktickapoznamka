@@ -1,0 +1,99 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Návrh zákona o registri jednotiek pre poskytovanie služieb krátkodobého prenájmu ubytovania a o doplnení zákona č. 264/2022 Z. z. o mediálnych službách a o zmene a doplnení niektorých zákonov (zákon o mediálnych službách) v znení neskorších predpisov (ďalej len „návrh zákona“) sa predkladá na základe Plánu legislatívnych úloh vlády Slovenskej republiky na rok 2025.
+Návrhom zákona sa do právneho poriadku Slovenskej republiky implementuje nariadenie Európskeho parlamentu a Rady (EÚ) 2024/1028 z 11. apríla 2024 o zbere a poskytovaní údajov týkajúcich sa služieb krátkodobého prenájmu ubytovania a o zmene nariadenia (EÚ) 2018/1724 (Ú. v. EÚ L, 2024/1028, 29.4.2024) (ďalej len „nariadenie (EÚ) 2024/1028“).
+Cieľom návrhu zákona je vytvoriť právny rámec transparentného zberu a poskytovania údajov v oblasti služieb krátkodobého prenájmu ubytovania prostredníctvom online platforiem, zriadiť Register jednotiek pre poskytovanie služieb krátkodobého prenájmu ubytovania (ďalej len „register“), ustanoviť povinnosti hostiteľov, ktorými sú fyzické osoby, fyzické osoby – podnikatelia alebo právnické osoby poskytujúce služby krátkodobého prenájmy ubytovania a poskytovateľov online platforiem pre krátkodobé prenájmy, mechanizmy dohľadu, sankcie a podmienky poskytovania údajov dotknutým orgánom.
+Register ako informačný systém verejnej správy má zároveň plniť funkciu jednotného digitálneho kontaktného miesta.
+Návrh zákona ustanovuje taktiež pôsobnosť ministerstva cestovného ruchu ako správcu a prevádzkovateľa registra, registrujúceho orgánu, vnútroštátneho koordinátora a orgánu zodpovedného za monitorovanie plnenia povinností podľa nariadenia (EÚ) 2024/1028. 
+V súvislosti s návrhom zákona sa novelizuje aj zákon č. 264/2022 Z. z. o mediálnych službách a o zmene a doplnení niektorých zákonov (zákon o mediálnych službách) v znení neskorších predpisov. 
+Pre komplexnosť dôvodovej správy uvádza predkladateľ stručné zhrnutie účelu a cieľa nariadenia (EÚ) 2024/1028, ktoré je predmetom implementácie nasledovne:
+Služby krátkodobého prenájmu ubytovania, ktoré ponúkajú hostitelia, existujú mnoho rokov ako doplnok k iným ubytovacím službám ako sú hotely, hostely alebo penzióny. Objem poskytovaných služieb krátkodobého prenájmu v Európskej únii značne rastie vďaka rastu platformovej ekonomiky. Hoci služby krátkodobého prenájmu ubytovania vytvárajú množstvo príležitostí pre hostí, hostiteľov a celý ekosystém cestovného ruchu, ich rýchly rast vyvolal obavy a výzvy najmä pre miestne komunity a orgány verejnej moci napríklad tým, že prispievajú k menšej dostupnosti nehnuteľností na bývanie určených na dlhodobý prenájom a zvyšovaniu nájomného a cien bývania. Nariadenie (EÚ) 2024/1028 sa zameriava na jednu z hlavných výziev a to na nedostatok spoľahlivých informácií o službách krátkodobého prenájmu ubytovania, najmä totožnosť hostiteľa, miesto, kde sa tieto služby ponúkajú, a ich trvanie, čo sťažuje orgánom verejnej správy posúdenie skutočného vplyvu služieb krátkodobého prenájmu ubytovania a prípravu vhodných a primeraných politických reakcií a ich presadzovanie.
+Cieľom nariadenia (EÚ) 2024/1028 je tiež zabezpečiť, aby členské štáty Európskej únie neregulovali žiadosti o poskytovanie údajov bez zavedenia potrebných registračných systémov, databáz a jednotného digitálneho kontaktného miesta a aby uľahčili primerané a bezpečné poskytovanie údajov online platformami pre krátkodobé prenájmy v rámci vnútorného trhu, ktoré je v súlade s ochranou súkromia.
+Návrh zákona má pozitívny aj negatívny vplyv na rozpočet verejnej správy, nemá vplyv na limity výdavkov verejnej správy, má pozitívny aj negatívny vplyv na podnikateľské prostredie, pozitívne sociálne vplyvy, nemá vplyv na životné prostredie, má pozitívny vplyv na informatizáciu spoločnosti, negatívny vplyv na služby verejnej správy pre občana a nemá vplyv na manželstvo, rodičovstvo a rodinu. Negatívne vplyvy na rozpočet verejnej správy budú zabezpečené v rámci schválených limitov rozpočtu kapitoly Ministerstva cestovného ruchu a športu SR.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi a nálezmi Ústavného súdu Slovenskej republiky, so zákonmi a ostatnými všeobecne záväznými právnymi predpismi, s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Zákon o registri jednotiek pre poskytovanie služieb krátkodobého prenájmu ubytovania a o doplnení zákona č. 264/2022 Z. z. o mediálnych službách a o zmene a doplnení niektorých zákonov (zákon o mediálnych službách) v znení neskorších predpisov 
+Predkladateľ (a spolupredkladateľ)
+Vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+Implementuje sa nariadenie Európskeho parlamentu a Rady (EÚ) 2024/1028 z 11. apríla 2024 o zbere a poskytovaní údajov týkajúcich sa služieb krátkodobého prenájmu ubytovania a o zmene nariadenia (EÚ) 2018/1724.
+Termín začiatku a ukončenia PPK
+január 2026
+Predpokladaný termín predloženia na pripomienkové konanie
+február 2026
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+marec 2026
+Definovanie problému
+Slovenská republika má povinnosť implementovať nariadenie Európskeho parlamentu a Rady (EÚ) 2024/1028 z 11. apríla 2024 o zbere a poskytovaní údajov týkajúcich sa služieb krátkodobého prenájmu ubytovania a o zmene nariadenia (EÚ) 2018/1724 (Ú. v. EÚ L, 2024/1028, 29.4.2024), ktorou sa má zabezpečiť spravodlivé, jednoznačné a transparentné poskytovanie služieb krátkodobého prenájmu ubytovania v celej Európskej Únii.
+Ciele a výsledný stav
+Cieľom návrhu zákona je zabezpečiť transparentný zber a poskytovanie údajov v súlade s nariadením (EÚ) 2024/1028, ustanoviť povinnosti hostiteľov a spôsob plnenia povinností online platforiem, umožniť prístup k údajom pre orgány verejnej správy a vytvoriť právny rámec pre kontrolu a sankcie.
+Dotknuté subjekty
+Hostitelia – predávajúci cez online platformy (fyzické osoby, fyzické osoby – podnikatelia, právnické osoby), prevádzkovatelia online platforiem, Ministerstvo cestovného ruchu a športu Slovenskej republiky, mestá a obce (správcovia dane na účely výkonu správy dane z ubytovania), Finančná spravodajská jednotka, Policajný zbor Slovenskej republiky, Štatistický úrad Slovenskej republiky, živnostenské úrady, Rada pre mediálne služby. 
+Alternatívne riešenia
+Alternatívne riešenie neboli identifikované.
+Nulový variant nie je možné realizovať, keďže ide o implementáciu nariadenia EÚ a v prípade nesplnenia povinnosti Európska komisia začne voči Slovenskej republike konanie o porušení podľa Zmluvy o fungovaní Európskej únie.
+Vykonávacie predpisy
+Predpokladá sa prijatie/zmena vykonávacích predpisov?
+☒ Áno
+☐ Nie
+Ak áno, uveďte ktoré oblasti budú nimi upravené, resp. ktorých vykonávacích predpisov sa zmena dotkne:
+Ministerstvo cestovného ruchu a športu Slovenskej republiky vydá všeobecne záväzný právny predpis, ktorým upraví podrobnosti o štruktúre a vedení registra, spôsob a formát zápisu údajov do registra, typy jednotiek a poskytovanie údajov z registra.
+Transpozícia/implementácia práva EÚ 
+Uveďte, či v predkladanom návrhu právneho predpisu dochádza ku goldplatingu podľa tabuľky zhody, resp. či ku goldplatingu dochádza pri implementácii práva EÚ. 
+ ☐ Áno ☒ Nie
+Národná právna úprava nejde nad rámec minimálnych požiadaviek EÚ. Ide o minimalistickú implementáciu nariadenia EÚ.
+Ak áno, uveďte, ktorých vplyvov podľa bodu 9 sa goldplating týka: 
+Preskúmanie účelnosti
+Preskúmanie účelnosti a efektívnosti zákona sa navrhuje do 3 rokov od nadobudnutia účinnosti prostredníctvom Ministerstva cestovného ruchu a športu SR. Základnými kritériami sú: počet zaregistrovaných jednotiek a hostiteľov, počet uložených sankcií, využívanie údajov orgánmi verejnej správy.
+* vyplniť iba v prípade, ak materiál nie je zahrnutý do Plánu práce vlády Slovenskej republiky alebo Plánu legislatívnych úloh vlády Slovenskej republiky. 
+** vyplniť iba v prípade, ak sa záverečné posúdenie vybraných vplyvov uskutočnilo v zmysle bodu 9.1. jednotnej metodiky.
+*** posudzovanie sa týka len zmien v I. a II. pilieri univerzálneho systému dôchodkového zabezpečenia s identifikovaným dopadom od 0,1 % HDP (vrátane) na dlhodobom horizonte
+Vybrané vplyvy materiálu
+Vplyvy na rozpočet verejnej správy
+☒
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ z toho rozpočtovo zabezpečené vplyvy, 
+ v prípade identifikovaného negatívneho 
+ vplyvu
+☒
+Áno
+☐
+Nie
+☐
+Čiastočne
+v tom vplyvy na rozpočty obcí a vyšších územných celkov
+☒
+Pozitívne
+☐
+Žiadne
+☐
+Negatívne
+z toho rozpočtovo zabezpečené vplyvy,
+v prípade identifikovaného negatívneho vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+Vplyv na dlhodobú udržateľnosť verejných financií v prípade vybraných opatrení ***
+☐
+Áno
+☐
+Nie
+Vplyvy na limit ve

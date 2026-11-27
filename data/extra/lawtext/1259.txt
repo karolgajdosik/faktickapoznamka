@@ -1,0 +1,38 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Na rokovanie Národnej rady Slovenskej republiky sa predkladá návrh poslancov Národnej rady Slovenskej republiky na vydanie zákona, ktorým sa mení a dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov.
+Cieľom predkladaného návrhu zákona je upresniť procesy a povinnosť poskytovateľov zdravotnej starostlivosti uvádzať v zúčtovacej dávke pre zdravotné poisťovne identifikačné číslo elektronického zdravotného záznamu v elektronickej zdravotnej knižke, a to predovšetkým vymedzením výnimiek, kedy zdravotné poisťovne predmetné identifikačné číslo nepožadujú a zároveň vymedzením prechodných ustanovení pre jednotlivé druhy zdravotníckych zariadení v súvislosti s danou povinnosťou. 
+Dátum účinnosti návrhu zákona sa navrhuje na 30. júna 2026, 1. júla 2026 a 1. februára 2027 v závislosti od jednotlivých ustanovení. 
+Predkladaný návrh zákona nepredpokladá žiadne vplyvy na rozpočet verejnej správy, sociálne vplyvy, vplyvy na podnikateľské prostredie, životné prostredie ani vplyv na manželstvo, rodičovstvo a rodinu a predpokladá pozitívne vplyvy na informatizáciu spoločnosti a služby verejnej správy pre občana. 
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a inými zákonmi, nálezmi Ústavného súdu SR, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná a súčasne je v súlade s právom Európskej únie.
+B. Osobitná časť
+K Čl. I 
+K bodu 1
+Dopĺňa sa kompetencia zdravotnej poisťovne neuhradiť poskytnutú zdravotnú starostlivosť, ak zúčtovacia dávka neobsahuje identifikačné číslo elektronického zdravotného záznamu, ktoré je súčasťou zúčtovacej dávky.
+K bodu 2
+Súčasťou zúčtovacej dávky podľa § 8aa odseku 2, ktorú poskytovateľ zdravotnej starostlivosti zasiela zdravotnej poisťovni sa stáva identifikačné číslo elektronického zdravotného záznamu v elektronickej zdravotnej knižke. Doplnením odseku 5 v § 8aa sa vytýčia výnimky, keď zdravotná poisťovňa pri poskytovaní zdravotnej starostlivosti v špecifických prípadoch predmetné identifikačné číslo nepožaduje uvádzať v zúčtovacej dávke. 
+K bodu 3
+Dopĺňa sa kompetencia zdravotnej poisťovne vykonáva kontrolu identifikačného čísla elektronického zdravotného záznamu v zúčtovacej dávke s identifikačným číslom elektronického zdravotného záznamu v elektronickej zdravotnej knižke na základe údajov, ktoré bude dostávať z Národného centra zdravotníckych informácií.
+K bodu 4
+Dopĺňajú sa prechodné ustanovenia, ktoré určia jednotlivé typy poskytovateľov a ich odborné zameranie zariadenia, ktorých povinnosť uvádzať identifikačné číslo elektronického zdravotného záznamu v elektronickej zdravotnej knižke sa odsúva do 31. decembra 2026 alebo 30. júna 2027.
+K bodu 5
+Dopĺňa sa príloha k prechodným ustanoveniam, kde sa určia jednotlivé typy poskytovateľov a ich odborné zameranie zariadenia, ktorých povinnosť uvádzať identifikačné číslo elektronického zdravotného záznamu v elektronickej zdravotnej knižke sa odsúva do 31. decembra 2026 alebo 30. júna 2027.
+K Čl. II
+K bodu 1
+Z dôvodu jednoznačnosti sa do definície pojmov dopĺňa definícia identifikačného čísla elektronického zdravotného záznamu.
+K bodu 2
+Dopĺňa sa povinnosť národného centra zdravotníckych informácií zasielať údaje o elektronických zdravotných záznamoch zapísaných do elektronickej zdravotnej knižky v národnom zdravotníckom informačnom systéme zdravotným poisťovňam na účel overenia správnosti údajov v zúčtovacej dávke.
+K bodu 3
+Cieľom je vypustiť § 5 ods. 17 zákona č. 153/2013 Z. z., podľa ktorého sa do elektronickej zdravotnej knižky nezapisujú údaje z klinického skúšania humánnych liekov, klinického skúšania zdravotníckych pomôcok a štúdie výkonu diagnostickej zdravotníckej pomôcky in vitro. Klinické skúšanie je podľa § 2 ods. 12 zákona č. 576/2004 Z. z. považované za biomedicínsky výskum, a tým aj za formu zdravotnej starostlivosti. Vzhľadom na to je opodstatnené, aby údaje relevantné pre zdravotný stav osoby a pre kontinuitu poskytovania zdravotnej starostlivosti mohli byť súčasťou elektronickej zdravotnej knižky. Vypustením predmetného ustanovenia sa odstráni plošná zákonná výnimka zo zapisovania údajov z klinických skúšaní do elektronickej zdravotnej knižky. Tým sa posilní komplexnosť elektronickej zdravotnej dokumentácie a vytvorí sa priestor na lepšiu dostupnosť klinicky významných údajov na účely poskytovania zdravotnej starostlivosti. Navrhovaná zmena zároveň nevylučuje potrebu primeraného a odborného posudzovania rozsahu zapisovaných údajov s ohľadom na ich klinickú významnosť, ochranu citlivých údajov a osobitosti klinického skúšania.
+K Čl. III
+K bodu 1 
+Legislatívno-technická úprava vzhľadom na doplnenie nového písmena v § 3a ods. 28 zákona č. 153/2013 Z. z., ktorého účinnosť je navrhnutá skôr ako účinnosť už platne schváleného ustanovenia, ktoré bolo nutné preznačiť. 
+K bodu 2
+Upravuje sa povinnosť poskytovateľa zdravotnej starostlivosti viesť zdravotnú dokumentáciu v súvislosti s identifikačným číslom elektronického zdravotného záznamu, ktoré sa stáva súčasťou zúčtovacej dávky pre zdravotnú poisťovňu. 
+K bodu 3
+Dopĺňa sa ustanovenie po povinnosti uvádzať v zúčtovacej dávke identifikačné číslo elektronického zdravotného záznamu v súvislosti s ustanovením výnimiek a prechodných ustanovení. 
+K bodu 4
+Legislatívno-technická úprava vzhľadom na doplnenie nového písmena v § 3a ods. 28 zákona č. 153/2013 Z. z., ktorého účinnosť je navrhnutá skôr ako účinnosť už platne schváleného ustanovenia, ktoré bolo nutné preznačiť. 
+K Čl. IV
+Účinnosť zákona sa navrhuje na 30. júna 2026 okrem čl. I, čl. II bodu 1, čl. III bodov 1 a 2, ktoré účinnosť sa navrhuje na 1. júla 2026, čl. II § 3a ods. 28 písm. n) v bode 2, ktorého účinnosť sa navrhuje na 1. augusta 2026 a čl. II § 3a ods. 28 písm. o) v bode 2, ktorého účinnosť sa navrhuje na 1. februára 2027.

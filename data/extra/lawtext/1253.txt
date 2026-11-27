@@ -1,0 +1,15 @@
+# Dôvodová správa
+DÔVODOVÁ SPRÁVA
+A. Všeobecná časť 
+Cieľom návrhu zákona, ktorým sa dopĺňa zákon č. 343/2015 Z. z. o verejnom obstarávaní a o zmene a doplnení niektorých zákonov v znení neskorších predpisov, je zjednodušenie verejného obstarávania vo vzťahu k licenciám na používanie umelej inteligencie. 
+Dôvodom tejto úpravy je skutočnosť, že systémy umelej inteligencie nie sú bežným tovarom alebo službou. Ich implementácia do verejnej správy vyžaduje osobitný režim posudzovania, ktorý presahuje rámec ekonomických kritérií (najlepší pomer ceny a kvality).
+Pri nižších sumách (podlimitné zákazky) by náklady na proces verejného obstarávania prevýšili prínos samotnej súťaže.
+Výnimka pod písmenom af) nemá slúžiť na obchádzanie trhu, ale na flexibilné nadobúdanie licencií, ktoré sú kľúčové pre digitálnu suverenitu a efektivitu moderného štátu.
+Umelá inteligencia v dnešnej dobe funguje ako multiplikátor ľudskej produktivity. Cieľom návrhu je zjednodušenie obstarávania dodania licencií na používanie umelej inteligencie, ktorej používanie tvorí nevyhnutnú súčasť pracovného ako aj vzdelávacieho procesu na všetkých úrovniach spoločnosti a v súčasnosti je významným predpokladom ekonomického rastu. Informačné systémy umelej inteligencie bývajú často unikátne a úzko späté s dátami a infraštruktúrou konkrétneho objednávateľa. 
+Návrh zákona je v súlade s Ústavou, ústavnými zákonmi, medzinárodnými zmluvami, ktorými je Slovenská republika viazaná, zákonmi, v súlade s právom Európskej únie a v súlade s nálezmi Ústavného súdu Slovenskej republiky.
+Predkladaný návrh zákon nepredpokladá žiaden vplyv na rozpočet verejnej správy, podnikateľské prostredie, manželstvo, rodičovstvo a rodinu ani na životné prostredie a žiadne sociálne vplyvy. Predkladaný návrh zákon predpokladá pozitívny vplyv na informatizáciu spoločnosti a na služby verejnej správy.
+B. Osobitná časť
+K Čl. I
+V ustanovení § 1 ods. 13, ktoré definuje výnimky z pôsobnosti zákona vzťahujúcej sa na podlimitné zákazky, sa dopĺňa nové písmeno, ktoré explicitne vyníma nákup licencií k systémom umelej inteligencie z povinnosti postupovať podľa častí zákona o verejnom obstarávaní upravujúcich režim podlimitnej zákazky.
+K Čl. II
+Účinnosť sa navrhuje od 2. augusta 2026.
