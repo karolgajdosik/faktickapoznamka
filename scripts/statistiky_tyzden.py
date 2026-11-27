@@ -24,6 +24,8 @@ import requests
 CF = "https://api.cloudflare.com/client/v4"
 HOSTY = ["faktickapoznamka.sk", "www.faktickapoznamka.sk"]
 # Brevo smie odosielať len z overenej adresy; kým nie je overená doména faktickapoznamka.sk, ide pošta z overenej adresy mestovcislach.sk.
+# Brevo API kľúč (vytvorený 27. 11. 2026) vyprší o rok; od mesiaca vopred report pripomína jeho výmenu.
+BREVO_KLUC_VYPRSI = date(2027, 11, 27)
 ODOSIELATEL = {"name": "faktickapoznamka.sk", "email": os.environ.get("STATISTIKY_ODOSIELATEL", "").strip() or "upozornenia@mestovcislach.sk"}
 
 DOTAZ = """query($a: String!, $f: AccountRumPageloadEventsAdaptiveGroupsFilter_InputObject!, $p: AccountRumPageloadEventsAdaptiveGroupsFilter_InputObject!) {
@@ -164,6 +166,15 @@ def stav_webu(od: date) -> str:
                + t_ + "</table>" if riadky else ""))
 
 
+def pripomienka() -> str:
+    dni = (BREVO_KLUC_VYPRSI - date.today()).days
+    if dni > 31:
+        return ""
+    return (f'<p style="margin:20px 0 0;padding:10px 12px;background:#fff4e5;border-radius:8px">Brevo API kľúč pre tento e-mail vyprší '
+            f'{BREVO_KLUC_VYPRSI.day}. {BREVO_KLUC_VYPRSI.month}. {BREVO_KLUC_VYPRSI.year} (o {max(dni, 0)} dní). Vytvorte nový (Brevo → SMTP &amp; API → API Keys, '
+            f'Transactional email: All) a uložte ho do GitHub secretu BREVO_API_KEY; potom upravte dátum BREVO_KLUC_VYPRSI v scripts/statistiky_tyzden.py.</p>')
+
+
 def main() -> int:
     token = os.environ.get("CF_API_TOKEN", "").strip()
     brevo = os.environ.get("BREVO_API_KEY", "").strip()
@@ -198,6 +209,7 @@ def main() -> int:
 {tabulka('Zariadenia', zariadenia, spolu)}
 {tabulka('Krajiny', krajiny, spolu)}
 {stav_webu(od)}
+{pripomienka()}
 <p style="margin-top:24px;font-size:12px;color:#888">Cloudflare Web Analytics (bez cookies, bez robotov). „Priamo / správy“ sú aj odkazy poslané cez WhatsApp, Messenger či e-mail.</p></div>"""
     print(f"{obdobie}: {spolu} návštev ({zmena}); stránky {len(stranky)}, zdroje {len(zdroje)}")
     if "--nahlad" in sys.argv or not brevo:
