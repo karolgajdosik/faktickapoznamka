@@ -65,3 +65,6 @@ for sk, en, de, hu, pl in [
     ("AI zhrnutie", "AI summary", "KI-Zusammenfassung", "MI-összefoglaló", "Podsumowanie AI"),
 ]:
     E(sk, en, de, hu, pl)
+
+E("Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Prevádzkovateľ:", "Unofficial, independent site. Not run by the National Council of the Slovak Republic. Operator:", "Inoffizielle, unabhängige Seite. Keine Seite des Nationalrats der Slowakischen Republik. Betreiber:", "Nem hivatalos, független oldal. Nem a Szlovák Köztársaság Nemzeti Tanácsának oldala. Üzemeltető:", "Nieoficjalna, niezależna strona. Nie jest stroną Rady Narodowej Republiki Słowackiej. Operator:")
+E("Zdroj dát:", "Data source:", "Datenquelle:", "Adatforrás:", "Źródło danych:")
