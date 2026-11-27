@@ -1,0 +1,62 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Vláda Slovenskej republiky predkladá v súlade s Plánom legislatívnych úloh vlády Slovenskej republiky na rok 2026 návrh zákona, ktorým sa mení a dopĺňa zákon č. 530/2011 Z. z. o spotrebnej dani z alkoholických nápojov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (ďalej len „návrh zákona“).
+Hlavným dôvodom vypracovania predkladaného návrhu zákona je zlepšenie podnikateľského prostredia a zefektívnenie výkonu správy dane v nadväznosti na podnety z aplikačnej praxe. Vzhľadom na to, že jednotlivé právne úpravy spotrebných daní sú postavené na rovnakých systémových princípoch a mechanizmoch správy dane, ako aj obdobných inštitútoch fungovania, je potrebné vykonať úpravy aj vybraných zákonov o spotrebných daniach, a to zákona č. 98/2004 Z. z. o spotrebnej dani z minerálneho oleja v znení neskorších predpisov, zákona č. 106/2004 Z. z. o spotrebnej dani z tabakových výrobkov v znení neskorších predpisov a zákona č. 609/2007 Z. z. o spotrebnej dani z elektriny, uhlia a zemného plynu v znení neskorších predpisov.
+Cieľom návrhu zákona je:
+realizovať úpravy zamerané na skvalitnenie zákonných mechanizmov, zníženie administratívnej záťaže, ako aj na spresnenie práv a povinností jednotlivých subjektov vyplývajúce zo zistení a poznatkov z aplikačnej praxe,
+vytvoriť právnu istotu pre daňové subjekty i správcu dane spresnením požadovaných povinností a postupov,
+zefektívniť výkon daňového dozoru v prípade trvalej prítomnosti správcu dane v daňovom sklade,
+spresniť práva a povinností právnických osôb a fyzických osôb v oblasti výroby, spracovania, prijímania, odosielania a skladovania vína,
+spresniť kompetencie správcu dane pri zabezpečovaní, zaistení a likvidácii tovaru (predmetu dane), ktorý prepadol v prospech štátu,
+v nadväznosti na podnety z aplikačnej praxe, legislatívno-technická úprava niektorých ustanovení zákonov
+na úpravu v zákonoch o spotrebných daniach súvisiacu so zabezpečením, zaistením a následným zničením predmetov spotrebnej dane nadväzuje novela zákona o dani z príjmov (obstarávacia cena predmetu spotrebnej dane sa bude považovať za nedaňový výdavok) a zároveň sa nastavuje mechanizmus asignácie dane rodičom pri spätnom priznávaní dôchodkov.
+Predpokladané vplyvy na rozpočet verejnej správy, podnikateľské prostredie a na informatizáciu spoločnosti sú vyjadrené v doložke vybraných vplyvov. Návrh zákona má pozitívny sociálny vplyv a nemá vplyvy na rozpočty obcí a rozpočty vyšších územných celkov, nemá vplyvy na limit verejných výdavkov, nemá vplyvy na životné prostredie, ani na služby verejnej správy pre občana a na manželstvo, rodičovstvo a rodinu.
+Predkladaný návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi, nálezmi Ústavného súdu Slovenskej republiky a inými právnymi predpismi, medzinárodnými zmluvami a dokumentmi, ktorými je Slovenská republika viazaná, ako aj v súlade s právom Európskej únie.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 530/2011 Z. z. o spotrebnej dani z alkoholických nápojov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony 
+Predkladateľ (a spolupredkladateľ)
+Vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Smernica Rady (EÚ) 2020/262 z 19. decembra 2019, ktorou sa ustanovuje všeobecný systém spotrebných daní (prepracované znenie) (Ú. v. EÚ L 58, 27.2.2020) v platnom znení.
+Termín začiatku a ukončenia PPK
+Máj 2026
+Predpokladaný termín predloženia na pripomienkové konanie
+Jún 2026
+Predpokladaný termín začiatku a ukončenia ZP** 
+Máj 2026
+Predpokladaný termín predloženia na rokovanie vlády SR*
+August 2026
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Hlavným dôvodom vypracovania predkladaného návrhu zákona, ktorým sa mení a dopĺňa zákon č. 530/2011 Z. z. o spotrebnej dani z alkoholických nápojov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (ďalej len „návrh zákona“) je zlepšenie podnikateľského prostredia a zefektívnenie výkonu správy dane v nadväznosti na podnety z aplikačnej praxe.
+Na základe podnetov z aplikačnej praxe sa návrhom zákona definuje, resp. precizuje pojem nakladania s predmetom spotrebnej dane, ktorého pôvod alebo spôsob nadobudnutia nevie akákoľvek osoba preukázať v súlade so zákonmi upravujúcimi spotrebné dane. V súvislosti s preukazovaním pôvodu predmetu spotrebnej dane sa precizujú aj ustanovenia upravujúce miestnu príslušnosť colného úradu, vznik daňovej povinnosti, povinnosť zaplatiť daň, postup colného úradu, správne delikty a priestupky.
+Za účelom znižovania administratívnej záťaže sa navrhuje zefektívnenie výkonu daňového dozoru v prípade trvalej prítomnosti správcu dane v daňovom sklade pri výrobe liehu, zrušenie povinnosti uchovávať v prevádzkarni doklady o nákupe a predaji spotrebiteľského balenia liehu, úprava povinností vykonania daňovej kontroly pre správcu dane do zániku práva vyrubiť daň alebo oslobodenie od označovania kontrolnou známkou pre alkoholický nápoj v jednorazovom obale na nápoje z kovu.
+Okrem znižovania administratívnej záťaže, sa zavedením mimoriadnej daňovej povinnosti pre výrobky súvisiaci s tabakovými výrobkami (ITV) pri zmene sadzby, sleduje aj eliminácia ekologickej záťaže, ktorú osoby obchodujúce s ITV museli znášať pri plnení povinnosti zničenia nepredaných zásob v prípade ITV označených kontrolnou známkou prislúchajúcou starej sadzbe spotrebnej dane.
+Zároveň sa návrhom zákona precizuje inštitút malého výrobcu vína. Ide o špecifický režim, ktorého cieľom je podpora konkurencieschopnosti malých producentov uľahčením prístupu k predaju vlastnej produkcie na spoločnom trhu EÚ.
+Návrhom zákona sa v zákone o dani z príjmov upravuje problematika daňových výdavkov a daňovej asignácie rodičom. 
+Ciele a výsledný stav
+Uveďte hlavné ciele predkladaného materiálu (aký výsledný stav má byť prijatím materiálu dosiahnutý, pričom dosiahnutý stav musí byť odlišný od stavu popísaného v bode 2. Definovanie problému). 
+Zákony upravujúce spotrebné dane
+Realizovať úpravy zamerané na skvalitnenie zákonných mechanizmov, ako aj na spresnenie práv a povinností jednotlivých subjektov vyplývajúce zo zistení a poznatkov z aplikačnej praxe.
+Upravuje sa pojem nakladania s predmetom spotrebnej dane, ktorého pôvod alebo spôsob nadobudnutia nevie akákoľvek osoba preukázať v súlade so zákonmi upravujúcimi spotrebné dane.
+Umožňuje sa vrátenie dane z preukázateľne zdanených bezdymových tabakových výrobkov a výrobkov súvisiacich s tabakovými výrobkami, ktoré boli zničené colným úradom, ak o zničenie požiadal subjekt, ktorý za ne zaplatil daň a označil kontrolnou známkou.
+Vytvoriť právnu istotu pre daňové subjekty i správcu dane spresnením uložených povinností a požadovaných postupov.
+Zavádza sa napr. pre FR SR povinnosť zverejňovať na svojom webovom sídle aktualizované zoznamy držiteľov povolení na obchodovanie a distribúciu bezdymového tabakového výrobku a výrobku súvisiaceho s tabakovými výrobkami.
+Spresniť kompetencie správcu dane pri zabezpečovaní, zaistení a likvidácii tovaru (predmetu dane), ktorý prepadol v prospech štátu.
+Navrhuje sa, aby v prípade prepravy zaisteného alebo zabezpečeného alkoholického nápoja alebo alkoholického nápoja, ktorý sa stal majetkom štátu nebol správca dane povinný vystaviť elektronický dokument.
+Zároveň sa upravuje aby povinnosť mať pri predaji spotrebiteľského balenia liehu v daňovom voľnom obehu povolenie na jeho predaj alebo oprávnenie na distribúciu sa nevzťahovala na správcu dane v prípadoch priameho predaja hnuteľných vecí (napr. v rámci daňového exekučného konania alebo speňažovania majetku štátu). Cieľom je odstrániť administratívnu prekážku pri zákonnom postupe správcu dane.
+Zefektívniť výkon daňového dozoru v prípade trvalej prítomnosti správcu dane v daňovom sklade.
+Cieľom navrhovanej regulácie je okrem zvýšenia efektívnosti personálnej zložky colných úradov aj znižovanie prevádzkových nákladov podnikateľských subjektov, t. j. dotknutému subjektu odpadnú povinnosti spojené so zabezpečením požiadavky na pracovné prostredie pre zamestnanca colného úradu.
+Spresniť práva a povinnosti právnických osôb a fyzických osôb v oblasti výroby, spracovania, prijímania, odosielania a skladovania vína.
+Precizuje sa inštitút malého výrobcu vína. V súlade s európskou legislatívou sa členským štátom umožňuje oslobodiť malých výrobcov vína, ktorých produkcia nepresahuje 1 000 hl za vinársky rok, od požiadaviek spojených s režimom pozastavenia dane a s ním súvisiacim monitorovaním prepravy. Cieľom tejto úpravy je zníženie administratívnej záťa

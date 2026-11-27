@@ -1,0 +1,45 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Vláda Slovenskej republiky predkladá na rokovanie Národnej rady Slovenskej republiky vládny návrh zákona, ktorým sa menia a dopĺňajú niektoré zákony v súvislosti s ústavnými zmenami (ďalej len „návrh zákona“) z vlastnej iniciatívy.
+Návrh zákona bol vypracovaný ako nevyhnutná legislatívna reakcia vyvolaná novelizáciou konkrétnych ústavnoprávnych noriem. Predmetná ústavná novela priniesla viacero zásadných zmien v oblasti fungovania ústavných orgánov, ktoré si vyžadujú adekvátne premietnutie do podústavnej právnej úpravy. Cieľom predkladaného návrhu zákona je preto zabezpečiť súlad právneho poriadku s novými ústavnými ustanoveniami a vytvoriť právne a procesné podmienky na ich praktické uplatňovanie. 
+Návrh zákona nadväzuje predovšetkým na nové ústavnoprávne zmeny týkajúce sa zavedenia inštitútu ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky. Tento mechanizmus predstavuje osobitnú formu priamej demokracie, prostredníctvom ktorej občania Slovenskej republiky získavajú možnosť rozhodovať o predčasnom ukončení volebného obdobia parlamentu. Z uvedeného dôvodu je potrebné na zákonnej úrovni upraviť jednotlivé procesné aspekty súvisiace s prípravou, organizáciou, priebehom a vyhodnotením takéhoto hlasovania. 
+S navrhovanými zmenami zároveň súvisí vytvorenie nového typu konania pred Ústavným súdom Slovenskej republiky, konkrétne konania o sťažnosti proti výsledku ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky. Navrhovaná právna úprava reaguje na potrebu zabezpečiť efektívnu súdnu ochranu ústavnosti a zákonnosti tohto procesu. Z tohto dôvodu návrh zákona podrobnejšie upravuje procesné pravidlá konania pred Ústavným súdom Slovenskej republiky, najmä okruh oprávnených subjektov na podanie sťažnosti, lehoty na jej podanie, ako aj postup súdu pri preskúmavaní zákonnosti a ústavnosti výsledku predmetného hlasovania.
+Súčasťou návrhu je tiež systematizovanie a diferencovanie dôvodov na odvolanie člena Súdnej rady Slovenskej republiky (ďalej len „súdna rada“). Navrhovaná právna úprava reaguje na potrebu zvýšenia transparentnosti, predvídateľnosti a právnej istoty, a zároveň zohľadňuje dlhodobé odporúčania Európskej komisie obsiahnuté v pravidelných ročných správach o právnom štáte od roku 2022. 
+Návrh zákona nemá vplyv na rozpočet verejnej správy, vplyv na limit verejných výdavkov, vplyv na služby verejnej správy pre občana, vplyv na podnikateľské prostredie, sociálne vplyvy, vplyv na životné prostredie, vplyv na informatizáciu spoločnosti a vplyv na manželstvo, rodičovstvo a rodinu. 
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a nálezmi ústavného súdu a zákonmi, ako aj s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná a súčasne je v súlade s právom Európskej únie.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Osobitná časť 
+K čl. I
+(zákon č. 185/2002 Z. z. o Súdnej rade Slovenskej republiky)
+K bodu 1 [§ 4b ods. 1 písm. e)]
+Ide o legislatívno-technickú zmenu, ktorou sa aktualizuje nesprávny odkaz na príslušné ustanovenie Ústavy Slovenskej republiky. 
+K bodu 2 (§ 26 ods. 1)
+Navrhuje sa vypustenie právnej úpravy dôvodov pre zánik funkcie člena súdnej rady zo zákona, pretože sa tieto dôvody v zmysle navrhovaných ústavných zmien stávajú dôvodmi pre odvolanie člena súdnej rady, ktorý nie je sudcom.
+K čl. II
+(volebný kódex)
+K bodu 1 a 5 (§ 116) 
+Ide o legislatívno-technickú zmenu priamo nadväzujúcu na novelizáciu Ústavy Slovenskej republiky, ktorá do piatej hlavy vložila nový tretí oddiel s názvom „ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky“. Uvedená ústavná zmena rozšírila systém ústavných inštitútov priamej demokracie o nový typ ľudového hlasovania. 
+V nadväznosti na túto skutočnosť bolo potrebné pristúpiť k úprave terminológie používanej v zákone. Doterajšia právna úprava vychádzala z predpokladu existencie jediného typu ľudového hlasovania, ktorým bolo ľudové hlasovanie o odvolaní prezidenta Slovenskej republiky. Z tohto dôvodu zákon používal legislatívnu skratku „ľudové hlasovanie“, ktorá jednoznačne odkazovala na tento inštitút.
+Po prijatí ústavnej zmeny však právny poriadok rozlišuje dva odlišné typy ľudového hlasovania, a to ľudové hlasovanie o odvolaní prezidenta Slovenskej republiky a ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky. Z uvedeného dôvodu bolo potrebné zrušiť doterajšiu legislatívnu skratku a v normatívnom texte dôsledne rozlišovať medzi jednotlivými druhmi ľudového hlasovania.
+K bodu 2 (§ 1)
+Rozširuje sa vecná pôsobnosť volebného kódexu o nový inštitút priamej demokracie, a to ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky, ktorého ústavné základy sú obsiahnuté v treťom oddiely piatej hlavy Ústavy Slovenskej republiky.
+K bodu 3 (§ 11c ods. 1)
+Rozširuje sa výpočet volieb vo vzťahu ku ktorým môže byť vydaný hlasovací preukaz o ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky. 
+K bodu 4 (§ 71a až 71o)
+Z hľadiska systematiky a vnútorného členenia volebného kódexu navrhujeme, aby bola právna úprava ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky zaradená bezprostredne za právnu úpravu volieb Národnej rady Slovenskej republiky. Takéto systematické usporiadanie vychádza z vecnej súvislosti medzi voľbou parlamentu a mechanizmom jeho odvolania prostredníctvom ľudového hlasovania. Navrhované riešenie zároveň zohľadňuje aj existujúcu systematiku volebného kódexu, podľa ktorej je právna úprava ľudového hlasovania o odvolaní prezidenta Slovenskej republiky zaradená bezprostredne za právnu úpravu voľby prezidenta Slovenskej republiky. Umiestnenie jednotlivých typov ľudového hlasovania za právnu úpravu voľby príslušného ústavného orgánu tak zabezpečuje logickú nadväznosť jednotlivých častí zákona, prehľadnosť právnej úpravy a jej systematickú konzistentnosť.
+§ 71a
+Ustanovenie § 71a upravuje podmienky práva hlasovať v ľudovom hlasovaní o odvolaní Národnej rady Slovenskej republiky. Právo hlasovať v ľudovom hlasovaní o odvolaní Národnej rady Slovenskej republiky sa priznáva každému občanovi Slovenskej republiky bez ohľadu na miesto trvalého pobytu. Veková hranica (§ 3) a prekážky práva voliť (§ 4) sú ustanovené o všeobecnej časti zákona.
+§ 71b
+Členov a náhradníkov okresnej volebnej komisie delegujú politické strany alebo koalícia, ktorá je zastúpená v Národnej rade Slovenskej republiky, a petičný výbor za ľudové hlasovanie o odvolaní národnej rady. Ustanovujú sa náležitosti oznámenia o delegovaní člena a náhradníka a určuje sa lehota na doručenie tohto oznámenia. 
+Špecifikujú sa podmienky zániku členstva v okresnej volebnej komisii a ustanovujú sa jej úlohy v priebehu konania ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky. 
+§ 71c 
+Ustanovenie upravuje vymenúvanie a odvolávanie zapisovateľa okresnej volebnej komisie. Táto kompetencia sa zveruje prednostovi okresného úradu.
+§ 71d
+Členov a náhradníkov okrskovej volebnej komisie delegujú politické strany alebo koalícia, ktorá je zastúpená v Národnej rade Slovenskej republiky, a petičný výbor za ľudové hlasovanie o odvolaní národnej rady . Ustanovujú sa náležitosti oznámenia o delegovaní člena a náhradníka a určuje sa lehota na doručenie tohto oznámenia. 
+Špecifikujú sa podmienky zániku členstva v okrskovej volebnej komisie a ustanovujú sa jej úlohy v priebehu konania ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky. 
+§ 71e
+Vyhlásenie ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky zákon zveruje v súlade s čl. 100b ods. 1 Ústavy Slovenskej republiky do kompetencie prezidenta Slovenskej republiky. Z predmetného ustanovenia vyplýva, že petíciu za ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky je možné iniciovať výlučne občianskou iniciatívou. Konkretizuje sa, že podpisy pod takúto petíciu je možné vyzbierať len v rámci jedného konkrétneho volebného obdobia, a nie je možné takto vyzbierané podpisy využiť na odvolanie inej Národnej rady Slovenskej republiky, ako tej, ktorej volebné obdobie prebiehalo v čase zberu podpisov. Ďalej sa zohľadňujú podrobnosti o petícii, na základe ktorej sa má vyhlásiť ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky. 
+Navrhované ustanovenie ustanovuje právny základ na spracúvanie a overovanie osobných údajov uvedených v petícii s cieľom umožniť Kancelárii prezidenta Slovenskej republiky riadne preskúmať splnenie podmienok petície. 
+§ 71f
+Keďže sa má ľudové hlasovanie o odvolaní Národnej rady Slovenskej republiky vykonať na základe petície, je jednou z úloh prezidenta Slovenskej republiky preskúmanie, či je petícia po formálnej a materiálnej stránke relevantá. V prípade zistenia nedostatkov umožňuje zákon prezidentovi Slovenskej republiky vyhlásenie ľudového hlasovania o odvolaní Národnej rady Slovenskej republiky odmietnuť. Súčasne sa ukladá prezidentovi Slovenskej republiky povinnosť o svojom rozhodnutí informovať zástupcu petič

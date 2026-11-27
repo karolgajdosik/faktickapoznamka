@@ -1,0 +1,49 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť 
+Vláda Slovenskej republiky predkladá návrh zákona, ktorým sa mení a dopĺňa zákon č. 507/2023 Z. z. o dorovnávacej dani na zabezpečenie minimálnej úrovne zdanenia nadnárodných skupín podnikov a veľkých vnútroštátnych skupín a o doplnení zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov v znení neskorších predpisov.
+Zákonom č. 507/2023 Z. z. o dorovnávacej dani na zabezpečenie minimálnej úrovne zdanenia nadnárodných skupín podnikov a veľkých vnútroštátnych skupín a o doplnení zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov sa transponovala smernica Rady (EÚ) 2022/2523 z 15. decembra 2022 o zabezpečení globálnej minimálnej úrovne zdanenia nadnárodných skupín podnikov a veľkých vnútroštátnych skupín v Únii (Ú. v. EÚ L 328, 22. 12. 2022) (ďalej len „smernica (EÚ) 2022/2523“). Znenie smernice (EÚ) 2022/2523 vychádza z globálnych modelových pravidiel prijatých Inkluzívnym rámcom OECD/G20 14. decembra 2021 v dokumente Daňové výzvy vyplývajúce z digitalizácie hospodárstva – globálne modelové pravidlá proti narúšaniu základu dane (druhý pilier). S cieľom objasnenia a doplnenia aplikácie globálnych modelových pravidiel Inkluzívny rámec OECD/G20 zverejnil 5.1.2026 dokument „Bezpečné prístavy a systém súbežného uplatňovania“, ktorý je súčasťou administratívnych usmernení ku globálnym modelovým pravidlám proti narúšaniu základu dane. 
+K administratívnemu usmerneniu následne Európska komisia dňa 12.1.2026 vydala Oznámenie Komisie - Dohoda inkluzívneho rámca OECD pre boj proti narúšaniu základu dane a presunu ziskov týkajúca sa bezpečných prístavov a smernica o druhom pilieri (Ú. v. EÚ C, C/2026/253, 12.1.2026), kde uznáva a potvrdzuje uplatňovanie predmetnej dohody v kontexte smernice (EÚ) 2022/2523. Implementácia administratívneho usmernenia je nevyhnutná pre správne aplikovanie pravidiel smernice (EÚ) 2022/2523, pričom je potrebné zabezpečiť súlad s týmto dokumentom, aby sa zabránilo nesúladu alebo uplatniteľnosti odlišných noriem. 
+Návrh zákona obsahuje predĺženie prechodného bezpečného prístavu - výnimky z výpočtu dorovnávacej dane na základe kvalifikovanej správy podľa jednotlivých štátov (CbCR) a nový bezpečný prístav – výnimku pre daňové stimuly viazané na ekonomickú podstatu. Návrh zákona zároveň obsahuje ďalšie spresnenia vyplývajúce z aplikačnej praxe. Súčasťou návrhu novely je aj zabezpečenie kontinuity plnenia daňových povinností v prípade zániku daňovníka bez právneho nástupcu, a to určením subjektu, na ktorý táto povinnosť prechádza.
+Pri vykonávaní tohto zákona sa ako výkladový prostriedok použijú aj globálne modelové pravidlá OECD a sprievodné dokumenty uverejnené k týmto pravidlám. 
+Návrh zákona má negatívny vplyv na rozpočet verejnej správy, pozitívny vplyv na informatizáciu spoločnosti, má pozitívny vplyv na podnikateľské prostredie a nemá vplyv na limit verejných výdavkov, sociálne vplyvy, vplyvy na životné prostredie, vplyvy na služby verejnej správy pre občana, ani vplyvy na manželstvo, rodičovstvo a rodinu.
+Predkladaný návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi, nálezmi Ústavného súdu Slovenskej republiky, so zákonmi a ostatnými všeobecne záväznými právnymi predpismi, s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná a s právom Európskej únie.
+Návrh zákona bol predmetom medzirezortného pripomienkového konania v termíne od 25.6.2026 do 15.7.2026, vznesených bolo 17 pripomienok, z toho 2 zásadné od RÚZ SR a Klubu 500, pričom rozpory boli odstránené dňa 28.7.2026. 
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Navrhuje sa účinnosť zákona 30. decembra 2026 v bode 8 a 31. decembra 2026 v ostatných ustanoveniach.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 507/2023 Z. z. o dorovnávacej dani na zabezpečenie minimálnej úrovne zdanenia nadnárodných skupín podnikov a veľkých vnútroštátnych skupín a o doplnení zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov v znení neskorších predpisov
+Predkladateľ (a spolupredkladateľ)
+Vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Predkladaným návrhom zákona dochádza k dosúladeniu s pravidlami prijatými v OECD zverejnenými dňa 5.1.2026 v dokumente „Bezpečné prístavy a systém súbežného uplatňovania“, ktorý je súčasťou administratívnych usmernení ku globálnym modelovým pravidlám proti narúšaniu základu dane nadväzujúcich na smernicu Rady (EÚ) 2022/2523 zo 15. decembra 2022 o zabezpečení globálnej minimálnej úrovne zdanenia nadnárodných skupín podnikov a veľkých vnútroštátnych skupín v Únii (Ú. v. EÚ L 328, 22.12.2022), ďalej len „smernica (EÚ) 2022/2523“.
+Termín začiatku a ukončenia PPK
+Jún 2026
+Predpokladaný termín predloženia na pripomienkové konanie
+Jún 2026
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+August 2026
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Zákonom č. 507/2023 Z. z. o dorovnávacej dani na zabezpečenie minimálnej úrovne zdanenia nadnárodných skupín podnikov a veľkých vnútroštátnych skupín a o doplnení zákona č. 563/2009 Z. z. o správe daní (daňový poriadok) a o zmene a doplnení niektorých zákonov v znení neskorších predpisov sa v SR transponovala smernica (EÚ) 2022/2523. Znenie smernice vychádza z globálnych modelových pravidiel prijatých Inkluzívnym rámcom OECD/G20 14. decembra 2021 v dokumente Daňové výzvy vyplývajúce z digitalizácie hospodárstva – globálne modelové pravidlá proti narúšaniu základu dane (druhý pilier). S cieľom objasnenia a doplnenia aplikácie globálnych modelových pravidiel Inkluzívny rámec OECD/G20 zverejnil 5. januára 2026 dokument, ktorý je súčasťou administratívneho usmernenia ku globálnym modelovým pravidlám proti narúšaniu základu dane.
+Uvedené administratívne usmernenie nie je súčasťou smernice (EÚ) 2022/2523. Pri uplatňovaní smernice (EÚ) 2022/2523 členskými štátmi je potrebné zabezpečiť súlad s vyššie uvedeným dokumentom, aby sa zabránilo nesúladu alebo uplatniteľnosti odlišných noriem. 
+Predkladaný návrh zákona reaguje na potrebu zosúladenia vnútroštátnej úpravy s najnovším administratívnym usmernením OECD. Okrem všeobecného zosúladenia noriem návrh zákona v praxi vecne rieši nasledujúce kritické oblasti:
+- Predĺženie prechodného bezpečného prístavu - výnimky: Návrh zákona predlžuje uplatňovanie prechodného bezpečného prístavu – výnimky na základe kvalifikovanej správy podľa jednotlivých štátov (CbCR). Absencia prechodného bezpečného prístavu zakladá vysokú administratívnu náročnosť pre dotknuté subjekty pri overovaní minimálnej úrovne zdanenia;
+- Zavedenie nového bezpečného prístavu – výnimky pre daňové stimuly: Návrh zákona zavádza nový bezpečný prístav – výnimka pre daňové stimuly viazané na ekonomickú podstatu. Súčasný stav nechráni poskytnuté investičné stimuly pred dosahom dorovnávacej dane a nezohľadňuje reálne ekonomické ukazovatele dotknutých subjektov, akými sú hmotný majetok a mzdové náklady;
+- Kontinuita daňových povinností pri zániku daňovníka bez právneho nástupcu: Návrh zákona transparentne upravuje procesný postup a kontinuitu plnenia daňových povinností v špecifických prípadoch, kedy dochádza k zániku daňovníka bez právneho nástupcu. Súčasná právna úprava tieto situácie dostatočne nerieši, čo vyvoláva právnu neistotu a predstavuje riziko pre efektívny výber splatnej dorovnávacej dane.
+Ciele a výsledný stav
+Uveďte hlavné ciele predkladaného materiálu (aký výsledný stav má byť prijatím materiálu dosiahnutý, pričom dosiahnutý stav musí byť odlišný od stavu popísaného v bode 2. Definovanie problému). 
+Cieľom návrhu je doplniť do zákona nevyhnutné úpravy vyplývajúce z dokumentu, ktorý je súčasťou administratívneho usmernenia ku globálnym modelovým pravidlám proti narúšaniu základu dane prijatého Inkluzívnym rámcom OECD/G20 5. januára 2026.
+Výsledným stavom, ktorý sa prijatím návrhu zákona dosiahne, je najmä:- Predĺženie prechodného bezpečného prístavu – výnimky zabezpečí kontinuitu zjednodušeného preukazovania minimálnej úrovne zdanenia pre dotknuté subjekty;
+- Zavedením nového bezpečného prístavu – výnimky pre daňové stimuly sa zabezpečí ochrana legitímnych investícií a zohľadnenie reálnej hospodárskej aktivity podnikov v SR;
+- Výrazné zníženie administratívnej záťaže a prevádzkových nákladov na strane dotknutých subjektov pri uplatňovaní zjednodušujúcich pravidiel výpočtu dorovnávacej 
