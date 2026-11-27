@@ -17,7 +17,7 @@ const sections = [
 <Base title="Ochrana súkromia a prevádzkovateľ" description="Kto prevádzkuje faktickú poznámku, aké údaje spracúva, na akom právnom základe a aké máte práva.">
   <article class="pv">
     <h1>Ochrana súkromia a prevádzkovateľ</h1>
-    <p class="lead">Faktická poznámka zverejňuje verejné údaje o činnosti poslancov Národnej rady SR. Návštevníkov nesleduje: nepoužíva cookies, analytiku ani reklamu.</p>
+    <p class="lead">Faktická poznámka zverejňuje verejné údaje o činnosti poslancov Národnej rady SR. Návštevníkov nesleduje: nepoužíva cookies, reklamu ani profilovanie, len anonymné súhrnné počty návštev.</p>
     <nav class="pv-toc" aria-label="Obsah">
       {sections.map(([id, t]) => <a href={`#${id}`}>{t}</a>)}
     </nav>
@@ -47,7 +47,8 @@ const sections = [
 
     <section id="navstevnici">
       <h2>Údaje návštevníkov stránky</h2>
-      <p>Nepoužívame cookies, analytické nástroje, reklamu ani sledovacie skripty tretích strán. Stránka nemá registráciu ani formuláre.</p>
+      <p>Nepoužívame cookies, reklamu ani sledovacie skripty, ktoré by vytvárali profil návštevníka. Stránka nemá registráciu ani formuláre.</p>
+      <p>Návštevnosť meriame službou <strong>Cloudflare Web Analytics</strong>. Zaznamenáva iba súhrnné počty: zobrazené stránky, krajinu, typ zariadenia a stránku, z ktorej návštevník prišiel. Nepoužíva cookies ani iné ukladanie v prehliadači, neukladá IP adresy a nesleduje návštevníkov na iných weboch; vidíme len súhrnné čísla za týždeň.</p>
       <p>Vo vašom prehliadači (localStorage) si stránka pamätá iba nastavenia, ktoré si sami zvolíte: veľkosť písma, kontrast, tému, jazyk, sledovaných poslancov a posledné vyhľadávania. Tieto údaje nikdy neopúšťajú vaše zariadenie, sú nevyhnutné na poskytnutie funkcie, o ktorú ste požiadali, a preto nevyžadujú súhlas (§ 109 ods. 8 zákona č. 452/2021 Z. z.). Vymažete ich tlačidlom „Obnoviť pôvodné nastavenia“ v nastaveniach zobrazenia.</p>
       <p>Poskytovateľ hostingu (Cloudflare) môže z technických a bezpečnostných dôvodov krátkodobo spracúvať IP adresu a údaje o požiadavke. My k týmto záznamom nepristupujeme a nepoužívame ich na sledovanie návštevníkov.</p>
     </section>
@@ -83,7 +84,7 @@ const sections = [
       <p>Stránka je statická, bez prihlasovania a databázy, a doručuje sa výhradne cez HTTPS s bezpečnostnými hlavičkami. Ak nájdete zraniteľnosť, napíšte prosím na <a href={`mailto:${OPERATOR.email}`}>{OPERATOR.email}</a> (pozri aj <a href="/.well-known/security.txt">security.txt</a>) a dajte nám primeraný čas na opravu pred zverejnením.</p>
     </section>
 
-    <p class="muted pv-upd">Posledná zmena: 27. novembra 2026</p>
+    <p class="muted pv-upd">Posledná zmena: 27. novembra 2026 (meranie návštevnosti)</p>
   </article>
 </Base>
 

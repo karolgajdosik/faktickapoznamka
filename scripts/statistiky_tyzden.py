@@ -1,0 +1,224 @@
+"""Týždenný e-mail so štatistikami návštevnosti faktickapoznamka.sk (Cloudflare Web Analytics) pre prevádzkovateľa.
+
+Každý pondelok: návštevy za posledných 7 dní oproti predchádzajúcemu týždňu, návštevy po dňoch,
+najčítanejšie stránky, odkiaľ ľudia prišli, zariadenia a krajiny. Web Analytics nepoužíva cookies
+a neukladá IP adresy – sú to len súhrnné počty. Nič sa neukladá do repozitára.
+
+Potrebuje GitHub secrets:
+  CF_API_TOKEN       – Cloudflare API token s oprávnením Account › Account Analytics › Read
+  BREVO_API_KEY      – odoslanie e-mailu (už nastavený)
+  STATISTIKY_EMAIL   – (nepovinné) adresa príjemcu; predvolene kontakt@faktickapoznamka.sk
+Bez CF_API_TOKEN skončí bez chyby (len vypíše, že nie je nastavený).
+"""
+
+from __future__ import annotations
+
+import html
+import os
+import re
+import sys
+from datetime import date, timedelta
+
+import requests
+
+CF = "https://api.cloudflare.com/client/v4"
+HOSTY = ["faktickapoznamka.sk", "www.faktickapoznamka.sk"]
+# Brevo smie odosielať len z overenej adresy; kým nie je overená doména faktickapoznamka.sk, ide pošta z overenej adresy mestovcislach.sk.
+ODOSIELATEL = {"name": "faktickapoznamka.sk", "email": os.environ.get("STATISTIKY_ODOSIELATEL", "").strip() or "upozornenia@mestovcislach.sk"}
+
+DOTAZ = """query($a: String!, $f: AccountRumPageloadEventsAdaptiveGroupsFilter_InputObject!, $p: AccountRumPageloadEventsAdaptiveGroupsFilter_InputObject!) {
+  viewer { accounts(filter: {accountTag: $a}) {
+    spolu: rumPageloadEventsAdaptiveGroups(limit: 1, filter: $f) { count sum { visits } }
+    pred: rumPageloadEventsAdaptiveGroups(limit: 1, filter: $p) { count sum { visits } }
+    dni: rumPageloadEventsAdaptiveGroups(limit: 14, filter: $f, orderBy: [date_ASC]) { count sum { visits } dimensions { date } }
+    stranky: rumPageloadEventsAdaptiveGroups(limit: 15, filter: $f, orderBy: [sum_visits_DESC]) { count sum { visits } dimensions { requestPath } }
+    zdroje: rumPageloadEventsAdaptiveGroups(limit: 10, filter: $f, orderBy: [sum_visits_DESC]) { sum { visits } dimensions { refererHost } }
+    zariadenia: rumPageloadEventsAdaptiveGroups(limit: 5, filter: $f, orderBy: [sum_visits_DESC]) { sum { visits } dimensions { deviceType } }
+    krajiny: rumPageloadEventsAdaptiveGroups(limit: 5, filter: $f, orderBy: [sum_visits_DESC]) { sum { visits } dimensions { countryName } }
+  } }
+}"""
+
+
+def cf(token: str, metoda: str, cesta: str, **kw) -> dict:
+    r = requests.request(metoda, f"{CF}{cesta}", headers={"Authorization": f"Bearer {token}"}, timeout=60, **kw)
+    r.raise_for_status()
+    return r.json()
+
+
+def ucet(token: str) -> str:
+    if os.environ.get("CF_ACCOUNT_ID"):
+        return os.environ["CF_ACCOUNT_ID"].strip()
+    try:
+        u = cf(token, "GET", "/accounts", params={"per_page": 5}).get("result") or []
+    except requests.HTTPError:
+        u = []
+    if not u:  # token len s Account Analytics nemusí smieť vypísať účty – skúsime GraphQL
+        d = cf(token, "POST", "/graphql", json={"query": "{ viewer { accounts(limit: 5) { accountTag } } }"})
+        u = [{"id": x["accountTag"]} for x in ((d.get("data") or {}).get("viewer") or {}).get("accounts") or []]
+        if d.get("errors"):
+            print("GraphQL účty:", "; ".join(e.get("message", "") for e in d["errors"])[:300])
+    if not u:
+        raise RuntimeError("Token nevidí žiadny Cloudflare účet – pridajte mu oprávnenie Account Analytics: Read.")
+    return u[0]["id"]
+
+
+def statistiky(token: str, a: str, od: date, do: date) -> dict:
+    """Skúsi filter bez botov a len pre hlavnú doménu; ak ho API nepozná, postupne ho zjednoduší."""
+    pod = od - timedelta(days=7)
+    zaklady = [{"bot": 0, "requestHost_in": HOSTY}, {"requestHost_in": HOSTY}, {}]
+    chyba = None
+    for z in zaklady:
+        f = {"date_geq": od.isoformat(), "date_leq": do.isoformat(), **z}
+        p = {"date_geq": pod.isoformat(), "date_leq": (od - timedelta(days=1)).isoformat(), **z}
+        d = cf(token, "POST", "/graphql", json={"query": DOTAZ, "variables": {"a": a, "f": f, "p": p}})
+        if d.get("errors"):
+            chyba = "; ".join(e.get("message", "") for e in d["errors"])
+            continue
+        return d["data"]["viewer"]["accounts"][0]
+    raise RuntimeError(f"Cloudflare GraphQL: {chyba}")
+
+
+def v(x: dict) -> int:
+    return int((x.get("sum") or {}).get("visits") or 0)
+
+
+_MENA: dict[str, str] | None = None
+
+
+def citatelne(cesta: str) -> str:
+    """/poslanci/1008/ → „Poslanec: Ján Ferenčák“, /hlasovania/51426/ → „Hlasovanie: názov…“."""
+    global _MENA
+    import json
+    from pathlib import Path
+    data = Path(__file__).resolve().parent.parent / "data"
+    if _MENA is None:
+        try:
+            _MENA = {m["id"]: m["name"] for m in json.loads((data / "mps.json").read_text(encoding="utf-8"))}
+        except (OSError, ValueError, KeyError, TypeError):
+            _MENA = {}
+    m = re.match(r"^/poslanci/(\d+)/?$", cesta)
+    if m and m.group(1) in _MENA:
+        return f"{cesta} · {_MENA[m.group(1)]}"
+    m = re.match(r"^/hlasovania/(\d+)/?$", cesta)
+    if m:
+        try:
+            t = json.loads((data / "votes" / f"{m.group(1)}.json").read_text(encoding="utf-8")).get("title", "")
+            return f"{cesta} · {t[:70]}{'…' if len(t) > 70 else ''}"
+        except (OSError, ValueError):
+            pass
+    return cesta
+
+
+def tabulka(nadpis: str, riadky: list[tuple[str, int]], spolu: int) -> str:
+    if not riadky:
+        return ""
+    r = "".join(f'<tr><td style="padding:4px 8px;border-bottom:1px solid #eee">{html.escape(n)}</td>'
+                f'<td style="padding:4px 8px;border-bottom:1px solid #eee;text-align:right">{c}</td>'
+                f'<td style="padding:4px 8px;border-bottom:1px solid #eee;text-align:right;color:#666">{round(100 * c / spolu) if spolu else 0} %</td></tr>'
+                for n, c in riadky)
+    return f'<h3 style="margin:20px 0 6px">{nadpis}</h3><table style="border-collapse:collapse;width:100%;font-size:14px">{r}</table>'
+
+
+def stav_webu(od: date) -> str:
+    """Časť „Stav webu“: hodinové aktualizácie dát a deploye za týždeň a otvorené hlásenie Strážcu dát (GitHub API)."""
+    tok, repo = os.environ.get("GH_TOKEN", ""), os.environ.get("GITHUB_REPOSITORY", "karolgajdosik/faktickapoznamka")
+    if not tok:
+        return ""
+    h = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"}
+    riadky = []
+    for subor, nazov in {"update.yml": "Aktualizácia dát z nrsr.sk", "deploy.yml": "Nasadenie zmien kódu"}.items():
+        try:
+            d = requests.get(f"https://api.github.com/repos/{repo}/actions/workflows/{subor}/runs", headers=h, timeout=30,
+                             params={"created": f">={od.isoformat()}", "per_page": 100, "status": "completed"}).json()
+        except Exception:  # noqa: BLE001
+            continue
+        behy = [b for b in d.get("workflow_runs", []) if b.get("conclusion") not in ("cancelled", "skipped")]
+        if not behy:
+            continue
+        zle = sum(1 for b in behy if b["conclusion"] != "success")
+        riadky.append((nazov, len(behy), zle, behy[0]["conclusion"] == "success"))
+    problemy = []
+    try:
+        iss = requests.get(f"https://api.github.com/repos/{repo}/issues", headers=h, timeout=30, params={"labels": "watchdog", "state": "open"}).json()
+        if iss:
+            problemy = [r[2:] for r in (iss[0].get("body") or "").splitlines() if r.startswith("- ")]
+    except Exception:  # noqa: BLE001
+        pass
+    try:
+        import json
+        from pathlib import Path
+        posl = max(json.loads(f.read_text(encoding="utf-8"))["datetime"] for f in (Path(__file__).resolve().parent.parent / "data" / "votes").glob("*.json"))
+        posl = f"<p style='margin:0 0 8px;color:#444'>Posledné hlasovanie v dátach: {posl[8:10]}. {posl[5:7]}. {posl[:4]} {posl[11:16]}</p>"
+    except Exception:  # noqa: BLE001
+        posl = ""
+    if not riadky and not problemy:
+        return posl
+    ok = all(z == 0 for _, _, z, _ in riadky) and not problemy
+    t_ = "".join(f'<tr><td style="padding:4px 8px;border-bottom:1px solid #eee">{html.escape(n)}</td><td style="padding:4px 8px;border-bottom:1px solid #eee;text-align:right">{b}</td>'
+                 f'<td style="padding:4px 8px;border-bottom:1px solid #eee;text-align:right;color:{"#c8102e" if z else "#15803d"}">{z or "–"}</td>'
+                 f'<td style="padding:4px 8px;border-bottom:1px solid #eee">{"✓" if p else "✗ chyba"}</td></tr>' for n, b, z, p in riadky)
+    return (f'<h3 style="margin:24px 0 6px">Stav webu {"– všetko v poriadku" if ok else "– pozor"}</h3>' + posl
+            + ("<p style='margin:0 0 8px;color:#c8102e'>Strážca dát: " + "; ".join(html.escape(p) for p in problemy) + "</p>" if problemy else "")
+            + ('<table style="border-collapse:collapse;width:100%;font-size:14px"><tr><th style="text-align:left;padding:4px 8px">Automatická úloha</th>'
+               '<th style="text-align:right;padding:4px 8px">behov</th><th style="text-align:right;padding:4px 8px">chýb</th><th style="text-align:left;padding:4px 8px">teraz</th></tr>'
+               + t_ + "</table>" if riadky else ""))
+
+
+def main() -> int:
+    token = os.environ.get("CF_API_TOKEN", "").strip()
+    brevo = os.environ.get("BREVO_API_KEY", "").strip()
+    if not token:
+        print("CF_API_TOKEN nie je nastavený – týždenný e-mail so štatistikami je vypnutý.")
+        return 0
+    do = date.today() - timedelta(days=1)
+    od = do - timedelta(days=6)
+    s = statistiky(token, ucet(token), od, do)
+    spolu, pred = v((s["spolu"] or [{}])[0]), v((s["pred"] or [{}])[0])
+    zobrazenia = int(((s["spolu"] or [{}])[0]).get("count") or 0)
+    zmena = f"{'+' if spolu >= pred else '−'}{abs(round(100 * (spolu - pred) / pred))} % oproti predchádzajúcemu týždňu" if pred else "prvý týždeň merania"
+    dni = [(date.fromisoformat(x["dimensions"]["date"]).strftime("%a %d. %m.").replace("Mon", "po").replace("Tue", "ut").replace("Wed", "st").replace("Thu", "št").replace("Fri", "pi").replace("Sat", "so").replace("Sun", "ne"), v(x)) for x in s["dni"]]
+    naj = max(dni, key=lambda x: x[1]) if dni else None
+    stranky = [(citatelne(x["dimensions"]["requestPath"] or "/"), v(x)) for x in s["stranky"]]
+    zdroje = [((x["dimensions"]["refererHost"] or "priamo / správy").replace("www.", ""), v(x)) for x in s["zdroje"]]
+    zariadenia = [({"desktop": "počítač", "mobile": "mobil", "tablet": "tablet"}.get(x["dimensions"]["deviceType"], x["dimensions"]["deviceType"] or "iné"), v(x)) for x in s["zariadenia"]]
+    krajiny = [(x["dimensions"]["countryName"] or "neznáma", v(x)) for x in s["krajiny"]]
+
+    maxd = max([c for _, c in dni] or [1]) or 1
+    graf = "".join(f'<tr><td style="padding:2px 8px;font-size:13px;white-space:nowrap">{d}</td><td style="padding:2px 0;width:100%">'
+                   f'<div style="background:#2f6fed;height:12px;border-radius:6px;width:{max(2, round(100 * c / maxd))}%"></div></td>'
+                   f'<td style="padding:2px 8px;font-size:13px;text-align:right">{c}</td></tr>' for d, c in dni)
+    obdobie = f"{od.day}. {od.month}. – {do.day}. {do.month}. {do.year}"
+    telo = f"""<div style="font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:640px;margin:0 auto;color:#1b1e23">
+<h2 style="margin:0 0 4px">Návštevnosť faktickapoznamka.sk</h2><p style="margin:0 0 16px;color:#666">{obdobie}</p>
+<p style="font-size:28px;font-weight:700;margin:0">{spolu} návštev</p>
+<p style="margin:4px 0 16px;color:#444">{zmena} · {zobrazenia} zobrazení stránok{f' · najviac v deň {naj[0]} ({naj[1]})' if naj and naj[1] else ''}</p>
+<table style="border-collapse:collapse;width:100%">{graf}</table>
+{tabulka('Najčítanejšie stránky (vstupné)', stranky, spolu)}
+{tabulka('Odkiaľ prišli', zdroje, spolu)}
+{tabulka('Zariadenia', zariadenia, spolu)}
+{tabulka('Krajiny', krajiny, spolu)}
+{stav_webu(od)}
+<p style="margin-top:24px;font-size:12px;color:#888">Cloudflare Web Analytics (bez cookies, bez robotov). „Priamo / správy“ sú aj odkazy poslané cez WhatsApp, Messenger či e-mail.</p></div>"""
+    print(f"{obdobie}: {spolu} návštev ({zmena}); stránky {len(stranky)}, zdroje {len(zdroje)}")
+    if "--nahlad" in sys.argv or not brevo:
+        print("Náhľad bez odoslania." if brevo else "BREVO_API_KEY chýba – e-mail sa neodošle.")
+        return 0
+    prijemca = os.environ.get("STATISTIKY_EMAIL", "").strip() or "kontakt@faktickapoznamka.sk"
+    r = requests.post("https://api.brevo.com/v3/smtp/email", headers={"api-key": brevo, "accept": "application/json"}, timeout=60, json={
+        "sender": ODOSIELATEL, "to": [{"email": prijemca}], "subject": f"Návštevnosť {obdobie}: {spolu} návštev ({zmena.split(' oproti')[0]})",
+        "htmlContent": telo, "tags": ["statistiky", "faktickapoznamka"]})
+    r.raise_for_status()
+    print("E-mail odoslaný.")
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        sys.exit(main())
+    except Exception as e:  # noqa: BLE001
+        detail = ""
+        if isinstance(e, requests.HTTPError) and e.response is not None:
+            detail = f" ({e.response.request.method} {e.response.url.split('?')[0]}: {e.response.text[:300]})"
+        sprava = f"{type(e).__name__}: {e}{detail}".replace("%", "%25").replace("\r", "").replace("\n", "%0A")
+        print(f"::error title=Štatistiky::{sprava}")
+        sys.exit(1)
