@@ -1,0 +1,62 @@
+---
+import Base from "../../layouts/Base.astro";
+import VoteList from "../../components/VoteList.astro";
+import { TEMY, votesByTema, clubsOnTema, type Tema } from "../../lib/temy";
+import { isFinal, clubColor, lawTitle, shortTitle, resultText, resultCls, fmtShort, plural } from "../../lib/data";
+export function getStaticPaths() { return TEMY.map((t) => ({ params: { slug: t.slug }, props: { t } })); }
+const { t } = Astro.props as { t: Tema };
+const vs = votesByTema.get(t.slug)!;
+const finals = vs.filter(isFinal);
+const cl = clubsOnTema(t.slug);
+---
+<Base index title={`${t.name}: hlasovania`} description={`${t.name} v NR SR: ${vs.length} hlasovaní, ${finals.filter((v) => v.passed).length} prijatých zákonov a ako hlasovali kluby.`}>
+  <p class="meta-line"><a href="/temy/">Témy</a></p>
+  <h1>{t.name}</h1>
+  <p class="meta-line">{t.desc}</p>
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class="tile"><dt>Hlasovaní</dt><dd>{vs.length.toLocaleString("sk-SK")}</dd></div>
+    <div class="tile"><dt>Záverečných hlasovaní</dt><dd>{finals.length}</dd></div>
+    <div class="tile accent"><dt>Prijaté zákony</dt><dd>{finals.filter((v) => v.passed).length}</dd></div>
+    <div class="tile"><dt>Neprijaté</dt><dd style="color:var(--proti)">{finals.filter((v) => v.passed === false).length}</dd></div>
+  </dl>
+
+  {cl.length > 0 && <>
+    <div class="section-head"><h2>Ako hlasovali kluby</h2><span class="muted" style="font-size:var(--step--1)">záverečné hlasovania o zákonoch v tejto téme</span></div>
+    <div class="panel pad tm-clubs">
+      {cl.map(({ club, c, n }) => (
+        <div class="tm-club" style={`--club:${clubColor(club)}`}>
+          <b>{club}</b>
+          <span class="tm-stack" role="img" aria-label={`Za ${Math.round((100 * c.Z) / n)} %, proti ${Math.round((100 * c.P) / n)} %, zdržali sa ${Math.round((100 * c["?"]) / n)} %`}>
+            <i class="v-Z" style={`flex-grow:${c.Z}`}></i><i class="v-P" style={`flex-grow:${c.P}`}></i><i class="v-Q" style={`flex-grow:${c["?"]}`}></i>
+          </span>
+          <small>{Math.round((100 * c.Z) / n)} % za · {Math.round((100 * c.P) / n)} % proti</small>
+        </div>
+      ))}
+      <p class="note" style="margin:.5rem 0 0">Podiel hlasov poslancov klubu, ktorí boli prítomní a hlasovali. Ide o štatistický výpočet, nie o hodnotenie.</p>
+    </div>
+  </>}
+
+  {finals.length > 0 && <>
+    <div class="section-head"><h2>Zákony</h2></div>
+    <ul class="wk-laws">
+      {finals.slice(0, 40).map((v) => (
+        <li><span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
+          <a href={v.tlac ? `/zakony/${v.tlac}/` : `/hlasovania/${v.id}/`}>{shortTitle(lawTitle(v.title), 190)}</a>
+          <small>{fmtShort(v.datetime)} · <a href={`/hlasovania/${v.id}/`}>{v.counts.Z} za, {v.counts.P} proti</a></small></li>
+      ))}
+    </ul>
+  </>}
+
+  <div class="section-head"><h2>Posledné hlasovania</h2><a class="more" style="margin:0" href={`/hlasovania/?topic=${t.slug}`}>Všetkých {vs.length} {plural(vs.length, "hlasovanie", "hlasovania", "hlasovaní")} s filtrom</a></div>
+  <VoteList items={vs.slice(0, 30)} />
+</Base>
+<style is:global>
+  .tm-clubs { display: grid; gap: .6rem; }
+  .tm-club { display: grid; grid-template-columns: minmax(7rem, 12rem) 1fr auto; gap: .75rem; align-items: center; }
+  .tm-club b { border-left: 4px solid var(--club); padding-left: .5rem; font-size: var(--step--1); }
+  .tm-stack { display: flex; height: .75rem; border-radius: 999px; overflow: hidden; gap: 2px; background: var(--panel-2); }
+  .tm-stack i { display: block; min-width: 0; }
+  .tm-stack .v-Z { background: var(--za); } .tm-stack .v-P { background: var(--proti); } .tm-stack .v-Q { background: var(--zdrzal); }
+  .tm-club small { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  @media (max-width: 640px) { .tm-club { grid-template-columns: 1fr auto; } .tm-stack { grid-column: 1 / -1; grid-row: 2; } }
+</style>

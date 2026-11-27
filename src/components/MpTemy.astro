@@ -1,0 +1,39 @@
+---
+// How an MP voted, topic by topic (shares of all votes in that topic while they were an MP).
+import { mpTemy } from "../lib/temy";
+interface Props { id: string }
+const rows = mpTemy(Astro.props.id);
+const p = (n: number, t: number) => Math.round((100 * n) / t);
+---
+{rows.length > 0 && (
+  <section class="mt-box">
+    <div class="section-head"><h2>Hlasovanie podľa tém</h2><a class="more" style="margin:0" href="/temy/">Všetky témy</a></div>
+    <div class="panel pad">
+      <div class="mt-legend" aria-hidden="true"><span><i class="v-Z"></i>za</span><span><i class="v-P"></i>proti</span><span><i class="v-Q"></i>zdržal sa / nehlasoval</span><span><i class="v-O"></i>neprítomný</span></div>
+      {rows.map(({ t, c, total }) => (
+        <a class="mt-row" href={`/temy/${t.slug}/`}>
+          <span class="mt-name">{t.name}<small>{total} hlasovaní</small></span>
+          <span class="mt-bar" role="img" aria-label={`Za ${p(c.Z, total)} %, proti ${p(c.P, total)} %, zdržal sa alebo nehlasoval ${p(c["?"] + c.N, total)} %, neprítomný ${p(c["0"], total)} %`}>
+            <i class="v-Z" style={`flex-grow:${c.Z}`}></i><i class="v-P" style={`flex-grow:${c.P}`}></i><i class="v-Q" style={`flex-grow:${c["?"] + c.N}`}></i><i class="v-O" style={`flex-grow:${c["0"]}`}></i>
+          </span>
+          <span class="mt-pc">{p(c.Z, total)} % za</span>
+        </a>
+      ))}
+      <p class="note" style="margin:.6rem 0 0">Témy určujeme podľa názvu návrhu. Ide o štatistický výpočet, nie o hodnotenie postojov poslanca.</p>
+    </div>
+  </section>
+)}
+<style>
+  .mt-box { margin-top: 1rem; }
+  .mt-legend { display: flex; flex-wrap: wrap; gap: .4rem 1rem; font-size: var(--step--2); color: var(--muted); margin-bottom: .5rem; }
+  .mt-legend i { display: inline-block; width: .7rem; height: .7rem; border-radius: 3px; margin-right: .3rem; vertical-align: -1px; }
+  .mt-row { display: grid; grid-template-columns: minmax(9rem, 15rem) 1fr 4.5rem; gap: .75rem; align-items: center; padding: .4rem 0; border-top: 1px solid var(--line); color: var(--text); text-decoration: none; }
+  .mt-row:hover .mt-name { color: var(--accent); }
+  .mt-name { font-size: var(--step--1); font-weight: 650; }
+  .mt-name small { display: block; font-weight: 400; color: var(--muted); font-size: var(--step--2); }
+  .mt-bar { display: flex; height: .7rem; border-radius: 999px; overflow: hidden; gap: 1px; }
+  .mt-bar i, .mt-legend i { min-width: 0; }
+  .v-Z { background: var(--za); } .v-P { background: var(--proti); } .v-Q { background: var(--zdrzal); } .v-O { background: var(--nepritomny); }
+  .mt-pc { text-align: right; font-size: var(--step--1); font-variant-numeric: tabular-nums; color: var(--muted); }
+  @media (max-width: 640px) { .mt-row { grid-template-columns: 1fr auto; } .mt-bar { grid-column: 1 / -1; grid-row: 2; } }
+</style>

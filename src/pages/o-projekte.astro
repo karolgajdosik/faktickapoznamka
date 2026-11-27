@@ -12,7 +12,7 @@ const methods = [
   { id: "slova", t: "Charakteristické slová", d: "Slová, ktoré poslanec v rozprave používa výrazne častejšie ako ostatní, počítané metódou TF-IDF zo stenografických prepisov, bez vlastných mien, rokovacích fráz a vystúpení predsedajúceho." },
   { id: "aktivita", t: "Aktivita poslancov", d: "Ospravedlnenia, návrhy zákonov, pozmeňujúce návrhy, interpelácie, zahraničné cesty, kancelárie, výbory a zmeny v zložení parlamentu preberáme z nrsr.sk a obnovujeme približne raz týždenne." },
   { id: "majetok", t: "Majetkové priznania", d: "Z oznámení verejných funkcionárov uvádzame príjmy, funkcie, zamestnanie, podnikanie a druhy a počty majetku. Presné polohy nehnuteľností (katastrálne územia, listy vlastníctva) zámerne neuvádzame; celé oznámenie je dostupné cez odkaz na nrsr.sk." },
-  { id: "ai", t: "AI zhrnutia vystúpení", d: "Pri dlhších vystúpeniach zobrazujeme krátke zhrnutie označené „AI zhrnutie“. Vytvára ho jazykový model (GitHub Models) výlučne z oficiálneho prepisu, s pokynom zachovať nestrannosť a nič nepridávať. Zhrnutie môže byť nepresné, rozhoduje celý prepis." },
+  { id: "ai", t: "AI zhrnutia vystúpení", d: "Pri dlhších vystúpeniach zobrazujeme krátke zhrnutie označené „AI zhrnutie“. Vytvára ho jazykový model (Mistral Small cez Cloudflare Workers AI) výlučne z oficiálneho prepisu, s pokynom zachovať nestrannosť a nič nepridávať. Zhrnutie môže byť nepresné, rozhoduje celý prepis." },
   { id: "prezentacie", t: "Čo nepočítame", d: "Prezentácie (kontroly prítomnosti) neuvádzame v štatistikách, lebo sa pri nich o ničom nerozhoduje. Kluby sú v sále zoradené podľa veľkosti a ich farby sú neutrálne, nie stranícke." },
 ];
 const faq = [

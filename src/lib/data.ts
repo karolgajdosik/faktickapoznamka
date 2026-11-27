@@ -26,7 +26,7 @@ export const LABEL: Record<Code, string> = { Z: "Za", P: "Proti", "?": "Zdržal 
 export const cls = (c: Code) => (c === "?" ? "Q" : c === "0" ? "O" : c);
 
 /** "Prezentácia" = attendance check, not a decision on anything: excluded from lists and stats. */
-export const isPresence = (v: Vote) => /^prezentácia\.?$/i.test(v.title.trim());
+export const isPresence = (v: Vote) => /^prezentácia(\s+č\.\s*\d+)?\.?$/i.test(v.title.trim());
 const allVotes = Object.values(voteFiles).map((m) => m.default);
 export const votes = allVotes.filter((v) => !isPresence(v))
   .sort((a, b) => b.datetime.localeCompare(a.datetime) || Number(b.id) - Number(a.id));

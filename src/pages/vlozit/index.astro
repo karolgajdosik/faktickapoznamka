@@ -1,0 +1,44 @@
+---
+// Embeddable card (iframe) for a vote or an MP: the share image plus a link back. No site chrome, no tracking script of our own.
+import "../../styles/global.css";
+---
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>faktickapoznamka.sk</title>
+  <style is:global>
+    html, body { margin: 0; background: transparent; }
+    .em { display: block; position: relative; text-decoration: none; color: #e7ecf5; font-family: var(--font, system-ui, sans-serif); border-radius: 12px; overflow: hidden; background: #0c111d; }
+    .em img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; }
+    .em-foot { display: flex; justify-content: space-between; gap: .5rem; padding: .45rem .75rem; font-size: 12px; background: #151d2e; color: #93a0b7; }
+    .em-foot b { color: #e7ecf5; }
+    .em:hover .em-foot b { text-decoration: underline; }
+    .em-err { padding: 1rem; font: 14px system-ui, sans-serif; color: #93a0b7; }
+  </style>
+</head>
+<body>
+  <div id="em"><p class="em-err">Načítava sa…</p></div>
+  <script>
+    const q = new URLSearchParams(location.search);
+    const kind = q.has("hlasovanie") ? "hlasovanie" : q.has("poslanec") ? "poslanec" : "";
+    const id = (q.get(kind) || "").replace(/\D/g, "");
+    const box = document.getElementById("em")!;
+    if (!kind || !id) box.innerHTML = `<p class="em-err">Chýba hlasovanie alebo poslanec.</p>`;
+    else {
+      const page = kind === "hlasovanie" ? `/hlasovania/${id}/` : `/poslanci/${id}/`;
+      fetch(page).then((r) => (r.ok ? r.text() : Promise.reject())).then((html) => {
+        const d = new DOMParser().parseFromString(html, "text/html");
+        const title = (d.querySelector('meta[property="og:title"]')?.getAttribute("content") || d.title || "").replace(/\s*[–|]\s*faktická poznámka\s*$/i, "");
+        const a = document.createElement("a"); a.className = "em"; a.href = `https://faktickapoznamka.sk${page}`; a.target = "_blank"; a.rel = "noopener";
+        const img = document.createElement("img"); img.src = `/og/${kind}/${id}.png`; img.alt = title; img.width = 1200; img.height = 630;
+        const foot = document.createElement("span"); foot.className = "em-foot";
+        foot.innerHTML = `<span>Údaje NR SR</span><b>faktickapoznamka.sk</b>`;
+        a.append(img, foot); a.title = title; box.replaceChildren(a);
+      }).catch(() => { box.innerHTML = `<p class="em-err">Obsah sa nepodarilo načítať. <a href="https://faktickapoznamka.sk/" target="_blank" rel="noopener">faktickapoznamka.sk</a></p>`; });
+    }
+  </script>
+</body>
+</html>

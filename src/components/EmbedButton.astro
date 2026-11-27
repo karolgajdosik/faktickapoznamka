@@ -1,0 +1,35 @@
+---
+// "Vložiť do článku": shows a ready-made iframe code for a vote or an MP card.
+interface Props { kind: "hlasovanie" | "poslanec"; id: string; title: string }
+const { kind, id, title } = Astro.props;
+const src = `https://faktickapoznamka.sk/vlozit/?${kind}=${id}`;
+const code = `<iframe src="${src}" title="${title.replace(/"/g, "&quot;")} – faktickapoznamka.sk" width="600" height="360" style="border:0;width:100%;max-width:600px;aspect-ratio:600/360" loading="lazy"></iframe>`;
+---
+<details class="embed">
+  <summary>Vložiť do článku</summary>
+  <div class="embed-box">
+    <p>Skopírujte kód a vložte ho do článku ako HTML. Náhľad sa aktualizuje spolu so stránkou a odkazuje na zdroj.</p>
+    <textarea readonly rows="4" aria-label="Kód na vloženie">{code}</textarea>
+    <button type="button" class="embed-copy">Kopírovať kód</button>
+    <a href={src.replace("https://faktickapoznamka.sk", "")} target="_blank" rel="noopener">Ukážka</a>
+  </div>
+</details>
+<script>
+  document.addEventListener("click", async (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>(".embed-copy"); if (!b) return;
+    const ta = b.parentElement!.querySelector("textarea")!;
+    try { await navigator.clipboard.writeText(ta.value); } catch { ta.select(); document.execCommand?.("copy"); }
+    b.textContent = "Skopírované"; setTimeout(() => (b.textContent = "Kopírovať kód"), 1600);
+  });
+</script>
+<style>
+  .embed { margin-top: .75rem; }
+  .embed summary { display: inline-block; cursor: pointer; font-size: var(--step--1); font-weight: 700; color: var(--accent); list-style: none; padding: .3rem .8rem; border: 1px solid var(--line-2); border-radius: 999px; }
+  .embed summary::-webkit-details-marker { display: none; }
+  .embed[open] summary { border-color: var(--accent); }
+  .embed-box { margin-top: .6rem; padding: .9rem 1rem; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); max-width: 40rem; display: grid; gap: .5rem; }
+  .embed-box p { margin: 0; color: var(--muted); font-size: var(--step--1); }
+  .embed-box textarea { width: 100%; font: .8rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; padding: .5rem; border-radius: var(--r-sm); border: 1px solid var(--line-2); background: var(--bg); color: var(--text); resize: vertical; }
+  .embed-copy { justify-self: start; font: inherit; font-size: var(--step--1); font-weight: 700; padding: .35rem .9rem; border-radius: 999px; border: 0; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  .embed-box a { font-size: var(--step--1); }
+</style>

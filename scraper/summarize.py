@@ -1,13 +1,15 @@
-"""AI summaries of longer debate speeches via GitHub Models (free, rate-limited).
-Runs in GitHub Actions with the built-in GITHUB_TOKEN (permission models: read).
-Newest speeches first; stops at the daily budget or on the first rate-limit answer.
-Summaries are labelled as AI on the site and always link to the full transcript."""
+"""AI summaries (bills from their explanatory memorandum, longer debate speeches) via Cloudflare Workers AI.
+
+GitHub Models, used before, was retired on 30 July 2026. Workers AI on the free plan gives 10,000 neurons
+a day at no charge and refuses further requests (no billing), so a run simply stops at the limit.
+Needs CF_API_TOKEN with the permission Account > Workers AI > Read and CLOUDFLARE_ACCOUNT_ID.
+Newest items first. Summaries are labelled as AI on the site and always link to the full source."""
 import json, os, pathlib, sys, time, datetime, urllib.request, urllib.error
 
 DATA = pathlib.Path("data"); OUT = DATA / "summaries.json"
-MODEL = os.environ.get("SUMMARY_MODEL", "openai/gpt-4.1-mini")
-PER_RUN = int(os.environ.get("SUMMARY_PER_RUN", "40"))
-PER_DAY = int(os.environ.get("SUMMARY_PER_DAY", "120"))
+MODEL = os.environ.get("SUMMARY_MODEL", "@cf/mistralai/mistral-small-3.1-24b-instruct")
+PER_RUN = int(os.environ.get("SUMMARY_PER_RUN", "12"))
+PER_DAY = int(os.environ.get("SUMMARY_PER_DAY", "60"))  # ~140 neurons each, under the free 10,000/day
 MIN_CHARS = 1500  # roughly 2–3 minutes of speech
 CHAIR = "Vstup predsedajúceho"
 PROMPT = ("Si nestranný redaktor. Zhrň vystúpenie poslanca v Národnej rade SR v 2 až 3 vetách po slovensky. "
@@ -24,16 +26,16 @@ class Stop(Exception):
     pass
 
 def call(text: str, prompt: str = PROMPT, max_tokens: int = 220) -> str | None:
+    acc, tok = os.environ["CLOUDFLARE_ACCOUNT_ID"].strip(), os.environ["CF_API_TOKEN"].strip()
     body = json.dumps({"model": MODEL, "temperature": 0.2, "max_tokens": max_tokens, "messages": [
-        {"role": "system", "content": prompt}, {"role": "user", "content": text[:12000]}]}).encode()
-    req = urllib.request.Request("https://models.github.ai/inference/chat/completions", data=body, headers={
-        "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Content-Type": "application/json",
-        "Accept": "application/json", "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "faktickapoznamka-summaries"})
+        {"role": "system", "content": prompt}, {"role": "user", "content": text[:9000]}]}).encode()
+    req = urllib.request.Request(f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/v1/chat/completions", data=body, headers={
+        "Authorization": f"Bearer {tok}", "Content-Type": "application/json", "Accept": "application/json", "User-Agent": "faktickapoznamka-summaries"})
     try:
-        with urllib.request.urlopen(req, timeout=90) as r:
+        with urllib.request.urlopen(req, timeout=120) as r:
             raw = r.read(); status = r.status; ctype = r.headers.get("content-type", "")
     except urllib.error.HTTPError as e:
-        raise Stop(f"HTTP {e.code} from GitHub Models: {e.read()[:300]!r}")
+        raise Stop(f"HTTP {e.code} from Workers AI: {e.read()[:300]!r}")
     try:
         d = json.loads(raw)
     except ValueError:
@@ -58,13 +60,13 @@ def laws(meta, today, budget):
             print(e); break
         meta["daily"][today] += 1; done += 1
         out[t] = {"s": None if not s or s.upper().startswith("NEDOSTAT") else s, "src": txt.split("\n", 1)[0].lstrip("# ").strip(), "at": today}
-        time.sleep(4)
+        time.sleep(1)
     out_f.write_text(json.dumps(out, ensure_ascii=False, indent=0))
     print(f"law summaries: {done} new, {sum(1 for v in out.values() if v.get('s'))} total")
     return done
 
 def main():
-    if not os.environ.get("GITHUB_TOKEN"): print("no GITHUB_TOKEN, skipping"); return
+    if not (os.environ.get("CF_API_TOKEN") and os.environ.get("CLOUDFLARE_ACCOUNT_ID")): print("no CF_API_TOKEN / CLOUDFLARE_ACCOUNT_ID, skipping"); return
     out = json.loads(OUT.read_text()) if OUT.exists() else {}
     meta = out.setdefault("_meta", {"model": MODEL, "daily": {}})
     today = datetime.date.today().isoformat()
@@ -87,7 +89,7 @@ def main():
             print(f"error {e!r}, stopping"); break
         meta["daily"][today] += 1; done += 1
         out[x["id"]] = {"s": None if not s or s.upper().startswith("PROCEDUR") else s, "at": today}
-        time.sleep(4)  # stay well under the per-minute limit
+        time.sleep(1)
     meta["model"] = MODEL
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=0))
     print(f"summaries: {done} new, {len(todo) - done} waiting, today {meta['daily'][today]}")

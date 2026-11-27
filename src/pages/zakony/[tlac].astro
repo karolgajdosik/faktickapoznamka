@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Timeline from "../../components/Timeline.astro";
 import SpeechList from "../../components/SpeechList.astro";
 import { lawProcess, committees } from "../../lib/extra";
+import lawSummaries from "../../../data/lawsummaries.json";
 import { laws, stageOf, fmtShort, fmtDate, fmtDur, mpById, clubColor, speakerLabel, CHAIR, resultText, type Law } from "../../lib/data";
 export function getStaticPaths() { return laws.map((l) => ({ params: { tlac: l.tlac }, props: { l } })); }
 const { l } = Astro.props as { l: Law };
@@ -15,6 +16,7 @@ for (const x of real) { const e = bySpeaker.get(x.speaker) ?? { label: speakerLa
 const top = [...bySpeaker.values()].sort((a, b) => b.sec - a.sec).slice(0, 10);
 const maxSec = top[0]?.sec || 1;
 const P = lawProcess.get(l.tlac);
+const AI = (lawSummaries as Record<string, { s: string | null; src?: string }>)[l.tlac];
 const gestorId = P?.gestor ? committees.find((c) => c.name === P.gestor)?.id : undefined;
 const nrsrZakon = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/zakon&ZakZborID=13&CisObdobia=9&CPT=${l.tlac}`;
 const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/cpt&ZakZborID=13&CisObdobia=9&ID=${l.tlac}`;
@@ -22,6 +24,12 @@ const nrsr = `https://www.nrsr.sk/web/Default.aspx?sid=zakony/cpt&ZakZborID=13&C
 <Base title={`${l.title.slice(0, 110)} (tlač ${l.tlac})`} description={`Tlač ${l.tlac}: ${l.title.slice(0, 160)}. Stav: ${l.status}. ${l.votes.length} hlasovaní, ${real.length} vystúpení v rozprave.`} ogImage={`/og/zakon/${l.tlac}.png`} index>
   <p class="meta-line"><a href="/zakony/">Zákony a návrhy</a>, tlač {l.tlac}, {l.kind}</p>
   <h1 style="font-size:var(--step-2);max-width:62ch">{l.title}</h1>
+  {AI?.s && (
+    <div class="panel pad law-ai">
+      <p><span class="ai" title="Zhrnutie vytvorila umelá inteligencia z dôvodovej správy navrhovateľa. Môže obsahovať nepresnosti; rozhoduje oficiálny text.">AI zhrnutie</span> {AI.s}</p>
+      <small>Jednoduchou rečou z dokumentu „{AI.src || "Dôvodová správa"}“, ktorý predložil navrhovateľ. Vytvorila umelá inteligencia a môže obsahovať nepresnosti, rozhoduje <a href={nrsr} rel="noopener">oficiálny text na nrsr.sk</a>.</small>
+    </div>
+  )}
   <dl class="tiles" style="margin-top:1.25rem">
     <div class={`tile ${l.status === "schválený" ? "accent" : ""}`}><dt>Stav v NR SR</dt><dd style={l.status === "schválený" ? "color:var(--za)" : l.status === "neschválený" ? "color:var(--proti)" : ""}>{l.status}</dd></div>
     <div class="tile"><dt>Hlasovaní</dt><dd>{l.votes.length}</dd></div>

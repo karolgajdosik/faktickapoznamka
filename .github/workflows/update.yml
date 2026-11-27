@@ -26,7 +26,7 @@ on:
         description: "Max votes in this run"
         required: false
         default: "400"
-permissions: { contents: write, models: read, issues: write }
+permissions: { contents: write, issues: write }
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   update:
@@ -62,9 +62,9 @@ jobs:
       - name: Explanatory memoranda of bills (text for law summaries)
         continue-on-error: true
         run: timeout 15m python scraper/lawdocs.py --minutes 10 --max 60
-      - name: AI summaries (GitHub Models)
+      - name: AI summaries (Cloudflare Workers AI, free daily allowance)
         continue-on-error: true
-        env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        env: { CF_API_TOKEN: "${{ secrets.CF_API_TOKEN }}", CLOUDFLARE_ACCOUNT_ID: "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" }
         run: timeout 20m python scraper/summarize.py
       - name: Commit data
         id: commit

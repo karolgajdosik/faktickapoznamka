@@ -16,7 +16,7 @@ const scan = (s) => {
 walk("dist");
 const file = "dist/_headers";
 const h = readFileSync(file, "utf8");
-const out = h.replace(/script-src 'self' 'unsafe-inline'/, `script-src 'self' ${[...hashes].sort().join(" ")}`);
+const out = h.replaceAll(/script-src 'self' 'unsafe-inline'/g, `script-src 'self' ${[...hashes].sort().join(" ")}`);
 if (out === h) throw new Error("script-src 'unsafe-inline' not found in dist/_headers");
 writeFileSync(file, out);
 console.log(`CSP: ${hashes.size} inline script hashes`);

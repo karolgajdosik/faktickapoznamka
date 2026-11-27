@@ -1,0 +1,29 @@
+---
+import Base from "../../layouts/Base.astro";
+import { TEMY, votesByTema } from "../../lib/temy";
+import { isFinal, plural } from "../../lib/data";
+const rows = TEMY.map((t) => { const vs = votesByTema.get(t.slug)!; const fin = vs.filter(isFinal); return { t, n: vs.length, laws: fin.filter((v) => v.passed).length, last: vs[0]?.datetime }; }).sort((a, b) => b.n - a.n);
+const max = rows[0]?.n || 1;
+---
+<Base title="Hlasovania podľa tém" description="Ako hlasuje Národná rada SR v jednotlivých oblastiach: zdravotníctvo, dane, školstvo, justícia, bezpečnosť a ďalšie.">
+  <h1>Hlasovania podľa tém</h1>
+  <p class="meta-line">Tému určujeme podľa názvu návrhu, nie umelou inteligenciou. Jedno hlasovanie môže patriť do viacerých tém; procedurálne hlasovania nemajú žiadnu.</p>
+  <ul class="tm-grid">
+    {rows.map(({ t, n, laws }) => (
+      <li><a class="panel pad" href={`/temy/${t.slug}/`}>
+        <b>{t.name}</b><small>{t.desc}</small>
+        <span class="tm-bar"><i style={`width:${(100 * n) / max}%`}></i></span>
+        <span class="tm-n">{n.toLocaleString("sk-SK")} {plural(n, "hlasovanie", "hlasovania", "hlasovaní")} · {laws} {plural(laws, "prijatý zákon", "prijaté zákony", "prijatých zákonov")}</span>
+      </a></li>
+    ))}
+  </ul>
+</Base>
+<style>
+  .tm-grid { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: .75rem; }
+  .tm-grid a { display: grid; gap: .35rem; height: 100%; text-decoration: none; color: var(--text); }
+  .tm-grid a:hover { border-color: var(--accent); }
+  .tm-grid small { color: var(--muted); }
+  .tm-bar { height: .4rem; border-radius: 999px; background: var(--panel-2); overflow: hidden; margin-top: .3rem; }
+  .tm-bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .tm-n { font-size: var(--step--1); color: var(--muted); font-variant-numeric: tabular-nums; }
+</style>

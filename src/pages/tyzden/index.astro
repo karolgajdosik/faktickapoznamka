@@ -1,0 +1,40 @@
+---
+import Base from "../../layouts/Base.astro";
+import { weeks, weekLabel } from "../../lib/weeks";
+import { pct, plural } from "../../lib/data";
+const years = [...new Set(weeks.map((w) => w.year))];
+const latest = weeks[0];
+---
+<Base title="Týždeň v parlamente" description="Zhrnutie každého rokovacieho týždňa NR SR: čo prešlo, záverečné hlasovania o zákonoch, najtesnejšie výsledky, kto chýbal a kto hlasoval proti klubu." ogImage={latest ? `/og/tyzden/${latest.key}.png` : undefined}>
+  <h1>Týždeň v parlamente</h1>
+  <p class="meta-line">Zhrnutie každého týždňa, v ktorom Národná rada hlasovala. Vzniká automaticky z oficiálnych záznamov.</p>
+  {latest && (
+    <a class="panel pad wk-latest" href={`/tyzden/${latest.key}/`}>
+      <small>Posledný týždeň</small>
+      <b>{weekLabel(latest)}</b>
+      <span>{latest.votes.length} {plural(latest.votes.length, "hlasovanie", "hlasovania", "hlasovaní")} · {latest.passed} schválených · {latest.finals.filter((v) => v.passed).length} prijatých zákonov · účasť {pct(latest.attendance)}</span>
+    </a>
+  )}
+  {years.map((y) => (
+    <section>
+      <div class="section-head"><h2>{y}</h2></div>
+      <ul class="wk-list">
+        {weeks.filter((w) => w.year === y).map((w) => (
+          <li><a href={`/tyzden/${w.key}/`}><b>{weekLabel(w)}</b><span>{w.votes.length} {plural(w.votes.length, "hlasovanie", "hlasovania", "hlasovaní")}</span><span>{w.finals.filter((v) => v.passed).length} {plural(w.finals.filter((v) => v.passed).length, "zákon", "zákony", "zákonov")}</span><span>účasť {pct(w.attendance)}</span></a></li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>
+<style>
+  .wk-latest { display: grid; gap: .25rem; margin: 1.25rem 0; text-decoration: none; color: var(--text); border-left: 4px solid var(--accent); }
+  .wk-latest:hover { border-color: var(--accent); }
+  .wk-latest small { color: var(--muted); }
+  .wk-latest b { font-size: var(--step-2); }
+  .wk-latest span { color: var(--muted); }
+  .wk-list { list-style: none; margin: 0; padding: 0; }
+  .wk-list a { display: grid; grid-template-columns: minmax(12rem, 2fr) 1fr 1fr 1fr; gap: .75rem; padding: .55rem 0; border-top: 1px solid var(--line); color: var(--text); text-decoration: none; font-variant-numeric: tabular-nums; }
+  .wk-list a:hover b { color: var(--accent); }
+  .wk-list span { color: var(--muted); font-size: var(--step--1); }
+  @media (max-width: 640px) { .wk-list a { grid-template-columns: 1fr auto; } .wk-list span:nth-of-type(n+2) { display: none; } }
+</style>

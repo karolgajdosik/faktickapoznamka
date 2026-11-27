@@ -23,6 +23,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
       <span id="f-res" role="group" aria-label="Výsledok" style="display:contents"></span>
       <span class="fx-label" style="margin-left:.6rem">Obdobie</span>
       <span id="f-when" role="group" aria-label="Obdobie" style="display:contents"></span>
+      <select class="fx-sel" id="f-topic" aria-label="Téma"><option value="">Každá téma</option></select>
       <select class="fx-sel" id="f-session" aria-label="Schôdza"><option value="">Každá schôdza</option>{sessions.slice().sort((a, b) => b.n - a.n).map((s) => <option value={s.n}>{s.n}. schôdza</option>)}</select>
     </div>
     <div class="fx-row fx-wrap">
@@ -47,7 +48,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
 </Base>
 
 <script>
-  type Row = [string, string, string, string, string, number, number, number, number, number, number, number, string, string];
+  type Row = [string, string, string, string, string, number, number, number, number, number, number, number, string, string, string];
   document.querySelector("#vlbox ul.votes")!.id = "vl";
   const $ = (id: string) => document.getElementById(id)!;
   const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
@@ -64,11 +65,11 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
   const WHEN: [string, string][] = [["", "Kedykoľvek"], ["7", "7 dní"], ["30", "30 dní"], ...years.map((y) => [`y${y}`, y] as [string, string])];
   const POS: [string, string][] = [["Z", "za"], ["P", "proti"], ["?", "zdržal sa"]];
 
-  const S = { q: "", kind: "", res: "", when: "", session: "", club: "", pos: "", club2: "", pos2: "", sort: "new" };
+  const S = { q: "", kind: "", res: "", when: "", topic: "", session: "", club: "", pos: "", club2: "", pos2: "", sort: "new" };
   const fromUrl = () => { const u = new URLSearchParams(location.search); for (const k of Object.keys(S) as (keyof typeof S)[]) if (u.has(k)) S[k] = u.get(k)!; };
   const toUrl = () => { const u = new URLSearchParams(); for (const [k, v] of Object.entries(S)) if (v && !(k === "sort" && v === "new")) u.set(k, v); history.replaceState(null, "", `${location.pathname}${u.size ? `?${u}` : ""}`); };
 
-  let rows: Row[] = [], clubs: string[] = [], search: string[] = [], shown = 0, list: Row[] = [];
+  let rows: Row[] = [], clubs: string[] = [], temy: [string, string][] = [], search: string[] = [], shown = 0, list: Row[] = [];
   const PAGE = 60;
   const margin = (r: Row) => { const present = r[7] + r[8] + r[9] + r[10]; return Math.abs(r[7] - Math.floor(present / 2) - 1); };
   const now = Date.now();
@@ -84,6 +85,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
     if (skip !== "kind" && S.kind) { if (S.kind === "close" ? !(r[6] !== -1 && margin(r) <= 5) : r[12] !== S.kind) return false; }
     if (skip !== "res" && S.res && String(r[6]) !== S.res) return false;
     if (skip !== "when" && S.when) { if (S.when.startsWith("y") ? !r[1].startsWith(S.when.slice(1)) : now - Date.parse(r[1]) > Number(S.when) * 864e5) return false; }
+    if (S.topic && !("," + r[14] + ",").includes("," + S.topic + ",")) return false;
     if (S.session && String(r[5]) !== S.session) return false;
     if (S.club && S.pos) { const i1 = clubs.indexOf(S.club); if (i1 < 0 || r[13][i1] !== S.pos) return false; }
     if (S.club2 && S.pos2) { const i2 = clubs.indexOf(S.club2); if (i2 < 0 || r[13][i2] !== S.pos2) return false; }
@@ -161,7 +163,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
     chips($("f-pos"), POS, "pos"); for (const b of $("f-pos").querySelectorAll("button")) (b as HTMLButtonElement).disabled = !S.club;
     ($("f-club2") as HTMLSelectElement).hidden = !(S.club && S.pos);
     chips($("f-pos2"), S.club2 ? POS : [], "pos2");
-    for (const id of ["f-session", "f-club", "f-club2", "sort"]) { const el = $(id) as HTMLSelectElement; const k = ({ "f-session": "session", "f-club": "club", "f-club2": "club2", sort: "sort" } as const)[id as "sort"]; el.value = S[k]; el.classList.toggle("on", !!S[k] && k !== "sort"); }
+    for (const id of ["f-topic", "f-session", "f-club", "f-club2", "sort"]) { const el = $(id) as HTMLSelectElement; const k = ({ "f-topic": "topic", "f-session": "session", "f-club": "club", "f-club2": "club2", sort: "sort" } as const)[id as "sort"]; el.value = S[k]; el.classList.toggle("on", !!S[k] && k !== "sort"); }
     ($("q") as HTMLInputElement).value !== S.q && (($("q") as HTMLInputElement).value = S.q);
     $("q-clear").hidden = !S.q;
     $("count").innerHTML = `${nf(list.length)} <small>${plural(list.length)}</small>`;
@@ -170,6 +172,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
     if (S.kind) tags.push(["kind", KINDS.find((k) => k[0] === S.kind)![1]]);
     if (S.res) tags.push(["res", RES.find((k) => k[0] === S.res)![1]]);
     if (S.when) tags.push(["when", WHEN.find((k) => k[0] === S.when)?.[1] ?? S.when]);
+    if (S.topic) tags.push(["topic", temy.find((t) => t[0] === S.topic)?.[1] ?? S.topic]);
     if (S.session) tags.push(["session", `${S.session}. schôdza`]);
     if (S.club && S.pos) tags.push(["club", `${S.club} ${POS.find((p) => p[0] === S.pos)![1]}`]);
     if (S.club2 && S.pos2) tags.push(["club2", `${S.club2} ${POS.find((p) => p[0] === S.pos2)![1]}`]);
@@ -184,6 +187,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
   });
   onChip($("f-kind"), "kind"); onChip($("f-res"), "res"); onChip($("f-when"), "when"); onChip($("f-pos"), "pos", true); onChip($("f-pos2"), "pos2", true);
   $("f-session").addEventListener("change", (e) => set("session", (e.target as HTMLSelectElement).value));
+  $("f-topic").addEventListener("change", (e) => set("topic", (e.target as HTMLSelectElement).value));
   $("f-club").addEventListener("change", (e) => { const v = (e.target as HTMLSelectElement).value; S.club = v; if (v && !S.pos) S.pos = "Z"; set("club", v); });
   $("f-club2").addEventListener("change", (e) => { const v = (e.target as HTMLSelectElement).value; if (v && !S.pos2) S.pos2 = S.pos === "Z" ? "P" : "Z"; set("club2", v); });
   $("sort").addEventListener("change", (e) => set("sort", (e.target as HTMLSelectElement).value));
@@ -192,7 +196,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
   $("q-clear").addEventListener("click", () => { set("q", ""); ($("q") as HTMLInputElement).focus(); });
   $("active").addEventListener("click", (e) => {
     const b = e.target as HTMLElement;
-    if (b.id === "reset") { Object.assign(S, { q: "", kind: "", res: "", when: "", session: "", club: "", pos: "", club2: "", pos2: "" }); render(); return; }
+    if (b.id === "reset") { Object.assign(S, { q: "", kind: "", res: "", when: "", topic: "", session: "", club: "", pos: "", club2: "", pos2: "" }); render(); return; }
     const k = b.dataset.k as keyof typeof S | undefined; if (k) set(k, "");
   });
   $("more").addEventListener("click", () => render(false));
@@ -204,8 +208,9 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
   new IntersectionObserver((es) => { if (es[0].isIntersecting && !$("more").hidden && shown > 0 && shown < 600) render(false); }, { rootMargin: "600px" }).observe($("more"));
 
   fromUrl();
-  fetch("/hlasovania/data.json").then((r) => r.json()).then((d: { clubs: string[]; rows: Row[] }) => {
-    rows = d.rows; clubs = d.clubs; search = rows.map((r) => words(`${r[2]} ${r[3]} ${r[4] ? `tlac ${r[4]}` : ""}`));
+  fetch("/hlasovania/data.json").then((r) => r.json()).then((d: { clubs: string[]; temy: [string, string][]; rows: Row[] }) => {
+    rows = d.rows; clubs = d.clubs; temy = d.temy ?? [];
+    $("f-topic").insertAdjacentHTML("beforeend", temy.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join("")); search = rows.map((r) => words(`${r[2]} ${r[3]} ${r[4] ? `tlac ${r[4]}` : ""}`));
     const opts = clubs.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
     $("f-club").insertAdjacentHTML("beforeend", opts); $("f-club2").insertAdjacentHTML("beforeend", opts);
     render();

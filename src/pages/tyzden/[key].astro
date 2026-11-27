@@ -1,0 +1,94 @@
+---
+// One parliament week: results, final votes on bills, closest votes, absences, votes against the club, longest speakers.
+import Base from "../../layouts/Base.astro";
+import VoteList from "../../components/VoteList.astro";
+import Ava from "../../components/Ava.astro";
+import { weeks, weekLabel, margin, type Week } from "../../lib/weeks";
+import { pct, fmtDur, plural, voteContext, voteHeadline, shortTitle, resultText, resultCls, lawTitle } from "../../lib/data";
+export function getStaticPaths() { return weeks.map((w, i) => ({ params: { key: w.key }, props: { w, newer: weeks[i - 1] ?? null, older: weeks[i + 1] ?? null } })); }
+const { w, newer, older } = Astro.props as { w: Week; newer: Week | null; older: Week | null };
+const label = weekLabel(w);
+const passedFinals = w.finals.filter((v) => v.passed);
+const desc = `Parlament v týždni ${label}: ${w.votes.length} ${plural(w.votes.length, "hlasovanie", "hlasovania", "hlasovaní")}, ${w.passed} schválených, ${passedFinals.length} ${plural(passedFinals.length, "prijatý zákon", "prijaté zákony", "prijatých zákonov")}, účasť ${pct(w.attendance)}.`;
+---
+<Base index title={`Týždeň v parlamente: ${label}`} description={desc} ogImage={`/og/tyzden/${w.key}.png`}>
+  <p class="meta-line"><a href="/tyzden/">Týždeň v parlamente</a></p>
+  <h1>{label}</h1>
+  <p class="meta-line">{w.week}. týždeň {w.year} · {w.sessions.map((n, i) => <>{i > 0 && ", "}<a href={`/schodze/${n}/`}>{n}. schôdza</a></>)}</p>
+
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class="tile"><dt>Hlasovaní</dt><dd>{w.votes.length}</dd></div>
+    <div class="tile"><dt>Schválené</dt><dd style="color:var(--za)">{w.passed}</dd></div>
+    <div class="tile"><dt>Neschválené</dt><dd style="color:var(--proti)">{w.failed}</dd></div>
+    <div class="tile accent"><dt>Prijaté zákony</dt><dd>{passedFinals.length}</dd></div>
+    <div class="tile"><dt>Priemerná účasť</dt><dd>{pct(w.attendance)}</dd></div>
+    <div class="tile"><dt>Rokovacie dni</dt><dd>{w.days.length}</dd></div>
+  </dl>
+
+  {w.finals.length > 0 && <>
+    <div class="section-head"><h2>Záverečné hlasovania o zákonoch</h2><span class="muted" style="font-size:var(--step--1)">tretie čítanie, hlasovanie o návrhu ako celku</span></div>
+    <ul class="wk-laws">
+      {w.finals.map((v) => (
+        <li>
+          <span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
+          <a href={v.tlac ? `/zakony/${v.tlac}/` : `/hlasovania/${v.id}/`}>{shortTitle(lawTitle(v.title), 190)}</a>
+          <small><a href={`/hlasovania/${v.id}/`}>{v.counts.Z} za, {v.counts.P} proti, {v.counts["?"]} sa zdržalo</a></small>
+        </li>
+      ))}
+    </ul>
+  </>}
+
+  {w.close.length > 0 && <>
+    <div class="section-head"><h2>Najtesnejšie hlasovania</h2></div>
+    <div class="wk-close">
+      {w.close.map((v) => { const ctx = voteContext(v); const k = margin(v); return (
+        <a class="panel pad" href={`/hlasovania/${v.id}/`}>
+          <span class={`pill ${resultCls(v)}`}>{resultText(v)}</span>
+          <b>{shortTitle(voteHeadline(v), 120)}</b>
+          {ctx && <small class="muted">{shortTitle(ctx, 110)}</small>}
+          <span class="wk-margin">{`o výsledku rozhodlo ${k} ${plural(k, "hlas", "hlasy", "hlasov")}`} · {v.counts.Z} : {v.counts.P}</span>
+        </a>); })}
+    </div>
+  </>}
+
+  <div class="wk-grid">
+    {w.absent.length > 0 && <section>
+      <h2>Najviac chýbali</h2>
+      <ul class="wk-people">{w.absent.map((x) => <li><a href={`/poslanci/${x.m.id}/`}><Ava m={x.m} /><span>{x.m.name}<small>{x.m.club}</small></span><b>{x.n} z {x.of}</b></a></li>)}</ul>
+    </section>}
+    {w.rebels.length > 0 && <section>
+      <h2>Hlasovali proti svojmu klubu</h2>
+      <ul class="wk-people">{w.rebels.map((x) => <li><a href={`/poslanci/${x.m.id}/`}><Ava m={x.m} /><span>{x.m.name}<small>{x.m.club}</small></span><b>{x.n}×</b></a></li>)}</ul>
+    </section>}
+    {w.talkers.length > 0 && <section>
+      <h2>Najdlhšie rečnili</h2>
+      <ul class="wk-people">{w.talkers.map((x) => <li><a href={`/poslanci/${x.m.id}/`}><Ava m={x.m} /><span>{x.m.name}<small>{x.n} {plural(x.n, "vystúpenie", "vystúpenia", "vystúpení")}</small></span><b>{fmtDur(x.sec)}</b></a></li>)}</ul>
+    </section>}
+  </div>
+  <p class="note">Počty sú štatistický výpočet z oficiálnych záznamov NR SR, nie hodnotenie poslancov.</p>
+
+  <div class="section-head"><h2>Všetky hlasovania týždňa</h2></div>
+  <VoteList items={w.votes} />
+
+  <nav class="wk-nav" aria-label="Ďalšie týždne">
+    {older ? <a href={`/tyzden/${older.key}/`}>‹ {weekLabel(older)}</a> : <span></span>}
+    {newer ? <a href={`/tyzden/${newer.key}/`}>{weekLabel(newer)} ›</a> : <span></span>}
+  </nav>
+</Base>
+
+<style is:global>
+  .wk-close { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: .75rem; }
+  .wk-close a { display: grid; gap: .35rem; align-content: start; text-decoration: none; color: var(--text); }
+  .wk-close a:hover { border-color: var(--accent); }
+  .wk-close .pill { justify-self: start; }
+  .wk-margin { font-size: var(--step--1); font-weight: 700; color: var(--accent); }
+  .wk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .wk-grid h2 { font-size: var(--step-0); margin: 0 0 .5rem; }
+  .wk-people { list-style: none; margin: 0; padding: 0; }
+  .wk-people a { display: grid; grid-template-columns: auto 1fr auto; gap: .6rem; align-items: center; padding: .4rem 0; border-top: 1px solid var(--line); color: var(--text); text-decoration: none; }
+  .wk-people a:hover span { color: var(--accent); }
+  .wk-people small { display: block; color: var(--muted); font-size: var(--step--2); }
+  .wk-people b { font-variant-numeric: tabular-nums; }
+  .wk-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .wk-nav a { font-weight: 700; }
+</style>

@@ -6,6 +6,7 @@ import FollowedList from "../components/FollowedList.astro";
 import VoteBar from "../components/VoteBar.astro";
 import Timeline from "../components/Timeline.astro";
 import SessionCard from "../components/SessionCard.astro";
+import { latestWeek, weekLabel } from "../lib/weeks";
 import { voteHeadline, voteContext, mpTalk, fmtDur, votes, sessions, mps, mpStats, clubColor, initials, pct, fmtDate, fmtTime, fmtDay, dayKey, resultText, resultCls, shortTitle, CODES, LABEL, cls } from "../lib/data";
 const latest = votes[0];
 const s0 = sessions[0];
@@ -49,6 +50,14 @@ const talkers = ranked((id) => mpTalk(id).seconds).filter((m) => mpTalk(m.id).se
 
       <div class="section-head"><h2>{fmtDay(latest.datetime)}</h2><a href={`/schodze/${latest.session}/`}>Celá {latest.session}. schôdza</a></div>
       <Timeline items={lastDay.slice(0, 12)} />
+
+      {latestWeek && (
+        <a class="panel pad home-week" href={`/tyzden/${latestWeek.key}/`}>
+          <small>Týždeň v parlamente · {weekLabel(latestWeek)}</small>
+          <b>{latestWeek.votes.length} hlasovaní, {latestWeek.passed} schválených, {latestWeek.finals.filter((v) => v.passed).length} prijatých zákonov</b>
+          <span>Záverečné hlasovania, najtesnejšie výsledky, kto chýbal a kto hlasoval proti klubu</span>
+        </a>
+      )}
 
       <div class="section-head"><h2>Poslanci v číslach</h2><a href="/poslanci/">Celá sála</a></div>
       <div class="sessions">

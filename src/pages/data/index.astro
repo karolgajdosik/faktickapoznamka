@@ -1,0 +1,59 @@
+---
+import Base from "../../layouts/Base.astro";
+import { tables } from "../../lib/opendata";
+import { meta } from "../../lib/data";
+const ts = tables();
+const nf = (n: number) => n.toLocaleString("sk-SK");
+---
+<Base title="Otvorené dáta" description="Stiahnite si dáta o NR SR: poslanci, hlasovania, hlasy každého poslanca, zákony, majetkové priznania a vystúpenia v rozprave vo formáte CSV a Excel.">
+  <h1>Otvorené dáta</h1>
+  <p class="lead od-lead">Všetko, čo vidíte na stránke, si môžete stiahnuť a spracovať po svojom. Dáta sa obnovujú spolu so stránkou, naposledy {new Date(meta.updatedAt).toLocaleString("sk-SK", { timeZone: "Europe/Bratislava", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" })}.</p>
+
+  <a class="panel pad od-xlsx" href="/data/faktickapoznamka.xlsx" download>
+    <b>Všetko v jednom Excel súbore</b>
+    <span>Poslanci, hlasovania, zákony, majetok a vystúpenia, každé na samostatnom hárku s filtrami. Hlasy jednotlivých poslancov sú pre veľkosť iba v CSV.</span>
+    <span class="od-btn">Stiahnuť .xlsx</span>
+  </a>
+
+  <div class="section-head"><h2>Jednotlivé tabuľky (CSV)</h2></div>
+  <div class="od-list">
+    {ts.map((t) => (
+      <details class="panel od-item">
+        <summary>
+          <span><b>{t.title}</b><small>{t.desc}</small></span>
+          <span class="od-n">{nf(t.rows.length)} riadkov</span>
+          <a class="od-btn" href={`/data/${t.file}.csv`} download>CSV</a>
+        </summary>
+        <table class="od-cols"><thead><tr><th>Stĺpec</th><th>Význam</th></tr></thead>
+          <tbody>{t.cols.map(([k, d]) => <tr><td><code>{k}</code></td><td>{d}</td></tr>)}</tbody></table>
+      </details>
+    ))}
+  </div>
+
+  <div class="section-head"><h2>Ako dáta použiť</h2></div>
+  <div class="od-how">
+    <p><b>Kódovanie a oddeľovač:</b> CSV súbory sú v UTF-8 a stĺpce oddeľuje čiarka. V Exceli ich otvorte cez Údaje → Z textu/CSV, aby sa správne načítala diakritika, alebo použite priamo súbor .xlsx. Google Sheets ich načíta bez nastavovania.</p>
+    <p><b>Prepojenie tabuliek:</b> <code>hlasy-ROK.hlasovanie_id</code> = <code>hlasovania.id</code> a <code>hlasy-ROK.poslanec_id</code> = <code>poslanci.id</code>. Hlasy sú pre veľkosť rozdelené po rokoch. ID sú rovnaké ako na nrsr.sk, takže sa dajú spojiť aj s oficiálnymi stránkami.</p>
+    <p><b>Licencia:</b> pôvodné záznamy sú úradné dokumenty Národnej rady SR a nie sú predmetom autorského práva. Naše spracovanie môžete voľne používať aj komerčne pod licenciou <a href="https://creativecommons.org/licenses/by/4.0/deed.sk" rel="noopener">CC BY 4.0</a>; uveďte prosím zdroj „faktickapoznamka.sk“.</p>
+    <p><b>Surové dáta a kód:</b> všetky JSON súbory, z ktorých stránka vzniká, aj kód scrapera sú na <a href="https://github.com/karolgajdosik/faktickapoznamka" rel="noopener">GitHube</a>. Chyby alebo požiadavky na ďalšie dáta posielajte na <a href="mailto:kontakt@faktickapoznamka.sk">kontakt@faktickapoznamka.sk</a>.</p>
+  </div>
+</Base>
+<style>
+  .od-lead { color: var(--muted); max-width: 46rem; }
+  .od-xlsx { display: grid; gap: .3rem; margin: 1.5rem 0; text-decoration: none; color: var(--text); border-left: 4px solid var(--za); }
+  .od-xlsx:hover { border-color: var(--za); }
+  .od-xlsx b { font-size: var(--step-1); }
+  .od-xlsx span { color: var(--muted); }
+  .od-btn { justify-self: start; font-weight: 750; font-size: var(--step--1); padding: .35rem .9rem; border-radius: 999px; background: var(--accent); color: var(--accent-ink) !important; text-decoration: none; white-space: nowrap; }
+  .od-list { display: grid; gap: .6rem; }
+  .od-item summary { display: grid; grid-template-columns: 1fr auto auto; gap: 1rem; align-items: center; padding: .9rem 1.1rem; cursor: pointer; list-style: none; }
+  .od-item summary::-webkit-details-marker { display: none; }
+  .od-item summary small { display: block; color: var(--muted); font-size: var(--step--1); }
+  .od-n { color: var(--muted); font-size: var(--step--1); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .od-cols { width: 100%; border-collapse: collapse; font-size: var(--step--1); margin: 0 0 .6rem; }
+  .od-cols th, .od-cols td { text-align: left; padding: .35rem 1.1rem; border-top: 1px solid var(--line); vertical-align: top; }
+  .od-cols th { color: var(--muted); font-weight: 600; }
+  .od-how { max-width: 46rem; }
+  .od-how p { margin: 0 0 .9rem; }
+  @media (max-width: 640px) { .od-item summary { grid-template-columns: 1fr auto; } .od-n { display: none; } }
+</style>
