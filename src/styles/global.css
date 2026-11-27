@@ -415,17 +415,18 @@ details.day[open] > summary::before { transform: rotate(90deg); }
 .sheet { display: none; }
 .sheet[open] { display: grid; }
 @media (max-width: 44rem) {
-  header.site { transition: transform .2s ease; }
-  header.site.tucked { transform: translateY(-100%); }
   .head { flex-wrap: wrap; row-gap: .5rem; column-gap: .6rem; min-height: 3.4rem; padding-top: .55rem; }
   .head .brand { flex: none; }
   .mark { display: block; width: 30px; height: 30px; border-radius: 8px; }
   .word, nav.main { display: none !important; }
   .theme-btn { flex: none; width: 2.3rem; height: 2.3rem; }
-  .m-chips { display: flex; order: 5; flex-basis: 100%; gap: .4rem; overflow-x: auto; scrollbar-width: none; margin: .1rem -1rem 0; padding: 0 1rem .55rem;
-    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 1.5rem), transparent); mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
-  .m-chips::-webkit-scrollbar { display: none; }
-  .m-chips a { flex: none; text-decoration: none; color: var(--text); font-weight: 600; font-size: var(--step--1); padding: .38rem .8rem; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); white-space: nowrap; }
+  /* five sections that always fit the width: no sideways scrolling, nothing moves */
+  .m-chips { display: flex; order: 5; flex-basis: 100%; min-width: 0; max-width: 100%; gap: .3rem; margin: .1rem 0 0; padding: 0 0 .55rem; }
+  .m-chips a { flex: 1 1 auto; min-width: 0; text-align: center; text-decoration: none; color: var(--text); font-weight: 650;
+    font-size: var(--chip-fs, clamp(.68rem, 3.25vw, .84rem)); letter-spacing: -.005em; padding: .42rem .25rem; border-radius: 999px;
+    background: var(--panel); border: 1px solid var(--line); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: background .15s, color .15s; }
+  .m-chips.fitting a { flex: none; }
+  .m-chips a:active { transform: scale(.97); }
   .m-chips a[aria-current="page"] { background: var(--text); color: var(--bg); border-color: var(--text); }
   .m-search { display: flex; align-items: center; gap: .45rem; flex: 1; min-width: 0; height: 2.3rem; padding: 0 .8rem; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--line); }
   .m-search:focus-within { border-color: var(--accent); }

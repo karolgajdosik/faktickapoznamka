@@ -62,9 +62,8 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
         <a href="https://tv.nrsr.sk/" rel="noopener" id="nav-live" hidden><span class="live-dot" aria-hidden="true"></span>Naživo</a>
       </nav>
       <nav class="m-chips" aria-label="Sekcie">
-        {chips.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
+        {chips.map(([href, label], i) => <a href={href} data-chip={i} translate="no" aria-current={path.startsWith(href) ? "page" : undefined}>{label}</a>)}
       </nav>
-      <script is:inline>{(() => { const a = document.querySelector(".m-chips [aria-current]"); if (a) a.parentElement.scrollLeft = a.offsetLeft - 16; })()}</script>
       <button type="button" class="k-open" id="k-open" aria-haspopup="dialog" aria-controls="k-pal">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <span>Hľadať poslanca, zákon…</span><kbd id="k-key">Ctrl K</kbd>
@@ -133,13 +132,27 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
       const pill = document.getElementById("live-pill")!; pill.hidden = false;
       pill.addEventListener("click", () => { const open = document.body.classList.toggle("live-open"); pill.setAttribute("aria-expanded", String(open)); });
     }
-    // Mobile: hide the top bar while scrolling down, bring it back on scroll up.
+    // Mobile: the top bar stays fixed in place (it used to hide while scrolling down).
+    // Section chips always fit one row: shrink the type until every label fits whole (any language, any width).
     {
-      const head = document.querySelector<HTMLElement>("header.site")!; let last = scrollY;
-      addEventListener("scroll", () => {
-        const y = scrollY; if (Math.abs(y - last) < 6) return;
-        head.classList.toggle("tucked", y > last && y > 80); last = y;
-      }, { passive: true });
+      const nav = document.querySelector<HTMLElement>(".m-chips");
+      // short labels per language: the row must fit a phone without tiny type
+      const SHORT: Record<string, string[]> = {
+        en: ["Sessions", "Statistics", "Committees", "Regions", "Compare"],
+        de: ["Sitzungen", "Statistik", "Ausschüsse", "Regionen", "Vergleich"],
+        hu: ["Ülések", "Statisztika", "Bizottságok", "Megyék", "Összevetés"],
+        pl: ["Obrady", "Statystyki", "Komisje", "Kraje", "Porównaj"],
+      };
+      const lab = SHORT[document.documentElement.dataset.lang ?? ""];
+      if (nav && lab) nav.querySelectorAll<HTMLElement>("[data-chip]").forEach((a) => (a.textContent = lab[+a.dataset.chip!] ?? a.textContent));
+      const fit = () => {
+        if (!nav || !nav.offsetParent) return;
+        nav.style.removeProperty("--chip-fs"); nav.classList.add("fitting");
+        let fs = parseFloat(getComputedStyle(nav.querySelector("a")!).fontSize);
+        while (nav.scrollWidth > nav.clientWidth + 1 && fs > 9.5) { fs -= 0.25; nav.style.setProperty("--chip-fs", `${fs}px`); }
+        nav.classList.remove("fitting");
+      };
+      fit(); addEventListener("resize", fit); document.fonts?.ready.then(fit);
       const sheet = document.getElementById("more") as HTMLDialogElement;
       document.getElementById("more-btn")!.addEventListener("click", () => sheet.showModal());
       sheet.addEventListener("click", (e) => { if (e.target === sheet || (e.target as Element).closest("[data-close]")) sheet.close(); });
