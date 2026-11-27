@@ -7,14 +7,14 @@ Newest items first. Summaries are labelled as AI on the site and always link to 
 import json, os, pathlib, sys, time, datetime, urllib.request, urllib.error
 
 DATA = pathlib.Path("data"); OUT = DATA / "summaries.json"
-MODEL = os.environ.get("SUMMARY_MODEL", "@cf/mistralai/mistral-small-3.1-24b-instruct")
+MODEL = os.environ.get("SUMMARY_MODEL", "@cf/meta/llama-3.3-70b-instruct-fp8-fast")
 PER_RUN = int(os.environ.get("SUMMARY_PER_RUN", "12"))
-PER_DAY = int(os.environ.get("SUMMARY_PER_DAY", "60"))  # ~140 neurons each, under the free 10,000/day
+PER_DAY = int(os.environ.get("SUMMARY_PER_DAY", "60"))  # ~120 neurons each, under the free 10,000/day
 MIN_CHARS = 1500  # roughly 2–3 minutes of speech
 CHAIR = "Vstup predsedajúceho"
 PROMPT = ("Si nestranný redaktor. Zhrň vystúpenie poslanca v Národnej rade SR v 2 až 3 vetách po slovensky. "
           "Uveď len hlavné body, ktoré rečník skutočne povedal, v tretej osobe (napr. „Rečník tvrdí…“, „Navrhuje…“). "
-          "Nehodnoť, nepridávaj fakty ani kontext, ktoré v texte nie sú, nepoužívaj citácie dlhšie ako päť slov. "
+          "Nehodnoť, nepridávaj fakty ani kontext, ktoré v texte nie sú, nepoužívaj citácie dlhšie ako päť slov. Expresívne alebo urážlivé výrazy rečníka nepreberaj, opíš ich neutrálne. Píš spisovnou slovenčinou s diakritikou. "
           "Ak je text procedurálny alebo príliš krátky na zhrnutie, odpovedz iba slovom PROCEDURÁLNE.")
 
 LAW_PROMPT = ("Si nestranný redaktor. Z dôvodovej správy k návrhu zákona v Národnej rade SR napíš po slovensky 3 až 4 krátke vety "
