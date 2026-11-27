@@ -1,8 +1,56 @@
 {
 "_meta": {
-"model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+"model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
 "daily": {
-"2026-11-27": 22
+"2026-11-27": 44
 }
+},
+"20261127152704-stevulova-zuzana": {
+"s": "Rečník tvrdí, že ministerova argumentácia k pozmeňujúcim návrhům bola urážajúca inteligenciu poslancov. Navrhuje, aby minister bol čestnejší a povedal, že nevyjadruje súhlas s opozičnými pozmeňujúcimi návrhmi, najmä s tým, ktorý navrhol pán Grendel.",
+"at": "2026-11-27"
+},
+"20261127151547-mesterova-zuzana": {
+"s": "Rečníčka tvrdí, že minister nemá dôstojnosť a jeho argumenty sú úbohé. Navrhuje, že zrušenie trestného činu je len záležitosťou ochrany poslanca Ferenčáka a nie verejného záujmu.",
+"at": "2026-11-27"
+},
+"20261127144320-remisova-veronika": {
+"s": "Rečník tvrdí, že poslanci strany Smer plnia príkaz obhajovať návrh ministra Suska. Rečník sa pýta, prečo tieto poslanci nereagujú na určité skandály z minulosti, ako napríklad platby úradníkov za luxusné služby.",
+"at": "2026-11-27"
+},
+"20261127144118-stevulova-zuzana": {
+"s": "Rečníkka Števulová tvrdí, že predkladatelia poslaneckého návrhu menia definíciu nenáležitej výhody a nevytvárajú povinný register darov. Navrhuje, že im nejde o zlepšenie právnej úpravy, ale o to, aby ju prispôsobili konkrétnemu trestnému konaniu.",
+"at": "2026-11-27"
+},
+"20261127143606-kleinert-dana": {
+"s": "Rečník Dana Kleinertová vyjadruje svoje rozčarovanie z etického kódexu, ktorý neobsahuje jasná pravidlá pre poslancov. Navrhuje, aby výpisy z kariet verejných činiteľov boli verejne dostupné, a kritizuje Ministerstvo kultúry za netransparentné účtovanie nákladov.",
+"at": "2026-11-27"
+},
+"20261127141119-remisova-veronika": {
+"s": "Rečník Veronika Remišová navrhuje, aby sa v parlamente riešili užitočné zákony pre ľudí, ktoré zlepšia ich život. Tiež sa pýta, kde je hrdosť mladej generácie vládnej koalície, ktorá podporila návrh zákona, ktorý považuje za hlúposť. Navrhuje stiahnuť prílepok a zaviesť verejný register darov pre ústavných činiteľov.",
+"at": "2026-11-27"
+},
+"20261127134910-gazovicova-tina": {
+"s": "Rečníkka Tina Gažovičová navrhuje nový paragraf do Trestného zákona, ktorý by vyňal koaličných poslancov a ministrov z trestnej zodpovednosti. Rečníkka však okamžite dodáva, že si robí srandu a že jej návrh je reakciou na predkladanie zákona, ktorý ruší trestný čin, z ktorého je obvinený jeden z poslancov. Rečníkka tvrdí, že toto je adresná pomoc obvinenému poslancovi a že je to urážlivé voči občanom Slovenska.",
+"at": "2026-11-27"
+},
+"20261127134652-mesterova-zuzana": {
+"s": "Rečník tvrdí, že jej výrok nie je zosmiešňovaním, ale pohoršením nad tým, ako sa človek s právnickým vzdelaním môže správať. Navrhuje, že ak návrh prejde, tak sa zastaví trestné konanie voči pánovi Ferenčákovi a bude prekvapená, ak sa tak nestane, lebo by to bolo nezákonne.",
+"at": "2026-11-27"
+},
+"20261127134448-matejickova-zuzana": {
+"s": "Rečníkka Zuzana Matejičková vyjadruje svoje prekvapenie nad tým, ako sa jej kolegyňa vyjadruje o právnom vzdelaní. Rečníkka tvrdí, že kolegyňa má potrebu zosmiešňovať nižšie právne vzdelanie a že by sa mala venovať vecným komentárom. Rečníkka tiež spomína, že kolegyňa má tendenciu vymýšľať nepravdivé informácie.",
+"at": "2026-11-27"
+},
+"20261127130448-plavakova-lucia": {
+"s": "Rečník Lucia Plaváková tvrdí, že návrh na zrušenie trestného činu prikrmovania je neprimeraný a že koalícia sa nedokáže dohodnúť na jednotnej argumentácii. Navrhuje, aby sa pozmeňujúci návrh poslankyne Plevíkovej podrobil bližšiemu skúmaniu a aby sa zodpovedajúci minister vyjadril k otázke transpozície smernice Európskej únie.",
+"at": "2026-11-27"
+},
+"20261127115434-stevulova-zuzana": {
+"s": "Rečník tvrdí, že návrh na úpravu trestného činu ohrozenia a poškodenia životného prostredia je nesprávny, pretože zúžuje rozsah činu výlučne na majetkovú škodu. Navrhuje, aby sa k tomuto vyjadril minister spravodlivosti, či súhlasí s touto úpravou alebo nie. Rečník tiež kritizuje návrh na zrušenie trestného činu prijatia a poskytnutia nenáležitej výhody, ktorý bol predložený poslaneckým pozmeňujúcim návrhom.",
+"at": "2026-11-27"
+},
+"20261127114210-stevulova-zuzana": {
+"s": "Rečníčka Števulová vyjadruje svoje pripomienky k druhému pozmeňujúceemu návrhu k trestnej novele. Rečníčka tvrdí, že návrh predložený Plevíkovou a Glückom obsahuje problematické veci, najmä predĺženie transpozičnej lehоты o 1,5 roka. Rečníčka žiada vysvetlenie, prečo sa predlžuje transpozičná lehota len pre jeden konkrétny trestný čin.",
+"at": "2026-11-27"
 }
 }

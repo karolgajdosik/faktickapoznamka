@@ -1,0 +1,34 @@
+# Dôvodová správa
+D ô v o d o v á s p r á v a
+Všeobecná časť 
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov a ktorým sa dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov predkladá na rokovanie Národnej rady Slovenskej republiky poslanec Národnej rady Slovenskej republiky Marián Viskupič. 
+Cieľom predloženého návrhu zákona je znížiť daňové zaťaženie príjmov fyzických osôb z predaja virtuálnej meny na základe tzv. časového testu. Pri predaji virtuálnej meny po uplynutí jedného roka od jej nadobudnutia sa navrhuje príjem zdaňovať sadzbou dane vo výške 7 %. Naopak, v prípade príjmu z predaja virtuálnej meny do jedného roka sa príjmy zahrnú do základu dane (čiastkového základu dane) spolu s ostatnými príjmami.
+Súčasťou novely je aj v samostatnom článku zmena zákona o zdravotnom poistení, cieľom ktorej je oslobodiť fyzické osoby od povinnosti platenia odvodov na zdravotné poistenie z príjmu z predaja virtuálnej meny, ak virtuálna mena nebola súčasťou ich obchodného majetku. 
+Návrh zákona obsahovo vychádza zo zákona č. 315/2023 Z. z. schváleného Národnou radou Slovenskej republiky 28. júna 2023; išlo o novelu zákona o dani z príjmov, ktorou sa menili viaceré pravidlá zákona o dani z príjmov, pričom len menšia časť z týchto zmien sa týkala právnej úpravy virtuálnej meny. Kľúčové ustanovenia tohto zákona (čl. I a III) boli zrušené ešte predtým, než nadobudli účinnosť; stalo sa tak zákonom č. 530/2023 Z. z. (tzv. Lex konsolidácia). Do tohto návrhu zákona sú prebrané len tie časti zákona č. 315/2023 Z. z, ktoré sa týkajú virtuálnej meny. 
+Predložený návrh zákona bude mať pozitívny vplyv na rozpočet verejnej správy a to z dôvodu, že v súčasnosti je výber dane z príjmu z kryptomien nulový (resp. veľmi blízky nule) a pri atraktívnej daňovej sadzbe budú daňovníci ochotnejšie priznávať túto daň. Predložený návrh zákona bude mať pozitívny vplyv na podnikateľské prostredie. Predložený návrh zákona nebude mať sociálne vplyvy, ani vplyvy na životné prostredie a informatizáciu spoločnosti. Návrh zákona taktiež nebude mať vplyv na manželstvo, rodičovstvo a rodinu a ani na služby verejnej správy pre občana. 
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentami, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Osobitná časť 
+K čl. I
+K bodom 1 a 2 (§ 2, písmená ai) až al))
+Navrhuje sa definícia pojmov „virtuálna mena“, „predaj virtuálnej meny“, „stablecoin“ a „bitcoin“.
+K bodu 3 (§ 8 ods. 1 písm. t)
+Ide o legislatívno-technickú úpravu spočívajúcu v presune citácie z vypúšťanej poznámky pod čiarou k odkazu 2f do vkladanej novej poznámky pod čiarou k odkazu 37afba.
+K bodu 4 (§ 8 ods. 17) 
+Navrhuje sa právna úprava základu dane z predaja virtuálnej meny. 
+K bodu 5 (§ 9 ods. 1 písm. u) 
+Navrhuje sa, že pri príjmoch získaných z výmeny virtuálnej meny za majetok alebo služby po odpočítaní výdavkov, sa nebude v príslušnom zdaňovacom období zdaňovať príjem nepresahujúci 2 400 eur. Ak daňovník v zdaňovacom období získa z výmeny virtuálnej meny za majetok alebo služby príjem po odpočítaní výdavkov presahujúci sumu 2 400 eur, zdaní sa len rozdiel príjmov a výdavkov nad túto sumu. 
+K bodu 6 (§ 15 písm. a) ôsmy bod) 
+Navrhuje sa, aby sa príjmy z predaja virtuálnej meny, ktoré sa budú zahŕňať do osobitného základu dane podľa § 51e ods. 6, zdaňovali sadzbou dane vo výške 7 %.
+K bodom 7 a 8 (§ 17 ods. 3 písm. n) a ods. 43) 
+Navrhuje sa právna úprava základu dane z predaja virtuálnej meny.
+K bodom 9 a 10 (nadpis § 51e a § 51e ods. 5 a 6)
+Ustanovuje sa osobitný základ dane, do ktorého sa budú zahŕňať príjmy z predaja virtuálnej meny po uplynutí jedného roka od jej nadobudnutia, ktorý bude zdaňovaný sadzbou 
+dane vo výške 7 %. 
+K bodu 11 (§ 52zzzn)
+Navrhuje sa, aby sa zmeny zdaňovania príjmov z predaja virtuálnej meny uplatnili prvýkrát za zdaňovacie obdobie začínajúce 1. januárom 2026.
+K čl. II
+K bodom 1 a 2 (§ 10b ods. 1 písm. d) a § 29b ods. 11)
+Navrhuje sa, aby predmetom odvodovej povinnosti na zdravotné poistenie nebol príjem z predaja virtuálnej meny podľa zákona o dani z príjmov v prípade, že virtuálna mena nebola obchodným majetkom daňovníka. 
+Uvedená výnimka sa teda nebude týkať právnických osôb a podnikajúcich fyzických osôb, ktoré disponujú virtuálnymi menami vo svojom obchodnom majetku.
+K čl. III
+Vzhľadom na finančné dopady na štátny rozpočet sa navrhuje nadobudnutie účinnosti predloženého návrhu zákona na 1. januára 2027.

@@ -1,0 +1,46 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 203/2011 Z. z. o kolektívnom investovaní v znení neskorších predpisov (ďalej len „návrh zákona“) sa predkladá na základe úlohy B.16 uznesenia vlády SR č. 589/2024, úlohy B.1. uznesenia vlády SR č. 11/2025 a úlohy B.6. uznesenia vlády SR č. 196/2025.
+Cieľom návrhu zákona je:
+transpozícia smernice Európskeho parlamentu a Rady (EÚ) 2024/927 z 13. marca 2024, ktorou sa menia smernice 2011/61/EÚ (smernica AIFMD) a 2009/65/ES (smernica UCITS), pokiaľ ide o dohody o delegovaní, riadenie rizika likvidity, podávanie správ na účely dohľadu, poskytovanie služieb depozitára a úschovy cenných papierov a poskytovanie úverov zo strany alternatívnych investičných fondov (Ú. v. EÚ L, 2024/927, 26.3.2024). Uvedenou smernicou sa harmonizujú pravidlá pre správcov alternatívnych investičných fondov, ktoré poskytujú úvery, upresňujú sa pravidlá delegovania činností zo správcov fondov na tretie subjekty, rozširuje sa škála nástrojov na riadenie likvidity fondov za účelom vyššej ochrany investorov, a zlepšuje sa cezhraničný prístup k službám depozitárov fondov.
+transpozícia smernice Európskeho parlamentu a Rady (EÚ) 2024/2994 z 27. novembra 2024, ktorou sa menia smernice 2009/65/ES, 2013/36/EÚ a (EÚ) 2019/2034, pokiaľ ide o zaobchádzanie s rizikom koncentrácie vyplývajúcim z expozícií voči centrálnym protistranám a s rizikom protistrany pri centrálne zúčtovávaných transakciách s derivátmi (Ú. v. EÚ L, 2024/2994, 4.12.2024). Keďže mechanizmy centrálneho zúčtovania zmierňujú riziko protistrany, ktoré je obsiahnuté v zmluvách o derivátoch, pri určovaní uplatniteľných limitov pre riziko protistrany treba zohľadniť, či derivát centrálne zúčtovala centrálna protistrana, ktorej bolo udelené povolenie alebo ktorá bola uznaná v súlade s nariadením (EÚ) č. 648/2012, a vytvoriť rovnaké podmienky pre deriváty obchodované na burze a mimoburzové deriváty.
+návrhom zákona sa tiež upravujú niektoré ustanovenia na základe poznatkov z praxe. 
+Prijatie navrhovaného zákona nebude mať vplyv na rozpočet verejnej správy, ale bude mať pozitívny a negatívny vplyv na podnikateľské prostredie. Návrh zákona nemá sociálne vplyvy, nemá vplyvy na životné prostredie, na služby verejnej správy pre občana, na informatizáciu spoločnosti a nemá ani vplyvy na manželstvo, rodičovstvo a rodinu.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a nálezmi Ústavného súdu Slovenskej republiky, inými zákonmi, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná a s právom Európskej únie.
+Návrh zákona nebude predložený na vnútrokomunitárne pripomienkové konanie. 
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 203/2011 Z. z. o kolektívnom investovaní v znení neskorších predpisov.
+Predkladateľ (a spolupredkladateľ)
+Ministerstvo financií Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Smernica (EÚ) 2024/927 z 13. marca 2024, ktorou sa menia smernice 2011/61/EÚ a 2009/65/ES, pokiaľ ide o dohody o delegovaní, riadenie rizika likvidity, podávanie správ na účely dohľadu, poskytovanie služieb depozitára a úschovy cenných papierov a poskytovanie úverov zo strany alternatívnych investičných fondov. 
+Smernica Európskeho parlamentu a Rady (EÚ) 2024/2994 z 27. novembra 2024, ktorou sa menia smernice 2009/65/ES, 2013/36/EÚ a (EÚ) 2019/2034, pokiaľ ide o zaobchádzanie s rizikom koncentrácie vyplývajúcim z expozícií voči centrálnym protistranám a s rizikom protistrany pri centrálne zúčtovávaných transakciách s derivátmi.
+Termín začiatku a ukončenia PPK
+Predpokladaný termín predloženia na pripomienkové konanie
+Október 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+Október 2025
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Aktuálne znenie zákona č. 203/2011 Z. z. o kolektívnom investovaní v znení neskorších predpisov (ďalej len „zákon“) nie je v súlade s požiadavkami vyplývajúcimi z nižšie uvedených smerníc EÚ, ktoré je Slovenská republika povinná transponovať do 16.04.2026 a 25.06.2026. Aktuálne znenie zákona je navyše potrebné novelizovať vzhľadom na poznatky z aplikačnej praxe.
+Návrhom novela zákona o kolektívnom investovaní v znení neskorších predpisov sa uľahčuje využívanie nástrojov na riadenie likvidity fondov, zavádzajú sa pravidlá pre správcov alternatívnych investičných fondov, ktoré poskytujú úvery, zavádzajú sa podrobnejšie pravidlá pre zverenie a druhotné zverenie činností, funkcií a služieb zo strany správcovských spoločností na tretie osoby, a umožňuje sa cezhraničný prístup k službám depozitárov. Všetky zmeny sú v súlade so smernicou (EÚ) 2024/927. 
+Využívanie širšej palety nástrojov riadenia likvidity je potrebné v prípade zvýšenej potreby vyplácania podielových listov za stresových trhových podmienok, preto sa správcovským spoločnostiam umožňuje, aby v štatúte alebo zakladateľských dokumentoch uviedli aspoň dva nástroje na riadenie likvidity, ktoré budú môcť použiť v stresovej trhovej situácii, kedy sa riadenie likvidity fondu najnáročnejšie. Nástroje riadenia likvidity by mali byť primerané investičnej stratégii, profilu likvidity a politike vyplácania podielových listov, a správcovská spoločnosť ich aktivuje, ak to bude potrebné na ochranu investorov. Každú aktiváciu niektorého z nástrojom likvidity správcovská spoločnosť oznámi orgánu dohľadu, čo umožní orgánom dohľadu lepšie zvládať potenciálne účinky presahov napätia likvidity na celý finančný trh. 
+Doteraz alternatívne investičné fondy neboli zapojené do poskytovania úverov, novelou zákona sa umožňuje alternatívnym investičným fondom poskytovať úvery malým a stredným podnikom, ktoré majú zložitejší prístup k tradičným bankovým úverom, a určuje pravidlá ochrany investorov, s ohľadom na potenciálne mikroprudenciálne a makroprudenciálne riziká, ktoré by mohlo predstavovať poskytovanie úverov alternatívnymi investičnými fondami. 
+Vzhľadom na existenciu veľkého počtu schránkových firiem v EÚ je potrebné získať prehľad o zverení a druhotnom zverení činností, funkcií a služieb správcovských spoločností na tretie osoby, vrátane takýchto osôb v zahraničí. Zverenie môže umožniť efektívne riadenie investičných portfólií a získavanie potrebných odborných znalostí na konkrétnom trhu alebo v rámci konkrétnej triedy aktív. Je však dôležité, aby orgány dohľadu mali aktualizované informácie o všetkých dohodách o zverení a druhotnom zverení činností, funkcií a služieb správcovskej spoločnosti na tretiu osobu. Správcovská spoločnosť má vo vzťahu ku každému fondu, ktorý spravuje, vykazovať orgánu dohľadu informácie o týchto tretích osobách, a rozsah zverených a druhotne zverených činností, funkcií a služieb. 
+Keďže v menších členských štátoch Európskej únie môže chýbať dostatočná ponuka služieb depozitára, s cieľom riešiť tento nedostatok, následkom ktorého môžu byť vyššie náklady pre správcovské spoločnosti, sa umožňuje určenie depozitára usadeného v inom členskom štáte, po získaní predchádzajúceho súhlasu orgánu dohľadu. 
+Navrhovanou novelou zákona sa zavádzajú aj pravidlá pre riešenie rizika protistrany pri transakciách s derivátmi vykonávanými štandardnými podielovými fondami, ak takéto transakcie vyrovnáva centrálna protistrana, a povinnosť znížiť alebo preskupiť expozície voči centrálnej protistrane. Doterajšie znenie zákona určovalo regulačné limity pre riziko protistrany len vo vzťahu k transakciám s mimoburzovými derivátmi bez ohľadu na to, či deriváty boli centrálne vyrovnané. Novelou sa vytvárajú rovnaké podmienky pre deriváty obchodované na burze a pre mimoburzové deriváty. Navrhnuté zákonné ustanovenia sú v súlade so smernicou (EÚ) 2024/2994. 
+Návrhom zákona sa tiež upravujú niektoré ustanovenia na základe poznatkov z praxe – predovšetkým ide o zavedenie pravidelnej rotácie nezávislých oceňovateľov nehnuteľností v majetku realitných fondov, čo má prispieť k nezávislému ohodnoteniu nehnuteľností. Zavádza sa tiež povinné označenie „správca podlimitných rizikových fondov“ pre všetkých registrovaných správcov alternatívnych investičných fondov, ktorí spĺňajú podmienky podľa § 31a zákona a sú registrovaní v registri Národnej banky Slovenska podľa § 31b zákona, ako aj dôvody pre vymazanie registrovaných správcov z tohto registra. Upresňuje sa tiež podávanie správ do Národnej banky Slovenska. 
+Ciele a výsledný stav
+Uveďte hlavné ciele predkladaného materiálu (aký výsledný stav má byť prijatím materiálu dosiahnutý, pričom dosiahnutý stav musí byť odlišný od stavu popísaného v bode 2. Definovanie problému). 
+Cieľom návrhu zákona je predov

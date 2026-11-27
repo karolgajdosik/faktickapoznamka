@@ -1,0 +1,67 @@
+# Dôvodová správa
+DÔVODOVÁ SPRÁVA
+A. Všeobecná časť
+Vláda Slovenskej republiky predkladá návrh zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 162/1995 Z. z. o katastri nehnuteľností a o zápise vlastníckych a iných práv k nehnuteľnostiam (katastrálny zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (ďalej len „návrh zákona“) na základe Plánu legislatívnych úloh vlády Slovenskej republiky na rok 2024. 
+Cieľom návrhu zákona je reflektovať niektoré otázky aplikačnej praxe a upraviť vzťahy v súlade s identifikovanými potrebami adresátov právnej úpravy. 
+Návrh zákona precizuje a dopĺňa právnu úpravu katastrálnych konaní. Návrhom zákona sa zjednodušuje návrh na začatie katastrálneho konania v listinnej podobe. Podrobnejšie sa upravuje konanie o zázname, pričom sa zavádza možnosť vykonania záznamu v časti. Skracuje sa lehota na vykonanie záznamu na základe rozhodnutia súdu o zriadení zabezpečovacieho opatrenia. Rovnako sa precizuje právna úprava konania o poznámke. Bližšie sa upravuje prešetrovanie údajov katastra a zároveň sa ustanovuje lehota na toto prešetrenie. 
+V súvislosti s prístupom k údajom katastra prostredníctvom katastrálnych portálov sa zavádza povinná bezplatná autentifikácia za účelom plnenia povinností vyplývajúcich z právnych predpisov upravujúcich nakladanie s osobnými údajmi a za účelom zabezpečenia ochrany osobných údajov osôb evidovaných v katastri, ako aj za účelom zabránenia zneužívania údajov katastra. Údaje z tejto registrácie budú môcť byť použité aj pre potreby orgánov činných v trestnom konaní.
+Návrh zákona taktiež ustanovuje novú skutkovú podstatu priestupku ako aj porušenia poriadku na úseku katastra nehnuteľností a to neoprávnené spracúvanie údajov katastra nehnuteľností. Zároveň sa zavádzajú niektoré nové správne poplatky na úseku katastra nehnuteľností. 
+Návrh zákona má pozitívne vplyvy na rozpočet verejnej správy, pozitívne a negatívne vplyvy na podnikateľské prostredie, pozitívne vplyvy na informatizáciu spoločnosti a pozitívne a negatívne vplyvy na služby verejnej správy pre občana. Návrh zákona nemá vplyvy na životné prostredie, sociálne vplyvy a ani vplyvy na manželstvo, rodičovstvo a rodinu. Vyhodnotenie jednotlivých vplyvov je uvedené v doložke vybraných vplyvov a následne vo vypracovaných analýzach vybraných vplyvov.
+Predložený návrh zákona nebude predmetom vnútrokomunitárneho pripomienkového konania.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi a nálezmi Ústavného súdu Slovenskej republiky, so zákonmi a ostatnými všeobecne záväznými právnymi predpismi platnými v Slovenskej republike, s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie. 
+DOLOŽKA ZLUČITEĽNOSTI
+návrhu zákona s právom Európskej únie
+Predkladateľ návrhu zákona: Vláda Slovenskej republiky
+Názov návrhu právneho predpisu: Návrh zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 162/1995 Z. z. o katastri nehnuteľností a o zápise vlastníckych a iných práv k nehnuteľnostiam (katastrálny zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony
+Predmet návrhu zákona je upravený v práve Európskej únie:
+v primárnom práve 
+čl. 16 a 81 ods. 2 Zmluvy o fungovaní Európskej únie 
+v sekundárnom práve
+Nariadenie Európskeho parlamentu a Rady (EÚ) č. 650/2012 zo 4. júla 2012 o právomoci, rozhodnom práve, uznávaní a výkone rozhodnutí a prijatí a výkone verejných listín v dedičských veciach a o zavedení európskeho osvedčenia o dedičstve (Ú. v. EÚ L 201, 27.7.2012) v platnom znení
+gestorom právneho aktu je Ministerstvo spravodlivosti Slovenskej republiky
+Nariadenie Európskeho parlamentu a Rady (EÚ) č. 2016/679 z 27. apríla 2016 o ochrane fyzických osôb pri spracúvaní osobných údajov a o voľnom pohybe takýchto údajov, ktorým sa zrušuje smernica 95/46/ES (všeobecné nariadenie o ochrane údajov) (Ú. v. EÚ L 119, 4.5.2016) v platnom znení
+gestorom právneho aktu je Úrad na ochranu osobných údajov Slovenskej republiky
+Vykonávacie nariadenie Európskeho parlamentu a Rady (EÚ) 2023/138 z 21. decembra 2022, ktorým sa stanovuje zoznam konkrétnych súborov údajov s vysokou hodnotou a podmienky ich uverejňovania a opakovaného použitia (Ú. v. EÚ L 19, 20.1.2023) 
+gestorom právneho aktu je Ministerstvo spravodlivosti Slovenskej republiky
+Nariadenie Európskeho parlamentu a Rady (EÚ) 2020/1784 z 25. novembra 2020 o doručovaní súdnych a mimosúdnych písomností v občianskych a obchodných veciach v členských štátoch (doručovanie písomností) (prepracované znenie) (Ú. v. EÚ L 405, 2.12.2020) v platnom znení
+gestorom právneho aktu je Ministerstvo spravodlivosti Slovenskej republiky
+v judikatúre Súdneho dvora Európskej únie
+rozsudok Súdneho dvora (veľká komora) z 22. novembra 2022 (návrh na začatie prejudiciálneho konania, ktorý podal Tribunal d’arrondissement de Luxembourg – Luxembursko) – WM (C37/20), Sovim SA (C601/20)/Luxembourg Business Registers (spojené veci C-37/20 a C-601/20)
+Výrok rozsudku:
+Článok 1 bod 15 písm. c) smernice Európskeho parlamentu a Rady (EÚ) 2018/843 z 30. mája 2018, ktorou sa mení smernica (EÚ) 2015/849 o predchádzaní využívaniu finančného systému na účely prania špinavých peňazí alebo financovania terorizmu a smernice 2009/138/ES a 2013/36/EÚ, je neplatný v rozsahu, v akom zmenil článok 30 ods. 5 prvý pododsek písm. c) smernice Európskeho parlamentu a Rady (EÚ) 2015/849 z 20. mája 2015 o predchádzaní využívaniu finančného systému na účely prania špinavých peňazí alebo financovania terorizmu, ktorou sa mení nariadenie Európskeho parlamentu a Rady (EÚ) č. 648/2012 a zrušuje smernica Európskeho parlamentu a Rady 2005/60/ES a smernica Komisie 2006/70/ES, v tom zmysle, že tento článok 30 ods. 5 prvý pododsek písm. c) vo svojom takto zmenenom znení stanovuje, že členské štáty musia zabezpečiť, aby boli informácie o konečných užívateľoch výhod podnikateľských subjektov a iných právnych subjektov, ktoré boli zaregistrované na ich území, prístupné v každom prípade komukoľvek zo širokej verejnosti.
+Záväzky Slovenskej republiky vo vzťahu k Európskej únii:
+lehota na implementáciu nariadenia alebo rozhodnutia
+lehota na implementáciu nariadenia Európskeho parlamentu a Rady (EÚ) č. 650/2012 zo 4. júla 2012 o právomoci, rozhodnom práve, uznávaní a výkone rozhodnutí a prijatí a výkone verejných listín v dedičských veciach a o zavedení európskeho osvedčenia o dedičstve (Ú. v. EÚ L 201, 27.7.2012) – 17. august 2015
+lehota na implementáciu nariadenia Európskeho parlamentu a Rady (EÚ) č. 2016/679 z 27. apríla 2016 o ochrane fyzických osôb pri spracúvaní osobných údajov a o voľnom pohybe takýchto údajov, ktorým sa zrušuje smernica 95/46/ES (všeobecné nariadenie o ochrane údajov) (Ú. v. EÚ L 119, 4. 5. 2016) – 25. máj 2018
+uviesť informáciu o začatí konania v rámci „EÚ Pilot“ alebo o začatí postupu Európskej komisie, alebo o konaní Súdneho dvora Európskej únie proti Slovenskej republike podľa čl. 258 a 260 Zmluvy o fungovaní Európskej únie v jej platnom znení, spolu s uvedením konkrétnych vytýkaných nedostatkov a požiadaviek na zabezpečenie nápravy so zreteľom na nariadenie Európskeho parlamentu a Rady (ES) č. 1049/2001 z 30. mája 2001 o prístupe verejnosti k dokumentom Európskeho parlamentu, Rady a Komisie
+bezpredmetné
+uviesť informáciu o právnych predpisoch, v ktorých sú uvádzané právne akty Európskej únie už prebrané, spolu s uvedením rozsahu ich prebrania, príp. potreby prijatia ďalších úprav
+bezpredmetné
+Návrh zákona je zlučiteľný s právom Európskej únie:
+úplne
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon Národnej rady Slovenskej republiky č. 162/1995 Z. z. o katastri nehnuteľností a o zápise vlastníckych a iných práv k nehnuteľnostiam (katastrálny zákon) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony
+Predkladateľ (a spolupredkladateľ)
+Vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☐
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Termín začiatku a ukončenia PPK
+júl 2024
+Predpokladaný termín predloženia na pripomienkové konanie
+august – september 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+-
+Predpokladaný termín predloženia na rokovanie vlády SR*
+december 2025
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+1. Predmet evidovania v katastri, pokiaľ ide o stavby, je v súčasnosti príliš zužujúci, nakoľko umožňuje evidovať len tie stavby, ktoré spĺňajú definíciu podľa § 46 katastrálneho zákona.
+2. Aplikačnej praxi spôsobuje problémy podávanie podaní prostredníctvom všeobecného formulára cez Ústredný portál verejnej správy (ÚPVS). Údaje z takto urobeného podania je potrebné
