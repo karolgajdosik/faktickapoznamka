@@ -7,7 +7,7 @@ interface Props { title?: string; description?: string; wide?: boolean; ogImage?
 const { title, description = "Ako hlasujú poslanci Národnej rady SR. Nezávislá, neoficiálna stránka s otvorenými dátami.", wide = false, ogImage = "/og/default.png", index = false } = Astro.props;
 const full = title ? `${title} – faktická poznámka` : "faktická poznámka – ako hlasuje parlament";
 const path = Astro.url.pathname;
-const chips = [["/schodze/", "Schôdze"], ["/statistiky/", "Štatistiky"], ["/vybory/", "Výbory"], ["/kraje/", "Kraje"]];
+const chips = [["/schodze/", "Schôdze"], ["/statistiky/", "Štatistiky"], ["/vybory/", "Výbory"], ["/kraje/", "Kraje"], ["/porovnanie/", "Porovnanie"]];
 const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Schôdze"], ["/vybory/", "Výbory"], ["/hlasovania/", "Hlasovania"], ["/majetok/", "Majetok"], ["/statistiky/", "Štatistiky"], ["/o-projekte/", "O projekte"]];
 ---
 <!doctype html>
