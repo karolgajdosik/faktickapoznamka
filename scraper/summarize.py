@@ -12,13 +12,14 @@ PER_RUN = int(os.environ.get("SUMMARY_PER_RUN", "12"))
 PER_DAY = int(os.environ.get("SUMMARY_PER_DAY", "60"))  # ~120 neurons each, under the free 10,000/day
 MIN_CHARS = 1500  # roughly 2–3 minutes of speech
 CHAIR = "Vstup predsedajúceho"
-PROMPT = ("Si nestranný redaktor. Zhrň vystúpenie poslanca v Národnej rade SR v 2 až 3 vetách po slovensky. "
+PROMPT = ("Si nestranný slovenský redaktor. Zhrň vystúpenie poslanca v Národnej rade SR v 2 až 3 krátkych vetách spisovnou slovenčinou (nie češtinou). "
+          "Začni slovom „Rečník“ alebo „Rečníčka“ podľa toho, kto hovorí, bez mena. Používaj slovesá tvrdí, navrhuje (navrhuje, aby…), kritizuje, pýta sa. "
           "Uveď len hlavné body, ktoré rečník skutočne povedal, v tretej osobe (napr. „Rečník tvrdí…“, „Navrhuje…“). "
           "Nehodnoť, nepridávaj fakty ani kontext, ktoré v texte nie sú, nepoužívaj citácie dlhšie ako päť slov. Expresívne alebo urážlivé výrazy rečníka nepreberaj, opíš ich neutrálne. Píš spisovnou slovenčinou s diakritikou. "
           "Ak je text procedurálny alebo príliš krátky na zhrnutie, odpovedz iba slovom PROCEDURÁLNE.")
 
 LAW_PROMPT = ("Si nestranný redaktor. Z dôvodovej správy k návrhu zákona v Národnej rade SR napíš po slovensky 3 až 4 krátke vety "
-              "jednoduchou rečou pre bežného čitateľa: čo návrh mení, koho sa týka a od kedy má platiť, ak je to v texte uvedené. "
+              "jednoduchou rečou pre bežného čitateľa: čo návrh mení a koho sa týka; dátum účinnosti uveď len vtedy, ak je v texte presne uvedený, inak o ňom nepíš vôbec. Píš spisovnou slovenčinou (nie češtinou). "
               "Nehodnoť, nepreberaj argumenty navrhovateľa ako fakty (píš „návrh má…“, „podľa navrhovateľa…“), nepridávaj nič, čo v texte nie je, "
               "a nepoužívaj citácie dlhšie ako päť slov. Ak text nestačí na zhrnutie, odpovedz iba slovom NEDOSTATOČNÉ.")
 
