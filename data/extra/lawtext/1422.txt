@@ -1,0 +1,59 @@
+# Dôvodová správa
+dôvodová správa
+Všeobecná časť
+Vláda Slovenskej republiky predkladá vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 200/2022 Z. z. o územnom plánovaní v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony s cieľom zjednotiť a uľahčiť jeho aplikáciu. 
+Vládny návrh zákona reflektuje skúsenosti a poznatky získané z dvojročnej aplikačnej praxe, konzultácií s orgánmi územného plánovania, spracovateľmi, odborne spôsobilými osobami, ale aj praxe obstarávania Koncepcie územného rozvoja Slovenska podľa novej právnej úpravy. Cieľom je odstrániť nejasnosti, zjednotiť formulačne ustanovenia tak, aby nevznikali pochybnosti, resp. rôzna aplikačná prax, upresniť alebo odstrániť nadbytočnú právnu úpravu. Vzhľadom na skutočnosť, že do konca marca 2032 zákon o územnom plánovaní predpokladá, že všetky orgány územného plánovania obstarajú novú územnoplánovaciu dokumentáciu podľa novej metodiky a štandardov (Do procesu obstarávania digitálnych územných plánov sa už zapojilo 119 obcí, pričom takmer 65 % z nich má menej ako 1 000 obyvateľov.), a zároveň tento počet prirodzene narastá, je žiadúce, aby zákon o územnom plánovaní reflektoval aplikačnú prax, a táto úprava prebehla pred najväčšou vlnou obstarania nových územnoplánovacích dokumentácií. 
+Predmetom úpravy je najmä
+upresnenie definície zastavaného územia v nadväznosti na definíciu stavebného pozemku v § 7 Stavebného zákona
+zavedenie opatrenia vo verejnom záujme ako inštitútu, ktorý bude predmetom regulácie s územným priemetom v územnoplánovacej dokumentácii,
+precizovanie pôsobnosti orgánov územného plánovania v nadväznosti na jednotlivé fázy (prípravné práce, spracovanie, schvaľovanie) územného plánovania,
+rozšírenie zoznamu dotknutých právnických osôb aj o osoby vyjadrujúce sa z hľadiska vzťahu k vodohospodárskemu manažmentu povodí (správcovia vodných tokov a správcovia hydromelioračných stavieb),
+precizovanie úpravy krajinnoplánovacej štúdie ako územnoplánovacieho podkladu, 
+navrhuje sa, aby pri obstaraní územného plánu zóny, podmienky a limity priestorového usporiadania a funkčného využívania určené pre najmenšiu územnú jednotku v územnom pláne obce alebo v územnom pláne mikroregiónu mohli byť územným plánom zóny spodrobnené členením a prerozdelené na území tejto územnej jednotky,
+dopĺňa sa postup vydávania záväzného stanoviska pre povoľovanie iných činností doplnením osobitostí pre účely vyvlastňovacieho konania,
+odstraňuje sa aplikačný problém opakovaných požiadaviek na doplnenie žiadosti o vydanie záväzného stanoviska tým, že sa navrhuje povinnosť vydať záväzné stanovisko, aby mohol byť postup predmetom preskúmania,
+presúva sa pravidlo výpočtu zastavanej plochy z vyhlášky Úradu pre územné plánovanie a výstavbu SR č. 153/2024 Z. z. priamo do zákona, teda ak bola započítaná zastavaná plocha v jednom stavebnom zámere, každý ďalší stavebný zámer musí túto informáciu zohľadniť, ak by sa navrhoval na rovnakom pozemku; v prípade rozdelenia pôvodného stavebného pozemku, na ktorom už bol posúdený stavebný zámer, musí byť pri každom ďalšom stavebnom zámere dodržaný regulatív zastavanosti na novovzniknutom pozemku, ako aj na pôvodnom pozemku,
+upravuje sa postup, že počas stavebnej uzávery orgán územného plánovania v území vyhlásenej stavebnej uzávery záväzné stanoviská dotknutého orgánu podľa Stavebného zákona nevydáva, aby sa predišlo nesprávnemu úradnému postupu, ktorého následkom by mohla byť aj fikcia súladu,
+upravujú sa niektoré procesné úkony pri obstarávaní územnoplánovacej dokumentácie s cieľom nastaviť logickú nadväznosť a zároveň zabezpečiť, aby finálnu kontrolu postupu zákonnosti pred schvaľovaním príslušným zastupiteľstvom vykonával úrad.
+Navrhujú sa tiež dva nové inštitúty.
+Územnoplánovacie zmluvy ako dobrovoľne uzatvorené verejnoprávne zmluvy medzi orgánom územného plánovania, ktorým je obec alebo vyšší územný celok a osobou, ktorá má vlastnícke právo alebo iné právo k pozemkom alebo k stavbe v riešenom území, ktorej predmetom je úprava práv a povinností zmluvných strán pri príprave podmienok priestorového usporiadania územia a funkčného využívania územia na nezastavanom území a v území brownfieldov alebo pri príprave významnej zmeny podmienok priestorového usporiadania územia a funkčného využívania územia a pri zabezpečení investícií vyvolaných touto zmenou. Tieto zmluvy by mali priniesť väčšiu právnu istou pre investorov v území a zároveň vytvoriť predvídateľný nástroj na náklady výstavby v území a aj zdroj pre financovanie verejnej infraštruktúry.
+Konanie o vymedzení zastavaného územia obce – konanie na základe ktorého si obec, ktorá nemá schválený územný plán obce alebo územný plán mikroregiónu môže určiť do 31. marca 2032 z hľadiska udržateľného územného rozvoja hranicu zastavaného územia obce alebo hranice viacerých zastavaných území obce, ak štruktúru sídla obce tvorí viac samostatných zastavaných území rozhodnutím o vymedzení zastavaného územia obce a tomto území môže byť povoľované výstavba, pokiaľ to umožní ochrana iných verejných záujmov v konaní o stavebnom zámere. Cieľom je odstrániť nežiadúci stav z dôvodu, že zápis v katastri nehnuteľnosti nebol prepojený s procesmi územného plánovania, prípadne s procesom rozhodovania v územnom konaní v obciach, ktoré nemali územný plán.
+Vládny návrh zákona tiež obsahuje novely súvisiace s navrhovanými zmenami, resp. s procesom územného plánovania, a to novelu
+zákona Slovenskej národnej rady č. 377/1990 Zb. o hlavnom meste Slovenskej republiky Bratislave v znení neskorších predpisov,
+zákona Slovenskej národnej rady č. 138/1992 Zb. o autorizovaných architektoch a autorizovaných stavebných inžinieroch v znení neskorších predpisov,
+zákona č. 282/2015 Z. z. o vyvlastňovaní pozemkov a stavieb a o nútenom obmedzení vlastníckeho práva k nim a o zmene a doplnení niektorých zákonov v znení neskorších predpisov,
+zákona Národnej rady Slovenskej republiky č. 145/1995 Z. z. o správnych poplatkoch v znení neskorších predpisov,
+zákona č. 135/1961 Zb. o pozemných komunikáciách (cestný zákon) v znení neskorších predpisov, 
+zákona č. 364/2004 Z. z. o vodách a o zmene zákona Slovenskej národnej rady č. 372/1990 Zb. o priestupkoch v znení neskorších predpisov (vodný zákon) v znení neskorších predpisov, 
+zákon č. 7/2010 Z. z. o ochrane pred povodňami v znení neskorších predpisov, 
+zákon č. 513/2009 Z. z. o dráhach a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+zákon č. 447/2015 Z. z. o miestnom poplatku za rozvoj a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+Vládny návrh zákona má v súvislosti so zavedením správneho poplatku za vydanie územnoplánovacej informácie pozitívny vplyv na rozpočet verejnej správy, a zároveň negatívny vplyv na podnikateľské prostredie a na služby verejnej správy pre občana. Návrh zákona nemá žiadny vplyv na životné prostredie, na informatizáciu spoločnosti, ani na manželstvo, rodičovstvo a rodinu, ani na limit verejných výdavkov.
+Predkladaný vládny návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi, nálezmi Ústavného súdu Slovenskej republiky, so zákonmi a ostatnými všeobecne záväznými právnymi predpismi, s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná a s právom Európskej únie.
+Vládny návrh zákona nebude predmetom vnútrokomunitárneho pripomienkového konania.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 200/2022 Z. z. o územnom plánovaní v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony 
+Predkladateľ (a spolupredkladateľ)
+vláda SR
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Smernica Európskeho parlamentu a Rady 2001/42/ES z 27. júna 2001 o posudzovaní účinkov určitých plánov a programov na životné prostredie (Mimoriadne vydanie Ú. v. EÚ, kap. 15/zv. 6; Ú. v. ES L 197, 21. 7. 2001).
+Termín začiatku a ukončenia PPK
+Predpokladaný termín predloženia na pripomienkové konanie
+apríl 2026
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+júl 2026
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Vládny návrh zákona reaguje na aplikáciu zákona o územnom plánovaní, na proces obstarania a spracovania územnoplánovacej dokumentácie, ako aj na aplikačné otázky súvisiace s vydávaním záväzných stanovísk orgánom územného plánovania.
+Z dôvodu nedostatočnej úpravy zákona č. 24/2006 Z. z. o posudzovaní vplyvov na životné prostredie a o zmene a doplnení niektorých zákonov v nadväznosti na schválenie zákona o územnom plánovaní dochádza k duplicitným právnym úpravám v procesoch posudzovania strategického dokumentu. 
+Jedným z probl

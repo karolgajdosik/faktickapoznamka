@@ -1,6 +1,6 @@
 {
 "_meta": {
-"model": "openai/gpt-4.1-mini",
+"model": "@cf/mistralai/mistral-small-3.1-24b-instruct",
 "daily": {
 "2026-11-27": 0
 }
