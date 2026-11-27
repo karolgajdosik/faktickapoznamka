@@ -1,4 +1,5 @@
 ---
+import { safeJson } from "../../lib/safejson";
 import Base from "../../layouts/Base.astro";
 import VoteList from "../../components/VoteList.astro";
 import { votes, sessions } from "../../lib/data";
@@ -42,7 +43,7 @@ const years = [...new Set(votes.map((v) => v.datetime.slice(0, 4)))].sort().reve
   </div>
   <div id="vlbox"><VoteList items={recent} /></div>
   <button type="button" class="fx-more" id="more" hidden>Načítať ďalšie</button>
-  <script type="application/json" id="years" set:html={JSON.stringify(years)} />
+  <script type="application/json" id="years" set:html={safeJson(years)} />
 </Base>
 
 <script>

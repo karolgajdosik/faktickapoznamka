@@ -41,14 +41,24 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - name: Scrape
+        env:
+          IN_MAX: ${{ inputs.max || '400' }}
+          IN_ALL: ${{ inputs.all && 'true' || 'false' }}
+          IN_SPEECH: ${{ inputs.speech_minutes || '25' }}
+          IN_REFETCH: ${{ inputs.refetch || '300' }}
         run: |
+          for v in "$IN_MAX" "$IN_SPEECH" "$IN_REFETCH"; do [[ "$v" =~ ^[0-9]+$ ]] || { echo "invalid numeric input"; exit 1; }; done
+          ALL=""; [ "$IN_ALL" = "true" ] && ALL="--all"
           pip install -r scraper/requirements.txt && python -m playwright install --with-deps chromium
           python scraper/test_parse.py
-          timeout 320m python scraper/run.py --max ${{ inputs.max || 400 }} ${{ inputs.all && '--all' || '' }} --speech-minutes ${{ inputs.speech_minutes || 25 }} --refetch ${{ inputs.refetch || 300 }} || echo "scraper stopped early, committing progress"
+          timeout 320m python scraper/run.py --max "$IN_MAX" $ALL --speech-minutes "$IN_SPEECH" --refetch "$IN_REFETCH" || echo "scraper stopped early, committing progress"
       - name: Extra data (activity, committees, laws, declarations)
+        env:
+          IN_EXTRA: ${{ inputs.extra_minutes || '12' }}
         run: |
+          [[ "$IN_EXTRA" =~ ^[0-9]+$ ]] || { echo "invalid numeric input"; exit 1; }
           python scraper/test_parse_extra.py > /dev/null
-          timeout 300m python scraper/extra.py --minutes ${{ inputs.extra_minutes || 12 }} || echo "extra scraper stopped early, committing progress"
+          timeout 300m python scraper/extra.py --minutes "$IN_EXTRA" || echo "extra scraper stopped early, committing progress"
       - name: AI summaries (GitHub Models)
         continue-on-error: true
         env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }

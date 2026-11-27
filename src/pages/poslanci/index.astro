@@ -1,4 +1,5 @@
 ---
+import { safeJson } from "../../lib/safejson";
 import Base from "../../layouts/Base.astro";
 import Hall from "../../components/Hall.astro";
 import ViewToggle from "../../components/ViewToggle.astro";
@@ -63,7 +64,7 @@ const data = mps.map((m) => {
   </dialog>
 
   <div hidden><FollowButton id="" name="" /></div>
-  <script type="application/json" id="mp-data" set:html={JSON.stringify(data)} />
+  <script type="application/json" id="mp-data" set:html={safeJson(data)} />
   <script>
     type M = { talk: number; nsp: number; trank: number; sp: { d: string; k: string; t: string; v: string | null }[]; photo: string | null; id: string; name: string; sort: string; club: string; color: string; ini: string; title: string | null; born: string | null; age: number | null;
       city: string | null; region: string | null; party: string | null; att: number | null; loy: number | null; nreb: number; rank: number;

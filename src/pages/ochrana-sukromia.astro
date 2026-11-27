@@ -1,0 +1,102 @@
+---
+import Base from "../layouts/Base.astro";
+// Operator identification. Fill in the name (or organisation and IČO) of the person responsible for the site.
+const OPERATOR = { name: "", address: "", email: "kontakt@faktickapoznamka.sk" };
+const sections = [
+  ["prevadzkovatel", "Prevádzkovateľ"],
+  ["udaje", "Aké osobné údaje zverejňujeme"],
+  ["zaklad", "Účel a právny základ"],
+  ["navstevnici", "Údaje návštevníkov stránky"],
+  ["spracovatelia", "Kto sa podieľa na prevádzke"],
+  ["prava", "Vaše práva a opravy"],
+  ["ai", "Umelá inteligencia a automatické výpočty"],
+  ["autorske", "Autorské práva"],
+  ["bezpecnost", "Bezpečnosť"],
+];
+---
+<Base title="Ochrana súkromia a prevádzkovateľ" description="Kto prevádzkuje faktickú poznámku, aké údaje spracúva, na akom právnom základe a aké máte práva.">
+  <article class="pv">
+    <h1>Ochrana súkromia a prevádzkovateľ</h1>
+    <p class="lead">Faktická poznámka zverejňuje verejné údaje o činnosti poslancov Národnej rady SR. Návštevníkov nesleduje: nepoužíva cookies, analytiku ani reklamu.</p>
+    <nav class="pv-toc" aria-label="Obsah">
+      {sections.map(([id, t]) => <a href={`#${id}`}>{t}</a>)}
+    </nav>
+
+    <section id="prevadzkovatel">
+      <h2>Prevádzkovateľ</h2>
+      <p>Stránku faktickapoznamka.sk prevádzkuje {OPERATOR.name ? <strong>{OPERATOR.name}</strong> : "autor projektu ako súkromná osoba"}{OPERATOR.address && `, ${OPERATOR.address}`}. Kontakt pre všetky otázky vrátane ochrany osobných údajov: <a href={`mailto:${OPERATOR.email}`}>{OPERATOR.email}</a>.</p>
+      <p>Stránka je nezávislá a nekomerčná. Nie je stránkou Národnej rady SR a nemá väzbu na vládu ani politické strany. Ak sa údaj líši od <a href="https://www.nrsr.sk/" rel="noopener">nrsr.sk</a>, platí nrsr.sk.</p>
+    </section>
+
+    <section id="udaje">
+      <h2>Aké osobné údaje zverejňujeme</h2>
+      <p>Iba údaje o poslancoch NR SR v súvislosti s výkonom ich verejnej funkcie, prevzaté z verejných zdrojov Národnej rady SR:</p>
+      <ul>
+        <li>meno, titul, klub, kraj, členstvo vo výboroch a portrétnu fotografiu,</li>
+        <li>hlasovania, vystúpenia v rozprave (stenografické prepisy), ospravedlnenia, návrhy zákonov, pozmeňujúce návrhy, interpelácie, pracovné cesty a poslanecké kancelárie,</li>
+        <li>verejnú časť oznámení funkcií, zamestnaní, činností a majetkových pomerov podľa ústavného zákona č. 357/2004 Z. z.</li>
+      </ul>
+      <p>Pri majetku zámerne neuvádzame presnú polohu nehnuteľností (katastrálne územia ani listy vlastníctva). Nezverejňujeme súkromné kontakty ani údaje o rodinných príslušníkoch.</p>
+    </section>
+
+    <section id="zaklad">
+      <h2>Účel a právny základ</h2>
+      <p>Účelom je informovať verejnosť o činnosti parlamentu a umožniť kontrolu verejnej moci. Údaje spracúvame na základe oprávneného záujmu (čl. 6 ods. 1 písm. f) nariadenia GDPR) a v rámci slobody prejavu a práva na informácie (čl. 85 GDPR, § 78 ods. 2 zákona č. 18/2018 Z. z.). Ide o údaje, ktoré Národná rada SR sama zverejňuje, a o osoby verejne činné vo vzťahu k ich verejnej funkcii.</p>
+      <p>Údaje uchovávame počas trvania volebného obdobia a ďalej ako archív verejnej činnosti parlamentu.</p>
+    </section>
+
+    <section id="navstevnici">
+      <h2>Údaje návštevníkov stránky</h2>
+      <p>Nepoužívame cookies, analytické nástroje, reklamu ani sledovacie skripty tretích strán. Stránka nemá registráciu ani formuláre.</p>
+      <p>Vo vašom prehliadači (localStorage) si stránka pamätá iba nastavenia, ktoré si sami zvolíte: veľkosť písma, kontrast, tému, jazyk, sledovaných poslancov a posledné vyhľadávania. Tieto údaje nikdy neopúšťajú vaše zariadenie, sú nevyhnutné na poskytnutie funkcie, o ktorú ste požiadali, a preto nevyžadujú súhlas (§ 109 ods. 8 zákona č. 452/2021 Z. z.). Vymažete ich tlačidlom „Obnoviť pôvodné nastavenia“ v nastaveniach zobrazenia.</p>
+      <p>Poskytovateľ hostingu (Cloudflare) môže z technických a bezpečnostných dôvodov krátkodobo spracúvať IP adresu a údaje o požiadavke. My k týmto záznamom nepristupujeme a nepoužívame ich na sledovanie návštevníkov.</p>
+    </section>
+
+    <section id="spracovatelia">
+      <h2>Kto sa podieľa na prevádzke</h2>
+      <ul>
+        <li><strong>Cloudflare, Inc.</strong> – hosting a doručovanie stránky, e‑mailová adresa kontakt@ (preposielanie pošty).</li>
+        <li><strong>GitHub, Inc.</strong> – úložisko kódu a dát, automatické sťahovanie dát z nrsr.sk a jazykový model na zhrnutia (GitHub Models).</li>
+      </ul>
+      <p>Obe spoločnosti sídlia v USA a údaje prenášajú na základe rámca ochrany údajov EÚ – USA (Data Privacy Framework) a štandardných zmluvných doložiek.</p>
+    </section>
+
+    <section id="prava">
+      <h2>Vaše práva a opravy</h2>
+      <p>Máte právo na prístup k údajom, opravu, vymazanie, obmedzenie spracúvania a právo namietať proti spracúvaniu (čl. 15 až 21 GDPR). Žiadosti posielajte na <a href={`mailto:${OPERATOR.email}`}>{OPERATOR.email}</a>; odpovieme do 30 dní. Ak je údaj nesprávny už na nrsr.sk, opravu treba žiadať tam a my ju prevezmeme pri najbližšej aktualizácii.</p>
+      <p>Máte tiež právo podať sťažnosť <a href="https://dataprotection.gov.sk/" rel="noopener">Úradu na ochranu osobných údajov SR</a>, Hraničná 12, 820 07 Bratislava.</p>
+    </section>
+
+    <section id="ai">
+      <h2>Umelá inteligencia a automatické výpočty</h2>
+      <p>Zhrnutia dlhších vystúpení vytvára jazykový model automaticky z oficiálneho prepisu, bez ľudskej redakčnej kontroly. Preto je každé z nich označené „AI zhrnutie“ (čl. 50 ods. 4 nariadenia EÚ o umelej inteligencii). Zhrnutie môže byť nepresné; rozhoduje celý prepis.</p>
+      <p>Štatistiky, ako účasť, súlad s klubom, podobnosť hlasovania a charakteristické slová, sú mechanické výpočty z verejných dát podľa <a href="/o-projekte/#metodika-zoznam">opísanej metodiky</a>. Nie sú hodnotením poslanca ani jeho postojov.</p>
+    </section>
+
+    <section id="autorske">
+      <h2>Autorské práva</h2>
+      <p>Úradné dokumenty, ako zákony, uznesenia, záznamy o hlasovaní a prepisy rozpravy, nie sú predmetom autorského práva (§ 5 zákona č. 185/2015 Z. z.). Kód a spracované dáta sú voľne dostupné na <a href="https://github.com/karolgajdosik/faktickapoznamka" rel="noopener">GitHube</a>. Zdroje fotografií sú uvedené na stránke <a href="/o-projekte/">O projekte</a>. Ak ste autorom fotografie a nesúhlasíte s jej použitím, napíšte nám a fotografiu bezodkladne odstránime.</p>
+    </section>
+
+    <section id="bezpecnost">
+      <h2>Bezpečnosť</h2>
+      <p>Stránka je statická, bez prihlasovania a databázy, a doručuje sa výhradne cez HTTPS s bezpečnostnými hlavičkami. Ak nájdete zraniteľnosť, napíšte prosím na <a href={`mailto:${OPERATOR.email}`}>{OPERATOR.email}</a> (pozri aj <a href="/.well-known/security.txt">security.txt</a>) a dajte nám primeraný čas na opravu pred zverejnením.</p>
+    </section>
+
+    <p class="muted pv-upd">Posledná zmena: 27. novembra 2026</p>
+  </article>
+</Base>
+
+<style>
+  .pv { max-width: 46rem; margin: 0 auto; }
+  .pv h1 { margin-bottom: .5rem; }
+  .pv .lead { font-size: var(--step-1); color: var(--muted, inherit); margin: 0 0 1.5rem; }
+  .pv-toc { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 2rem; }
+  .pv-toc a { padding: .35rem .75rem; border: 1px solid var(--line, #ccc); border-radius: 999px; text-decoration: none; font-size: .9rem; }
+  .pv-toc a:hover { background: var(--hover, rgba(0,0,0,.05)); }
+  .pv section { padding: 1.25rem 0; border-top: 1px solid var(--line, #ddd); scroll-margin-top: 5rem; }
+  .pv h2 { font-size: var(--step-1); margin: 0 0 .6rem; }
+  .pv ul { padding-left: 1.2rem; }
+  .pv li { margin: .3rem 0; }
+  .pv-upd { margin-top: 2rem; font-size: .9rem; }
+</style>

@@ -1,4 +1,5 @@
 ---
+import { safeJson } from "../lib/safejson";
 // The plenary hall: one seat per MP, ring = club colour, fill = vote (vote mode).
 // Clubs fill the hemicycle left→right by size (neutral, not political left/right).
 import { clubs, mps as current, mpById, clubColor, initials, photo, LABEL, cls, mpStats, pct, age, talk, fmtDur, type Code, type Mp } from "../lib/data";
@@ -100,7 +101,7 @@ const floorRows = radii.map((r, i) => ({ rx: RO * r + R * 1.3, ry: (RO * r + R *
     })}
   </svg>
   <div class="tip" hidden></div>
-  <script type="application/json" class="hall-info" set:html={JSON.stringify(info)} />
+  <script type="application/json" class="hall-info" set:html={safeJson(info)} />
 </div>
 <script>
   // Tooltip + default click (go to MP page). Pages can override by listening to "seat:select".

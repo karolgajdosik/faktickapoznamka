@@ -1,4 +1,5 @@
 ---
+import { safeJson } from "../lib/safejson";
 // Month calendar of sitting days. Search by date or session number; a click on a day shows
 // what happened (session, votes, debate) or what is planned (programme from nrsr.sk).
 import { sessions, speechesBySession, dayKey, voteWhat, lawTitle, isFinal, shortTitle } from "../lib/data";
@@ -68,7 +69,7 @@ const data = { days, planned, list, today };
     </div>
     <div class="scal-detail" id="scal-detail" aria-live="polite"></div>
   </div>
-  <script type="application/json" id="scal-data" set:html={JSON.stringify(data)} />
+  <script type="application/json" id="scal-data" set:html={safeJson(data)} />
 </section>
 
 <script>
