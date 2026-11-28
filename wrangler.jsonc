@@ -14,5 +14,7 @@
   ],
   // v1 created the former WebSocket notifier, v2 removes it (replaced by the client-side version check).
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Updates"] }, { "tag": "v2", "deleted_classes": ["Updates"] }],
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // newsletter subscribers (double opt-in), see worker/index.ts and scripts/newsletter.py
+  "kv_namespaces": [{ "binding": "ODBER", "id": "1021f266cc084725846f34ca7716d352" }]
 }
