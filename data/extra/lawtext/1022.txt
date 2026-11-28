@@ -1,0 +1,55 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Návrh zákona sa vypracováva nadväzne na Programové vyhlásenie vlády SR s cieľom dosahovať medzinárodne porovnateľné výsledky v boji proti daňovým únikom.
+V súčasnosti zákon č. 289/2008 Z. z. o používaní elektronickej registračnej pokladnice a o zmene a doplnení zákona Slovenskej národnej rady č. 511/1992 Zb. o správe daní a poplatkov a o zmenách v sústave územných finančných orgánov v znení neskorších predpisov v znení neskorších predpisov obsahuje okrem ustanovení týkajúcich sa používania pokladnice eKasa aj ustanovenia týkajúce sa používania elektronických registračných pokladníc, ktoré sú v súčasnej dobe obsolentné, nakoľko takéto pokladnice sa už nepoužívajú, a preto je cit. zákon pre podnikateľov neprehľadný. 
+Rekodifikáciou zákona o používaní registračných pokladníc sa dosiahne sprehľadnenie zákona po skončení používania elektronických registračných pokladníc a následne zavedení on-line registračných pokladníc vo vzťahu k novým trendom v evidencii tržieb, ako aj spresnenie a úpravu ustanovení s prihliadnutím na poznatky z praxe.
+V rekodifikovanom zákone sa nanovo definuje osoba povinná evidovať tržbu prostredníctvom pokladnice eKasa. Tento zákon sa vzťahuje na predávajúceho, ktorým je fyzická osoba alebo právnická osoba, ktorá má oprávnenie na výkon podnikania alebo na výkon inej samostatne zárobkovej činnosti a prijíma tržbu za predaj tovaru alebo poskytovanie služby; bez ohľadu kde má trvalý pobyt alebo sídlo. 
+V rámci liberalizácie trhu sa navrhuje zaviesť nový typ pokladnice, tzv. softvérová on-line registračná pokladnica, pričom podnikateľ sa môže rozhodnúť, či bude používať tento typ pokladnice alebo bude používať online registračnú pokladnicu, resp. virtuálnu registračnú pokladnicu.
+Návrhom zákona sa zavedie nová povinnosť pre podnikateľov, a to oznámiť poruchu pokladnice finančnému riaditeľstvu prostredníctvom eKasa zóny podnikateľa. Ostatné povinnosti, či už pre podnikateľov, výrobcov, dovozcov a distribútorov pokladníc zostávajú nezmenené a v rovnakom rozsahu.
+Na základe Akčného plánu boja proti daňovým únikom, ktorý bol predstavený dňa 26.11.2024 sa implementujú nasledovné opatrenia:
+Zavedenie povinnosti pre všetkých podnikateľov prijímať platby bezhotovostne prostredníctvom nasnímania platobného príkazu vo forme QR kódu cez bankovú aplikáciu alebo prostredníctvom iného platobného prostriedku, pričom spôsob tohto prijímania si určí predávajúci sám podľa charakteru predajného miesta. 
+Súčasťou nového zákona je odstránenie prílohy č. 1, v ktorej sú obsiahnuté služby, na ktoré sa vzťahuje povinnosť evidencie tržieb v pokladnici eKasa, čím sa zabezpečí zrovnoprávnenie postavenia všetkých podnikateľov poskytujúcich služby a odstráni sa zvýhodňovanie tých, ktorý pokladnicu eKasa podľa súčasného znenia zákona nemusia používať. Používanie pokladnice eKasa na všetky služby prispeje k odstráneniu prípadného nepriznania výšky tržby za poskytnuté služby. 
+Nový zákon o evidencii tržieb sa bude týkať výlučne evidencie tržieb v pokladnici eKasa.
+Zároveň sa pre zefektívnenie procesov aj smerom k elektronizácii upravujú ustanovenia Daňového poriadku týkajúce sa úradného záznamu vyhotoveného správcom dane, predkladania dokumentov správcovi dane a rieši situáciu, ak bude vec odovzdaná správcovi dane iným spôsobom (napríklad orgánom činným v trestnom konaní).
+Pre predávajúcich, ktorí nemajú pridelené daňové identifikačné číslo, pre účely pridelenia kódu pokladnice eKasa daňový úrad predávajúcemu sprístupní identifikačné číslo, ktoré sa na účely zákona o evidencii tržieb považuje za daňové identifikačné číslo, pričom týmto nebude dotknutý postup pri registrácii podľa Daňového poriadku. V prípade ak sa predávajúcemu sprístupní „technické“ daňové identifikačné číslo, ktoré sa stane „reálnym“, t. j. prideleným daňovým identifikačným číslom až v prípade vzniku povinnosti registrácie podľa Daňového poriadku.
+Vzhľadom na to, že návrh zákona je technickým predpisom, podlieha notifikačnému procesu podľa smernice Európskeho parlamentu a Rady (EÚ) 2015/1535 z 9. septembra 2015, ktorou sa stanovuje postup pri poskytovaní informácií v oblasti technických predpisov a pravidiel vzťahujúcich sa na služby informačnej spoločnosti (kodifikované znenie) (Ú. v. EÚ L 241, 17.9.2015)
+Návrh zákona bol v súlade s rozhodnutím Rady 98/415/ES postúpený na vnútrokomunitárne pripomienkové konanie s Európskou centrálnou bankou, kde bol doručený dňa 27.08.2025. Zo strany Európskej centrálnej banky bolo dňa 17.09.2025 potvrdené, že stanovisko bude doručené do 26.09.2025. Zároveň bol postúpený na vnútrokomunitárne pripomienkové konanie s Európskou komisiou, kde bol zverejnený pod číslom 2025/0446/SK, ktoré prebieha od 14.08.2025 do 18.11.2025.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi, s nálezmi Ústavného súdu Slovenskej republiky, inými právnymi predpismi Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná a s právom Európskej únie. Tento súlad je spracovaný formou doložky zlučiteľnosti.
+Návrh zákona má negatívny a aj pozitívny vplyv na podnikateľské prostredie bližšie uvedené v analýze vplyvov na podnikateľské prostredie. 
+Návrh zákona má vplyv na rozpočet verejnej správy, informatizáciu spoločnosti, nemá vplyv na životné prostredie, na služby verejnej správy, sociálne vplyvy a ani na manželstvo, rodičovstvo a rodinu pre občana.
+Účinnosť návrhu zákona sa navrhuje od 1. januára 2026. 
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona o evidencii tržieb a o zmene a doplnení niektorých zákonov
+Predkladateľ (a spolupredkladateľ)
+Ministerstvo financií Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☐
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Termín začiatku a ukončenia PPK
+jún – júl 2025
+Predpokladaný termín predloženia na pripomienkové konanie
+júl – august 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+druhá polovica roka 2025
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Návrh zákona sa vypracováva nadväzne na Programové vyhlásenie vlády SR.
+V súčasnosti zákon č. 289/2008 Z. z. o používaní elektronickej registračnej pokladnice a o zmene a doplnení zákona Slovenskej národnej rady č. 511/1992 Zb. o správe daní a poplatkov a o zmenách v sústave územných finančných orgánov v znení neskorších predpisov v znení neskorších predpisov obsahuje okrem ustanovení týkajúcich sa používania pokladnice eKasa aj ustanovenia týkajúce sa používania elektronických registračných pokladníc, ktoré sú v súčasnej dobe obsolentné, nakoľko takéto pokladnice sa už nepoužívajú, a preto cit. zákon je pre podnikateľov neprehľadný. 
+Zároveň sa implementujú opatrenia z Akčného plánu boja proti daňovým únikom.
+Článok II predstavuje novelu Daňového poriadku pre zefektívnenie procesov aj smerom k elektronizácii upravujú ustanovenia Daňového poriadku týkajúce sa úradného záznamu vyhotoveného správcom dane, predkladania dokumentov správcovi dane a rieši situáciu, ak bude vec odovzdaná správcovi dane iným spôsobom (napríklad orgánom činným v trestnom konaní).
+Článok III predstavuje novelu zákona č. 222/2004 Z. z. zákona o dani z pridanej hodnoty, ktorá reaguje ma úpravu v navrhovanom zákone o evidencii tržieb. V nadväznosti na zjednodušenú faktúru v zákone o DPH navrhuje sprecizovať, že za IČ DPH sa okrem DIČ prideleného podľa § 67 Daňového poriadku považuje aj DIČ sprístupnené podľa § 7 ods. 1 nového zákona o evidencii tržieb.
+Ciele a výsledný stav
+Uveďte hlavné ciele predkladaného materiálu (aký výsledný stav má byť prijatím materiálu dosiahnutý, pričom dosiahnutý stav musí byť odlišný od stavu popísaného v bode 2. Definovanie problému). 
+Návrh zákona o evidencii tržieb nahradí zákon č. 289/2008 Z. z. o používaní elektronickej registračnej pokladnice a o zmene a doplnení zákona Slovenskej národnej rady č. 511/1992 Zb. o správe daní a poplatkov a o zmenách v sústave územných finančných orgánov v znení neskorších predpisov v znení neskorších predpisov. 
+Rekodifikáciou zákona o používaní registračných pokladníc sa dosiahne sprehľadnenie zákona po skončení používania elektronických registračných pokladníc a následne zavedení on-line registračných pokladníc vo vzťahu k novým trendom v evidencii tržieb, ako aj spresnenie a úpravu ustanovení s prihliadnutím na poznatky z praxe.
+V rámci liberalizácie trhu sa navrhuje zaviesť nový typ pokladnice, tzv. softvérová on-line registračná pokladnica, pričom podnikateľ sa môže rozhodnúť, či bude používať tento typ pokladnice alebo bude používať online registračnú pokladnicu, resp. virtuálnu registračnú pokladnicu.
+V súčasnosti zákon č. 289/20

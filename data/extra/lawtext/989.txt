@@ -1,0 +1,59 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Na rokovanie Národnej rady Slovenskej republiky sa predkladá vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 24/2006 Z. z. o posudzovaní vplyvov na životné prostredie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony (ďalej len „návrh zákona“). 
+Základným cieľom posudzovania vplyvov na životné prostredie je uplatňovanie zásad ochrany životného prostredia už v štádiu prípravy strategického dokumentu a navrhovanej činnosti alebo jej zmeny prostredníctvom komplexného posúdenia ich vplyvov na životné prostredie, ktoré umožní zapojenie širokého okruhu subjektov vrátane verejnosti počas celého procesu posudzovania vplyvov, až do schválenia strategického dokumentu alebo vydania konečného rozhodnutia o povolení navrhovanej činnosti alebo jej zmeny.
+Účelom návrhu zákona je v zmysle požiadavky Vykonávacieho rozhodnutia Rady EÚ (CID) zo 14. 07.2023 v znení korigenda zo 04.12.2024 k POO 
+prepojenie procesov stanovených zákonom 24/2006 so zákonom č. 25/2025 Z. z. Stavebný zákon a o zmene a doplnení niektorých zákonov (Stavebný zákon) (ďalej len „zákon 25/2025“) pre oblasť stavieb obnoviteľných zdrojov energie,
+prepojenie procesov stanovených zákonom 24/2006 Z. z. so zákonom č. 39/2013 Z. z. o integrovanej prevencii a kontrole znečisťovania životného prostredia a o zmene a doplnení niektorých zákonov (ďalej len „zákon 39/2013“),
+úprava kompetencií a postavenia príslušných orgánov štátnej správy v procese vydávania príslušných povolení/rozhodnutí,
+plnenie úloh vyplývajúcich z Čiastkového opatrenia 1 – Reforma 1 v rámci Komponentu 19 Plánu obnovy a odolnosti SR (ďalej len „POO“) REpowerEU. Plnenie týchto povinností by pozitívne vplývalo na podnikateľské prostredie na Slovensku, nakoľko tieto podnikateľské subjekty v celej EÚ sú zaviazané k využívaniu obnoviteľných zdrojov energie. Súčasne táto povinnosť vyplýva štátu aj z iných európskych legislatívnych predpisov napr. Integrovaný národný energetický a klimatický plán na roky 2021 – 2030 (NECP). 
+Navrhované legislatívne zmeny sú smerované k vyššej efektivite výkonu štátnej správy na dotknutých úsekoch, efektívnemu čerpaniu a využitiu finančných prostriedkov z POO, reorganizácii špecializovaného orgánu štátnej správy a Ministerstva životného prostredia Slovenskej republiky (ďalej len „ministerstvo“), zvýšeniu finančnej efektivity procesov vykonávaných príslušnou štátnou správou a podriadeným orgánom ministerstva.
+V zmysle požiadavky Smernica Európskeho parlamentu a Rady (EÚ) 2023/2413 z 18. októbra 2023, ktorou sa mení smernica (EÚ) 2018/2001, nariadenie (EÚ) 2018/1999 a smernica 98/70/ES, pokiaľ ide o podporu energie z obnoviteľných zdrojov, a ktorou sa zrušuje smernica Rady (EÚ) 2015/652 (Ú. v. EÚ L, 2023/2413, 31.10.2023) (ďalej len „smernice RED III“), návrh zákona upravuje podmienky v prílohe č. 8 v rámci simplifikácie a urýchlenia zavádzania obnoviteľných zdrojov energie (ďalej len „OZE“).
+Legislatívne zmeny v rámci návrhu zákona majú takisto za cieľ zrýchlenie procesov v intenciách zákona 24/2006 a procesov povoľovania podľa zákona 39/2013 a zákona 25/2025.
+Návrh zákona obsahuje aj zmeny súvisiace s úpravou kompetencií Slovenskej inšpekcie životného prostredia (ďalej len „SIŽP“) a s tým súvisiace nastavenie procesov povoľovania pre oblasť OZE.
+Návrh zákona prináša čiastkové zmeny vyplývajúce z praktickej aplikácie zákona 24/2006 a so zámerom vyššej efektivity a odstránenia identifikovaných problémov aplikačnej praxe.
+Návrh zákona súčasne zotrváva na silnej pozícii odbornej stránky v rámci zisťovacieho konania a posudzovania vplyvov na životné prostredie a zabezpečenia účasti verejnosti v rozsahu definovanom v európskej legislatíve a Aarhuskom dohovore.
+Návrh zákona nemá vplyv na služby verejnej správy pre občana, nemá sociálne vplyvy a má pozitívne vplyvy na informatizáciu spoločnosti. Predkladaný návrh zákona má taktiež pozitívny vplyv na životné prostredie a na podnikateľské prostredie. Predkladaný návrh zákona má negatívny vplyv na rozpočet verejnej správy.
+Návrh zákona nebol predmetom vnútrokomunitárneho pripomienkového konania.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, so zákonmi a ostatnými všeobecne záväznými právnymi predpismi platnými v Slovenskej republike, s medzinárodnými zmluvami, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Návrh zákona bol predmetom riadneho pripomienkového konania a bol prerokovaný Legislatívnou radou vlády Slovenskej republiky a vládou Slovenskej republiky.
+Osobitná časť K Čl. I
+K bodu 1 
+Navrhovaná úprava ustanovuje postavenie SIŽP ako príslušného orgánu v zisťovacom konaní a procese posudzovania vplyvov na životné prostredie pre vymedzené oblasti v spojení podmienkami stanovenými zákonom 39/2013 ako osobitným predpisom.
+K bodu 2 
+Navrhovaná úprava ustanovuje postavenie SIŽP ako povoľujúceho orgánu v zjednotenom konaní podľa zákona 39/2013.
+K bodu 3 
+Zavádza sa definícia tzv. nulového variantu (§ 3 písm. y) nakoľko v doterajšom znení zákona jeho definícia absentovala, aj keď zákon s týmto právnym inštitútom pracoval vo viacerých ustanoveniach. Zavedenie tohto inštitútu zlepší aplikáciu požiadavky vysokej miery kvality pri posudzovaní vplyvov navrhovaných činností alebo ich zmien na životné prostredie s cieľom zohľadniť záujem chrániť ľudské zdravie, zlepšovať životné prostredie, prispieť ku kvalite života, zabezpečiť zachovanie diverzity druhov a zachovať reprodukčnú schopnosť ekosystému ako základného zdroja pre život.
+K bodu 4 
+Navrhovaná úprava ruší predmetný odsek, nakoľko funkcia vyhodnotenia kvality zmeny navrhovanej činnosti je neoddeliteľnou súčasťou zisťovacieho konania. Znenie pôvodného odseku 6 obchádzalo požiadavky dané predmetom zákona a Smernica Európskeho parlamentu a Rady 2011/92/EÚ z 13. decembra 2011 o posudzovaní vplyvov určitých verejných a súkromných projektov na životné prostredie (kodifikované znenie) (Ú. v. EÚ L 26, 28.1.2012) v platnom znení (ďalej len „smernica EIA“).
+K bodu 5 
+Navrhovaná úprava predstavuje doplnenie a zmenu textového znenia s cieľom odstránenia nedostatkov vyplývajúcich z aplikačnej praxe. Zároveň sa dopĺňa písmeno d) vo vzťahu k požiadavke transpozície článku 16c bod 3 smernice RED III. V prípade pochybností je na príslušnom orgáne, aby vyhodnotil, či navrhovaným postupom nedôjde k obchádzaniu predmetu zákona. Jednotlivé písmená stanovujú striktné podmienky aplikácie inštitútu výnimky zo zisťovacieho konania.
+K bodu 6 
+Navrhovaná úprava predstavuje doplnenie a zmenu textového znenia s cieľom odstránenia nedostatkov vyplývajúcich z aplikačnej praxe. Inštitút podnetu využíva ustanovenia zisťovacieho konania a následne postupuje do ďalšieho štádia podľa zákona 24/2006, ktorým je rozsah hodnotenia.
+K bodu 7 
+Navrhovanou právnou úpravou sa aplikujú čiastočne požiadavky smernice RED III, ale taktiež sa stanovuje oprávnenie príslušnému orgánu v prípade, že identifikuje nedostatky v príslušnom podaní navrhovateľa. Predmetná zmena zvyšuje efektivitu a ujasňuje podmienky konania.
+K bodu 8 
+Navrhovaná úprava predstavuje doplnenie textového znenia s cieľom odstránenia nedostatkov vyplývajúcich z aplikačnej praxe. Predmetná zmena zvyšuje efektivitu a ujasňuje podmienky konania.
+K bodu 9 
+Navrhovaná úprava predstavuje upresnenie legislatívneho textu a doplnenie spolu so zmenou legislatívneho textu s cieľom odstránenia nedostatkov vyplývajúcich z aplikačnej praxe. Predmetná zmena zvyšuje efektivitu a ujasňuje podmienky konania.
+K bodu 10 
+Navrhovaná úprava § 25 ods. 2 predstavuje upresnenie podmienok doručovania v súlade s aplikáciou súvisiacich zmien inštitútu zisťovacieho konania. Stanovuje za akých podmienok sa považujú písomné úkony príslušného orgánu za doručené subjektom v zmysle zmien vyvolaných aj zákonom č. 350/2024 Z. z.
+K bodu 11 
+Navrhovanou právnou úpravou sa v novom ustanovením § 29 ods. 2 aplikujú čiastočne požiadavky smernice RED III, ale taktiež sa stanovuje oprávnenie príslušnému orgánu v prípade, že identifikuje nedostatky v príslušnom podaní navrhovateľa. Predmetná zmena zvyšuje efektivitu a ujasňuje podmienky konania.
+K bodu 12
+Navrhovaná právna úprava predstavuje upresnenie legislatívneho textu.
+K bodu 13
+Navrhovaná právna úprava predstavuje upresnenie legislatívneho textu.
+K bodu 14
+Navrhovaná právna úprava predstavuje upresnenie legislatívneho textu.
+K bodu 15
+Navrhovaná právna úprava predstavuje upresnenie legislatívneho textu.
+K bodu 16
+Navrhovaná právna úprava predstavuje upresnenie legislatívneho textu.
+K bodu 17
+Navrhovaná právna úprava predstavuje upresnenie legislatívneho textu.
+K bodu 18
+Navrhovanou úpravou, doplnením znenia § 29 ods. 11, dochádza k upresnenie legálnej definície záväzného stanoviska zo zisťovacieho konania. Predmetným doplnením legálnej podstaty záväzného stanoviska zo zisťovacieho konania dochádza k posilneniu právnej istoty a k eliminácii pochybností o možnosti preskúmania zo strany súdov.
+K bodu 19 
+Navrhovaná úprava predstavuje apli

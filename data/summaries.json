@@ -2,7 +2,7 @@
 "_meta": {
 "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
 "daily": {
-"2026-11-27": 60
+"2026-11-28": 22
 }
 },
 "20261127152704-stevulova-zuzana": {
@@ -28,5 +28,53 @@
 "20261127141119-remisova-veronika": {
 "s": "Rečníčka kritizuje návrh zákona a pýta sa, prečo sa riešia takéto veci, ktoré nemajú nič spoločné s lepšou spoločnosťou. Navrhuje, aby sa v parlamente riešili užitočné zákony pre ľudí a aby sa zrušil návrh zákona, ktorý sa týka zrušenia trestného činu prikrmovania. Navrhuje tiež zaviesť verejný register darov, letov a pozvaní pre ústavných činiteľov, aby bol absolútny poriadok.",
 "at": "2026-11-27"
+},
+"20261127134910-gazovicova-tina": {
+"s": "Rečníčka kritizuje predkladateľov zákona a tvrdí, že sa snaží predstierať divadlo, ktoré uráža celé Slovensko. Navrhuje, aby sa pozrel na to, či sa nejedná o adresnú pomoc poslancovi Ferenčákovi, ktorý je obvinený z trestného činu. Pýta sa, ako môžu veriť na toľko náhod, keď sa zrazu objaví pozmeňovák, ktorý ruší práve ten trestný čin, z ktorého je obvinený.",
+"at": "2026-11-28"
+},
+"20261127134652-mesterova-zuzana": {
+"s": "Rečníčka tvrdí, že jej výrok o právnickej Plevíkovej bol pohoršením, nie zosmiešňovaním. Pýta sa, čo povedia, keď návrh prejde a zastaví sa trestné konanie voči pánovi Ferenčákovi, a kritizuje možný nezákonný postup orgánov činných v trestnom konaní.",
+"at": "2026-11-28"
+},
+"20261127134448-matejickova-zuzana": {
+"s": "Rečníčka kritizuje spôsob komentovania právneho vzdelania a tvrdí, že by sa malo venovať vecnej diskusii. Navrhuje, aby sa zaoberali konkrétnymi návrhmami a pýtala sa, prečo sa niektorí poslanci snažia zosmiešňovať právne vzdelanie namiesto toho, aby sa venovali podstatným veciam.",
+"at": "2026-11-28"
+},
+"20261127130448-plavakova-lucia": {
+"s": "Rečníčka kritizuje návrh zrušenia trestného činu prikrmovania a tvrdí, že niektorí poslanci z koalície sa nezhodnú v argumentoch. Navrhuje, aby sa dohodli na spoločnej komunikačnej línií a prestali klamať. Pýta sa, prečo sa navrhuje zrušiť tento trestný čin, hoci sa nikdy nevyužil, a kritizuje neznalosť zákona u niektorých poslancov a ministrov.",
+"at": "2026-11-28"
+},
+"20261127115434-stevulova-zuzana": {
+"s": "Rečníčka kritizuje poslanecký návrh, ktorý navrhuje úpravu trestného činu ohrozenia a poškodenia životného prostredia. Rečníčka tvrdí, že táto úprava je v rozporu so smernicou Európskeho parlamentu a navrhuje, aby minister spravodlivosti sa k tomuto vyjadril. Rečníčka tiež pýta sa, prečo sa tento návrh nepredložil v rámci medzirezortného pripomienkového konania a prečo sa o ňom nediskutovalo v ústavnoprávnom výbore.",
+"at": "2026-11-28"
+},
+"20261127114210-stevulova-zuzana": {
+"s": "Rečníčka kritizuje druhý pozmeňujúci návrh k trestnej novele a pýta sa, prečo sa predlžuje transpozičná lehota o 1,5 roka. Navrhuje, aby autori návrhu vysvetlili zámer tohto predĺženia, pretože jej to nepripadá logické vzhľadom na dvojročnú transpozičnú lehotu, ktorá bola stanovená pre túto smernicu.",
+"at": "2026-11-28"
+},
+"20261127112001-stohlova-tamara": {
+"s": "Rečníčka kritizuje pozmeňujúci návrh, ktorý navrhuje odklad zavedenia trestného činu za ohrozenie životného prostredia. Navrhuje, aby sa tento trestný čin zaviedol čo najskôr, pretože je potrebný na ochranu životného prostredia. Rečníčka tiež pýta sa, či odklad nie je v záujme podnikateľov, ktorí porušujú zákon, a kritizuje návrh, ktorý zužuje rozsah trestného činu iba na majetkovú škodu.",
+"at": "2026-11-28"
+},
+"20261127111634-procko-jozef": {
+"s": "Rečník kritizuje prístup niektorých poslancov k problému korupcie a prikrmovania. Tvrdí, že akceptovanie darov a výhod môže ovplyvniť ich rozhodovanie a hlasovanie v Národnej rade. Navrhuje, aby sa tieto problémy riešili transparentnejším spôsobom a aby sa poslanci vzdelávali o etike a zodpovednom správnom vedení.",
+"at": "2026-11-28"
+},
+"20261127103356-spisiak-jaroslav": {
+"s": "Rečník kritizuje návrh na zrušenie paragrafov o prijímaní a poskytovaní nenáležitej výhody v Trestnom zákone. Navrhuje, aby sa tieto paragrafy zachovali, pretože sa týkajú spoločensky nebezpečného konania verejných činiteľov, ktorí prijímajú výhody bez ohľadu na to, či za nečo niečo poskytujú. Tvrdí, že toto konanie je trestným činom a že jeho zrušenie by bolo zlé rozhodnutie. Pýta sa, akým právom môže verejný činiteľ prijímať nenáležité výhody len preto, že je verejným činiteľom.",
+"at": "2026-11-28"
+},
+"20261127095845-pala-gabriel": {
+"s": "Rečník tvrdí, že ako teológ má rozsiahle skúsenosti s restoratívnou justíciou a navrhuje, aby sa tejto problematike venovala väčšia pozornosť. Kritizuje predchádzajúci stav, kedy ľudia vyšlí z väzenia nemali dostatočnú podporu a pomoc pri začlenení sa do spoločnosti. Pýta sa, či sa niečo zmenilo a či sa podarilo zlepšiť túto situáciu.",
+"at": "2026-11-28"
+},
+"20261127095628-jurik-beata": {
+"s": "Rečníčka tvrdí, že odporúčania OECD sa týkajú zjednotenia, definície a diskusie s odbornou verejnosťou. Kritizuje poslancov, že sa odvolávajú na tieto odporúčania, hoci ich nesplnili, a pýta sa, či sú renomovaní odborníci na boj s korupciou.",
+"at": "2026-11-28"
+},
+"20261127095432-bartek-michal": {
+"s": "Rečník kritizuje pani poslankyňu Jurík, že klamie a zavádzajú. Navrhuje, aby sa pani poslankyňa zoznámila s článkom štyri ústavného zákona o ochrane verejného záujmu, ktorý zakazuje ministrom aj poslancom prijímať dary alebo získavať iné výhody v súvislosti s výkonom ich funkcií. Tvrdí, že pozmeňujúci návrh zákona len opravuje neporiadok, ktorý bola zaviedla bývalá ministerka spravodlivosti.",
+"at": "2026-11-28"
 }
 }

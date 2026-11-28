@@ -1,0 +1,180 @@
+# Dôvodová správa
+﻿Dôvodová správa 
+A. Všeobecná časť
+Vládny návrh zákona, ktorým sa mení a dopĺňa zákon č. 317/2012 Z. z. o inteligentných dopravných systémoch v cestnej doprave a o zmene a doplnení niektorých zákonov (ďalej len „návrh zákona“) sa predkladá na základe úlohy B.14. z uznesenia vlády Slovenskej republiky č. 195 z 3. apríla 2024.
+Návrhom zákona sa do slovenského právneho poriadku transponuje smernica Európskeho parlamentu a Rady (EÚ) 2023/2661 z 22. novembra 2023, ktorou sa mení smernica 2010/40/EÚ o rámci na zavedenie inteligentných dopravných systémov v oblasti cestnej dopravy a na rozhrania s inými druhmi dopravy (Ú. v. EÚ L, 2023/2661, 30.11.2023) v platnom znení a tým sa zabezpečuje zosúladenie prioritných oblastí pre inteligentné dopravné systémy a vymedzenie prístupnosti údajov a služieb inteligentných dopravných systémov v prioritných oblastiach, čím sa zjednoduší a zefektívni výmena dopravných údajov medzi členskými štátmi a prevádzkovateľmi.
+Návrh zákona bude mať negatívny vplyv na rozpočet verejnej správy, negatívny vplyv na podnikateľské prostredie a pozitívny vplyv na informatizáciu spoločnosti. Návrh zákona nemá žiadne sociálne vplyvy, vplyvy na životné prostredie, vplyvy na služby verejnej správy pre občana a ani vplyvy na manželstvo, rodičovstvo a rodinu. Vyhodnotenie uvedených vplyvov je uvedené v doložke vybraných vplyvov.
+Návrh zákona sa nepredkladá do vnútrokomunitárneho pripomienkového konania.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi Slovenskej republiky a nálezmi Ústavného súdu Slovenskej republiky, zákonmi Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 317/2012 Z. z. o inteligentných dopravných systémoch v cestnej doprave a o zmene a doplnení niektorých zákonov
+Predkladateľ (a spolupredkladateľ)
+Ministerstvo dopravy Slovenskej republiky 
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+- smernica Európskeho parlamentu a Rady (EÚ) 2023/2661 z 22. novembra 2023, ktorou sa mení smernica 2010/40/EÚ o rámci na zavedenie inteligentných dopravných systémov v oblasti cestnej dopravy a na rozhrania s inými druhmi dopravy (Ú. v. EÚ L, 2023/2661, 30.11.2023) (ďalej len „smernica (EÚ) 2023/2661“)
+Termín začiatku a ukončenia PPK
+Predpokladaný termín predloženia na pripomienkové konanie
+Máj 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+Jún 2025
+Definovanie problému
+Prijatím smernice (EÚ) 2023/2661, ktorá sa týmto legislatívnym návrhom transponuje, sa má dosiahnuť zosúladenie prioritných oblastí pre inteligentné dopravné systémy a vymedzenie prístupnosti údajov a služieb inteligentných dopravných systémov v prioritných oblastiach, čím sa zjednoduší a zefektívni výmena dopravných údajov medzi členskými štátmi a prevádzkovateľmi.
+Ciele a výsledný stav
+Transpozícia smernice (EÚ) 2023/2661
+Dotknuté subjekty
+Vlastníci a správcovia pozemných komunikácií na úrovni TEN-T koridorov a hlavných cestných ťahov s medzinárodným významom, Národná diaľničná spoločnosť, a. s., Slovenská správa ciest, správca výberu mýta, poskytovatelia dopravných informácií, prevádzkovatelia bezpečných a chránených parkovacích miest pre nákladné a úžitkové vozidlá (napr. diaľničné odpočívadlá), poskytovatelia nabíjacej infraštruktúry pre alternatívne palivá, prevádzkovatelia inteligentných dopravných zariadení.
+Alternatívne riešenia
+Nulový variant. Opomenutie novelizácie zákona č. 317/2012 Z. z. by predstavovalo prekážku pre transpozíciu smernice (EÚ) 2023/2661.
+Vykonávacie predpisy
+Predpokladá sa prijatie/zmena vykonávacích predpisov?
+☐ Áno
+☒ Nie
+Transpozícia/implementácia práva EÚ 
+Uveďte, či v predkladanom návrhu právneho predpisu dochádza ku goldplatingu podľa tabuľky zhody, resp. či ku goldplatingu dochádza pri implementácii práva EÚ. 
+ ☐ Áno ☒ Nie
+Ak áno, uveďte, ktorých vplyvov podľa bodu 9 sa goldplating týka: 
+Preskúmanie účelnosti
+Vzhľadom na to, že ide o transpozíciu smernice (EÚ) 2023/2661, preskúmanie účelnosti sa nevykonáva. 
+* vyplniť iba v prípade, ak materiál nie je zahrnutý do Plánu práce vlády Slovenskej republiky alebo Plánu legislatívnych úloh vlády Slovenskej republiky. 
+** vyplniť iba v prípade, ak sa záverečné posúdenie vybraných vplyvov uskutočnilo v zmysle bodu 9.1. jednotnej metodiky.
+*** posudzovanie sa týka len zmien v I. a II. pilieri univerzálneho systému dôchodkového zabezpečenia s identifikovaným dopadom od 0,1 % HDP (vrátane) na dlhodobom horizonte.
+Vybrané vplyvy materiálu
+Vplyvy na rozpočet verejnej správy
+☐
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ z toho rozpočtovo zabezpečené vplyvy, 
+ v prípade identifikovaného negatívneho 
+ vplyvu
+☒
+Áno
+☐
+Nie
+☐
+Čiastočne
+v tom vplyvy na rozpočty obcí a vyšších územných celkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+z toho rozpočtovo zabezpečené vplyvy,
+v prípade identifikovaného negatívneho vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+Vplyv na dlhodobú udržateľnosť verejných financií v prípade vybraných opatrení ***
+☐
+Áno
+☐
+Nie
+Vplyvy na limit verejných výdavkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na podnikateľské prostredie
+☐
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ z toho vplyvy na MSP
+☐
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ Mechanizmus znižovania byrokracie 
+ a nákladov sa uplatňuje:
+☐
+Áno
+☒
+Nie
+Sociálne vplyvy
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na životné prostredie
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Materiál je posudzovaný podľa zákona č. 24/2006 Z. z. o posudzovaní vplyvov na životné prostredie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+☐
+Áno
+☒
+Nie
+Vplyvy na informatizáciu spoločnosti
+☒
+Pozitívne
+☐
+Žiadne
+☐
+Negatívne
+Vplyvy na služby verejnej správy pre občana, z toho
+ vplyvy služieb verejnej správy na občana
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ vplyvy na procesy služieb vo verejnej správe
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na manželstvo, rodičovstvo a rodinu
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Poznámky
+Predkladaný návrh zákona predpokladá negatívny vplyv na rozpočet verejnej správy v roku 2026 na zabezpečenie prístupnosti údajov a služieb inteligentných dopravných systémov v prioritných oblastiach v súvislosti s transpozíciou smernice (EÚ) 2023/2661. Implementáciou týchto opatrení sa posilní interoperabilita a efektívnosť dopravných systémov, pričom dôjde k zlepšeniu bezpečnosti cestnej premávky a dostupnosti dopravných údajov pre verejný aj súkromný sektor. Návrh zároveň prispieva k naplneniu cieľov digitalizácie dopravného sektora v súlade s európskymi štandardmi.
+Národná diaľničná spoločnosť spracováva Koncepciu rozmiestnenia a vybavenia odpočívadiel na diaľniciach v Slovenskej republike, ktorá bude zohľadňovať aktuálne predpisy EÚ. Na základe tejto koncepcie budú určené vecné a finančné rámce týkajúce sa jednotlivých odpočívadiel, ich vybavenia a parkovacích miest pre bezpečné a chránené parkovacie miesta pre nákladné a úžitkové vozidlá, ako aj poskytovanie dynamických dopravných údajov.
+Predkladaný návrh zákona predpokladá zvýšenie nákladov v oblasti automatizácie procesov a prepojenie jednotlivých aplikačných systémov Národnej diaľničnej spoločnosti, a. s. v súvislosti so zabezpečením dynamických údajov o dostupnosti parkovacích miest pre bezpečné a chránené parkovacie miesta pre nákladné a úžitkové vozidlá na základnej a súhrnnej TEN-T sieti a zabezpečením dynamických údajov súvisiacich s bezpečnosťou cestnej premávky, ktoré sa týkajú minimálnych univerzálnych dopravných informácií týkajúcich sa bezpečnosti cestnej premávky. Zvýšenie nákladov sa predpokladá v súvislosti s tvorbou potrebných API rozhraní, ktoré umožnia vzájomnú výmenu údajov v štruktúrovanej podobe. Tieto budú kryté z vlastných zdrojov Národnej diaľničnej spoločnosti, a. s. v rámci schváleného návrhu rozpočtu verejnej správy na príslušný rok a schváleného limitu verejných výdavkov.
+Kontakt na spracovateľa
+Ministerstvo dopravy Slovenskej republiky, Sekcia cestnej dopravy a pozemných komunikácii – miroslava.terekova@mindop.sk, +421 2 594 94 737
+Zdroje
+Pri spracovaní doložky vybraných vplyvov predkladateľ vychádzal z dostupných podkladov a konzultácií s dotknutými subjektami.
+Stanovisko Komisie na posudzovanie vybraných vplyvov z PPK č. 38
+(v prípade, ak sa uskutočnilo v zmysle bodu 8.1 Jednotnej metodiky)
+☐ Súhlasné 
+☐ Súhlasné s návrhom na dopracovanie
+☒ Nesúhlasné
+Uveďte pripomienky zo stanoviska Komisie z časti II. spolu s Vaším vyhodnotením:
+II. Pripomienky a návrhy zmien: Komisia uplatňuje k materiálu nasledovné pripomienky a odporúčania:
+K doložke vybraných vplyvov
+Komisia odporúča predkladateľovi v Doložke vybraných vplyvov v časti 8. Preskúmanie účelnosti doplniť kritéria hodnotenia účelnosti predkladaného materiálu.
+Odôvodnenie:

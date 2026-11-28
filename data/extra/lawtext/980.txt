@@ -1,0 +1,58 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov (ďalej len „návrh zákona“) predkladá na rokovanie Národnej rady Slovenskej republiky poslanec Národnej rady Slovenskej republiky Michal Truban.
+Predkladaný návrh zákona sleduje spoločný zámer posilniť stabilitu podnikateľského prostredia a zvýšiť konkurencieschopnosť Slovenskej republiky. Cieľom je zmierniť negatívne dopady súčasnej makroekonomickej situácie a prijatých konsolidačných opatrení na podnikateľské subjekty, stimulovať investície do výskumu, vývoja a modernizácie, podporiť zelenú transformáciu a energetickú efektívnosť a zároveň prispieť k rýchlejšiemu ozdraveniu hospodárstva.
+Predkladateľ vychádza z potreby reagovať na viaceré pretrvávajúce problémy:
+spomalený rast produktivity a slabá inovačná kapacita domácich podnikov,
+nízke výdavky na výskum a vývoj v pomere k HDP v porovnaní s priemerom EÚ,
+potreba modernizácie budov a technológií s cieľom znížiť emisie skleníkových plynov a zvýšiť energetickú sebestačnosť,
+vysoký podiel nedobytných pohľadávok a dlhé lehoty splatnosti, ktoré zhoršujú finančné toky firiem. Podľa Európskeho platobného reportu za rok 2024 až 55 % dlžníkov neplatí načas.
+Navrhované legislatívne zmeny predstavujú nepriamu formu podpory – prostredníctvom odpočtov a výhodnejšieho odpisovania – ktorá je dostupná všetkým ekonomickým subjektom, na rozdiel od dotácií či selektívnej štátnej pomoci.
+Súčasný stav:
+Súčasná právna úprava umožňuje:
+odpisovanie hmotného majetku v dlhých odpisových dobách (napr. budovy až 40 rokov), čo neodzrkadľuje skutočnosti, že do opráv a obnovy je nutné investovať priebežne, 
+nižšiu hranicu pre jednorazový odpis drobného majetku (1 700 eur), tento limit už nereflektuje súčasné ceny,
+uplatnenie superodpočtu výdavkov na výskum a vývoj len do výšky 100 %, 
+povinnosť zvyšovať vstupnú cenu majetku o technické zhodnotenie a odpisovať ho spoločne s majetkom, aj keď je jeho životnosť kratšia,
+tvorbu opravných položiek k pohľadávkam vo veľmi obmedzenej miere (plné uznanie až po 1 080 dňoch po splatnosti).
+V dôsledku týchto limitov podniky čelia viacerým prekážkam, najmä zhoršenej likvidite pri vymáhaní pohľadávok, nižšej motivácii investovať do inovácií a ekologických technológií, administratívnej náročnosti pri evidencii majetku a nedostatočnej flexibilite pri modernizácii výrobných či administratívnych kapacít.
+Zmeny v navrhovanej právnej úprave prinesú:
+podporu investícií – zvýšenie hranice pre jednorazový odpis drobného majetku na 2 400 eur, keďže aktuálne platný limit už nereflektuje súčasné ceny a skrátenie doby odpisovania budov v 6. odpisovej skupine zo 40 na 30 rokov,
+zrýchlené odpisovanie ekologických stavieb – možnosť rýchlejšieho odpisu budov s energetickým certifikátom A a vybraných zelených technológií (solárne a fotovoltaické panely, tepelné čerpadlá),
+silnejšiu podporu výskumu a vývoja – zvýšenie superodpočtu zo 100 % na 200 % pri vybraných výdavkoch do úhrnnej sumy 1 mil. eur a rozšírenie o služby a nehmotné výsledky výskumu,
+flexibilitu pri modernizácii – umožnenie samostatného odpisovania technického zhodnotenia hmotného majetku podľa jeho charakteru, namiesto povinného pripočítania k vstupnej cene majetku s dlhšou životnosťou,
+zlepšenie v oblasti pohľadávok – možnosť zahrnúť do daňových výdavkov až 50 % pohľadávky po 360 dňoch a 100 % po 720 dňoch, čím sa urýchli odpis nedobytných pohľadávok a zníži tlak na likviditu podnikov.
+Tieto opatrenia prispejú k vyššej finančnej stabilite podnikov, zvýšia ich motiváciu investovať do rastu a inovácií, podporia prechod na udržateľnú ekonomiku a prispejú k rýchlejšiemu znižovaniu rozdielov v produktivite oproti vyspelým krajinám Európskej únie.
+Predkladaný návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, nálezmi Ústavného súdu Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentami, ktorými je Slovenská republika viazaná, ako aj v súlade s právom Európskej únie.
+Návrh zákona predpokladá pozitívne vplyvy na podnikateľské prostredie, sociálne vplyvy, životné prostredie, informatizáciu spoločnosti, predpokladá negatívne vplyvy na rozpočet verejnej správy, nepredpokladá vplyvy na služby verejnej správy pre občana a ani vplyvy na manželstvo, rodičovstvo a rodinu.
+B. Osobitná časť
+K čl. I.
+K bodu 1 [§ 5 ods. 3 písm. a)]
+Navrhuje sa úprava pri príjmoch zamestnanca pri motorovom vozidle používanom na služobné aj súkromné účely, a to v prípade ak na danom vozidle bolo vykonané technické zhodnotenie, tak o toto technické zhodnotenie sa nemusí nevyhnutne zvyšovať jeho vstupná alebo zostatková cena.
+K bodu 2 [§ 20 ods. 4]
+Novela zákona umožní bankám zahrnúť do daňových výdavkov tvorbu opravnej položky až do výšky 50 % z nesplateného úveru, ak od splatnosti uplynula doba dlhšia ako 360 dní a po uplynutí 720 dní bude možné takúto pohľadávku zahrnúť do daňových výdavkov v celej výške.
+K bodu 3 [§ 20 ods. 14]
+Navrhovaná úprava umožní tvorbu opravnej položky k pohľadávke, pri ktorej je riziko, že ju dlžník úplne alebo čiastočne nezaplatí a bola zahrnutá do zdaniteľných príjmov, a to až do výšky 50 % jej menovitej hodnoty, ak od jej splatnosti ubehlo viac ako 360 dní a až do výšky 100 % po uplynutí 720 dní.
+K bodu 4 [§ 20 ods. 22]
+Rozširuje sa možnosť tvorby opravnej položky k príslušenstvu pohľadávky rovnakým spôsobom ako pri pohľadávkach, a to až do výšky 50 % po uplynutí 360 dní po splatnosti a do výšky 100 % po 720 dňoch po splatnosti.
+K bodu 5 [§ 21 ods. 1 písm. g)]
+Podľa navrhovanej úpravy sa za daňové výdavky budú považovať aj výdavky na technické zhodnotenie, ktoré budú odpisované ako hmotný majetok samostatne.
+K bodu 6 [§ 22 ods. 2 písm. a), ods. 6 písm. c) až e), ods. 15 a § 29 ods. 1, 2 a 3]
+Zvyšuje sa hranica pre odpisovanie hmotného majetku s obstarávacou cenou 1 700 eur a menej na 2 400 eur a menej. Odkedy bol naposledy zvyšovaný tento limit sa vplyvom inflácie a technologického pokroku značne zvýšila obstarávacia cena drobného majetku. Zvýšenie tohto limitu umožní podnikateľom jednorazovo odpísať drobný majetok vo vyššej hodnote, prevažne elektroniku bez toho, aby o ňom museli viesť evidenciu. Napríklad v Českej republike od roku 2021 pristúpili k zvýšeniu tohto limitu zo 40 000 Kč na 80 000 Kč z dôvodov potreby stimulovania aktivity a zvýšenia spotreby a dokonca uvažujú nad zvýšením tohto limitu na úroveň 100 000 Kč.
+K bodu 7 [§ 24 ods. 2]
+Technické zhodnotenie prenajatého hmotného majetku sa bude môcť zaradiť do odpisovej skupiny podľa § 26 a odpisovať samostatne.
+K bodu 8 [§ 25 ods. 2]
+Dopĺňa sa, že technické zhodnotenie nemusí byť súčasťou vstupnej ceny hmotného majetku ak sa daňovník rozhodne ho odpisovať ako hmotný majetok samostatne postupom podľa § 26.
+K bodu 9 [§ 20 ods. 24]
+Upravuje sa tvrdenie, že technické zhodnotenie pri zrýchlenom spôsobe odpisovania automaticky zvyšuje zostatkovú cenu, nie je tomu tak, ak je toto technické zhodnotenie odpisované ako hmotný majetok samostatne postupom podľa § 26.
+K bodu 10 [§ 26 ods. 1]
+Skracuje sa doba odpisovania budov v 6. odpisovej skupine zo 40 na 30 rokov. Zníženie doby odpisovania reflektuje skutočnosti, že po určitom čase je nutné do obnovy budovy opäť investovať, pričom materiály a technológie rýchlo napredujú. Navrhované riešenie sa nijak významne nelíši od riešenia iných členských štátov Európskej únie, v ktorých sa administratívne budovy odpisujú v rozmedzí 10 až 50 rokov buď rovnomerne alebo zrýchlene.
+K bodu 11 [§ 26 ods. 3]
+Dopĺňa sa možnosť zrýchlene odpisovať hmotný nehnuteľný majetok zaradený do odpisovej skupiny 5 a 6, ak má budova energetický certifikát A podľa Vyhlášky Ministerstva dopravy, výstavby a regionálneho rozvoja Slovenskej republiky č. 364/2012 Z. z., ktorou sa vykonáva zákon č. 555/2015 Z. z. o energetickej hospodárnosti budov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov. Táto zmena má za cieľ podporiť výstavbu a investície do energeticky menej náročných budov, ktoré prispejú nielen k úspore nákladov na energie, ale taktiež k ochrane životného prostredia.
+K bodu 12 [§ 27 ods. 1]
+V nadväznosti na skrátenie doby odpisovania hmotného majetku zaradeného do 6 odpisovej skupiny na dobu 30 rokov sa primerane upravujú aj ročné odpisy pre odpisovú skupinu 6, a to konkrétne na hodnotu 1/30.
+K bodu 13 [§ 27 ods. 2 písm. a) a b)]
+Primerane k navrhovaným zmenám sa upravuje možnosť samostatného odpisovania technického zhodnotenia hmotného majetku pri rovnomernom spôsobe odpisovania.
+K bodu 14 a 15 [§ 28 ods. 1]
+V nadväznosti na umožnenie zrýchleného odpisovania majetku zaradeného do odpisovej skupiny 5 a 6 sa dopĺňajú koeficienty pre tieto odpisové skupiny, a to konkrétne pre odpisovú skupinu 5 v prvom roku odpisovania na 20, v ďalších rokoch odpisovania na 21 a pre zvýšenú zostatkovú cenu na 20. Pre odpisovú skupinu 6 tieto koeficienty sú 30, 31 a 30 (v nezmenenom poradí). Daňov

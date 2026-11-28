@@ -1,0 +1,48 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Vládny návrh zákona o adresnej energopomoci a o zmene a doplnení niektorých zákonov (ďalej len „návrh zákona“) bol vypracovaný v súlade s príslušnými všeobecne záväznými právnymi predpismi, uzneseniami vlády Slovenskej republiky a inými strategickými dokumentmi, podľa ktorých Ministerstvo hospodárstva SR od roku 2023 kompetenčne zastrešuje oblasť poskytovania pomoci zraniteľným odberateľom energií v domácnosti a vybraným ďalším odberateľom energií.
+Cieľom návrhu zákona je zabezpečiť vhodný a primeraný právny a inštitucionálny rámec na poskytovanie pomoci so zvýšenými cenami energií (elektrina, plyn a teplo) energetickým domácnostiam v rozsahu a forme ustanovenej nariadením vlády.
+Poskytnutím adresnej energopomoci budú dotknuté energetické domácnosti, ktorým vznikne na rok 2026 právo na energopomoc, ochránené pred nárastom úhrad za elektrinu, plyn a teplo. Ku koncu roka 2025 dôjde k ukončeniu plošnej kompenzácie nákladov na energie a od 1. januára 2026 budú uplatňované cenové rozhodnutia Úradu pre reguláciu sieťových odvetví bez aplikovania inštitútu krízovej regulácie podľa § 16a zákona č. 250/2012 Z. z. o regulácii v sieťových odvetviach v znení neskorších predpisov.
+Návrh zákona upravuje podmienky pre vznik a zánik práva na adresnú energopomoc, právne vzťahy pri poskytovaní adresnej energopomoci, práva a povinnosti subjektov pri poskytovaní adresnej energopomoci, pôsobnosť orgánov štátnej správy pri poskytovaní adresnej energopomoci, podmienky poskytovania údajov o koncových odberateľoch elektriny v domácnosti, koncových odberateľoch plynu v domácnosti, konečných spotrebiteľoch tepla a koncových odberateľoch tepla dodávaného prostredníctvom systému centralizovaného zásobovania teplom, na účel podľa tohto zákona a register odberných miest.
+Prijatie navrhovaného zákona bude mať pozitívne sociálne vplyvy. Návrh zákona bude mať pozitívny aj negatívny vplyv na rozpočet verejnej správy, nemá vplyvy na podnikateľské prostredie, životné prostredie, na služby verejnej správy pre občana, na informatizáciu a tiež nemá vplyv na manželstvo, rodičovstvo a rodinu. 
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi, nálezmi ústavného súdu, inými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, s právom Európskej únie a s medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republiky viazaná.
+Návrh zákona nebude predmetom vnútrokomunitárneho pripomienkového konania.
+Účinnosť návrhu zákona sa navrhuje 1. októbra 2025.
+B. Osobitná časť
+K čl. I
+K § 1
+Ide o úvodné vymedzenie predmetu úpravy zákona. Uvádzajú sa jednotlivé okruhy právnej úpravy poskytovania adresnej energopomoci. Upravuje sa adresná energopomoc a právne vzťahy pri poskytovaní adresnej energopomoci, pôsobnosť orgánov štátnej správy pri poskytovaní adresnej energopomoci, podmienky poskytovania údajov o odberateľoch elektriny v domácnosti, odberateľoch plynu v domácnosti, konečných spotrebiteľoch tepla a koncových odberateľoch tepla dodávaného prostredníctvom systému centralizovaného zásobovania teplom a register odberných miest.
+K § 2
+Definujú sa základné pojmy úzko súvisiace s poskytovaním adresnej energopomoci. Predovšetkým sú to pojmy adresná energopomoc a odberné miesto, od ktorých sa odvíja právo na poskytovanie adresnej energopomoci. 
+Ďalej sa definujú pojmy ako adresa odberného miesta, dodávateľ elektriny, dodávateľ plynu, dodávateľ tepla, energopoukážka a kompenzovaná cena.
+K § 3
+Ako jeden zo základných pojmov sa definuje pojem energetická domácnosť. 
+Energetická domácnosť predstavuje skupinu ľudí, ktorí spolu žijú na jednej adrese, na ktorej odoberajú energie a ich bonita nepresahuje hodnotu stanovenú nariadením vlády.
+Bonita energetickej domácnosti vyjadruje ekonomickú schopnosť domácnosti dlhodobo hradiť náklady na energie s ohľadom na jej veľkosť a príjem.
+K § 4
+Právo na adresnú energopomoc vzniká dňom ustanoveným nariadením vlády, inak od 1. januára do 31. decembra príslušného kalendárneho roka. 
+Právo energetickej domácnosti na adresnú energopomoc vznikne len za predpokladu, že na odbernom mieste odoberá energie za regulovanú cenu a jej bonita je nižšia ako hraničná hodnota ustanovená nariadením vlády. 
+Splnenie podmienok vzniku práva na adresnú energopomoc sa posudzuje automatizovane na základe údajov evidovaných v informačných systémoch podľa § 13 ods. 3 v rozsahu ustanovenom nariadením vlády, pričom týmito údajmi je ministerstvo viazané. 
+Tieto úkony sa uskutočňujú automatizovane podľa § 9 ods. 4. K údajom na účely posúdenia a overenia splnenia podmienok podľa § 4 ods. 2 a zániku práva energetickej domácnosti na adresnú energopomoc sa pristupuje automatizovaným spôsobom medzisystémovou komunikáciou informačných systémov podľa § 13 ods. 3 alebo ods. 7 v nevyhnutnom rozsahu a na nevyhnutný čas potrebný na spracovanie údajov a určenie potrebných hodnôt z nich; po týchto úkonoch sa údaje automatizovane zmažú bez zbytočného odkladu, pričom sa o tomto úkone vykoná systémový záznam. 
+Ministerstvo aspoň raz ročne prehodnocuje, či energetická domácnosť, ktorej v príslušnom kalendárnom roku právo na adresnú energopomoc vzniklo, naďalej spĺňa podmienky pre poskytovanie adresnej energopomoci a tiež prehodnocuje, či energetickej domácnosti, ktorá pred dňom prehodnotenia nemala právo na adresnú energopomoc, toto právo vzniklo.
+Ak energetická domácnosť prestala spĺňať podmienky pre poskytovanie adresnej energopomoci, dochádza k zániku práva na adresnú energopomoc. Podrobnosti o zániku práva ustanovujú odseky 5 a 6.
+Právo na adresnú energopomoc nemožno previesť na inú osobu napríklad na základe zmluvy, ani neprechádza na právneho nástupcu, napríklad dedením. Ďalej nemožno považovať za príjem podľa osobitných predpisov, ako napríklad zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov, zákon č. 601/2003 Z. z. o životnom minime a o zmene a doplnení niektorých zákonov v znení neskorších predpisov alebo zákon č. 417/2013 Z. z. o pomoci v hmotnej núdzi a o zmene a doplnení niektorých zákonov v znení neskorších predpisov.
+K § 5 a 6
+Podrobnosti o spôsobe poskytovania a rozsahu adresnej energopomoci ustanoví vláda nariadením tak, aby úžitok z nej mala energetická domácnosť.
+Konkrétny spôsob a rozsah poskytovania adresnej energopomoci budú odôvodnené v nariadení vlády.
+K § 7
+Oznámenie obsahuje vysvetlenie pre energetickú domácnosť o vzniku práva na adresnú energopomoc, ako aj o jej forme a ďalších podrobnostiach. Oznámenie o adresnej energopomoci zasiela ministerstvo len tej energetickej domácnosti, ktorá splnila podmienky pre vznik práva na adresnú energopomoc.
+So zaslaním oznámenia ministerstvo zároveň upovedomí dodávateľa elektriny a dodávateľa plynu o priznaní adresnej energopomoci konkrétnej energetickej domácnosti.
+K § 8
+V prípade, ak na základe automatizovaného výpočtu sa energetickej domácnosti neprizná právo na adresnú energopomoc, fyzická osoba má možnosť reklamácie tejto skutočnosti.
+Na klientskom pracovisku okresného úradu budú vyčlenení zamestnanci, vyškolení v tejto oblasti, ktorí reklamujúcej fyzickej osobe operatívne poskytnú informácie, prečo jej energetická domácnosť nemá právo na adresnú energopomoc. Ak dôvodom neposkytnutia adresnej energopomoci bude posúdenie bonity, tieto informácie sa považujú za kvalifikované a poskytne ich ministerstvo hospodárstva pri zvýšených bezpečnostných opatreniach. Podanie žiadosti o tento typ informácií je podmienkou námietkového konania. 
+Ministerstvo námietku vybavuje v štandardnej lehote 30 dní.
+Zavádza sa povinnosť ministerstva, aby v prípade, ak z vlastného podnetu zistí skutočnosť, že sa energetickej domácnosti neposkytuje adresná energopomoc, a to aj napriek splneniu podmienok alebo sa poskytuje adresná energopomoc v nesprávnej výške, vykonalo nápravu do 30 dní.
+K § 9
+Vytvára sa register odberných miest, ako informačný systém verejnej správy, ktorého správcom je ministerstvo.
+Údaje podľa § 13 sú uložené vo vládnom cloude v prostredí a v správe jednotlivých poskytujúcich subjektov pri dodržaní kompetenčného zákona. Tieto dáta sú zabezpečené tak, že v každom zo zdrojov má ten istý subjekt vždy iný identifikátor (sektorový identifikátor), čo znemožní spracovanie údajov bez získania mechanizmu konverzie sektorových identifikátorov.
+Register k dátam získa iba prístup B2B (medzisystémový), a to výlučne v nevyhnutnom rozsahu a na nevyhnutný čas potrebný na výpočet a rešpektujúc vyššie uvedený princíp sektorových identifikátorov. Po výpočte sa údaje automatizovane zmažú bez zbytočného odkladu, pričom sa tento úkon zapíše do auditu.
+Tento spôsob nepodporuje a neumožňuje vyhľadávanie v údajoch podľa § 13, ukladanie údajov podľa § 13 v registri, ani ich úpravu. Zároveň register zabezpečuje, že všetky prístupy sú auditovateľné a kontrolovateľné, a to vrátane privilegovaných prístupov (administrátorských).
+Auditné logy zo systému sú archivované.
+Bezpečnostné opatrenia k tejto časti budú rešpektovať, resp. budú v súl
