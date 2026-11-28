@@ -3,6 +3,7 @@
 import Base from "../../layouts/Base.astro";
 import VoteList from "../../components/VoteList.astro";
 import Ava from "../../components/Ava.astro";
+import Odber from "../../components/Odber.astro";
 import { weeks, weekLabel, margin, type Week } from "../../lib/weeks";
 import { pct, fmtDur, plural, voteContext, voteHeadline, shortTitle, resultText, resultCls, lawTitle } from "../../lib/data";
 export function getStaticPaths() { return weeks.map((w, i) => ({ params: { key: w.key }, props: { w, newer: weeks[i - 1] ?? null, older: weeks[i + 1] ?? null } })); }
@@ -66,6 +67,8 @@ const desc = `Parlament v týždni ${label}: ${w.votes.length} ${plural(w.votes.
     </section>}
   </div>
   <p class="note">Počty sú štatistický výpočet z oficiálnych záznamov NR SR, nie hodnotenie poslancov.</p>
+
+  <Odber compact />
 
   <div class="section-head"><h2>Všetky hlasovania týždňa</h2></div>
   <VoteList items={w.votes} />

@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Odber from "../../components/Odber.astro";
 import { weeks, weekLabel } from "../../lib/weeks";
 import { pct, plural } from "../../lib/data";
 const years = [...new Set(weeks.map((w) => w.year))];
@@ -15,6 +16,7 @@ const latest = weeks[0];
       <span>{latest.votes.length} {plural(latest.votes.length, "hlasovanie", "hlasovania", "hlasovaní")} · {latest.passed} schválených · {latest.finals.filter((v) => v.passed).length} prijatých zákonov · účasť {pct(latest.attendance)}</span>
     </a>
   )}
+  <Odber compact />
   {years.map((y) => (
     <section>
       <div class="section-head"><h2>{y}</h2></div>

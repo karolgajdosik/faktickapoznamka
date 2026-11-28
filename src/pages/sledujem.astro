@@ -1,11 +1,13 @@
 ---
 import Base from "../layouts/Base.astro";
 import FollowedList from "../components/FollowedList.astro";
+import Odber from "../components/Odber.astro";
 ---
 <Base title="Sledujem" description="Poslanci, ktorých sledujete: ich posledné vystúpenia a hlasovania proti klubu.">
   <h1>Sledujem</h1>
   <p class="meta-line">Zoznam je uložený iba v tomto prehliadači.</p>
   <div style="margin-top:1.25rem"><FollowedList always /></div>
+  <Odber />
   <section class="rss-box" id="rss-box" hidden>
     <h2>Novinky do čítačky</h2>
     <p>Každý poslanec má vlastný RSS kanál s vystúpeniami a hlasovaniami proti klubu. Stiahnite si naraz všetkých sledovaných ako súbor OPML a otvorte ho v čítačke (Feedly, Inoreader, NetNewsWire, Thunderbird).</p>

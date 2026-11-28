@@ -1,0 +1,71 @@
+---
+// Interpellations: questions MPs put to members of the government (Art. 80 of the Constitution; answer due within 30 days).
+import Base from "../layouts/Base.astro";
+import Ava from "../components/Ava.astro";
+import { mps, formerMps, clubColor, plural, type Mp } from "../lib/data";
+import { mpExtra } from "../lib/extra";
+
+type Row = { id: string; title: string; state: string; date: string | null; to: string; askers: Mp[] };
+const byId = new Map<string, Row>();
+for (const m of [...mps, ...formerMps]) for (const i of mpExtra.get(m.id)?.interpellations ?? []) {
+  const r = byId.get(i.id) ?? { ...i, askers: [] as Mp[] }; if (!r.askers.includes(m)) r.askers.push(m); byId.set(i.id, r);
+}
+const all = [...byId.values()].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "") || +b.id - +a.id);
+const name = (s: string) => { const [last, first] = s.split(",").map((x) => x.trim()); return first ? `${first} ${last}` : s; };
+const tally = <K,>(xs: K[]) => { const m = new Map<K, number>(); for (const x of xs) m.set(x, (m.get(x) ?? 0) + 1); return [...m.entries()].sort((a, b) => b[1] - a[1]); };
+const toWhom = tally(all.map((r) => name(r.to || "neuvedené")));
+const askers = tally(all.flatMap((r) => r.askers)).slice(0, 12);
+const byClub = tally(all.flatMap((r) => [...new Set(r.askers.map((m) => m.club))]));
+const states = tally(all.map((r) => r.state || "neuvedený"));
+const maxTo = toWhom[0]?.[1] || 1, maxClub = byClub[0]?.[1] || 1;
+const fmt = (d: string | null) => (d ? new Date(d + "T12:00:00Z").toLocaleDateString("sk-SK", { day: "numeric", month: "numeric", year: "numeric", timeZone: "UTC" }) : "");
+---
+<Base title="Interpelácie" description={`Interpelácie poslancov NR SR: ${all.length} otázok členom vlády, komu ich poslanci adresujú najčastejšie a kto sa pýta najviac.`}>
+  <h1>Interpelácie</h1>
+  <p class="meta-line">Interpelácia je otázka poslanca členovi vlády. Podľa čl. 80 Ústavy SR musí odpovedať do 30 dní; o odpovedi môže parlament rokovať.</p>
+
+  <dl class="tiles" style="margin-top:1.25rem">
+    <div class="tile"><dt>Interpelácií</dt><dd>{all.length}</dd></div>
+    {states.map(([s, n]) => <div class="tile"><dt>{s}</dt><dd>{n}</dd></div>)}
+  </dl>
+
+  <div class="ip-grid">
+    <section>
+      <div class="section-head"><h2>Komu sú adresované</h2></div>
+      <ul class="ip-bars">{toWhom.slice(0, 15).map(([who, n]) => <li><span>{who}</span><span class="ip-bar"><i style={`width:${(100 * n) / maxTo}%`}></i></span><b>{n}</b></li>)}</ul>
+    </section>
+    <section>
+      <div class="section-head"><h2>Podľa klubu poslancov</h2></div>
+      <ul class="ip-bars">{byClub.map(([club, n]) => <li><span>{club}</span><span class="ip-bar"><i style={`width:${(100 * n) / maxClub}%;background:${clubColor(club)}`}></i></span><b>{n}</b></li>)}</ul>
+      <div class="section-head" style="margin-top:1.5rem"><h2>Najčastejšie sa pýtajú</h2></div>
+      <ul class="wk-people">{askers.map(([m, n]) => <li><a href={`/poslanci/${m.id}/`}><Ava m={m} /><span>{m.name}<small>{m.club}</small></span><b>{n}</b></a></li>)}</ul>
+    </section>
+  </div>
+
+  <div class="section-head"><h2>Všetky interpelácie</h2><span class="muted" style="font-size:var(--step--1)">najnovšie hore</span></div>
+  <ul class="ip-list">
+    {all.map((r) => (
+      <li>
+        <a href={`https://www.nrsr.sk/web/Default.aspx?sid=schodze/interpelacia&ID=${r.id}`} rel="noopener"><b>{r.title.replace(/^vo veci\s+/i, "").replace(/^./, (c) => c.toUpperCase())}</b></a>
+        <small>{fmt(r.date)} · pre {name(r.to)} · {r.askers.map((m, i) => <>{i > 0 && ", "}<a href={`/poslanci/${m.id}/`}>{m.name}</a></>)} · <span class="muted">{r.state}</span></small>
+      </li>
+    ))}
+  </ul>
+  <p class="note">Zdroj: evidencia interpelácií na nrsr.sk. Počty sú štatistický prehľad, nie hodnotenie.</p>
+</Base>
+<style is:global>
+  .ip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1.5rem 2rem; }
+  .ip-bars { list-style: none; margin: 0; padding: 0; }
+  .ip-bars li { display: grid; grid-template-columns: minmax(8rem, 11rem) 1fr 2.5rem; gap: .6rem; align-items: center; padding: .3rem 0; font-size: var(--step--1); }
+  .ip-bar { height: .55rem; border-radius: 999px; background: var(--panel-2); overflow: hidden; }
+  .ip-bar i { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+  .ip-bars b { text-align: right; font-variant-numeric: tabular-nums; }
+  .ip-list { list-style: none; margin: 0; padding: 0; }
+  .ip-list li { padding: .6rem 0; border-top: 1px solid var(--line); display: grid; gap: .15rem; }
+  .ip-list li > a { color: var(--text); text-decoration: none; }
+  .ip-list li > a:hover b { color: var(--accent); }
+  .ip-list small { color: var(--muted); }
+  .wk-people { list-style: none; margin: 0; padding: 0; }
+  .wk-people a { display: grid; grid-template-columns: auto 1fr auto; gap: .6rem; align-items: center; padding: .4rem 0; border-top: 1px solid var(--line); color: var(--text); text-decoration: none; }
+  .wk-people small { display: block; color: var(--muted); font-size: var(--step--2); }
+</style>

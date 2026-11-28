@@ -7,6 +7,7 @@ const sections = [
   ["udaje", "Aké osobné údaje zverejňujeme"],
   ["zaklad", "Účel a právny základ"],
   ["navstevnici", "Údaje návštevníkov stránky"],
+  ["odber", "Odber e-mailov"],
   ["spracovatelia", "Kto sa podieľa na prevádzke"],
   ["prava", "Vaše práva a opravy"],
   ["ai", "Umelá inteligencia a automatické výpočty"],
@@ -47,10 +48,16 @@ const sections = [
 
     <section id="navstevnici">
       <h2>Údaje návštevníkov stránky</h2>
-      <p>Nepoužívame cookies, reklamu ani sledovacie skripty, ktoré by vytvárali profil návštevníka. Stránka nemá registráciu ani formuláre.</p>
+      <p>Nepoužívame cookies, reklamu ani sledovacie skripty, ktoré by vytvárali profil návštevníka. Stránka nemá registráciu; jediný formulár slúži na dobrovoľný odber e-mailov (pozri nižšie).</p>
       <p>Návštevnosť meriame službou <strong>Cloudflare Web Analytics</strong>. Zaznamenáva iba súhrnné počty: zobrazené stránky, krajinu, typ zariadenia a stránku, z ktorej návštevník prišiel. Nepoužíva cookies ani iné ukladanie v prehliadači, neukladá IP adresy a nesleduje návštevníkov na iných weboch; vidíme len súhrnné čísla za týždeň.</p>
       <p>Vo vašom prehliadači (localStorage) si stránka pamätá iba nastavenia, ktoré si sami zvolíte: veľkosť písma, kontrast, tému, jazyk, sledovaných poslancov a posledné vyhľadávania. Tieto údaje nikdy neopúšťajú vaše zariadenie, sú nevyhnutné na poskytnutie funkcie, o ktorú ste požiadali, a preto nevyžadujú súhlas (§ 109 ods. 8 zákona č. 452/2021 Z. z.). Vymažete ich tlačidlom „Obnoviť pôvodné nastavenia“ v nastaveniach zobrazenia.</p>
       <p>Poskytovateľ hostingu (Cloudflare) môže z technických a bezpečnostných dôvodov krátkodobo spracúvať IP adresu a údaje o požiadavke. My k týmto záznamom nepristupujeme a nepoužívame ich na sledovanie návštevníkov.</p>
+    </section>
+
+    <section id="odber">
+      <h2>Odber e-mailov</h2>
+      <p>Ak sa prihlásite na týždenný prehľad, spracúvame vašu e-mailovú adresu, zoznam poslancov, ktorých sledujete (čísla poslancov z vášho prehliadača), a dátum prihlásenia a potvrdenia. Právnym základom je váš súhlas (čl. 6 ods. 1 písm. a) GDPR), ktorý dávate potvrdením odkazu v e-maile (dvojité potvrdenie).</p>
+      <p>Adresu používame výlučne na zasielanie tohto prehľadu, nikomu ju nepredávame a nepoužívame na reklamu. Nepotvrdené prihlásenia sa automaticky vymažú do 7 dní. Súhlas môžete kedykoľvek odvolať odkazom „Odhlásiť sa“ v každom e-maile; adresu tým okamžite vymažeme. Adresy sú uložené v úložisku Cloudflare (Workers KV) a e-maily odosiela Brevo (Sendinblue SAS, Francúzsko).</p>
     </section>
 
     <section id="spracovatelia">
@@ -58,7 +65,7 @@ const sections = [
       <ul>
         <li><strong>Cloudflare, Inc.</strong> – hosting a doručovanie stránky, meranie návštevnosti bez cookies, e‑mailová adresa kontakt@ (preposielanie pošty) a jazykový model na AI zhrnutia (Workers AI, spracúva iba verejné texty NR SR).</li>
         <li><strong>GitHub, Inc.</strong> – úložisko kódu a dát, automatické sťahovanie dát z nrsr.sk.</li>
-        <li><strong>Sendinblue SAS (Brevo)</strong> – odosielanie týždenného prehľadu návštevnosti prevádzkovateľovi; návštevníkov sa netýka.</li>
+        <li><strong>Sendinblue SAS (Brevo, Francúzsko)</strong> – odosielanie e-mailov: týždenný prehľad pre prihlásených odberateľov a prehľad návštevnosti pre prevádzkovateľa.</li>
       </ul>
       <p>Obe spoločnosti sídlia v USA a údaje prenášajú na základe rámca ochrany údajov EÚ – USA (Data Privacy Framework) a štandardných zmluvných doložiek.</p>
     </section>
@@ -85,7 +92,7 @@ const sections = [
       <p>Stránka je statická, bez prihlasovania a databázy, a doručuje sa výhradne cez HTTPS s bezpečnostnými hlavičkami. Ak nájdete zraniteľnosť, napíšte prosím na <a href={`mailto:${OPERATOR.email}`}>{OPERATOR.email}</a> (pozri aj <a href="/.well-known/security.txt">security.txt</a>) a dajte nám primeraný čas na opravu pred zverejnením.</p>
     </section>
 
-    <p class="muted pv-upd">Posledná zmena: 27. novembra 2026 (meranie návštevnosti)</p>
+    <p class="muted pv-upd">Posledná zmena: 28. novembra 2026 (odber e-mailov)</p>
   </article>
 </Base>
 

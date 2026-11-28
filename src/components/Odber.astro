@@ -1,0 +1,56 @@
+---
+// Newsletter sign-up box: e-mail + (optionally) the MPs followed in this browser. Double opt-in via /api/odber.
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+---
+<form class:list={["odber", { compact }]} novalidate>
+  <div class="odber-txt">
+    <b>Týždeň v parlamente e-mailom</b>
+    <span>Každý pondelok zhrnutie: čo prešlo, najtesnejšie hlasovania, kto chýbal. <span class="odber-f" hidden>Aj novinky o vašich <b class="odber-n"></b> sledovaných poslancoch.</span></span>
+  </div>
+  <div class="odber-row">
+    <label class="sr-only" for="odber-email">E-mailová adresa</label>
+    <input id="odber-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="vas@email.sk" required />
+    <input class="odber-hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <button type="submit">Odoberať</button>
+  </div>
+  <p class="odber-msg" role="status" aria-live="polite"></p>
+  <small class="odber-gdpr">Pošleme vám e-mail na potvrdenie. Adresu použijeme iba na tento prehľad, odhlásiť sa dá jedným klikom. <a href="/ochrana-sukromia/#odber">Ochrana súkromia</a></small>
+</form>
+<script>
+  const follows = (): string[] => { try { return JSON.parse(localStorage.getItem("fp-follow") || "[]"); } catch { return []; } };
+  document.querySelectorAll<HTMLFormElement>("form.odber").forEach((f) => {
+    const n = follows().length;
+    if (n) { f.querySelector<HTMLElement>(".odber-f")!.hidden = false; f.querySelector(".odber-n")!.textContent = String(n); }
+    const msg = f.querySelector<HTMLElement>(".odber-msg")!, btn = f.querySelector("button")!;
+    f.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = (f.elements.namedItem("email") as HTMLInputElement).value.trim();
+      if (!/^\S+@\S+\.\S+$/.test(email)) { msg.textContent = "Skontrolujte e-mailovú adresu."; msg.dataset.k = "err"; return; }
+      btn.disabled = true; msg.textContent = "Odosiela sa…"; msg.dataset.k = "";
+      try {
+        const r = await fetch("/api/odber", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ email, follows: follows(), web: (f.elements.namedItem("web") as HTMLInputElement).value }) });
+        const d = await r.json().catch(() => ({ ok: false }));
+        if (d.ok) { msg.dataset.k = "ok"; msg.textContent = d.already ? "Túto adresu už máme, prehľad vám chodí." : d.change ? "Poslali sme e-mail na potvrdenie zmeny sledovaných poslancov." : "Hotovo. Skontrolujte schránku a potvrďte odber (pozrite aj spam)."; f.reset(); }
+        else { msg.dataset.k = "err"; msg.textContent = d.error || "Nepodarilo sa, skúste to neskôr."; }
+      } catch { msg.dataset.k = "err"; msg.textContent = "Nepodarilo sa, skúste to neskôr."; }
+      btn.disabled = false;
+    });
+  });
+</script>
+<style is:global>
+  .odber { display: grid; gap: .6rem; margin: 2rem 0 0; padding: 1.1rem 1.25rem; border-radius: var(--r); background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); }
+  .odber-txt { display: grid; gap: .2rem; }
+  .odber-txt > b { font-size: var(--step-1); }
+  .odber-txt > span { color: var(--muted); }
+  .odber-row { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .odber-row input[type=email] { flex: 1 1 14rem; min-width: 0; font: inherit; padding: .6rem .9rem; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg); color: var(--text); }
+  .odber-row input[type=email]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .odber-row button { font: inherit; font-weight: 750; padding: .6rem 1.2rem; border-radius: 999px; border: 0; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  .odber-row button:disabled { opacity: .6; cursor: wait; }
+  .odber-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .odber-msg { margin: 0; min-height: 1.2em; font-weight: 650; font-size: var(--step--1); }
+  .odber-msg[data-k=ok] { color: var(--za); } .odber-msg[data-k=err] { color: var(--proti); }
+  .odber-gdpr { color: var(--muted); font-size: var(--step--2); }
+  .odber.compact { margin-top: 1.25rem; }
+</style>

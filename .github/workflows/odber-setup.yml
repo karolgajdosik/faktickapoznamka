@@ -1,0 +1,25 @@
+name: Odber – jednorazové nastavenie
+# Creates the KV namespace for newsletter subscribers (if missing) and stores the Brevo key as a Worker secret.
+on: workflow_dispatch
+permissions: { contents: read }
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: KV namespace
+        run: |
+          find() { npx wrangler kv namespace list 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const a=JSON.parse(s.slice(s.indexOf("[")));const n=a.find(x=>/faktickapoznamka-odber/.test(x.title));console.log(n?n.id:"")})'; }
+          id=$(find)
+          if [ -z "$id" ]; then npx wrangler kv namespace create faktickapoznamka-odber; id=$(find); fi
+          echo "ODBER_KV_ID=$id"
+          echo "### KV namespace id: \`$id\`" >> $GITHUB_STEP_SUMMARY
+      - name: Worker secret BREVO_API_KEY
+        env: { BREVO: "${{ secrets.BREVO_API_KEY }}" }
+        run: printf '%s' "$BREVO" | npx wrangler secret put BREVO_API_KEY

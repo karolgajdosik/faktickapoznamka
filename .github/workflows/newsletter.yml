@@ -1,0 +1,26 @@
+name: Týždeň v parlamente – e-mail odberateľom
+on:
+  schedule:
+    - cron: "17 7 * * 1"  # pondelok 8:17 SEČ (9:17 SELČ), po rannej aktualizácii dát
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "Iba zostaviť, neposielať", type: boolean, default: true }
+permissions: { contents: read }
+concurrency: { group: newsletter, cancel-in-progress: false }
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+      NEWSLETTER_FROM: ${{ secrets.STATISTIKY_ODOSIELATEL }}
+      DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '1' || '' }}
+    steps:
+      - uses: actions/checkout@v5
+        with: { fetch-depth: 1 }
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - run: python scripts/newsletter.py

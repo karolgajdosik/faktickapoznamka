@@ -69,3 +69,25 @@ for sk, en, de, hu, pl in [
 E("Neoficiálna, nezávislá stránka. Nie je stránkou Národnej rady SR. Prevádzkovateľ:", "Unofficial, independent site. Not run by the National Council of the Slovak Republic. Operator:", "Inoffizielle, unabhängige Seite. Keine Seite des Nationalrats der Slowakischen Republik. Betreiber:", "Nem hivatalos, független oldal. Nem a Szlovák Köztársaság Nemzeti Tanácsának oldala. Üzemeltető:", "Nieoficjalna, niezależna strona. Nie jest stroną Rady Narodowej Republiki Słowackiej. Operator:")
 E("Zdroj dát:", "Data source:", "Datenquelle:", "Adatforrás:", "Źródło danych:")
 E("Porovnanie", "Compare", "Vergleich", "Összehasonlítás", "Porównanie")
+for sk, en, de, hu, pl in [
+    ("Dnes v parlamente", "Today in parliament", "Heute im Parlament", "Ma a parlamentben", "Dziś w parlamencie"),
+    ("Posledný rokovací deň", "Last sitting day", "Letzter Sitzungstag", "Utolsó ülésnap", "Ostatni dzień obrad"),
+    ("Práve rokuje", "In session now", "Tagt gerade", "Most ülésezik", "Właśnie obraduje"),
+    ("Pozrieť živý prenos na tv.nrsr.sk", "Watch the live stream on tv.nrsr.sk", "Livestream auf tv.nrsr.sk ansehen", "Élő közvetítés a tv.nrsr.sk oldalon", "Oglądaj transmisję na tv.nrsr.sk"),
+    ("Prebieha schôdza", "Session in progress", "Sitzung läuft", "Ülésszak folyamatban", "Trwa posiedzenie"),
+    ("Najbližšia schôdza", "Next session", "Nächste Sitzung", "Következő ülésszak", "Najbliższe posiedzenie"),
+    ("Vystúpení", "Speeches", "Redebeiträge", "Felszólalások", "Wystąpień"),
+    ("Vystúpenia v rozprave", "Speeches in debate", "Redebeiträge", "Felszólalások a vitában", "Wystąpienia w debacie"),
+    ("Hlasovania", "Votes", "Abstimmungen", "Szavazások", "Głosowania"),
+    ("Zhrnutie celého týždňa", "Summary of the whole week", "Zusammenfassung der ganzen Woche", "Az egész hét összefoglalója", "Podsumowanie całego tygodnia"),
+    ("Interpelácie", "Interpellations", "Interpellationen", "Interpellációk", "Interpelacje"),
+    ("Interpelácií", "Interpellations", "Interpellationen", "Interpellációk", "Interpelacji"),
+    ("Komu sú adresované", "Addressed to", "Adressiert an", "Kinek címezték", "Do kogo skierowane"),
+    ("Podľa klubu poslancov", "By MPs' club", "Nach Klub der Abgeordneten", "A képviselők klubja szerint", "Według klubu posłów"),
+    ("Najčastejšie sa pýtajú", "Ask most often", "Fragen am häufigsten", "Leggyakrabban kérdeznek", "Najczęściej pytają"),
+    ("Všetky interpelácie", "All interpellations", "Alle Interpellationen", "Minden interpelláció", "Wszystkie interpelacje"),
+    ("Týždeň v parlamente e-mailom", "The week in parliament by e-mail", "Die Woche im Parlament per E-Mail", "A hét a parlamentben e-mailben", "Tydzień w parlamencie e-mailem"),
+    ("Odoberať", "Subscribe", "Abonnieren", "Feliratkozás", "Subskrybuj"),
+    ("Odber e-mailov", "E-mail subscription", "E-Mail-Abonnement", "E-mail feliratkozás", "Subskrypcja e-mail"),
+]:
+    E(sk, en, de, hu, pl)

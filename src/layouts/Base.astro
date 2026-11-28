@@ -72,7 +72,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     </div>
   </header>
   <div id="live" class="live" hidden data-since={live.item ? live.since : ""}>
-    <div class:list={["wrap", { "wide-wrap": wide }]}><strong>Na programe NR SR:</strong> {live.item} <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
+    <div class:list={["wrap", { "wide-wrap": wide }]}><strong>Na programe NR SR:</strong> {live.item} <a href="/dnes/">Dnes v parlamente</a> · <a href="https://tv.nrsr.sk/" rel="noopener">Pozrieť prenos</a></div>
   </div>
   {meta.demo && <div class="demo"><div class="wrap">Ukážková verzia: mená a hlasovania sú vymyslené.</div></div>}
   <main id="obsah" class:list={["wrap", { "wide-wrap": wide }]} data-pagefind-body={index ? "" : undefined}><slot /></main>
@@ -95,9 +95,11 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     <div class="sheet-grip" aria-hidden="true"></div>
     <a href="/">Úvod</a>
     <a href="/sledujem/">Sledujem</a>
+    <a href="/dnes/">Dnes v parlamente</a>
     <a href="/tyzden/">Týždeň v parlamente</a>
     <a href="/schodze/">Schôdze</a>
     <a href="/temy/">Hlasovania podľa tém</a>
+    <a href="/interpelacie/">Interpelácie</a>
     <a href="/vybory/">Výbory</a>
     <a href="/kraje/">Poslanci podľa krajov</a>
     <a href="/poslanci/zmeny/">Zmeny v zložení parlamentu</a>
@@ -105,6 +107,7 @@ const nav = [["/poslanci/", "Sála"], ["/zakony/", "Zákony"], ["/schodze/", "Sc
     <a href="/porovnanie/">Porovnanie poslancov</a>
     <a href="/hladat/">Hľadať v prepisoch</a>
     <a href="/o-projekte/">O projekte</a>
+    <a href="/odber/">Týždeň v parlamente e-mailom</a>
     <a href="/data/">Otvorené dáta (CSV, Excel)</a>
     <a href="/rss.xml">RSS kanál hlasovaní</a>
     <a href="/ochrana-sukromia/">Ochrana súkromia</a>

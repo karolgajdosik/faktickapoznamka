@@ -1,0 +1,32 @@
+---
+import Base from "../../layouts/Base.astro";
+import Odber from "../../components/Odber.astro";
+---
+<Base title="Týždeň v parlamente e-mailom" description="Každý pondelok e-mailom: čo parlament schválil, najtesnejšie hlasovania, kto chýbal a novinky o poslancoch, ktorých sledujete.">
+  <h1>Týždeň v parlamente e-mailom</h1>
+  <div class="panel pad od-state" id="od-state" hidden></div>
+  <p class="meta-line">Bezplatný prehľad každý pondelok ráno, keď parlament v predchádzajúcom týždni rokoval.</p>
+  <ul class="od-what">
+    <li>čo parlament schválil a ktoré zákony prešli záverečným hlasovaním,</li>
+    <li>hlasovania, o ktorých rozhodlo pár hlasov,</li>
+    <li>kto najviac chýbal a kto hlasoval proti svojmu klubu,</li>
+    <li>ak niekoho sledujete (tlačidlo „Sledovať“ na profile poslanca), aj jeho hlasovania, neúčasti a vystúpenia.</li>
+  </ul>
+  <Odber />
+  <p class="note">Sledovaných poslancov berieme z tohto prehliadača v čase prihlásenia. Keď ich zmeníte, prihláste sa znova a zmenu potvrďte z e-mailu.</p>
+</Base>
+<script>
+  const s = new URLSearchParams(location.search).get("stav");
+  const t: Record<string, [string, string]> = {
+    potvrdene: ["ok", "Odber je potvrdený. Prvý prehľad príde v pondelok ráno po rokovacom týždni."],
+    zrusene: ["ok", "Odber sme zrušili a vašu adresu vymazali."],
+    neplatny: ["err", "Odkaz je neplatný alebo vypršal. Prihláste sa prosím znova."],
+  };
+  if (s && t[s]) { const el = document.getElementById("od-state")!; el.hidden = false; el.dataset.k = t[s][0]; el.textContent = t[s][1]; }
+</script>
+<style>
+  .od-what { color: var(--muted); max-width: 44rem; }
+  .od-state { margin: 1rem 0; font-weight: 700; }
+  .od-state[data-k=ok] { border-left: 4px solid var(--za); }
+  .od-state[data-k=err] { border-left: 4px solid var(--proti); }
+</style>

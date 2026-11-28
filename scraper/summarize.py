@@ -4,7 +4,7 @@ GitHub Models, used before, was retired on 30 July 2026. Workers AI on the free 
 a day at no charge and refuses further requests (no billing), so a run simply stops at the limit.
 Needs CF_API_TOKEN with the permission Account > Workers AI > Read and CLOUDFLARE_ACCOUNT_ID.
 Newest items first. Summaries are labelled as AI on the site and always link to the full source."""
-import json, os, pathlib, sys, time, datetime, urllib.request, urllib.error
+import json, re, os, pathlib, sys, time, datetime, urllib.request, urllib.error
 
 DATA = pathlib.Path("data"); OUT = DATA / "summaries.json"
 MODEL = os.environ.get("SUMMARY_MODEL", "@cf/meta/llama-3.3-70b-instruct-fp8-fast")
@@ -22,6 +22,18 @@ LAW_PROMPT = ("Si nestranný redaktor. Z dôvodovej správy k návrhu zákona v 
               "jednoduchou rečou pre bežného čitateľa: čo návrh mení a koho sa týka; dátum účinnosti uveď len vtedy, ak je v texte presne uvedený, inak o ňom nepíš vôbec. Píš spisovnou slovenčinou (nie češtinou). "
               "Nehodnoť, nepreberaj argumenty navrhovateľa ako fakty (píš „návrh má…“, „podľa navrhovateľa…“), nepridávaj nič, čo v texte nie je, "
               "a nepoužívaj citácie dlhšie ako päť slov. Ak text nestačí na zhrnutie, odpovedz iba slovom NEDOSTATOČNÉ.")
+
+
+# Frequent slips of the free model in Slovak (Czech forms, typos); applied to every summary before saving.
+FIXES = [(r"\bministera\b", "ministra"), (r"\bMinistera\b", "Ministra"), (r"\bRečníkk([ay])\b", r"Rečníčk\1"), (r"\bnávrhům\b", "návrhom"),
+         (r"\bpriznat\b", "priznať"), (r"\btieto poslanci\b", "títo poslanci"), (r"\bTieto poslanci\b", "Títo poslanci"),
+         (r"\bkterý\b", "ktorý"), (r"\bkterá\b", "ktorá"), (r"\bkteré\b", "ktoré"), (r"\bjejich\b", "ich"), (r"\bbude moci\b", "bude môcť"),
+         (r"\bnavrhuje, že\b", "navrhuje, aby"), (r"\bv rámci\s+rámca\b", "v rámci"), (r"\s+([,.])", r"\1")]
+
+def fix_sk(t: str | None) -> str | None:
+    if not t: return t
+    for a, b in FIXES: t = re.sub(a, b, t)
+    return t
 
 class Stop(Exception):
     pass
@@ -43,7 +55,7 @@ def call(text: str, prompt: str = PROMPT, max_tokens: int = 220) -> str | None:
         raise Stop(f"non-JSON answer (HTTP {status}, {ctype}, {len(raw)} bytes): {raw[:300]!r}")
     if "choices" not in d:
         raise Stop(f"unexpected answer: {str(d)[:300]}")
-    return (d["choices"][0]["message"].get("content") or "").strip()
+    return fix_sk((d["choices"][0]["message"].get("content") or "").strip())
 
 def laws(meta, today, budget):
     """Plain-language summaries of bills from their explanatory memorandum (data/extra/lawtext)."""

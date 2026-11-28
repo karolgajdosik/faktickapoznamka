@@ -1,0 +1,98 @@
+---
+// Today in parliament: the current agenda item, today's votes and speeches; outside sitting days the last sitting day and the next session.
+// Built every hour with the data; the browser decides whether "the last sitting day" is today.
+import Base from "../layouts/Base.astro";
+import VoteList from "../components/VoteList.astro";
+import SpeechList from "../components/SpeechList.astro";
+import { votes, speeches, live, dayKey, fmtDur, plural, CHAIR, mpById } from "../lib/data";
+import { program } from "../lib/extra";
+import { latestWeek, weekLabel } from "../lib/weeks";
+
+const days = [...new Set([...votes.map((v) => dayKey(v.datetime)), ...speeches.map((s) => dayKey(s.start))])].sort();
+const last = days[days.length - 1];
+const dayVotes = votes.filter((v) => dayKey(v.datetime) === last);
+const daySpeeches = speeches.filter((s) => dayKey(s.start) === last && s.kind !== CHAIR).sort((a, b) => b.start.localeCompare(a.start));
+const talk = new Map<string, number>(); for (const s of daySpeeches) if (s.mpId) talk.set(s.mpId, (talk.get(s.mpId) ?? 0) + s.dur);
+const topTalk = [...talk.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([id, sec]) => ({ m: mpById.get(id)!, sec })).filter((x) => x.m);
+const dayLabel = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("sk-SK", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+// programme: "24. 11. 2026 -" (running), "2. 12. 2026", "2. – 4. 12. 2026"
+const sessions = program.map((p) => {
+  const m = p.when.match(/(\d{1,2})\.\s*(?:[-–]\s*(\d{1,2})\.\s*)?(\d{1,2})\.\s*(\d{4})/);
+  if (!m) return null;
+  const start = `${m[4]}-${m[3].padStart(2, "0")}-${m[1].padStart(2, "0")}`;
+  return { n: p.n, when: p.when.trim(), start, open: /-\s*$/.test(p.when.trim()) };
+}).filter((x): x is { n: number; when: string; start: string; open: boolean } => !!x && !/SPÄŤ|ZRUŠ/i.test(x.when));
+const passed = dayVotes.filter((v) => v.passed).length;
+---
+<Base title="Dnes v parlamente" description="Čo sa práve deje v Národnej rade SR: aktuálny bod programu, dnešné hlasovania a vystúpenia, najbližšia schôdza.">
+  <div id="dn" data-last={last} data-live-since={live.item ? live.since ?? "" : ""} data-sessions={JSON.stringify(sessions)}>
+    <p class="meta-line" id="dn-kicker">Posledný rokovací deň</p>
+    <h1 id="dn-h">{dayLabel(last)}</h1>
+
+    {live.item && (
+      <a class="panel pad dn-live" id="dn-live" href="https://tv.nrsr.sk/" rel="noopener" hidden>
+        <span class="dn-badge"><span class="live-dot" aria-hidden="true"></span>Práve rokuje</span>
+        <b>{live.item}</b>
+        <span>Pozrieť živý prenos na tv.nrsr.sk</span>
+      </a>
+    )}
+    <div class="panel pad dn-next" id="dn-next" hidden><small id="dn-next-k"></small><b id="dn-next-b"></b><span id="dn-next-s"></span></div>
+
+    <dl class="tiles" style="margin-top:1.25rem">
+      <div class="tile"><dt>Hlasovaní</dt><dd>{dayVotes.length}</dd></div>
+      <div class="tile"><dt>Schválené</dt><dd style="color:var(--za)">{passed}</dd></div>
+      <div class="tile"><dt>Neschválené</dt><dd style="color:var(--proti)">{dayVotes.filter((v) => v.passed === false).length}</dd></div>
+      <div class="tile"><dt>Vystúpení</dt><dd>{daySpeeches.length}</dd></div>
+    </dl>
+
+    {topTalk.length > 0 && <>
+      <div class="section-head"><h2>Najdlhšie rečnili</h2></div>
+      <p class="dn-talk">{topTalk.map((x, i) => <>{i > 0 && " · "}<a href={`/poslanci/${x.m.id}/`}>{x.m.name}</a> <span class="muted">{fmtDur(x.sec)}</span></>)}</p>
+    </>}
+
+    {dayVotes.length > 0 && <>
+      <div class="section-head"><h2>Hlasovania</h2><span class="muted" style="font-size:var(--step--1)">{dayVotes.length} {plural(dayVotes.length, "hlasovanie", "hlasovania", "hlasovaní")}, najnovšie hore</span></div>
+      <VoteList items={dayVotes} />
+    </>}
+
+    {daySpeeches.length > 0 && <>
+      <div class="section-head"><h2>Vystúpenia v rozprave</h2><span class="muted" style="font-size:var(--step--1)">najnovšie hore</span></div>
+      <SpeechList items={daySpeeches.slice(0, 60)} />
+      {daySpeeches.length > 60 && <p class="muted">Zobrazených 60 z {daySpeeches.length} vystúpení.</p>}
+    </>}
+
+    {latestWeek && <a class="panel pad home-week" href={`/tyzden/${latestWeek.key}/`}><small>Týždeň v parlamente · {weekLabel(latestWeek)}</small><b>Zhrnutie celého týždňa</b><span>Záverečné hlasovania, najtesnejšie výsledky, kto chýbal</span></a>}
+    <p class="note">Stránka sa obnovuje každú hodinu z oficiálnych údajov NR SR; hlasovania a prepisy NR SR zverejňuje s oneskorením.</p>
+  </div>
+</Base>
+
+<script>
+  const el = document.getElementById("dn")!;
+  const tz = "Europe/Bratislava";
+  const today = new Date().toLocaleDateString("sv-SE", { timeZone: tz });
+  const last = el.dataset.last!;
+  const h = Number(new Date().toLocaleString("en-GB", { timeZone: tz, hour: "numeric", hour12: false }));
+  if (last === today) document.getElementById("dn-kicker")!.textContent = "Dnes v parlamente";
+  const since = el.dataset.liveSince;
+  if (since && Date.now() - Date.parse(since) < 12 * 3600e3 && h >= 8 && h < 20) document.getElementById("dn-live")!.hidden = false;
+  const ses = JSON.parse(el.dataset.sessions || "[]") as { n: number; when: string; start: string; open: boolean }[];
+  const running = ses.find((s) => s.open && s.start <= today);
+  const next = ses.filter((s) => s.start > today).sort((a, b) => a.start.localeCompare(b.start))[0];
+  const fmt = (d: string) => new Date(d + "T12:00:00Z").toLocaleDateString("sk-SK", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+  const box = document.getElementById("dn-next")!;
+  if (last !== today && (running || next)) {
+    box.hidden = false;
+    if (running) { document.getElementById("dn-next-k")!.textContent = "Prebieha schôdza"; document.getElementById("dn-next-b")!.textContent = `${running.n}. schôdza (od ${fmt(running.start)})`; document.getElementById("dn-next-s")!.textContent = "V dňoch rokovania tu uvidíte aktuálny bod, hlasovania a vystúpenia."; }
+    else if (next) { const d = Math.round((Date.parse(next.start) - Date.parse(today)) / 864e5); document.getElementById("dn-next-k")!.textContent = "Najbližšia schôdza"; document.getElementById("dn-next-b")!.textContent = `${next.n}. schôdza: ${fmt(next.start)}`; document.getElementById("dn-next-s")!.textContent = d === 1 ? "zajtra" : `o ${d} dní`; }
+  }
+</script>
+<style>
+  .dn-live { display: grid; gap: .3rem; margin-top: 1rem; text-decoration: none; color: var(--text); border-left: 4px solid var(--proti); }
+  .dn-live b { font-size: var(--step-1); }
+  .dn-live span:last-child { color: var(--accent); font-weight: 700; font-size: var(--step--1); }
+  .dn-badge { display: inline-flex; align-items: center; gap: .4rem; font-weight: 800; font-size: var(--step--1); color: var(--proti); }
+  .dn-next { display: grid; gap: .2rem; margin-top: 1rem; border-left: 4px solid var(--accent); }
+  .dn-next small, .dn-next span { color: var(--muted); }
+  .dn-next b { font-size: var(--step-1); }
+  .dn-talk { margin: 0; line-height: 1.8; }
+</style>
