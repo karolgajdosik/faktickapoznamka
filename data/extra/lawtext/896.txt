@@ -1,0 +1,48 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Návrh zákona vytvára novú právnu úpravu ako reakciu na rýchly rozvoj digitalizácie a potrebu zvýšenia ochrany spotrebiteľa, pričom jedným z hlavných dôvodov na predloženie návrhu zákona je prebratie požiadaviek ustanovených v smernici Európskeho parlamentu a Rady (EÚ) 2023/2673 z 22. novembra 2023, ktorou sa mení smernica 2011/83/EÚ, pokiaľ ide o zmluvy o finančných službách uzavreté na diaľku, a ktorou sa zrušuje smernica 2002/65/ES (Ú. v. EÚ L, 2023/2673, 28.11.2023) (ďalej len „smernica (EÚ) 2023/2673“), nakoľko Slovenskej republike vyplýva povinnosť transponovať citovanú smernicu do vnútroštátneho právneho poriadku na dosiahnutie súladu s legislatívou Európskej únie (ďalej len „EÚ“).
+Primárnym cieľom je riešenie problematiky poskytovania finančných služieb na diaľku prostredníctvom rôznych online kanálov, pričom doterajšia právna úprava adekvátne nereaguje na technické možnosti, akými môžu byť finančné služby na diaľku ponúkané a poskytované v súčasnosti. Digitalizácia prispela k vývoju na trhu, ktorý sa v čase prijímania súčasnej právnej úpravy nedal predvídať, pričom tento vývoj so sebou priniesol významné zmeny na trhu s finančnými službami. Finančné služby ponúkané spotrebiteľom sa značne rozvinuli a diverzifikovali. Vyvinuli sa nové produkty, najmä v online prostredí, a ich používanie sa naďalej vyvíja často rýchlym a nepredvídateľným spôsobom. Absencia právnej regulácie v daných oblastiach, ako aj nejednotnosť pravidiel zabezpečujúcich úroveň ochrany spotrebiteľov pri finančných službách na diaľku by viedla k právnej neistote a k problémom pri uzavieraní zmlúv o finančných službách v rámci vnútorného trhu.
+Návrh zákona preto sleduje viacero cieľov, ktoré majú primárne riešiť problematiku finančných služieb poskytovaných na diaľku a podporiť ochranu spotrebiteľa v danej oblasti. Všeobecné závery z hodnotenia v rámci programu regulačnej vhodnosti a efektívnosti (REFIT) boli, že právne predpisy, ktoré taktiež predstavovali transpozíciu smerníc (napr. zákon č. 129/2010 Z. z. o spotrebiteľských úveroch a o iných úveroch a pôžičkách pre spotrebiteľov a o zmene a doplnení niektorých zákonov, zákon č. 90/2016 Z. z. o úveroch na bývanie a o zmene a doplnení niektorých zákonov) znížili pridanú hodnotu smernice (EÚ) 2023/2673 a jej relevantnosť. Smernica (EÚ) 2023/2673 a ňou transponovaný návrh zákona preto zabezpečuje funkciu záchrannej siete, čo znamená, že spotrebitelia majú určitú úroveň ochrany v prípade zmlúv uzavretých na diaľku, a to aj v prípade finančných produktov, na ktoré sa doteraz nevzťahovali žiadne právne predpisy (napr. smernica sa uplatňuje v prípade neexistencie pravidiel EÚ týkajúcich sa kryptoaktív). Vzhľadom na to je prijatie novej právnej úpravy nevyhnutné.
+Ochrana spotrebiteľa patrí do spoločnej právomoci EÚ a jej členských štátov. Ako sa uvádza v článku 169 Zmluvy o fungovaní Európskej únie (ZFEÚ), EÚ musí pomáhať chrániť hospodárske záujmy spotrebiteľov a podporovať ich právo na informácie a osvetu na ochranu ich záujmov. Právnym základom návrhu je článok 114 ZFEÚ. Ten je v súlade s článkom 169 ods. 2 písm. a) ZFEÚ právnym základom na prijatie opatrení, ktorými sa prispieva k dosahovaniu cieľov stanovených v článku 169 ZFEÚ v súvislosti so zavŕšením tvorby jednotného trhu.
+Poskytovanie finančných služieb spotrebiteľom na diaľku sa za posledných 20 rokov výrazne zmenilo. Obchodníci a spotrebitelia finančných služieb prestali používať napr. fax, pričom sa objavili noví aktéri (napr. fintech spoločnosti) s novými obchodnými modelmi a novými distribučnými kanálmi (napr. finančné služby predávané online). Pandémia COVID-19 a súvisiace obmedzenia pohybu taktiež dopomohli k zrýchleniu nakupovania online vo všeobecnosti (napr. v bankovom sektore sa zmluvné vzťahy uzatvárali prostredníctvom elektronických prostriedkov).
+Návrhom zákona sa má ďalej dosiahnuť:
+zavedenie komplexnej a aktuálnej právnej regulácie v oblasti ochrany spotrebiteľa pri poskytovaní finančných služieb na diaľku,
+posilnenie právnej istoty v reakcii na rýchly technologický vývoj v oblasti digitalizácie, ktorý spôsobil, že niektoré inštitúty v online prostredí súčasná právna úprava v plnej miere nerieši,
+vymedzenie zásad, ktoré budú platné aj pre prostriedky, ktorých používanie ešte nie je rozšírené alebo ktoré ešte nie sú známe, a to s cieľom reagovať na neustály vývoj uvedených komunikačných prostriedkov,
+zabezpečenie jednotnej úrovne ochrany spotrebiteľov v rámci štátov EÚ a zamedzenie rozdielom, ktoré by bránili uzatváraniu zmlúv o finančných službách v rámci vnútorného trhu,
+zavedenie pravidiel, ktorými sa pre obchodníkov zabezpečí právna istota a transparentnosť a spotrebiteľom sa poskytnú jednotné právne vymožiteľné práva a povinnosti vo všetkých členských štátoch EÚ,
+úprava pravidiel týkajúcich sa práva na predzmluvné informácie a práva na odstúpenie od zmluvy, ako aj pravidiel zabezpečujúcich spravodlivosť na internete pri uzatváraní zmlúv o finančných službách na diaľku.
+Ciele návrhu zákona budú splnené prostredníctvom ustanovenia zákonných požiadaviek v rámci úplnej harmonizácie na úpravu predzmluvných informácií, úpravu práva na odstúpenie od zmluvy, zásad spravodlivého zaobchádzania v online prostredí a presadzovaním práva. (vymáhaním práva). 
+V záujme zachovania primeranej úrovne ochrany spotrebiteľa v súlade so štandardmi ustanovenými právnymi predpismi EÚ, návrh zákona prinesie zmeny zákona č. 108/2024 Z. z. o ochrane spotrebiteľa a o zmene a doplnení niektorých zákonov a zákona č. 251/2012 Z. z. o energetike a o zmene a doplnení niektorých zákonov, ktoré sa týkajú potreby reflektovať zmeny vykonané návrhom zákona aj do týchto právnych predpisov a ustanovenie funkcie na odstúpenie od zmluvy nie len pre obchodníkov poskytujúcich finančné služby na diaľku, ale aj pre obchodníkov poskytujúcich akékoľvek služby a tovary na diaľku.
+V rámci ďalších novelizačných článkov návrhu zákona je zabezpečený súlad článku I návrhu zákona s ostatnými právnymi predpismi, ktorých sa dotýkajú zmeny zavedené týmto článkom.
+ Návrh zákona má negatívne vplyvy na podnikateľské prostredie, vrátane vplyvov na malé a stredné podniky. Mechanizmus znižovania byrokracie a nákladov sa uplatňuje. Návrh zákona má tiež pozitívne sociálne vplyvy. Návrh zákona nemá vplyvy na rozpočet verejnej správy a rozpočty obcí a vyšších územných celkov, životné prostredie, informatizáciu spoločnosti, služby verejnej správy pre občana, ani na manželstvo, rodičovstvo a rodinu. Návrh zákona nemá vplyv na limit verejných výdavkov.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a nálezmi ústavného súdu, zákonmi, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právom EÚ.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona o ochrane spotrebiteľa pri finančných službách na diaľku a o zmene a doplnení niektorých zákonov (ďalej len „návrh zákona“)
+Predkladateľ (a spolupredkladateľ)
+Ministerstvo financií Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Smernica Európskeho parlamentu a Rady (EÚ) 2023/2673 z 22. novembra 2023, ktorou sa mení smernica 2011/83/EÚ, pokiaľ ide o zmluvy o finančných službách uzavreté na diaľku, a ktorou sa zrušuje smernica 2002/65/ES (ďalej len “smernica 2023/2673”).
+Termín začiatku a ukončenia PPK
+September - október 2024
+Predpokladaný termín predloženia na pripomienkové konanie
+December 2024 (MPK)
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+1. štvrťrok 2025
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Predkladaný návrh zákona má za úlohu reagovať na rýchly technologický vývoj v oblasti digitalizácie, ktorý spôsobil, že niektoré inštitúty v online prostredí súčasná právna úprava v plnej miere nerieši, čo vedie k zníženiu ochrany spotrebiteľa v digitálnych kanáloch. Finančné služby ponúkané spotrebiteľom sa značne rozvinuli a diverzifikovali, objavili sa nové produkty, najmä v online prostredí, a ich používanie sa naďalej vyvíja často rýchlym a nepredvídateľným spôsobom a momentálne nie sú určené legislatívne rámce na zabezpečenie jednotného postupu v rámci vnútorného trhu, a to môže viesť k právnej neistote. Predmetným návrhom zákona dôjde aj k transpozícii smernici 2023/2673, nakoľko Slovenskej republike vyplýva povinnosť transponovať citovanú smernicu do vnútroštátneho právneho poriadku na dosiahnutie súladu s legislatívou Európskej únie.
+Ciele a výsledný stav
+Uveďte hlavné ciele predkladaného materiálu (aký výsledný stav má byť prijat

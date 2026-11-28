@@ -76,8 +76,8 @@
  "1190": [
   "baterkáreň",
   "generické",
-  "fabriku",
   "batérií",
+  "fabriku",
   "indikátory",
   "fabrika",
   "judikát",
@@ -110,10 +110,10 @@
   "žiaľbohu",
   "kšeftovať",
   "odporný",
+  "odporná",
   "spytoval",
   "súdruhovia",
-  "ačohentizmus",
-  "psychopat"
+  "ačohentizmus"
  ],
  "761": [
   "hlasujme",
@@ -139,8 +139,8 @@
   "pobytových",
   "poradní",
   "opatrovanie",
-  "záškoláctvo",
   "posudkovej",
+  "záškoláctvo",
   "tripartite"
  ],
  "1042": [
@@ -148,8 +148,8 @@
   "hospitalizácie",
   "detského",
   "osvojenia",
-  "detských",
   "trebárs",
+  "detských",
   "preznačia",
   "rodiča",
   "doktora",
@@ -167,9 +167,9 @@
   "galérií",
   "aliancie",
   "núdzový",
-  "žalobami",
   "dedičskej",
-  "galérie"
+  "žalobami",
+  "koncipienta"
  ],
  "910": [
   "sedemročné",
@@ -182,8 +182,8 @@
   "transfery",
   "núdzového",
   "cezhraničnej",
-  "väzenskej",
-  "tajnej"
+  "tajnej",
+  "stíhaní"
  ],
  "873": [
   "trebárs",
@@ -203,7 +203,7 @@
   "liekov",
   "zdanení",
   "dividend",
-  "akcionárom"
+  "optimálne"
  ],
  "1065": [
   "synáčik",
@@ -242,13 +242,13 @@
   "justície",
   "hrubosť",
   "zmeškanie",
+  "čakateľov",
   "hanebnú",
-  "hanebná",
   "jubilejné",
+  "hanebná",
   "väzenstva",
   "notárskej",
   "mediačných",
-  "čakateľov",
   "kroviny"
  ],
  "1166": [],
@@ -270,15 +270,15 @@
   "rekodifikácii",
   "transrodových",
   "kolidujú",
+  "ohavné",
   "telesných",
   "oberáte",
   "telesné",
   "žalobami",
+  "priťažujúcich",
   "senátov",
-  "kódexov",
   "ľudskoprávnom",
-  "nájomníkov",
-  "tranzície"
+  "kódexov"
  ],
  "905": [
   "arabských",
@@ -322,8 +322,8 @@
   "čurillovcov",
   "vyhlasujem",
   "výsluchu",
-  "zaujatosti",
   "konkretizovať",
+  "zaujatosti",
   "evidujem"
  ],
  "1075": [
@@ -411,13 +411,13 @@
   "záložne",
   "plating",
   "záložní",
-  "náhodička",
   "sýkorovcov",
+  "náhodička",
   "sudcovskej",
+  "čakateľov",
   "kontumačný",
   "sudkyniam",
-  "sobášiaci",
-  "čakateľov"
+  "sobášiaci"
  ],
  "1135": [
   "trebárs",
@@ -484,10 +484,10 @@
   "okresov",
   "rómsky",
   "stromček",
-  "prácach",
   "strieborná",
   "stromy",
   "reedukačných",
+  "prácach",
   "okresy"
  ],
  "322": [
@@ -620,15 +620,16 @@
   "inklúzie",
   "cirkevné",
   "dátumom",
-  "nenáležitej",
   "mládežnícke",
   "gramatickom",
   "pedagógov",
   "neštátne",
-  "skrátka"
+  "skrátka",
+  "pedagogických"
  ],
  "1130": [
   "občaniek",
+  "prokorupčný",
   "sudkyne",
   "čakateľov",
   "občianky",
@@ -636,10 +637,9 @@
   "besedu",
   "osvojiť",
   "zniesť",
-  "doručuje",
   "neplatný",
   "skutky",
-  "justičnej"
+  "zvedavá"
  ],
  "929": [
   "prihlášku",
@@ -738,12 +738,12 @@
   "debarierizáciu",
   "spádovej",
   "vozíku",
-  "maturitu",
   "rektorov",
-  "priala",
+  "maturitu",
   "rektor",
-  "reedukačných",
+  "priala",
   "prorektorka",
+  "reedukačných",
   "bezbariérový"
  ],
  "1207": [
@@ -779,9 +779,9 @@
   "tender",
   "sestry",
   "sestra",
-  "operačné",
   "vravel",
   "vraveli",
+  "operačné",
   "onkologických",
   "vystihol",
   "zdržalo",
@@ -885,11 +885,11 @@
   "prorastové",
   "doktora",
   "politológ",
-  "geniálne",
+  "geniálny",
   "doniesť",
-  "štúdium",
   "návratnosť",
-  "zadlženie"
+  "zadlženie",
+  "štúdium"
  ],
  "1201": [
   "prírody"
@@ -905,8 +905,8 @@
   "neplatené",
   "rodovo",
   "slabošské",
-  "redefinícia",
-  "násilie"
+  "násilie",
+  "redefinícia"
  ],
  "962": [
   "vdovský",
@@ -980,8 +980,8 @@
   "trocha",
   "cirkevné",
   "sporenie",
-  "nedeľu",
-  "predaja"
+  "predaja",
+  "učiteľ"
  ],
  "1156": [],
  "61": [
@@ -1151,8 +1151,8 @@
  "1179": [
   "agropotravinárskeho",
   "hornou",
-  "stíhané",
   "darcov",
+  "stíhané",
   "hazardných",
   "nedbanlivosti",
   "prekvalifikovať",
@@ -1226,8 +1226,8 @@
   "uistiť",
   "pozemkov",
   "priamych",
-  "platobnej",
   "vidieka",
+  "platobnej",
   "platby",
   "zvierat",
   "pozemky",
@@ -1376,10 +1376,10 @@
   "bariérou",
   "invalidný",
   "posudkovej",
-  "sprievod",
   "pohybu",
-  "peňažný",
-  "bariéry"
+  "sprievod",
+  "bariéry",
+  "peňažný"
  ],
  "769": [
   "použití"
@@ -1406,16 +1406,16 @@
  ],
  "877": [
   "sudcovskej",
-  "senátov",
   "čakateľov",
+  "senátov",
   "notárskej",
-  "resocializácie",
   "mediácie",
+  "resocializácie",
   "aproximačných",
   "poručiteľ",
-  "notárov",
-  "dedičskej",
   "čakatelia",
+  "justičnej",
+  "dedičskej",
   "upustenie"
  ],
  "1145": [],
@@ -1451,8 +1451,8 @@
   "školami",
   "podporné",
   "školskej",
-  "normatív",
   "platových",
+  "normatív",
   "vyučovania"
  ],
  "966": [
@@ -1475,8 +1475,8 @@
   "rehabilitačné",
   "opatrovanie",
   "jednorodičovských",
-  "peňažný",
   "stredisko",
+  "peňažný",
   "motorové",
   "ambulancie",
   "pomôcky",
@@ -1542,7 +1542,11 @@
  ],
  "1225": [
   "mediácie",
-  "probačných"
+  "mediačných",
+  "probačných",
+  "restoratívnej",
+  "študijný",
+  "justície"
  ],
  "930": [],
  "1072": []

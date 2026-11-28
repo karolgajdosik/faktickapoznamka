@@ -1,0 +1,21 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Cieľ návrhu zákona
+Predkladaný návrh zákona má za cieľ umožniť zavedenie predného brzdového svetla (ďalej aj „PBS“) ako dobrovoľného prvku aktívnej bezpečnosti na motorových vozidlách kategórie M (osobné vozidlá) a N (nákladné vozidlá) v Slovenskej republike. Cieľom je legislatívne zakotviť možnosť použitia tohto prvku, ktorý podľa dostupných výskumov prispieva k zvýšeniu bezpečnosti cestnej premávky tým, že poskytuje včasnú a jednoznačnú informáciu o spomaľovaní vozidla ostatným účastníkom cestnej premávky, najmä tým, ktorí sa nachádzajú pred vozidlom alebo sa k nemu blížia z protismeru (napríklad na križovatkách, pri odbočovaní, na priechodoch pre chodcov).
+Potreba legislatívnej úpravy vyplýva z absencie explicitného povolenia a technických špecifikácií pre predné brzdové svetlá v súčasnej slovenskej legislatíve. Súčasný stav neumožňuje legálnu montáž a používanie tohto bezpečnostného prvku, napriek jeho preukázanému potenciálu. Výskum Žilinskej univerzity v Žiline (Poliak et al., 2023) na vzorke 3072 vozidiel a viac ako 38 miliónoch najazdených kilometrov s prototypom PBS zelenej farby ukázal:
+Vysokú mieru akceptácie: 78 % vodičov s PBS podporilo všeobecné zavedenie. Podobne 86 % chodcov.
+Zlepšenie vnímania bezpečnosti: Vodiči s PBS vnímali zvýšenie bezpečnosti najmä pri križovaní premávky vozidiel a chodcov (68% hodnotilo ako bezpečnejšie alebo oveľa bezpečnejšie), na priechodoch pre chodcov z pozície vodiča (64%) aj z pozície chodca (70%), a pri odbočovaní vľavo (58%).
+Pozitívne vnímanie chodcami: 83 % chodcov si myslí, že PBS zvyšuje ich bezpečnosť.
+Preferovaná farba: Zelená bola vyhodnotená ako najvhodnejšia farba pre PBS.
+Štúdia Dr. Michaela Weydeho (2021) analyzovala prínos PBS, pričom dospela k záveru, že PBS by mohlo zabrániť významnému počtu nehôd, najmä pri odbočovaní vľavo, vďaka skoršiemu informovaniu ostatných účastníkov o úmysle vozidla spomaliť/zastaviť.
+Navrhovaná právna úprava reaguje na tieto zistenia a na technologický pokrok, ktorý umožňuje zavedenie nových prvkov aktívnej bezpečnosti. Zavedenie PBS ako dobrovoľného prvku umožní postupné prenikanie tejto technológie, zber ďalších praktických skúseností a zároveň nezaťaží majiteľov vozidiel povinnosťou okamžitej úpravy.
+Predkladaný návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi, zákonmi a všeobecne záväznými právnymi predpismi, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právom Európskej únie.
+Návrh zákona nebude mať nepriaznivý dopad na verejné financie, Návrh zákona nemá negatívny vplyv na podnikateľské prostredie, na životné prostredie ani nemá vplyv na informatizáciu spoločnosti, na sociálne vplyvy a na manželstvo, rodičovstvo a rodinu. Návrh nemá vplyvy na služby verejnej správy pre občana.
+Osobitná časť
+K čl. I (zákon č. 8/2009 Z. z. o cestnej premávke a o zmene a doplnení niektorých zákonov v znení neskorších predpisov)
+K bodu 1 (§ 32 ods. 6)
+Navrhuje sa legislatívne zakotvenie predného brzdového svetla ako dobrovoľného vybavenia motorových vozidiel kategórie M a N. Stanovuje sa zelená farba svetla a požiadavka schváleného typu. Definuje sa základná funkčná požiadavka – súčasné rozsvecovanie a zhasínanie s hlavnými (zadnými) brzdovými svetlami.
+Technické podrobnosti budú ustanovené všeobecne záväzným právnym predpisom, ktorý vydá ministerstvo dopravy. 
+K čl. II
+Vzhľadom na dĺžku legislatívneho procesu a primeranú legisvakančnú dobu sa navrhuje účinnosť navrhovaného zákona od 1. júla 2026. Táto lehota poskytne dostatočný čas na prípravu výrobcov, dovozcov, montážnych pracovísk, informovanie verejnosti a adaptáciu systémov STK.

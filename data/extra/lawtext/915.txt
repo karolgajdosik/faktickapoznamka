@@ -1,0 +1,66 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Predkladá sa návrh zákona o registri užívacích vzťahov k pozemkom a o zmene a doplnení niektorých zákonov (ďalej len „návrh zákona“) na základe Plánu legislatívnych úloh vlády Slovenskej republiky. 
+Súčasné znenie zákona č. 504/2003 Z. z. o nájme poľnohospodárskych pozemkov, poľnohospodárskeho podniku a lesných pozemkov a o zmene niektorých zákonov v znení neskorších predpisov (ďalej len „zákon č. 504/2003 Z. z.“) ukladá nájomcovi poľnohospodárskeho pozemku povinnosť viesť evidenciu pozemkov, ktoré má prenajaté a pozemkov, ktoré sám vlastní a obhospodaruje. Nájomca je povinný údaje a informácie z tejto evidencie poskytnúť okresnému úradu a Pôdohospodárskej platobnej agentúre spolu s podaním žiadosti, ak nájomca je žiadateľom o poskytnutie podpory a pomoci, dotácie alebo priamych podpôr podľa zákona č. 280/2017 Z. z. o poskytovaní podpory a dotácie v pôdohospodárstve a rozvoji vidieka a o zmene zákona č. 292/2014 Z. z. o príspevku poskytovanom z európskych štrukturálnych a investičných fondov a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (ďalej len „zákon č. 280/2017 Z. z.“). Okrem zákona č. 504/2003 Z. z. upravuje evidovanie vybraných údajov o právach k pozemkom aj zákon Národnej rady Slovenskej republiky č. 162/1995 Z. z. o katastri nehnuteľností a o zápise vlastníckych a iných práv k nehnuteľnostiam (katastrálny zákon) v znení neskorších predpisov (ďalej len „zákon č. 162/1995 Z. z.“). Komplexné evidovanie všetkých užívacích vzťahov k poľnohospodárskym pozemkom a ich zverejňovanie v súčasnosti naša právna úprava neupravuje. 
+Zriadenie informačného systému registra užívacích vzťahov k pozemkom (ďalej len „register“) reaguje na požiadavky aplikačnej praxe. Cieľom návrhu zákona je vytvoriť register, ktorý významnou mierou prispeje k prehľadnosti užívacích vzťahov k poľnohospodárskej pôde a výrazne zjednoduší proces v konaní o podporách a pomoci. Register bude obsahovať údaje o užívacích vzťahoch k pozemkom slúžiacim na poľnohospodárske účely s cieľom zabezpečiť relevantný podklad pre vyplácanie priamych podpôr. Do registra sa nebudú zapisovať údaje o užívaní lesných pozemkov, ak tieto pozemky neslúžia poľnohospodárskej výrobe. Takisto návrhom zákona nebudú dotknuté ustanovenia osobitných predpisov, ktoré upravujú povinnosti evidovania pozemkov na iné účely, napr. zákon č. 326/2005 Z. z. o lesoch v znení neskorších predpisov (ďalej len „zákon č. 326/2005 Z. z.“) alebo zákon č. 162/1995 Z. z.
+Návrh zákona z hľadiska jeho obsahu definuje predmet úpravy zriadenia registra, údaje o užívateľovi a poľnohospodárskom pozemku, obsahové časti registra, pôsobnosť orgánov štátnej správy, dostupnosť údajov registra, ako aj sankcie za porušenie povinností vymedzených v návrhu zákona. Predmetom registrácie budú všetky pozemky (t. j. poľnohospodárske pozemky, nepoľnohospodárske pozemky, ako aj lesné pozemky), ktoré podľa reálneho stavu užívania bezprostredne súvisia s poľnohospodárskou činnosťou alebo výrobou.
+Návrh zákona ďalej obsahuje novelizácie zákona č. 504/2003 Z. z. a zákona č. 280/2017 Z. z. z dôvodu zosúladenia ich legislatívneho rámca s registrom.
+Návrh zákona má vplyvy na rozpočet verejnej správy, vplyvy na podnikateľské prostredie, vplyvy na informatizáciu spoločnosti a vplyvy na služby verejnej správy pre občana.
+Návrh zákona nemá vplyvy na limity verejných výdavkov, manželstvo, rodičovstvo a rodinu, sociálne vplyvy a vplyvy na životné prostredie.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi, nálezmi Ústavného súdu Slovenskej republiky, zákonmi a ostatnými všeobecne záväznými právnymi predpismi, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právnymi aktmi Európskej únie. 
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+DOLOŽKA ZLUČITEĽNOSTI
+právneho predpisu s právom Európskej únie
+Navrhovateľ zákona: Vláda Slovenskej republiky
+Názov návrhu zákona: Návrh zákona o registri užívacích vzťahov k pozemkom a o zmene a doplnení niektorých zákonov
+Predmet návrhu zákona je upravený v práve Európskej únie :
+v primárnom práve 
+Zmluva o fungovaní Európskej únie, čl. 38 až 44 a čl. 107 až 109,
+v sekundárnom práve 
+delegované nariadenie Komisie (EÚ) 2022/467 z 23. marca 2022, ktorým sa stanovuje výnimočná pomoc na prispôsobenie sa pre výrobcov v poľnohospodárskych sektoroch (Ú. v. EÚ L 96, 24.3.2022, s. 4 – 8), 
+gestor: Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky,
+nariadenie Európskeho parlamentu a Rady (EÚ) 2021/2115 z 2. decembra 2021, ktorým sa stanovujú pravidlá podpory strategických plánov, ktoré majú zostaviť členské štáty v rámci spoločnej poľnohospodárskej politiky (strategické plány SPP) a ktoré sú financované z Európskeho poľnohospodárskeho záručného fondu (EPZF) a Európskeho poľnohospodárskeho fondu pre rozvoj vidieka (EPFRV), a ktorým sa zrušujú nariadenia (EÚ) č. 1305/2013 a (EÚ) č. 1307/2013 (Ú. v. EÚ L 435, 6.12.2021), v platnom znení, 
+gestor: Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky,
+nariadenie Komisie (EÚ) 2022/128 z 21. decembra 2021 ktorým sa stanovujú pravidlá uplatňovania nariadenia (EÚ) Európskeho parlamentu a Rady (EÚ) 2021/2116 vzhľadom na platobné agentúry a ostatné orgány, finančné riadenie, schvaľovanie účtov, kontroly, zábezpeky a transparentnosť (Ú. v. EÚ L 20 31.1.2022), v platnom znení, 
+gestor: Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky,
+delegované nariadenia Komisie (EÚ) 2016/1237 z 18. mája 2016, ktorým sa dopĺňa nariadenie Európskeho parlamentu a Rady (EÚ) č. 1308/2013, pokiaľ ide o pravidlá uplatňovania systému dovozných a vývozných licencií, a ktorým sa dopĺňa nariadenie Európskeho parlamentu a Rady (EÚ) č. 1306/2013, pokiaľ ide o pravidlá týkajúce sa uvoľnenia a prepadnutia zábezpeky zloženej pre takéto licencie, ktorým sa menia nariadenia Komisie (ES) č. 2535/2001, (ES) č. 1342/2003, (ES) č. 2336/2003, (ES) č. 951/2006, (ES) č. 341/2007 a (ES) č. 382/2008 a zrušujú nariadenia Komisie (ES) č. 2390/98, (ES) č. 1345/2005, (ES) č. 376/2008 a (ES) č. 507/2008 (Ú. v. EÚ L 206 30.7.2016) v platnom znení, 
+gestor: Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky,
+nariadenie Európskeho parlamentu a Rady (EÚ) 2021/2116 z 2. decembra 2021 o financovaní, riadení a monitorovaní spoločnej poľnohospodárskej politiky a o zrušení nariadenia (EÚ) č. 1306/2013 v platnom znení, 
+gestor: Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky,
+nariadenie Európskeho parlamentu a Rady (EÚ, Euratom) č. 883/2013 z 11. septembra 2013 o vyšetrovaniach vykonávaných Európskym úradom pre boj proti podvodom (OLAF), ktorým sa zrušuje nariadenie Európskeho parlamentu a Rady (ES) č. 1073/1999 a nariadenie Rady (Euratom) č. 1074/1999 (Ú. v. EÚ L 248, 18. 9. 2013) v platnom znení, 
+gestor: Ministerstvo pôdohospodárstva a rozvoja vidieka Slovenskej republiky,
+nie je obsiahnutý v judikatúre Súdneho dvora Európskej únie.
+4. Záväzky Slovenskej republiky vo vzťahu k Európskej únii: 
+uviesť lehotu na prebranie príslušného právneho aktu Európskej únie, príp. aj osobitnú lehotu účinnosti jeho ustanovení
+bezpredmetné
+uviesť informáciu o začatí konania v rámci „EÚ Pilot“ alebo o začatí postupu Európskej komisie, alebo o konaní Súdneho dvora Európskej únie proti Slovenskej republike podľa čl. 258 a 260 Zmluvy o fungovaní Európskej únie v jej platnom znení, spolu s uvedením konkrétnych vytýkaných nedostatkov a požiadaviek na zabezpečenie nápravy so zreteľom na nariadenie Európskeho parlamentu a Rady (ES) č. 1049/2001 z 30. mája 2001 o prístupe verejnosti k dokumentom Európskeho parlamentu, Rady a Komisie
+V oblasti, ktorú upravuje tento návrh nariadenia vlády, neboli začaté proti Slovenskej republike žiadne z uvedených konaní.
+bezpredmetné
+uviesť informáciu o právnych predpisoch, v ktorých sú uvádzané právne akty Európskej únie už prebrané, spolu s uvedením rozsahu ich prebrania, príp. potreby prijatia ďalších úprav
+bezpredmetné.
+Návrh zákona je zlučiteľný s právom Európskej únie. 
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona o registri užívacích vzťahov k pozemkom a o zmene a doplnení niektorých zákonov
+Predkladateľ (a spolupredkladateľ)
+Vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☐
+Transpozícia práva EÚ
+V prípade transpozície uveďte zoznam transponovaných predpisov:
+Termín začiatku a ukončenia PPK
+Máj 2025
+Predpokladaný termín predloženia na pripomienkové konanie
+Máj 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+- - -
+Predpokladaný termín predloženia na rokovanie vlády SR*
+jún 2025
+Definovanie problému
+Súčasná legislatíva ukladá užívateľovi poľnohospodárskych pozemkov povinnosť viesť evidenciu pozemkov, ktoré má prenajaté, ktoré vlastní a obhospodaruje. Na vyžiadanie je užívateľ povinný tieto údaje poskytnúť Pôdohospodárskej platobnej agentúre za účelom pridele

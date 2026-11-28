@@ -1,0 +1,64 @@
+# Dôvodová správa
+D ô v o d o v á s p r á v a
+Všeobecná časť
+ Návrh zákona, ktorým sa mení a dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov „ďalej len zákon o zdravotnom poistení“, predkladá na rokovanie Národnej rady Slovenskej republiky poslanec Národnej rady Slovenskej republiky Marián Viskupič.
+Cieľom predloženého návrhu je zrušenie povinnosti platiť poistné na zdravotné poistenie pri tzv. pasívnych príjmoch. 
+V súčasnosti je problematika platenia poistného na zdravotné poistenie upravená v zákone o zdravotnom poistení odkazom na zákon č. 595/2003 Z. z. o dani z príjmov v znení neskorších predpisov (ďalej len „zákon o dani z príjmov“). Okrem tzv. aktívnych príjmov (príjmy zo závislej činnosti a z podnikania a z inej samostatnej zárobkovej činnosti), sa zdravotné poistenie platí aj z tzv. pasívnych príjmov. Medzi pasívne príjmy patrí dosahovanie príjmu z kapitálového majetku, dosahovanie príjmu z tzv. ostatných príjmov a dividendy. Zákon o zdravotnom poistení definuje tzv. ostatné príjmy odkazom na zákon o dani z príjmov a patria sem najmä: príjmy z príležitostných činností, príjmy z prevodu vlastníctva nehnuteľností, príjmy z predaja hnuteľných vecí, príjmy z prevodu opcií, príjmy z prevodu cenných papierov, príjmy z derivátových operácií, príjmy z predaja kryptoaktíva a mnoho ďalších.
+Sadzba pre tieto platby zdravotného poistenia je pri väčšine pasívnych príjmov okrem dividend 14% z vymeriavacieho základu (ak je poistencom osoba so zdravotným postihnutím, je to 7%. Pri dividendách je len jedna sadzba a síce 14% z vymeriavacieho základu; pričom tento vymeriavací základ je (len v prípade dividend) zastropovaný na 60-násobok priemernej mesačnej mzdy zamestnanca v hospodárstve Slovenskej republiky za kalendárny rok, ktorý dva roky predchádza rozhodujúcemu obdobiu. Tento strop však platí len pre príjmy z dividend (pre iné príjmy neplatí) a jeho výška je stanovená na 60-násobok priemernej mzdy, teda 5-ročnú priemernú mzdy, čo je enormne veľa. Nejde teda o „odvod“ v pravom slova zmysle, ale o akési „dodatočné zdanenie“. 
+Platby zdravotného poistenia z vymeriavacieho základu bez existencie univerzálneho a rozumného stropu (rozumný strop nie je 60-násobok priemernej mzdy) nesú v sebe prvky dane, tak ako dane definuje ekonomická teória. Základným znakom daní je povinnosť platiť štátu platby z vlastných príjmov, bez práva na poskytnutie protihodnoty, pričom ich výška nie je fixná ani zastropovaná, ale stanovená ako percento z určitého základu, pričom býva lineárna alebo progresívna (neobmedzená). Teória odvodov nie je taká jednotná ako u daní, líšia sa od štátu k štátu a od autora k autorovi, avšak vo všeobecnosti sa prikláňajú k vnímaniu odvodov ako platieb stanovených fixne alebo percentuálne z určitej sumy so stropom, pričom sú viazané účelovo na poskytovanie určitej proporčnej protihodnoty tomu, kto ich platí. Na Slovensku sa napr. sociálne odvody (oficiálne „sociálne poistenie“) platia percentuálne zo zastropovanej sumy, pričom výška celoživotne odvádzaných platieb sa premietne do výšky starobného dôchodku; v prípade sociálnych odvodov sa teda dá teda hovoriť o poskytovaní proporčnej protihodnoty.
+Slovenský systém zdravotného poistenia nesie znaky daní v tom, že je stanovený ako povinný, má lineárnu mieru zodvodovania bez existencie stropu (až na jednu výnimku) a čiastočne v tom, že protihodnota síce je poskytnutá, avšak jej miera nie je úmerná výške zaplatených odvodov. Ten, kto platí viac, nedostane lepšiu zdravotnú starostlivosť ako ten, kto platí menej, ale dostane zdravotnú starostlivosť presne rovnakú. Ďalším špecifikom tejto platby je, že jej prijímateľom nie je štát, ako v prípade daní, ale verejnoprávna korporácia a súkromné spoločnosti. 
+Pri tzv. aktívnych príjmoch sa tento systém dá tolerovať, hoci by sa dal nastaviť ideálnejšie. Pri tzv. pasívnych príjmoch je však filozoficky nesprávny, pretože poberateľ týchto príjmov má z týchto príjmov štátu zaplatiť daň a nie ďalšie daniam podobné platby súkromným resp. verejnoprávnym korporáciám (zdravotným poisťovniam). Treba vziať do úvahy, že ekonomicky aktívne obyvateľstvo je zdravotne poistené cez aktívne príjmy a pasívne príjmy sú pre mnohých (resp. pre väčšinu) iba doplnkovým príjmom. Platby na zdravotné poistenie z tzv. pasívnych príjmov sú jedným z dôvodov (aj keď navonok málokedy nahlas vysloveným) pre presun domicilu daňovníka/poistenca, prípadne presun celého podnikateľského subjektu do inej krajiny s vhodnejším daňovo-odvodovým prostredím. Ich zrušenie by mohlo tento trend zastaviť. Viac firiem a daňovníkov znamená pre štátny rozpočet vyššie príjmy z daní, a to by malo byť pre štát hlavným motívom pre ich zrušenie. 
+Návrh zákona bude mať negatívny vplyv na rozpočet verejnej správy. Návrh zákona má pozitívny vplyv na podnikateľské prostredie. Návrh zákona pozitívne sociálne vplyvy, pretože občania ušetria na zdravotnom poistení. Návrh zákona nemá vplyv na informatizáciu spoločnosti, nemá vplyv na služby verejnej správy pre občana, nemá vplyv na životné prostredie a nemá ani vplyvy na manželstvo, rodičovstvo a rodinu. 
+Predkladaný návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, nálezmi Ústavného súdu Slovenskej republiky, medzinárodnými zmluvami a inými medzinárodnými dokumentami, ktorými je Slovenská republika viazaná, ako aj v súlade s právom Európskej únie.
+Osobitná časť
+K článku I
+K bodu 1
+Legislatívnotechnická úprava súvisiaca so zmenou číslovania odsekov.
+K bodu 2
+V § 10b ods. 1 sa navrhuje vypustenie písmen c) až e). V § 10b sú uvedené rôzne formy dosahovania príjmu; v písmenách a) a b) sú tzv. aktívne príjmy a v písmenách c) až e) sú tzv. pasívne príjmy, a síce príjmy z kapitálového majetku, dosahovanie príjmu z ostatných príjmov a dosahovanie príjmov z dividend. Vypustením písmen c) až e) sa vypúšťa aj povinnosť platenia zdravotných odvodov z tzv. pasívnych príjmov. 
+K bodu 3
+Vypúšťa sa dovetok, ktorý bol obsahovo naviazaný na zrušené písmeno e) v § 10b ods. 1.
+K bodu 4
+V § 11 ods. 1 sa vypúšťa písmeno e); uvedené písmeno zakotvovalo ako osobu povinnú platiť poistné na zdravotné poistenie platiteľa dividend.
+K bodu 5 
+V § 11 sa navrhuje vypustenie odseku 11; uvedený odsek obsahoval definíciu platiteľa dividend.
+K bodu 6 
+V § 12 ods. 1 sa navrhuje vypustenie písmena b); uvedené ustanovenie obsahovalo sadzbu pre vymeriavací základ podľa touto novelou zrušovaného ustanovenia § 13 ods. 7.
+K bodu 7
+V § 12 ods. 1 sa navrhuje vypustenie písmena f); uvedené ustanovenie uvedené ustanovenie obsahovalo sadzbu pre vymeriavací základ podľa touto novelou zrušovaného ustanovenia § 13 ods. 6.
+K bodu 8
+V § 13 ods. 3 sa navrhuje vypustenie textu viažucemu sa k zrušeným ustanoveniam - § 10b ods. 1 písm. c) až e).
+K bodu 9
+Legislatívnotechnická úprava súvisiaca so zmenou číslovania odsekov. 
+K bodu 10
+V § 13 sa vypúšťajú odseky 6 a 7. Uvedené odseky sa viažu k zrušeným ustanoveniam - § 10b ods. 1 písm. c) až e).
+K bodom 11 až 16
+Legislatívno-technické úpravy súvisiace so zmenou číslovania odsekov. 
+K bodu 17 až 19
+Legislatívno-technické úpravy súvisiace so zmenou číslovania odsekov a označovania písmen. 
+K bodu 20
+V § 16 ods. 2 sa navrhuje vypustenie písmena f). Uvedené písmeno odkazuje na zrušený § 13 ods. 6.
+K bodu 21
+Legislatívno-technická úprava vyplývajúca zo zmeny číslovania odsekov.
+K bodu 22
+Legislatívno-technická úprava vyplývajúca zo zmeny označovania písmen.
+K bodu 23
+V § 16 ods. 8 sa navrhuje vypustenie písmena c). Uvedené ustanovenie stanovuje výšku preddavku pre príjmy z dividend. 
+K bodu 24
+V § 16 ods. 13 sa navrhuje vypustenie odkazu na zrušené ustanovenie § 16 ods. 8 písm. c). 
+K bodu 25
+V § 16 sa navrhuje vypustenie odseku 15 (pôvodne odsek 16). Ide o ustanovenie viažuce sa k zrušenému ustanoveniu § 16 ods. 2 písm. f). 
+K bodom 26 a 27
+Navrhujú sa legislatívno-technické zmeny vyplývajúce zo zmeny číslovania odsekov. 
+K bodu 28
+V § 17 sa navrhuje vypustenie odseku 4. Uvedené ustanovenie upravuje platenie preddavku na poistné platiteľa dividend. 
+K bodu 29
+V § 17 ods. 6 (pôvodne odsek 7) sa navrhujú legislatívno-technické zmeny súvisiace so zmenou číslovania odsekov. 
+K bodu 30
+V § 18 ods. 1 sa navrhujú legislatívno-technické zmeny súvisiace so zmenou číslovania odsekov. 
+K bodu 31 (k § 19 ods. 1 písm. a)
+Navrhuje sa vypustenie § 19 ods. 1 písm. a); dôvodom vypustenia je, že vetná skladba je naviazaná prvý a druhý bod, ktoré sú viazané na § 13 ods. 7 a § 10b ods. 1 písm. c) až e); v oboch prípadoch sa jedná o touto novelou zrušované ustanovenia. 
+K bodu 32
+V § 19 ods. 1 písm. a) sa navrhuje legislatívno-technická zmena vyplývajúca z vypustenia písmen c) až e) v§ 10b ods. 1. 
+K bodu 33
+V § 19 ods. 1 písm. b) (pôvodne písmeno c) sa vyvrhuje vypustenie výnimky, podľa ktorej sa dané ustanovenie nevzťahuje na poistenca, ktorý má príjem z dividend. Uvedené

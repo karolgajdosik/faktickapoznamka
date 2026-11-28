@@ -2,7 +2,7 @@
 "_meta": {
 "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
 "daily": {
-"2026-11-28": 22
+"2026-11-28": 44
 }
 },
 "20261127152704-stevulova-zuzana": {
@@ -75,6 +75,54 @@
 },
 "20261127095432-bartek-michal": {
 "s": "Rečník kritizuje pani poslankyňu Jurík, že klamie a zavádzajú. Navrhuje, aby sa pani poslankyňa zoznámila s článkom štyri ústavného zákona o ochrane verejného záujmu, ktorý zakazuje ministrom aj poslancom prijímať dary alebo získavať iné výhody v súvislosti s výkonom ich funkcií. Tvrdí, že pozmeňujúci návrh zákona len opravuje neporiadok, ktorý bola zaviedla bývalá ministerka spravodlivosti.",
+"at": "2026-11-28"
+},
+"20261127095232-matejickova-zuzana": {
+"s": "Rečníčka tvrdí, že sa v rámci Trestného poriadku menili niektoré ustanovenia, ako napríklad náhrada väzby, a kritizuje dezinformáciu o piatich merách, ktoré sa riešia v Civilnom sporovom poriadku. Navrhuje, aby sa uviedli veci na pravú mieru, a pýta sa, či bola dezinformácia medzi poslancami.",
+"at": "2026-11-28"
+},
+"20261127095029-nash-natalia": {
+"s": "Rečníčka kritizuje pozmeňovací návrh a nazýva ho adresnou pomocou korupčníkom. Navrhuje, aby sa v trestnom poriadku zachoval trestný čin prikrmovania, a poukazuje na prípad ministra vnútra Matúša Šutaja Eštoka, ktorý bol podozrivý z prijatia nenáležitej výhody.",
+"at": "2026-11-28"
+},
+"20261127094822-dej-david": {
+"s": "Rečník kritizuje prílepky k návrhom zákonov, ktoré sa týkajú určitých skupín ľudí. Navrhuje, aby sa prijímali návrhy zákonov, ktoré sú pre všetkých bez rozdielu. Tvrdí, že takéto prílepky ničia dobré návrhy zákonov, ktoré by sa mohli podporiť. Pýta sa, prečo sa musia takto pokaziť návrhy zákonov, ktoré by mohli byť užitočné pre všetkých.",
+"at": "2026-11-28"
+},
+"20261127090932-jurik-beata": {
+"s": "Rečníčka kritizuje návrh zákona, ktorý má dobrý cieľ, ale obsahuje prílepok, ktorý nesúvisí s restoratívnou justíciou a násilím na ženách a je prokorupčný. Navrhuje, aby sa zákonodarcovia sústredili na riešenie skutočných problémov, ako je násilie na ženách a korupcia. Pýta sa, prečo bol predložený takýto prílepok a kto ho odporúčal.",
+"at": "2026-11-28"
+},
+"20261127090741-plavakova-lucia": {
+"s": "Rečníčka tvrdí, že podporuje pozmeňujúci návrh, ale kritizuje zrušenie trestného činu prikrmovania. Navrhuje, aby sa zameriavala na ochranu žien a detí pred násilím, namiesto riešenia zrušenia trestného činu korupčného, ktorý považuje za samostatnú skutkovú podstatu.",
+"at": "2026-11-28"
+},
+"20261127090159-matejickova-zuzana": {
+"s": "Rečníčka tvrdí, že jej strana navrhuje posilniť práva obetí trestných činov, najmä obetí domáceho násilia, a navrhuje, aby boli informované o čase a mieste verejného zasadnutia, na ktorom sa rozhoduje o prepustení podozrivého alebo obvineného. Navrhuje, aby obeť bola vnímaná ako osoba, ktorej práva, bezpečnosť a dôstojnosť si vyžadujú náležitú ochranu, a pýta sa, či opozícia skutočne podporí ich návrh.",
+"at": "2026-11-28"
+},
+"20261126185913-kolikova-maria": {
+"s": "Rečníčka tvrdí, že je ochotná lepšie zadefinovať pojmy, ako je nenáležitá výhoda, ktorá je stanovená v trestnom zákone od hranice 200 €. Navrhuje, aby sa o tejto hranici vedla ďalšia debata, najmä v súvislosti s úplatkom, kde táto hranica nie je stanovená. Kritizuje tiež to, že pri korupčných činnostiach sa často zachytí len jedna udalosť, alebo jeden prípad, a tým sa môže javiť, že ide len o jeden menší prehrešok. Pýta sa, či stanovenie hranice môže mať negatívny vplyv na odhaľovanie a stíhanie korupčných činností.",
+"at": "2026-11-28"
+},
+"20261126185008-grendel-gabor": {
+"s": "Rečník kritizuje zmenu Trestného zákona, ktorá je podľa neho v prospech páchateľov trestných činov. Navrhuje, aby sa zmeny robili v prospech obetí trestných činov. Pýta sa, kedy sa dočkajú také zmeny, ktoré budú v prospech obetí.",
+"at": "2026-11-28"
+},
+"20261126184801-dostal-ondrej": {
+"s": "Rečník tvrdí, že mlčaním sa nepredpokladá súhlas a minister musí vyjadriť súhlas explicitne. Navrhuje, aby sa ustanovenie týkajúce sa trestného stíhania sudcov a prísediacich upresnilo, aby bolo jasné, ktoré trestné činy sa majú týkať. Pýta sa, či by nebolo lepšie explicitne uviesť, ktoré trestné činy sa majú týkať súhlasom súdnej rady.",
+"at": "2026-11-28"
+},
+"20261126181525-kolikova-maria": {
+"s": "Rečníčka kritizuje návrh zákona, ktorý vypúšťa trestný čin ohýbania práva a vytvára imunitu pre sudcov, ktorí sa môžu dopustiť trestného činu v rámci svojej rozhodovacej činnosti. Navrhuje, aby bol zachovaný trestný čin ohýbania práva a aby bol potrebný súhlas Súdnej rady len pre tento konkrétny trestný čin. Pýta sa, čo sa rozumie pod pojmom \"akýkoľvek trestný čin, ktorého sa mohol dopustiť svojou rozhodovacou činnosťou\" a tvrdí, že táto formulácia je nebezpečná, pretože vytvára priestor na široký výklad.",
+"at": "2026-11-28"
+},
+"20261126180935-stohlova-tamara": {
+"s": "Rečníčka kritizuje novelu zákona, ktorá sa týka procesu EIA. Navrhuje, aby bol zavedený trestný čin pre prípady, keď niekto bez rozhodnutia z EIA poškodí životné prostredie. Pýta sa, čo sa stane, ak niekto poškodí životné prostredie bez povolenia EIA a či je správne, aby mal čas do polky roku 2028 na dodatočné splnenie zákonných povinností.",
+"at": "2026-11-28"
+},
+"20261126180526-kolikova-maria": {
+"s": "Rečníčka kritizuje rozpravu o zločinoch z roku 2023, pretože niekto za ne bol odsúdený. Pýta sa, prečo sa o tom rozprávate, keď ona nevie o žiadnom odsúdení alebo trestnom stíhaní voči svojej osobe. Navrhuje, aby sa pozrela právna úprava v ostatných európskych krajinách, kde sa trestný čin prikrmovania volá Anfüttern.",
 "at": "2026-11-28"
 }
 }

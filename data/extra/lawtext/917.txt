@@ -1,0 +1,184 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Zákon č. 452/2021 Z. z. o elektronických komunikáciách ako základný právny rámec pre sektor elektronických komunikácií nadobudol účinnosť 1. februára 2022 (ďalej len „zákon o elektronických komunikáciách“). 
+Základným cieľom zákona o elektronických komunikáciách bola transpozícia revidovaného regulačného rámca elektronických komunikácií Európskej únie, t. j. Smernice Európskeho parlamentu a Rady (EÚ) 2018/1972 z 11. decembra 2018, ktorou sa ustanovuje európsky kódex elektronických komunikácií (prepracované znenie) (Ú. v. EÚ L 321, 17. 12. 2018) v platnom znení), do právneho poriadku Slovenskej republiky. Zákon o elektronických komunikáciách zároveň obsahuje aj transpozíciu smernice Európskeho parlamentu a Rady 2014/61/EÚ z 15. mája 2014 o opatreniach na zníženie nákladov na zavedenie vysokorýchlostných elektronických komunikačných sietí (Ú. v. EÚ L 155, 23.5.2014) (ďalej len „smernica 2014/61/EÚ“). Citovaná smernica je však zrušená nariadením Európskeho parlamentu a Rady (EÚ) 2024/1309 z 29. apríla 2024 o opatreniach na zníženie nákladov na zavádzanie gigabitových elektronických komunikačných sietí, ktorým sa mení nariadenie (EÚ) 2015/2120 a zrušuje smernica 2014/61/EÚ (akt o gigabitovej infraštruktúre) (Ú. v. EÚ L, 2024/1309, 8.5.2024) (ďalej len „akt o gigabitovej infraštruktúre“). Na túto skutočnosť je potrebné reagovať aj legislatívnymi zmenami a úpravou zákona o elektronických komunikáciách tak, aby v praxi nedochádzalo k pochybnostiam, ktorá legislatívna norma sa má uplatniť a ako.
+Akt o gigabitovej infraštruktúre vo svojej podstate preberá a novelizuje ustanovenia zrušenej smernice 2014/61/EÚ, pričom jeho cieľom je dôslednejšie prispieť k znižovaniu nákladov pri budovaní vysokokapacitných elektronických komunikačných sietí.
+Predkladaný návrh zákona, ktorým sa mení a dopĺňa zákon č. 452/2021 Z. z. o elektronických komunikáciách v znení neskorších predpisov zároveň obsahuje spresnenia niektorých ustanovení zákona, ako aj úpravy legislatívno – technickej povahy.
+Návrh zákona ako celok nemá žiadny vplyv na rozpočet verejnej správy. 
+Návrh zákona má negatívny vplyv na podnikateľské prostredie, tak ako je uvedené v analýze vplyvov.
+Návrh zákona nemá sociálne vplyvy, vplyvy na služby verejnej správy pre občana ani na informatizáciu spoločnosti a životné prostredie. Návrh zákona nemá vplyv na manželstvo, rodičovstvo a rodinu.
+Návrh zákona nebude predmetom vnútrokomunitárneho pripomienkového konania.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a nálezmi Ústavného súdu Slovenskej republiky a zákonmi, ako aj s medzinárodnými zmluvami, ktorými je Slovenská republika viazaná a súčasne je v súlade s právom Európskej únie.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 452/2021 Z. z. o elektronických komunikáciách v znení neskorších predpisov
+Predkladateľ (a spolupredkladateľ)
+vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+nariadenie Európskeho parlamentu a Rady (EÚ) 2024/1309 z 29. apríla 2024 o opatreniach na zníženie nákladov na zavádzanie gigabitových elektronických komunikačných sietí, ktorým sa mení nariadenie (EÚ) 2015/2120 a zrušuje smernica 2014/61/EÚ (akt o gigabitovej infraštruktúre) (Ú. v. EÚ L, 2024/1309, 8.5.2024)
+Termín začiatku a ukončenia PPK
+marec
+Predpokladaný termín predloženia na pripomienkové konanie
+marec
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+júl 2025
+Definovanie problému
+Smernica Európskeho parlamentu a Rady 2014/61/EÚ z 15. mája 2014 o opatreniach na zníženie nákladov na zavedenie vysokorýchlostných elektronických komunikačných sietí (Ú. v. EÚ L 155, 23.5.2014) bola transponovaná do zákona o elektronických komunikáciách. Vzhľadom na skutočnosť, že citovaným nariadením EÚ – aktom o gigabitovej infraštruktúre je smernica zrušená, je žiaduce upraviť ustanovenia zákona o elektronických komunikáciách tak, aby v prípadoch, ktoré upravuje citované nariadenie EÚ, neexistovala v zákone odchylná právna úprava a nevznikla v praxi právna neistota.
+Ciele a výsledný stav
+Cieľom návrhu zákona je upraviť ustanovenia zákona tak, aby neboli v rozpore s Aktom o gigabitovej infraštruktúre a upraviť niektoré ustanovenia zákona, pri ktorých z aplikačnej praxe vyplynula potreba ich doplnenia alebo spresnenia. 
+Dotknuté subjekty
+Úrad pre reguláciu elektronických komunikácií a poštových služieb
+Podniky a prevádzkovatelia sietí 
+Alternatívne riešenia
+Alternatívne riešenia vedúce k dosiahnutiu stanoveného cieľa neexistujú.
+Nulový variant predstavuje situáciu, kedy by sa neuskutočnila úprava zákona o elektronických komunikáciách a zostali by účinné ustanovenia, ktoré upravujú rovnakú situáciu ako citované nariadenie EP a R.
+Vykonávacie predpisy
+Predpokladá sa prijatie/zmena vykonávacích predpisov?
+☒ Áno
+☐ Nie
+Ak áno, uveďte ktoré oblasti budú nimi upravené, resp. ktorých vykonávacích predpisov sa zmena dotkne:
+Tak ako v súčasnom znení zákona, bolo ponechané existujúce splnomocňujúce ustanovenie v § 25 ods. 8 o úprave podrobností o štruktúre, forme a spôsobe poskytovania informácií týkajúcich sa transparentnosti fyzickej infraštruktúry podľa odseku 1 a plánovaných stavebných prác jednotnému informačnému miestu.
+Transpozícia/implementácia práva EÚ 
+Uveďte, či v predkladanom návrhu právneho predpisu dochádza ku goldplatingu podľa tabuľky zhody, resp. či ku goldplatingu dochádza pri implementácii práva EÚ. 
+ ☐ Áno ☒ Nie
+Ak áno, uveďte, ktorých vplyvov podľa bodu 9 sa goldplating týka: 
+Preskúmanie účelnosti
+Uplatňovanie nariadenia – aktu o gigabitovej infraštruktúre bude Európska komisia preskúmavať v roku 2028. Následne na výsledky preskúmania budú navrhované zmeny, ak Európska komisia dospeje k takému záveru, že zmeny nariadenia sú potrebné.
+* vyplniť iba v prípade, ak materiál nie je zahrnutý do Plánu práce vlády Slovenskej republiky alebo Plánu legislatívnych úloh vlády Slovenskej republiky. 
+** vyplniť iba v prípade, ak sa záverečné posúdenie vybraných vplyvov uskutočnilo v zmysle bodu 9.1. jednotnej metodiky.
+*** posudzovanie sa týka len zmien v I. a II. pilieri univerzálneho systému dôchodkového zabezpečenia s identifikovaným dopadom od 0,1 % HDP (vrátane) na dlhodobom horizonte.
+Vybrané vplyvy materiálu
+Vplyvy na rozpočet verejnej správy
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ z toho rozpočtovo zabezpečené vplyvy, 
+ v prípade identifikovaného negatívneho 
+ vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+v tom vplyvy na rozpočty obcí a vyšších územných celkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+z toho rozpočtovo zabezpečené vplyvy,
+v prípade identifikovaného negatívneho vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+Vplyv na dlhodobú udržateľnosť verejných financií v prípade vybraných opatrení ***
+☐
+Áno
+☐
+Nie
+Vplyvy na limit verejných výdavkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na podnikateľské prostredie
+☐
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ z toho vplyvy na MSP
+☐
+Pozitívne
+☐
+Žiadne
+☒
+Negatívne
+ Mechanizmus znižovania byrokracie 
+ a nákladov sa uplatňuje:
+☒
+Áno
+☐
+Nie
+Sociálne vplyvy
+☒
+Pozitívne
+☐
+Žiadne
+☐
+Negatívne
+Vplyvy na životné prostredie
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Materiál je posudzovaný podľa zákona č. 24/2006 Z. z. o posudzovaní vplyvov na životné prostredie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+☐
+Áno
+☐
+Nie
+Vplyvy na informatizáciu spoločnosti
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na služby verejnej správy pre občana, z toho
+ vplyvy služieb verejnej správy na občana
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ vplyvy na procesy služieb vo verejnej správe
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na manželstvo, rodičovstvo a rodinu
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Poznámky
+Návrh zákona predpokladá marginálne pozitívne sociálne vplyvy smerujúce k posilneniu práv fyzických osôb. Konkrétne upresnením znenia § 116 sa zabezpečuje lepšia vykonateľnosť tak, aby po vyjadrení námietky volania, či po registrácii telefónneho čísla účastníka v zozname neboli kontaktné údaje účastníka osobou, ktorá vykonáva priamy marketing ďalej spracúvané. Zároveň sa upresňuje časové obmedzenie, po ktorom sa údaje dotknutých účastníka nesmú ďalej používať na účely priameho marketingu a tým sa posilňujú jeho práva voči osobe, ktorá vykonáva priamy marketing.
+Kontakt na spracovateľa
+JUDr. Michaela Jánošíková, Odbor elektronických komunikácií, Ministerstvo dopravy Slovenskej republikymichaela.janosikova@mindop.sk, tel: (02) 5949 4587
+Zdroje
+Informácie od Úradu pre reguláciu elektronických komunikácií a poštových služieb a dotknutých trhových subjektov.
+Stanovisko Komisie na posudzovanie vybraných vplyvov z PPK č. 027/2025
+(v prípade, ak sa uskutočnilo v zmysle bodu 8.1 Jednotnej metodiky)
+☐ Súhlasné 
+☐ Súhlasné s návrhom na dopracovanie
+☒ Nesúhlasné
+Uveďte pripomienky zo stanoviska Komisie z časti II. spolu s Vaším vyhodnotením:
+K doložke vybraných vplyvov
+Komisia žiada predk

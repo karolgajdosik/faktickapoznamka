@@ -1,0 +1,126 @@
+# Dôvodová správa
+Dôvodová správa
+Všeobecná časť
+Predkladá sa návrh zákona, ktorým sa mení a dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov (ďalej len „návrh zákona“) ako iniciatívny materiál.
+Cieľom návrhu zákona je riešiť viaceré podnety z aplikačnej praxe výkonu verejného zdravotného poistenia, predovšetkým oblasť vstupu osôb z krajín mimo členských štátov EÚ do systému verejného zdravotného poistenia v prípade výkonu samostatnej zárobkovej činnosti a úprava postupov pri podávaní späťvzatí prihlášok.
+Vstup osôb z tretích krajín do systému zdravotného a sociálneho zabezpečenia je určitým spôsobom obmedzený vo viacerých členských štátoch EÚ. Cieľom tohto obmedzenia je predovšetkým chrániť finančnú udržateľnosť systému. Tieto obmedzenia majú rôzny charakter v závislosti od krajiny, je využívané určité obdobie od začatia samostatnej zárobkovej činnosti, kým táto osoba má nárok na vstup do systému (čakacia doba), zavedenie minimálnych súm odvodov, prípadne úplná nemožnosť vstupu do verejného systému. Slovenská republika ako jedna z mála krajín doposiaľ umožňovala vstup do systému okamžite po získaní oprávnenia na výkon samostatnej zárobkovej činnosti bez akýchkoľvek ďalších podmienok. V návrhu zákona sa navrhuje umožniť vstup do systému iba pre osoby bez existencie dlhu na zdravotnom poistení a neumožniť pre tieto osoby súbeh s poistením štátu.
+Pri podávaní späťvzatia prihlášky sa navrhuje obmedzenie času na jeho podanie na 30 dní odo dňa podania prihlášky, nakoľko doposiaľ platná úprava (do 31. októbra) je neúmerne dlhá a v podstate umožňuje druhú (neoficiálnu) fázu prepoisťovania po skončení obdobia na podanie prihlášky. 
+Prijatie predloženého návrhu zákona má pozitívny aj negatívny sociálny vplyv, pozitívny vplyv na podnikateľské prostredie a pozitívny vplyv na manželstvo, rodičovstvo a rodinu. Návrh zákona nebude mať vplyvy na rozpočet verejnej správy, životné prostredie, informatizáciu spoločnosti ani vplyvy na služby verejnej správy pre občana.
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi a nálezmi Ústavného súdu Slovenskej republiky, zákonmi Slovenskej republiky a ostatnými všeobecne záväznými právnymi predpismi, medzinárodnými zmluvami a inými medzinárodnými dokumentmi, ktorými je Slovenská republika viazaná, ako aj s právne záväznými aktmi Európskej únie.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania. 
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 580/2004 Z. z. o zdravotnom poistení a o zmene a doplnení zákona č. 95/2002 Z. z. o poisťovníctve a o zmene a doplnení niektorých zákonov v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+Predkladateľ (a spolupredkladateľ)
+vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☐
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Termín začiatku a ukončenia PPK
+5. júna 2025 – 16. júna 2025
+Predpokladaný termín predloženia na pripomienkové konanie
+jún 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+august 2025
+Definovanie problému
+Predkladateľ identifikoval viaceré oblasti v systéme verejného zdravotného poistenia, pri ktorých je nevyhnutná zmena legislatívy. Pri zhodnotení súčasného stavu, týkajúceho sa oblastí, ktoré sú predmetom právnej úpravy, je možné skonštatovať, že tieto oblasti nie sú v súčasnom znení zákona popísané detailne, prípadne z nových poznatkov a podnetov z aplikačnej praxe vyplýva nutnosť zmeny a podrobnejšieho popisu týchto oblastí:
+vstup samostatne zárobkovo činných osôb z tretích krajín do systému verejného zdravotného poistenia,
+späťvzatie prihlášky,
+definícia naviazanej nezaopatrenej osoby,
+vstup do systému verejného zdravotného poistenia pre deti narodené mimo Slovenskej republike,
+spresnenie postupov pri plnení povinností (oznamovacie povinnosti, mesačné a ročné prerozdelenie, ročné zúčtovanie),
+prehliadka mŕtvych tiel v nemocnici.
+Ciele a výsledný stav
+vstup samostatne zárobkovo činných osôb z tretích krajín do systému verejného zdravotného poistenia,
+cieľ: nastaviť pravidlá pre vstup týchto osôb do systému verejného zdravotného poistenia.
+späťvzatie prihlášky,
+cieľ: skrátenie lehoty na podanie späťvzatia na primeraný čas (30 dní).
+definícia naviazanej nezaopatrenej osoby,
+cieľ: doplnenie okruhu nezaopatrených rodinných príslušníkov o ďalšie skupiny osôb, ktoré nie sú na území Slovenskej republiky ekonomicky aktívne a ktorých nositeľ poistenia spadá z dôvodu ekonomickej aktivity pod legislatívu iného členského štátu
+vstup do systému verejného zdravotného poistenia pre deti narodené mimo Slovenskej republiky,
+cieľ: určiť pravidlá pre vstup týchto detí do systému verejného zdravotného poistenia tak, aby mohli byť poistené už odo dňa ich narodenia.
+spresnenie postupov pri plnení povinností (oznamovacie povinnosti, mesačné a ročné prerozdelenie, ročné zúčtovanie),
+cieľ: nastaviť jednoznačné postupy tak, aby nedochádzalo v aplikačnej praxi k nejasnostiam.
+prehliadka mŕtvych tiel v nemocnici.
+cieľ: upraviť ustanovenia o prehliadkach mŕtvych tiel v zdravotníckych zariadeniach tak, aby sa vzťahovalo len na všeobecné nemocnice a špecializované nemocnice.
+Dotknuté subjekty
+Ministerstvo zdravotníctva SR, Úrad pre dohľad nad zdravotnou starostlivosťou, poskytovatelia zdravotnej starostlivosti, zdravotné poisťovne, poistenci.
+Alternatívne riešenia
+Nie sú.
+popis nulového variantu: 
+vstup samostatne zárobkovo činných osôb z tretích krajín do systému verejného zdravotného poistenia,
+nulový variant: naďalej bude možný vstup do systému verejného zdravotného poistenia pre osoby z tretích krajín s dlhom na poistnom a okamžité čerpanie zo systému.
+späťvzatie prihlášky,
+nulový variant: naďalej po skončení prepoisťovacieho obdobia bude nastávať „druhá fáza prepoisťovania“, kedy v priebehu mesiaca október budú poistenci motivovaní zo strany pôvodnej zdravotnej poisťovne na podanie späťvzatia prihlášky.
+definícia naviazanej nezaopatrenej osoby,
+nulový variant: tieto osoby naďalej nebudú mať nárok na plnú zdravotnú starostlivosť v štáte nositeľa poistenia.
+vstup do systému verejného zdravotného poistenia pre deti narodené mimo SR,
+nulový variant: tieto deti budú mať naďalej nárok na vstup do systému až od okamihu splnenia podmienky na vstup (napr. získanie trvalého pobytu), nie odo dňa narodenia.
+spresnenie postupov pri plnení povinností (oznamovacie povinnosti, mesačné a ročné prerozdelenie, ročné zúčtovanie),
+nulový variant: môže dochádzať k dvojitému výkladu spôsobu plnenia jednotlivých povinností.
+prehliadka mŕtvych tiel v nemocnici.
+nulový variant: Zdravotnícke zariadenia ústavnej zdravotnej starostlivosti, vymedzené v § 7 ods. 4 písm. b) až i) zákona č. 578/2004 Z. z. (t. j. hospic, dom ošetrovateľskej starostlivosti, prírodné liečebné kúpele, kúpeľná liečebňa, zariadenie biomedicínskeho výskumu, detenčný ústav a detenčný ústav pre mladistvých) vzhľadom na charakter svojej činnosti nedisponujú lekármi, ktorí by mali oprávnenie na vykonávanie prehliadok mŕtvych, napriek tomu budú mať povinnosť toto zabezpečiť.
+Vykonávacie predpisy
+Predpokladá sa prijatie/zmena vykonávacích predpisov?
+☐ Áno
+☒ Nie
+Ak áno, uveďte ktoré oblasti budú nimi upravené, resp. ktorých vykonávacích predpisov sa zmena dotkne:
+Transpozícia/implementácia práva EÚ 
+Uveďte, či v predkladanom návrhu právneho predpisu dochádza ku goldplatingu podľa tabuľky zhody, resp. či ku goldplatingu dochádza pri implementácii práva EÚ. 
+ ☐ Áno ☒ Nie
+Ak áno, uveďte, ktorých vplyvov podľa bodu 9 sa goldplating týka: 
+Preskúmanie účelnosti
+Preskúmanie účelnosti navrhovaného predpisu bude vykonávané do jedného roka po nadobudnutí účinnosti.
+Kritériá 
+porovnanie počtu SZČO z tretích krajín a výšky ich evidovaného dlhu v rokoch 2026 a 2025,
+porovnanie počtu späťvzatí prihlášok v rokoch 2026 a 2025.
+Vybrané vplyvy materiálu
+Vplyvy na rozpočet verejnej správy
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ z toho rozpočtovo zabezpečené vplyvy, 
+ v prípade identifikovaného negatívneho 
+ vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+v tom vplyvy na rozpočty obcí a vyšších územných celkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+z toho rozpočtovo zabezpečené vplyvy,
+v prípade identifikovaného negatívneho vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+Vplyv na dlhodobú udržateľnosť verejných financií v prípade vybraných opatrení ***
+☐
+Áno
+☒
+Nie
+Vplyvy na limit verejných výdavkov
+☐
+Pozitívne
+☒
+Žiadne
+☐

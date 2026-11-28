@@ -1,0 +1,152 @@
+# Dôvodová správa
+Dôvodová správa
+A. Všeobecná časť
+Cieľom návrhu zákona, ktorým sa mení zákon č. 325/2022 Z. z., ktorým sa mení a dopĺňa zákon č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony v znení neskorších predpisov (ďalej len „návrh zákona“) je posun účinnosti ustanovení o zaručenej konverzii. 
+Zaručená konverzia predstavuje integrálnu súčasť výkonu elektronickej verejnej správy, keďže umožňuje plnohodnotné nahrádzanie listinných dokumentov ich elektronickými ekvivalentmi v právne záväznej forme. Zmeny, ktoré boli prijaté zákonom č. 325/2022 Z. z., zásadným spôsobom ovplyvňujú architektúru a prevádzku tejto služby, vrátane rozsahu zodpovednosti jej poskytovateľov a technických parametrov samotného procesu konverzie.
+V dôsledku nedostatočného časového priestoru na prípravu a testovanie nových technických riešení a prevádzkových postupov hrozí, že služby zaručenej konverzie nebudú od dátumu nadobudnutia účinnosti týchto ustanovení plne funkčné, resp. nebude možné zabezpečiť ich poskytovanie v súlade s právnymi požiadavkami. Zároveň nie je možné garantovať ich spoľahlivosť a bezpečnosť v prevádzke, čo je obzvlášť kritické vzhľadom na povahu dokumentov, s ktorými sa v rámci konverzie pracuje.
+V praxi by takýto stav mohol viesť k zdržaniam alebo znemožneniu doručovania a spracúvania právne významných úkonov medzi fyzickými alebo právnickými osobami a verejnou správou, čím by došlo k narušeniu právnej istoty a riadneho chodu rôznych konaní. Riziká sa týkajú najmä subjektov, ktoré sú na elektronickú komunikáciu odkázané zo zákona alebo z dôvodu profesijnej povinnosti, ako sú advokáti, daňoví poradcovia, exekútori alebo notári.
+Z uvedených dôvodov je posun účinnosti predmetných ustanovení nevyhnutný na zabezpečenie technologickej pripravenosti a legislatívnej istoty, a zároveň predstavuje najprimeranejší nástroj na predchádzanie negatívnym dopadom na verejnú správu aj dotknuté subjekty.
+Posunutím termínu účinnosti o 15 mesiacov sa podnikateľom a ostatným osobám oprávneným vykonávať zaručenú konverziu (prevažne advokátom), okrem notárov, ktorí podľa § 39 ods. 5 zákona č. 325/2022 Z. z. využívajú vlastný informačný systém Notárskej komory Slovenskej republiky, oddiali využívanie nového komplexného technického riešenia týkajúceho sa zaručenej konverzie, ktorého cieľom je okrem iného zjednodušiť vykonávanie zaručenej konverzie, avšak aktuálne využívaný systém naďalej funguje a podnikatelia ho môžu používať až do doby spustenia nového informačného systému Centrálnej evidencie záznamov o vykonanej zaručenej konverzii.
+Návrh zákona nebude mať vplyv na rozpočet verejnej správy ani vplyv na limit verejných výdavkov, nebude mať vplyv na podnikateľské prostredie, sociálny vplyv, vplyv na manželstvo, rodičovstvo a rodinu, nebude mať vplyvy na životné prostredie, vplyvy na informatizáciu spoločnosti ani vplyvy na služby verejnej správy pre občana. 
+Návrh zákona je v súlade s Ústavou Slovenskej republiky, ústavnými zákonmi, s nálezmi Ústavného súdu Slovenskej republiky, medzinárodnými zmluvami, ktorými je Slovenská republika viazaná a zákonmi a súčasne je v súlade s právom Európskej únie.
+Návrh zákona nie je predmetom vnútrokomunitárneho pripomienkového konania.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení zákon č. 325/2022 Z. z., ktorým sa mení a dopĺňa zákon č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony v znení neskorších predpisov.
+Predkladateľ (a spolupredkladateľ)
+Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☐
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Termín začiatku a ukončenia PPK
+-
+Predpokladaný termín predloženia na pripomienkové konanie
+-
+Predpokladaný termín začiatku a ukončenia ZP** 
+-
+Predpokladaný termín predloženia na rokovanie vlády SR*
+August 2025
+Definovanie problému
+Zákonom č. 325/2022 Z. z., ktorým sa mení a dopĺňa zákon č. 305/2013 Z. z. o elektronickej podobe výkonu pôsobnosti orgánov verejnej moci a o zmene a doplnení niektorých zákonov (zákon o e-Governmente) v znení neskorších predpisov a ktorým sa menia a dopĺňajú niektoré zákony v znení zákona č. 301/2023 Z. z. (ďalej len „zákon č. 325/2022 Z. z.“), boli schválené zmeny v oblasti zaručenej konverzie za účelom zjednodušiť výkon zaručenej konverzie pre osoby, ktoré zaručenú konverziu vykonávajú, a ktorých výsledkom má byť posilnenie dôveryhodnosti výstupov zo zaručenej konverzie. Tieto zmeny si vyžadujú úpravu aktuálneho technického riešenia centrálnej evidencie záznamov o vykonanej zaručenej konverzie, ktorej správcom je Ministerstvo investícií, regionálneho rozvoja a informatizácie Slovenskej republiky. 
+Vzhľadom na aktuálny stav projektu, ktorým sa má zabezpečiť obstaranie nového komplexného technického riešenia, vrátane zabezpečenia jeho zmluvnej podpory a ďalšieho rozvoja sa navrhuje posunúť účinnosť schválených zmien na 1. január 2027. Posunutie účinnosti sa navrhuje taktiež z dôvodu zabezpečenia postupného a kontinuálneho nábehu všetkých oprávnených osôb na nový systém centrálnej evidencie záznamov o vykonanej zaručenej konverzie.
+Ciele a výsledný stav
+Výhradným a jediným cieľom pripravovaného návrhu je posun účinnosti ustanovení o zmenách v zaručenej konverzii zavedených zákonom č. 325/2022 Z. z. s účinnosťou od 30. septembra 2025.
+Dotknuté subjekty
+Fyzické osoby;
+Fyzické osoby – podnikatelia;
+Právnické osoby;
+Orgány verejnej moci. 
+Alternatívne riešenia
+Alternatívne riešenia neboli zvažované.
+Nulový variant: V prípade, že sa nepristúpi k novelizácii právnej úpravy, bude vykonávanie zaručenej konverzie po 1. októbri 2025 v právnom vákuu, keďže vzhľadom na nemožnosť včasnej implementácie zmien účinných od 1. októbra 2025 nebude môcť osoba oprávnená postupovať pri vykonávaní zaručenej konverzie v súlade s ustanoveniami účinnými od 1. októbra 2025.
+Vykonávacie predpisy
+Predpokladá sa prijatie/zmena vykonávacích predpisov?
+☐ Áno
+☐ Nie
+Ak áno, uveďte ktoré oblasti budú nimi upravené, resp. ktorých vykonávacích predpisov sa zmena dotkne:
+Transpozícia/implementácia práva EÚ 
+Uveďte, či v predkladanom návrhu právneho predpisu dochádza ku goldplatingu podľa tabuľky zhody, resp. či ku goldplatingu dochádza pri implementácii práva EÚ. 
+ ☐ Áno ☒ Nie
+Ak áno, uveďte, ktorých vplyvov podľa bodu 9 sa goldplating týka: 
+Preskúmanie účelnosti
+K preskúmaniu účelnosti predkladaného materiálu by malo dôjsť pri nasledujúcej novelizácii zákona o e-Governmente, najneskôr však 3 roky od účinnosti predkladaného návrhu. Vzhľadom na navrhovanú účinnosť 1. januára 2027 by k preskúmaniu účelnosti malo dôjsť najneskôr v roku 2030 na základe získaných poznatkov z aplikačnej praxe. Kritériom preskúmania účelnosti budú výsledky kontrol dodržiavania povinností vyplývajúcich zo zákona o e-Governmente a podnety zo strany osôb vykonávajúcich zaručenú konverziu k aplikácii postupu vykonávania zaručenej konverzie podľa zákona v praxi.
+* vyplniť iba v prípade, ak materiál nie je zahrnutý do Plánu práce vlády Slovenskej republiky alebo Plánu legislatívnych úloh vlády Slovenskej republiky. 
+** vyplniť iba v prípade, ak sa záverečné posúdenie vybraných vplyvov uskutočnilo v zmysle bodu 9.1. jednotnej metodiky.
+*** posudzovanie sa týka len zmien v I. a II. pilieri univerzálneho systému dôchodkového zabezpečenia s identifikovaným dopadom od 0,1 % HDP (vrátane) na dlhodobom horizonte.
+Vybrané vplyvy materiálu
+Vplyvy na rozpočet verejnej správy
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ z toho rozpočtovo zabezpečené vplyvy, 
+ v prípade identifikovaného negatívneho 
+ vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+v tom vplyvy na rozpočty obcí a vyšších územných celkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+z toho rozpočtovo zabezpečené vplyvy,
+v prípade identifikovaného negatívneho vplyvu
+☐
+Áno
+☐
+Nie
+☐
+Čiastočne
+Vplyv na dlhodobú udržateľnosť verejných financií v prípade vybraných opatrení ***
+☐
+Áno
+☐
+Nie
+Vplyvy na limit verejných výdavkov
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na podnikateľské prostredie
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+ z toho vplyvy na MSP
+☐
+Pozitívne
+☐
+Žiadne
+☐
+Negatívne
+ Mechanizmus znižovania byrokracie 
+ a nákladov sa uplatňuje:
+☐
+Áno
+☐
+Nie
+Sociálne vplyvy
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na životné prostredie
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Materiál je posudzovaný podľa zákona č. 24/2006 Z. z. o posudzovaní vplyvov na životné prostredie a o zmene a doplnení niektorých zákonov v znení neskorších predpisov
+☐
+Áno
+☐
+Nie
+Vplyvy na informatizáciu spoločnosti
+☐
+Pozitívne
+☒
+Žiadne
+☐
+Negatívne
+Vplyvy na služby verejnej správy pre o

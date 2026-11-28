@@ -1,0 +1,46 @@
+# Dôvodová správa
+Dôvodová správa
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 566/2001 Z. z. o cenných papieroch a investičných službách a o zmene a doplnení niektorých zákonov (zákon o cenných papieroch) v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 429/2002 Z. z. o burze cenných papierov v znení neskorších predpisov (ďalej len „návrh zákona“) sa predkladá na základe úlohy B.15 uznesenia vlády SR č. 589/2024.
+Cieľom návrhu zákona je:
+transpozícia smernice Európskeho parlamentu a Rady (EÚ) 2024/790 z 28. februára 2024, ktorou sa mení smernica 2014/65/EÚ o trhoch s finančnými nástrojmi (Ú. v. L, 2024/790, 8.3.2024). Touto smernicou (EÚ) sa odstraňujú identifikované prekážky, ktoré bránili rozvoju regulovaných trhov v EÚ, zavádza sa opt-in režim systematického internalizátora, upravujú sa informačné povinnosti obchodníkov s cennými papiermi voči ich klientom o mieste vykonania pokynu, zavádza sa požiadavka na zabezpečenie plnenia noriem kvality údajov zasielaných poskytovateľovi konsolidovaného systému, spresňuje sa možnosť dočasne pozastaviť alebo obmedziť obchodovanie na regulovanom trhu, spresňuje sa mechanizmus kontroly nad riadením pozícií v komoditných derivátoch a derivátoch na emisné kvóty, a dopĺňa sa sankčný režim. 
+Súbežne s touto smernicou bolo prijaté nariadenie (EÚ) 2024/791, ktorým s odstraňujú prekážky brániace vzniku konsolidovaného informačného systému, do ktorého budú povinne prispievať svojimi údajmi dotknuté trhové subjekty. 
+transpozícia smernice Európskeho parlamentu a Rady (EÚ) 2024/2811 z 23. októbra 2024, ktorou sa mení smernica 2014/65/EÚ s cieľom zatraktívniť verejné kapitálové trhy v Únii pre spoločnosti a uľahčiť malým a stredným podnikom prístup ku kapitálu a ktorou sa zrušuje smernica 2001/34/ES (Ú. v. L, 2024/2811, 14.11.2024). Cieľom je stanoviť podmienky pre poskytovanie investičného prieskumu tretími stranami investičným spoločnostiam poskytujúcim správu portfólia a tým zatraktívniť malé a stredné spoločnosti z hľadiska investorov. 
+Transpozícia smernice Európskeho parlamentu a Rady (EÚ) 2024/2994 z 27. novembra 2024, ktorou sa menia smernice 2009/65/ES, 2013/36/EÚ a (EÚ) 2019/2034, pokiaľ ide o zaobchádzanie s rizikom koncentrácie vyplývajúcim z expozícií voči centrálnym protistranám a s rizikom protistrany pri centrálne zúčtovávaných transakciách s derivátmi (Ú. v. EÚ L, 2024/2994, 4.12.2024). Keďže mechanizmy centrálneho zúčtovania zmierňujú riziko protistrany, ktoré je obsiahnuté v zmluvách o derivátoch, pri určovaní uplatniteľných limitov pre riziko protistrany treba zohľadniť, či derivát centrálne zúčtovala centrálna protistrana, ktorej bolo udelené povolenie alebo ktorá bola uznaná v súlade s nariadením (EÚ) č. 648/2012 v platnom znení, a vytvoriť rovnaké podmienky pre deriváty obchodované na burze a mimoburzové deriváty.
+Do zákona sa tiež zavádzajú niektoré ustanovenia, ktoré zohľadňujú poznatky z praxe. 
+Prijatie navrhovaného zákona nebude mať vplyv na rozpočet verejnej správy, ale bude mať pozitívny a negatívny vplyv na podnikateľské prostredie. Návrh zákona má pozitívne sociálne vplyvy, nemá vplyvy na životné prostredie, na služby verejnej správy pre občana, na informatizáciu spoločnosti ani vplyvy na manželstvo, rodičovstvo a rodinu.
+Návrh zákona nebude predložený na vnútrokomunitárne pripomienkové konanie.
+Predložený návrh zákona je v súlade s Ústavou Slovenskej republiky, s ústavnými zákonmi, nálezmi ústavného súdu, inými zákonmi a ostatnými všeobecne záväznými právnymi predpismi Slovenskej republiky, s právom Európskej únie a s medzinárodnými zmluvami, ktorými je Slovenská republika viazaná.
+Doložka vybraných vplyvov
+Základné údaje
+Názov materiálu
+Návrh zákona, ktorým sa mení a dopĺňa zákon č. 566/2001 Z. z. o cenných papieroch a investičných službách a o zmene a doplnení niektorých zákonov (zákon o cenných papieroch) v znení neskorších predpisov a ktorým sa mení a dopĺňa zákon č. 429/2002 Z. z. o burze cenných papierov v znení neskorších predpisov
+Predkladateľ (a spolupredkladateľ)
+vláda Slovenskej republiky
+Charakter predkladaného materiálu
+☐
+Materiál nelegislatívnej povahy
+☒
+Materiál legislatívnej povahy
+☒
+Transpozícia/ implementácia práva EÚ
+V prípade transpozície/implementácie uveďte zoznam transponovaných/implementovaných predpisov:
+Smernica (EÚ) 2024/790, z 28. februára 2024, ktorou sa mení smernica 2014/65/EÚ o trhoch s finančnými nástrojmi.
+Smernica (EÚ) 2024/2811 z 23. októbra 2024, ktorou sa mení smernica 2014/65/EÚ s cieľom zatraktívniť verejné kapitálové trhy v Únii pre spoločnosti a uľahčiť malým a stredným podnikom prístup ku kapitálu a ktorou sa zrušuje smernica 2001/34/ES.
+Smernica (EÚ) 2024/2994 z 27. novembra 2024, ktorou sa menia smernice 2009/65/ES, 2013/36/EÚ a (EÚ) 2019/3034, pokiaľ ide o zaobchádzanie s rizikom koncentrácie vyplývajúcim z expozícií voči centrálnym protistranám a s rizikom protistrany pri centrálne zúčtovávaných transakciách s derivátmi. 
+Termín začiatku a ukončenia PPK
+Predpokladaný termín predloženia na pripomienkové konanie
+Február 2025
+Predpokladaný termín začiatku a ukončenia ZP** 
+Predpokladaný termín predloženia na rokovanie vlády SR*
+Apríl 2025
+Definovanie problému
+Uveďte základné problémy, ktoré sú dôvodom vypracovania predkladaného materiálu (dôvody majú presne poukázať na problém, ktorý existuje a je nutné ho predloženým materiálom riešiť).
+Cieľom návrhu zákona je:
+transpozícia smernice (EÚ) 2024/790, ktorou sa mení smernica 2014/65/EÚ o trhoch s finančnými nástrojmi. Touto smernicou (EÚ) sa odstraňujú identifikované prekážky, ktoré bránili rozvoju regulovaných trhov v EÚ, zavádza sa opt-in režim systematického internalizátora, upravujú sa informačné povinnosti obchodníkov s cennými papiermi voči ich klientom o mieste vykonania pokynu, zavádza sa požiadavka na zabezpečenie plnenia noriem kvality údajov zasielaných poskytovateľovi konsolidovaného systému, spresňuje sa možnosť dočasne pozastaviť alebo obmedziť obchodovanie na regulovanom trhu, spresňuje sa mechanizmus kontroly nad riadením pozícií v komoditných derivátoch a derivátoch na emisné kvóty, a dopĺňa sa sankčný režim. Súbežne s touto smernicou bolo prijaté nariadenie (EÚ) 2024/791, ktorým s odstraňujú prekážky brániace vzniku konsolidovaného informačného systému, do ktorého budú povinne prispievať svojimi údajmi dotknuté trhové subjekty. 
+transpozícia smernice (EÚ) 2024/2811 z 23. októbra 2024, ktorou sa mení smernica 2014/65/EÚ s cieľom zatraktívniť verejné kapitálové trhy v Únii pre spoločnosti a uľahčiť malým a stredným podnikom prístup ku kapitálu a ktorou sa zrušuje smernica 2001/34/ES. Cieľom smernice je stanoviť podmienky pre poskytovanie investičného prieskumu tretími stranami investičným spoločnostiam poskytujúcim správu portfólia a tým zatraktívniť malé a stredné spoločnosti z hľadiska investorov. 
+Transpozícia smernice (EÚ) 2024/2994 z 27. novembra 2024, ktorou sa menia smernice 2009/65/ES, 2013/36/EÚ a (EÚ) 2019/2034, pokiaľ ide o zaobchádzanie s rizikom koncentrácie vyplývajúcim z expozícií voči centrálnym protistranám a s rizikom protistrany pri centrálne zúčtovávaných transakciách s derivátmi. Keďže mechanizmy centrálneho zúčtovania zmierňujú riziko protistrany, ktoré je obsiahnuté v zmluvách o derivátoch, pri určovaní uplatniteľných limitov pre riziko protistrany treba zohľadniť, či derivát centrálne zúčtovala centrálna protistrana, ktorej bolo udelené povolenie alebo ktorá bola uznaná v súlade s nariadením (EÚ) č. 648/2012, a vytvoriť rovnaké podmienky pre deriváty obchodované na burze a mimoburzové deriváty.
+Do zákona sa tiež zavádzajú niektoré ustanovenia, ktorých účelom je odstránenie nedostatkov s ohľadom na poznatky z praxe. 
+Ciele a výsledný stav
+Uveďte hlavné ciele predkladaného materiálu (aký výsledný stav má byť prijatím materiálu dosiahnutý, pričom dosiahnutý stav musí byť odlišný od stavu popísaného v bode 2. Definovanie problému). 
+Hlavným cieľom je úplná transpozícia smerníc (EÚ). 
+Smernica (EÚ) 2024/790 z 28. februára 2024 zavádza podmienky pre vytvorenie konsolidovaného systému zberu trhových údajov, dôsledkom čoho budú mať investori prehľad o obchodovaní s finančnými nástrojmi na všetkých európskych kapitálových trhoch. Smernica (EÚ) 2024/2811 z 23. októbra 2024 (Listing package), má za cieľ zatraktívniť verejné kapitálové trhy v Únii pre spoločnosti a uľahčiť malým a stredným podnikom prístup ku kapitálu. Upravuje podmienky pre zabezpečenie vyššej atraktivity malých a stredných podnikov z hľadiska investorov prostredníctvom požiadaviek na podmienky vypracúvania a šírenia investičného prieskumu. Smernica (EÚ) 2024/2994 z 27. novembra 2024, pokiaľ ide o zaobchádzanie s rizikom koncentrácie vyplývajúcim z expozícií voči centrálnym protistranám a s rizikom protistrany pri centrálne zúčtovávaných transakciách s derivátmi, vytvára rovnaké podmienky pre deriváty obchodované na burze a mimoburzové deriváty. Obchodník s cennými papiermi je povinný riadiť expozície voči centrálnej protistrane, a v prípade potreby sa vytvára možnosť vyžadovať zníž
